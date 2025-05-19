@@ -1,0 +1,209 @@
+\documentclass[11pt, a4paper]{article}
+
+% PAQUETES BÁSICOS Y DE IDIOMA
+\usepackage[utf8]{inputenc}      % Codificación de entrada UTF-8
+\usepackage[spanish]{babel}    % Idioma español, separación de sílabas, etc.
+\usepackage{geometry}          % Para configurar márgenes
+\geometry{a4paper, margin=2.5cm} % Márgenes de 2.5 cm en A4
+
+% PAQUETES PARA MATEMÁTICAS (si fueran necesarios)
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+% PAQUETES PARA GRÁFICOS Y TABLAS
+\usepackage{graphicx}          % Para incluir imágenes (gráficos)
+\usepackage{booktabs}          % Para tablas de mejor calidad (líneas \toprule, \midrule, \bottomrule)
+\usepackage{caption}           % Mejor control sobre las leyendas de figuras y tablas
+\captionsetup{skip=10pt}       % Espacio entre figura/tabla y leyenda
+\usepackage{float}             % Para forzar la posición de flotantes con [H]
+
+% PAQUETES PARA HIPERVÍNCULOS (opcional pero útil)
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    pdftitle={Investigación Colas Junaeb App},
+    pdfpagemode=FullScreen,
+}
+
+% CONFIGURACIÓN DEL DOCUMENTO
+\title{Análisis de la Viabilidad de una Aplicación Móvil para Optimizar la Entrega de Raciones Junaeb y Reducir Tiempos de Espera}
+\author{Por: Felipe Colli, Benjamin Fernandez, Luciano Arevalo, \\ Maximiliano Alcaino y Martin Valdenegro \\ \textit{Basado en datos simulados/observacionales}}
+\date{\today}
+
+% INICIO DEL DOCUMENTO
+\begin{document}
+\maketitle
+\thispagestyle{empty} % Quita número de página en la portada
+\newpage
+
+\tableofcontents % Tabla de contenido automática
+\newpage
+
+% --- SECCIÓN 1: PROBLEMA OBSERVADO ---
+\section{Problema Observado: Congestión en la Entrega de Raciones Junaeb}
+\label{sec:problema}
+
+La Junta Nacional de Auxilio Escolar y Becas (Junaeb) cumple un rol fundamental al proporcionar raciones alimenticias a miles de estudiantes en Chile. Sin embargo, un problema recurrente y observable en numerosos puntos de entrega es la formación de largas colas y los prolongados tiempos de espera que los estudiantes deben enfrentar para recibir su beneficio.
+
+Esta situación genera diversas externalidades negativas:
+\begin{itemize}
+    \item \textbf{Pérdida de tiempo valioso:} Los estudiantes invierten tiempo que podría ser destinado a estudio, descanso u otras actividades académicas o personales.
+    \item \textbf{Frustración y malestar:} La espera prolongada, a menudo en condiciones poco confortables (de pie, expuestos al clima), genera estrés y una percepción negativa del servicio.
+    \item \textbf{Ineficiencia logística:} Las aglomeraciones pueden dificultar la gestión del flujo de estudiantes y la distribución eficiente de las raciones por parte del personal encargado.
+    \item \textbf{Posible impacto en la asistencia:} En casos extremos, la perspectiva de una larga espera podría disuadir a algunos estudiantes de retirar su ración, afectando su nutrición y bienestar.
+\end{itemize}
+La congestión parece ser un cuello de botella significativo en la operatividad del programa de alimentación de Junaeb, afectando directamente la experiencia del usuario final: el estudiante.
+
+% --- SECCIÓN 2: PLANTEAMIENTO DEL PROBLEMA ---
+\section{Planteamiento del Problema}
+\label{sec:planteamiento}
+
+Considerando las dificultades observadas y el impacto negativo en la comunidad estudiantil, surge la necesidad de explorar soluciones innovadoras que permitan optimizar el proceso de entrega de raciones. La tecnología móvil, ubicua entre la población estudiantil, se presenta como una herramienta potencial para abordar esta problemática.
+
+Por lo tanto, la pregunta central de esta investigación es:
+\vspace{0.5cm} % Espacio vertical
+\begin{center}
+\textit{¿Puede la implementación de una aplicación móvil dedicada a la gestión de turnos y notificación de disponibilidad reducir significativamente los tiempos de espera y mejorar la satisfacción de los estudiantes en el proceso de retiro de raciones alimenticias de Junaeb?}
+\end{center}
+\vspace{0.5cm} % Espacio vertical
+
+Esta pregunta busca evaluar la viabilidad y efectividad de una solución tecnológica específica frente al problema concreto de las colas.
+
+% --- SECCIÓN 3: HIPÓTESIS Y PREDICCIÓN ---
+\section{Hipótesis y Predicción de Consecuencias}
+\label{sec:hipotesis}
+
+\subsection{Hipótesis}
+Se formula la siguiente hipótesis de trabajo (H1):
+
+\textbf{H1:} \textit{La implementación y adopción de una aplicación móvil que permita a los estudiantes (a) visualizar la afluencia en los puntos de entrega, (b) reservar un turno estimado para el retiro de su ración, y (c) recibir notificaciones sobre la disponibilidad, disminuirá de manera estadísticamente significativa los tiempos promedio de espera en comparación con el sistema actual.}
+
+\subsection{Predicción de Consecuencias}
+Si la hipótesis H1 es correcta, se predicen las siguientes consecuencias positivas:
+
+\begin{enumerate}
+    \item \textbf{Reducción drástica de los tiempos de espera:} Los estudiantes podrán acudir al punto de entrega en momentos de menor congestión o cerca de su turno asignado, minimizando la espera física en la cola.
+    \item \textbf{Aumento de la satisfacción estudiantil:} Una experiencia de retiro más ágil, predecible y eficiente mejorará la percepción del servicio y reducirá la frustración.
+    \item \textbf{Optimización de la gestión de recursos:} El personal de Junaeb podría anticipar mejor la demanda en diferentes horarios, permitiendo una planificación más eficiente de la entrega y del personal.
+    \item \textbf{Generación de datos útiles:} La aplicación podría recopilar datos anónimos sobre patrones de retiro, horarios pico y preferencias, información valiosa para la mejora continua del servicio.
+    \item \textbf{Mejora en la comunicación:} La app puede servir como canal directo para informar sobre horarios, menús, cambios operativos o contingencias.
+\end{enumerate}
+
+% --- SECCIÓN 4: ANÁLISIS DE DATOS (TABLAS Y GRÁFICOS) ---
+\section{Análisis de Datos Comparativos}
+\label{sec:resultados}
+
+Para evaluar preliminarmente el impacto potencial de una aplicación, se analizaron datos (proporcionados en hoja de cálculo externa, ver Anexo) que comparan la situación actual con una estimación del escenario utilizando una app. Los datos incluyen tiempos de espera y niveles de satisfacción (escala 1-5, donde 5 es máxima satisfacción).
+
+\subsection{Tablas Comparativas}
+
+Se calcularon estadísticas descriptivas clave para ambas situaciones:
+
+\begin{table}[H] % [H] fuerza la posición aquí
+    \centering
+    \caption{Comparación de Tiempos de Espera (Minutos)}
+    \label{tab:tiempos}
+    \begin{tabular}{lcc}
+        \toprule
+        Estadística          & Tiempo Espera Actual (min) & Tiempo Estimado con App (min) \\
+        \midrule
+        Promedio (Media)     & 25.5                       & 6.9                           \\
+        Mediana              & 25.0                       & 6.5                           \\
+        Mínimo               & 15.0                       & 3.0                           \\
+        Máximo               & 40.0                       & 12.0                          \\
+        Desviación Estándar & 8.2                        & 2.9                           \\
+        \bottomrule
+    \end{tabular}
+    \vspace{0.2cm} % Pequeño espacio después de la tabla
+    \caption*{Fuente: Datos de ejemplo procesados de Google Sheet. N=10 (muestra inicial).}
+\end{table}
+
+\begin{table}[H] % [H] fuerza la posición aquí
+    \centering
+    \caption{Comparación de Niveles de Satisfacción (Escala 1-5)}
+    \label{tab:satisfaccion}
+    \begin{tabular}{lcc}
+        \toprule
+        Estadística          & Satisfacción Actual (1-5) & Satisfacción Estimada con App (1-5) \\
+        \midrule
+        Promedio (Media)     & 2.4                       & 4.3                                 \\
+        Mediana              & 2.0                       & 4.5                                 \\
+        Mínimo               & 1.0                       & 3.0                                 \\
+        Máximo               & 4.0                       & 5.0                                 \\
+        Desviación Estándar & 1.1                       & 0.7                                 \\
+        \bottomrule
+    \end{tabular}
+    \vspace{0.2cm} % Pequeño espacio después de la tabla
+     \caption*{Fuente: Datos de ejemplo procesados de Google Sheet. N=10 (muestra inicial).}
+\end{table}
+
+\textbf{Interpretación inicial:} Los datos sugieren una reducción muy significativa en el tiempo de espera promedio (de 25.5 min a 6.9 min) y un aumento considerable en la satisfacción promedio (de 2.4 a 4.3 en escala de 5) con el uso hipotético de la aplicación. La variabilidad (desviación estándar) también disminuiría, indicando una experiencia más consistente.
+
+\subsection{Visualización Gráfica (Ejemplos Descriptivos)}
+
+Aunque no se incluyen los archivos de imagen directamente en este código, se describirían los gráficos ideales basados en los datos:
+
+\begin{figure}[H] % [H] fuerza la posición aquí
+    \centering
+    % \includegraphics[width=0.7\textwidth]{grafico_barras_tiempo.png} % Línea para incluir el gráfico real
+    \fbox{\parbox{0.7\textwidth}{
+        \centering \vspace{2cm}
+        \textbf{Espacio para Gráfico 1:} \\
+        Gráfico de Barras Comparando Tiempo de Espera Promedio (Actual vs. App). \\
+        Mostraría visualmente la drástica reducción del tiempo medio.
+        \vspace{2cm}
+    }}
+    \caption{Comparación Visual del Tiempo de Espera Promedio.}
+    \label{fig:graf_tiempo}
+\end{figure}
+
+\begin{figure}[H] % [H] fuerza la posición aquí
+    \centering
+    % \includegraphics[width=0.7\textwidth]{grafico_barras_satisfaccion.png} % Línea para incluir el gráfico real
+    \fbox{\parbox{0.7\textwidth}{
+        \centering \vspace{2cm}
+        \textbf{Espacio para Gráfico 2:} \\
+        Gráfico de Barras Comparando Satisfacción Promedio (Actual vs. App). \\
+        Ilustraría el notable aumento en la satisfacción media estimada.
+        \vspace{2cm}
+    }}
+    \caption{Comparación Visual de la Satisfacción Promedio.}
+    \label{fig:graf_satisfaccion}
+\end{figure}
+
+% --- SECCIÓN 5: CONCLUSIONES ---
+\section{Conclusiones}
+\label{sec:conclusiones}
+
+Basado en el análisis preliminar de los datos comparativos y la argumentación teórica:
+
+\begin{enumerate}
+    \item \textbf{El problema es real y relevante:} Las largas colas en los puntos de entrega de Junaeb representan una ineficiencia significativa con consecuencias negativas directas para los estudiantes beneficiarios.
+    \item \textbf{La hipótesis es plausible y respaldada por los datos (simulados/ejemplo):} El análisis cuantitativo sugiere que una aplicación móvil tiene el potencial de reducir drásticamente los tiempos de espera (aproximadamente en un 73% según la media de la muestra) y mejorar sustancialmente la satisfacción del estudiante (aumento promedio de 1.9 puntos en escala de 5).
+    \item \textbf{Respuesta al planteamiento del problema:} Sí, los resultados indican que es factible y potencialmente muy efectivo implementar una aplicación móvil para gestionar y reducir las colas en la entrega de raciones Junaeb. Los beneficios proyectados en tiempo y satisfacción son considerables.
+    \item \textbf{Recomendaciones:} Se recomienda profundizar esta investigación mediante:
+        \begin{itemize}
+            \item Un estudio piloto con una aplicación prototipo en una o varias sedes.
+            \item Recolección de datos reales antes y después de la implementación piloto.
+            \item Encuestas de satisfacción detalladas a los usuarios.
+            \item Análisis de costos y viabilidad técnica para una implementación a gran escala.
+        \end{itemize}
+\end{enumerate}
+
+En resumen, la adopción de una solución tecnológica móvil parece ser una vía prometedora para modernizar y optimizar un servicio esencial como el que presta Junaeb, mejorando significativamente la experiencia de miles de estudiantes en Chile.
+
+% --- ANEXOS (Opcional) ---
+\appendix
+\section{Referencia a Datos Externos}
+Los datos utilizados para las tablas y la descripción de gráficos se basan en la información contenida en la siguiente hoja de cálculo de Google Sheets:
+\begin{verbatim}
+https://docs.google.com/spreadsheets/d/1fyPmn7-F5jP7IhDjiD8P8j9qIOvpKWJpx9hOCOuEdm0/edit?usp=sharing
+\end{verbatim}
+Se realizó un análisis descriptivo básico (cálculo de medias, medianas, mínimos, máximos y desviación estándar) sobre una muestra inicial (N=10) de estos datos para las columnas `Tiempo Espera Actual (min)`, `Tiempo Estimado App (min)`, `Satisfaccion Actual (1-5)` y `Satisfaccion Estimada App (1-5)`.
+
+% --- FIN DEL DOCUMENTO ---
+\end{document}

@@ -1,0 +1,35 @@
+Sistemas Numéricos:
+
+    ·N° Naturales ℕ o N = {1, 2, 3, ... }
+
+    ·N° Cardinales  ℕ o N subzero = {0, 1, 2, 3, ...}
+    
+    ·N° Enteros Z = {..., -2, -1, 0, 1, 2, ...}
+    
+    ·N° Racionales Q = {a/b | a € Z, b € Z-{0} | b € Z con b =/ 0}
+    
+    ·N° Irracionales I o Q⁽ Ej: π, sqrt(2) 
+    
+    ·N° Reales R = {Q u Q⁽}
+
+    ·N° Complejos C
+
+
+
+Prioridad de Operaciones:
+
+    -Parentésis
+
+    -Potencias o Raíces
+    
+    -Multiplicacion o Division: Izq a Der
+    
+    -Sumas y Restas: Izq a Der
+
+
+
+
+Ejercicios:
+    1) 150-[80-3(52-53)]
+
+    2)

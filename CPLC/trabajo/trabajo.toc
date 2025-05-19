@@ -1,0 +1,11 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Problema Observado: Congestión en la Entrega de Raciones Junaeb}{3}{section.1}%
+\contentsline {section}{\numberline {2}Planteamiento del Problema}{3}{section.2}%
+\contentsline {section}{\numberline {3}Hipótesis y Predicción de Consecuencias}{3}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Hipótesis}{3}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Predicción de Consecuencias}{4}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Análisis de Datos Comparativos}{4}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Tablas Comparativas}{4}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Visualización Gráfica (Ejemplos Descriptivos)}{5}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Conclusiones}{6}{section.5}%
+\contentsline {section}{\numberline {A}Referencia a Datos Externos}{6}{appendix.Alph1}%

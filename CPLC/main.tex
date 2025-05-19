@@ -1,0 +1,74 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[utf8]{inputenc} % Codificación de entrada UTF-8
+\usepackage{amsmath}        % Para comandos matemáticos como \Omega, \Theta, O
+\usepackage{amssymb}        % Símbolos matemáticos adicionales
+\usepackage{geometry}       % Para márgenes personalizados
+\usepackage{parskip}        % Párrafos separados por espacio vertical, sin indentación
+\usepackage{graphicx}       % Para incluir gráficos (si los generas)
+\usepackage{float}          % Mejor control de flotantes (figuras, tablas)
+
+\geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+}
+
+\title{Estudio Experimental: Complejidad de Peor Caso vs. Amortizada en Vectores Dinámicos}
+\author{Martin Valdenegro, Felipe Colli, Benjamin Fernandez \\ \textit{Instituto Nacional Jose Miguel Carrera}} % <-- Puedes personalizar esto
+\date{1° de Abril, 2025}
+
+\begin{document}
+\maketitle
+
+% --- Observación ---
+\section{Observación}
+En el análisis teórico de algoritmos, la complejidad del peor caso ($O$, $\Theta$) proporciona una cota superior estricta sobre el tiempo de ejecución de una operación individual. Sin embargo, para ciertas estructuras de datos, como los vectores dinámicos (arrays que crecen bajo demanda), las operaciones costosas (ej. redimensionamiento al añadir un elemento) ocurren con poca frecuencia. El análisis amortizado sugiere que el costo promedio por operación, considerado sobre una secuencia larga, puede ser significativamente menor que el costo del peor caso de una operación aislada. Se observa que, en la práctica, estructuras como `std::vector` en C++ o `ArrayList` en Java son muy eficientes a pesar de tener operaciones con un peor caso lineal ($O(n)$).
+
+% --- Pregunta de Investigación ---
+\section{Pregunta de Investigación}
+¿Hasta qué punto el tiempo de ejecución real medido para secuencias de operaciones (específicamente inserciones) en un vector dinámico se alinea mejor con las predicciones del análisis amortizado ($O(1)$ por operación en promedio) en comparación con las predicciones basadas únicamente en el análisis del peor caso ($O(n)$ para la operación más costosa)? ¿Podemos cuantificar experimentalmente la frecuencia y el impacto de las operaciones de peor caso en el rendimiento general?
+
+% --- Hipótesis ---
+\section{Hipótesis}
+Se hipotetiza que el tiempo \emph{total} para realizar $N$ inserciones sucesivas en un vector dinámico crecerá de forma aproximadamente lineal con $N$, lo que implica que el tiempo \emph{promedio medido} por inserción será cercano a una constante ($O(1)$), validando así la predicción del análisis amortizado para el rendimiento agregado. Aunque se observarán picos de tiempo correspondientes a las operaciones de redimensionamiento (validando el análisis de peor caso para \emph{esas} operaciones específicas), su impacto en el tiempo promedio disminuirá a medida que $N$ aumente, demostrando que el análisis amortizado es un predictor más útil del rendimiento práctico general de la estructura de datos en este escenario.
+
+% --- Método de Experimentación ---
+\section{Método de Experimentación}
+Para probar la hipótesis, se realizará el siguiente experimento:
+
+\begin{enumerate}
+    \item \textbf{Implementación/Selección:} Se utilizará una implementación estándar de vector dinámico (ej. `std::vector` de C++ o `ArrayList` de Java) o se implementará una versión simple siguiendo la estrategia de duplicar la capacidad cuando esté lleno.
+    \item \textbf{Operación Bajo Prueba:} La operación principal a medir será la inserción al final ("pushback" o `add`).
+    \item \textbf{Procedimiento:}
+        \begin{itemize}
+            \item Para diferentes valores de $N$ (número total de inserciones, ej. $10^3, 10^4, 10^5, 10^6, 10^7$):
+                \begin{enumerate}
+                    \item Iniciar con un vector dinámico vacío.
+                    \item Realizar $N$ inserciones consecutivas al final del vector.
+                    \item Medir y registrar el tiempo de ejecución de \textbf{cada} inserción individual. Utilizar un cronómetro de alta resolución (ej. `std::chrono` en C++, `System.nanoTime()` en Java).
+                    \item Registrar el tiempo \textbf{total} para las $N$ inserciones.
+                \end{enumerate}
+            \item Repetir cada experimento (para cada $N$) varias veces (ej. 5-10 veces) para mitigar fluctuaciones y calcular promedios y desviaciones estándar.
+        \end{itemize}
+    \item \textbf{Entorno Controlado:} El experimento se ejecutará en la misma máquina, con carga mínima del sistema, utilizando el mismo lenguaje/compilador y opciones de optimización (si aplica) para todas las pruebas.
+\end{enumerate}
+
+% --- Análisis de Resultados ---
+\section{Análisis de Resultados}
+Los datos recolectados se analizarán de la siguiente manera:
+
+\begin{enumerate}
+    \item \textbf{Visualización de Tiempos Individuales:} Se generará un gráfico del tiempo de ejecución por cada inserción individual (eje Y) vs. el número de inserción (índice $i$ de 1 a $N$, eje X) para un valor grande de $N$. Esto permitirá visualizar los picos de tiempo correspondientes a las redimensiones.
+    \item \textbf{Análisis de Picos:} Se identificará el tiempo máximo registrado para una sola inserción y se comparará con el tamaño del vector ($k$) en ese momento para verificar si se aproxima a una relación lineal (validación cualitativa del peor caso $O(k)$).
+    \item \textbf{Cálculo del Tiempo Promedio Amortizado Experimental:} Para cada $N$, se calculará el tiempo promedio por inserción dividiendo el tiempo total medido por $N$.
+    \item \textbf{Visualización del Tiempo Promedio:} Se generará un gráfico del tiempo promedio por inserción (eje Y) vs. $N$ (eje X). Se espera que esta curva se estabilice en un valor constante para $N$ suficientemente grande.
+    \item \textbf{Visualización del Tiempo Total:} Se generará un gráfico del tiempo total (eje Y) vs. $N$ (eje X). Se verificará si la relación es aproximadamente lineal (pendiente constante).
+    \item \textbf{Comparación Cuantitativa:} Se comparará el tiempo promedio experimental estabilizado con el tiempo de una inserción sin redimensionamiento para evaluar la sobrecarga introducida por las redimensiones en promedio.
+\end{enumerate}
+
+% --- Conclusión Preliminar ---
+\section{Conclusión Preliminar (Esperada)}
+Se espera concluir que los resultados experimentales respaldan firmemente la hipótesis. El análisis de los tiempos individuales mostrará la existencia de operaciones costosas ($O(k)$) predichas por el análisis del peor caso, pero el análisis del tiempo total y promedio por operación demostrará que el rendimiento agregado de $N$ inserciones escala linealmente con $N$, haciendo que el costo promedio por operación sea efectivamente constante ($O(1)$), tal como predice el análisis amortizado. Esto subrayará la importancia del análisis amortizado para evaluar el rendimiento práctico de estructuras de datos que exhiben costos variables por operación, y justificará la eficiencia observada de los vectores dinámicos en la mayoría de las aplicaciones. Se reconocerá que el análisis del peor caso sigue siendo relevante para sistemas donde una única operación lenta no es tolerable (ej. sistemas de tiempo real estricto).
+
+\end{document}

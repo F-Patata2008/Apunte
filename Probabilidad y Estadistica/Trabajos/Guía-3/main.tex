@@ -1,0 +1,419 @@
+\documentclass[12pt, a4paper]{article} % Combinado: 12pt de Doc1, a4paper de ambos
+\usepackage[utf8]{inputenc}
+%\usepackage[spanish]{babel}
+\usepackage{amsmath, amssymb, amsfonts} % Combinado y amsfonts añadido por si acaso (aunque amssymb suele cargarlo)
+\usepackage{geometry}
+\usepackage{graphicx} % De Doc 2
+\usepackage{array}    % De Doc 2
+\usepackage{booktabs} % De Doc 2
+\usepackage{enumitem} % De Doc 2 (y útil para el enumerate de Doc 1)
+\usepackage{siunitx}  % De Doc 2
+
+% --- Configuraciones de Doc 1 ---
+\geometry{a4paper, margin=1in} % Usamos la configuración de Doc 1
+
+\title{Soluciones de Problemas de Estadística y Guía PSU} % Título combinado o modificado
+\date{\today}
+\author{Felipe Colli} % Tomado de Doc 2, o dejar vacío {} si se prefiere
+
+% --- Configuraciones de Doc 2 ---
+\sisetup{
+    output-decimal-marker={,}, % Usar coma como separador decimal
+    group-separator={.},       % Usar punto como separador de miles (si aplica)
+    group-minimum-digits=4     % Agrupar a partir de 4 dígitos
+}
+\setlength{\parindent}{0pt} % Sin indentación de párrafo
+\setlength{\parskip}{1.5ex} % Espacio entre párrafos
+
+% --- Comandos personalizados de Doc 2 ---
+\newcommand{\mean}[1]{\ensuremath{\bar{#1}}} % Comando para la media
+\newcommand{\stdev}{\ensuremath{s}} % Comando para desviación estándar muestral
+\newcommand{\pstdev}{\ensuremath{\sigma}} % Comando para desviación estándar poblacional
+\newcommand{\var}{\ensuremath{s^2}} % Comando para varianza muestral
+\newcommand{\pvar}{\ensuremath{\sigma^2}} % Comando para varianza poblacional
+
+\begin{document}
+\maketitle
+
+% --- Contenido del Documento 1 ---
+\begin{enumerate}
+    \item[\bfseries 689)] La desviación estándar de los datos $4a, 4b$ y $4c$ es $0,16$. Sea $S$ la desviación estándar de los datos $a, b$ y $c$.
+    Por la propiedad de la desviación estándar ante el escalamiento, la desviación estándar de $ka, kb, kc$ es $|k|S$.
+    En este caso, $k=4$. Entonces, la desviación estándar de $4a, 4b, 4c$ es $4S$.
+    Nos dan que $4S = 0,16$.
+    Dividiendo por 4, obtenemos $S = \frac{0,16}{4} = 0,04$.
+    La desviación estándar de los datos $a, b$ y $c$ es $0,04$.
+    \textbf{Respuesta: B) 0,04}
+
+    \item[\bfseries 690)] Se comparan dos muestras: mamuts y ratones.
+    Mamuts: Peso promedio $\bar{x}_M = 7500$ kg. Desviación estándar $S_M$ desconocida.
+    Ratones: Peso promedio $\bar{x}_R = 30$ g. Desviación estándar $S_R = 5$ g.
+    Para comparar la dispersión (homogeneidad) de muestras con medias muy diferentes, se usa el Coeficiente de Variación (CV), $CV = S / |\bar{x}|$. Un menor CV indica mayor homogeneidad (menor dispersión relativa).
+    $CV_{ratones} = \frac{5 \text{ g}}{30 \text{ g}} = \frac{1}{6} \approx 0,167$.
+    No conocemos $S_M$, pero es biológicamente razonable asumir que la variación relativa del peso de los mamuts es menor. Por ejemplo, si $S_M = 500$ kg, $CV_{mamuts} = \frac{500 \text{ kg}}{7500 \text{ kg}} = \frac{1}{15} \approx 0,067$.
+    Incluso con una desviación estándar grande en términos absolutos (ej. 1000 kg), el CV sería $1000/7500 = 2/15 \approx 0,133$, que sigue siendo menor que el CV de los ratones.
+    Por lo tanto, es muy probable que $CV_{mamuts} < CV_{ratones}$. Esto significa que la muestra de los mamuts es más homogénea (menos dispersa relativamente) que la de los ratones.
+    \textbf{Respuesta: B) La muestra de los mamuts es más homogénea que la de los ratones}
+
+    \item[\bfseries 691)] Sean $a, b, c, d$ números positivos con varianza $\sigma^2$ y media $\bar{x}$. Buscamos la afirmación FALSA.
+    A) Si $n > 0$, la varianza de $a+n, b+n, c+n, d+n$ es $\sigma^2$. La varianza es invariante ante traslaciones. La afirmación dice que es $\sigma^2 + n$, lo cual es FALSO.
+    B) Si $a=b=c=d$, todos los datos son iguales, no hay dispersión, por lo tanto la varianza $\sigma^2 = 0$. VERDADERO.
+    C) La varianza de $3a, 3b, 3c, 3d$ es $Var(3x_i) = 3^2 Var(x_i) = 9\sigma^2$. VERDADERO.
+    D) Si $q > 0$, la media aritmética de $a+q, b+q, c+q, d+q$ es $Mean(x_i+q) = Mean(x_i) + q = \bar{x} + q$. VERDADERO.
+    E) La varianza ($\sigma^2$) y la desviación estándar ($\sigma$) pueden ser iguales si $\sigma^2 = \sigma$, lo cual ocurre si $\sigma=0$ o $\sigma=1$. Es posible. VERDADERO.
+\textbf{Respuesta: La A es la afirmación FALSA.}
+
+    \item[\bfseries 692)] Datos: $(2p - 1), (2p + 1), (2p + 3), (2p + 5)$. N=4.
+    Media: $\bar{x} = \frac{(2p-1) + (2p+1) + (2p+3) + (2p+5)}{4} = \frac{8p + 8}{4} = 2p + 2$.
+    Varianza: Calculamos las desviaciones $(x_i - \bar{x})$:
+    $(2p-1) - (2p+2) = -3$
+    $(2p+1) - (2p+2) = -1$
+    $(2p+3) - (2p+2) = 1$
+    $(2p+5) - (2p+2) = 3$
+    Desviaciones al cuadrado: $(-3)^2=9, (-1)^2=1, (1)^2=1, (3)^2=9$.
+    Suma de cuadrados = $9 + 1 + 1 + 9 = 20$.
+    Varianza $\sigma^2 = \frac{\text{Suma de cuadrados}}{N} = \frac{20}{4} = 5$.
+    Desviación típica (estándar) $\sigma = \sqrt{\text{Varianza}} = \sqrt{5}$.
+    \textbf{Respuesta: B) $(2p + 2)$ y $\sqrt{5}$}
+
+    \item[\bfseries 693)] Conjunto: $\{n, n/2, 2n\}$, donde $n>0$. N=3.
+    Media: $\bar{x} = \frac{n + n/2 + 2n}{3} = \frac{7n/2}{3} = \frac{7n}{6}$.
+    Desviaciones $(x_i - \bar{x})$:
+    $n - \frac{7n}{6} = -\frac{n}{6}$
+    $\frac{n}{2} - \frac{7n}{6} = \frac{3n-7n}{6} = -\frac{4n}{6} = -\frac{2n}{3}$
+    $2n - \frac{7n}{6} = \frac{12n-7n}{6} = \frac{5n}{6}$
+    Desviaciones al cuadrado: $(-\frac{n}{6})^2 = \frac{n^2}{36}$, $(-\frac{2n}{3})^2 = \frac{4n^2}{9} = \frac{16n^2}{36}$, $(\frac{5n}{6})^2 = \frac{25n^2}{36}$.
+    Suma de cuadrados = $\frac{n^2}{36} + \frac{16n^2}{36} + \frac{25n^2}{36} = \frac{(1+16+25)n^2}{36} = \frac{42n^2}{36} = \frac{7n^2}{6}$.
+    Varianza $\sigma^2 = \frac{\text{Suma de cuadrados}}{N} = \frac{7n^2/6}{3} = \frac{7n^2}{18}$.
+    Desviación estándar $\sigma = \sqrt{\frac{7n^2}{18}} = n \sqrt{\frac{7}{18}} = n \frac{\sqrt{7}}{\sqrt{18}} = n \frac{\sqrt{7}}{3\sqrt{2}} = n \frac{\sqrt{14}}{6}$.
+    Revisamos las opciones:
+    C) $\frac{1}{3}\sqrt{\frac{7}{2}}n = \frac{n}{3} \frac{\sqrt{7}}{\sqrt{2}} = \frac{n\sqrt{14}}{6}$. Coincide.
+    \textbf{Respuesta: C) $\frac{1}{3}\sqrt{\frac{7}{2}}n$}
+
+    \item[\bfseries 694)] Tabla de frecuencias:
+    Clases: [0-4[, [4-8[, [8-12[
+    Marcas de clase ($x_i$): 2, 6, 10
+    Frecuencias ($f_i$): 2, 1, 2
+    Total datos $N = 2+1+2 = 5$. (II es VERDADERA)
+    Media $\bar{x} = \frac{\sum f_i x_i}{N} = \frac{2(2)+1(6)+2(10)}{5} = \frac{4+6+20}{5} = \frac{30}{5} = 6$. (I es VERDADERA)
+    Varianza $\sigma^2 = \frac{\sum f_i (x_i - \bar{x})^2}{N} = \frac{2(2-6)^2 + 1(6-6)^2 + 2(10-6)^2}{5} = \frac{2(-4)^2 + 1(0)^2 + 2(4)^2}{5} = \frac{2(16) + 0 + 2(16)}{5} = \frac{32+32}{5} = \frac{64}{5} = 12,8$.
+    Desviación estándar $\sigma = \sqrt{12,8}$. (III es VERDADERA)
+    \textbf{Respuesta: E) I, II y III}
+
+    \item[\bfseries 695)] Edades: {3, 4, 7, 9, 12}. N=5.
+    I) Media $\bar{x} = (3+4+7+9+12)/5 = 35/5 = 7$. Si todos aumentan 1 año, la nueva media es $\bar{x}+1 = 7+1=8$. La afirmación dice que sería 5 unidades mayores. FALSO.
+    II) La moda es el valor más frecuente. Todos los valores aparecen una vez. La muestra es amodal. VERDADERO.
+    III) Media = 7. Desviaciones al cuadrado: $(3-7)^2=16$, $(4-7)^2=9$, $(7-7)^2=0$, $(9-7)^2=4$, $(12-7)^2=25$. Suma de cuadrados = $16+9+0+4+25 = 54$. Varianza $\sigma^2 = 54/5 = 10,8$. Desviación estándar $\sigma = \sqrt{10,8}$. VERDADERO.
+    \textbf{Respuesta: E) Solo II y III}
+
+    \item[\bfseries 696)] Tabla de frecuencias:
+    Dato ($x_i$): 12, 13, 14, 15
+    Frecuencia ($f_i$): 3, 1, 4, 2
+    Total datos $N = 3+1+4+2 = 10$.
+    Media $\bar{x} = \frac{\sum f_i x_i}{N} = \frac{3(12)+1(13)+4(14)+2(15)}{10} = \frac{36+13+56+30}{10} = \frac{135}{10} = 13,5$.
+    Varianza $\sigma^2 = \frac{\sum f_i (x_i - \bar{x})^2}{N} = \frac{3(12-13,5)^2 + 1(13-13,5)^2 + 4(14-13,5)^2 + 2(15-13,5)^2}{10}$
+    $= \frac{3(-1,5)^2 + 1(-0,5)^2 + 4(0,5)^2 + 2(1,5)^2}{10} = \frac{3(2,25) + 1(0,25) + 4(0,25) + 2(2,25)}{10}$
+    $= \frac{6,75 + 0,25 + 1,00 + 4,50}{10} = \frac{12,5}{10} = 1,25$.
+    \textbf{Respuesta: D) 1,25}
+
+    \item[\bfseries 697)] Variable original: $n$ = nº respuestas correctas. Media($n$) = 30. Varianza($n$) = 9. Desviación estándar $S_n = \sqrt{9}=3$.
+    Variable nueva: $P = \text{puntaje} = 4n + 64$. Es una transformación lineal $P = a n + b$ con $a=4, b=64$.
+    Propiedad de la desviación estándar: $S_{a n + b} = |a| S_n$.
+    $S_P = |4| S_n = 4 \times 3 = 12$.
+    \textbf{Respuesta: C) 12}
+
+    \item[\bfseries 698)] Datos: $x, y, z, w$. Varianza $Var(x,y,z,w) = \lambda$.
+    Nuevos datos: $kx, ky, kz, kw$.
+    Propiedad de la varianza: $Var(k \cdot \text{datos}) = k^2 Var(\text{datos})$.
+    $Var(kx, ky, kz, kw) = k^2 Var(x, y, z, w) = k^2 \lambda$.
+    \textbf{Respuesta: C) $k^2\lambda$}
+
+    \item[\bfseries 699)] Tabla adjunta: $(x_i - \bar{x})^2$.
+    Cuando $x_i=6$, $(x_i - \bar{x})^2 = 0$. Esto implica que la media $\bar{x} = 6$.
+    Calculamos A y B:
+    Para $x_i=7$, $A = (x_i - \bar{x})^2 = (7-6)^2 = 1^2 = 1$.
+    Para $x_i=4$, $B = (x_i - \bar{x})^2 = (4-6)^2 = (-2)^2 = 4$.
+    Evaluamos las proposiciones:
+    I) $A+B = 1+4 = 5$. La proposición dice $A+B=3$. FALSO.
+    II) Varianza $\sigma^2 = \text{Promedio de } (x_i - \bar{x})^2$. Los valores son (para $x_i=4,5,6,7,8$): $B, 1, 0, A, 4$, es decir, $4, 1, 0, 1, 4$.
+    $\sigma^2 = \frac{4+1+0+1+4}{5} = \frac{10}{5} = 2$.
+    Desviación estándar $\sigma = \sqrt{2}$. La proposición II dice $\sigma = \sqrt{2}$. VERDADERO.
+    III) La varianza es 2. La proposición III dice que la varianza es 2. VERDADERO.
+    \textbf{Respuesta: C) Solo II y III}
+
+    \item[\bfseries 700)] Si todos los datos de una muestra $x_i$ se incrementan en 4 unidades (nuevos datos $x_i + 4$), la varianza no cambia. $Var(x_i + k) = Var(x_i)$.
+    \textbf{Respuesta: C) Queda igual}
+
+    \item[\bfseries 701)] Si todos los datos $x_i$ se multiplican por 4 (nuevos datos $4x_i$).
+    I) El promedio se multiplica por 4: $Mean(4x_i) = 4 Mean(x_i)$. VERDADERO.
+    II) La desviación típica (estándar) se multiplica por $|4|=4$: $Stdev(4x_i) = |4| Stdev(x_i) = 4 Stdev(x_i)$. VERDADERO.
+    III) La varianza se multiplica por $4^2=16$: $Var(4x_i) = 4^2 Var(x_i) = 16 Var(x_i)$. La afirmación dice que se duplica. FALSO.
+    \textbf{Respuesta: C) Solo I y II}
+
+    \item[\bfseries 702)] Juan: Promedio=613, Desv. Est.=54,47. Pedro: Promedio=613, Desv. Est.=168,74.
+    I) La desviación estándar mide la dispersión. Juan tiene menor desviación estándar ($54,47 < 168,74$), por lo que sus puntajes están más concentrados cerca de su promedio 613. VERDADERO.
+    II) Ambos tienen el mismo promedio, pero esto no significa que obtuvieron los mismos puntajes individuales. FALSO.
+    III) Es perfectamente posible tener la misma media y diferentes desviaciones estándar. No indica un error. FALSO.
+    \textbf{Respuesta: A) Solo I}
+
+    \item[\bfseries 703)] Muestra original: N=10, Desv. Est. $\sigma = 1,5$. Varianza $\sigma^2 = (1,5)^2 = 2,25$.
+    Transformación: A cada elemento se le agregan 10 unidades ($x_i' = x_i + 10$).
+    Efecto: Sumar una constante no cambia la desviación estándar ni la varianza.
+    Nueva Desv. Est. = 1,5. Nueva Varianza = 2,25.
+    \textbf{Respuesta: E) 1,5 \quad 2,25}
+
+    \item[\bfseries 704)] Buscamos la alternativa FALSA.
+    A) Desviación estándar pequeña significa datos concentrados cerca de la media. VERDADERO.
+    B) Desviación estándar grande indica datos dispersos, lo que puede interpretarse como menor confianza en que la media sea representativa de todos los datos. VERDADERO (interpretación común).
+    C) La desviación estándar ($\sigma = \sqrt{Var}$) es siempre no negativa ($\ge 0$). VERDADERO.
+    D) Dos muestras con igual N y misma media pueden tener desviaciones estándar diferentes. Ejemplo: {0, 10} (N=2, Media=5, SD=5) y {4, 6} (N=2, Media=5, SD=1). FALSO. % Corregido: D es la falsa.
+    E) La desviación estándar tiene las mismas unidades que los datos originales. VERDADERO.
+    \textbf{Respuesta: D)}
+
+    \item[\bfseries 705)] Muestra $n_1, n_2, n_3, n_4$ con promedio $\mu$. Se agrega dato $p$. N cambia de 4 a 5.
+    I) Si $p = \mu$. El nuevo dato está en la media. La suma de cuadrados de desviaciones no cambia: $\sum_{i=1}^4 (n_i-\mu)^2$. La nueva varianza es $Var_{nueva} = \frac{\sum (n_i-\mu)^2}{5}$. La varianza original era $Var_{orig} = \frac{\sum (n_i-\mu)^2}{4}$. Si $Var_{orig}>0$, entonces $Var_{nueva} = \frac{4}{5} Var_{orig} < Var_{orig}$. La desviación estándar disminuye. La afirmación dice que aumenta. FALSO.
+    II) Si $p = 0$. El efecto en la desviación estándar depende de los datos originales y $\mu$. Si los datos son {1,1,1,1}, $\mu=1, \sigma=0$. Agregando 0, la nueva muestra es {1,1,1,1,0}, $\bar{x}=4/5$, $\sigma^2 = [4(1-4/5)^2 + (0-4/5)^2]/5 = [4(1/25)+16/25]/5 = (20/25)/5 = (4/5)/5=4/25$. $\sigma = 2/5$. Aumentó. Si los datos son {-1,-1,1,1}, $\mu=0, \sigma=1$. Agregando 0, la muestra es {-1,-1,1,1,0}, $\bar{x}=0$, $\sigma^2 = [2(-1-0)^2+2(1-0)^2+(0-0)^2]/5 = (2+2+0)/5 = 4/5$. $\sigma = \sqrt{4/5} < 1$. Disminuyó. La afirmación dice que siempre disminuye. FALSO.
+    III) Si $n_1, n_2, n_3, n_4, p$ son enteros consecutivos. Sean $k, k+1, k+2, k+3, k+4$. N=5. Media = $(k+k+4)/2 = k+2$. Desviaciones: -2, -1, 0, 1, 2. Cuadrados: 4, 1, 0, 1, 4. Suma = 10. Varianza $\sigma^2 = 10/5 = 2$. Desviación estándar $\sigma = \sqrt{2}$. VERDADERO.
+    \textbf{Respuesta: C) Solo III}
+
+    \item[\bfseries 706)] Comparar $S_A$ y $S_B$.
+    Tabla A: Datos $x_i$: 3, 5, 7 con frec $f_i$: 3, 4, 2.
+    Tabla B: Datos $y_i$: 555.553, 555.555, 555.557 con frec $f_i$: 3, 4, 2.
+    Observamos que $y_i = x_i + 555.550$. Los datos de B son una traslación de los datos de A.
+    La desviación estándar es invariante ante traslaciones ($Stdev(x_i+k) = Stdev(x_i)$).
+    Por lo tanto, $S_A = S_B$.
+    \textbf{Respuesta: E) $S_A = S_B$}
+
+    \item[\bfseries 707)] Población {1, 3, p, q}. N=4. Promedio $\mu=3$. Varianza $\sigma^2=2$. Calcular $3p^2+3q^2$.
+    Promedio: $\frac{1+3+p+q}{4} = 3 \implies 4+p+q = 12 \implies p+q = 8$.
+    Varianza: $\frac{(1-3)^2 + (3-3)^2 + (p-3)^2 + (q-3)^2}{4} = 2$.
+    $\frac{(-2)^2 + 0^2 + (p^2-6p+9) + (q^2-6q+9)}{4} = 2$.
+    $\frac{4 + 0 + p^2-6p+9 + q^2-6q+9}{4} = 2$.
+    $p^2 + q^2 - 6(p+q) + 22 = 8$.
+    Sustituimos $p+q=8$: $p^2 + q^2 - 6(8) + 22 = 8$.
+    $p^2 + q^2 - 48 + 22 = 8$.
+    $p^2 + q^2 - 26 = 8$.
+    $p^2 + q^2 = 34$.
+    Se pide $3p^2 + 3q^2 = 3(p^2+q^2) = 3(34) = 102$.
+    \textbf{Respuesta: D) 102}
+
+    \item[\bfseries 713)] Datos X: {10, 12, 14, 16}. N=4.
+    I) Mediana (X): Datos ordenados. Como N=4 (par), la mediana es el promedio de los dos centrales: $(12+14)/2 = 13$. VERDADERO.
+    II) Varianza (X): Media $\bar{x} = (10+12+14+16)/4 = 52/4 = 13$. Desviaciones al cuadrado: $(10-13)^2=9, (12-13)^2=1, (14-13)^2=1, (16-13)^2=9$. Suma de cuadrados = $9+1+1+9 = 20$. Varianza $\sigma^2 = 20/4 = 5$. VERDADERO.
+    III) Rango (X): Max - Min = $16 - 10 = 6$. VERDADERO.
+    \textbf{Respuesta: E) I, II y III}
+
+    \item[\bfseries 714)] Muestra original: $n$ elementos, media $\mu$, desv. est. $\sigma$, varianza $\sigma^2$.
+    Nueva muestra: $y_i = 2x_i + 5$.
+    Nueva Media: $Mean(y_i) = Mean(2x_i + 5) = 2 Mean(x_i) + 5 = 2\mu + 5$.
+    Nueva Desv. Est.: $Stdev(y_i) = Stdev(2x_i + 5) = |2| Stdev(x_i) = 2\sigma$.
+    Nueva Varianza: $Var(y_i) = Var(2x_i + 5) = 2^2 Var(x_i) = 4\sigma^2$.
+    La afirmación correcta es: Media $2\mu+5$ y Varianza $4\sigma^2$.
+    \textbf{Respuesta: D) Su media es $2\mu + 5$ y su varianza $4\sigma^2$}
+
+    \item[\bfseries 715)] Determinar la mediana de una población de 100 datos.
+    (1) La media aritmética es 39. Conocer la media no es suficiente para determinar la mediana. (Insuficiente).
+    (2) La varianza es 0. Si la varianza es 0, todos los datos son iguales entre sí. Si todos los 100 datos son iguales, deben ser iguales a la media (que también sería 39, aunque no se use esa info de (1)). Si todos los datos son iguales a un valor $k$, la mediana también es $k$. (Suficiente).
+    \textbf{Respuesta: B) (2) por sí sola}
+
+\end{enumerate}
+
+\newpage % Separador entre el contenido de los dos documentos originales
+
+% --- Contenido del Documento 2 ---
+\section*{Soluciones Ultima Pagina (Guía PSU)} % Título original de la sección
+
+%----------------------------------------------------
+\subsection*{Ejercicio 1: Análisis de Notas}
+%----------------------------------------------------
+\textbf{Datos proporcionados:}
+\begin{itemize}[nosep]
+    \item Media (\mean{x}) en ambos trimestres: \num{5,1}
+    \item Nota máxima en ambos trimestres: \num{7,0}
+    \item Nota mínima en ambos trimestres: \num{3,2}
+    \item Número de estudiantes (N): 30 (contando las notas en cada tabla)
+\end{itemize}
+
+\begin{enumerate}
+    \item \textbf{Coeficiente del rango (CRV):}
+    El Rango (R) es la diferencia entre el valor máximo y el mínimo.
+    \[ R = \text{Máximo} - \text{Mínimo} = \num{7,0} - \num{3,2} = \num{3,8} \]
+    El rango es el mismo para ambos trimestres.
+    El Coeficiente de Variación del Rango (CRV) se calcula como $CRV = \frac{R}{\mean{x}}$.
+    \[ CRV = \frac{\num{3,8}}{\num{5,1}} \approx \num{0,745} \]
+    \textbf{Respuesta:} El coeficiente del rango (CRV) es aproximadamente \num{0,745} para \textbf{ambos trimestres}. Basado en esta medida, ninguno tiene un coeficiente de rango menor que el otro.
+
+    \item \textbf{Interpretación del CRV:}
+    \textbf{Respuesta:} Dado que el CRV es el mismo para ambos trimestres, esta medida por sí sola \textbf{no indica} que un trimestre presente calificaciones más dispersas que el otro en relación al promedio.
+
+    \item \textbf{Coeficiente de Desviación Media (CDM):}
+    Primero, calculamos la Desviación Media (DM) para cada trimestre: $DM = \frac{\sum |x_i - \mean{x}|}{N}$.
+    \begin{itemize}[nosep]
+        \item \textbf{Trimestre 1:} La suma de las desviaciones absolutas es $\sum |x_i - \num{5,1}| = \num{24,6}$.
+          \[ DM_1 = \frac{\num{24,6}}{30} = \num{0,82} \]
+        \item \textbf{Trimestre 2:} La suma de las desviaciones absolutas es $\sum |x_i - \num{5,1}| = \num{17,6}$.
+          \[ DM_2 = \frac{\num{17,6}}{30} \approx \num{0,587} \]
+    \end{itemize}
+    Luego, calculamos el Coeficiente de Desviación Media (CDM): $CDM = \frac{DM}{\mean{x}}$.
+    \begin{itemize}[nosep]
+        \item \textbf{Trimestre 1:} $CDM_1 = \frac{\num{0,82}}{\num{5,1}} \approx \num{0,161}$
+        \item \textbf{Trimestre 2:} $CDM_2 = \frac{\num{0,587}}{\num{5,1}} \approx \num{0,115}$
+    \end{itemize}
+    \textbf{Respuesta:} El CDM es aprox. \num{0,161} para el primer trimestre y aprox. \num{0,115} para el segundo trimestre.
+
+    \item \textbf{Interpretación del CDM y la "sensación":}
+    \textbf{Respuesta:} El CDM mide la dispersión promedio relativa a la media. El segundo trimestre tiene un CDM menor (\num{0,115} vs \num{0,161}), lo que indica que sus notas, en promedio, estaban más cerca de la media \num{5,1}. Esto significa menor dispersión relativa en el segundo trimestre. Esto \textbf{corrobora la "sensación"} de los estudiantes; aunque la media era igual, las notas más agrupadas del segundo trimestre pueden percibirse como "mejores" o más consistentes.
+
+    \item \textbf{Coeficiente de Desviación Estándar (Coeficiente de Variación, CV):}
+    Primero, calculamos la Desviación Estándar Poblacional (\pstdev) para cada trimestre: $\pstdev = \sqrt{\frac{\sum (x_i - \mean{x})^2}{N}}$.
+    \begin{itemize}[nosep]
+        \item \textbf{Trimestre 1:} Suma de cuadrados de desviaciones $\sum (x_i - \num{5,1})^2 = \num{31,14}$.
+          \[ \pvar_1 = \frac{\num{31,14}}{30} \approx \num{1,038} \implies \pstdev_1 = \sqrt{\num{1,038}} \approx \num{1,019} \]
+        \item \textbf{Trimestre 2:} Suma de cuadrados de desviaciones $\sum (x_i - \num{5,1})^2 = \num{17,18}$.
+          \[ \pvar_2 = \frac{\num{17,18}}{30} \approx \num{0,5727} \implies \pstdev_2 = \sqrt{\num{0,5727}} \approx \num{0,757} \]
+    \end{itemize}
+    Luego, calculamos el Coeficiente de Variación (CV): $CV = \frac{\pstdev}{\mean{x}}$.
+    \begin{itemize}[nosep]
+        \item \textbf{Trimestre 1:} $CV_1 = \frac{\num{1,019}}{\num{5,1}} \approx \num{0,1998} \approx \num{0,200}$
+        \item \textbf{Trimestre 2:} $CV_2 = \frac{\num{0,757}}{\num{5,1}} \approx \num{0,148}$
+    \end{itemize}
+    \textbf{Respuesta:} El CV es aprox. \num{0,200} (o 20,0\%) para el primer trimestre y aprox. \num{0,148} (o 14,8\%) para el segundo trimestre.
+
+    \item \textbf{Homogeneidad:}
+    \textbf{Respuesta:} Las calificaciones más homogéneas son las que presentan menor dispersión relativa (menor CV). Por lo tanto, el \textbf{Segundo Trimestre} (CV $\approx$ \num{0,148}) presenta calificaciones más homogéneas.
+
+    \item \textbf{Interpretación del CV:}
+    \textbf{Respuesta:} El CV indica qué tan grande es la desviación estándar en relación a la media. En el primer trimestre, la desviación estándar es un 20\% de la media, mientras que en el segundo es solo un 14,8\%. Esto confirma cuantitativamente que las notas del segundo trimestre están más concentradas alrededor de la media \num{5,1}.
+
+    \item \textbf{Mejor Trimestre:}
+    \textbf{Respuesta:} Aunque la media, máximo y mínimo son iguales, el \textbf{Segundo Trimestre} puede considerarse "mejor" debido a su \textbf{menor dispersión} (menor DM, menor \pstdev, menor CV). Esto sugiere mayor consistencia en el rendimiento de los estudiantes, lo que puede ser preferible y coincide con la "sensación" reportada. Un grupo más homogéneo puede indicar un aprendizaje más uniforme.
+
+    \item \textbf{Gráfica Representativa:}
+    \textbf{Respuesta:} Un \textbf{diagrama de caja y bigotes (boxplot) comparativo} sería ideal. Mostraría la misma media (o medianas similares), los mismos extremos, pero visualizaría claramente la diferencia en la dispersión (longitud de la caja y/o bigotes) entre los dos trimestres. Alternativamente, histogramas o diagramas de puntos comparativos también servirían.
+
+\end{enumerate}
+
+%----------------------------------------------------
+\subsection*{Ejercicio 2: Salto con Garrocha}
+%----------------------------------------------------
+\textbf{Datos:} \num{2,50}; \num{2,80}; \num{2,60}; \num{3,00}; \num{2,90} (metros). N = 5.
+
+\begin{enumerate}
+    \item \textbf{Suma de desviaciones respecto a la media:}
+    Primero, calcular la media (\mean{x}):
+    \[ \mean{x} = \frac{\num{2,50} + \num{2,80} + \num{2,60} + \num{3,00} + \num{2,90}}{5} = \frac{\num{13,80}}{5} = \num{2,76} \text{ m} \]
+    Ahora, calcular las desviaciones $(x_i - \mean{x})$:
+    \begin{itemize}[nosep]
+        \item $\num{2,50} - \num{2,76} = \num{-0,26}$
+        \item $\num{2,80} - \num{2,76} = \num{+0,04}$
+        \item $\num{2,60} - \num{2,76} = \num{-0,16}$
+        \item $\num{3,00} - \num{2,76} = \num{+0,24}$
+        \item $\num{2,90} - \num{2,76} = \num{+0,14}$
+    \end{itemize}
+    Sumar las desviaciones:
+    \[ (\num{-0,26}) + (\num{+0,04}) + (\num{-0,16}) + (\num{+0,24}) + (\num{+0,14}) = (\num{-0,42}) + (\num{+0,42}) = 0 \]
+    \textbf{Respuesta:} Se comprueba que la suma de las desviaciones respecto a la media es \textbf{0}.
+
+    \item \textbf{Desviación Media (DM):}
+    Usamos las desviaciones absolutas de la parte (a): $|\num{-0,26}|=\num{0,26}$; $|\num{+0,04}|=\num{0,04}$; $|\num{-0,16}|=\num{0,16}$; $|\num{+0,24}|=\num{0,24}$; $|\num{+0,14}|=\num{0,14}$.
+    Sumamos las desviaciones absolutas:
+    \[ \sum |x_i - \mean{x}| = \num{0,26} + \num{0,04} + \num{0,16} + \num{0,24} + \num{0,14} = \num{0,84} \]
+    Calculamos la Desviación Media:
+    \[ DM = \frac{\sum |x_i - \mean{x}|}{N} = \frac{\num{0,84}}{5} = \num{0,168} \text{ m} \]
+    \textbf{Respuesta:} La desviación media de los datos es \textbf{\num{0,168} metros}.
+\end{enumerate}
+
+%----------------------------------------------------
+\subsection*{Ejercicio 3: Distribución de Frecuencias}
+%----------------------------------------------------
+\textbf{Datos:} Tabla de frecuencias agrupadas. N = \num{1800}.
+\textbf{Tabla de Cálculos:} (x\textsubscript{m} = Marca de Clase)
+
+\centering
+% \begin{tabular}{crrcrr} % Original - Sin booktabs
+% \toprule % Necesita booktabs
+% Puntaje & Freq ($f_i$) & $x_{mi}$ & $f_i \cdot x_{mi}$ & $(x_{mi} - \mean{x})$ & $f_i \cdot (x_{mi} - \mean{x})^2$ \\
+% \midrule % Necesita booktabs
+% 0 - 2   & 21       & 1  & 21       & -13,82 & \num{4001,3} \\
+% 3 - 5   & 50       & 4  & 200      & -10,82 & \num{5853,6} \\
+% 6 - 8   & 110      & 7  & 770      & -7,82 & \num{6730,3} \\
+% 9 - 11  & 241      & 10 & 2410     & -4,82 & \num{5599,7} \\
+% 12 - 14 & 423      & 13 & 5499     & -1,82 & \num{1398,5} \\
+% 15 - 17 & 457      & 16 & 7312     & 1,18 & \num{634,4} \\
+% 18 - 20 & 275      & 19 & 5225     & 4,18 & \num{4806,2} \\
+% 21 - 23 & 134      & 22 & 2948     & 7,18 & \num{6909,0} \\
+% 24 - 26 & 66       & 25 & 1650     & 10,18 & \num{6840,1} \\
+% 27 - 29 & 23       & 28 & 644      & 13,18 & \num{3994,8} \\
+% \midrule % Necesita booktabs
+% \textbf{Total} & \textbf{1800} &    & \textbf{26679} & & \textbf{46767,9} \\
+% \bottomrule % Necesita booktabs
+% \end{tabular}
+% Usando booktabs y siunitx para alinear números
+\begin{tabular}{l S[table-format=4.0] S[table-format=2.0] S[table-format=5.0] S[table-format=-2.2] S[table-format=5.1]}
+\toprule
+Puntaje & {$f_i$} & {$x_{mi}$} & {$f_i \cdot x_{mi}$} & {$(x_{mi} - \mean{x})$} & {$f_i \cdot (x_{mi} - \mean{x})^2$} \\
+\midrule
+0 - 2   & 21      & 1  & 21     & -13,82 & 4001,3 \\
+3 - 5   & 50      & 4  & 200    & -10,82 & 5853,6 \\
+6 - 8   & 110     & 7  & 770    & -7,82  & 6730,3 \\
+9 - 11  & 241     & 10 & 2410   & -4,82  & 5599,7 \\
+12 - 14 & 423     & 13 & 5499   & -1,82  & 1398,5 \\
+15 - 17 & 457     & 16 & 7312   & 1,18   & 634,4 \\
+18 - 20 & 275     & 19 & 5225   & 4,18   & 4806,2 \\
+21 - 23 & 134     & 22 & 2948   & 7,18   & 6909,0 \\
+24 - 26 & 66      & 25 & 1650   & 10,18  & 6840,1 \\
+27 - 29 & 23      & 28 & 644    & 13,18  & 3994,8 \\
+\midrule
+\textbf{Total} & \textbf{1800} &    & \textbf{26679} & & \textbf{46767,9} \\
+\bottomrule
+\end{tabular}
+
+
+\vspace{1ex}
+Primero, calculamos la media (\mean{x}):
+\[ \mean{x} = \frac{\sum (f_i \cdot x_{mi})}{N} = \frac{\num{26679}}{\num{1800}} \approx \num{14,82} \text{ puntos} \]
+
+\begin{enumerate}
+    \item \textbf{Desviación Estándar (\pstdev):}
+    Calculamos la varianza poblacional (\pvar):
+    \[ \pvar = \frac{\sum f_i \cdot (x_{mi} - \mean{x})^2}{N} = \frac{\num{46767,9}}{\num{1800}} \approx \num{25,982} \]
+    La desviación estándar es la raíz cuadrada de la varianza:
+    \[ \pstdev = \sqrt{\pvar} \approx \sqrt{\num{25,982}} \approx \num{5,097} \text{ puntos} \]
+    (Nota: Usando la fórmula $\pvar = [\sum(f \cdot x_m^2) / N] - \mean{x}^2$, con $\sum(f \cdot x_m^2) = \num{442203}$, da $\pvar = \num{442203}/1800 - (\num{26679}/1800)^2 \approx \num{245,6683} - \num{14,82167}^2 \approx \num{245,6683} - \num{219,6819} \approx \num{25,986}$, que es muy similar).
+    \textbf{Respuesta:} La desviación estándar de la distribución es aproximadamente \textbf{\num{5,10} puntos}.
+
+    \item \textbf{Valores $\mean{x} + \pstdev$ y $\mean{x} - \pstdev$:}
+    \[ \mean{x} - \pstdev \approx \num{14,82} - \num{5,10} = \num{9,72} \text{ puntos} \]
+    \[ \mean{x} + \pstdev \approx \num{14,82} + \num{5,10} = \num{19,92} \text{ puntos} \]
+    \textbf{Respuesta:} Los valores corresponden aproximadamente a \textbf{\num{9,72} puntos} y \textbf{\num{19,92} puntos}.
+\end{enumerate}
+
+
+%----------------------------------------------------
+\subsection*{Ejercicio 4: Prueba de Matemática}
+%----------------------------------------------------
+\textbf{Datos:}
+\begin{itemize}[nosep]
+    \item Curso A: $\mean{x}_A = \num{5,3}$; $\stdev_A = \num{0,7}$ (Asumimos desviación estándar muestral 's', aunque podría ser poblacional $\pstdev$).
+    \item Curso B: $\mean{x}_B = \num{5,4}$; $\stdev_B = \num{0,4}$
+\end{itemize}
+
+\begin{enumerate}
+    \item \textbf{Comparación de Alumnos (Rendimiento Relativo):}
+    Para comparar el rendimiento relativo a su curso, calculamos el puntaje Z (o puntaje estándar): $Z = \frac{x - \mean{x}}{\stdev}$.
+    \begin{itemize}[nosep]
+        \item \textbf{Alumno A:} Nota $x_A = \num{6,7}$.
+          \[ Z_A = \frac{\num{6,7} - \num{5,3}}{\num{0,7}} = \frac{\num{1,4}}{\num{0,7}} = \num{2,0} \]
+          (Este alumno está 2 desviaciones estándar por encima de la media de su curso).
+        \item \textbf{Alumno B:} Nota $x_B = \num{6,6}$.
+          \[ Z_B = \frac{\num{6,6} - \num{5,4}}{\num{0,4}} = \frac{\num{1,2}}{\num{0,4}} = \num{3,0} \]
+          (Este alumno está 3 desviaciones estándar por encima de la media de su curso).
+    \end{itemize}
+    Comparamos los puntajes Z: $Z_B (\num{3,0}) > Z_A (\num{2,0})$.
+    \textbf{Respuesta:} Al alumno del \textbf{Curso B} le fue mejor en la prueba en relación a su curso, ya que su rendimiento relativo (medido por el puntaje Z) fue superior al del alumno del Curso A.
+
+    \item \textbf{Justificación:}
+    \textbf{Respuesta:} La justificación se basa en el \textbf{puntaje Z}. Aunque la nota absoluta del alumno A (\num{6,7}) es ligeramente mayor que la del alumno B (\num{6,6}), el puntaje Z mide qué tan excepcional es esa nota dentro del contexto de su propio grupo. El Curso B era más homogéneo ($\stdev_B=\num{0,4}$) que el Curso A ($\stdev_A=\num{0,7}$). Por lo tanto, obtener una nota de \num{6,6} en el Curso B representa una desviación mucho mayor y más positiva respecto a la media de su grupo (3 desviaciones estándar) que obtener \num{6,7} en el Curso A (solo 2 desviaciones estándar sobre su media). El alumno B se destacó más dentro de su curso.
+\end{enumerate}
+
+\end{document}

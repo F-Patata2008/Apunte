@@ -1,0 +1,9 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Relación entre Decisiones Económicas del Estado y la Vida de las Personas}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Política Fiscal (Impuestos y Gasto Público)}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Política Monetaria (Banco Central)}{2}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Regulaciones}{2}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Política Comercial (Aranceles, TLCs)}{2}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Inversión y Fomento Productivo}{2}{subsection.1.5}%
+\contentsline {section}{\numberline {2}Repercusiones Sociales del Conflicto de Aranceles Actual}{3}{section.2}%
+\contentsline {section}{\numberline {3}Recomendaciones para el Estado Chileno ante la Situación Económica Internacional}{3}{section.3}%

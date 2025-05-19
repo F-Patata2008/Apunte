@@ -1,0 +1,210 @@
+\documentclass[10pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{booktabs}     % Para líneas de tabla más estéticas
+\usepackage{enumitem}     % Para personalizar listas
+\usepackage[margin=2cm]{geometry} % Ajustar márgenes
+\usepackage{siunitx}      % Para formatear números y unidades correctamente
+\sisetup{
+    output-decimal-marker={,}, % Usar coma como separador decimal
+    group-separator={.},       % Usar punto como separador de miles (si aplica)
+    group-minimum-digits=4     % Agrupar a partir de 4 dígitos
+}
+
+\setlength{\parindent}{0pt} % Sin indentación de párrafo
+\setlength{\parskip}{1.5ex} % Espacio entre párrafos
+
+\newcommand{\mean}[1]{\ensuremath{\bar{#1}}} % Comando para la media
+\newcommand{\stdev}{\ensuremath{s}} % Comando para desviación estándar muestral
+\newcommand{\pstdev}{\ensuremath{\sigma}} % Comando para desviación estándar poblacional
+\newcommand{\var}{\ensuremath{s^2}} % Comando para varianza muestral
+\newcommand{\pvar}{\ensuremath{\sigma^2}} % Comando para varianza poblacional
+    
+\title{Soluciones Guia PSU}
+\author{Felipe Colli}
+\date{12 de abril de 2024}
+\begin{document}
+
+\maketitle
+
+\section*{Soluciones de los Ejercicios}
+
+%----------------------------------------------------
+\subsection*{Ejercicio 1: Análisis de Notas}
+%----------------------------------------------------
+\textbf{Datos proporcionados:}
+\begin{itemize}[nosep]
+    \item Media (\mean{x}) en ambos trimestres: \num{5,1}
+    \item Nota máxima en ambos trimestres: \num{7,0}
+    \item Nota mínima en ambos trimestres: \num{3,2}
+    \item Número de estudiantes (N): 30 (contando las notas en cada tabla)
+\end{itemize}
+
+\begin{enumerate}[a.]
+    \item \textbf{Coeficiente del rango (CRV):}
+    El Rango (R) es la diferencia entre el valor máximo y el mínimo.
+    \[ R = \text{Máximo} - \text{Mínimo} = \num{7,0} - \num{3,2} = \num{3,8} \]
+    El rango es el mismo para ambos trimestres.
+    El Coeficiente de Variación del Rango (CRV) se calcula como $CRV = \frac{R}{\mean{x}}$.
+    \[ CRV = \frac{\num{3,8}}{\num{5,1}} \approx \num{0,745} \]
+    \textbf{Respuesta:} El coeficiente del rango (CRV) es aproximadamente \num{0,745} para \textbf{ambos trimestres}. Basado en esta medida, ninguno tiene un coeficiente de rango menor que el otro.
+
+    \item \textbf{Interpretación del CRV:}
+    \textbf{Respuesta:} Dado que el CRV es el mismo para ambos trimestres, esta medida por sí sola \textbf{no indica} que un trimestre presente calificaciones más dispersas que el otro en relación al promedio.
+
+    \item \textbf{Coeficiente de Desviación Media (CDM):}
+    Primero, calculamos la Desviación Media (DM) para cada trimestre: $DM = \frac{\sum |x_i - \mean{x}|}{N}$.
+    \begin{itemize}[nosep]
+        \item \textbf{Trimestre 1:} La suma de las desviaciones absolutas es $\sum |x_i - \num{5,1}| = \num{24,6}$.
+          \[ DM_1 = \frac{\num{24,6}}{30} = \num{0,82} \]
+        \item \textbf{Trimestre 2:} La suma de las desviaciones absolutas es $\sum |x_i - \num{5,1}| = \num{17,6}$.
+          \[ DM_2 = \frac{\num{17,6}}{30} \approx \num{0,587} \]
+    \end{itemize}
+    Luego, calculamos el Coeficiente de Desviación Media (CDM): $CDM = \frac{DM}{\mean{x}}$.
+    \begin{itemize}[nosep]
+        \item \textbf{Trimestre 1:} $CDM_1 = \frac{\num{0,82}}{\num{5,1}} \approx \num{0,161}$
+        \item \textbf{Trimestre 2:} $CDM_2 = \frac{\num{0,587}}{\num{5,1}} \approx \num{0,115}$
+    \end{itemize}
+    \textbf{Respuesta:} El CDM es aprox. \num{0,161} para el primer trimestre y aprox. \num{0,115} para el segundo trimestre.
+
+    \item \textbf{Interpretación del CDM y la "sensación":}
+    \textbf{Respuesta:} El CDM mide la dispersión promedio relativa a la media. El segundo trimestre tiene un CDM menor (\num{0,115} vs \num{0,161}), lo que indica que sus notas, en promedio, estaban más cerca de la media \num{5,1}. Esto significa menor dispersión relativa en el segundo trimestre. Esto \textbf{corrobora la "sensación"} de los estudiantes; aunque la media era igual, las notas más agrupadas del segundo trimestre pueden percibirse como "mejores" o más consistentes.
+
+    \item \textbf{Coeficiente de Desviación Estándar (Coeficiente de Variación, CV):}
+    Primero, calculamos la Desviación Estándar Poblacional (\pstdev) para cada trimestre: $\pstdev = \sqrt{\frac{\sum (x_i - \mean{x})^2}{N}}$.
+    \begin{itemize}[nosep]
+        \item \textbf{Trimestre 1:} Suma de cuadrados de desviaciones $\sum (x_i - \num{5,1})^2 = \num{31,14}$.
+          \[ \pvar_1 = \frac{\num{31,14}}{30} \approx \num{1,038} \implies \pstdev_1 = \sqrt{\num{1,038}} \approx \num{1,019} \]
+        \item \textbf{Trimestre 2:} Suma de cuadrados de desviaciones $\sum (x_i - \num{5,1})^2 = \num{17,18}$.
+          \[ \pvar_2 = \frac{\num{17,18}}{30} \approx \num{0,5727} \implies \pstdev_2 = \sqrt{\num{0,5727}} \approx \num{0,757} \]
+    \end{itemize}
+    Luego, calculamos el Coeficiente de Variación (CV): $CV = \frac{\pstdev}{\mean{x}}$.
+    \begin{itemize}[nosep]
+        \item \textbf{Trimestre 1:} $CV_1 = \frac{\num{1,019}}{\num{5,1}} \approx \num{0,1998} \approx \num{0,200}$
+        \item \textbf{Trimestre 2:} $CV_2 = \frac{\num{0,757}}{\num{5,1}} \approx \num{0,148}$
+    \end{itemize}
+    \textbf{Respuesta:} El CV es aprox. \num{0,200} (o 20,0\%) para el primer trimestre y aprox. \num{0,148} (o 14,8\%) para el segundo trimestre.
+
+    \item \textbf{Homogeneidad:}
+    \textbf{Respuesta:} Las calificaciones más homogéneas son las que presentan menor dispersión relativa (menor CV). Por lo tanto, el \textbf{Segundo Trimestre} (CV $\approx$ \num{0,148}) presenta calificaciones más homogéneas.
+
+    \item \textbf{Interpretación del CV:}
+    \textbf{Respuesta:} El CV indica qué tan grande es la desviación estándar en relación a la media. En el primer trimestre, la desviación estándar es un 20\% de la media, mientras que en el segundo es solo un 14,8\%. Esto confirma cuantitativamente que las notas del segundo trimestre están más concentradas alrededor de la media \num{5,1}.
+
+    \item \textbf{Mejor Trimestre:}
+    \textbf{Respuesta:} Aunque la media, máximo y mínimo son iguales, el \textbf{Segundo Trimestre} puede considerarse "mejor" debido a su \textbf{menor dispersión} (menor DM, menor \pstdev, menor CV). Esto sugiere mayor consistencia en el rendimiento de los estudiantes, lo que puede ser preferible y coincide con la "sensación" reportada. Un grupo más homogéneo puede indicar un aprendizaje más uniforme.
+
+    \item \textbf{Gráfica Representativa:}
+    \textbf{Respuesta:} Un \textbf{diagrama de caja y bigotes (boxplot) comparativo} sería ideal. Mostraría la misma media (o medianas similares), los mismos extremos, pero visualizaría claramente la diferencia en la dispersión (longitud de la caja y/o bigotes) entre los dos trimestres. Alternativamente, histogramas o diagramas de puntos comparativos también servirían.
+
+\end{enumerate}
+
+%----------------------------------------------------
+\subsection*{Ejercicio 2: Salto con Garrocha}
+%----------------------------------------------------
+\textbf{Datos:} \num{2,50}; \num{2,80}; \num{2,60}; \num{3,00}; \num{2,90} (metros). N = 5.
+
+\begin{enumerate}[a.]
+    \item \textbf{Suma de desviaciones respecto a la media:}
+    Primero, calcular la media (\mean{x}):
+    \[ \mean{x} = \frac{\num{2,50} + \num{2,80} + \num{2,60} + \num{3,00} + \num{2,90}}{5} = \frac{\num{13,80}}{5} = \num{2,76} \text{ m} \]
+    Ahora, calcular las desviaciones $(x_i - \mean{x})$:
+    \begin{itemize}[nosep]
+        \item $\num{2,50} - \num{2,76} = \num{-0,26}$
+        \item $\num{2,80} - \num{2,76} = \num{+0,04}$
+        \item $\num{2,60} - \num{2,76} = \num{-0,16}$
+        \item $\num{3,00} - \num{2,76} = \num{+0,24}$
+        \item $\num{2,90} - \num{2,76} = \num{+0,14}$
+    \end{itemize}
+    Sumar las desviaciones:
+    \[ (\num{-0,26}) + (\num{+0,04}) + (\num{-0,16}) + (\num{+0,24}) + (\num{+0,14}) = (\num{-0,42}) + (\num{+0,42}) = 0 \]
+    \textbf{Respuesta:} Se comprueba que la suma de las desviaciones respecto a la media es \textbf{0}.
+
+    \item \textbf{Desviación Media (DM):}
+    Usamos las desviaciones absolutas de la parte (a): $|\num{-0,26}|=\num{0,26}$; $|\num{+0,04}|=\num{0,04}$; $|\num{-0,16}|=\num{0,16}$; $|\num{+0,24}|=\num{0,24}$; $|\num{+0,14}|=\num{0,14}$.
+    Sumamos las desviaciones absolutas:
+    \[ \sum |x_i - \mean{x}| = \num{0,26} + \num{0,04} + \num{0,16} + \num{0,24} + \num{0,14} = \num{0,84} \]
+    Calculamos la Desviación Media:
+    \[ DM = \frac{\sum |x_i - \mean{x}|}{N} = \frac{\num{0,84}}{5} = \num{0,168} \text{ m} \]
+    \textbf{Respuesta:} La desviación media de los datos es \textbf{\num{0,168} metros}.
+\end{enumerate}
+
+%----------------------------------------------------
+\subsection*{Ejercicio 3: Distribución de Frecuencias}
+%----------------------------------------------------
+\textbf{Datos:} Tabla de frecuencias agrupadas. N = \num{1800}.
+\textbf{Tabla de Cálculos:} (x\textsubscript{m} = Marca de Clase)
+
+\centering
+\begin{tabular}{crrcrr}
+\toprule
+Puntaje & Freq ($f_i$) & $x_{mi}$ & $f_i \cdot x_{mi}$ & $(x_{mi} - \mean{x})$ & $f_i \cdot (x_{mi} - \mean{x})^2$ \\
+\midrule
+0 - 2   & 21       & 1  & 21       & -13,82 & \num{4001,3} \\
+3 - 5   & 50       & 4  & 200      & -10,82 & \num{5853,6} \\
+6 - 8   & 110      & 7  & 770      & -7,82 & \num{6730,3} \\
+9 - 11  & 241      & 10 & 2410     & -4,82 & \num{5599,7} \\
+12 - 14 & 423      & 13 & 5499     & -1,82 & \num{1398,5} \\
+15 - 17 & 457      & 16 & 7312     & 1,18 & \num{634,4} \\
+18 - 20 & 275      & 19 & 5225     & 4,18 & \num{4806,2} \\
+21 - 23 & 134      & 22 & 2948     & 7,18 & \num{6909,0} \\
+24 - 26 & 66       & 25 & 1650     & 10,18 & \num{6840,1} \\
+27 - 29 & 23       & 28 & 644      & 13,18 & \num{3994,8} \\
+\midrule
+\textbf{Total} & \textbf{1800} &    & \textbf{26679} & & \textbf{46767,9} \\
+\bottomrule
+\end{tabular}
+
+\vspace{1ex}
+Primero, calculamos la media (\mean{x}):
+\[ \mean{x} = \frac{\sum (f_i \cdot x_{mi})}{N} = \frac{\num{26679}}{\num{1800}} \approx \num{14,82} \text{ puntos} \]
+
+\begin{enumerate}[a.]
+    \item \textbf{Desviación Estándar (\pstdev):}
+    Calculamos la varianza poblacional (\pvar):
+    \[ \pvar = \frac{\sum f_i \cdot (x_{mi} - \mean{x})^2}{N} = \frac{\num{46767,9}}{\num{1800}} \approx \num{25,982} \]
+    La desviación estándar es la raíz cuadrada de la varianza:
+    \[ \pstdev = \sqrt{\pvar} \approx \sqrt{\num{25,982}} \approx \num{5,097} \text{ puntos} \]
+    (Nota: Usando la fórmula $\pvar = [\sum(f \cdot x_m^2) / N] - \mean{x}^2$, con $\sum(f \cdot x_m^2) = \num{442203}$, da $\pvar = \num{442203}/1800 - (\num{26679}/1800)^2 \approx \num{245,6683} - \num{14,82167}^2 \approx \num{245,6683} - \num{219,6819} \approx \num{25,986}$, que es muy similar).
+    \textbf{Respuesta:} La desviación estándar de la distribución es aproximadamente \textbf{\num{5,10} puntos}.
+
+    \item \textbf{Valores $\mean{x} + \pstdev$ y $\mean{x} - \pstdev$:}
+    \[ \mean{x} - \pstdev \approx \num{14,82} - \num{5,10} = \num{9,72} \text{ puntos} \]
+    \[ \mean{x} + \pstdev \approx \num{14,82} + \num{5,10} = \num{19,92} \text{ puntos} \]
+    \textbf{Respuesta:} Los valores corresponden aproximadamente a \textbf{\num{9,72} puntos} y \textbf{\num{19,92} puntos}.
+\end{enumerate}
+
+
+%----------------------------------------------------
+\subsection*{Ejercicio 4: Prueba de Matemática}
+%----------------------------------------------------
+\textbf{Datos:}
+\begin{itemize}[nosep]
+    \item Curso A: $\mean{x}_A = \num{5,3}$; $\stdev_A = \num{0,7}$ (Asumimos desviación estándar muestral 's', aunque podría ser poblacional $\pstdev$).
+    \item Curso B: $\mean{x}_B = \num{5,4}$; $\stdev_B = \num{0,4}$
+\end{itemize}
+
+\begin{enumerate}[a.]
+    \item \textbf{Comparación de Alumnos (Rendimiento Relativo):}
+    Para comparar el rendimiento relativo a su curso, calculamos el puntaje Z (o puntaje estándar): $Z = \frac{x - \mean{x}}{\stdev}$.
+    \begin{itemize}[nosep]
+        \item \textbf{Alumno A:} Nota $x_A = \num{6,7}$.
+          \[ Z_A = \frac{\num{6,7} - \num{5,3}}{\num{0,7}} = \frac{\num{1,4}}{\num{0,7}} = \num{2,0} \]
+          (Este alumno está 2 desviaciones estándar por encima de la media de su curso).
+        \item \textbf{Alumno B:} Nota $x_B = \num{6,6}$.
+          \[ Z_B = \frac{\num{6,6} - \num{5,4}}{\num{0,4}} = \frac{\num{1,2}}{\num{0,4}} = \num{3,0} \]
+          (Este alumno está 3 desviaciones estándar por encima de la media de su curso).
+    \end{itemize}
+    Comparamos los puntajes Z: $Z_B (\num{3,0}) > Z_A (\num{2,0})$.
+    \textbf{Respuesta:} Al alumno del \textbf{Curso B} le fue mejor en la prueba en relación a su curso, ya que su rendimiento relativo (medido por el puntaje Z) fue superior al del alumno del Curso A.
+
+    \item \textbf{Justificación:}
+    \textbf{Respuesta:} La justificación se basa en el \textbf{puntaje Z}. Aunque la nota absoluta del alumno A (\num{6,7}) es ligeramente mayor que la del alumno B (\num{6,6}), el puntaje Z mide qué tan excepcional es esa nota dentro del contexto de su propio grupo. El Curso B era más homogéneo ($\stdev_B=\num{0,4}$) que el Curso A ($\stdev_A=\num{0,7}$). Por lo tanto, obtener una nota de \num{6,6} en el Curso B representa una desviación mucho mayor y más positiva respecto a la media de su grupo (3 desviaciones estándar) que obtener \num{6,7} en el Curso A (solo 2 desviaciones estándar sobre su media). El alumno B se destacó más dentro de su curso.
+\end{enumerate}
+
+\end{document}

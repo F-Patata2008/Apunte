@@ -1,0 +1,42 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath}  % Math
+\usepackage{amssymb}  % Symbols
+\usepackage{graphicx} % Images
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{transparent}
+\usepackage{eso-pic}
+\usepackage{xcolor}
+
+\graphicspath{{/home/fpatata/Clases/Fisica/images/}} % Path to images
+\newcommand\BackgroundPic{
+    \put(0,0){
+        \parbox[b][\paperheight]{\paperwidth}{
+            \vfill
+            \centering
+            \transparent{0.2}\includegraphics[width=\paperwidth]{logo.png} % your image
+            \vfill
+        }
+    }
+}
+
+
+
+\title{Apuntes Fisica Teorica (AFTIN)}
+\author{Felipe Colli \thanks{AFTIN y Profesor Paul Cáceres}}
+\date{2025}
+\AddToShipoutPicture{\BackgroundPic}
+
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Clase de 16/05/2025}
+
+
+Start writing here...
+pp
+\end{document}

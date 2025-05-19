@@ -1,0 +1,505 @@
+\documentclass[12pt, letterpaper]{article}
+\usepackage[utf8]{inputenc} % Input encoding
+\usepackage[T1]{fontenc} % Font encoding
+\usepackage{amsmath} % Math symbols and environments
+\usepackage{amssymb} % More math symbols
+\usepackage{graphicx} % Include graphics
+%\usepackage[spanish]{babel} % Spanish language support
+\usepackage{tabularx}
+\renewcommand{\arraystretch}{1.5} % Incrementa el espaciado vertical
+
+\title{Apuntes Probabilidad y Estadística}
+\author{Felipe Colli}
+\date{2024}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage % Start sections on a new page after ToC
+
+\section{14/03}
+\subsection{Materia}
+\textbf{\textit{\underline{Población:}}}
+Conjunto de todos los elementos que se quieren estudiar. Cuando la información deseada está disponible para todos los objetos de la población, lo llamamos \textbf{censo}. En la práctica es muy difícil o casi imposible realizar un censo.
+
+\textbf{\textit{\underline{Muestra:}}}
+Subconjunto de la población que se mide u observa.
+
+\textbf{\textit{\underline{Parámetro:}}}
+Es una medición numérica que describe algunas características de una población. % Corrected typo pobalción -> población
+
+\textbf{\textit{\underline{Estadístico (estadígrafo):}}} Es una medición numérica que describe algunas características de la muestra.
+
+\textbf{\textit{\underline{Variables cualitativas:}}}
+\begin{itemize}
+    \item Se describen mediante palabras o categorías.
+    \item Se usan para categorizar a los individuos o para identificar.
+    \item Sirven para comprender aspectos subjetivos y complejos.
+    \item Se pueden clasificar en nominales y ordinales.
+    \item Ejemplos: el color del cabello, el deporte favorito, la comida favorita, el lugar de nacimiento.
+\end{itemize}
+
+\textbf{\textit{\underline{Variables cuantitativas:}}}
+\begin{itemize}
+    \item Se expresan mediante números, es decir, se pueden contar o medir.
+    \item Permiten más operaciones matemáticas.
+    \item Se pueden usar para conocer fenómenos o situaciones a través de la recolección y generación de números y datos.
+    \item Ejemplos: la edad, los ingresos, el peso, la altura, la presión, la humedad o cantidad de hermanos.
+\end{itemize}
+
+\subsection{Ejercicios:}
+Para cada una de las siguientes situaciones, identifica la población de interés, la variable estadística, clasifícala, y entrega un ejemplo de cuál podría ser una posible muestra.
+
+\begin{enumerate}
+    \item Un investigador universitario desea estimar la proporción de ciudadanos chilenos de la \textit{GEN X} que están interesados en iniciar sus propios negocios.
+        \begin{enumerate}
+            \item \textbf{Población:} Chilenos de Gen X
+            \item \textbf{Muestreo:} Santiaguinos de Gen X
+            \item \textbf{Variable:} Quiere iniciar o no un negocio (cualitativa nominal)
+        \end{enumerate}
+
+    \item Durante más de un siglo, la temperatura corporal normal en seres humanos ha sido aceptada como 37°C. ¿Es así realmente? Los investigadores desean estimar el promedio de temperatura de adultos sanos en Chile.
+        \begin{enumerate}
+            \item \textbf{Población:} Adultos Sanos en Chile % Added "en Chile" for clarity
+            \item \textbf{Muestreo:} Santiaguinos Adultos Sanos
+            \item \textbf{Variable:} Temperatura Corporal (cuantitativa continua) % Corrected classification: cuantitativa continua is more appropriate than nominal
+        \end{enumerate}
+
+    \item Un ingeniero municipal desea estimar el promedio de consumo semanal de agua para unidades habitacionales unifamiliares en la ciudad.
+        \begin{enumerate}
+            \item \textbf{Población:} Unidades Habitacionales unifamiliares de la ciudad % Added "unifamiliares" for precision
+            \item \textbf{Muestreo:} Unidades habitacionales unifamiliares de un sector de la ciudad % Added "unifamiliares"
+            \item \textbf{Variable:} Consumo semanal de agua (cuantitativa continua) % Corrected classification: cuantitativa continua is more appropriate than nominal
+        \end{enumerate}
+    \item El National Highway Safety Council desea estimar la proporción de llantas para automóvil con dibujo o superficie de rodadura insegura, entre todas las llantas manufacturadas por una empresa específica durante el presente año de producción.
+        \begin{enumerate}
+            \item \textbf{Población:} Llantas de Empresa X manufacturadas este año de producción % Corrected "manufacturadas"
+            \item \textbf{Muestreo:} Una selección aleatoria de llantas producidas en diferentes lotes/días. % More specific sampling method
+            \item \textbf{Variable:} Estado de la rodadura (segura/insegura) (cualitativa nominal) % Corrected variable description and classification
+        \end{enumerate}
+
+    \item Un politólogo desea estimar si la mayoría de los residentes adultos de una región están a favor de una legislatura unicameral.
+        \begin{enumerate}
+            \item \textbf{Población:} Residentes adultos de la región
+            \item \textbf{Muestreo:} Residentes adultos de una comuna (o varias comunas seleccionadas)
+            \item \textbf{Variable:} Opinión sobre la legislatura unicameral (a favor/en contra/indeciso) (cualitativa nominal)  % Corrected variable description
+        \end{enumerate}
+
+    \item Un científico del área médica desea determinar el tiempo promedio para que se vuelva a presentar cierta enfermedad infecciosa, una vez que las personas se recuperan de ella por primera vez.
+        \begin{enumerate}
+            \item \textbf{Población:} Personas que se han recuperado de la enfermedad por primera vez
+            \item \textbf{Muestreo:} Pacientes recuperados seleccionados de registros médicos
+            \item \textbf{Variable:} Tiempo hasta una 2ª infección (cuantitativa continua) % Corrected classification: cuantitativa continua is more appropriate
+        \end{enumerate}
+
+    \item Un ingeniero electricista desea determinar si el promedio de vida útil de transistores de cierto tipo es mayor que 500 horas.
+        \begin{enumerate}
+            \item \textbf{Población:} Transistores del tipo X
+            \item \textbf{Muestreo:} 20 transistores (o una muestra mayor seleccionada aleatoriamente)
+            \item \textbf{Variable:} Vida útil del transistor (cuantitativa continua). (O, alternativamente, si la vida útil es > 500 horas (cualitativa nominal))  % Clarified variable options
+        \end{enumerate}
+\end{enumerate}
+\newpage
+
+\section{17/03}
+\subsection{Materia}
+Medidas de Tendencia Central 
+Medidas de Posición 
+Medidas de Dispersión 
+
+\textbf{\textit{\underline{Tablas de Frecuencia: Conceptos Básicos}}}
+\begin{itemize}
+    \item \textbf{Dato o Intervalo:} Información (variable) que se estudia en estadística.
+    \item \textbf{Marca de Clase ($c_i$):} Promedio entre los extremos de un intervalo. % Added ($c_i$)
+    \item \textbf{Amplitud de un intervalo:} Es la diferencia entre el límite superior y el límite inferior.
+\end{itemize}
+
+\textbf{\textit{\underline{Tipos de Frecuencia:}}}
+\begin{itemize}
+    \item \textbf{Frecuencia Absoluta ($f$ o $f_i$):} Cantidad de veces que se repite un dato o que cae en un intervalo. % Clarified "que se repite"
+    \item \textbf{Frecuencia Acumulada ($F$ o $F_i$):} Suma de las frecuencias absolutas hasta determinado dato o intervalo. % Corrected "terminado" -> "determinado", added "o intervalo"
+    \item \textbf{Frecuencia Relativa ($f_r$ o $h_i$):} Es la fracción, decimal o porcentaje de cierto valor o intervalo. ($\frac{f_i}{n}$) % Added index i
+    \item \textbf{Frecuencia Relativa Acumulada ($H_i$):} Es la fracción, decimal o porcentaje de la frecuencia acumulada hasta cierto dato o intervalo. ($\frac{F_i}{n}$) % Added index i, corrected formula symbol
+\end{itemize}
+
+\textbf{\textit{\underline{Medidas de Tendencia Central:}}}
+\begin{itemize}
+    \item \textbf{Media Aritmética ($\bar{x}$):} Es el cociente entre la suma de todos los datos y el número total de datos ($n$). Si se tienen $n$ datos $x_1, x_2, \dots, x_n$:
+        \[ \bar{x}=\frac{x_1+x_2+\dots+x_n}{n} = \frac{\sum_{i=1}^{n} x_i}{n} \] \\ % Added summation notation
+    Para datos agrupados en una tabla de frecuencia con $k$ clases:
+    \begin{center} % Centra ambos elementos horizontalmente
+        \begin{minipage}{0.45\textwidth} % Ajusta el ancho según sea necesario
+            \begin{tabularx}{\textwidth}{|X|X|}
+                \hline
+                \textbf{Marca de clase ($c_i$)} & \textbf{Frecuencia ($f_i$)} \\
+                \hline
+                $c_1$ & $f_1$ \\
+                \hline
+                $c_2$ & $f_2$ \\
+                \hline
+                $\vdots$ & $\vdots$ \\
+                \hline
+                $c_k$ & $f_k$ \\ % Changed n to k for number of classes
+                \hline
+             \end{tabularx}
+        \end{minipage}
+        \hfill % Espacio flexible entre los elementos
+        \begin{minipage}{0.45\textwidth} % Ajusta el ancho según sea necesario
+            \centering
+            \[
+            \bar{x}=\frac{c_1 \cdot f_1 + c_2 \cdot f_2 + \dots + c_k \cdot f_k}{f_1+f_2+\dots+f_k} = \frac{\sum_{i=1}^{k} c_i f_i}{n} % Changed n to k, added summation notation
+            \]
+        \end{minipage}
+    \end{center}
+
+
+    \item \textbf{Mediana ($M_e$):} Es el dato que ocupa la posición central de la muestra cuando estos se encuentran ordenados en forma creciente o decreciente. \textbf{Si la muestra tiene un número par de datos, la mediana es la media aritmética de los dos términos centrales.} Se aplica principalmente a variables cuantitativas (y ordinales). % Added ordinales
+        \begin{itemize}
+            \item Si $n$ es impar, la posición es $\frac{n+1}{2}$. $M_e = x_{(\frac{n+1}{2})}$ % Corrected index notation
+            \item Si $n$ es par, las posiciones son $\frac{n}{2}$ y $\frac{n}{2}+1$. $M_e = \frac{x_{(\frac{n}{2})} + x_{(\frac{n}{2}+1)}}{2}$ % Corrected index notation
+        \end{itemize}
+    \item \textbf{Moda ($M_o$):} Es el dato o los datos (o intervalo) que presentan la mayor frecuencia absoluta. La muestra puede ser: % Added "(o intervalo)"
+        \begin{itemize}
+            \item \textbf{Amodal:} No presenta moda.
+            \item \textbf{Unimodal:} Un solo dato (o intervalo) tiene la frecuencia máxima. % Clarified
+            \item \textbf{Bimodal:} Dos datos (o intervalos) tienen la misma frecuencia máxima. % Clarified
+            \item \textbf{Polimodal (o Multimodal):} Más de dos datos (o intervalos) tienen la misma frecuencia máxima. % Corrected "Multiples datos presentan la mismma frecuencia baosluta y son los datos que mas se repiten"
+            \item \textbf{Intervalo Modal:} (Para datos agrupados) El intervalo que presenta la mayor frecuencia absoluta.
+        \end{itemize}
+\end{itemize}
+\newpage
+
+\section{26/03}
+\subsection{Ejercicios:}
+
+\noindent % Prevent indentation for the first line
+Si las notas de Esteban en una asignatura son \(3, 4, 6, 3, 5, 5, 6, 3, 4\) y de estas notas se cambian un $6$ por un $7$. ¿Cuál(es) de las siguientes medidas de tendencia central cambia(n)?
+\begin{enumerate}
+    \item La moda
+    \item La mediana
+    \item La media aritmética
+\end{enumerate}
+\textit{Solución:}
+Notas originales (ordenadas): \(3, 3, 3, 4, 4, 5, 5, 6, 6\). $n=9$.
+\begin{itemize}
+    \item Moda original: 3 (frecuencia 3)
+    \item Mediana original: El dato en la posición $\frac{9+1}{2}=5$. Mediana = 4.
+    \item Media original: $\frac{3+3+3+4+4+5+5+6+6}{9} = \frac{39}{9} = 4.33...$
+\end{itemize}
+Notas nuevas (ordenadas): \(3, 3, 3, 4, 4, 5, 5, 6, 7\). $n=9$.
+\begin{itemize}
+    \item Moda nueva: 3 (sigue siendo la frecuencia más alta) $\rightarrow$ No cambia.
+    \item Mediana nueva: El dato en la posición 5. Mediana = 4. $\rightarrow$ No cambia.
+    \item Media nueva: $\frac{3+3+3+4+4+5+5+6+7}{9} = \frac{40}{9} = 4.44...$ $\rightarrow$ Cambia.
+\end{itemize}
+\textbf{Respuesta:} Solo la media aritmética cambia (3).
+
+\vspace{1em} % Add some vertical space
+\noindent La siguiente tabla muestra los valores de una variable \(X\) y sus respectivas frecuencias. ¿Cuál es el valor de la mediana?
+\begin{center}
+    \begin{tabular}{|c|c|c|} % Added cumulative frequency column
+        \hline
+        \textbf{\(X\)} & \textbf{Frecuencia ($f_i$)} & \textbf{Frecuencia Acumulada ($F_i$)} \\
+        \hline
+        4 & 4 & 4 \\
+        \hline
+        5 & 8 & 12 \\
+        \hline
+        6 & 10 & 22 \\
+        \hline
+        7 & 20 & 42 \\
+        \hline
+        8 & 8 & 50 \\
+        \hline
+        \textbf{Total} & \textbf{n=50} & \\ % Added total n
+        \hline
+    \end{tabular}
+\end{center}
+\textit{Solución:}
+Total de datos $n=50$ (par). La mediana es el promedio de los datos en las posiciones $\frac{n}{2} = \frac{50}{2}=25$ y $\frac{n}{2}+1 = 26$.
+Buscamos en la Frecuencia Acumulada ($F_i$) dónde caen estas posiciones.
+\begin{itemize}
+    \item Hasta $X=6$, hay 22 datos.
+    \item Los datos desde la posición 23 hasta la 42 corresponden al valor $X=7$.
+\end{itemize}
+Por lo tanto, tanto el dato en la posición 25 como el dato en la posición 26 son $7$.
+La mediana es $M_e = \frac{7+7}{2} = 7$. \\
+\textbf{Respuesta:} La mediana es 7.
+
+\vspace{1em}
+\noindent De acuerdo a la siguiente muestra \(a+2, a+4, a+6, a+6, a+6, a+4, a+2\), la suma de la mediana y la moda es: \\
+\textit{Solución:}
+Muestra ordenada: \(a+2, a+2, a+4, a+4, a+6, a+6, a+6\). $n=7$.
+\begin{itemize}
+    \item \textbf{Moda:} El dato más frecuente es \(a+6\) (frecuencia 3). $M_o = a+6$.
+    \item \textbf{Mediana:} Como $n=7$ (impar), la mediana es el dato en la posición $\frac{7+1}{2}=4$. El cuarto dato es \(a+4\). $M_e = a+4$.
+\end{itemize}
+\(\textbf{Suma} = M_o + M_e = (a+6) + (a+4) = 2a+10\)\\
+\textbf{Respuesta:} $2a+10$.
+
+\vspace{1em}
+\noindent Los datos de una muestra son todos números naturales consecutivos, si no hay ningún dato repetido y la mediana de la muestra es 11.5, entonces ¿Qué cantidad de datos no puede ser?
+\textit{Solución:}
+La mediana es 11.5, lo que significa que es el promedio de los dos datos centrales. Esto solo ocurre cuando el número de datos ($n$) es par.
+Sean los dos datos centrales $x_k$ y $x_{k+1}$ (donde $k=n/2$). Como son consecutivos y no repetidos, $x_{k+1} = x_k + 1$.
+La mediana es $\frac{x_k + x_{k+1}}{2} = \frac{x_k + (x_k+1)}{2} = \frac{2x_k+1}{2} = x_k + 0.5$.
+Se nos dice que la mediana es 11.5, entonces $x_k + 0.5 = 11.5$, lo que implica $x_k = 11$. El siguiente dato consecutivo es $x_{k+1} = 12$.
+Los dos datos centrales son 11 y 12.
+Para que estos sean los datos centrales, la cantidad de datos $n$ debe ser par.
+Si $n$ fuera impar, la mediana sería uno de los datos (un número natural), no 11.5.
+Por lo tanto, la cantidad de datos no puede ser impar. \\
+\textbf{Respuesta:} La cantidad de datos no puede ser un número impar.
+\newpage
+
+\section{04/04}
+\subsection{Población y Muestra}
+¿Qué inconvenientes puede implicar realizar un censo?
+\begin{itemize}
+    \item Cardinalidad (tamaño) de la población: Puede ser muy grande o infinita. % Added clarification
+    \item Destrucción de los objetos de estudio (ej. control de calidad destructivo). % Added example
+    \item Costos asociados (tiempo, dinero, recursos humanos). % Added details
+    \item Dificultad de acceso a toda la población. % Added another point
+\end{itemize}
+
+\subsection{Muestreo}
+Proceso de diseñar e implementar mecanismos para escoger los elementos que conformarán la muestra. \\
+\textbf{Es fundamental que la muestra esté bien escogida para realizar una inferencia estadística válida.} % Added "válida"
+
+\subsection{Muestra}
+\subsubsection{Representatividad}
+Para que una muestra sea representativa, debe reflejar las características relevantes de la población. Claves para lograrlo:
+\begin{itemize}
+    \item El \textbf{tamaño} de la muestra ($n$): Se abordará más adelante (criterios probabilísticos). % Added ($n$)
+    \item \textbf{Aleatoriedad:} El mecanismo de selección debe asegurar que todos los elementos (o grupos) tengan una probabilidad conocida (y a menudo igual) de ser seleccionados. % Clarified definition
+\end{itemize}
+Por lo general designaremos la letra \textbf{N} para la cardinalidad de la población y \textbf{n} para la cardinalidad de la muestra. % Corrected "cardinalidad de la muestra"
+
+\subsection{Tipos de Muestreo Probabilístico} % Added heading for clarity
+\subsubsection{Muestreo Aleatorio Simple (M.A.S)}
+Una \textbf{M.A.S} de tamaño \textbf{n} sujetos se selecciona de modo que cada muestra posible del mismo tamaño $n$ tiene la misma probabilidad de ser elegida. Requiere un listado completo de la población (marco muestral).
+
+\textbf{\textit{Ejemplos:}}
+\begin{itemize}
+    \item Seleccionar 200 pacientes al azar de una lista completa de registros médicos de un hospital.
+    \item Seleccionar al azar 500 estudiantes de media de una lista nacional sin agruparlos por colegio.
+    \item Elegir 100 tornillos de una producción sin distinguir lotes o turnos de fabricación (asumiendo homogeneidad).
+\end{itemize}
+
+\subsubsection{Muestreo Estratificado}
+Se utiliza cuando la población no es homogénea respecto a la variable de estudio, pero puede dividirse en subgrupos (estratos) que sí son homogéneos internamente.
+\begin{enumerate}
+    \item Se divide la población en estratos mutuamente excluyentes y colectivamente exhaustivos.
+    \item Se selecciona una muestra aleatoria simple (u otro método probabilístico) dentro de cada estrato.
+    \item Mayor precisión si la variabilidad dentro de los estratos es baja y entre estratos es alta. % Corrected description
+\end{enumerate}
+
+\subsubsection*{Muestreo Estratificado Proporcional} % Changed to subsubsection* for formatting
+\begin{itemize}
+    \item El número de elementos extraído de cada estrato ($n_i$) es proporcional al tamaño relativo del estrato en la población ($N_i/N$).
+    \item Se utiliza cuando el propósito principal es estimar parámetros poblacionales con buena representatividad global. % Corrected typo "pobalcionales"
+    \item La fracción de muestreo es la misma en todos los estratos: $n_i = n \cdot \frac{N_i}{N}$, donde $N$ es el tamaño de la población, $N_i$ el tamaño del estrato $i$, y $n$ el tamaño total de la muestra ($n = \sum n_i$). % Corrected "pobalcion", added sum clarification
+\end{itemize}
+
+\subsubsection*{Muestreo Estratificado No Proporcional (Óptimo)} % Changed to subsubsection*
+\begin{enumerate}
+    \item El número de elementos incluidos en la muestra de cada estrato ($n_i$) no es proporcional a $N_i/N$. A menudo se asigna mayor tamaño muestral a estratos con mayor variabilidad interna o menor costo de muestreo. % Clarified purpose
+    \item Los elementos de la población no tienen la misma probabilidad global de ser incluidos en la muestra (a menos que se usen pesos). % Clarified consequence
+    \item No garantiza la equiprobabilidad inicial, pero puede ser más eficiente para estimar parámetros si se pondera adecuadamente en el análisis. Requiere conocimiento previo de la variabilidad o costos dentro de los estratos. % Corrected typo "equiporbabilidad", "pobalcion", "desproprorcion", "uetsra", "conocimeinto"
+\end{enumerate}
+
+\subsubsection{Muestreo por Conglomerados}
+\begin{itemize}
+    \item Se utiliza cuando la población está dividida naturalmente en grupos (conglomerados), como ciudades, escuelas, bloques de viviendas.
+    \item Se escogen algunos conglomerados al azar.
+    \item Se muestrean \textbf{todos} los individuos dentro de los conglomerados seleccionados (muestreo en una etapa) o se realiza un muestreo adicional dentro de los conglomerados seleccionados (muestreo en varias etapas).
+    \item \textbf{Idealmente, cada conglomerado debe ser internamente heterogéneo (una mini-representación de la población)} y los conglomerados deben ser similares entre sí. Es más eficiente si la variabilidad \textit{dentro} de los conglomerados es alta y \textit{entre} conglomerados es baja (opuesto al estratificado). % Corrected typo "elemnmtos", "pobalcion", "separdaos", "naturalmnte", "cirtitrios", "geograficpos", "agrupcaiones", "fundfamental", "muiestreo"
+\end{itemize}
+
+\subsubsection{Muestreo Aleatorio Sistemático}
+\begin{enumerate}
+    \item Se utiliza cuando se dispone de una lista ordenada de la población.
+    \item Se elige un punto de partida aleatorio ($a$) entre 1 y $k$.
+    \item Se selecciona cada $k$-ésimo elemento de la lista, donde $k = N/n$ (intervalo de muestreo). Los elementos seleccionados son $a, a+k, a+2k, \dots$.
+    \item Si la lista está ordenada respecto a la variable de interés, puede ser más preciso que un M.A.S. Cuidado si hay periodicidad en la lista que coincida con $k$. % Corrected typo "pobalcion"
+\end{enumerate}
+
+\subsection{Muestreos No Aleatorios (No Probabilísticos)} % Added heading for clarity
+\subsubsection{Muestreo por Cuotas}
+\begin{itemize} % Added missing \begin{itemize}
+    \item Técnica común en estudios de mercado y sondeos de opinión. No es probabilístico.
+    \item La población se divide en grupos según características (sexo, edad, etc.).
+    \item Se fija una cuota de individuos a entrevistar para cada grupo.
+    \item La selección de los individuos dentro de cada grupo queda a criterio del entrevistador (no es aleatoria). % Corrected typo "estduios", "pobalcion", "divindida"
+\end{itemize}
+
+\subsubsection{Muestreo Bola de Nieve}
+\begin{enumerate}
+    \item Indicado para estudiar poblaciones difíciles de localizar o contactar (minoritarias, clandestinas, dispersas pero conectadas). % Corrected typo "pobalciones"
+    \item Se contacta a unos pocos individuos iniciales.
+    \item Estos individuos iniciales ayudan a localizar y contactar a otros miembros de la población, y así sucesivamente.
+\end{enumerate}
+
+\subsubsection{Muestreo por Juicio (o Intencional)}
+\begin{itemize}
+    \item La selección de la muestra se basa en el juicio o criterio del investigador, quien elige a los individuos que considera más representativos o apropiados para el estudio, basándose en su experiencia. % Corrected typo "exxperiencia", "porfesional"
+\end{itemize}
+
+\subsection{Preguntas}
+\begin{enumerate}
+    \item ¿Cuándo ocupar un muestreo estratificado en vez de uno por conglomerados?
+    \textit{Respuesta:} Usar \textbf{estratificado} cuando la población es heterogénea globalmente pero se puede dividir en estratos homogéneos internamente (baja varianza intra-estrato, alta varianza inter-estrato). El objetivo es asegurar representación de cada estrato y aumentar precisión. Usar \textbf{conglomerados} cuando la población está agrupada naturalmente, es costoso acceder a individuos dispersos, y los conglomerados son internamente heterogéneos (alta varianza intra-conglomerado, baja varianza inter-conglomerado). El objetivo es la eficiencia operativa/costos.
+    \item ¿En qué se diferencia un muestreo por cuotas de un muestreo estratificado?
+    \textit{Respuesta:} Ambos dividen la población en grupos. La diferencia clave está en la selección \textit{dentro} de los grupos: en el \textbf{estratificado} (probabilístico), se usa un método aleatorio (como M.A.S.) dentro de cada estrato. En el de \textbf{cuotas} (no probabilístico), la selección dentro de cada grupo la realiza el entrevistador según su conveniencia o juicio, hasta completar la cuota asignada. El estratificado permite inferencia estadística formal, el de cuotas no.
+\end{enumerate}
+\newpage
+
+\section{10/04}
+\textbf{\textit{\underline{Obj:} Aplicar y comprender propiedades de las medidas de dispersión}}
+\subsection{Medidas de Dispersión}
+Las medidas de tendencia central no son suficientes para describir un conjunto de datos. Consideremos dos conjuntos con la misma media $\bar{x}=0$:
+\[ A = \{-4, 4, -4, 4\} \]
+\[ B = \{7, 1, -6, -2\} \]
+Ambos tienen $\bar{x}=0$, pero los datos en $A$ están más concentrados alrededor de la media que en $B$. Las medidas de dispersión cuantifican esta variabilidad.
+
+\subsubsection{Rango:}
+Se define como la diferencia entre el valor máximo y el valor mínimo de los datos.
+\[ Rango = x_{max} - x_{min} \]
+Es sensible a valores extremos.
+
+\subsubsection{Desviación Media:}
+Dada la variable $X$, con $n$ datos $x_1, x_2, \dots, x_n$ y media $\bar{x}$. Se define la desviación media como el promedio de las desviaciones absolutas respecto a la media:
+\[ DM = \frac{|x_1-\bar{x}|+|x_2-\bar{x}|+\dots+|x_n-\bar{x}|}{n} = \frac{\sum_{i=1}^{n} |x_i - \bar{x}|}{n} \] % Corrected typo "Vatiable", "deviacion"
+
+\subsubsection{Varianza ($\sigma^2$ o $s^2$):} % Added s^2 for sample variance notation
+Es el promedio de las desviaciones al cuadrado respecto a la media. Es la medida de dispersión más utilizada junto con su raíz cuadrada.
+\[ \sigma^2 = \frac{(x_1-\bar{x})^2+(x_2-\bar{x})^2+\dots+(x_n-\bar{x})^2}{n} = \frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n} \]
+Nota: Esta es la varianza \textit{poblacional} ($\sigma^2$). La varianza \textit{muestral} insesgada ($s^2$) usa $n-1$ en el denominador. En este curso parece usarse la fórmula con $n$. % Added clarification on population vs sample variance
+
+\subsubsection{Desviación Estándar (o típica) ($\sigma$ o $s$):}
+Es la raíz cuadrada positiva de la varianza. Tiene las mismas unidades que los datos originales.
+\[ \sigma = \sqrt{\sigma^2} = \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n}} \] % Corrected typo "desvicon"
+
+\subsubsection{Propiedades de $\sigma$ y $\sigma^2$}
+\begin{center}
+    \begin{enumerate}
+        \item $\sigma \ge 0$ y $\sigma^2 \ge 0$. Son siempre no negativas. % Clarified notation
+        \item $\sigma = 0 \iff x_i = \bar{x}$ para todo $i \iff x_i = x_j$ para todo $i, j \in \{1, \dots, n\}$. La desviación estándar (y varianza) es cero si y sólo si todos los datos son iguales. % Corrected symbols and wording, "dtos" -> "datos", "igaul" -> "igual"
+        \item Si a todos los datos se les suma una constante $k$ (transformación $y_i = x_i + k$), la media cambia ($\bar{y} = \bar{x} + k$) pero la dispersión no: $\sigma_y = \sigma_x$ y $\sigma_y^2 = \sigma_x^2$. % Clarified property
+        \item Si todos los datos se multiplican por una constante $k$ (transformación $y_i = k \cdot x_i$), la media se multiplica por $k$ ($\bar{y} = k\bar{x}$) y la dispersión cambia: $\sigma_y = |k| \cdot \sigma_x$ y $\sigma_y^2 = k^2 \cdot \sigma_x^2$. % Corrected typo "variabe", added relation for variance
+        \item Fórmula computacional para la varianza: $\sigma^2 = \frac{\sum x_i^2}{n} - (\bar{x})^2 = \overline{x^2} - (\bar{x})^2$. Es decir, la varianza es la media de los cuadrados menos el cuadrado de la media. % Corrected formula notation
+        \item $\sigma^2=\sigma \iff \sigma=0 \vee \sigma=1$
+        \item $\sigma^2 < \sigma \iff 0<\sigma<1 $
+        \item $\sigma^2 > \sigma \iff \sigma>1$
+    \end{enumerate}
+\end{center}
+\newpage
+
+\section{16/04}
+\subsection{Demostración Propiedad 4}
+Sea $Y$ la variable definida por $y_i = k \cdot x_i$. Sabemos que $\bar{y} = k \cdot \bar{x}$.
+La varianza de $Y$ es:
+\[\sigma_y^2=\frac{\sum_{i=1}^{n} (y_i - \bar{y})^2}{n} \]
+Sustituyendo $y_i$ y $\bar{y}$:
+\[\sigma_y^2=\frac{\sum_{i=1}^{n} (kx_i - k\bar{x})^2}{n}\]
+Factorizando $k$ dentro del paréntesis:
+\[\sigma_y^2=\frac{\sum_{i=1}^{n} [k(x_i - \bar{x})]^2}{n}\]
+\[\sigma_y^2=\frac{\sum_{i=1}^{n} k^2(x_i - \bar{x})^2}{n}\]
+Sacando $k^2$ de la sumatoria (es constante):
+\[\sigma_y^2=k^2 \cdot \frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n}\]
+Reconociendo la definición de $\sigma_x^2$:
+\[\sigma_y^2=k^2 \cdot \sigma_x^2\]
+Tomando la raíz cuadrada (positiva, ya que $\sigma$ es no negativa):
+\[\sigma_y = \sqrt{k^2 \cdot \sigma_x^2} = \sqrt{k^2} \cdot \sqrt{\sigma_x^2} = |k| \cdot \sigma_x\]
+
+\subsection{Ejercicio}
+Dados los datos -2, 0, 2, 4, 6. Determinar:
+\begin{enumerate}
+    \item $\bar{x}$ \\
+        R. $\bar{x} = \frac{-2+0+2+4+6}{5} = \frac{10}{5} = 2$ \\
+    \item $\sigma$ \\
+        R. Calculamos la varianza primero:
+        $\sigma^2 = \frac{(-2-2)^2+(0-2)^2+(2-2)^2+(4-2)^2+(6-2)^2}{5}$
+        $\sigma^2 = \frac{(-4)^2+(-2)^2+(0)^2+(2)^2+(4)^2}{5}$
+        $\sigma^2 = \frac{16+4+0+4+16}{5} = \frac{40}{5} = 8$ \\
+        Ahora la desviación estándar: $\sigma = \sqrt{8} = \sqrt{4 \cdot 2} = 2\sqrt{2}$ \\
+    \item $\overline{x^2}$ (el promedio de los cuadrados de los datos) \\
+        R. Cuadrados de los datos: $(-2)^2=4, 0^2=0, 2^2=4, 4^2=16, 6^2=36$.
+        $\overline{x^2} = \frac{4+0+4+16+36}{5} = \frac{60}{5} = 12$ \\
+    \item Calcular $\overline{x^2}-(\bar{x})^2$ \\
+        R. $\overline{x^2}-(\bar{x})^2 = 12 - (2)^2 = 12 - 4 = 8$. \\
+        (Note que esto coincide con $\sigma^2$, como afirma la propiedad 5).
+\end{enumerate}
+
+\subsection{Demostración Propiedad 5}
+Partimos de la definición de varianza:
+\[\sigma^2=\frac{\sum_{i=1}^{n} (x_i-\bar{x})^2}{n}\]
+Expandimos el cuadrado:
+\[\sigma^2=\frac{\sum_{i=1}^{n} (x_i^2 - 2x_i\bar{x} + (\bar{x})^2)}{n}\]
+Separamos la sumatoria:
+\[\sigma^2=\frac{\sum x_i^2 - \sum 2x_i\bar{x} + \sum (\bar{x})^2}{n}\]
+\[\sigma^2=\frac{\sum x_i^2}{n} - \frac{\sum 2x_i\bar{x}}{n} + \frac{\sum (\bar{x})^2}{n}\]
+Sacamos las constantes de las sumatorias ($2\bar{x}$ y $(\bar{x})^2$ son constantes respecto a $i$):
+\[\sigma^2=\frac{\sum x_i^2}{n} - \frac{2\bar{x} \sum x_i}{n} + \frac{n(\bar{x})^2}{n}\]
+Reconocemos: $\frac{\sum x_i^2}{n} = \overline{x^2}$ y $\frac{\sum x_i}{n} = \bar{x}$:
+\[\sigma^2=\overline{x^2} - 2\bar{x} (\bar{x}) + (\bar{x})^2\]
+\[\sigma^2=\overline{x^2} - 2(\bar{x})^2 + (\bar{x})^2\]
+\[\sigma^2=\overline{x^2} - (\bar{x})^2\]
+\newpage
+
+    \section{23/04}
+        \subsection{Demostraciones}
+            \subsubsection{Propiedad 6}
+                \[\sigma^2=\sigma \]
+                \[\sigma^2-\sigma=0 \]
+                \[\sigma(\sigma-1)=0 \]
+                \[\sigma=0 \vee \sigma=1 \]
+            \subsubsection{Propiedad 7}
+                \[\sigma^2<\sigma \]
+                \[\sigma^2-\sigma<0 \]
+                \[\sigma(\sigma-1)<0 \]
+                \begin{center}
+                    \begin{tabular}{ccccc}
+                        \phantom{ppp}  & $-\infty$ & $0$ & $1$ & $+\infty$ \\
+                    \end{tabular}
+
+                    \begin{tabular}{|c|c|c|c|c|} 
+                         \hline
+                        $\sigma$ & - & + & + \\ 
+                        \hline
+                        $\sigma-1$ & - & - & + \\ 
+                        \hline 
+                         & + &- & + \\
+                        \hline                        
+                    \end{tabular}
+                \end{center}
+                \[0<\sigma<1 \]
+            \subsubsection{Propiedad 8}
+                \[\sigma^2>\sigma \]
+                \[\sigma^2-\sigma>0 \]
+                \[\sigma(\sigma-1)>0 \]
+                \begin{center}
+                    \begin{tabular}{ccccc}
+                        \phantom{ppp}  & $-\infty$ & $0$ & $1$ & $+\infty$ \\
+                    \end{tabular}
+
+                    \begin{tabular}{|c|c|c|c|c|} 
+                         \hline
+                        $\sigma$ & - & + & + \\ 
+                        \hline
+                        $\sigma-1$ & - & - & + \\ 
+                        \hline 
+                         & + &- & + \\
+                        \hline                        
+                    \end{tabular}
+                \end{center}
+
+                Por: $\sigma\ge0$
+                \[\sigma>1\]
+                \newpage
+
+    \section{}
+
+%puedes revisar este documento
+                %add a list
+
+\end{document}

@@ -1,0 +1,82 @@
+\documentclass[12pt, letterpaper]{article}
+\usepackage[utf8]{inputenc} % Input encoding
+\usepackage[T1]{fontenc} % Font encoding
+\usepackage{amsmath} % Math symbols and environments
+\usepackage{amssymb} % More math symbols
+\usepackage{graphicx} % Include graphics
+\usepackage[spanish]{babel} % Spanish language support
+\usepackage{tabularx}
+
+\title{Guía 2}
+\author{Felipe Colli}
+\date{01/05/2024}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+    \section{Actividad 1}
+        \subsection{Si se tiene una población finita de tamaño $N$, ¿cuántas muestras de tamaño $n$ pueden obtenerse, si..}
+            \begin{enumerate}
+                \item ... se extrae la muestra sin reemplazo (reposición)? \\
+                    \begin{itemize}
+                        \item Si se extraen $n$ elementos de una población de $N$ elementos sin reemplazo, el número de muestras posibles es dado por la combinación $\binom{N}{n} = \frac{N!}{n!(N-n)!}$.
+                    \end{itemize}
+                \item ... se extrae la muestra con reemplazo? \\
+                    \begin{itemize}
+                        \item Si se extraen $n$ elementos de una población de $N$ elementos con reemplazo, el número de muestras posibles es dado por $N^n$, ya que cada elemento puede ser seleccionado en cada extracción.
+                    \end{itemize}
+            \end{enumerate}
+
+        \subsection{Si la población es infinita, ¿es realmente relevante si la extracción se hace con reemplazo o no? Discutir e investigar.}
+            Si la población es infinita, no es relevante si la extracción se hace con o sin reemplazo, ya que el tamaño de la población no cambia y las probabilidades de selección permanecen constantes.
+
+    \section{Actividad 2} La probabilidad de que una oveja esté enferma está directamente relacionada con la edad. Supongamos que se tiene una población de 250 ovejas, donde el 44\% de las ovejas son de menos de 2 años, el 28\% son de 3 a 4 años, el 18\% son de 5 a 6 años y el 10\% son de más de 6 años. Se establece (luego veremos cómo) que la muestra debe ser de 61 ovejas. Queremos realizar un muestreo aleatorio estratificado proporcional. Determine cuántas ovejas debemos extraer de cada estrato para conformar la muestra.
+
+        \subsection{Solución} Para realizar un muestreo aleatorio estratificado proporcional, calculamos el número de ovejas a extraer de cada estrato:
+
+            \begin{itemize}
+                \item Estrato 1 (menos de 2 años, 44\%): 
+                \[61 \times 0.44 = 26.84 \approx 27\]
+
+                \item Estrato 2 (3 a 4 años, 28\%): 
+                \[61 \times 0.28 = 17.08 \approx 17\]
+
+                \item Estrato 3 (5 a 6 años, 18\%): 
+                \[61 \times 0.18 = 10.98 \approx 11\]
+
+                \item Estrato 4 (más de 6 años, 10\%): 
+                \[61 \times 0.10 = 6.1 \approx 6\]
+            \end{itemize}
+
+            Por lo tanto, debemos extraer:
+            \begin{itemize}
+                \item 27 ovejas del Estrato 1,
+                \item 17 ovejas del Estrato 2,
+                \item 11 ovejas del Estrato 3,
+                \item 6 ovejas del Estrato 4.
+            \end{itemize}
+            \newpage
+
+    \section{Actividad 3}
+        \subsection{Análisis de los mecanismos de muestreo} En el diseño muestral presentado, se utilizan los siguientes mecanismos de muestreo en cada etapa:
+
+            \begin{enumerate}
+                \item \textbf{División en unidades primarias de muestreo (PSU):} Muestreo estratificado.
+
+                \item \textbf{Selección de una unidad primaria de muestreo en cada estrato:} Muestreo proporcional al tamaño (PPS).
+
+                \item \textbf{Selección de distritos de enumeración dentro de las unidades primarias seleccionadas:} Muestreo aleatorio simple.
+
+                \item \textbf{Selección de grupos de direcciones dentro de los distritos de enumeración:} Muestreo por conglomerados.
+
+                \item \textbf{Selección de hogares y entrevistas:} Muestreo aleatorio simple.
+
+            \end{enumerate}
+
+
+
+
+
+\end{document}

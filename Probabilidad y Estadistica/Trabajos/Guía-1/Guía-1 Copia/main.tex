@@ -1,0 +1,399 @@
+\documentclass[12pt, letterpaper]{article}
+\usepackage[utf8]{inputenc} % Added for robust UTF-8 support
+\usepackage[T1]{fontenc} % Added for better character rendering and hyphenation
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage{eso-pic}
+\usepackage{amsmath} % Often useful for math content, though not strictly needed here yet
+
+\AddToShipoutPicture*{%
+    \put(1cm, \LenToUnit{\paperheight-5cm}){%
+        \makebox[0pt][l]{\includegraphics[width=3cm]{logo}} % Assumes logo.(png/jpg/pdf) exists in ./images/
+    }
+}
+
+\title{ Guía N°1 Probabilidad y Estadística}
+\author{Felipe Colli}
+\date{31 de Marzo, 2024}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage % Start sections on a new page after TOC
+
+\section{Actividad 1}
+\subsection{¿Cuál es el origen lingüístico e histórico de la palabra Estadística?}
+Proviene del alemán \textit{Statistik}, que a su vez se deriva del latín \textit{status} ("estado", "condición"). Originalmente, esta disciplina tenía que ver con el análisis de datos del Estado, como población, impuestos, recursos, entre otros.
+
+\subsection{Identifica o investiga al menos 5 objetivos de la Estadística en la actualidad. ¿Cómo se relacionan estos objetivos entre sí?}
+\begin{enumerate}
+    \item \textbf{Recopilar datos:} Obtener información relevante de manera sistemática y planificada.
+    \item \textbf{Describir la información:} Resumir y presentar los datos usando medidas estadísticas (como promedios, medianas, desviaciones estándar) y representaciones gráficas (histogramas, gráficos de barras, etc.).
+    \item \textbf{Analizar patrones e inferir:} Identificar relaciones, tendencias y comportamientos en los datos. Realizar inferencias sobre una población basándose en una muestra.
+    \item \textbf{Tomar decisiones informadas:} Utilizar el análisis de datos para fundamentar la elección de acciones, políticas o estrategias.
+    \item \textbf{Predecir y modelar resultados:} Estimar la probabilidad de eventos futuros o modelar relaciones entre variables mediante modelos estadísticos.
+\end{enumerate}
+Estos objetivos forman un proceso interconectado, a menudo cíclico:
+
+\begin{itemize}
+    \item Se \textbf{recopilan} datos pertinentes para abordar una pregunta o problema.
+    \item Los datos se \textbf{describen} para entender sus características principales.
+    \item Esa descripción facilita el \textbf{análisis} para encontrar patrones o realizar inferencias.
+    \item Con base en el análisis, se pueden \textbf{tomar decisiones} más objetivas.
+    \item A menudo, los modelos desarrollados ayudan a \textbf{predecir} escenarios futuros.
+    \item Las predicciones y decisiones pueden generar nuevas preguntas, reiniciando el ciclo con la necesidad de más datos.
+\end{itemize}
+
+
+\subsection{¿Por qué la Estadística es importante en la toma de decisiones, tanto en la vida cotidiana como el ámbito profesional?}
+La estadística es fundamental porque nos permite tomar decisiones basadas en evidencia y datos objetivos, en lugar de basarnos únicamente en suposiciones, intuiciones o anécdotas. Proporciona herramientas para cuantificar la incertidumbre, evaluar riesgos y comparar alternativas de manera sistemática. En el ámbito profesional (ciencia, ingeniería, negocios, medicina, política, etc.), su rol es crucial para la planificación, el control de calidad, la investigación, la optimización de procesos y la evaluación de políticas. En la vida cotidiana, ayuda a interpretar información (noticias, encuestas, informes médicos) y a tomar decisiones personales más informadas (financieras, de salud, etc.).
+
+\subsection{Investiga sobre el trabajo de John Snow en torno a un brote de cólera en Londres en el siglo \textit{XIX}. ¿Cómo se relaciona este trabajo con los objetivos actuales de la Estadística?}
+John Snow, médico inglés, investigó el brote de cólera en el Soho, Londres, en 1854. En lugar de aceptar la teoría predominante del miasma (enfermedad transmitida por "mal aire"), Snow sospechaba que la causa era el agua contaminada. Metódicamente, \textbf{recopiló datos} sobre la ubicación de las muertes por cólera y las fuentes de agua que utilizaban los afectados. \textbf{Describió} estos datos creando un mapa que mostraba la concentración de casos alrededor de una bomba de agua específica en Broad Street. \textbf{Analizó patrones} al observar que las personas que bebían agua de esa bomba tenían una tasa de mortalidad mucho mayor que las que usaban otras fuentes. También investigó casos anómalos (personas que vivían lejos pero bebían de esa bomba, o personas que vivían cerca pero no se enfermaban porque no usaban esa agua), lo que reforzó su hipótesis. Basado en este análisis, \textbf{tomó la decisión} (o convenció a las autoridades) de retirar la manija de la bomba de Broad Street, lo que coincidió con una drástica disminución de los casos. Aunque no predijo un evento futuro, su trabajo demostró una relación causal y permitió tomar una acción efectiva.
+
+Este trabajo es un ejemplo temprano y clásico de epidemiología espacial y del uso del método estadístico: recopilación sistemática de datos, descripción visual y numérica, análisis de patrones espaciales y relaciones, y toma de decisiones basada en evidencia para intervenir en un problema de salud pública. Se alinea perfectamente con los objetivos modernos de la estadística.
+
+\newpage
+\section{Actividad 2}
+\subsection{Señalar múltiples ejemplos de variables cuantitativas y discutir si son discretas o continuas.}
+\begin{itemize}
+    \item \textbf{Número de alumnos en un curso (Cuantitativa Discreta):} Solo puede tomar valores enteros no negativos (0, 1, 2, ...). No puedes tener 25.5 alumnos. Los valores son contables y están separados.
+    \item \textbf{Altura de los alumnos en un curso (Cuantitativa Continua):} Puede tomar, en teoría, cualquier valor dentro de un rango razonable (e.g., entre 1.40 m y 2.10 m). Una persona puede medir 1.75 m, 1.753 m, o cualquier valor intermedio, dependiendo de la precisión del instrumento de medición.
+    \item \textbf{Número de errores de compilación en un código fuente (Cuantitativa Discreta):} Se cuentan los errores en valores enteros (0, 1, 2, ...). No existen "medio error" o 1.7 errores.
+    \item \textbf{Tiempo de ejecución de un programa (Cuantitativa Continua):} Puede medirse con gran precisión (e.g., 15.342 segundos). Entre dos tiempos de ejecución posibles, siempre podría existir otro valor intermedio.
+    \item \textbf{Ingreso mensual de una familia (Cuantitativa Continua):} Aunque a menudo se reporta redondeado a dos decimales (céntimos/centavos), teóricamente puede tomar cualquier valor en un rango. Se trata como continua para la mayoría de los análisis.
+    \item \textbf{Cantidad de automóviles que pasan por un peaje en una hora (Cuantitativa Discreta):} Se cuentan los coches en números enteros.
+\end{itemize}
+
+
+\subsection{¿Puede una variable discreta tomar valores racionales ("con decimales")? Por ejemplo, una variable que solo puede adoptar los valores $1,0; 1,1; 1,2$ y $1,3$, ¿es discreta o continua?}
+Sí, una variable discreta \textbf{puede} tomar valores racionales o con decimales. La característica definitoria de una variable discreta no es que sus valores sean enteros, sino que el conjunto de sus posibles valores sea \textbf{finito} o \textbf{infinito numerable} (es decir, se pueden contar o poner en una lista, aunque la lista sea infinita) y que sus valores estén \textbf{separados} (entre dos valores consecutivos posibles, no existe ningún otro valor posible para esa variable).
+
+En el ejemplo dado, una variable que solo puede tomar los valores $1.0, 1.1, 1.2, 1.3$ es \textbf{discreta}. Hay un número finito de valores posibles (cuatro), y están separados (por ejemplo, entre $1.1$ y $1.2$, la variable no puede tomar ningún otro valor como $1.15$). Otro ejemplo sería la talla de calzado en algunos sistemas (e.g., 38, 38.5, 39, 39.5), que son valores específicos y separados.
+
+
+\subsection{Señalar múltiples ejemplos de variables cualitativas, distinguiendo entre nominales y ordinales.}
+\textbf{Cualitativas Nominales (sin orden inherente):}
+\begin{itemize}
+    \item \textbf{Género}: Masculino, Femenino, No binario, Otro. (Las categorías no tienen un orden intrínseco).
+    \item \textbf{Color de automóvil:} Rojo, Azul, Negro, Blanco, Gris. (No hay un orden lógico entre los colores).
+    \item \textbf{Tipo de sangre:} A, B, AB, O (con factor Rh +/-).
+    \item \textbf{Nacionalidad:} Chilena, Argentina, Española, Estadounidense.
+    \item \textbf{Sistema Operativo utilizado:} Windows, macOS, Linux, Android, iOS.
+\end{itemize}
+
+\textbf{Cualitativas Ordinales (con orden inherente):}
+\begin{itemize}
+    \item \textbf{Calificación de satisfacción de un cliente:} Muy insatisfecho, Insatisfecho, Neutral, Satisfecho, Muy satisfecho. (Hay un orden claro de menor a mayor satisfacción).
+    \item \textbf{Nivel educativo alcanzado:} Sin estudios, Educación Básica, Educación Media, Educación Superior (Técnica/Universitaria), Posgrado. (Hay una jerarquía clara).
+    \item \textbf{Clase socioeconómica:} Baja, Media-Baja, Media, Media-Alta, Alta. (Hay un orden establecido).
+    \item \textbf{Grado de acuerdo con una afirmación (Escala Likert):} Totalmente en desacuerdo, En desacuerdo, Ni de acuerdo ni en desacuerdo, De acuerdo, Totalmente de acuerdo.
+    \item \textbf{Severidad de una enfermedad:} Leve, Moderada, Severa, Crítica.
+\end{itemize}
+
+\subsection{¿Puede una variable cualitativa adoptar valores numéricos? Buscar y discutir ejemplos.}
+Sí, una variable cualitativa \textbf{puede} representarse mediante valores numéricos, pero estos números actúan simplemente como \textbf{códigos o etiquetas} y no tienen las propiedades matemáticas de los números usados en variables cuantitativas (es decir, no tiene sentido realizar operaciones aritméticas como sumar o promediar estos códigos).
+
+Ejemplos:
+\begin{itemize}
+    \item \textbf{Codificación de Género:} Se podría asignar 1 para "Masculino", 2 para "Femenino", 3 para "No binario". Estos números solo sirven para distinguir las categorías en una base de datos o software estadístico. Calcular el promedio (e.g., (1+2)/2 = 1.5) no tendría ningún significado real. Esta es una variable nominal.
+    \item \textbf{Códigos Postales:} Son números que identifican áreas geográficas. Aunque son numéricos, no tiene sentido decir que el código postal 28001 es "menor" que el 28002 en un sentido cuantitativo, ni calcular su promedio. Es una variable nominal.
+    \item \textbf{Dorsales de jugadores en un equipo:} El número 10 de un jugador no implica que sea cuantitativamente "más" o "mejor" que el jugador con el número 5 (aunque culturalmente pueda tener una connotación). Son etiquetas nominales.
+    \item \textbf{Escala Likert codificada:} A las respuestas "Totalmente en desacuerdo", ..., "Totalmente de acuerdo" se les suele asignar números (e.g., 1 a 5). Aquí, los números reflejan el \textit{orden} de las categorías (es una variable ordinal). A veces, se tratan estos datos como si fueran cuantitativos para calcular promedios, pero esto es una simplificación y puede ser debatible, ya que no se puede asegurar que la "distancia" entre "De acuerdo" (4) y "Totalmente de acuerdo" (5) sea la misma que entre "En desacuerdo" (2) y "Ni de acuerdo ni en desacuerdo" (3). Sin embargo, el uso de números aquí sí respeta el orden inherente.
+\end{itemize}
+En resumen, asignar números a categorías cualitativas es una práctica común por conveniencia (especialmente en computación), pero es crucial recordar la naturaleza original de la variable al interpretar los resultados y elegir los métodos de análisis adecuados.
+
+\newpage
+\section{Actividad 3:}
+\textbf{Para cada una de las siguientes situaciones, identifica la población de interés, la variable estadística principal y la clasificación de ésta.}
+
+\begin{enumerate}
+    \item Un investigador universitario desea estimar el nivel de riesgo que están dispuestos a aceptar ciudadanos chilenos de la \textit{"Generación X"} al iniciar sus propios negocios.
+        \begin{itemize}
+            \item \textbf{Población:} Todos los ciudadanos chilenos pertenecientes a la "Generación X".
+            \item \textbf{Variable:} Nivel de riesgo aceptado al iniciar negocios.
+            \item \textbf{Clasificación:} \textbf{Cualitativa Ordinal} (e.g., Bajo, Medio, Alto) o \textbf{Cuantitativa Continua} (si se mide mediante una escala numérica, por ejemplo, de 0 a 100). (La opción ordinal parece más probable si se mide por encuesta).
+        \end{itemize}
+
+    \item Durante más de un siglo, la temperatura corporal normal en seres humanos ha sido aceptada como 37°C. ¿Es así realmente? Los investigadores desean estimar el promedio de temperatura de adultos sanos en Chile.
+        \begin{itemize}
+            \item \textbf{Población:} Todos los adultos sanos residentes en Chile.
+            \item \textbf{Variable:} Temperatura corporal.
+            \item \textbf{Clasificación:} \textbf{Cuantitativa Continua}.
+        \end{itemize}
+
+    \item Un ingeniero municipal desea estimar el promedio de consumo semanal de agua para unidades habitacionales unifamiliares en la ciudad.
+        \begin{itemize}
+            \item \textbf{Población:} Todas las unidades habitacionales unifamiliares en la ciudad de interés.
+            \item \textbf{Variable:} Consumo semanal de agua (e.g., en metros cúbicos o litros).
+            \item \textbf{Clasificación:} \textbf{Cuantitativa Continua}.
+        \end{itemize}
+
+    \item El National Highway Safety Council desea estimar la proporción de llantas para automóvil con dibujo o superficie de rodadura insegura, entre todas las llantas manufacturadas por una empresa específica durante el presente año de producción.
+        \begin{itemize}
+            \item \textbf{Población:} Todas las llantas para automóvil manufacturadas por la empresa específica durante el presente año de producción.
+            \item \textbf{Variable (a nivel individual de llanta):} Condición de la superficie de rodadura.
+            \item \textbf{Clasificación (de la variable individual):} \textbf{Cualitativa Nominal} (e.g., Segura / Insegura). (El objetivo es estimar una proporción basada en esta variable).
+        \end{itemize}
+
+    \item Un politólogo desea estimar si la mayoría de los residentes adultos de una región están a favor de una legislatura unicameral.
+        \begin{itemize}
+            \item \textbf{Población:} Todos los residentes adultos de la región de interés.
+            \item \textbf{Variable:} Opinión sobre la legislatura unicameral.
+            \item \textbf{Clasificación:} \textbf{Cualitativa Nominal} (A favor / En contra / Indeciso).
+        \end{itemize}
+
+    \item Un científico del área médica desea determinar el tiempo promedio para que se vuelva a presentar cierta enfermedad infecciosa, una vez que las personas se recuperan de ella por primera vez.
+        \begin{itemize}
+            \item \textbf{Población:} Todas las personas que se han recuperado de la enfermedad infecciosa por primera vez.
+            \item \textbf{Variable:} Tiempo hasta la recurrencia de la enfermedad.
+            \item \textbf{Clasificación:} \textbf{Cuantitativa Continua}.
+        \end{itemize}
+
+    \item Un ingeniero electricista desea determinar si el promedio de vida útil de transistores de cierto tipo es mayor que 500 horas.
+        \begin{itemize}
+            \item \textbf{Población:} Todos los transistores del tipo específico de interés.
+            \item \textbf{Variable:} Vida útil del transistor (en horas).
+            \item \textbf{Clasificación:} \textbf{Cuantitativa Continua}. (La pregunta sobre si es mayor que 500 horas es parte de una prueba de hipótesis sobre el promedio de esta variable).
+        \end{itemize}
+\end{enumerate}
+
+\newpage % Start next section on a new page
+\section{Actividad 4:}
+\textbf{Haz lo mismo que en la actividad anterior: a partir de los siguientes títulos de papers, determina o infiere la(s) variable(s) estudiada(s) y la(s) población(es). Clasifica las variables estadísticas.}
+
+\begin{enumerate}
+
+\item \textbf{Efectos del cambio climático en la biodiversidad de insectos en los bosques tropicales de América del Sur} \\
+\textbf{Población(es):} Ecosistemas/Comunidades de insectos en bosques tropicales de América del Sur. \\
+\textbf{Variables Probables:}
+\begin{itemize}
+  \item Indicador(es) de cambio climático (e.g., aumento de temperatura, cambio en patrones de lluvia): Cuantitativa Continua.
+  \item Medida(s) de biodiversidad (e.g., riqueza de especies, índice de Shannon): Cuantitativa Discreta (riqueza) o Continua (índices).
+  \item Tipo de bosque tropical (si se comparan varios): Cualitativa Nominal.
+  \item Grupo taxonómico de insectos (si se enfoca en algunos): Cualitativa Nominal.
+  \item Periodo de tiempo: Cualitativa Ordinal o Cuantitativa.
+\end{itemize}
+
+\item \textbf{Relación entre la contaminación del aire y la tasa de mortalidad en comunidades urbanas de China} \\
+\textbf{Población(es):} Comunidades urbanas en China (posiblemente estudiadas a lo largo del tiempo). \\
+\textbf{Variables Probables:}
+\begin{itemize}
+  \item Nivel de contaminación del aire (e.g., concentración de PM2.5, SO2): Cuantitativa Continua.
+  \item Tasa de mortalidad (general o por causas específicas): Cuantitativa Continua (tasa por 100,000 hab.).
+  \item Características de la comunidad (e.g., tamaño, densidad poblacional, nivel socioeconómico): Cualitativa Nominal/Ordinal o Cuantitativa.
+  \item Periodo de tiempo: Cualitativa Ordinal o Cuantitativa Discreta (años, meses).
+\end{itemize}
+
+\item \textbf{Impacto de la acidificación oceánica en el crecimiento de corales en el Mar Caribe} \\
+\textbf{Población(es):} Colonias o especies de coral en el Mar Caribe. \\
+\textbf{Variables Probables:}
+\begin{itemize}
+  \item Nivel de acidificación oceánica (e.g., pH, pCO2): Cuantitativa Continua.
+  \item Tasa de crecimiento del coral (e.g., calcificación, extensión lineal): Cuantitativa Continua.
+  \item Especie de coral: Cualitativa Nominal.
+  \item Otras condiciones ambientales (e.g., Temperatura del agua, Profundidad): Cuantitativa Continua.
+\end{itemize}
+
+\item \textbf{Variabilidad genética en poblaciones de lobos ibéricos en la península ibérica} \\
+\textbf{Población(es):} Diferentes poblaciones (grupos geográficos) de lobo ibérico en la península ibérica. \\
+\textbf{Variables Probables:}
+\begin{itemize}
+  \item Medida(s) de variabilidad genética (e.g., heterocigosidad esperada, diversidad nucleotídica): Cuantitativa Continua.
+  \item Frecuencias de alelos/haplotipos en marcadores genéticos específicos: Cuantitativa Continua (frecuencias) o Cualitativa Nominal (presencia/ausencia de alelos).
+  \item Ubicación geográfica de la población: Cualitativa Nominal.
+  \item Tamaño estimado de la población: Cuantitativa Discreta/Continua.
+\end{itemize}
+
+\item \textbf{Distribución y abundancia de microplásticos en peces comerciales del Golfo de México} \\
+\textbf{Población(es):} Individuos de especies de peces comerciales capturados en el Golfo de México. \\
+\textbf{Variables Probables:}
+\begin{itemize}
+  \item Presencia/Ausencia de microplásticos en el pez: Cualitativa Nominal.
+  \item Cantidad o Concentración de microplásticos (por pez o por gramo de tejido): Cuantitativa Discreta (conteo) o Continua (concentración).
+  \item Tipo de microplástico (e.g., fibra, fragmento; polímero): Cualitativa Nominal.
+  \item Especie de pez: Cualitativa Nominal.
+  \item Tamaño/Peso del pez: Cuantitativa Continua.
+  \item Zona de captura: Cualitativa Nominal.
+\end{itemize}
+
+\item \textbf{Prevalencia de diabetes tipo 2 en adultos mayores de 60 años en España} \\
+\textbf{Población:} Todos los adultos mayores de 60 años residentes en España. \\
+\textbf{Variables Probables:}
+\begin{itemize}
+  \item Diagnóstico de diabetes tipo 2 (Sí/No): Cualitativa Nominal.
+  \item Edad (en años o grupos de edad): Cuantitativa Discreta o Continua (tratada como continua a menudo).
+  \item Género: Cualitativa Nominal.
+  \item Región de residencia (si se desglosa): Cualitativa Nominal.
+  \item Otros factores de riesgo (e.g., IMC, historial familiar): Cuantitativa/Cualitativa.
+\end{itemize}
+
+\item \textbf{Eficacia de la terapia cognitivo-conductual en pacientes con trastorno de ansiedad en Argentina} \\
+\textbf{Población:} Pacientes diagnosticados con trastorno de ansiedad en Argentina que reciben (o son elegibles para) terapia. \\
+\textbf{Variables Probables:}
+\begin{itemize}
+  \item Tipo de tratamiento recibido (TCC vs. Control/Otra terapia): Cualitativa Nominal.
+  \item Nivel de severidad de la ansiedad (medido antes y después, con escalas estandarizadas): Cuantitativa Continua u Ordinal (depende de la escala, a menudo tratada como continua).
+  \item Resultado del tratamiento (e.g., Remisión, Mejora, Sin cambio): Cualitativa Ordinal o Nominal.
+  \item Características del paciente (edad, género, tipo de trastorno de ansiedad): Cuantitativa/Cualitativa.
+\end{itemize}
+
+\item \textbf{Relación entre el consumo de ultraprocesados y la obesidad infantil en EE.UU.} \\
+\textbf{Población:} Niños (en un rango de edad específico, e.g., 6-12 años) residentes en EE.UU. \\
+\textbf{Variables Probables:}
+\begin{itemize}
+  \item Nivel de consumo de alimentos ultraprocesados (e.g., porcentaje de calorías, frecuencia): Cuantitativa Continua o Cualitativa Ordinal.
+  \item Estado nutricional (e.g., Obesidad Sí/No, categorías de IMC) o Índice de Masa Corporal (IMC): Cualitativa Nominal/Ordinal o Cuantitativa Continua (IMC).
+  \item Edad: Cuantitativa Discreta/Continua.
+  \item Género: Cualitativa Nominal.
+  \item Nivel socioeconómico familiar: Cualitativa Ordinal o Cuantitativa.
+  \item Nivel de actividad física: Cualitativa Ordinal o Cuantitativa Continua (e.g., horas/semana).
+\end{itemize}
+
+\item \textbf{Impacto del ejercicio físico en la presión arterial en mujeres postmenopáusicas en Brasil} \\
+\textbf{Población:} Mujeres postmenopáusicas residentes en Brasil. \\
+\textbf{Variables Probables:}
+\begin{itemize}
+  \item Intervención de ejercicio físico (Tipo, Intensidad, Duración, Frecuencia) o Nivel de actividad física habitual: Cualitativa Nominal (grupo intervención/control) o Cuantitativa/Ordinal (nivel de actividad).
+  \item Presión arterial (sistólica y diastólica, medidas antes y después): Cuantitativa Continua.
+  \item Cambio en la presión arterial: Cuantitativa Continua.
+  \item Edad: Cuantitativa Continua/Discreta.
+  \item Uso de medicación antihipertensiva: Cualitativa Nominal.
+\end{itemize}
+
+\item \textbf{Prevalencia del uso de antibióticos sin prescripción en adolescentes en México} \\
+\textbf{Población:} Adolescentes (en un rango de edad definido) residentes en México. \\
+\textbf{Variables Probables:}
+\begin{itemize}
+  \item Uso de antibióticos sin prescripción (Sí/No en un período dado): Cualitativa Nominal.
+  \item Frecuencia de dicho uso: Cualitativa Ordinal (Nunca, Rara vez, A veces, Frecuentemente) o Cuantitativa Discreta (número de veces).
+  \item Tipo de antibiótico utilizado (si se indaga): Cualitativa Nominal.
+  \item Motivo del uso: Cualitativa Nominal.
+  \item Edad: Cuantitativa Discreta.
+  \item Género: Cualitativa Nominal.
+  \item Nivel socioeconómico/educativo de la familia: Cualitativa Ordinal o Cuantitativa.
+\end{itemize}
+
+\item \textbf{Nivel de satisfacción laboral en trabajadores del sector tecnológico en Japón} \\
+\textbf{Población:} Trabajadores del sector tecnológico en Japón. \\
+\textbf{Variables Probables:}
+\begin{itemize}
+  \item Nivel de satisfacción laboral (medido con escala, e.g., de 1 a 5 o 1 a 10): Cualitativa Ordinal (a menudo tratada como Cuantitativa).
+  \item Edad: Cuantitativa Continua/Discreta.
+  \item Género: Cualitativa Nominal.
+  \item Años de experiencia: Cuantitativa Continua/Discreta.
+  \item Tipo de puesto/Rol: Cualitativa Nominal u Ordinal.
+  \item Salario/Ingresos: Cuantitativa Continua.
+  \item Tamaño de la empresa: Cualitativa Ordinal (Pequeña, Mediana, Grande) o Nominal.
+\end{itemize}
+
+\item \textbf{Efecto del nivel socioeconómico en el rendimiento académico de estudiantes universitarios en Chile} \\
+\textbf{Población:} Estudiantes universitarios en Chile. \\
+\textbf{Variables Probables:}
+\begin{itemize}
+  \item Nivel socioeconómico (medido por índice, ingreso familiar, educación de los padres): Cualitativa Ordinal o Cuantitativa Continua/Discreta.
+  \item Rendimiento académico (e.g., promedio de notas - GPA, tasa de aprobación): Cuantitativa Continua.
+  \item Tipo de universidad (e.g., Pública/Privada, Selectiva/No selectiva): Cualitativa Nominal.
+  \item Tipo de financiamiento de estudios (e.g., Beca, Crédito, Pago propio): Cualitativa Nominal.
+  \item Carrera/Área de estudio: Cualitativa Nominal.
+\end{itemize}
+
+
+\item \textbf{Influencia del uso de redes sociales en la autoestima de adolescentes en España} \\
+\textbf{Población:} Adolescentes (rango de edad específico) residentes en España. \\
+\textbf{Variables Probables:}
+\begin{itemize}
+  \item Nivel/Frecuencia/Tiempo de uso de redes sociales: Cuantitativa Continua (horas/día) o Discreta (veces/día) o Cualitativa Ordinal (Bajo, Medio, Alto).
+  \item Nivel de autoestima (medido con escala estandarizada): Cuantitativa Continua (puntuación total) u Ordinal.
+  \item Tipo de red social utilizada predominantemente: Cualitativa Nominal.
+  \item Edad, Género: Cuantitativa Discreta, Cualitativa Nominal.
+\end{itemize}
+
+
+\item \textbf{Factores que afectan la participación política en jóvenes entre 18 y 25 años en Alemania} \\
+\textbf{Población:} Jóvenes entre 18 y 25 años residentes en Alemania. \\
+\textbf{Variables Probables:}
+\begin{itemize}
+  \item Nivel/Tipo de participación política (e.g., votar, manifestarse, militar en partido, firmar peticiones): Cualitativa Nominal (Sí/No para cada actividad), Cualitativa Ordinal (nivel general) o Cuantitativa Discreta (número de actividades).
+  \item Nivel de educación: Cualitativa Ordinal.
+  \item Interés en la política: Cualitativa Ordinal (Bajo, Medio, Alto).
+  \item Acceso a información política (frecuencia, fuentes): Cuantitativa o Cualitativa.
+  \item Influencias sociales (familia, amigos): Cualitativa Nominal u Ordinal.
+  \item Confianza en las instituciones políticas: Cualitativa Ordinal (escala).
+  \item Eficacia política percibida (interna/externa): Cualitativa Ordinal (escala).
+\end{itemize}
+
+\item \textbf{Impacto de la migración en la percepción de identidad cultural en comunidades indígenas en Canadá} \\
+\textbf{Población:} Miembros de comunidades indígenas en Canadá que han experimentado migración (ellos mismos o sus familias). \\
+\textbf{Variables Probables:}
+\begin{itemize}
+  \item Percepción de identidad cultural (medida a través de encuestas, escalas, entrevistas): Cualitativa Ordinal o Nominal (dependiendo del enfoque).
+  \item Estatus migratorio o Grado de desplazamiento (e.g., primera generación, segunda generación, migración interna/externa): Cualitativa Ordinal o Nominal.
+  \item Conexión con las tradiciones culturales (idioma, prácticas): Cualitativa Ordinal o Nominal.
+  \item Experiencias de discriminación: Cualitativa Nominal u Ordinal.
+  \item Tiempo transcurrido desde la migración: Cuantitativa Continua.
+\end{itemize}
+
+\item \textbf{Relación entre el estrés laboral y la productividad en empleados del sector financiero en Reino Unido} \\
+\textbf{Población:} Empleados del sector financiero en Reino Unido. \\
+\textbf{Variables Probables:}
+\begin{itemize}
+  \item Nivel de estrés laboral (medido con cuestionarios estandarizados): Cuantitativa Continua (puntuación) u Ordinal.
+  \item Medida(s) de productividad laboral (e.g., desempeño evaluado, objetivos cumplidos, volumen de ventas): Cuantitativa Continua o Discreta, o Cualitativa Ordinal.
+  \item Tipo de puesto (e.g., Analista, Gerente, Trader): Cualitativa Nominal u Ordinal.
+  \item Horas trabajadas: Cuantitativa Continua.
+  \item Antigüedad en la empresa/puesto: Cuantitativa Continua/Discreta.
+\end{itemize}
+
+\item \textbf{Desigualdad de género en la distribución de roles en el hogar en familias de clase media en Francia} \\
+\textbf{Población:} Familias biparentales heterosexuales de clase media residentes en Francia. \\
+\textbf{Variables Probables:}
+\begin{itemize}
+  \item Género del miembro del hogar: Cualitativa Nominal.
+  \item Distribución de tareas domésticas (quién hace qué, tiempo dedicado): Cualitativa Nominal (quién), Cuantitativa Continua/Discreta (tiempo).
+  \item Percepción de equidad en la distribución: Cualitativa Ordinal (escala).
+  \item Nivel educativo de cada cónyuge: Cualitativa Ordinal.
+  \item Situación laboral de cada cónyuge: Cualitativa Nominal.
+  \item Ingresos de cada cónyuge: Cuantitativa Continua.
+\end{itemize}
+
+\item \textbf{Efectos de la urbanización en la cohesión social en barrios periféricos de Bogotá} \\
+\textbf{Población:} Residentes de barrios periféricos seleccionados en Bogotá. \\
+\textbf{Variables Probables:}
+\begin{itemize}
+  \item Nivel o características de la urbanización del barrio (e.g., densidad, acceso a servicios, tiempo de consolidación): Cuantitativa Continua/Discreta o Cualitativa Ordinal/Nominal.
+  \item Nivel de cohesión social (medido con índices basados en confianza, redes sociales, participación): Cuantitativa Continua (índice) u Ordinal.
+  \item Nivel socioeconómico de los residentes: Cualitativa Ordinal o Cuantitativa.
+  \item Tiempo de residencia en el barrio: Cuantitativa Continua/Discreta.
+  \item Participación en actividades comunitarias: Cuantitativa Discreta (número) o Cualitativa Nominal (Sí/No).
+\end{itemize}
+
+\item \textbf{Consumo de noticias falsas en redes sociales y su influencia en las creencias políticas en adultos jóvenes de EE.UU.} \\
+\textbf{Población:} Adultos jóvenes (e.g., 18-30 años) residentes en EE.UU. que usan redes sociales. \\
+\textbf{Variables Probables:}
+\begin{itemize}
+  \item Frecuencia/Intensidad de consumo de noticias falsas (auto-reportado o medido): Cualitativa Ordinal o Cuantitativa Discreta/Continua.
+  \item Creencias políticas (e.g., posición en espectro izq-der, opinión sobre temas específicos, polarización): Cualitativa Ordinal o Nominal.
+  \item Plataforma de red social principal: Cualitativa Nominal.
+  \item Nivel educativo: Cualitativa Ordinal.
+  \item Nivel de alfabetización mediática/digital: Cuantitativa (puntuación test) o Cualitativa Ordinal.
+  \item Confianza en los medios tradicionales/alternativos: Cualitativa Ordinal.
+\end{itemize}
+
+
+\item \textbf{Relación entre el acceso a la educación superior y la movilidad social en comunidades rurales de India} \\
+\textbf{Población:} Individuos o familias residentes en comunidades rurales de India. \\
+\textbf{Variables Probables:}
+\begin{itemize}
+    \item Acceso/Nivel de educación superior alcanzado (por el individuo o en la familia): Cualitativa Ordinal (Ninguno, Técnico, Universitario, etc.) o Nominal (Sí/No).
+    \item Indicador(es) de movilidad social (e.g., cambio en ocupación, ingreso o clase social respecto a los padres): Cuantitativa Continua/Discreta o Cualitativa Ordinal.
+    \item Género, Casta/Grupo social: Cualitativa Nominal.
+    \item Disponibilidad/Uso de apoyo gubernamental para educación: Cualitativa Nominal.
+    \item Nivel socioeconómico de origen (familiar): Cualitativa Ordinal o Cuantitativa Continua.
+    \item Ubicación geográfica de la comunidad rural: Cualitativa Nominal.
+\end{itemize}
+
+\end{enumerate}
+
+
+\end{document}

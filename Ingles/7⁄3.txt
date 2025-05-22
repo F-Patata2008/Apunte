@@ -1,7 +1,0 @@
-Activity:
-    Next class (start reinforcement unit 0)
-    
-    Estefanie Cuturrufo
-    e.cuturrufo.iei@institutonacional.cl
-
-    Pruebas al 50% de exigencia

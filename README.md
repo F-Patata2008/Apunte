@@ -8,3 +8,4 @@ Incluyen
 - Lenguaje
 - Filosofía Política
 - Probabilidad y Estadística
+- Matemáticas

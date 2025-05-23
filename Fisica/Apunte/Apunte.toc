@@ -1,1 +1,6 @@
-\contentsline {section}{\numberline {1}Clase de 16/05/2025}{2}{}%
+\contentsline {section}{\numberline {1}Clase de 23/05/2025}{2}{}%
+\contentsline {subsection}{\numberline {1.1}Cinemática}{2}{}%
+\contentsline {subsubsection}{\numberline {1.1.1}Movimiento Rectilíneo Uniforme (MRU)}{2}{}%
+\contentsline {subsubsection}{\numberline {1.1.2}Movimiento Rectilíneo Uniformemente Acelerado (MRUA)}{2}{}%
+\contentsline {subsubsection}{\numberline {1.1.3}Graficos}{2}{}%
+\contentsline {subsubsection}{\numberline {1.1.4}Aplicando la Derivada a la ecuación de la Itininerario}{2}{}%

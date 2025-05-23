@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1747423016.48594 "Apunte.tex" "Apunte.pdf" "Apunte" 1747423016.93563 0
+["pdflatex"] 1748003515.11103 "Apunte.tex" "Apunte.pdf" "Apunte" 1748003515.8751 0
   "/home/fpatata/Clases/Fisica/images/logo.png" 1747419118.46849 7949 cc26bed184e5e1103c6a6f769f5412fa ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1742685315 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1742685315 2900 1537cc8184ad1792082cd229ecc269f4 ""
@@ -81,10 +81,10 @@
   "/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty" 1742685315 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1742685315 42087 b0f9697c952c8f5a8eede4134282cb0d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1746973900 5311557 9da84c45f5b388655502706482323571 ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1746973774 2008236 e41b5c5c15fdff74085fa24740e89799 ""
-  "Apunte.aux" 1747423016.86757 220 f886e0a9da0b2a749a3d260d17436ac4 "pdflatex"
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1747956315 2030636 ce3491baba5b3c930ca2ed50b13c11cd ""
+  "Apunte.aux" 1748003515.72954 220 f886e0a9da0b2a749a3d260d17436ac4 "pdflatex"
   "Apunte.tex" 1747423016.22456 884 c509c9721eb5b23a8ae9fc69c2c1a3a5 ""
-  "Apunte.toc" 1747423016.86892 66 ecf0aabca884832d57cb3dab8e852a6f "pdflatex"
+  "Apunte.toc" 1748003515.7304 66 ecf0aabca884832d57cb3dab8e852a6f "pdflatex"
   (generated)
   "Apunte.aux"
   "Apunte.log"

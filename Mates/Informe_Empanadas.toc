@@ -2,4 +2,5 @@
 \contentsline {section}{\numberline {1}Resumen}{3}{}%
 \contentsline {section}{\numberline {2}Introducción}{4}{}%
 \contentsline {section}{\numberline {3}Desarrollo}{5}{}%
+\contentsline {subsection}{\numberline {3.1}Tabla de Costos Ingredientes}{5}{}%
 \contentsline {section}{\numberline {4}Conclusiones}{6}{}%

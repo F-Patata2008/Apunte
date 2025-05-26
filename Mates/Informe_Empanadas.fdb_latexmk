@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1748225980.88989 "Informe_Empanadas.tex" "Informe_Empanadas.pdf" "Informe_Empanadas" 1748225981.44197 0
+["pdflatex"] 1748263213.69182 "Informe_Empanadas.tex" "Informe_Empanadas.pdf" "Informe_Empanadas" 1748263214.6839 0
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1742685315 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1742685315 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1742685315 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -29,7 +29,6 @@
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1742685315 1512 f21f83efb36853c0b70002322c1ab3ad ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm" 1742685315 1520 eccf95517727cb11801f4f1aee3a21b4 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1742685315 1288 655e228510b4c2a1abe905c368440826 ""
-  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr17.tfm" 1742685315 1292 296a67155bdbfc32aa9c636f21e91433 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr6.tfm" 1742685315 1300 b62933e007d01cfd073f79b963c01526 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1742685315 1292 21c1c5bfeaebccffdb478fd231a0997d ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1742685315 1124 6c73e740cf17375f03eec0ee63599741 ""
@@ -87,9 +86,9 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1742685315 42087 b0f9697c952c8f5a8eede4134282cb0d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1746973900 5311557 9da84c45f5b388655502706482323571 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1747956315 2030636 ce3491baba5b3c930ca2ed50b13c11cd ""
-  "Informe_Empanadas.aux" 1748225981.34674 1276 5452ec01fc70d03fc136be1bc5d3ab61 "pdflatex"
-  "Informe_Empanadas.tex" 1748225980.45728 5829 96c2ffd4d89455a5b16ad2dbf8de3d6b ""
-  "Informe_Empanadas.toc" 1748225981.34874 340 a4ade781b998106b374c4ec23d6f4f44 "pdflatex"
+  "Informe_Empanadas.aux" 1748263214.5064 1398 c10bdff8a16fba69a3fca4679ea8122a "pdflatex"
+  "Informe_Empanadas.tex" 1748263212.71137 7801 87ef4a93fda19a10b96c16d4e8c95d48 ""
+  "Informe_Empanadas.toc" 1748263214.5114 414 04932d49d0d92743950393326ada97a3 "pdflatex"
   "images/logo.png" 1747419118.46849 7949 cc26bed184e5e1103c6a6f769f5412fa ""
   (generated)
   "Informe_Empanadas.aux"

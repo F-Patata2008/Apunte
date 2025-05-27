@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1748311756.8686 "Informe_Empanadas.tex" "Informe_Empanadas.pdf" "Informe_Empanadas" 1748311757.51552 0
+["pdflatex"] 1748312746.51435 "Informe_Empanadas.tex" "Informe_Empanadas.pdf" "Informe_Empanadas" 1748312747.20442 0
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1742685315 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1742685315 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1742685315 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -91,12 +91,11 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1742685315 42087 b0f9697c952c8f5a8eede4134282cb0d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1746973900 5311557 9da84c45f5b388655502706482323571 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1747956315 2030636 ce3491baba5b3c930ca2ed50b13c11cd ""
-  "Informe_Empanadas.aux" 1748311757.41661 1799 bcb2e123b83296b7096e2c24cbad7071 "pdflatex"
-  "Informe_Empanadas.tex" 1748311755.2603 7347 0ce9ae51020a7d24daedd18dc54458c2 ""
-  "Informe_Empanadas.toc" 1748311757.41888 414 04932d49d0d92743950393326ada97a3 "pdflatex"
+  "Informe_Empanadas.aux" 1748312747.09497 1690 5d6f46024a165fce676cc2f6d98e3c5a "pdflatex"
+  "Informe_Empanadas.tex" 1748312744.53212 7122 0ce1cf22ff2b2c32afe1e5fe818cf3c2 ""
+  "Informe_Empanadas.toc" 1748312747.09611 414 04932d49d0d92743950393326ada97a3 "pdflatex"
   "images/kosa.png" 1748287207.43096 33798 fce25966039929db590418008fa63786 ""
   "images/logo.png" 1747419118.46849 7949 cc26bed184e5e1103c6a6f769f5412fa ""
-  "images/mitierra.png" 1748287278.93562 157248 eaf985c6e765a4d3328d2c29f66f4838 ""
   "images/palacio.png" 1748287361.19719 115650 1de624684ee4e72966693d714f0762ba ""
   (generated)
   "Informe_Empanadas.aux"

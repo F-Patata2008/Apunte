@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.5.22)  26 MAY 2025 22:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.5.22)  26 MAY 2025 22:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -343,18 +343,13 @@ Package pdftex.def Info: images/logo.png  used on input line 68.
 <images/palacio.png, id=29, 480.79625pt x 646.415pt>
 File: images/palacio.png Graphic file (type png)
 <use images/palacio.png>
-Package pdftex.def Info: images/palacio.png  used on input line 121.
-(pdftex.def)             Requested size: 124.95387pt x 167.99489pt.
+Package pdftex.def Info: images/palacio.png  used on input line 120.
+(pdftex.def)             Requested size: 200.81825pt x 269.9932pt.
 <images/kosa.png, id=30, 317.185pt x 255.95625pt>
 File: images/kosa.png Graphic file (type png)
 <use images/kosa.png>
-Package pdftex.def Info: images/kosa.png  used on input line 128.
-(pdftex.def)             Requested size: 124.95387pt x 100.83406pt.
-<images/mitierra.png, id=31, 599.23875pt x 399.4925pt>
-File: images/mitierra.png Graphic file (type png)
-<use images/mitierra.png>
-Package pdftex.def Info: images/mitierra.png  used on input line 134.
-(pdftex.def)             Requested size: 124.95387pt x 83.29851pt.
+Package pdftex.def Info: images/kosa.png  used on input line 127.
+(pdftex.def)             Requested size: 200.81825pt x 162.05783pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -363,15 +358,15 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png  used on input line 145.
+Package pdftex.def Info: images/logo.png  used on input line 134.
 (pdftex.def)             Requested size: 614.295pt x 791.35104pt.
 [5]
 
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png  used on input line 153.
+Package pdftex.def Info: images/logo.png  used on input line 142.
 (pdftex.def)             Requested size: 614.295pt x 791.35104pt.
-[6 <./images/palacio.png (PNG copy)> <./images/kosa.png (PNG copy)> <./images/mitierra.png (PNG copy)>] (./Informe_Empanadas.aux
+[6 <./images/palacio.png (PNG copy)> <./images/kosa.png (PNG copy)>] (./Informe_Empanadas.aux
 LaTeX Info: Redefining \. on input line 10.
 LaTeX Info: Redefining \% on input line 10.
 )
@@ -381,18 +376,18 @@ L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 7041 strings out of 475109
- 112104 string characters out of 5765325
- 529086 words of memory out of 5000000
- 29963 multiletter control sequences out of 15000+600000
+ 7027 strings out of 475109
+ 111814 string characters out of 5765325
+ 529031 words of memory out of 5000000
+ 29949 multiletter control sequences out of 15000+600000
  576952 words of font info for 82 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
  67i,12n,79p,598b,495s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti2074.pfb>
-Output written on Informe_Empanadas.pdf (6 pages, 518926 bytes).
+Output written on Informe_Empanadas.pdf (6 pages, 361073 bytes).
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
+ 92 PDF objects out of 1000 (max. 8388607)
  54 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

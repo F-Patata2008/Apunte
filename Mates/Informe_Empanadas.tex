@@ -1,3 +1,4 @@
+
 \documentclass[12pt]{article}
 \usepackage{amsmath}  % Math
 \usepackage{amssymb}  % Symbols
@@ -9,6 +10,7 @@
 \usepackage{transparent}
 \usepackage{eso-pic}
 \usepackage{xcolor}
+\usepackage{subcaption} % For subfigures
 
 \graphicspath{{images/}} % Path to images
 \newcommand\BackgroundPic{
@@ -16,7 +18,7 @@
         \parbox[b][\paperheight]{\paperwidth}{
             \vfill
             \centering
-            \transparent{0.2}\includegraphics[width=\paperwidth]{logo} % your image
+            \transparent{0.1}\includegraphics[width=\paperwidth]{logo} % your image
             \vfill
         }
     }
@@ -77,33 +79,66 @@ Dentro de las proyeciones financieras, se contempla un análisis de costos y pre
         \hline
     \textbf{Distribuidor} & Unidades & \textbf{Costo} & \textbf{Costo 100 Unidades} \\ [0.5ex]
         \hline\hline
-
-        \multicolumn{4}{||c||}{\textbf{Masa Prehecha de Queso Chica}} \\ [0.5ex] \hline \hline
-        El Palacio de las Empanadas & 20 Un & \$2900 & \$14500 \\ \hline
-        Masas Mi Tierra & 25 Un & \$4500 & \$17000 \\ \hline
-        --- & --- & --- & --- \\ [1ex] \hline \hline
-
-        \multicolumn{4}{||c||}{\textbf{Masa Prehecha de Queso Mediana}} \\ [0.5ex] \hline \hline
-        El Palacio de las Empanadas & 20 Un & \$3500 & \$17500 \\ \hline
-        Masas Mi Tierra & 25 Un & \$5750 & \$22000 \\ \hline
-        Alimentos La Kosa & 20 Un & \$3200 & \$16000 \\ [1ex] \hline \hline
-
-        \multicolumn{4}{||c||}{\textbf{Masa Prehecha de Queso Grande}} \\ [0.5ex] \hline \hline
+        \multicolumn{4}{||c||}{\textbf{Masa Prehecha Grande}} \\ [0.5ex] \hline \hline
         El Palacio de las Empanadas & 20 Un & \$4100 & \$20500 \\ \hline
         Masas Mi Tierra & 25 Un & \$8000 & \$31000 \\ \hline
         Alimentos La Kosa & 20 Un & \$4200 & \$21000 \\ [1ex] \hline \hline
 
+        \multicolumn{3}{||c||}{\textbf{Huevos}} & \textbf{Costo por Docena} \\ [0.5ex] \hline \hline
+        El Don Huevo & 180 Un & \$43000 & \$2866 \\ \hline
+        Huevos La Montaña Pelluhue & 180 Un & \$45990 & \$3066 \\ \hline
+        AgricoVial & 180 Un & \$41600 & \$2773 \\ [1ex] \hline \hline
+
+        \multicolumn{3}{||c|}{\textbf{Camaron}} & \textbf{Costo por KG} \\ [0.5ex] \hline \hline
+        Distribuidora GK & 10 KG & \$48900 & \$4890 \\ \hline
+        Comercial Oceanica & 10 KG & \$55800 & \$5580 \\ \hline
+        Del Origen & 10 KG & \$48700 & \$4870 \\ [1ex] \hline \hline
+
+        \multicolumn{3}{||c|}{\textbf{Carne Molida}} & \\ [0.5ex] \hline \hline
+        Central Mayorista & 500 G & \$2590 & \$5080 \\ \hline \hline
+        Unimarc & 1 KG & \$4990 & \$4990 \\ \hline \hline
+        El Paiquito & 250 G & \$1090 & \$4360 \\ [1ex] \hline \hline
+
+
+        \multicolumn{3}{||c|}{\textbf{Queso}} & \\ [0.5ex] \hline \hline % Falta que el Bastian me mande la cotizacion del Queso
+        \multicolumn{3}{||c|}{\textbf{Cebolla}} & \\ [0.5ex] \hline \hline % Falta que el Bastian me mande la cotizacion de la Cebolla
+
         \multicolumn{3}{||c|}{\textbf{Aceite}} & \textbf{Costo por Litro} \\ [0.5ex] \hline \hline
-        Aceite 1 & & \$1200 & \$1200 \\ \hline
-        Aceite 2 & & \$1800 & \$1800 \\ \hline
-        Aceite 3 & & \$4200 & \$2400 \\ [1ex] \hline \hline
+        ProsudMarket & 18 L & \$39614 & \$2200.77 \\ \hline
+        Central Mayorista & 13.5 L & \$22200 & \$1644.44 \\ \hline
+        Distribuidora Sabatini & 5L & \$9296 & \$1859.20 \\ [1ex] \hline \hline
 
 
 
     \end{tabular}
-    \caption{Tabla de Costos de Masas Prehechas}
+    \caption{Tabla de Costos de Masas Prehechas y Aceites}
     \label{tab:costos_masas}
 \end{table}
+
+\begin{figure}[h]
+    \begin{subfigure}{0.28\textwidth}
+        \centering
+        \includegraphics[width=0.95\linewidth]{palacio} % Image for Chica
+        \caption{Palacio de las Empanadas}
+        \label{fig:palacio}
+        
+    \end{subfigure}
+    \begin{subfigure}{0.28\textwidth}
+        \centering
+        \includegraphics[width=0.95\linewidth]{kosa} % Image for Mediana
+        \caption{Alimentos La Kosa}
+        \label{fig:kosa}
+    \end{subfigure}
+    \begin{subfigure}{0.28\textwidth}
+        \centering
+        \includegraphics[width=0.95\linewidth]{mitierra} % Image for Grande
+        \caption{Masas Mi Tierra}
+        \label{fig:tierra}
+    \end{subfigure}
+    \caption{Cotizaciones de Distribuidores de Masa Prehecha}
+    \label{fig:cotizaciones_masas}
+\end{figure}
+
 
 
 
@@ -116,3 +151,4 @@ Dentro de las proyeciones financieras, se contempla un análisis de costos y pre
 
 
 \end{document}
+

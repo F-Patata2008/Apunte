@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.5.22)  26 MAY 2025 22:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.5.22)  28 MAY 2025 12:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -340,21 +340,191 @@ File: images/logo.png Graphic file (type png)
 Package pdftex.def Info: images/logo.png  used on input line 68.
 (pdftex.def)             Requested size: 614.295pt x 791.35104pt.
 [4]
-<images/palacio.png, id=29, 480.79625pt x 646.415pt>
-File: images/palacio.png Graphic file (type png)
-<use images/palacio.png>
-Package pdftex.def Info: images/palacio.png  used on input line 120.
-(pdftex.def)             Requested size: 223.1329pt x 299.99792pt.
-<images/kosa.png, id=30, 317.185pt x 255.95625pt>
+<images/palaci.png, id=29, 459.7175pt x 280.04625pt>
+File: images/palaci.png Graphic file (type png)
+<use images/palaci.png>
+Package pdftex.def Info: images/palaci.png  used on input line 129.
+(pdftex.def)             Requested size: 169.10808pt x 103.01724pt.
+<images/kosa.png, id=30, 310.15875pt x 187.70125pt>
 File: images/kosa.png Graphic file (type png)
 <use images/kosa.png>
-Package pdftex.def Info: images/kosa.png  used on input line 127.
-(pdftex.def)             Requested size: 223.1329pt x 180.06642pt.
+Package pdftex.def Info: images/kosa.png  used on input line 135.
+(pdftex.def)             Requested size: 169.10808pt x 102.33954pt.
+<images/donhuevo.png, id=31, 698.61pt x 342.27875pt>
+File: images/donhuevo.png Graphic file (type png)
+<use images/donhuevo.png>
+Package pdftex.def Info: images/donhuevo.png  used on input line 147.
+(pdftex.def)             Requested size: 147.9744pt x 72.49693pt.
+<images/montan1.png, id=32, 498.86375pt x 216.81pt>
+File: images/montan1.png Graphic file (type png)
+<use images/montan1.png>
+Package pdftex.def Info: images/montan1.png  used on input line 153.
+(pdftex.def)             Requested size: 169.10808pt x 73.49608pt.
+<images/gk.png, id=33, 569.12625pt x 291.0875pt>
+File: images/gk.png Graphic file (type png)
+<use images/gk.png>
+Package pdftex.def Info: images/gk.png  used on input line 165.
+(pdftex.def)             Requested size: 169.10808pt x 86.49188pt.
+<images/oceanic.png, id=34, 462.72874pt x 280.04625pt>
+File: images/oceanic.png Graphic file (type png)
+<use images/oceanic.png>
+Package pdftex.def Info: images/oceanic.png  used on input line 171.
+(pdftex.def)             Requested size: 147.9744pt x 89.55252pt.
+<images/central.png, id=35, 470.75874pt x 222.8325pt>
+File: images/central.png Graphic file (type png)
+<use images/central.png>
+Package pdftex.def Info: images/central.png  used on input line 184.
+(pdftex.def)             Requested size: 190.24818pt x 90.05286pt.
+<images/paiquito.png, id=36, 583.17876pt x 307.1475pt>
+File: images/paiquito.png Graphic file (type png)
+<use images/paiquito.png>
+Package pdftex.def Info: images/paiquito.png  used on input line 190.
+(pdftex.def)             Requested size: 190.24818pt x 100.19669pt.
 
-Overfull \hbox (2.61047pt too wide) in paragraph at lines 118--131
-[][] [] 
- []
 
+File: images/logo.png Graphic file (type png)
+<use images/logo.png>
+Package pdftex.def Info: images/logo.png  used on input line 196.
+(pdftex.def)             Requested size: 614.295pt x 791.35104pt.
+[5]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+./Informe_Empanadas.tex:200: Package subcaption Error: subfigure outside float.
+
+See the subcaption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.200             \begin{subfigure}
+                                   {0.45\textwidth}
+If you do not understand this error, please take a closer look
+at the documentation of the `subcaption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Informe_Empanadas.tex:200: Package caption Error: \setcaptionsubtype outside float.
+
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.200 ...        \begin{subfigure}{0.45\textwidth}
+                                                  
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<images/santiago.png, id=40, 593.21625pt x 259.97125pt>
+File: images/santiago.png Graphic file (type png)
+<use images/santiago.png>
+Package pdftex.def Info: images/santiago.png  used on input line 202.
+(pdftex.def)             Requested size: 190.24818pt x 83.37497pt.
+
+./Informe_Empanadas.tex:203: Package caption Error: \caption outside float.
+
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.203                 \caption
+                              {Distribuidora Santiago}
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Informe_Empanadas.tex:206: Package subcaption Error: subfigure outside float.
+
+See the subcaption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.206             \begin{subfigure}
+                                   {0.45\textwidth}
+If you do not understand this error, please take a closer look
+at the documentation of the `subcaption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Informe_Empanadas.tex:206: Package caption Error: \setcaptionsubtype outside float.
+
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.206 ...        \begin{subfigure}{0.45\textwidth}
+                                                  
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<images/nueva.png, id=41, 526.96875pt x 290.08376pt>
+File: images/nueva.png Graphic file (type png)
+<use images/nueva.png>
+Package pdftex.def Info: images/nueva.png  used on input line 208.
+(pdftex.def)             Requested size: 190.24818pt x 104.72662pt.
+
+./Informe_Empanadas.tex:209: Package caption Error: \caption outside float.
+
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.209                 \caption
+                              {Distribuidora Nueva de Matte}
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Informe_Empanadas.tex:212: Package caption Error: \caption outside float.
+
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.212             \caption
+                          {Cotizaciones de Distribuidores de Queso}
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<images/nat.png, id=42, 657.45625pt x 310.15875pt>
+File: images/nat.png Graphic file (type png)
+<use images/nat.png>
+Package pdftex.def Info: images/nat.png  used on input line 220.
+(pdftex.def)             Requested size: 169.10808pt x 79.7733pt.
+<images/fres.png, id=43, 722.7pt x 308.15125pt>
+File: images/fres.png Graphic file (type png)
+<use images/fres.png>
+Package pdftex.def Info: images/fres.png  used on input line 226.
+(pdftex.def)             Requested size: 190.24818pt x 81.11896pt.
+<images/prosud.png, id=44, 612.2875pt x 312.16624pt>
+File: images/prosud.png Graphic file (type png)
+<use images/prosud.png>
+Package pdftex.def Info: images/prosud.png  used on input line 238.
+(pdftex.def)             Requested size: 190.24818pt x 96.9944pt.
+<images/aceite.png, id=45, 412.54124pt x 206.7725pt>
+File: images/aceite.png Graphic file (type png)
+<use images/aceite.png>
+Package pdftex.def Info: images/aceite.png  used on input line 244.
+(pdftex.def)             Requested size: 190.24818pt x 95.35628pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -362,15 +532,27 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png  used on input line 134.
+Package pdftex.def Info: images/logo.png  used on input line 252.
 (pdftex.def)             Requested size: 614.295pt x 791.35104pt.
-[5]
+[6 <./images/santiago.png> <./images/nueva.png>]
 
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png  used on input line 142.
+Package pdftex.def Info: images/logo.png  used on input line 260.
 (pdftex.def)             Requested size: 614.295pt x 791.35104pt.
-[6 <./images/palacio.png (PNG copy)> <./images/kosa.png (PNG copy)>] (./Informe_Empanadas.aux
+[7]
+
+File: images/logo.png Graphic file (type png)
+<use images/logo.png>
+Package pdftex.def Info: images/logo.png  used on input line 260.
+(pdftex.def)             Requested size: 614.295pt x 791.35104pt.
+[8 <./images/palaci.png> <./images/kosa.png> <./images/donhuevo.png (PNG copy)> <./images/montan1.png> <./images/gk.png> <./images/oceanic.png> <./images/central.png> <./images/paiquito.png>]
+
+File: images/logo.png Graphic file (type png)
+<use images/logo.png>
+Package pdftex.def Info: images/logo.png  used on input line 260.
+(pdftex.def)             Requested size: 614.295pt x 791.35104pt.
+[9 <./images/nat.png> <./images/fres.png> <./images/prosud.png> <./images/aceite.png>] (./Informe_Empanadas.aux
 LaTeX Info: Redefining \. on input line 10.
 LaTeX Info: Redefining \% on input line 10.
 )
@@ -378,20 +560,24 @@ LaTeX Info: Redefining \% on input line 10.
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 7027 strings out of 475109
- 111814 string characters out of 5765325
- 529031 words of memory out of 5000000
- 29949 multiletter control sequences out of 15000+600000
+ 7201 strings out of 475109
+ 115497 string characters out of 5765325
+ 536823 words of memory out of 5000000
+ 30123 multiletter control sequences out of 15000+600000
  576952 words of font info for 82 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
- 67i,12n,79p,598b,495s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 67i,12n,82p,598b,535s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti2074.pfb>
-Output written on Informe_Empanadas.pdf (6 pages, 361068 bytes).
+Output written on Informe_Empanadas.pdf (9 pages, 1968025 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
- 54 compressed objects within 1 object stream
+ 115 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

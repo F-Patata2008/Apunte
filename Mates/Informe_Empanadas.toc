@@ -4,4 +4,5 @@
 \contentsline {subsection}{\numberline {2.1}Objetivos del Negocio:}{4}{}%
 \contentsline {section}{\numberline {3}Desarrollo}{5}{}%
 \contentsline {subsection}{\numberline {3.1}Tabla de Costos Ingredientes}{5}{}%
-\contentsline {section}{\numberline {4}Conclusiones}{6}{}%
+\contentsline {subsection}{\numberline {3.2}Cotizaciones Ingredientes}{6}{}%
+\contentsline {section}{\numberline {4}Conclusiones}{7}{}%

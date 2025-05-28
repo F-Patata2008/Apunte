@@ -175,6 +175,9 @@ INPUT ./images/kosa.png
 INPUT ./images/kosa.png
 INPUT ./images/kosa.png
 INPUT ./images/kosa.png
+INPUT ./images/logo.png
+INPUT ./images/logo.png
+INPUT ./images/logo.png
 INPUT ./images/donhuevo.png
 INPUT ./images/donhuevo.png
 INPUT ./images/donhuevo.png
@@ -199,9 +202,6 @@ INPUT ./images/paiquito.png
 INPUT ./images/paiquito.png
 INPUT ./images/paiquito.png
 INPUT ./images/paiquito.png
-INPUT ./images/logo.png
-INPUT ./images/logo.png
-INPUT ./images/logo.png
 INPUT ./images/santiago.png
 INPUT ./images/santiago.png
 INPUT ./images/santiago.png
@@ -226,12 +226,6 @@ INPUT ./images/aceite.png
 INPUT ./images/aceite.png
 INPUT ./images/aceite.png
 INPUT ./images/aceite.png
-INPUT ./images/logo.png
-INPUT ./images/logo.png
-INPUT ./images/logo.png
-INPUT ./images/logo.png
-INPUT ./images/logo.png
-INPUT ./images/logo.png
 INPUT ./images/logo.png
 INPUT ./images/logo.png
 INPUT ./images/logo.png

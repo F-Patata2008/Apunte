@@ -1,0 +1,14 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Resumen}{3}{}%
+\contentsline {section}{\numberline {2}Introducción}{4}{}%
+\contentsline {subsection}{\numberline {2.1}Objetivos del Negocio (Avance 1):}{4}{}%
+\contentsline {section}{\numberline {3}Desarrollo}{5}{}%
+\contentsline {subsection}{\numberline {3.1}Estimación de Cantidad y Variedades}{5}{}%
+\contentsline {subsection}{\numberline {3.2}Cotización de Ingredientes}{5}{}%
+\contentsline {subsubsection}{\numberline {3.2.1}Evidencia de Cotizaciones (Imágenes)}{6}{}%
+\contentsline {subsection}{\numberline {3.3}Lista de Compras Seleccionada (para 150 empanadas)}{10}{}%
+\contentsline {subsection}{\numberline {3.4}Factura de Compra de Ingredientes (Simulada)}{10}{}%
+\contentsline {subsection}{\numberline {3.5}Definición de Precio de Venta y Proyección de Ingresos}{10}{}%
+\contentsline {subsection}{\numberline {3.6}Cálculo de IVA a Pagar al Fisco}{11}{}%
+\contentsline {subsection}{\numberline {3.7}Cálculo de Ganancias}{11}{}%
+\contentsline {section}{\numberline {4}Conclusiones}{13}{}%

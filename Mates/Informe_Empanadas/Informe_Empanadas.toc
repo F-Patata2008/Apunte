@@ -1,0 +1,10 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Resumen}{3}{}%
+\contentsline {section}{\numberline {2}Introducción}{4}{}%
+\contentsline {subsection}{\numberline {2.1}Objetivos del Negocio:}{4}{}%
+\contentsline {section}{\numberline {3}Desarrollo}{5}{}%
+\contentsline {subsection}{\numberline {3.1}}{5}{}%
+\contentsline {subsection}{\numberline {3.2}Tabla de Costos Ingredientes}{5}{}%
+\contentsline {subsection}{\numberline {3.3}Cotizaciones Ingredientes}{6}{}%
+\contentsline {subsection}{\numberline {3.4}Facturas}{8}{}%
+\contentsline {section}{\numberline {4}Conclusiones}{9}{}%

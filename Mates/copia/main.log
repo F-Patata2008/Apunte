@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.5.22)  28 MAY 2025 16:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.5.22)  29 MAY 2025 08:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -355,18 +355,34 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 40.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+<empanadas.jpg, id=1, 642.4pt x 642.4pt>
+File: empanadas.jpg Graphic file (type jpg)
+<use empanadas.jpg>
+Package pdftex.def Info: empanadas.jpg  used on input line 44.
+(pdftex.def)             Requested size: 446.26582pt x 446.27557pt.
 
-<logo.png, id=1, 198.7425pt x 255.95625pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
+<logo.png, id=2, 198.7425pt x 255.95625pt>
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 42.
+Package pdftex.def Info: logo.png  used on input line 46.
 (pdftex.def)             Requested size: 614.295pt x 791.35104pt.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./logo.png>] (./main.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-)
+
+
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 12.
+(pdftex.def)             Requested size: 614.295pt x 791.35104pt.
+[2 <./empanadas.jpg>])
 \tf@toc=\write3
 \openout3 = `main.toc'.
 
@@ -374,127 +390,127 @@ LaTeX Info: Redefining \% on input line 1.
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 45.
-(pdftex.def)             Requested size: 614.295pt x 791.35104pt.
-[2]
-
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 55.
+Package pdftex.def Info: logo.png  used on input line 49.
 (pdftex.def)             Requested size: 614.295pt x 791.35104pt.
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 60--61
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
-
- []
-
-
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 78.
+Package pdftex.def Info: logo.png  used on input line 59.
 (pdftex.def)             Requested size: 614.295pt x 791.35104pt.
 [4]
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
+
+ []
+
+
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 133.
+Package pdftex.def Info: logo.png  used on input line 82.
 (pdftex.def)             Requested size: 614.295pt x 791.35104pt.
 [5]
-<palaci.png, id=31, 459.7175pt x 280.04625pt>
+
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 137.
+(pdftex.def)             Requested size: 614.295pt x 791.35104pt.
+[6]
+<palaci.png, id=35, 459.7175pt x 280.04625pt>
 File: palaci.png Graphic file (type png)
 <use palaci.png>
-Package pdftex.def Info: palaci.png  used on input line 142.
+Package pdftex.def Info: palaci.png  used on input line 146.
 (pdftex.def)             Requested size: 169.10808pt x 103.01724pt.
-<kosa.png, id=32, 310.15875pt x 187.70125pt>
+<kosa.png, id=36, 310.15875pt x 187.70125pt>
 File: kosa.png Graphic file (type png)
 <use kosa.png>
-Package pdftex.def Info: kosa.png  used on input line 149.
+Package pdftex.def Info: kosa.png  used on input line 153.
 (pdftex.def)             Requested size: 169.10808pt x 102.33954pt.
-<donhuevo.png, id=33, 698.61pt x 342.27875pt>
+<donhuevo.png, id=37, 698.61pt x 342.27875pt>
 File: donhuevo.png Graphic file (type png)
 <use donhuevo.png>
-Package pdftex.def Info: donhuevo.png  used on input line 162.
+Package pdftex.def Info: donhuevo.png  used on input line 166.
 (pdftex.def)             Requested size: 147.9744pt x 72.49693pt.
-<montan1.png, id=34, 498.86375pt x 216.81pt>
+<montan1.png, id=38, 498.86375pt x 216.81pt>
 File: montan1.png Graphic file (type png)
 <use montan1.png>
-Package pdftex.def Info: montan1.png  used on input line 169.
+Package pdftex.def Info: montan1.png  used on input line 173.
 (pdftex.def)             Requested size: 169.10808pt x 73.49608pt.
-<gk.png, id=35, 569.12625pt x 291.0875pt>
+<gk.png, id=39, 569.12625pt x 291.0875pt>
 File: gk.png Graphic file (type png)
 <use gk.png>
-Package pdftex.def Info: gk.png  used on input line 182.
+Package pdftex.def Info: gk.png  used on input line 186.
 (pdftex.def)             Requested size: 169.10808pt x 86.49188pt.
-<oceanic.png, id=36, 462.72874pt x 280.04625pt>
+<oceanic.png, id=40, 462.72874pt x 280.04625pt>
 File: oceanic.png Graphic file (type png)
 <use oceanic.png>
-Package pdftex.def Info: oceanic.png  used on input line 189.
+Package pdftex.def Info: oceanic.png  used on input line 193.
 (pdftex.def)             Requested size: 147.9744pt x 89.55252pt.
 
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 196.
+Package pdftex.def Info: logo.png  used on input line 200.
 (pdftex.def)             Requested size: 614.295pt x 791.35104pt.
-[6 <./palaci.png> <./kosa.png> <./donhuevo.png (PNG copy)> <./montan1.png> <./gk.png> <./oceanic.png>]
-<central.png, id=41, 470.75874pt x 222.8325pt>
+[7 <./palaci.png> <./kosa.png> <./donhuevo.png (PNG copy)> <./montan1.png> <./gk.png> <./oceanic.png>]
+<central.png, id=46, 470.75874pt x 222.8325pt>
 File: central.png Graphic file (type png)
 <use central.png>
-Package pdftex.def Info: central.png  used on input line 204.
+Package pdftex.def Info: central.png  used on input line 208.
 (pdftex.def)             Requested size: 190.24818pt x 90.05286pt.
-<paiquito.png, id=42, 583.17876pt x 307.1475pt>
+<paiquito.png, id=47, 583.17876pt x 307.1475pt>
 File: paiquito.png Graphic file (type png)
 <use paiquito.png>
-Package pdftex.def Info: paiquito.png  used on input line 211.
+Package pdftex.def Info: paiquito.png  used on input line 215.
 (pdftex.def)             Requested size: 190.24818pt x 100.19669pt.
-<santiago.png, id=43, 593.21625pt x 259.97125pt>
+<santiago.png, id=48, 593.21625pt x 259.97125pt>
 File: santiago.png Graphic file (type png)
 <use santiago.png>
-Package pdftex.def Info: santiago.png  used on input line 224.
+Package pdftex.def Info: santiago.png  used on input line 228.
 (pdftex.def)             Requested size: 190.24818pt x 83.37497pt.
-<nueva.png, id=44, 526.96875pt x 290.08376pt>
+<nueva.png, id=49, 526.96875pt x 290.08376pt>
 File: nueva.png Graphic file (type png)
 <use nueva.png>
-Package pdftex.def Info: nueva.png  used on input line 231.
+Package pdftex.def Info: nueva.png  used on input line 235.
 (pdftex.def)             Requested size: 190.24818pt x 104.72662pt.
-<nat.png, id=45, 657.45625pt x 310.15875pt>
+<nat.png, id=50, 657.45625pt x 310.15875pt>
 File: nat.png Graphic file (type png)
 <use nat.png>
-Package pdftex.def Info: nat.png  used on input line 244.
+Package pdftex.def Info: nat.png  used on input line 248.
 (pdftex.def)             Requested size: 169.10808pt x 79.7733pt.
-<fres.png, id=46, 722.7pt x 308.15125pt>
+<fres.png, id=51, 722.7pt x 308.15125pt>
 File: fres.png Graphic file (type png)
 <use fres.png>
-Package pdftex.def Info: fres.png  used on input line 251.
+Package pdftex.def Info: fres.png  used on input line 255.
 (pdftex.def)             Requested size: 190.24818pt x 81.11896pt.
-<prosud.png, id=47, 612.2875pt x 312.16624pt>
+<prosud.png, id=52, 612.2875pt x 312.16624pt>
 File: prosud.png Graphic file (type png)
 <use prosud.png>
-Package pdftex.def Info: prosud.png  used on input line 264.
+Package pdftex.def Info: prosud.png  used on input line 268.
 (pdftex.def)             Requested size: 190.24818pt x 96.9944pt.
-<aceite.png, id=48, 412.54124pt x 206.7725pt>
+<aceite.png, id=53, 412.54124pt x 206.7725pt>
 File: aceite.png Graphic file (type png)
 <use aceite.png>
-Package pdftex.def Info: aceite.png  used on input line 271.
+Package pdftex.def Info: aceite.png  used on input line 275.
 (pdftex.def)             Requested size: 190.24818pt x 95.35628pt.
 
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 280.
+Package pdftex.def Info: logo.png  used on input line 284.
 (pdftex.def)             Requested size: 614.295pt x 791.35104pt.
-[7 <./central.png> <./paiquito.png> <./santiago.png> <./nueva.png> <./nat.png> <./fres.png> <./prosud.png> <./aceite.png>]
-Overfull \hbox (39.89958pt too wide) in paragraph at lines 289--304
+[8 <./central.png> <./paiquito.png> <./santiago.png> <./nueva.png> <./nat.png> <./fres.png> <./prosud.png> <./aceite.png>]
+Overfull \hbox (39.89958pt too wide) in paragraph at lines 293--314
  [][] 
  []
 
 
-Underfull \hbox (badness 3068) in paragraph at lines 320--321
+Underfull \hbox (badness 3068) in paragraph at lines 330--331
 []|\T1/cmr/m/n/10.95 Dirección: Ta-ller de Pro-duc-ción,
  []
 
@@ -502,22 +518,28 @@ Underfull \hbox (badness 3068) in paragraph at lines 320--321
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 348.
-(pdftex.def)             Requested size: 614.295pt x 791.35104pt.
-[8]
-
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 400.
+Package pdftex.def Info: logo.png  used on input line 358.
 (pdftex.def)             Requested size: 614.295pt x 791.35104pt.
 [9]
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 407.
+Package pdftex.def Info: logo.png  used on input line 358.
 (pdftex.def)             Requested size: 614.295pt x 791.35104pt.
 [10]
-Overfull \hbox (29.39388pt too wide) in paragraph at lines 411--412
+
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 410.
+(pdftex.def)             Requested size: 614.295pt x 791.35104pt.
+[11]
+
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 417.
+(pdftex.def)             Requested size: 614.295pt x 791.35104pt.
+[12]
+Overfull \hbox (29.39388pt too wide) in paragraph at lines 421--422
 []\T1/cmr/m/n/12 El aná-li-sis fi-nan-cie-ro pre-li-mi-nar pa-ra el em-pren-di-mien-to "Las Em-pa-na-das Her-ma-nas"demuestra
  []
 
@@ -525,9 +547,9 @@ Overfull \hbox (29.39388pt too wide) in paragraph at lines 411--412
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 422.
+Package pdftex.def Info: logo.png  used on input line 432.
 (pdftex.def)             Requested size: 614.295pt x 791.35104pt.
-[11] (./main.aux
+[13] (./main.aux
 LaTeX Info: Redefining \. on input line 10.
 LaTeX Info: Redefining \% on input line 10.
 )
@@ -537,18 +559,18 @@ L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 7559 strings out of 475109
- 120077 string characters out of 5765325
- 534623 words of memory out of 5000000
- 30463 multiletter control sequences out of 15000+600000
+ 7572 strings out of 475109
+ 120322 string characters out of 5765325
+ 534625 words of memory out of 5000000
+ 30476 multiletter control sequences out of 15000+600000
  579546 words of font info for 90 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
- 67i,12n,80p,741b,501s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 67i,13n,84p,741b,572s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti2074.pfb>
-Output written on main.pdf (11 pages, 2027140 bytes).
+Output written on main.pdf (13 pages, 2088242 bytes).
 PDF statistics:
- 129 PDF objects out of 1000 (max. 8388607)
- 71 compressed objects within 1 object stream
+ 137 PDF objects out of 1000 (max. 8388607)
+ 76 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 

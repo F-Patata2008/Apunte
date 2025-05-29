@@ -3,14 +3,13 @@
 \contentsline {section}{\numberline {2}Introducción}{4}{}%
 \contentsline {subsection}{\numberline {2.1}Objetivos del Negocio:}{4}{}%
 \contentsline {section}{\numberline {3}Desarrollo}{5}{}%
-\contentsline {subsection}{\numberline {3.1}}{5}{}%
-\contentsline {subsection}{\numberline {3.2}Tabla de Costos Ingredientes}{5}{}%
-\contentsline {subsection}{\numberline {3.3}Cotizaciones Ingredientes}{6}{}%
-\contentsline {subsection}{\numberline {3.4}Facturas e IVA}{8}{}%
-\contentsline {subsubsection}{\numberline {3.4.1}Lista a Comprar}{8}{}%
-\contentsline {subsubsection}{\numberline {3.4.2}Factura de Compra}{8}{}%
-\contentsline {subsection}{\numberline {3.5}Definición de Precios y Proyección de Ingresos}{8}{}%
-\contentsline {subsubsection}{\numberline {3.5.1}Definición de Precios}{8}{}%
-\contentsline {subsubsection}{\numberline {3.5.2}Cálculo de Obligaciones Tributarias (IVA)}{8}{}%
-\contentsline {subsubsection}{\numberline {3.5.3}Proyección de Ingresos}{8}{}%
+\contentsline {subsection}{\numberline {3.1}Tabla de Costos Ingredientes}{5}{}%
+\contentsline {subsection}{\numberline {3.2}Cotizaciones Ingredientes}{6}{}%
+\contentsline {subsection}{\numberline {3.3}Facturas e IVA}{8}{}%
+\contentsline {subsubsection}{\numberline {3.3.1}Lista a Comprar}{8}{}%
+\contentsline {subsubsection}{\numberline {3.3.2}Factura de Compra}{8}{}%
+\contentsline {subsection}{\numberline {3.4}Definición de Precios y Proyección de Ingresos}{8}{}%
+\contentsline {subsubsection}{\numberline {3.4.1}Definición de Precios}{8}{}%
+\contentsline {subsubsection}{\numberline {3.4.2}Cálculo de Obligaciones Tributarias (IVA)}{8}{}%
+\contentsline {subsubsection}{\numberline {3.4.3}Proyección de Ingresos}{8}{}%
 \contentsline {section}{\numberline {4}Conclusiones}{9}{}%

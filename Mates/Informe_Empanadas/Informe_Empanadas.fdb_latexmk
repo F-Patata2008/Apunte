@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1748464204.82142 "Informe_Empanadas.tex" "Informe_Empanadas.pdf" "Informe_Empanadas" 1748464206.23072 0
+["pdflatex"] 1748520945.53997 "Informe_Empanadas.tex" "Informe_Empanadas.pdf" "Informe_Empanadas" 1748520946.84591 0
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1742685315 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1742685315 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1742685315 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -89,9 +89,9 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1742685315 42087 b0f9697c952c8f5a8eede4134282cb0d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1746973900 5311557 9da84c45f5b388655502706482323571 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1747956315 2030636 ce3491baba5b3c930ca2ed50b13c11cd ""
-  "Informe_Empanadas.aux" 1748464206.08006 5566 8b1329961679f032fc138159c66d3595 "pdflatex"
-  "Informe_Empanadas.tex" 1748464203.96332 13639 4e36d004b15a94663772f6d71776de65 ""
-  "Informe_Empanadas.toc" 1748464206.08406 1113 7213a21e959c3101c7d0f66a22df10ab "pdflatex"
+  "Informe_Empanadas.aux" 1748520946.70552 5473 5c0589389b4a3b697b75cd9244eedde3 "pdflatex"
+  "Informe_Empanadas.tex" 1748520942.36374 13625 0cc8e7d09813e5d5960025c509771fbd ""
+  "Informe_Empanadas.toc" 1748520946.7073 1061 7f166fef383c61fc278c32009320bfe5 "pdflatex"
   "images/aceite.png" 1748448056.41638 33453 8f124328ec93f415b1de17151c058477 ""
   "images/central.png" 1748447409.21391 57612 81e19b9d270974a021ea523840e192cc ""
   "images/donhuevo.png" 1748446093.7371 177243 6fb0a2d3dcadb27fe4499a3d4ea9a794 ""

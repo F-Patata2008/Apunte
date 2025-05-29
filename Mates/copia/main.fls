@@ -133,10 +133,14 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecrm0700.tfm
-INPUT ./logo.png
-INPUT ./logo.png
-INPUT ./logo.png
+INPUT ./empanadas.jpg
+INPUT ./empanadas.jpg
+INPUT ./empanadas.jpg
 OUTPUT main.pdf
+INPUT ./empanadas.jpg
+INPUT ./logo.png
+INPUT ./logo.png
+INPUT ./logo.png
 INPUT ./logo.png
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc
@@ -164,6 +168,9 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT ./logo.png
+INPUT ./logo.png
+INPUT ./logo.png
 OUTPUT main.toc
 INPUT ./logo.png
 INPUT ./logo.png
@@ -249,6 +256,9 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecbx1095.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcbx1095.tfm
+INPUT ./logo.png
+INPUT ./logo.png
+INPUT ./logo.png
 INPUT ./logo.png
 INPUT ./logo.png
 INPUT ./logo.png

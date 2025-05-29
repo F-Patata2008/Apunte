@@ -1,15 +1,15 @@
 \babel@toc {spanish}{}\relax 
-\contentsline {section}{\numberline {1}Resumen}{3}{}%
-\contentsline {section}{\numberline {2}Introducción}{4}{}%
-\contentsline {subsection}{\numberline {2.1}Objetivos del Negocio:}{4}{}%
-\contentsline {section}{\numberline {3}Desarrollo}{5}{}%
-\contentsline {subsection}{\numberline {3.1}Tabla de Costos de Ingredientes}{5}{}%
-\contentsline {subsection}{\numberline {3.2}Cotizaciones de Ingredientes}{6}{}%
-\contentsline {subsection}{\numberline {3.3}Facturas e IVA}{8}{}%
-\contentsline {subsubsection}{\numberline {3.3.1}Lista de Compras Detallada y Costos Seleccionados}{8}{}%
-\contentsline {subsubsection}{\numberline {3.3.2}Factura de Compra Simulada}{8}{}%
-\contentsline {subsection}{\numberline {3.4}Definición de Precios y Proyección de Ingresos}{9}{}%
-\contentsline {subsubsection}{\numberline {3.4.1}Costos Unitarios y Precios de Venta}{9}{}%
-\contentsline {subsubsection}{\numberline {3.4.2}Proyección de Ingresos y Cálculo de IVA}{9}{}%
-\contentsline {subsubsection}{\numberline {3.4.3}Cálculo de Ganancias y Viabilidad Inicial}{9}{}%
-\contentsline {section}{\numberline {4}Conclusiones}{11}{}%
+\contentsline {section}{\numberline {1}Resumen}{4}{}%
+\contentsline {section}{\numberline {2}Introducción}{5}{}%
+\contentsline {subsection}{\numberline {2.1}Objetivos del Negocio:}{5}{}%
+\contentsline {section}{\numberline {3}Desarrollo}{6}{}%
+\contentsline {subsection}{\numberline {3.1}Tabla de Costos de Ingredientes}{6}{}%
+\contentsline {subsection}{\numberline {3.2}Cotizaciones de Ingredientes}{7}{}%
+\contentsline {subsection}{\numberline {3.3}Facturas e IVA}{9}{}%
+\contentsline {subsubsection}{\numberline {3.3.1}Lista de Compras Detallada y Costos Seleccionados}{9}{}%
+\contentsline {subsubsection}{\numberline {3.3.2}Factura de Compra Simulada}{9}{}%
+\contentsline {subsection}{\numberline {3.4}Definición de Precios y Proyección de Ingresos}{11}{}%
+\contentsline {subsubsection}{\numberline {3.4.1}Costos Unitarios y Precios de Venta}{11}{}%
+\contentsline {subsubsection}{\numberline {3.4.2}Proyección de Ingresos y Cálculo de IVA}{11}{}%
+\contentsline {subsubsection}{\numberline {3.4.3}Cálculo de Ganancias y Viabilidad Inicial}{11}{}%
+\contentsline {section}{\numberline {4}Conclusiones}{13}{}%

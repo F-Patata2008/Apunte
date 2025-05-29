@@ -36,5 +36,6 @@ timestamp="$(date '+%Y-%m-%d %H:%M:%S')"
     exit 1
   fi
 
-} >> "$log_file" 2>&1
+} | tee -a "$log_file"
+
 

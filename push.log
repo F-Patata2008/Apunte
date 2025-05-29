@@ -1,1 +1,10 @@
 ========== 2025-05-29 08:53:44 ==========
+Mensaje de commit (dejar vacío para 'Auto-commit'): Haciendo commit...
+[main 2828dae] p
+ 2 files changed, 38 insertions(+), 30 deletions(-)
+ create mode 100644 push.log
+Haciendo push...
+To github.com:F-Patata2008/Apunte
+   7f78402..2828dae  main -> main
+branch 'main' set up to track 'origin/main'.
+[2025-05-29 08:53:44] ✅ Push exitoso

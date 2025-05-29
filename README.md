@@ -9,3 +9,4 @@ Incluyen
 - Filosofía Política
 - Probabilidad y Estadística
 - Matemáticas
+- Y un script bash que automatiza la subida a GitHub de los apuntes

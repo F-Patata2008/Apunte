@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1748573120.20197 "main.tex" "main.pdf" "main" 1748573122.02705 0
+["pdflatex"] 1748574537.24882 "main.tex" "main.pdf" "main" 1748574539.09339 0
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1742685315 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1742685315 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1742685315 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -8,7 +8,6 @@
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecbx1440.tfm" 1742685315 3584 13049b61b922a28b158a38aeff75ee9b ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecbx1728.tfm" 1742685315 3584 ad49a18d8515beef6d92d4d3f197d0fd ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecrm0700.tfm" 1742685315 3584 cf973739aac7ab6247f9150296af7954 ""
-  "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecrm0800.tfm" 1742685315 3584 49064b465390a8e316a3c8417a050403 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecrm1000.tfm" 1742685315 3584 adb004a0c8e7c46ee66cad73671f37b4 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecrm1095.tfm" 1742685315 3584 929cdff2b7a8c11bd4d49fd68cb0ae70 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm" 1742685315 3584 f80ddd985bd00e29e9a6047ebd9d4781 ""
@@ -51,7 +50,6 @@
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb" 1742685315 135942 859a90cad7494a1e79c94baf546d7de5 ""
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb" 1742685315 139826 9213617a7cb78635fc326b859c0b2273 ""
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb" 1742685315 154599 ded6d7c21788a8930eadc7fef7518942 ""
-  "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb" 1742685315 164227 3df942b4ff2124425d8fb1b6d3e01c7a ""
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb" 1742685315 138258 6525c253f16cededa14c7fd0da7f67b2 ""
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb" 1742685315 145929 f25e56369a345c4ff583b067cd87ce8e ""
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb" 1742685315 136101 f533469f523533d38317ab5729d00c8a ""
@@ -133,9 +131,9 @@
   "kosa.png" 1748447649.53795 31129 905d0c89fce5009a4fee7a90184e45a3 ""
   "libre.png" 1748568880.76127 85849 70b6724e12679ccd6b6b5d915511b69f ""
   "lobos.png" 1748561590.53004 56005 e9ec7434c59a54b0da20a67a98286a40 ""
-  "main.aux" 1748573121.85239 9127 04692d53c1dd574849b837b01fd4ab68 "pdflatex"
-  "main.tex" 1748573119.46334 32879 611a6b11c954b22aca9922018117c0d7 ""
-  "main.toc" 1748573121.85439 1277 5a60b7668bb85cc338217cf911a1548a "pdflatex"
+  "main.aux" 1748574538.91546 9127 04692d53c1dd574849b837b01fd4ab68 "pdflatex"
+  "main.tex" 1748574537.15343 32773 2aeab0dd02a52cf730acc68628433537 ""
+  "main.toc" 1748574538.91746 1277 5a60b7668bb85cc338217cf911a1548a "pdflatex"
   "montan1.png" 1748446698.2728 91267 e64b9da124072ebc53eada04206b336e ""
   "nat.png" 1748448746.13901 208876 bdadeb9754543661db64adb1eddad5a7 ""
   "negra.png" 1748562533.72477 100765 6796b9c25a574493c28f18a0a8a01317 ""

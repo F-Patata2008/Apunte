@@ -1,6 +1,12 @@
+\babel@toc {spanish}{}\relax 
 \contentsline {section}{\numberline {1}Clase de 23/05/2025}{2}{}%
 \contentsline {subsection}{\numberline {1.1}Cinemática}{2}{}%
 \contentsline {subsubsection}{\numberline {1.1.1}Movimiento Rectilíneo Uniforme (MRU)}{2}{}%
 \contentsline {subsubsection}{\numberline {1.1.2}Movimiento Rectilíneo Uniformemente Acelerado (MRUA)}{2}{}%
 \contentsline {subsubsection}{\numberline {1.1.3}Graficos}{2}{}%
 \contentsline {subsubsection}{\numberline {1.1.4}Aplicando la Derivada a la ecuación de la Itininerario}{2}{}%
+\contentsline {section}{\numberline {2}Clase del 30/05/2025}{3}{}%
+\contentsline {subsection}{\numberline {2.1}Movimiento Circunferencial Uniforme (MCU)}{3}{}%
+\contentsline {subsubsection}{\numberline {2.1.1}Magnitudes Fisicas Temporales asociadas al Movimiento Ciclicos}{3}{}%
+\contentsline {subsubsection}{\numberline {2.1.2}Estudio lineal del M.C.U.}{3}{}%
+\contentsline {subsubsection}{\numberline {2.1.3}Estudio Angular del M.C.U.}{3}{}%

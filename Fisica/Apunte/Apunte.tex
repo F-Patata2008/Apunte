@@ -8,6 +8,10 @@
 \usepackage{transparent}
 \usepackage{eso-pic}
 \usepackage{xcolor}
+\usepackage{fancyhdr} % Headers and footers
+\usepackage{lipsum} % Dummy text
+\usepackage{tikz} % For drawing
+\usepackage[spanish]{babel} % For custom section titles
 
 \graphicspath{{/home/fpatata/Clases/Fisica/images/}} % Path to images
 \newcommand\BackgroundPic{
@@ -15,7 +19,7 @@
         \parbox[b][\paperheight]{\paperwidth}{
             \vfill
             \centering
-            \transparent{0.2}\includegraphics[width=\paperwidth]{logo.png} % your image
+            \transparent{0.1}\includegraphics[width=\paperwidth]{logo.png} % your image
             \vfill
         }
     }
@@ -75,6 +79,49 @@
             \[x_f=x_i+v_i t+\frac{1}{2}at^2 \]
             \[v(t)=x'=v_1+at^2 \]
             \[v(t)'=a \]
+
+
+
+
+\section{Clase del 30/05/2025}
+    \subsection{Movimiento Circunferencial Uniforme (MCU)}
+        \begin{itemize}
+            \item Movimiento circular con rapidez constante
+            \item Trayectoria circular
+            \item Aceleración centrípeta $a_c = \frac{v^2}{r}$ $(\frac{m}{s^2})$
+            \item Velocidad angular $\omega = \frac{\Delta \theta}{\Delta t}$ $(\frac{rad}{s})$
+            \item Relación entre velocidad lineal y angular $v = r\omega$ $(\frac{m}{s})$
+        \end{itemize}
+        \subsubsection{Magnitudes Fisicas Temporales asociadas al Movimiento Ciclicos}
+                \begin{itemize}
+                    \item Periodo $T = \frac{2\pi r}{v} = \frac{t}{N} = \frac{1}{f} [s]$ \\
+                        Tiempo que tarda en completar una vuelta
+                    \item Frecuencia $f = \frac{1}{T} = \frac{N}{t} [Hz]$
+                    \item Longitud de onda $\lambda = \frac{v}{f} = \frac{vT}{N}$ 
+                \end{itemize}
+
+        \subsubsection{Estudio lineal del M.C.U.}
+        \begin{itemize}
+            \item Rapidez tangencial $v = \frac{2\pi r}{T} = 2\pi rf $
+            \item Aceleración centrípeta $a_c = \frac{v^2}{r} $
+            \item Aceleración tangencial $a_t = r\alpha$ donde $\alpha$ es la aceleración angular
+            \item Aceleración total $a = \sqrt{a_c^2 + a_t^2}$
+        \end{itemize}
+
+        \subsubsection{Estudio Angular del M.C.U.}
+        \begin{itemize}
+            \item $1 rad \approx 57.3° $
+            \item $360° = 2\pi rad$
+            \item Rapidez angular $\omega = \frac{2\pi}{T} = 2\pi f$
+            \item Aceleración angular $\alpha = \frac{\Delta \omega}{\Delta t}$
+            \item Relación entre aceleración centrípeta y angular $a_c = r\omega^2$
+            \item Relación entre aceleración tangencial y angular $a_t = r\alpha$
+            \item Aceleración total $a = \sqrt{a_c^2 + a_t^2} $
+        \end{itemize}
+
+        \begin{tikzpicture}
+           \filldraw[color=red, fill=white, very thick](-1,0) circle (1.5); 
+        \end{tikzpicture}
 
             
 

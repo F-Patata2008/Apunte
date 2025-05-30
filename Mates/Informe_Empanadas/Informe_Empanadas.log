@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.5.22)  29 MAY 2025 08:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.5.22)  29 MAY 2025 22:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -207,43 +207,114 @@ Package caption Info: New subtype `subfigure' on input line 238.
 \c@subfigure=\count290
 Package caption Info: New subtype `subtable' on input line 238.
 \c@subtable=\count291
+) (/usr/share/texmf-dist/tex/latex/tools/array.sty
+Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
+\col@sep=\dimen172
+\ar@mcellbox=\box54
+\extrarowheight=\dimen173
+\NC@list=\toks27
+\extratabsurround=\skip54
+\backup@length=\skip55
+\ar@cellbox=\box55
+) (/usr/share/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen174
+\lightrulewidth=\dimen175
+\cmidrulewidth=\dimen176
+\belowrulesep=\dimen177
+\belowbottomsep=\dimen178
+\aboverulesep=\dimen179
+\abovetopsep=\dimen180
+\cmidrulesep=\dimen181
+\cmidrulekern=\dimen182
+\defaultaddspace=\dimen183
+\@cmidla=\count292
+\@cmidlb=\count293
+\@aboverulesep=\dimen184
+\@belowrulesep=\dimen185
+\@thisruleclass=\count294
+\@lastruleclass=\count295
+\@thisrulewidth=\dimen186
+) (/usr/share/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2024-10-27 v4.22 Multi-page Table package (DPC)
+\LTleft=\skip56
+\LTright=\skip57
+\LTpre=\skip58
+\LTpost=\skip59
+\LTchunksize=\count296
+\LTcapwidth=\dimen187
+\LT@head=\box56
+\LT@firsthead=\box57
+\LT@foot=\box58
+\LT@lastfoot=\box59
+\LT@gbox=\box60
+\LT@cols=\count297
+\LT@rows=\count298
+\c@LT@tables=\count299
+\c@LT@chunks=\count300
+\LT@p@ftn=\toks28
+) (/usr/share/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count301
+\float@exts=\toks29
+\float@box=\box61
+\@float@everytoks=\toks30
+\@floatcapt=\box62
+)
+(/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+\f@nch@headwidth=\skip60
+\f@nch@offset@elh=\skip61
+\f@nch@offset@erh=\skip62
+\f@nch@offset@olh=\skip63
+\f@nch@offset@orh=\skip64
+\f@nch@offset@elf=\skip65
+\f@nch@offset@erf=\skip66
+\f@nch@offset@olf=\skip67
+\f@nch@offset@orf=\skip68
+\f@nch@height=\skip69
+\f@nch@footalignment=\skip70
+\f@nch@widthL=\skip71
+\f@nch@widthC=\skip72
+\f@nch@widthR=\skip73
+\@temptokenb=\toks31
 ) (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count292
-\l__pdf_internal_box=\box54
+\l__color_backend_stack_int=\count302
+\l__pdf_internal_box=\box63
 ) (./Informe_Empanadas.aux
 LaTeX Info: Redefining \. on input line 10.
 LaTeX Info: Redefining \% on input line 10.
 )
 \openout1 = `Informe_Empanadas.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count293
-\scratchdimen=\dimen172
-\scratchbox=\box55
-\nofMPsegments=\count294
-\nofMParguments=\count295
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count296
-\MPscratchDim=\dimen173
-\MPnumerator=\count297
-\makeMPintoPDFobject=\count298
-\everyMPtoPDFconversion=\toks28
+\scratchcounter=\count303
+\scratchdimen=\dimen188
+\scratchbox=\box64
+\nofMPsegments=\count304
+\nofMParguments=\count305
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count306
+\MPscratchDim=\dimen189
+\MPnumerator=\count307
+\makeMPintoPDFobject=\count308
+\everyMPtoPDFconversion=\toks33
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -284,29 +355,34 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \. on input line 34.
-LaTeX Info: Redefining \% on input line 34.
+LaTeX Info: Redefining \. on input line 40.
+LaTeX Info: Redefining \% on input line 40.
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: longtable package is loaded.
+(/usr/share/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+)
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 36.
-(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+LaTeX Font Info:    Trying to load font information for U+msa on input line 42.
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 42.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 <images/empanadas.jpg, id=1, 642.4pt x 642.4pt>
 File: images/empanadas.jpg Graphic file (type jpg)
 <use images/empanadas.jpg>
-Package pdftex.def Info: images/empanadas.jpg  used on input line 39.
-(pdftex.def)             Requested size: 375.80544pt x 375.8172pt.
+Package pdftex.def Info: images/empanadas.jpg  used on input line 46.
+(pdftex.def)             Requested size: 399.29463pt x 399.30331pt.
 
 
 <images/logo.png, id=2, 198.7425pt x 255.95625pt>
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png  used on input line 41.
+Package pdftex.def Info: images/logo.png  used on input line 48.
 (pdftex.def)             Requested size: 614.295pt x 791.35104pt.
 [1
 
@@ -321,21 +397,21 @@ LaTeX Info: Redefining \% on input line 1.
 
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png  used on input line 44.
+Package pdftex.def Info: images/logo.png  used on input line 51.
 (pdftex.def)             Requested size: 614.295pt x 791.35104pt.
 [2]
 
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png  used on input line 48.
+Package pdftex.def Info: images/logo.png  used on input line 54.
 (pdftex.def)             Requested size: 614.295pt x 791.35104pt.
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
  []
 
@@ -343,123 +419,284 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png  used on input line 71.
+Package pdftex.def Info: images/logo.png  used on input line 77.
 (pdftex.def)             Requested size: 614.295pt x 791.35104pt.
 [4]
-
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png  used on input line 125.
+Package pdftex.def Info: images/logo.png  used on input line 149.
 (pdftex.def)             Requested size: 614.295pt x 791.35104pt.
-[5]
+ [5]
 <images/palaci.png, id=32, 459.7175pt x 280.04625pt>
 File: images/palaci.png Graphic file (type png)
 <use images/palaci.png>
-Package pdftex.def Info: images/palaci.png  used on input line 134.
-(pdftex.def)             Requested size: 169.10808pt x 103.01724pt.
+Package pdftex.def Info: images/palaci.png  used on input line 159.
+(pdftex.def)             Requested size: 147.9744pt x 90.14221pt.
 <images/kosa.png, id=33, 310.15875pt x 187.70125pt>
 File: images/kosa.png Graphic file (type png)
 <use images/kosa.png>
-Package pdftex.def Info: images/kosa.png  used on input line 141.
-(pdftex.def)             Requested size: 169.10808pt x 102.33954pt.
+Package pdftex.def Info: images/kosa.png  used on input line 166.
+(pdftex.def)             Requested size: 147.9744pt x 89.54852pt.
 <images/donhuevo.png, id=34, 698.61pt x 342.27875pt>
 File: images/donhuevo.png Graphic file (type png)
 <use images/donhuevo.png>
-Package pdftex.def Info: images/donhuevo.png  used on input line 154.
-(pdftex.def)             Requested size: 147.9744pt x 72.49693pt.
+Package pdftex.def Info: images/donhuevo.png  used on input line 179.
+(pdftex.def)             Requested size: 126.83427pt x 62.14023pt.
 <images/montan1.png, id=35, 498.86375pt x 216.81pt>
 File: images/montan1.png Graphic file (type png)
 <use images/montan1.png>
-Package pdftex.def Info: images/montan1.png  used on input line 161.
-(pdftex.def)             Requested size: 169.10808pt x 73.49608pt.
+Package pdftex.def Info: images/montan1.png  used on input line 186.
+(pdftex.def)             Requested size: 147.9744pt x 64.30907pt.
 <images/gk.png, id=36, 569.12625pt x 291.0875pt>
 File: images/gk.png Graphic file (type png)
 <use images/gk.png>
-Package pdftex.def Info: images/gk.png  used on input line 174.
-(pdftex.def)             Requested size: 169.10808pt x 86.49188pt.
+Package pdftex.def Info: images/gk.png  used on input line 199.
+(pdftex.def)             Requested size: 147.9744pt x 75.6854pt.
 <images/oceanic.png, id=37, 462.72874pt x 280.04625pt>
 File: images/oceanic.png Graphic file (type png)
 <use images/oceanic.png>
-Package pdftex.def Info: images/oceanic.png  used on input line 181.
-(pdftex.def)             Requested size: 147.9744pt x 89.55252pt.
-<images/central.png, id=38, 470.75874pt x 222.8325pt>
+Package pdftex.def Info: images/oceanic.png  used on input line 206.
+(pdftex.def)             Requested size: 126.83427pt x 76.7587pt.
+
+
+File: images/logo.png Graphic file (type png)
+<use images/logo.png>
+Package pdftex.def Info: images/logo.png  used on input line 213.
+(pdftex.def)             Requested size: 614.295pt x 791.35104pt.
+[6 <./images/palaci.png> <./images/kosa.png> <./images/donhuevo.png (PNG copy)> <./images/montan1.png>]
+
+File: images/logo.png Graphic file (type png)
+<use images/logo.png>
+Package pdftex.def Info: images/logo.png  used on input line 213.
+(pdftex.def)             Requested size: 614.295pt x 791.35104pt.
+[7 <./images/gk.png> <./images/oceanic.png>]
+<images/central.png, id=46, 470.75874pt x 222.8325pt>
 File: images/central.png Graphic file (type png)
 <use images/central.png>
-Package pdftex.def Info: images/central.png  used on input line 196.
-(pdftex.def)             Requested size: 190.24818pt x 90.05286pt.
-<images/paiquito.png, id=39, 583.17876pt x 307.1475pt>
+Package pdftex.def Info: images/central.png  used on input line 221.
+(pdftex.def)             Requested size: 147.9744pt x 70.043pt.
+<images/paiquito.png, id=47, 583.17876pt x 307.1475pt>
 File: images/paiquito.png Graphic file (type png)
 <use images/paiquito.png>
-Package pdftex.def Info: images/paiquito.png  used on input line 203.
-(pdftex.def)             Requested size: 190.24818pt x 100.19669pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<images/santiago.png, id=40, 593.21625pt x 259.97125pt>
+Package pdftex.def Info: images/paiquito.png  used on input line 228.
+(pdftex.def)             Requested size: 126.83427pt x 66.79935pt.
+<images/santiago.png, id=48, 593.21625pt x 259.97125pt>
 File: images/santiago.png Graphic file (type png)
 <use images/santiago.png>
-Package pdftex.def Info: images/santiago.png  used on input line 216.
+Package pdftex.def Info: images/santiago.png  used on input line 241.
 (pdftex.def)             Requested size: 190.24818pt x 83.37497pt.
-<images/nueva.png, id=41, 526.96875pt x 290.08376pt>
+<images/nueva.png, id=49, 526.96875pt x 290.08376pt>
 File: images/nueva.png Graphic file (type png)
 <use images/nueva.png>
-Package pdftex.def Info: images/nueva.png  used on input line 223.
-(pdftex.def)             Requested size: 190.24818pt x 104.72662pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<images/nat.png, id=42, 657.45625pt x 310.15875pt>
+Package pdftex.def Info: images/nueva.png  used on input line 248.
+(pdftex.def)             Requested size: 156.42528pt x 86.10954pt.
+<images/nat.png, id=50, 657.45625pt x 310.15875pt>
 File: images/nat.png Graphic file (type png)
 <use images/nat.png>
-Package pdftex.def Info: images/nat.png  used on input line 236.
+Package pdftex.def Info: images/nat.png  used on input line 261.
 (pdftex.def)             Requested size: 169.10808pt x 79.7733pt.
-<images/fres.png, id=43, 722.7pt x 308.15125pt>
+<images/fres.png, id=51, 722.7pt x 308.15125pt>
 File: images/fres.png Graphic file (type png)
 <use images/fres.png>
-Package pdftex.def Info: images/fres.png  used on input line 243.
+Package pdftex.def Info: images/fres.png  used on input line 268.
 (pdftex.def)             Requested size: 190.24818pt x 81.11896pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<images/prosud.png, id=44, 612.2875pt x 312.16624pt>
+<images/prosud.png, id=52, 612.2875pt x 312.16624pt>
 File: images/prosud.png Graphic file (type png)
 <use images/prosud.png>
-Package pdftex.def Info: images/prosud.png  used on input line 256.
+Package pdftex.def Info: images/prosud.png  used on input line 281.
 (pdftex.def)             Requested size: 190.24818pt x 96.9944pt.
-<images/aceite.png, id=45, 412.54124pt x 206.7725pt>
+<images/aceite.png, id=53, 412.54124pt x 206.7725pt>
 File: images/aceite.png Graphic file (type png)
 <use images/aceite.png>
-Package pdftex.def Info: images/aceite.png  used on input line 263.
-(pdftex.def)             Requested size: 190.24818pt x 95.35628pt.
+Package pdftex.def Info: images/aceite.png  used on input line 288.
+(pdftex.def)             Requested size: 194.48009pt x 97.4765pt.
+<images/lobos.png, id=54, 394.47375pt x 212.795pt>
+File: images/lobos.png Graphic file (type png)
+<use images/lobos.png>
+Package pdftex.def Info: images/lobos.png  used on input line 302.
+(pdftex.def)             Requested size: 169.10808pt x 91.22406pt.
+<images/online.png, id=55, 602.25pt x 361.35pt>
+File: images/online.png Graphic file (type png)
+<use images/online.png>
+Package pdftex.def Info: images/online.png  used on input line 309.
+(pdftex.def)             Requested size: 147.9744pt x 88.7824pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: images/logo.png Graphic file (type png)
+<use images/logo.png>
+Package pdftex.def Info: images/logo.png  used on input line 316.
+(pdftex.def)             Requested size: 614.295pt x 791.35104pt.
+[8 <./images/central.png> <./images/paiquito.png> <./images/santiago.png> <./images/nueva.png> <./images/nat.png> <./images/fres.png> <./images/prosud.png> <./images/aceite.png>]
+
+./Informe_Empanadas.tex:322: LaTeX Error: File `vega' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.322 ...ncludegraphics[width=0.9\linewidth]{vega}
+                                                   % Removed space before ]
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Informe_Empanadas.tex:329: LaTeX Error: File `Oregano' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.329 ...udegraphics[width=0.9\linewidth]{Oregano}
+                                                   % Removed space before ]
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Informe_Empanadas.tex:342: LaTeX Error: File `cholitos' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.342 ...degraphics[width=0.9\linewidth]{cholitos}
+                                                   % Removed space before ]
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Informe_Empanadas.tex:349: LaTeX Error: File `comino' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.349 ...ludegraphics[width=0.9\linewidth]{comino}
+                                                   % Removed space before ]
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Informe_Empanadas.tex:362: LaTeX Error: File `negra' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.362 ...cludegraphics[width=0.9\linewidth]{negra}
+                                                   % Removed space before ]
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Informe_Empanadas.tex:369: LaTeX Error: File `pimienta' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.369 ...degraphics[width=0.9\linewidth]{pimienta}
+                                                   % Removed space before ]
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Informe_Empanadas.tex:382: LaTeX Error: File `chile' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.382 ...cludegraphics[width=0.9\linewidth]{chile}
+                                                   % Removed space before ]
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Informe_Empanadas.tex:389: LaTeX Error: File `nutri' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.389 ...cludegraphics[width=0.9\linewidth]{nutri}
+                                                   % Removed space before ]
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Informe_Empanadas.tex:402: LaTeX Error: File `gourmet' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.402 ...udegraphics[width=0.9\linewidth]{gourmet}
+                                                   % Removed space before ]
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Informe_Empanadas.tex:409: LaTeX Error: File `libre' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.409 ...cludegraphics[width=0.9\linewidth]{libre}
+                                                   % Removed space before ]
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Reference `tab:costos_ingredientes_proveedor' on page 9 undefined on input line 422.
+
+
+LaTeX Warning: Reference `tab:lista_compras' on page 9 undefined on input line 422.
+
+
+Overfull \hbox (39.89958pt too wide) in paragraph at lines 427--448
+ [][] 
+ []
 
 
 
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png  used on input line 272.
+Package pdftex.def Info: images/logo.png  used on input line 451.
 (pdftex.def)             Requested size: 614.295pt x 791.35104pt.
-[6 <./images/palaci.png> <./images/kosa.png> <./images/donhuevo.png (PNG copy)> <./images/montan1.png> <./images/gk.png> <./images/oceanic.png>]
+[9 <./images/lobos.png> <./images/online.png>]
 
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png  used on input line 275.
+Package pdftex.def Info: images/logo.png  used on input line 457.
 (pdftex.def)             Requested size: 614.295pt x 791.35104pt.
-[7 <./images/central.png> <./images/paiquito.png> <./images/santiago.png> <./images/nueva.png> <./images/nat.png> <./images/fres.png> <./images/prosud.png> <./images/aceite.png>]
+[10]
 
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png  used on input line 285.
+Package pdftex.def Info: images/logo.png  used on input line 462.
 (pdftex.def)             Requested size: 614.295pt x 791.35104pt.
-[8]
-
-File: images/logo.png Graphic file (type png)
-<use images/logo.png>
-Package pdftex.def Info: images/logo.png  used on input line 292.
-(pdftex.def)             Requested size: 614.295pt x 791.35104pt.
-[9] (./Informe_Empanadas.aux
+[11] (./Informe_Empanadas.aux
 LaTeX Info: Redefining \. on input line 10.
 LaTeX Info: Redefining \% on input line 10.
 )
@@ -467,20 +704,27 @@ LaTeX Info: Redefining \% on input line 10.
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 7217 strings out of 475109
- 115877 string characters out of 5765325
- 533852 words of memory out of 5000000
- 30140 multiletter control sequences out of 15000+600000
- 576186 words of font info for 81 fonts, out of 8000000 for 9000
+ 8268 strings out of 475109
+ 133607 string characters out of 5765325
+ 558558 words of memory out of 5000000
+ 31170 multiletter control sequences out of 15000+600000
+ 578517 words of font info for 88 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
- 67i,12n,85p,754b,503s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti2074.pfb>
-Output written on Informe_Empanadas.pdf (9 pages, 2015686 bytes).
+ 67i,12n,81p,754b,501s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti2074.pfb>
+Output written on Informe_Empanadas.pdf (11 pages, 2264373 bytes).
 PDF statistics:
- 111 PDF objects out of 1000 (max. 8388607)
- 59 compressed objects within 1 object stream
+ 124 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
 

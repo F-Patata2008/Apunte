@@ -10,6 +10,12 @@
 \usepackage{eso-pic}
 \usepackage{xcolor}
 \usepackage{subcaption} % For subfigures
+\usepackage{array} % For thicker table lines and better column definitions
+\usepackage{booktabs} % For professional quality tables
+\usepackage{longtable} % For tables that span multiple pages
+\usepackage{float} % For [H] option in tables/figures
+\usepackage{fancyhdr} % For custom headers/footers
+\usepackage{longtable} % For tables that can span multiple pages
 
 \graphicspath{{images/}} % Path to images
 \newcommand\BackgroundPic{
@@ -34,9 +40,10 @@
 \begin{document}
 
 \maketitle
-\begin{figure}[h!] % Use [h!] or [htbp] for better float placement
+%\includegraphics[width=0.95\textwidth]{empanadas} % Logo of the school
+\begin{figure}[h]
     \centering
-    \includegraphics[width=0.8\textwidth]{empanadas} % Logo of the school
+    \includegraphics[width=0.85\textwidth]{empanadas} % Logo of the school
 \end{figure}
 \newpage
 
@@ -44,7 +51,6 @@
 \newpage
 
 \section{Resumen} % Aprox 1/3 de Pagina
-% Content for Resumen
 \newpage
 
 
@@ -73,70 +79,89 @@ Dentro de las proyecciones financieras, se contempla un análisis de costos y pr
 
 
 \section{Desarrollo} % 2 - 5 paginas
+% \subsection{} % This was empty, removed.
 
-\subsection{Tabla de Costos Ingredientes}
+\subsection{Tabla de Costos de Ingredientes}
 
-\begin{table}[h!]
-    \centering
-    \begin{tabular}{|| c | c | c | c||} 
+%\begin{table}[H] % Using [H] from float package to place it "here"
+    %\centering
+    \begin{longtable}{|| c | c | c | c||}
         \hline
-    \textbf{Distribuidor} & Formato & \textbf{Costo} & \textbf{Costo 100 Unidades} \\ [0.5ex]
+        \textbf{Distribuidor} & Formato & \textbf{Costo} &  \\ [0.5ex]
         \hline\hline
-        \multicolumn{4}{||c||}{\textbf{Masa Prehecha Grande}} \\ [0.5ex] \hline \hline
+        \multicolumn{3}{||c|}{\textbf{Masa Prehecha Grande}} & \textbf{Costo 100 unidades} \\ [0.5ex] \hline \hline
         El Palacio de las Empanadas & 20 Un & \$4100 & \$20500 \\ \hline
-        Masas Mi Tierra & 25 Un & \$8000 & \$31000 \\ \hline
         Alimentos La Kosa & 20 Un & \$4200 & \$21000 \\ [1ex] \hline \hline
 
-        \multicolumn{3}{||c||}{\textbf{Huevos}} & \textbf{Costo por Docena} \\ [0.5ex] \hline \hline
+        \multicolumn{3}{||c|}{\textbf{Huevos}} & \textbf{Costo por Docena} \\ [0.5ex] \hline \hline
         El Don Huevo & 180 Un & \$39500 & \$2633 \\ \hline
-        Huevos La Montaña Pelluhue & 180 Un & \$43990 & \$2932 \\ \hline
-        AgricoVial & 180 Un & \$41600 & \$2773 \\ [1ex] \hline \hline
+        Huevos La Montaña Pelluhue & 180 Un & \$43990 & \$2932 \\ [1ex] \hline
 
         \multicolumn{3}{||c|}{\textbf{Camaron}} & \textbf{Costo por KG} \\ [0.5ex] \hline \hline
         Distribuidora GK & 10 KG & \$48900 & \$4890 \\ \hline
-        Comercial Oceanica & 10 KG & \$55800 & \$5580 \\ \hline
-        Del Origen & 10 KG & \$48700 & \$4870 \\ [1ex] \hline \hline
+        Comercial Oceanica & 10 KG & \$55800 & \$5580 \\ [1ex] \hline
 
         \multicolumn{3}{||c|}{\textbf{Carne Molida}} & \textbf{Costo por KG} \\ [0.5ex] \hline \hline % Added Costo por KG header for consistency
         Central Mayorista & 500 G & \$2590 & \$5080 \\ \hline 
-        Unimarc & 1 KG & \$4990 & \$4990 \\ \hline 
         El Paiquito & 250 G & \$1090 & \$4360 \\ [1ex] \hline \hline
 
 
         \multicolumn{3}{||c|}{\textbf{Queso}} & \textbf{Costo por KG} \\ [0.5ex] \hline \hline % Added Costo por KG header
         Distribuidora Santiago & 1 KG & \$9580 & \$9580 \\ \hline
-        Distribuidora Nueva de Matte & 1 KG & \$6940 & \$6940 \\ \hline
-        Mayorista 10 & 1 KG & \$9160 & \$9160 \\ [1ex] \hline \hline
+        Distribuidora Nueva de Matte & 1 KG & \$6940 & \$6940 \\ [1ex] \hline
 
         \multicolumn{3}{||c|}{\textbf{Cebolla}} & \textbf{Costo por KG} \\ [0.5ex] \hline \hline % Added Costo por KG header
         Santiago Natural Foods & 14 KG & \$10990 & \$785 \\ \hline
-        Distribuidora Frest & 10 KG & \$9990 & \$990 \\ \hline
-        Lider & 1 KG & \$1195 & \$1195 \\ [1ex] \hline \hline
+        Distribuidora Frest & 10 KG & \$9990 & \$990 \\ [1ex] \hline
 
         \multicolumn{3}{||c|}{\textbf{Aceite}} & \textbf{Costo por Litro} \\ [0.5ex] \hline \hline
         ProsudMarket & 18 L & \$39614 & \$2200.77 \\ \hline
-        Central Mayorista & 13.5 L & \$22200 & \$1644.44 \\ \hline
-        Distribuidora Sabatini & 5L & \$9296 & \$1859.20 \\ [1ex] \hline \hline
+        Central Mayorista & 13.5 L & \$22200 & \$1644.44 \\ [1ex] \hline
+        
+        \multicolumn{3}{||c|}{\textbf{Sal}} & \textbf{Costo por KG} \\ [0.5ex] \hline \hline % Added Costo por KG header
+        Central Mayorista & 10 KG & \$4400 & \$440 \\ \hline
+        Distribuidora Online & 1 Kg & \$358 & \$358 \\ [1ex] \hline \hline
 
-    \end{tabular}
-    \caption{Tabla de Costos de Ingredientes}
-    \label{tab:costos_ingredientes}
-\end{table} %Fin Priemra Pagina del Desarrollo
-\newpage
+        \multicolumn{3}{||c|}{\textbf{Oregano}} & \textbf{Costo por KG} \\ [0.5ex] \hline \hline % Added Costo por KG header
+        La Vega & 1 KG & \$3796 & \$3796 \\ \hline
+        Santiago Natural Foods & 1 KG & \$6900 & \$6900 \\ [1ex] \hline \hline
+
+        \multicolumn{3}{||c|}{\textbf{Comino}} & \textbf{Costo por KG} \\ [0.5ex] \hline \hline % Added Costo por KG header
+        Los Cholitos & 1 KG & \$4284 & \$4284 \\ \hline
+        Directo de la Vega & 1 KG & \$5177 & \$5177 \\ [1ex] \hline \hline
+
+        \multicolumn{3}{||c|}{\textbf{Pimienta}} & \textbf{Costo por KG} \\ [0.5ex] \hline \hline % Added Costo por KG header
+        Directo de la Vega & 1 KG & \$3106 & \$3106 \\ \hline
+        CDV Foods & 1 KG & \$3068 & \$3068 \\ [1ex] \hline \hline
+
+        \multicolumn{3}{||c|}{\textbf{Pasas}} & \textbf{Costo por KG} \\ [0.5ex] \hline \hline % Added Costo por KG header
+        Chile Frutos Secos & 1 KG & \$3690 & \$3690 \\ \hline
+        Nutri Bueno & 1 KG & \$4000 & \$4000 \\ [1ex] \hline \hline
 
 
-\subsection{Cotizaciones Ingredientes}
+        \multicolumn{3}{||c|}{\textbf{Aceitunas}} & \textbf{Costo por KG} \\ [0.5ex] \hline \hline % Added Costo por KG header
+        Alaia Gourmet & 1 KG & \$4000 & \$4000 \\ \hline
+        Mercado Libre & 1 KG & \$4900 & \$4900 \\ [1ex] \hline \hline
+
+    %\end{longtable}
+    \caption{Tabla de Costos de Ingredientes por Proveedor}
+    \label{tab:costos_ingredientes_proveedor}
+    \end{longtable} %n Priemra Pagina del Desarrollo
+%\newpage
+
+
+\subsection{Cotizaciones de Ingredientes}
     %\subsubsection{Masa Prehecha}
-        \begin{figure}[h!] % Use [h!] or [htbp] for better float placement
+        \begin{figure}[H] % Use [H] or [htbp] for better float placement
             \centering % Center the content of the figure
-            \begin{subfigure}{0.4\textwidth}
+            \begin{subfigure}{0.35\textwidth}
                 \centering
                 \includegraphics[width=0.9\linewidth]{palaci} % Removed space before ]
                 \caption{Palacio de las Empanadas}
                 \label{fig:palacio}
             \end{subfigure}
             \hfill % Add some space between subfigures
-            \begin{subfigure}{0.4\textwidth}
+            \begin{subfigure}{0.35\textwidth}
                 \centering
                 \includegraphics[width=0.9\linewidth]{kosa} % Removed space before ]
                 \caption{Alimentos La Kosa}
@@ -147,16 +172,16 @@ Dentro de las proyecciones financieras, se contempla un análisis de costos y pr
         \end{figure} % END OF THIS FIGURE
 
     %\subsubsection{Huevos}
-        \begin{figure}[h!] % START A NEW FIGURE
+        \begin{figure}[H] % START A NEW FIGURE
             \centering
-            \begin{subfigure}{0.35\textwidth}
+            \begin{subfigure}{0.3\textwidth}
                 \centering
                 \includegraphics[width=0.9\linewidth]{donhuevo} % Removed space before ]
                 \caption{El Don Huevo}
                 \label{fig:don_huevo}
             \end{subfigure}
             \hfill
-            \begin{subfigure}{0.4\textwidth}
+            \begin{subfigure}{0.35\textwidth}
                 \centering
                 \includegraphics[width=0.9\linewidth]{montan1} % Removed space before ]
                 \caption{Huevos La Montaña Pelluhue}
@@ -167,16 +192,16 @@ Dentro de las proyecciones financieras, se contempla un análisis de costos y pr
         \end{figure} % END OF THIS FIGURE
 
     %\subsubsection{Camaron}
-        \begin{figure}[h!] % START A NEW FIGURE
+        \begin{figure}[H] % START A NEW FIGURE
             \centering
-            \begin{subfigure}{0.4\textwidth}
+            \begin{subfigure}{0.35\textwidth}
                 \centering
                 \includegraphics[width=0.9\linewidth]{gk} % Removed space before ]
                 \caption{Distribuidora GK}
                 \label{fig:distribuidora_gk}
             \end{subfigure}
             \hfill
-            \begin{subfigure}{0.35\textwidth}
+            \begin{subfigure}{0.3\textwidth}
                 \centering
                 \includegraphics[width=0.9\linewidth]{oceanic} % Removed space before ]
                 \caption{Comercial Oceanica}
@@ -185,31 +210,31 @@ Dentro de las proyecciones financieras, se contempla un análisis de costos y pr
             \caption{Cotizaciones de Distribuidores de Camarón}
             \label{fig:cotizaciones_camaron}
         \end{figure} % END OF THIS FIGURE
-        %\newpage % You can uncomment this if you specifically want a page break herei
+         \newpage 
         % Fin segunda pagina del desarrollo
 
     %\subsubsection{Carne Molida}
-        \begin{figure}[h!] % START A NEW FIGURE
+        \begin{figure}[H] % START A NEW FIGURE
             \centering
-            \begin{subfigure}{0.45\textwidth}
+            \begin{subfigure}{0.35\textwidth}
                 \centering
                 \includegraphics[width=0.9\linewidth]{central} % Removed space before ]
                 \caption{Central Mayorista}
                 \label{fig:central_mayorista}
             \end{subfigure}
             \hfill
-            \begin{subfigure}{0.45\textwidth}
+            \begin{subfigure}{0.3\textwidth}
                 \centering
                 \includegraphics[width=0.9\linewidth]{paiquito} % Removed space before ]
                 \caption{Paiquito}
-                \label{fig:unimarc} % Consider if fig:paiquito is a more suitable label
+                \label{fig:paiquito} 
             \end{subfigure}
             \caption{Cotizaciones de Distribuidores de Carne Molida}
             \label{fig:cotizaciones_carne_molida}
         \end{figure} % END OF THIS FIGURE
 
     %\subsubsection{Queso}
-        \begin{figure}[h!] % START A NEW FIGURE
+        \begin{figure}[H] % START A NEW FIGURE
             \centering
             \begin{subfigure}{0.45\textwidth}
                 \centering
@@ -218,7 +243,7 @@ Dentro de las proyecciones financieras, se contempla un análisis de costos y pr
                 \label{fig:distribuidora_santiago}
             \end{subfigure}
             \hfill
-            \begin{subfigure}{0.45\textwidth}
+            \begin{subfigure}{0.37\textwidth}
                 \centering
                 \includegraphics[width=0.9\linewidth]{nueva} % Removed space before ]
                 \caption{Distribuidora Nueva de Matte}
@@ -229,7 +254,7 @@ Dentro de las proyecciones financieras, se contempla un análisis de costos y pr
         \end{figure} % END OF THIS FIGURE
 
     %\subsubsection{Cebolla}
-        \begin{figure}[h!] % START A NEW FIGURE
+        \begin{figure}[H] % START A NEW FIGURE
             \centering
             \begin{subfigure}{0.4\textwidth}
                 \centering
@@ -249,7 +274,7 @@ Dentro de las proyecciones financieras, se contempla un análisis de costos y pr
         \end{figure} % END OF THIS FIGURE
 
     %\subsubsection{Aceite}
-        \begin{figure}[h!] % START A NEW FIGURE
+        \begin{figure}[H] % START A NEW FIGURE
             \centering
             \begin{subfigure}{0.45\textwidth}
                 \centering
@@ -258,7 +283,7 @@ Dentro de las proyecciones financieras, se contempla un análisis de costos y pr
                 \label{fig:prosudmarket}
             \end{subfigure}
             \hfill
-            \begin{subfigure}{0.45\textwidth}
+            \begin{subfigure}{0.46\textwidth}
                 \centering
                 \includegraphics[width=0.9\linewidth]{aceite} % Removed space before ]
                 \caption{Central Mayorista}
@@ -268,25 +293,171 @@ Dentro de las proyecciones financieras, se contempla un análisis de costos y pr
             \label{fig:cotizaciones_aceite}
         \end{figure} % END OF THIS FIGURE
         % Fin tercera pagina del desarrollo
-        
-        \newpage % This newpage was already here, affecting layout before Conclusiones
-        \[\transparent{0}\]
 
-    \subsection{Facturas e IVA} %tengo 2 paginas para hacer todo hasta antes d ela conlusion, ns como chucha lo haremos 🥵
-        \subsubsection{Lista a Comprar}
+    %\subsubsection{Sal}
+        \begin{figure}[H] % START A NEW FIGURE
+            \centering
+            \begin{subfigure}{0.4\textwidth}
+                \centering
+                \includegraphics[width=0.9\linewidth]{lobos} % Removed space before ]
+                \caption{Central Mayorista}
+                \label{fig:central_mayorista_sal}
+            \end{subfigure}
+            \hfill
+            \begin{subfigure}{0.35\textwidth}
+                \centering
+                \includegraphics[width=0.9\linewidth]{online} % Removed space before ]
+                \caption{Distribuidora Online}
+                \label{fig:distribuidora_online_sal}
+            \end{subfigure}
+            \caption{Cotizaciones de Distribuidores de Sal}
+            \label{fig:cotizaciones_sal}
+        \end{figure} % END OF THIS FIGURE
+
+    %\subsubsection{Oregano}
+        \begin{figure}[H] % START A NEW FIGURE
+            \centering
+            \begin{subfigure}{0.5\textwidth}
+                \centering
+                \includegraphics[width=0.9\linewidth]{vega} % Removed space before ]
+                \caption{La Vega}
+                \label{fig:la_vega_oregano}
+            \end{subfigure}
+            \hfill
+            \begin{subfigure}{0.4\textwidth}
+                \centering
+                \includegraphics[width=0.9\linewidth]{Oregano} % Removed space before ]
+                \caption{Santiago Natural Foods}
+                \label{fig:santiago_natural_foods_oregano}
+            \end{subfigure}
+            \caption{Cotizaciones de Distribuidores de Oregano}
+            \label{fig:cotizaciones_oregano}
+        \end{figure} % END OF THIS FIGURE
+
+    %\subsubsection{Comino}
+        \begin{figure}[H] % START A NEW FIGURE
+            \centering
+            \begin{subfigure}{0.4\textwidth}
+                \centering
+                \includegraphics[width=0.9\linewidth]{cholitos} % Removed space before ]
+                \caption{Los Cholitos}
+                \label{fig:los_cholitos_comino}
+            \end{subfigure}
+            \hfill
+            \begin{subfigure}{0.45\textwidth}
+                \centering
+                \includegraphics[width=0.9\linewidth]{comino} % Removed space before ]
+                \caption{Directo de la Vega}
+                \label{fig:directo_de_la_vega_comino}
+            \end{subfigure}
+            \caption{Cotizaciones de Distribuidores de Comino}
+            \label{fig:cotizaciones_comino}
+        \end{figure} % END OF THIS FIGURE
+
+    %\subsubsection{Pimienta}
+        \begin{figure}[H] % START A NEW FIGURE
+            \centering
+            \begin{subfigure}{0.45\textwidth}
+                \centering
+                \includegraphics[width=0.9\linewidth]{negra} % Removed space before ]
+                \caption{Directo de la Vega}
+                \label{fig:directo_de_la_vega_pimienta}
+            \end{subfigure}
+            \hfill
+            \begin{subfigure}{0.5\textwidth}
+                \centering
+                \includegraphics[width=0.9\linewidth]{pimienta} % Removed space before ]
+                \caption{CDV Foods}
+                \label{fig:cdv_foods_pimienta}
+            \end{subfigure}
+            \caption{Cotizaciones de Distribuidores de Pimienta}
+            \label{fig:cotizaciones_pimienta}
+        \end{figure} % END OF THIS FIGURE
+
+    %\subsubsection{Pasas}
+        \begin{figure}[H] % START A NEW FIGURE
+            \centering
+            \begin{subfigure}{0.4\textwidth}
+                \centering
+                \includegraphics[width=0.9\linewidth]{chile} % Removed space before ]
+                \caption{Chile Frutos Secos}
+                \label{fig:chile_frutos_secos_pasas}
+            \end{subfigure}
+            \hfill
+            \begin{subfigure}{0.45\textwidth}
+                \centering
+                \includegraphics[width=0.9\linewidth]{nutri} % Removed space before ]
+                \caption{Nutri Bueno}
+                \label{fig:nutri_bueno_pasas}
+            \end{subfigure}
+            \caption{Cotizaciones de Distribuidores de Pasas}
+            \label{fig:cotizaciones_pasas}
+        \end{figure} % END OF THIS FIGURE
+
+    %\subsubsection{Aceitunas}
+        \begin{figure}[H] % START A NEW FIGURE
+            \centering
+            \begin{subfigure}{0.45\textwidth}
+                \centering
+                \includegraphics[width=0.9\linewidth]{gourmet} % Removed space before ]
+                \caption{Alaia Gourmet}
+                \label{fig:alaia_gourmet_aceitunas}
+            \end{subfigure}
+            \hfill
+            \begin{subfigure}{0.4\textwidth}
+                \centering
+                \includegraphics[width=0.9\linewidth]{libre} % Removed space before ]
+                \caption{Mercado Libre}
+                \label{fig:mercado_libre_aceitunas}
+            \end{subfigure}
+            \caption{Cotizaciones de Distribuidores de Aceitunas}
+            \label{fig:cotizaciones_aceitunas}
+        \end{figure} % END OF THIS FIGURE
+
+        
+        %\newpage 
+
+    \subsection{Facturas e IVA} 
+        \subsubsection{Lista de Compras Detallada y Costos Seleccionados}
+        Para la producción inicial de 1500 empanadas (500 de cada variedad: Pino, Queso Clásica, Camarón Queso), se seleccionaron los proveedores con los precios más convenientes para cada ingrediente, según la Tabla \ref{tab:costos_ingredientes_proveedor}. Las cantidades y costos se detallan en la Tabla \ref{tab:lista_compras}.
+
+        \begin{table}[H]
+            \centering
+            \small % Reduce font size for this table
+            \begin{tabular}{|l|l|r|c|r|r|}
+                \hline
+                \textbf{Ingrediente} & \textbf{Proveedor Elegido} & \textbf{Cantidad} & \textbf{Unidad} & \textbf{Costo Unitario} & \textbf{Costo Total} \\
+                \hline
+                Masa Prehecha & El Palacio de las Emp. & 1500 & Unidades & \$205 & \$307.500 \\
+                Huevos & El Don Huevo & 10 & Docenas & \$2.633 & \$26.400 \\
+                Camarón & Del Origen & 40 & KG & \$4.870 & \$194.800 \\
+                Carne Molida & El Paiquito & 25 & KG & \$4.360 & \$109.000 \\
+                Queso Mantecoso & Dist. Nueva de Matte & 45 & KG & \$6.940 & \$312.300 \\
+                Cebolla & Santiago Natural Foods & 42 & KG & \$785 & \$31.500 \\
+                Aceite & Central Mayorista & 16 & Litros & \$1.644,44 & \$26.311 \\
+                Sal & Central Mayorista & 10 & KG & \$440 & \$4400 \\
+                Oregano & La Vega & 1 & KG & \$3.780 & \$3780 \\
+                Comino & Los Cholitos & 1 & KG & \$4284 & \$4284 \\
+                Pimienta & CDV Foods & 1 & KG & \$3068 & \$3068 \\
+                Pasas & Chile Frutos Secos & 1 & KG & \$3690 & \$ 3690 \\
+                Aceitunas & Alaia Gourmet & 3 & KG & \$4000 & \$12000 \\
+                \hline
+                \multicolumn{5}{|r|}{\textbf{TOTAL NETO COMPRAS}} & \textbf{\$} \\
+                \hline
+            \end{tabular}
+            \caption{Lista de Compras para 1500 Empanadas.}
+            \label{tab:lista_compras}
+        \end{table}
+
         \subsubsection{Factura de Compra}
-
-
     \subsection{Definición de Precios y Proyección de Ingresos}
-        \subsubsection{Definición de Precios}
-        \subsubsection{Cálculo de Obligaciones Tributarias (IVA)}
-        \subsubsection{Proyección de Ingresos}
-        
-    \newpage
-
-
+        \subsubsection{Costos Unitarios y Precios de Venta}
+        \subsubsection{Proyección de Ingresos y Cálculo de IVA}
+        \subsubsection{Cálculo de Ganancias y Viabilidad Inicial}
+        \newpage
+   
 \section{Conclusiones} % Max 1 pagina
-% Content for Conclusiones
 
 
 \end{document}
+

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.5.22)  29 MAY 2025 23:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.5.22)  29 MAY 2025 23:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -546,16 +546,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 115--115
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--117
-\T1/cmr/m/n/12 (\T1/cmr/m/it/12 Nota: Que-so
- []
-
-
-Underfull \hbox (badness 2512) in paragraph at lines 115--117
-\T1/cmr/m/it/12 Ched-dar, pre-cio
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 117--117
 []|\T1/cmr/m/n/12 Distribuidora Nue-va
  []
@@ -563,16 +553,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 117--117
 
 Underfull \hbox (badness 10000) in paragraph at lines 117--117
 \T1/cmr/m/n/12 de Mat-te (Que-so
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 117--117
-[]|\T1/cmr/m/n/12 $$\OT1/cmr/m/n/12 6940$ \T1/cmr/m/n/12 (\T1/cmr/m/it/12 ima-gen
- []
-
-
-Underfull \hbox (badness 2951) in paragraph at lines 117--117
-\T1/cmr/m/it/12 pre-cio de ta-bla
  []
 
 
@@ -626,32 +606,32 @@ File: IN.png Graphic file (type png)
 Package pdftex.def Info: IN.png  used on input line 153.
 (pdftex.def)             Requested size: 583.57837pt x 751.78368pt.
 [6]
-<palaci.png, id=38, 459.7175pt x 280.04625pt>
+<palaci.png, id=37, 459.7175pt x 280.04625pt>
 File: palaci.png Graphic file (type png)
 <use palaci.png>
 Package pdftex.def Info: palaci.png  used on input line 160.
 (pdftex.def)             Requested size: 225.4804pt x 137.35632pt.
-<kosa.png, id=39, 310.15875pt x 187.70125pt>
+<kosa.png, id=38, 310.15875pt x 187.70125pt>
 File: kosa.png Graphic file (type png)
 <use kosa.png>
 Package pdftex.def Info: kosa.png  used on input line 167.
 (pdftex.def)             Requested size: 225.4804pt x 136.45367pt.
-<donhuevo.png, id=40, 698.61pt x 342.27875pt>
+<donhuevo.png, id=39, 698.61pt x 342.27875pt>
 File: donhuevo.png Graphic file (type png)
 <use donhuevo.png>
 Package pdftex.def Info: donhuevo.png  used on input line 179.
 (pdftex.def)             Requested size: 225.4804pt x 110.47151pt.
-<montan1.png, id=41, 498.86375pt x 216.81pt>
+<montan1.png, id=40, 498.86375pt x 216.81pt>
 File: montan1.png Graphic file (type png)
 <use montan1.png>
 Package pdftex.def Info: montan1.png  used on input line 186.
 (pdftex.def)             Requested size: 225.4804pt x 97.99367pt.
-<gk.png, id=42, 569.12625pt x 291.0875pt>
+<gk.png, id=41, 569.12625pt x 291.0875pt>
 File: gk.png Graphic file (type png)
 <use gk.png>
 Package pdftex.def Info: gk.png  used on input line 198.
 (pdftex.def)             Requested size: 225.4804pt x 115.32697pt.
-<oceanic.png, id=43, 462.72874pt x 280.04625pt>
+<oceanic.png, id=42, 462.72874pt x 280.04625pt>
 File: oceanic.png Graphic file (type png)
 <use oceanic.png>
 Package pdftex.def Info: oceanic.png  used on input line 205.
@@ -663,32 +643,32 @@ File: IN.png Graphic file (type png)
 Package pdftex.def Info: IN.png  used on input line 212.
 (pdftex.def)             Requested size: 583.57837pt x 751.78368pt.
 [7 <./palaci.png> <./kosa.png> <./donhuevo.png (PNG copy)> <./montan1.png> <./gk.png> <./oceanic.png>]
-<central.png, id=49, 470.75874pt x 222.8325pt>
+<central.png, id=48, 470.75874pt x 222.8325pt>
 File: central.png Graphic file (type png)
 <use central.png>
 Package pdftex.def Info: central.png  used on input line 218.
 (pdftex.def)             Requested size: 225.4804pt x 106.73058pt.
-<paiquito.png, id=50, 583.17876pt x 307.1475pt>
+<paiquito.png, id=49, 583.17876pt x 307.1475pt>
 File: paiquito.png Graphic file (type png)
 <use paiquito.png>
 Package pdftex.def Info: paiquito.png  used on input line 225.
 (pdftex.def)             Requested size: 225.4804pt x 118.75597pt.
-<santiago.png, id=51, 593.21625pt x 259.97125pt>
+<santiago.png, id=50, 593.21625pt x 259.97125pt>
 File: santiago.png Graphic file (type png)
 <use santiago.png>
 Package pdftex.def Info: santiago.png  used on input line 237.
 (pdftex.def)             Requested size: 225.4804pt x 98.81389pt.
-<nueva.png, id=52, 526.96875pt x 290.08376pt>
+<nueva.png, id=51, 526.96875pt x 290.08376pt>
 File: nueva.png Graphic file (type png)
 <use nueva.png>
 Package pdftex.def Info: nueva.png  used on input line 244.
 (pdftex.def)             Requested size: 225.4804pt x 124.12274pt.
-<nat.png, id=53, 657.45625pt x 310.15875pt>
+<nat.png, id=52, 657.45625pt x 310.15875pt>
 File: nat.png Graphic file (type png)
 <use nat.png>
 Package pdftex.def Info: nat.png  used on input line 256.
 (pdftex.def)             Requested size: 225.4804pt x 106.3707pt.
-<fres.png, id=54, 722.7pt x 308.15125pt>
+<fres.png, id=53, 722.7pt x 308.15125pt>
 File: fres.png Graphic file (type png)
 <use fres.png>
 Package pdftex.def Info: fres.png  used on input line 263.
@@ -700,32 +680,32 @@ File: IN.png Graphic file (type png)
 Package pdftex.def Info: IN.png  used on input line 270.
 (pdftex.def)             Requested size: 583.57837pt x 751.78368pt.
 [8 <./central.png> <./paiquito.png> <./santiago.png> <./nueva.png> <./nat.png> <./fres.png>]
-<prosud.png, id=58, 612.2875pt x 312.16624pt>
+<prosud.png, id=57, 612.2875pt x 312.16624pt>
 File: prosud.png Graphic file (type png)
 <use prosud.png>
 Package pdftex.def Info: prosud.png  used on input line 275.
 (pdftex.def)             Requested size: 225.4804pt x 114.95668pt.
-<aceite.png, id=59, 412.54124pt x 206.7725pt>
+<aceite.png, id=58, 412.54124pt x 206.7725pt>
 File: aceite.png Graphic file (type png)
 <use aceite.png>
 Package pdftex.def Info: aceite.png  used on input line 282.
 (pdftex.def)             Requested size: 225.4804pt x 113.01532pt.
-<lobos.png, id=60, 394.47375pt x 212.795pt>
+<lobos.png, id=59, 394.47375pt x 212.795pt>
 File: lobos.png Graphic file (type png)
 <use lobos.png>
 Package pdftex.def Info: lobos.png  used on input line 294.
 (pdftex.def)             Requested size: 225.4804pt x 121.63208pt.
-<online.png, id=61, 602.25pt x 361.35pt>
+<online.png, id=60, 602.25pt x 361.35pt>
 File: online.png Graphic file (type png)
 <use online.png>
 Package pdftex.def Info: online.png  used on input line 301.
 (pdftex.def)             Requested size: 225.4804pt x 135.29088pt.
-<vega.png, id=62, 491.8375pt x 220.825pt>
+<vega.png, id=61, 491.8375pt x 220.825pt>
 File: vega.png Graphic file (type png)
 <use vega.png>
 Package pdftex.def Info: vega.png  used on input line 313.
 (pdftex.def)             Requested size: 225.4804pt x 101.23703pt.
-<Oregano.png, id=63, 564.1075pt x 317.185pt>
+<Oregano.png, id=62, 564.1075pt x 317.185pt>
 File: Oregano.png Graphic file (type png)
 <use Oregano.png>
 Package pdftex.def Info: Oregano.png  used on input line 320.
@@ -737,32 +717,32 @@ File: IN.png Graphic file (type png)
 Package pdftex.def Info: IN.png  used on input line 327.
 (pdftex.def)             Requested size: 583.57837pt x 751.78368pt.
 [9 <./prosud.png> <./aceite.png> <./lobos.png> <./online.png> <./vega.png> <./Oregano.png>]
-<cholitos.png, id=67, 614.295pt x 297.11pt>
+<cholitos.png, id=66, 614.295pt x 297.11pt>
 File: cholitos.png Graphic file (type png)
 <use cholitos.png>
 Package pdftex.def Info: cholitos.png  used on input line 332.
 (pdftex.def)             Requested size: 225.4804pt x 109.054pt.
-<comino.png, id=68, 508.90125pt x 208.78pt>
+<comino.png, id=67, 508.90125pt x 208.78pt>
 File: comino.png Graphic file (type png)
 <use comino.png>
 Package pdftex.def Info: comino.png  used on input line 339.
 (pdftex.def)             Requested size: 225.4804pt x 92.5038pt.
-<negra.png, id=69, 478.78876pt x 206.7725pt>
+<negra.png, id=68, 478.78876pt x 206.7725pt>
 File: negra.png Graphic file (type png)
 <use negra.png>
 Package pdftex.def Info: negra.png  used on input line 351.
 (pdftex.def)             Requested size: 225.4804pt x 97.37553pt.
-<pimienta.png, id=70, 653.44125pt x 268.00125pt>
+<pimienta.png, id=69, 653.44125pt x 268.00125pt>
 File: pimienta.png Graphic file (type png)
 <use pimienta.png>
 Package pdftex.def Info: pimienta.png  used on input line 358.
 (pdftex.def)             Requested size: 225.4804pt x 92.47688pt.
-<chile.png, id=71, 486.81876pt x 221.82875pt>
+<chile.png, id=70, 486.81876pt x 221.82875pt>
 File: chile.png Graphic file (type png)
 <use chile.png>
 Package pdftex.def Info: chile.png  used on input line 370.
 (pdftex.def)             Requested size: 225.4804pt x 102.7431pt.
-<nutri.png, id=72, 488.82625pt x 227.85126pt>
+<nutri.png, id=71, 488.82625pt x 227.85126pt>
 File: nutri.png Graphic file (type png)
 <use nutri.png>
 Package pdftex.def Info: nutri.png  used on input line 377.
@@ -774,12 +754,12 @@ File: IN.png Graphic file (type png)
 Package pdftex.def Info: IN.png  used on input line 384.
 (pdftex.def)             Requested size: 583.57837pt x 751.78368pt.
 [10 <./cholitos.png> <./comino.png> <./negra.png> <./pimienta.png> <./chile.png> <./nutri.png>]
-<gourmet.png, id=76, 542.025pt x 311.1625pt>
+<gourmet.png, id=75, 542.025pt x 311.1625pt>
 File: gourmet.png Graphic file (type png)
 <use gourmet.png>
 Package pdftex.def Info: gourmet.png  used on input line 389.
 (pdftex.def)             Requested size: 225.4804pt x 129.44339pt.
-<libre.png, id=77, 470.75874pt x 287.0725pt>
+<libre.png, id=76, 470.75874pt x 287.0725pt>
 File: libre.png Graphic file (type png)
 <use libre.png>
 Package pdftex.def Info: libre.png  used on input line 396.
@@ -857,7 +837,7 @@ Here is how much of TeX's memory you used:
  40 hyphenation exceptions out of 8191
  73i,19n,85p,627b,541s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti2074.pfb>
-Output written on main.pdf (15 pages, 3501364 bytes).
+Output written on main.pdf (15 pages, 3500640 bytes).
 PDF statistics:
  183 PDF objects out of 1000 (max. 8388607)
  97 compressed objects within 1 object stream

@@ -37,3 +37,51 @@ Haciendo push...
 branch 'main' set up to track 'origin/main'.
 [2025-05-29 14:53:10] ✅ Push exitoso
 ========== 2025-05-29 22:34:24 ==========
+Mensaje de commit (dejar vacío para 'Auto-commit'): Haciendo commit...
+[main a73f59b] Terminando Informe Empanadas y mi grupo no responde y estoy a punto de saltar del piso de fisica
+ 58 files changed, 1940 insertions(+), 821 deletions(-)
+ rename Mates/Informe_Empanadas/images/{logo.png => IN.png} (100%)
+ create mode 100644 Mates/Informe_Empanadas/images/Oregano.png
+ create mode 100644 Mates/Informe_Empanadas/images/chile.png
+ create mode 100644 Mates/Informe_Empanadas/images/cholitos.png
+ create mode 100644 Mates/Informe_Empanadas/images/comino.png
+ create mode 100644 Mates/Informe_Empanadas/images/gourmet.png
+ create mode 100644 Mates/Informe_Empanadas/images/libre.png
+ create mode 100644 Mates/Informe_Empanadas/images/lobos.png
+ create mode 100644 Mates/Informe_Empanadas/images/negra.png
+ create mode 100644 Mates/Informe_Empanadas/images/nutri.png
+ create mode 100644 Mates/Informe_Empanadas/images/olive.png
+ create mode 100644 Mates/Informe_Empanadas/images/online.png
+ create mode 100644 Mates/Informe_Empanadas/images/pimienta.png
+ create mode 100644 Mates/Informe_Empanadas/images/vega.png
+ rename Mates/copia/{logo.png => IN.png} (100%)
+ create mode 100644 Mates/copia/Oregano.png
+ create mode 100644 Mates/copia/chile.png
+ create mode 100644 Mates/copia/cholitos.png
+ create mode 100644 Mates/copia/comino.png
+ create mode 100644 Mates/copia/gourmet.png
+ create mode 100644 Mates/copia/images/Oregano.png
+ create mode 100644 Mates/copia/images/chile.png
+ create mode 100644 Mates/copia/images/cholitos.png
+ create mode 100644 Mates/copia/images/comino.png
+ create mode 100644 Mates/copia/images/gourmet.png
+ create mode 100644 Mates/copia/images/libre.png
+ create mode 100644 Mates/copia/images/lobos.png
+ create mode 100644 Mates/copia/images/negra.png
+ create mode 100644 Mates/copia/images/nutri.png
+ create mode 100644 Mates/copia/images/olive.png
+ create mode 100644 Mates/copia/images/online.png
+ create mode 100644 Mates/copia/images/pimienta.png
+ create mode 100644 Mates/copia/images/vega.png
+ create mode 100644 Mates/copia/libre.png
+ create mode 100644 Mates/copia/lobos.png
+ create mode 100644 Mates/copia/negra.png
+ create mode 100644 Mates/copia/nutri.png
+ create mode 100644 Mates/copia/olive.png
+ create mode 100644 Mates/copia/online.png
+ create mode 100644 Mates/copia/pimienta.png
+ create mode 100644 Mates/copia/vega.png
+Haciendo push...
+branch 'main' set up to track 'origin/main'.
+[2025-05-29 22:34:24] ✅ Push exitoso
+========== 2025-05-29 22:48:52 ==========

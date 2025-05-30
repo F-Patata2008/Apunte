@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.5.22)  29 MAY 2025 22:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.5.22)  29 MAY 2025 22:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -462,7 +462,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--72
 
 File: IN.png Graphic file (type png)
 <use IN.png>
-Package pdftex.def Info: IN.png  used on input line 79.
+Package pdftex.def Info: IN.png  used on input line 80.
 (pdftex.def)             Requested size: 583.57837pt x 751.78368pt.
 [3]
 
@@ -829,10 +829,15 @@ Overfull \hbox (29.39388pt too wide) in paragraph at lines 582--583
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 590--591
+
+ []
+
+
 
 File: IN.png Graphic file (type png)
 <use IN.png>
-Package pdftex.def Info: IN.png  used on input line 592.
+Package pdftex.def Info: IN.png  used on input line 594.
 (pdftex.def)             Requested size: 583.57837pt x 751.78368pt.
 [15] (./main.aux
 LaTeX Info: Redefining \. on input line 10.
@@ -846,13 +851,13 @@ L3 programming layer <2025-01-18>
 Here is how much of TeX's memory you used:
  12380 strings out of 475109
  256460 string characters out of 5765325
- 667247 words of memory out of 5000000
+ 666247 words of memory out of 5000000
  35250 multiletter control sequences out of 15000+600000
  580647 words of font info for 92 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
- 73i,19n,85p,741b,541s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 73i,19n,85p,714b,541s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti2074.pfb>
-Output written on main.pdf (15 pages, 3510163 bytes).
+Output written on main.pdf (15 pages, 3518428 bytes).
 PDF statistics:
  188 PDF objects out of 1000 (max. 8388607)
  100 compressed objects within 1 object stream

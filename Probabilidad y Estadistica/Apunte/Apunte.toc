@@ -37,4 +37,6 @@
 \contentsline {subsubsection}{\numberline {7.1.1}Propiedad 6: $\sigma ^2 = \sigma \DOTSB \tmspace +\thickmuskip {.2777em}\DOTSB \Leftarrow \joinrel \Rightarrow \tmspace +\thickmuskip {.2777em}\sigma =0 \vee \sigma =1$}{24}{}%
 \contentsline {subsubsection}{\numberline {7.1.2}Propiedad 7: $\sigma ^2 < \sigma \DOTSB \tmspace +\thickmuskip {.2777em}\DOTSB \Leftarrow \joinrel \Rightarrow \tmspace +\thickmuskip {.2777em}0 < \sigma < 1$}{24}{}%
 \contentsline {subsubsection}{\numberline {7.1.3}Propiedad 8: $\sigma ^2 > \sigma \DOTSB \tmspace +\thickmuskip {.2777em}\DOTSB \Leftarrow \joinrel \Rightarrow \tmspace +\thickmuskip {.2777em}\sigma > 1$}{25}{}%
-\contentsline {section}{\numberline {8}}{26}{}%
+\contentsline {section}{\numberline {8}11/06}{26}{}%
+\contentsline {subsection}{\numberline {8.1}Combinatoria}{26}{}%
+\contentsline {subsection}{\numberline {8.2}Ejercicios}{26}{}%

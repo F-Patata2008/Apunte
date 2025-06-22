@@ -215,3 +215,14 @@ Haciendo push...
 branch 'main' set up to track 'origin/main'.
 [2025-06-21 21:29:15] ✅ Push exitoso
 ========== 2025-06-21 21:44:12 ==========
+Mensaje de commit (dejar vacío para 'Auto-commit'): Haciendo commit...
+[main 4d200db] Auto-commit: 2025-06-21 21:44:12
+ 13 files changed, 3361 insertions(+), 275 deletions(-)
+ create mode 100644 Lukas/Trabajo_Final/INFORME_LUKAS_ESPINOZA.bcf
+ create mode 100644 Lukas/Trabajo_Final/INFORME_LUKAS_ESPINOZA.out
+ create mode 100644 Lukas/Trabajo_Final/INFORME_LUKAS_ESPINOZA.run.xml
+ create mode 100644 Lukas/Trabajo_Final/images/usach.png
+Haciendo push...
+branch 'main' set up to track 'origin/main'.
+[2025-06-21 21:44:12] ✅ Push exitoso
+========== 2025-06-21 22:05:20 ==========

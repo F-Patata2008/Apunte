@@ -173,3 +173,17 @@ Haciendo push...
 branch 'main' set up to track 'origin/main'.
 [2025-06-21 20:52:35] ✅ Push exitoso
 ========== 2025-06-21 20:57:50 ==========
+Mensaje de commit (dejar vacío para 'Auto-commit'): Haciendo commit...
+[main e9fc56a] Auto-commit: 2025-06-21 20:57:50
+ 8 files changed, 471 insertions(+)
+ create mode 100644 Lukas/Trabajo_Final/Trabajo_Final.aux
+ create mode 100644 Lukas/Trabajo_Final/Trabajo_Final.fdb_latexmk
+ create mode 100644 Lukas/Trabajo_Final/Trabajo_Final.fls
+ create mode 100644 Lukas/Trabajo_Final/Trabajo_Final.log
+ create mode 100644 Lukas/Trabajo_Final/Trabajo_Final.pdf
+ create mode 100644 Lukas/Trabajo_Final/Trabajo_Final.synctex.gz
+ create mode 100644 Lukas/Trabajo_Final/Trabajo_Final.tex
+Haciendo push...
+branch 'main' set up to track 'origin/main'.
+[2025-06-21 20:57:50] ✅ Push exitoso
+========== 2025-06-21 21:13:19 ==========

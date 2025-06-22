@@ -1,0 +1,11 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Introduccion al Problema}{2}{}%
+\contentsline {subsection}{\numberline {1.1}Descripccion de la problematica}{2}{}%
+\contentsline {section}{\numberline {2}Nuestra Propuesta}{3}{}%
+\contentsline {subsection}{\numberline {2.1}Ventajas y Desventajas}{3}{}%
+\contentsline {section}{\numberline {3}Carta Gantt}{4}{}%
+\contentsline {section}{\numberline {4}Planos}{4}{}%
+\contentsline {subsection}{\numberline {4.1}Plano de conjunto}{4}{}%
+\contentsline {subsection}{\numberline {4.2}Plano de despiece}{4}{}%
+\contentsline {subsection}{\numberline {4.3}Plano de fabricación}{4}{}%
+\contentsline {section}{\numberline {5}Referencias Bibliograficas}{5}{}%

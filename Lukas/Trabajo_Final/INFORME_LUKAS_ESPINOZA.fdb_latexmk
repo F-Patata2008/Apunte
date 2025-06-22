@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1750554766.2986 "Trabajo_Final.tex" "Trabajo_Final.pdf" "Trabajo_Final" 1750554766.93494 0
+["pdflatex"] 1750555682.71697 "INFORME_LUKAS_ESPINOZA.tex" "INFORME_LUKAS_ESPINOZA.pdf" "INFORME_LUKAS_ESPINOZA" 1750555683.42807 0
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1742685315 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1742685315 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecbx1095.tfm" 1742685315 3584 21b378cca2e40816b0e6d74a4dc98f04 ""
@@ -86,12 +86,12 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1742685315 42087 b0f9697c952c8f5a8eede4134282cb0d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1748834410 5311557 9da84c45f5b388655502706482323571 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1748834367 2008234 eb8e076a870ba23d10f3e0f7e3b4e024 ""
-  "Trabajo_Final.aux" 1750554766.824 1329 9ba7526e40b872ba36b8955a8e77ecc4 "pdflatex"
-  "Trabajo_Final.tex" 1750554764.92975 797 e0b7de1ef4ffce54492c5cf019b2e5e1 ""
-  "Trabajo_Final.toc" 1750554766.82474 717 9df82a369b0bbb7c32b0a0a56bed8ea3 "pdflatex"
+  "INFORME_LUKAS_ESPINOZA.aux" 1750555683.302 1329 9ba7526e40b872ba36b8955a8e77ecc4 "pdflatex"
+  "INFORME_LUKAS_ESPINOZA.tex" 1750555545.08151 797 e0b7de1ef4ffce54492c5cf019b2e5e1 ""
+  "INFORME_LUKAS_ESPINOZA.toc" 1750555683.304 717 9df82a369b0bbb7c32b0a0a56bed8ea3 "pdflatex"
   (generated)
-  "Trabajo_Final.aux"
-  "Trabajo_Final.log"
-  "Trabajo_Final.pdf"
-  "Trabajo_Final.toc"
+  "INFORME_LUKAS_ESPINOZA.aux"
+  "INFORME_LUKAS_ESPINOZA.log"
+  "INFORME_LUKAS_ESPINOZA.pdf"
+  "INFORME_LUKAS_ESPINOZA.toc"
   (rewritten before read)

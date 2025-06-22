@@ -149,3 +149,19 @@ Haciendo push...
 branch 'main' set up to track 'origin/main'.
 [2025-06-11 20:12:05] ✅ Push exitoso
 ========== 2025-06-14 12:26:23 ==========
+Mensaje de commit (dejar vacío para 'Auto-commit'): Haciendo commit...
+[main 7ca2af6] Auto-commit: 2025-06-14 12:26:23
+ 11 files changed, 503 insertions(+)
+ create mode 100644 "Probabilidad y Estadistica/Trabajos/Gu\303\255a-5/Gu\303\255a-5.aux"
+ create mode 100644 "Probabilidad y Estadistica/Trabajos/Gu\303\255a-5/Gu\303\255a-5.fdb_latexmk"
+ create mode 100644 "Probabilidad y Estadistica/Trabajos/Gu\303\255a-5/Gu\303\255a-5.fls"
+ create mode 100644 "Probabilidad y Estadistica/Trabajos/Gu\303\255a-5/Gu\303\255a-5.log"
+ create mode 100644 "Probabilidad y Estadistica/Trabajos/Gu\303\255a-5/Gu\303\255a-5.pdf"
+ create mode 100644 "Probabilidad y Estadistica/Trabajos/Gu\303\255a-5/Gu\303\255a-5.synctex.gz"
+ create mode 100644 "Probabilidad y Estadistica/Trabajos/Gu\303\255a-5/Gu\303\255a-5.tex"
+ create mode 100644 "Probabilidad y Estadistica/Trabajos/Gu\303\255a-5/Gu\303\255a-5.toc"
+ create mode 100644 "Probabilidad y Estadistica/Trabajos/Gu\303\255a-5/Permutaciones-y-Combinaciones-Ejercicios-Resueltos-PDF (1).pdf"
+ create mode 100644 "Probabilidad y Estadistica/Trabajos/Gu\303\255a-5/Principios-de-Adici\303\263n-y-Multiplicaci\303\263n-Ejercicios-Propuestos-PDF (1).pdf"
+Haciendo push...
+branch 'main' set up to track 'origin/main'.
+[2025-06-14 12:26:23] ✅ Push exitoso

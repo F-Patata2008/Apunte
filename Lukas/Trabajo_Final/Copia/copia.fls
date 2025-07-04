@@ -276,6 +276,10 @@ INPUT ./images/compass_photo.png
 INPUT ./images/compass_photo.png
 INPUT ./images/compass_photo.png
 INPUT ./images/compass_photo.png
+INPUT ./images/articulacion_pasador.png
+INPUT ./images/articulacion_pasador.png
+INPUT ./images/articulacion_pasador.png
+INPUT ./images/articulacion_pasador.png
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcbx1095.tfm
 INPUT ./images/compass_sketch.png
 INPUT ./images/compass_sketch.png

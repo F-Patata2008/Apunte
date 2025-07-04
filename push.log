@@ -313,3 +313,13 @@ Haciendo push...
 branch 'main' set up to track 'origin/main'.
 [2025-07-04 19:21:24] ✅ Push exitoso
 ========== 2025-07-04 19:35:00 ==========
+Mensaje de commit (dejar vacío para 'Auto-commit'): Haciendo commit...
+[main 0b28565] TEMINANDO EL INFORME DEL LUKAS
+ 12 files changed, 318 insertions(+), 313 deletions(-)
+ create mode 100644 Lukas/Trabajo_Final/Copia/copia.bbl
+ create mode 100644 Lukas/Trabajo_Final/Copia/copia.blg
+ create mode 100644 Lukas/Trabajo_Final/Copia/copia.synctex.gz
+Haciendo push...
+branch 'main' set up to track 'origin/main'.
+[2025-07-04 19:35:00] ✅ Push exitoso
+========== 2025-07-04 19:48:58 ==========

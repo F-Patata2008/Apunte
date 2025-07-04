@@ -104,25 +104,44 @@ Como limitación, no se hicieron pruebas reales ni simulaciones para ver cómo f
 \section{Mecanismos de Referencia}
 \label{sec:referencias}
 Para el desarrollo del compás escolar mejorado, se seleccionaron como mecanismos de referencia dos sistemas distintos pero complementarios: el compás de dibujo técnico tradicional y las articulaciones mecánicas con pasador.
+\bigskip
 
 \subsection{Compás de Dibujo Técnico Tradicional}
 Se eligió como mecanismo base el compás de dibujo técnico (Figura \ref{fig:ref_compas}), ya que es una herramienta sencilla pero muy útil. Su funcionamiento se basa en dos brazos unidos por una bisagra en la parte superior: uno tiene una punta fija y el otro sostiene un lápiz.
-Según Wikipedia \cite{wikipedia_utensilios}, “los compases son utilizados para dibujar circunferencias o arcos circulares. El tipo más habitual tiene dos patas rectas (...) unidas por una articulación; una de las patas termina en una punta aguda, y la otra sujeta (...) un lápiz o cualquier otro elemento capaz de marcar el papel”.
+Según Wikipedia \cite{wikipedia_utensilios}, \enquote{los compases son utilizados para dibujar circunferencias o arcos circulares. El tipo más habitual tiene dos patas rectas (...) unidas por una articulación; una de las patas termina en una punta aguda, y la otra sujeta (...) un lápiz o cualquier otro elemento capaz de marcar el papel}.
+\bigskip
+\bigskip
+\bigskip
+\bigskip
 
-\begin{figure}[H]
+\begin{figure}[htbp] % Usamos [htbp] para que LaTeX encuentre el mejor lugar
     \centering
     \includegraphics[width=0.4\textwidth]{compass_photo}
     \caption{Imagen de referencia de un compás escolar tradicional.}
     \label{fig:ref_compas}
 \end{figure}
+\bigskip
+
 
 \subsection{Articulaciones Mecánicas con Pasador}
-Las articulaciones mecánicas con pasador son mecanismos fundamentales que permiten la conexión entre dos partes móviles, facilitando su rotación relativa. Se tomó como inspiración este mecanismo por su capacidad para ofrecer movimiento rotacional estable y controlado.
-Según Shigley, Mischke y Budynas \cite{shigley_design}, “las articulaciones de pasador son ampliamente utilizadas en mecanismos para permitir la rotación con soporte y resistencia suficiente para mantener la posición sin movimientos no deseados” (p. 145). Esta característica es clave para resolver la rigidez del compás convencional.
+Las articulaciones mecánicas con pasador son mecanismos fundamentales que permiten la conexión entre dos partes móviles, facilitando su rotación relativa, como se observa en el ejemplo de la Figura \ref{fig:ref_articulacion}. Se tomó como inspiración este tipo de mecanismo por su capacidad para ofrecer movimiento rotacional estable y controlado.
+Según Shigley, Mischke y Budynas \cite{shigley_design}, \enquote{las articulaciones de pasador son ampliamente utilizadas en mecanismos para permitir la rotación con soporte y resistencia suficiente para mantener la posición sin movimientos no deseados} (p. 145). Esta característica es clave para resolver la rigidez del compás convencional.
+\newpage
+
+% --- AQUÍ ESTÁ LA NUEVA IMAGEN ---
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{articulacion_pasador}
+    \caption{Ejemplo de referencia de una articulación de pasador tipo horquilla (clevis joint).}
+    \label{fig:ref_articulacion}
+\end{figure}
 
 \subsection{Justificación de la Elección}
 En conjunto, estos mecanismos ofrecen una solución funcional y técnicamente viable, al combinar la precisión del compás clásico con la movilidad de las articulaciones de pasador. Esta fusión permite mejorar notablemente la experiencia del usuario, aportando comodidad, versatilidad y un mayor control sobre la expresión gráfica.
-\newpage
+
+
+
+
 
 \section{Planificación del Proyecto (Carta Gantt)}
 La distribución de tareas para la realización de este proyecto se detalla en la Tabla \ref{tab:gantt}.
@@ -161,6 +180,7 @@ La distribución de tareas para la realización de este proyecto se detalla en l
     \end{tabular}
     }
 \end{table}
+\newpage
 
 \section{Desarrollo del Diseño}
 \subsection{Boceto Inicial}

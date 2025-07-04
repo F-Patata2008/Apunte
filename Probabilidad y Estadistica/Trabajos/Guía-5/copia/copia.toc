@@ -1,0 +1,2 @@
+\contentsline {section}{\numberline {1}Principios de Adición y Multiplicación}{2}{}%
+\contentsline {section}{\numberline {2}Permutaciones y Combinaciones}{5}{}%

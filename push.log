@@ -303,3 +303,13 @@ Haciendo push...
 branch 'main' set up to track 'origin/main'.
 [2025-07-04 19:09:25] ✅ Push exitoso
 ========== 2025-07-04 19:21:24 ==========
+Mensaje de commit (dejar vacío para 'Auto-commit'): Haciendo commit...
+[main a6c9852] Auto-commit: 2025-07-04 19:21:24
+ 11 files changed, 848 insertions(+), 74 deletions(-)
+ create mode 100644 Lukas/Trabajo_Final/Copia/copia.run.xml
+ delete mode 100644 Lukas/Trabajo_Final/Copia/copia.synctex.gz
+ create mode 100644 Lukas/Trabajo_Final/Copia/copia.toc
+Haciendo push...
+branch 'main' set up to track 'origin/main'.
+[2025-07-04 19:21:24] ✅ Push exitoso
+========== 2025-07-04 19:35:00 ==========

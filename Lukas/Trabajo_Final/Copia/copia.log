@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=latex 2025.7.3)  3 JUL 2025 22:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.7.3)  4 JUL 2025 19:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -172,10 +172,10 @@ Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
 (/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: dvips.def on input line 106.
+Package graphics Info: Driver file: pdftex.def on input line 106.
 
-(/usr/share/texmf-dist/tex/latex/graphics-def/dvips.def
-File: dvips.def 2022/09/22 v3.1e Graphics/color driver for dvips
+(/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen160
 \Gin@req@width=\dimen161
@@ -272,10 +272,11 @@ Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
 (/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: dvips.def on input line 274.
+Package xcolor Info: Driver file: pdftex.def on input line 274.
 
 (/usr/share/texmf-dist/tex/latex/graphics/mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1365.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
@@ -290,17 +291,7 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
 
 (/usr/share/texmf-dist/tex/latex/pdfpages/pppdftex.def
 File: pppdftex.def 2025/01/30 v0.6e Pdfpages driver for pdfTeX (AM)
-
-(/usr/share/texmf-dist/tex/latex/pdfpages/ppnull.def
-File: ppnull.def 2025/01/30 v0.6e Pdfpages dummy driver (AM)
-
-
-Package pdfpages Warning: I will use a dummy \includepdf command
-(pdfpages)                which will insert empty pages instead of the actual
-(pdfpages)                PDF file because we are running in DVI mode or with
-(pdfpages)                dvips driver.
-
-))
+)
 \pdfpages@includegraphics@status=\count299
 \AM@pagebox=\box56
 \AM@global@opts=\toks29
@@ -309,7 +300,8 @@ Package pdfpages Warning: I will use a dummy \includepdf command
 \AM@lof@heading=\toks31
 \c@AM@survey=\count301
 \AM@templatesizebox=\box57
-) (/usr/share/texmf-dist/tex/latex/csquotes/csquotes.sty
+)
+(/usr/share/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2024-04-04 v5.2o context-sensitive quotations (JAW)
 \csq@reset=\count302
 \csq@gtype=\count303
@@ -340,7 +332,7 @@ Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode is ignored in DVI mode.
+Package pdftexcmds Info: \pdfdraftmode found.
 )
 (/usr/share/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
@@ -569,14 +561,10 @@ Package biblatex Info: Document encoding is UTF8 ....
 (/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2025-01-18 L3 programming layer (loader) 
 
-(/usr/share/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
-File: l3backend-dvips.def 2024-05-08 L3 backend support: dvips
+(/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count434
 \l__pdf_internal_box=\box58
-\l__pdf_backend_content_box=\box59
-\l__pdf_backend_model_box=\box60
-\g__pdf_backend_annotation_int=\count434
-\g__pdf_backend_link_int=\count435
-\g__pdf_backend_link_sf_int=\count436
 ))
 Package biblatex Info: ... and expl3
 (biblatex)             2025-01-18 L3 programming layer (loader) 
@@ -610,15 +598,15 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count437
+\c@section@level=\count435
 )
 (/usr/share/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
 \@linkdim=\dimen190
-\Hy@linkcounter=\count438
-\Hy@pagecounter=\count439
+\Hy@linkcounter=\count436
+\Hy@pagecounter=\count437
 
 (/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
@@ -628,7 +616,7 @@ Now handling font encoding PD1 ...
 (/usr/share/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count440
+\Hy@SavedSpaceFactor=\count438
 
 (/usr/share/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
@@ -642,7 +630,7 @@ Package hyperref Info: Plain pages OFF on input line 4172.
 Package hyperref Info: Backreferencing OFF on input line 4177.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4424.
-\c@Hy@tempcnt=\count441
+\c@Hy@tempcnt=\count439
 LaTeX Info: Redefining \url on input line 4763.
 \XeTeXLinkMargin=\dimen191
 
@@ -653,7 +641,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count442
+\Fld@menulength=\count440
 \Field@Width=\dimen192
 \Fld@charsize=\dimen193
 Package hyperref Info: Hyper figures OFF on input line 6042.
@@ -668,33 +656,26 @@ Package hyperref Info: PDF/A mode OFF on input line 6072.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count443
-\c@Item=\count444
-\c@Hfootnote=\count445
+\Hy@abspage=\count441
+\c@Item=\count442
+\c@Hfootnote=\count443
 )
-Package hyperref Info: Driver (default): hdvips.
+Package hyperref Info: Driver (autodetected): hpdftex.
 
-(/usr/share/texmf-dist/tex/latex/hyperref/hdvips.def
-File: hdvips.def 2024-11-05 v7.01l Hyperref driver for dvips
-
-(/usr/share/texmf-dist/tex/latex/hyperref/pdfmark.def
-File: pdfmark.def 2024-11-05 v7.01l Hyperref definitions for pdfmark specials
-\pdf@docset=\toks33
-\pdf@box=\box61
-\pdf@toks=\toks34
-\pdf@defaulttoks=\toks35
-\HyField@AnnotCount=\count446
-\Fld@listcount=\count447
-\c@bookmark@seq@number=\count448
-
-(/usr/share/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+(/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2024-11-05 v7.01l Hyperref driver for pdfTeX
 
 (/usr/share/texmf-dist/tex/latex/base/atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
+\Fld@listcount=\count444
+\c@bookmark@seq@number=\count445
+
+(/usr/share/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
 (/usr/share/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
@@ -702,7 +683,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 85.
 )
 \Hy@SectionHShift=\skip79
-))
+)
 Package hyperref Info: Option `colorlinks' set `true' on input line 31.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -716,4 +697,288 @@ LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
 LaTeX Font Info:    ... okay on input line 37.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
 LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defa
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Info: Redefining \. on input line 37.
+LaTeX Info: Redefining \% on input line 37.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=702.78308pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-38.1381pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=50.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count446
+\scratchdimen=\dimen194
+\scratchbox=\box59
+\nofMPsegments=\count447
+\nofMParguments=\count448
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count449
+\MPscratchDim=\dimen195
+\MPnumerator=\count450
+\makeMPintoPDFobject=\count451
+\everyMPtoPDFconversion=\toks34
+) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+(/usr/share/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+
+(/usr/share/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
+F (HO)
+
+(/usr/share/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+))
+Package biblatex Info: Trying to load language 'spanish'...
+Package biblatex Info: ... file 'spanish.lbx' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/lbx/spanish.lbx
+File: spanish.lbx 2024/03/21 v3.20 biblatex localization (PK/MW)
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout3 = `copia.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'copia.bbl' not found.
+
+No file copia.bbl.
+Package biblatex Info: Reference section=0 on input line 37.
+Package biblatex Info: Reference segment=0 on input line 37.
+Package hyperref Info: Link coloring ON on input line 37.
+\@outlinefile=\write4
+\openout4 = `copia.out'.
+
+<./images/usach.png, id=4, 319.1925pt x 159.59625pt>
+File: ./images/usach.png Graphic file (type png)
+<use ./images/usach.png>
+Package pdftex.def Info: ./images/usach.png  used on input line 43.
+(pdftex.def)             Requested size: 113.81102pt x 56.90424pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 60.
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 60.
+
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts
+/enc/dvips/cm-super/cm-super-t1.enc} <./images/usach.png>]
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.84 \newpage
+              [1]
+No file copia.toc.
+\tf@toc=\write5
+\openout5 = `copia.toc'.
+
+
+
+[2]
+
+LaTeX Warning: Reference `fig:ref_compas' on page 3 undefined on input line 108
+.
+
+
+LaTeX Warning: Citation 'wikipedia_utensilios' on page 3 undefined on input lin
+e 109.
+
+
+
+[3{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+<./images/compass_photo.png, id=38, 349.305pt x 379.4175pt>
+File: ./images/compass_photo.png Graphic file (type png)
+<use ./images/compass_photo.png>
+Package pdftex.def Info: ./images/compass_photo.png  used on input line 113.
+(pdftex.def)             Requested size: 182.09486pt x 197.79611pt.
+
+
+LaTeX Warning: Citation 'shigley_design' on page 4 undefined on input line 120.
+
+
+
+LaTeX Warning: Reference `tab:gantt' on page 4 undefined on input line 126.
+
+
+
+[4 <./images/compass_photo.png>]
+
+LaTeX Warning: Reference `fig:boceto' on page 5 undefined on input line 165.
+
+<./images/compass_sketch.png, id=49, 933.4875pt x 1322.9425pt>
+File: ./images/compass_sketch.png Graphic file (type png)
+<use ./images/compass_sketch.png>
+Package pdftex.def Info: ./images/compass_sketch.png  used on input line 170.
+(pdftex.def)             Requested size: 364.19667pt x 516.14737pt.
+
+
+[5]
+
+LaTeX Warning: Reference `fig:conjunto' on page 6 undefined on input line 179.
+
+<./planos/plano_conjunto.pdf, id=58, 1195.46625pt x 845.1575pt>
+File: ./planos/plano_conjunto.pdf Graphic file (type pdf)
+<use ./planos/plano_conjunto.pdf>
+Package pdftex.def Info: ./planos/plano_conjunto.pdf  used on input line 183.
+(pdftex.def)             Requested size: 455.24411pt x 321.84668pt.
+
+
+[6 <./images/compass_sketch.png>]
+
+LaTeX Warning: Reference `fig:despiece' on page 7 undefined on input line 189.
+
+<./planos/plano_despiece.pdf, id=68, 845.1575pt x 597.23125pt>
+File: ./planos/plano_despiece.pdf Graphic file (type pdf)
+<use ./planos/plano_despiece.pdf>
+Package pdftex.def Info: ./planos/plano_despiece.pdf  used on input line 193.
+(pdftex.def)             Requested size: 455.24411pt x 321.70723pt.
+
+
+[7 <./planos/plano_conjunto.pdf, page is rotated 270 degrees>]
+
+LaTeX Warning: Reference `fig:fabricacion' on page 8 undefined on input line 19
+9.
+
+<./planos/planos_fabricacion.pdf, id=87, 1195.46625pt x 845.1575pt>
+File: ./planos/planos_fabricacion.pdf Graphic file (type pdf)
+<use ./planos/planos_fabricacion.pdf>
+Package pdftex.def Info: ./planos/planos_fabricacion.pdf  used on input line 20
+3.
+(pdftex.def)             Requested size: 455.24411pt x 321.84668pt.
+
+
+[8 <./planos/plano_despiece.pdf, page is rotated 270 degrees>]
+
+[9 <./planos/planos_fabricacion.pdf, page is rotated 270 degrees>]
+
+LaTeX Warning: Empty bibliography on input line 216.
+
+
+
+[10] (./copia.aux
+LaTeX Info: Redefining \sptext on input line 12.
+LaTeX Info: Redefining \. on input line 12.
+LaTeX Info: Redefining \% on input line 12.
+)
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `copia.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `copia.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  57F058C102348D0A5C0DAF49B2F16D56;2843.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                copia
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to 'copia.run.xml'.
+\openout1 = `copia.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 22535 strings out of 473190
+ 387257 string characters out of 5722594
+ 1235835 words of memory out of 5000000
+ 45503 multiletter control sequences out of 15000+600000
+ 575370 words of font info for 71 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 68i,9n,81p,717b,1850s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/t
+exmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/share/texmf-dist/fonts
+/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/c
+m-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx248
+8.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/sha
+re/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/share/texmf-dist/f
+onts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf-dist/fonts/type1/publ
+ic/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfr
+m1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr
+/share/texmf-dist/fonts/type1/public/cm-super/sfti1440.pfb>
+Output written on copia.pdf (11 pages, 710594 bytes).
+PDF statistics:
+ 194 PDF objects out of 1000 (max. 8388607)
+ 140 compressed objects within 2 object streams
+ 33 named destinations out of 1000 (max. 500000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+

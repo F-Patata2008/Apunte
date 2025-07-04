@@ -240,3 +240,66 @@ Haciendo push...
 branch 'main' set up to track 'origin/main'.
 [2025-06-21 23:04:43] ✅ Push exitoso
 ========== 2025-07-04 19:09:25 ==========
+Mensaje de commit (dejar vacío para 'Auto-commit'): Haciendo commit...
+[main abf2619] Auto-commit: 2025-07-04 19:09:25
+ 63 files changed, 4973 insertions(+), 377 deletions(-)
+ delete mode 100644 "Lukas/Trabajo_Final/.~lock.Formato de Informe de avance- Trabajo DIbujo de Ingenier\303\255a.docx#"
+ create mode 100644 Lukas/Trabajo_Final/Copia/bibliografia.bib
+ create mode 100644 Lukas/Trabajo_Final/Copia/copia.aux
+ create mode 100644 Lukas/Trabajo_Final/Copia/copia.bcf
+ create mode 100644 Lukas/Trabajo_Final/Copia/copia.fdb_latexmk
+ create mode 100644 Lukas/Trabajo_Final/Copia/copia.fls
+ create mode 100644 Lukas/Trabajo_Final/Copia/copia.log
+ create mode 100644 Lukas/Trabajo_Final/Copia/copia.out
+ create mode 100644 Lukas/Trabajo_Final/Copia/copia.pdf
+ create mode 100644 Lukas/Trabajo_Final/Copia/copia.synctex.gz
+ create mode 100644 Lukas/Trabajo_Final/Copia/copia.tex
+ create mode 100644 Lukas/Trabajo_Final/Copia/images/compass_photo.png
+ create mode 100644 Lukas/Trabajo_Final/Copia/images/compass_sketch.png
+ rename Lukas/Trabajo_Final/{ => Copia}/images/usach.png (100%)
+ create mode 100644 Lukas/Trabajo_Final/Copia/pdflatex41564.fls
+ create mode 100644 Lukas/Trabajo_Final/Copia/planos/plano_conjunto.pdf
+ create mode 100644 Lukas/Trabajo_Final/Copia/planos/plano_despiece.pdf
+ create mode 100644 Lukas/Trabajo_Final/Copia/planos/planos_fabricacion.pdf
+ create mode 100644 Lukas/Trabajo_Final/Copia/planos/projecto final_merged.pdf
+ delete mode 100644 Lukas/Trabajo_Final/INFORME_LUKAS_ESPINOZA.aux
+ delete mode 100644 Lukas/Trabajo_Final/INFORME_LUKAS_ESPINOZA.out
+ delete mode 100644 Lukas/Trabajo_Final/INFORME_LUKAS_ESPINOZA.pdf
+ delete mode 100644 Lukas/Trabajo_Final/INFORME_LUKAS_ESPINOZA.synctex.gz
+ delete mode 100644 Lukas/Trabajo_Final/INFORME_LUKAS_ESPINOZA.tex
+ delete mode 100644 Lukas/Trabajo_Final/INFORME_LUKAS_ESPINOZA.toc
+ rename "Lukas/Trabajo_Final/Formato de Informe de avance- Trabajo DIbujo de Ingenier\303\255a.docx" => "Lukas/Trabajo_Final/Original/Formato de Informe de avance- Trabajo DIbujo de Ingenier\303\255a.docx" (100%)
+ create mode 100644 "Lukas/Trabajo_Final/Original/Formato de Informe de avance- Trabajo DIbujo de Ingenier\303\255a.pdf"
+ create mode 100644 Lukas/Trabajo_Final/Original/INFORME_LUKAS_ESPINOZA.aux
+ rename Lukas/Trabajo_Final/{ => Original}/INFORME_LUKAS_ESPINOZA.bcf (99%)
+ rename Lukas/Trabajo_Final/{ => Original}/INFORME_LUKAS_ESPINOZA.fdb_latexmk (81%)
+ rename Lukas/Trabajo_Final/{ => Original}/INFORME_LUKAS_ESPINOZA.fls (91%)
+ rename Lukas/Trabajo_Final/{ => Original}/INFORME_LUKAS_ESPINOZA.log (66%)
+ create mode 100644 Lukas/Trabajo_Final/Original/INFORME_LUKAS_ESPINOZA.out
+ create mode 100644 Lukas/Trabajo_Final/Original/INFORME_LUKAS_ESPINOZA.pdf
+ rename Lukas/Trabajo_Final/{ => Original}/INFORME_LUKAS_ESPINOZA.run.xml (95%)
+ create mode 100644 Lukas/Trabajo_Final/Original/INFORME_LUKAS_ESPINOZA.synctex.gz
+ create mode 100644 Lukas/Trabajo_Final/Original/INFORME_LUKAS_ESPINOZA.tex
+ create mode 100644 Lukas/Trabajo_Final/Original/INFORME_LUKAS_ESPINOZA.toc
+ rename Lukas/Trabajo_Final/{ => Original}/Recomndaciones.md (100%)
+ rename Lukas/Trabajo_Final/{ => Original}/Trabajo2Sem.pdf (100%)
+ create mode 100644 Lukas/Trabajo_Final/Original/bibliografia.bib
+ create mode 100644 Lukas/Trabajo_Final/Original/images/compass_photo.png
+ create mode 100644 Lukas/Trabajo_Final/Original/images/compass_sketch.png
+ create mode 100644 Lukas/Trabajo_Final/Original/images/usach.png
+ create mode 100644 Lukas/Trabajo_Final/Original/planos/PLANO_CONJUNTO_Lucas_Espinoza.pdf
+ create mode 100644 Lukas/Trabajo_Final/Original/planos/PLANO_DESPIECE_Lucas_Espinoza.pdf
+ create mode 100644 Lukas/Trabajo_Final/Original/planos/PLANO_DE_FABRICACION_Lucas_Espinoza.pdf
+ create mode 100644 Lukas/Trabajo_Final/Original/planos/projecto final_merged.pdf
+ create mode 100644 "Probabilidad y Estadistica/Trabajos/Gu\303\255a-5/copia/copia.aux"
+ create mode 100644 "Probabilidad y Estadistica/Trabajos/Gu\303\255a-5/copia/copia.fdb_latexmk"
+ create mode 100644 "Probabilidad y Estadistica/Trabajos/Gu\303\255a-5/copia/copia.fls"
+ create mode 100644 "Probabilidad y Estadistica/Trabajos/Gu\303\255a-5/copia/copia.log"
+ create mode 100644 "Probabilidad y Estadistica/Trabajos/Gu\303\255a-5/copia/copia.pdf"
+ create mode 100644 "Probabilidad y Estadistica/Trabajos/Gu\303\255a-5/copia/copia.synctex.gz"
+ create mode 100644 "Probabilidad y Estadistica/Trabajos/Gu\303\255a-5/copia/copia.tex"
+ create mode 100644 "Probabilidad y Estadistica/Trabajos/Gu\303\255a-5/copia/copia.toc"
+Haciendo push...
+branch 'main' set up to track 'origin/main'.
+[2025-07-04 19:09:25] ✅ Push exitoso
+========== 2025-07-04 19:21:24 ==========

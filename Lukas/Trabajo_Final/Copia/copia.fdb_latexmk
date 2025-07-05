@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber copia"] 1751671786.08341 "copia.bcf" "copia.bbl" "copia" 1751672931.20705 0
-  "bibliografia.bib" 1751586845.52278 583 74731cfe08f1512f56c69c56255206ef ""
-  "copia.bcf" 1751672930.98797 107832 167c80e9242a359eb7cb5923c5269d4b "pdflatex"
+["biber copia"] 1751674346.71231 "copia.bcf" "copia.bbl" "copia" 1751677600.75221 0
+  "bibliografia.bib" 1751673983.18979 1267 1be9fcbd2f12d2aabc217a3123a2b5cd ""
+  "copia.bcf" 1751677600.54619 107976 8559b232d572bb786c2b454057930e58 "pdflatex"
   (generated)
   "copia.bbl"
   "copia.blg"
   (rewritten before read)
-["pdflatex"] 1751672929.09785 "copia.tex" "copia.pdf" "copia" 1751672931.20785 0
+["pdflatex"] 1751677599.25173 "copia.tex" "copia.pdf" "copia" 1751677600.75279 0
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1742685315 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1742685315 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1742685315 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -155,12 +155,12 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1742685315 42087 b0f9697c952c8f5a8eede4134282cb0d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1748834410 5311557 9da84c45f5b388655502706482323571 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1751595748 3459354 5cad23511ccbc1732aa3a5958795f2c4 ""
-  "copia.aux" 1751672930.97897 5080 58b15c77fb0fc950a48f583ca6e4ee9e "pdflatex"
-  "copia.bbl" 1751671787.90491 3598 35989ad7f6a8fbd9b7d9c4f9e671a757 "biber copia"
-  "copia.out" 1751672930.98497 2843 57f058c102348d0a5c0daf49b2f16d56 "pdflatex"
-  "copia.run.xml" 1751672930.99108 2314 f71e857268f17d63d9bf95607d963ae5 "pdflatex"
-  "copia.tex" 1751672927.64692 15436 1b6ea5d0516d037297bb01a9783352c3 ""
-  "copia.toc" 1751672930.99108 1350 eb72ddb01c4a9bb0a7cd64e8fc73f7f4 "pdflatex"
+  "copia.aux" 1751677600.54119 5552 0a597acedbac1e3fbc9afc83cbe1757a "pdflatex"
+  "copia.bbl" 1751674348.7117 4919 c543b4666b191c7650bb91a177ae99c6 "biber copia"
+  "copia.out" 1751677600.54419 2843 57f058c102348d0a5c0daf49b2f16d56 "pdflatex"
+  "copia.run.xml" 1751677600.54908 2314 f71e857268f17d63d9bf95607d963ae5 "pdflatex"
+  "copia.tex" 1751677597.47114 15448 d6c996d0dcaf1d08becddc405fd2937a ""
+  "copia.toc" 1751677600.54908 1350 eb72ddb01c4a9bb0a7cd64e8fc73f7f4 "pdflatex"
   "images/articulacion_pasador.png" 1751672435.03757 28329 38ffd055a88f52de20ee83856a5d261b ""
   "images/compass_photo.png" 1751587044.51407 13115 227ee9c6129de96c7071e44da6045993 ""
   "images/compass_sketch.png" 1751587118.00264 159871 cb5dba8e5aed27f546e5e131a2c346d2 ""

@@ -323,3 +323,11 @@ Haciendo push...
 branch 'main' set up to track 'origin/main'.
 [2025-07-04 19:35:00] ✅ Push exitoso
 ========== 2025-07-04 19:48:58 ==========
+Mensaje de commit (dejar vacío para 'Auto-commit'): Haciendo commit...
+[main e0b8d61] Auto-commit: 2025-07-04 19:48:58
+ 10 files changed, 93 insertions(+), 50 deletions(-)
+ create mode 100644 Lukas/Trabajo_Final/Copia/images/articulacion_pasador.png
+Haciendo push...
+branch 'main' set up to track 'origin/main'.
+[2025-07-04 19:48:58] ✅ Push exitoso
+========== 2025-07-04 21:07:07 ==========

@@ -37,19 +37,28 @@
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{month}{5}
-      \field{note}{Recuperado el 22 de junio de 2025}
-      \field{title}{Utensilios de dibujo técnico}
-      \field{urlday}{22}
-      \field{urlmonth}{6}
+      \field{howpublished}{\url{https://es.wikipedia.org/wiki/Compás_(instrumento_de_dibujo)}}
+      \field{note}{Consultado el 2 de julio de 2025}
+      \field{title}{Compás (instrumento de dibujo)}
+      \field{year}{2024}
+    \endentry
+    \entry{ref_img_compas}{online}{}{}
+      \list{organization}{1}{%
+        {Dipy.cl}%
+      }
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{title}{Compás Escolar con Portalapiz}
+      \field{urlday}{2}
+      \field{urlmonth}{7}
       \field{urlyear}{2025}
-      \field{year}{2025}
       \field{urldateera}{ce}
       \verb{urlraw}
-      \verb https://es.wikipedia.org/wiki/Utensilios_de_dibujo_t%C3%A9cnico
+      \verb https://dipy.cl/products/compas-escolar-con-portalapiz
       \endverb
       \verb{url}
-      \verb https://es.wikipedia.org/wiki/Utensilios_de_dibujo_t%C3%A9cnico
+      \verb https://dipy.cl/products/compas-escolar-con-portalapiz
       \endverb
     \endentry
     \entry{shigley_design}{book}{}{}
@@ -84,14 +93,33 @@
       \strng{authornamehash}{3f0987cf107e297a7cd3a534e1796d59}
       \strng{authorfullhash}{3f0987cf107e297a7cd3a534e1796d59}
       \strng{authorfullhashraw}{3f0987cf107e297a7cd3a534e1796d59}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{7th}
       \field{note}{(p. 145)}
       \field{title}{Mechanical Engineering Design}
       \field{year}{2004}
+    \endentry
+    \entry{ref_img_articulacion}{online}{}{}
+      \list{organization}{1}{%
+        {norelem}%
+      }
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labeltitlesource}{title}
+      \field{title}{Articulaciones de horquilla para vástagos articulados}
+      \field{urlday}{2}
+      \field{urlmonth}{7}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://norelem.es/es/Vista-general-de-productos/Sistemas-y-componentes-para-la-construcci%C3%B3n-de-plantas-y-m%C3%A1quinas/27000/Articulaciones-de-horquilla/Articulaciones-de-horquilla-para-v%C3%A1stagos-articulados/p/agid.16483
+      \endverb
+      \verb{url}
+      \verb https://norelem.es/es/Vista-general-de-productos/Sistemas-y-componentes-para-la-construcci%C3%B3n-de-plantas-y-m%C3%A1quinas/27000/Articulaciones-de-horquilla/Articulaciones-de-horquilla-para-v%C3%A1stagos-articulados/p/agid.16483
+      \endverb
     \endentry
   \enddatalist
 \endrefsection

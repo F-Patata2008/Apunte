@@ -75,8 +75,10 @@
 \begin{abstract}
     \noindent \textbf{Resumen} \\
     Este informe trata sobre una mejora al compás escolar tradicional, que normalmente mantiene el lápiz en una posición fija y perpendicular al papel. Esto hace que sea difícil cambiar el ángulo del trazo, lo que a veces complica el trabajo y puede afectar la precisión o el estilo del dibujo. Pensando en eso, se buscó una forma de hacer que el compás sea más cómodo de usar y más útil para diferentes tipos de trazos.
+    \smallskip
 
     La solución fue diseñar un compás que tenga una articulación en la parte que sostiene el lápiz, parecida a las que se ven en algunas piezas de LEGO, donde se pueden mover las partes pero se quedan firmes en la posición que uno elige. Esto permitiría inclinar el lápiz hacia un lado, sin que se mueva mientras se dibuja. Además, se tomó como base el diseño del compás técnico normal, para que siga siendo fácil de usar y preciso.
+    \smallskip
 
     Como parte del desarrollo del proyecto, se hizo un boceto explicando la idea y también se crearon los planos en AutoCAD, tanto del conjunto como de las piezas por separado. Esto sirvió para visualizar cómo funcionaría el nuevo compás y cómo se podrían fabricar sus partes. El resultado final fue una herramienta más flexible, cómoda y que da más opciones para quienes necesitan variar el trazo, ya sea en el colegio, en dibujo técnico o en trabajos más artísticos.
 \end{abstract}
@@ -111,42 +113,38 @@ Se eligió como mecanismo base el compás de dibujo técnico (Figura \ref{fig:re
 Según Wikipedia \cite{wikipedia_utensilios}, \enquote{los compases son utilizados para dibujar circunferencias o arcos circulares. El tipo más habitual tiene dos patas rectas (...) unidas por una articulación; una de las patas termina en una punta aguda, y la otra sujeta (...) un lápiz o cualquier otro elemento capaz de marcar el papel}.
 \bigskip
 \bigskip
-\bigskip
-\bigskip
 
-\begin{figure}[htbp] % Usamos [htbp] para que LaTeX encuentre el mejor lugar
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.4\textwidth]{compass_photo}
-    \caption{Imagen de referencia de un compás escolar tradicional.}
+    \caption{Imagen de referencia de un compás escolar tradicional. Fuente: \cite{ref_img_compas}}
     \label{fig:ref_compas}
 \end{figure}
 \bigskip
-
 
 \subsection{Articulaciones Mecánicas con Pasador}
 Las articulaciones mecánicas con pasador son mecanismos fundamentales que permiten la conexión entre dos partes móviles, facilitando su rotación relativa, como se observa en el ejemplo de la Figura \ref{fig:ref_articulacion}. Se tomó como inspiración este tipo de mecanismo por su capacidad para ofrecer movimiento rotacional estable y controlado.
 Según Shigley, Mischke y Budynas \cite{shigley_design}, \enquote{las articulaciones de pasador son ampliamente utilizadas en mecanismos para permitir la rotación con soporte y resistencia suficiente para mantener la posición sin movimientos no deseados} (p. 145). Esta característica es clave para resolver la rigidez del compás convencional.
 \newpage
 
-% --- AQUÍ ESTÁ LA NUEVA IMAGEN ---
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.5\textwidth]{articulacion_pasador}
-    \caption{Ejemplo de referencia de una articulación de pasador tipo horquilla (clevis joint).}
+    \caption{Ejemplo de referencia de una articulación de pasador tipo horquilla. Fuente: \cite{ref_img_articulacion}}
     \label{fig:ref_articulacion}
 \end{figure}
+\bigskip
 
 \subsection{Justificación de la Elección}
 En conjunto, estos mecanismos ofrecen una solución funcional y técnicamente viable, al combinar la precisión del compás clásico con la movilidad de las articulaciones de pasador. Esta fusión permite mejorar notablemente la experiencia del usuario, aportando comodidad, versatilidad y un mayor control sobre la expresión gráfica.
-
-
-
+\bigskip
 
 
 \section{Planificación del Proyecto (Carta Gantt)}
 La distribución de tareas para la realización de este proyecto se detalla en la Tabla \ref{tab:gantt}.
+\smallskip
 
-\begin{table}[H]
+\begin{table}[htbp]
     \centering
     \caption{Asignación y cronograma de actividades del proyecto.}
     \label{tab:gantt}
@@ -187,9 +185,9 @@ La distribución de tareas para la realización de este proyecto se detalla en l
 A partir de los mecanismos mencionados, se desarrolló el boceto del compás (Figura \ref{fig:boceto}). Este diseño conserva la ingeniería funcional del compás tradicional, pero introduce una modificación significativa en la zona de sujeción del lápiz, incorporando un mecanismo articulado.
 Esta inclinación controlada ofrece múltiples ventajas: permite adaptar la herramienta a distintas formas de trazo, mejora la ergonomía y ofrece una mayor expresividad gráfica.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.8\textwidth]{compass_sketch}
+    \includegraphics[width=0.7951\textwidth]{compass_sketch}
     \caption{Boceto inicial del compás mejorado. La nota manuscrita indica: "Esta zona debe rotar levemente para poder ajustar la posición del lápiz".}
     \label{fig:boceto}
 \end{figure}
@@ -201,7 +199,7 @@ En base al boceto y la propuesta de diseño, se han creado los planos técnicos 
 \subsection{Plano de Conjunto}
 La Figura \ref{fig:conjunto} muestra el ensamblaje completo del compás, identificando cada componente con su respectivo número de marca y la lista de piezas.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=\textwidth, keepaspectratio]{plano_conjunto}
     \caption{Plano de conjunto del compás de trazado mejorado.}
@@ -212,7 +210,7 @@ La Figura \ref{fig:conjunto} muestra el ensamblaje completo del compás, identif
 \subsection{Plano de Despiece}
 El plano de despiece (Figura \ref{fig:despiece}) presenta una vista detallada de cada una de las 6 piezas que conforman el mecanismo, con sus acotaciones principales.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=\textwidth, keepaspectratio]{plano_despiece}
     \caption{Plano de despiece del compás, mostrando las 6 piezas diseñadas.}
@@ -223,7 +221,7 @@ El plano de despiece (Figura \ref{fig:despiece}) presenta una vista detallada de
 \subsection{Planos de Fabricación}
 La Figura \ref{fig:fabricacion} muestra los planos de fabricación individuales para cada una de las piezas diseñadas. Cada plano contiene las vistas y cotas necesarias para su manufactura.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=\textwidth, keepaspectratio]{planos_fabricacion}
     \caption{Planos de fabricación para las 6 piezas del compás.}

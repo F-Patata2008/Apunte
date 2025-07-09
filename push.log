@@ -338,3 +338,31 @@ Haciendo push...
 branch 'main' set up to track 'origin/main'.
 [2025-07-04 21:07:07] ✅ Push exitoso
 ========== 2025-07-09 15:06:54 ==========
+Mensaje de commit (dejar vacío para 'Auto-commit'): Haciendo commit...
+[main ac5066b] Auto-commit: 2025-07-09 15:06:54
+ 36 files changed, 256 insertions(+), 221 deletions(-)
+ rename {Edu Ciudadana => Ciudadania}/28-05.aux (100%)
+ rename {Edu Ciudadana => Ciudadania}/28-05.fdb_latexmk (100%)
+ rename {Edu Ciudadana => Ciudadania}/28-05.fls (100%)
+ rename {Edu Ciudadana => Ciudadania}/28-05.log (100%)
+ rename {Edu Ciudadana => Ciudadania}/28-05.pdf (100%)
+ rename {Edu Ciudadana => Ciudadania}/28-05.synctex.gz (100%)
+ rename {Edu Ciudadana => Ciudadania}/28-05.tex (100%)
+ rename {Edu Ciudadana => Ciudadania}/main.aux (100%)
+ rename {Edu Ciudadana => Ciudadania}/main.fdb_latexmk (100%)
+ rename {Edu Ciudadana => Ciudadania}/main.fls (100%)
+ rename {Edu Ciudadana => Ciudadania}/main.log (100%)
+ rename {Edu Ciudadana => Ciudadania}/main.out (100%)
+ rename {Edu Ciudadana => Ciudadania}/main.pdf (100%)
+ rename {Edu Ciudadana => Ciudadania}/main.synctex(busy) (100%)
+ rename {Edu Ciudadana => Ciudadania}/main.tex (100%)
+ rename {Edu Ciudadana => Ciudadania}/main.toc (100%)
+ create mode 100644 "Probabilidad y Estadistica/Trabajos/Gu\303\255a-5/copia/images/Gatito.gif"
+ create mode 100644 "Probabilidad y Estadistica/Trabajos/Gu\303\255a-5/copia/images/Patata.gif"
+ create mode 100644 "Probabilidad y Estadistica/Trabajos/Gu\303\255a-5/copia/images/gatito.png"
+Haciendo push...
+branch 'main' set up to track 'origin/main'.
+[2025-07-09 15:06:54] ✅ Push exitoso
+========== 2025-07-09 16:29:50 ==========
+[2025-07-09 16:29:50] No hay cambios para commitear.
+========== 2025-07-09 16:29:53 ==========

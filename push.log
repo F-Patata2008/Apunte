@@ -366,3 +366,13 @@ branch 'main' set up to track 'origin/main'.
 ========== 2025-07-09 16:29:50 ==========
 [2025-07-09 16:29:50] No hay cambios para commitear.
 ========== 2025-07-09 16:29:53 ==========
+Mensaje de commit (dejar vacío para 'Auto-commit'): Haciendo commit...
+[main 7e0639e] Auto-commit: 2025-07-09 16:29:53
+ 12 files changed, 431 insertions(+), 373 deletions(-)
+ create mode 100644 Probabilidad y Estadistica/Apunte/images/IN.png
+ create mode 100644 Probabilidad y Estadistica/Apunte/images/gatito.png
+ create mode 100644 Probabilidad y Estadistica/Apunte/images/patata.png
+Haciendo push...
+branch 'main' set up to track 'origin/main'.
+[2025-07-09 16:29:53] ✅ Push exitoso
+========== 2025-07-09 16:40:22 ==========

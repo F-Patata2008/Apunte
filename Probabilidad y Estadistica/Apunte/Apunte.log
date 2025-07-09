@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.6.1)  11 JUN 2025 19:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.7.3)  9 JUL 2025 11:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -124,22 +124,12 @@ File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
 Package: babel 2025/02/14 v25.4 The multilingual framework for pdfLaTeX, LuaLaTeX and XeLaTeX
 \babel@savecnt=\count282
 \U@D=\dimen153
-\l@unhyphenated=\language3
+\l@unhyphenated=\language90
  (/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
 \bbl@dirlevel=\count283
  (/usr/share/texmf-dist/tex/generic/babel-spanish/spanish.ldf
 Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
-
-
-Package babel Warning: No hyphenation patterns were preloaded for
-(babel)                the language 'Spanish' into the format.
-(babel)                Please, configure your TeX system to add them and
-(babel)                rebuild the format. Now I will use the patterns
-(babel)                preloaded for \language=0 instead on input line 51.
-
-Package babel Info: Hyphen rules for 'spanish' set to \l@english
-(babel)             (\language0). Reported on input line 52.
 \es@quottoks=\toks25
 \es@quotdepth=\count284
 Package babel Info: Making " an active character on input line 570.
@@ -236,11 +226,6 @@ LaTeX Info: Redefining \% on input line 1.
 [2]
 
 [3]
-Overfull \hbox (5.94928pt too wide) in paragraph at lines 58--59
-[]\T1/cmr/bx/n/12 Muestra (ejem-p-lo): \T1/cmr/m/n/12 San-ti-aguinos de Gen X (se-lec-ciona-dos aleato-
- []
-
-
 
 [4{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 
@@ -265,33 +250,18 @@ Overfull \hbox (33.38695pt too wide) detected at line 153
 [9]
 
 [10]
-Overfull \hbox (1.30984pt too wide) in paragraph at lines 272--274
-\T1/cmr/bx/n/12 va) para re-alizar una in-fer-en-cia es-tadís-ti-ca vál-i-da so-bre la población. 
- []
-
-
 
 [11]
 
 [12]
-Overfull \hbox (2.13055pt too wide) in paragraph at lines 321--322
-\T1/cmr/m/n/12 Es útil cuan-do es difí-cil o cos-toso obten-er un mar-co mues-tral de unidades
- []
-
-
 
 [13]
 
 [14]
 
 [15]
-Overfull \hbox (3.53902pt too wide) in paragraph at lines 379--380
-[]\T1/cmr/m/n/12 Idealmente, los con-glom-er-a-dos son in-ter-na-mente het-erogé-neos (rep-
- []
-
-
-Overfull \hbox (40.87268pt too wide) in paragraph at lines 379--380
-\T1/cmr/m/n/12 re-sen-tan la vari-abil-i-dad de la población, al-ta var-i-an-za intra-conglomerado). 
+Overfull \hbox (47.39886pt too wide) in paragraph at lines 379--380
+\T1/cmr/m/n/12 pre-sen-tan la va-ria-bi-li-dad de la po-bla-ción, al-ta va-rian-za intra-conglomerado). 
  []
 
 
@@ -317,11 +287,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 469--471
  []
 
 
-Overfull \hbox (7.91531pt too wide) in paragraph at lines 479--479
-[]\T1/cmr/bx/n/14.4 Demostración Propiedad 5 (Fór-mu-la Com-puta-cional
- []
-
-
 
 [22]
 
@@ -330,11 +295,6 @@ Overfull \hbox (7.91531pt too wide) in paragraph at lines 479--479
 [24]
 
 [25]
-Overfull \hbox (14.59546pt too wide) in paragraph at lines 573--574
-[]\T1/cmr/m/n/12 En un lo-cal se puede le-gir un com-bo con las sigu-ientes op-ciones disponibles:
- []
-
-
 
 [26] (./Apunte.aux
 LaTeX Info: Redefining \. on input line 8.
@@ -346,15 +306,15 @@ L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4421 strings out of 475171
- 65643 string characters out of 5767096
- 466204 words of memory out of 5000000
- 27376 multiletter control sequences out of 15000+600000
+ 4417 strings out of 473190
+ 65574 string characters out of 5722594
+ 471341 words of memory out of 5000000
+ 27628 multiletter control sequences out of 15000+600000
  576288 words of font info for 79 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
+ 1141 hyphenation exceptions out of 8191
  57i,11n,65p,515b,422s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbi1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on Apunte.pdf (26 pages, 332727 bytes).
+Output written on Apunte.pdf (26 pages, 332778 bytes).
 PDF statistics:
  189 PDF objects out of 1000 (max. 8388607)
  120 compressed objects within 2 object streams

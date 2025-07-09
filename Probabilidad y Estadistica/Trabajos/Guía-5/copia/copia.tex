@@ -1,18 +1,27 @@
 \documentclass[11pt]{article}
-\usepackage{amsmath}  % Math
-\usepackage{amssymb}  % Symbols
-\usepackage{graphicx} % Images
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}  % Paquetes para matemáticas
+\usepackage{amssymb}  % Paquetes para símbolos
+\usepackage{graphicx} % Paquetes para imágenes
+\usepackage[utf8]{inputenc} % Codificación de caracteres
+\usepackage[T1]{fontenc}    % Codificación de fuentes
+\usepackage[spanish]{babel} % Soporte para el idioma español
+\usepackage[margin=1in]{geometry} % Márgenes del documento
 
-\title{Guía 5 Probabilidad y Estadistica}
-\author{Felipe Colli Olea \thanks{Profesor: Sergio Díaz}}
+\graphicspath{ {./images/}} 
+
+
+
+\title{Guía 05 de Probabilidad y Estadística: \\ Principios de Conteo, Permutaciones y Combinaciones}
+\author{Felipe Colli Olea}
 \date{\today}
 
 \begin{document}
 
 \maketitle
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.75\textwidth]{gatito}
+\end{figure}
 \tableofcontents
 \newpage
 
@@ -86,90 +95,111 @@
     Dígitos 3 al 8 (6 dígitos): 10 opciones para cada uno ($10^6$).
     Total: $1 \times 7 \times 10^6 = 7,000,000$ números.
 
-    \newpage
+\newpage
 
 \section{Permutaciones y Combinaciones}
     \subsection*{1. Carlos, Pedro y Sandra correrán los 100 metros planos. ¿De cuántas formas puede quedar el podio de primer y segundo lugar? Solo competirán ellos tres.}
-    Importa el orden (primero vs segundo). Es una permutación de 3 elementos tomados de 2 en 2. $P(3,2) = \frac{3!}{(3-2)!} = 3 \times 2 = 6$ formas.
+    Dado que importa el orden (quién es primero y quién es segundo), es un problema de permutaciones. Se deben ordenar 2 personas de un total de 3.
+    La fórmula es $P(n,k) = \frac{n!}{(n-k)!}$.
+    $P(3,2) = \frac{3!}{(3-2)!} = \frac{3!}{1!} = 3 \times 2 \times 1 = 6$ formas.
 
     \subsection*{2. ¿De cuántas formas se puede preparar una ensalada de frutas con solo 2 ingredientes, si se cuenta con plátano, manzana y uva?}
-    No importa el orden de los ingredientes. Es una combinación de 3 elementos tomados de 2 en 2. $C(3,2) = \frac{3!}{2!(3-2)!} = 3$ formas.
+    En una ensalada, el orden de los ingredientes no importa. Por lo tanto, es un problema de combinaciones. Se deben elegir 2 frutas de un total de 3.
+    La fórmula es $C(n,k) = \frac{n!}{k!(n-k)!}$.
+    $C(3,2) = \frac{3!}{2!(3-2)!} = \frac{3 \times 2 \times 1}{(2 \times 1)(1)} = 3$ formas.
 
     \subsection*{3. ¿De cuántas formas pueden hacer cola 5 amigos para entrar al cine?}
-    Es una permutación de 5 elementos, ya que importa el orden en la cola. $P(5) = 5! = 120$ formas.
+    El orden en una cola es importante. Es una permutación de 5 elementos.
+    La fórmula es $P(n) = n!$.
+    $P(5) = 5! = 5 \times 4 \times 3 \times 2 \times 1 = 120$ formas.
 
     \subsection*{4. ¿De cuántas formas puede un juez otorgar el primero, segundo y tercer premio en un concurso que tiene ocho concursantes?}
-    Importa el orden de los premios. Es una permutación de 8 elementos tomados de 3 en 3. $P(8,3) = \frac{8!}{(8-3)!} = 8 \times 7 \times 6 = 336$ formas.
+    El orden de los premios (primero, segundo, tercero) es diferente, por lo que es una permutación. Se deben ordenar 3 ganadores de 8 concursantes.
+    $P(8,3) = \frac{8!}{(8-3)!} = \frac{8!}{5!} = 8 \times 7 \times 6 = 336$ formas.
 
     \subsection*{5. El capitán de un barco solicita 2 marineros para realizar un trabajo, sin embargo, se presentan 10. ¿De cuántas formas podrá seleccionar a los 2 marineros?}
-    No importa el orden en que se seleccionan. Es una combinación de 10 elementos tomados de 2 en 2. $C(10,2) = \frac{10!}{2!(10-2)!} = \frac{10 \times 9}{2} = 45$ formas.
+    El orden en que se seleccionan los marineros para el trabajo no importa; el grupo es el mismo. Es una combinación de 10 elementos tomados de 2 en 2.
+    $C(10,2) = \frac{10!}{2!(10-2)!} = \frac{10 \times 9}{2 \times 1} = 45$ formas.
 
     \subsection*{6. Eduardo tiene 7 libros, ¿de cuántas maneras puede acomodar cinco de ellos en un estante?}
-    Importa el orden de los libros en el estante. Es una permutación de 7 elementos tomados de 5 en 5. $P(7,5) = \frac{7!}{(7-5)!} = 7 \times 6 \times 5 \times 4 \times 3 = 2520$ maneras.
+    El orden de los libros en un estante sí importa. Es una permutación de 7 libros tomados de 5 en 5.
+    $P(7,5) = \frac{7!}{(7-5)!} = \frac{7!}{2!} = 7 \times 6 \times 5 \times 4 \times 3 = 2520$ maneras.
 
     \subsection*{7. En un salón de 10 alumnos, ¿de cuántas maneras se puede formar un comité formado por 2 de ellos?}
-    No importa el orden en un comité. Es una combinación de 10 elementos tomados de 2 en 2. $C(10,2) = \frac{10!}{2!(10-2)!} = 45$ maneras.
+    En un comité, los cargos no están definidos, por lo que el orden no importa. Es una combinación de 10 alumnos tomados de 2 en 2.
+    $C(10,2) = \frac{10!}{2!(10-2)!} = \frac{10 \times 9}{2} = 45$ maneras.
 
-    \subsection*{8. a) ¿Cuántas señales diferentes son posibles si las cuatro banderas son utilizadas? b) ¿Cuántas señales diferentes son posibles sí al menos una bandera es utilizada?}
-    a) Usar las 4 banderas en un asta implica orden. Permutación de 4 elementos: $4! = 24$ señales.
-    b) "Al menos una" es la suma de las señales con 1, 2, 3 o 4 banderas.
-    1 bandera: $P(4,1) = 4$. 2 banderas: $P(4,2) = 12$. 3 banderas: $P(4,3) = 24$. 4 banderas: $P(4,4) = 24$.
+    \subsection*{8. a) ¿Cuántas señales diferentes son posibles si las cuatro banderas son utilizadas? b) ¿Cuántas señales diferentes son posibles si al menos una bandera es utilizada?}
+    a) Si se usan las 4 banderas, el orden en el asta importa. Es una permutación de 4 elementos. $P(4) = 4! = 24$ señales.
+    b) "Al menos una bandera" significa que se pueden usar 1, 2, 3 o 4 banderas. Sumamos las permutaciones para cada caso:
+    Señales con 1 bandera: $P(4,1) = 4$.
+    Señales con 2 banderas: $P(4,2) = 4 \times 3 = 12$.
+    Señales con 3 banderas: $P(4,3) = 4 \times 3 \times 2 = 24$.
+    Señales con 4 banderas: $P(4,4) = 4! = 24$.
     Total: $4 + 12 + 24 + 24 = 64$ señales.
 
     \subsection*{9. Un club de vóley tiene 12 jugadoras, una de ellas es la capitana María. ¿Cuántos equipos diferentes de 6 jugadoras se pueden formar, sabiendo que en todos ellos siempre estará la capitana María?}
-    El equipo es de 6. Como María siempre está, solo necesitamos elegir las 5 jugadoras restantes de las 11 que quedan. No importa el orden. $C(11,5) = \frac{11!}{5!(11-5)!} = 462$ equipos.
+    El equipo debe tener 6 jugadoras. Como María siempre está en el equipo, ya tenemos 1 jugadora fija. Solo necesitamos elegir las 5 jugadoras restantes de las 11 que quedan. El orden no importa, es una combinación.
+    $C(11,5) = \frac{11!}{5!(11-5)!} = \frac{11 \times 10 \times 9 \times 8 \times 7}{5 \times 4 \times 3 \times 2 \times 1} = 462$ equipos.
 
     \subsection*{10. Con 4 frutas diferentes, ¿cuántos jugos surtidos se pueden preparar? *Un jugo surtido se prepara con 2 frutas al menos.}
-    Sumamos las combinaciones de jugos de 2, 3 y 4 frutas.
-    Con 2 frutas: $C(4,2)=6$. Con 3 frutas: $C(4,3)=4$. Con 4 frutas: $C(4,4)=1$.
-    Total: $6+4+1=11$ jugos.
+    "Al menos 2 frutas" significa que el jugo puede tener 2, 3 o 4 frutas. Sumamos las combinaciones para cada caso:
+    Jugos con 2 frutas: $C(4,2) = \frac{4!}{2!2!} = 6$.
+    Jugos con 3 frutas: $C(4,3) = \frac{4!}{3!1!} = 4$.
+    Jugos con 4 frutas: $C(4,4) = \frac{4!}{4!0!} = 1$.
+    Total: $6 + 4 + 1 = 11$ jugos.
     
-    \subsection*{11. a) 3 hombres y 2 mujeres posan en línea. b) Una mujer en cada extremo. c) Personas del mismo sexo juntas. d) Mujeres separadas.}
-    a) Total 5 personas. Arreglarlas en línea: $5! = 120$ maneras.
-    b) 2 mujeres en los extremos: $P(2,2)=2!$ maneras. 3 hombres en medio: $3!$ maneras. Total: $2! \times 3! = 2 \times 6 = 12$ maneras.
-    c) Bloque de Hombres (HHH) y bloque de Mujeres (MM). Se arreglan los 2 bloques ($2!$) y las personas dentro de cada bloque ($3!$ y $2!$). Total: $2! \times 3! \times 2! = 2 \times 6 \times 2 = 24$ maneras.
-    d) Colocar a los hombres primero (\_H\_H\_H\_), creando 4 espacios para las mujeres. Se eligen y ordenan 2 mujeres en esos 4 espacios $P(4,2)$. Los hombres se ordenan entre sí ($3!$). Total: $P(4,2) \times 3! = 12 \times 6 = 72$ maneras.
+    \subsection*{11. a) ¿De cuántas maneras pueden posar tres hombres y dos mujeres en línea? b) ¿Y si una mujer debe estar en cada extremo? c) ¿Y si las personas del mismo sexo están juntas? d) ¿Y si las mujeres están separadas?}
+    a) Hay un total de 5 personas. Ponerlas en línea es una permutación de 5. $5! = 120$ maneras.
+    b) Se fijan las posiciones de las mujeres en los extremos. Hay 2 mujeres para 2 puestos: $2!$ maneras. Los 3 hombres se permutan en los 3 puestos del medio: $3!$ maneras. Total: $2! \times 3! = 2 \times 6 = 12$ maneras.
+    c) Se consideran a los hombres como un bloque (H) y a las mujeres como otro (M). Se ordenan los 2 bloques: $2!$. Dentro del bloque de hombres, ellos se ordenan: $3!$. Dentro del bloque de mujeres, ellas se ordenan: $2!$. Total: $2! \times 3! \times 2! = 2 \times 6 \times 2 = 24$ maneras.
+    d) Para que las mujeres estén separadas, primero ordenamos a los hombres ($3!$). Esto crea 4 espacios (\_H\_H\_H\_) donde podemos colocar a las mujeres. Se eligen 2 de estos 4 espacios y se ordenan las mujeres en ellos ($P(4,2)$). Total: $3! \times P(4,2) = 6 \times \frac{4!}{2!} = 6 \times 12 = 72$ maneras.
 
     \subsection*{12. ¿Cuántas palabras diferentes se pueden formar con las letras de la palabra REMEMBER?}
-    Permutación con repetición. Palabra de 8 letras. R se repite 2 veces, E se repite 3 veces, M se repite 2 veces.
-    Total: $\frac{8!}{2! \cdot 3! \cdot 2!} = \frac{40320}{2 \cdot 6 \cdot 2} = \frac{40320}{24} = 1680$ palabras.
+    Es una permutación con elementos repetidos. La palabra tiene 8 letras: R(2), E(3), M(2), B(1).
+    Total de palabras: $\frac{8!}{2! \cdot 3! \cdot 2!} = \frac{40320}{2 \cdot 6 \cdot 2} = \frac{40320}{24} = 1680$ palabras.
 
-    \subsection*{13. Un dado es tirado siete veces. ¿De cuántas maneras pueden ocurrir dos números 2, tres 3, un 4 y un 5?}
-    Tenemos 7 tiros con resultados fijos: \{2,2,3,3,3,4,5\}. Se trata de ordenar estos 7 resultados. Es una permutación con repetición.
-    Total: $\frac{7!}{2! \cdot 3!} = \frac{5040}{2 \cdot 6} = 420$ maneras.
+    \subsection*{13. Un dado es tirado siete veces y el orden de los tiros es considerado. ¿De cuántas maneras pueden ocurrir dos números 2, tres 3, un 4 y un 5?}
+    Se trata de ordenar una secuencia de 7 resultados donde hay repeticiones: \{2,2, 3,3,3, 4, 5\}. Es una permutación con repetición de 7 elementos.
+    Total de maneras: $\frac{7!}{2! \cdot 3! \cdot 1! \cdot 1!} = \frac{5040}{2 \cdot 6} = 420$ maneras.
 
-    \subsection*{14. 25 comentaristas (6 hablan español), formar grupos de 4 con al menos 2 que hablen español.}
-    Hay 6 que hablan español (S) y 19 que no (NS). Casos posibles:
-    (2S, 2NS): $C(6,2) \times C(19,2) = 15 \times 171 = 2565$.
-    (3S, 1NS): $C(6,3) \times C(19,1) = 20 \times 19 = 380$.
-    (4S, 0NS): $C(6,4) \times C(19,0) = 15 \times 1 = 15$.
-    Total: $2565 + 380 + 15 = 2960$ maneras.
+    \subsection*{14. Para la Copa Mundial de fútbol, hay 25 comentaristas, de los cuales sólo seis hablan español. ¿De cuántas maneras se pueden formar grupos de cuatro, con la condición de que por lo menos se integren dos que hablen español?}
+    Hay 6 que hablan español (E) y 19 que no (NE). Se necesita un grupo de 4 con "al menos 2 E". Sumamos los casos:
+    \begin{itemize}
+        \item 2 E y 2 NE: $C(6,2) \times C(19,2) = 15 \times 171 = 2565$.
+        \item 3 E y 1 NE: $C(6,3) \times C(19,1) = 20 \times 19 = 380$.
+        \item 4 E y 0 NE: $C(6,4) \times C(19,0) = 15 \times 1 = 15$.
+    \end{itemize}
+    Total de maneras: $2565 + 380 + 15 = 2960$ maneras.
 
     \subsection*{15. ¿Cuántas palabras diferentes se pueden formar con las letras de la palabra AGARRAR?}
-    Permutación con repetición. Palabra de 7 letras. A se repite 3 veces, R se repite 3 veces.
-    Total: $\frac{7!}{3! \cdot 3!} = \frac{5040}{6 \cdot 6} = 140$ palabras.
+    Es una permutación con elementos repetidos. La palabra tiene 7 letras: A(3), R(3), G(1).
+    Total de palabras: $\frac{7!}{3! \cdot 3!} = \frac{5040}{6 \cdot 6} = \frac{5040}{36} = 140$ palabras.
 
     \subsection*{16. ¿De cuántas formas se pueden sentar 6 amigos alrededor de una mesa circular?}
-    Permutación circular de n elementos es $(n-1)!$.
-    Total: $(6-1)! = 5! = 120$ formas.
+    Es una permutación circular de $n$ elementos, cuya fórmula es $(n-1)!$.
+    Total de formas: $(6-1)! = 5! = 120$ formas.
 
-    \subsection*{17. 6 amigos (una pareja de novios) se sientan alrededor de una fogata, si los novios deben sentarse siempre juntos.}
-    Se considera a la pareja como un solo bloque. Se ordenan 5 "elementos" (el bloque y 4 amigos) en círculo: $(5-1)! = 4! = 24$.
-    La pareja puede ordenarse de $2! = 2$ maneras dentro de su bloque.
-    Total: $24 \times 2 = 48$ formas.
+    \subsection*{17. En un grupo de 6 amigos, hay una pareja de novios. ¿De cuántas maneras pueden sentarse alrededor de una fogata, si los novios deben sentarse siempre juntos?}
+    Se considera a la pareja de novios como una sola unidad. Ahora tenemos 5 "elementos" (la pareja y los otros 4 amigos) para sentar en círculo. Esto es una permutación circular de 5 elementos: $(5-1)! = 4! = 24$.
+    Además, la pareja puede ordenarse de $2! = 2$ maneras entre sí (novio-novia o novia-novio).
+    Total de formas: $4! \times 2! = 24 \times 2 = 48$ formas.
     
-    \subsection*{18. Torneo de ajedrez con 10 integrantes, sin revancha. ¿Cuántos partidos se deben programar?}
-    Cada partido es una pareja de 2 jugadores. El orden no importa. Es una combinación de 10 elementos tomados de 2 en 2.
-    Total: $C(10,2) = \frac{10 \times 9}{2} = 45$ partidos.
+    \subsection*{18. Se va a programar un torneo de ajedrez para los 10 integrantes de un club. ¿Cuántos partidos se deben programar si cada integrante jugará con cada uno de los demás sin partidos de revancha?}
+    Cada partido es una selección de 2 jugadores de los 10 disponibles. El orden no importa (un partido entre A y B es el mismo que entre B y A). Es una combinación.
+    Total de partidos: $C(10,2) = \frac{10!}{2!(10-2)!} = \frac{10 \times 9}{2} = 45$ partidos.
 
-    \subsection*{19. Contratar 3 empleados de 8 candidatos (6 hombres, 2 mujeres). a) ¿Maneras de elegir? b) ¿Elegir 1 solo hombre? c) ¿Elegir por lo menos 1 hombre?}
-    a) Elegir 3 de 8: $C(8,3) = \frac{8 \cdot 7 \cdot 6}{3 \cdot 2 \cdot 1} = 56$ maneras.
-    b) Elegir 1 hombre y 2 mujeres: $C(6,1) \times C(2,2) = 6 \times 1 = 6$ maneras.
-    c) "Al menos un hombre" es el total menos "ningún hombre". Es imposible elegir 0 hombres, ya que se necesitan 3 empleados y solo hay 2 mujeres. Por lo tanto, cualquier selección tendrá al menos un hombre. El total es 56 maneras.
+    \subsection*{19. Una empresa desea contratar 3 nuevos empleados, pero hay 8 candidatos, 6 de los cuales son hombres y 2 son mujeres. a) ¿De cuántas maneras diferentes se pueden elegir? b) ¿De cuántas maneras se puede elegir a un solo candidato hombre? c) ¿De cuántas maneras se puede elegir por lo menos a un candidato hombre?}
+    a) Elegir 3 empleados de 8 candidatos, sin importar el orden: $C(8,3) = \frac{8 \cdot 7 \cdot 6}{3 \cdot 2 \cdot 1} = 56$ maneras.
+    b) Elegir 1 solo hombre significa elegir 1 hombre de 6 Y 2 mujeres de 2: $C(6,1) \times C(2,2) = 6 \times 1 = 6$ maneras.
+    c) "Al menos un hombre" es el total de maneras menos las maneras de no elegir ningún hombre. La única forma de no elegir hombres es elegir 3 mujeres, pero solo hay 2. Por tanto, es imposible no elegir al menos un hombre. Todas las selecciones posibles tendrán al menos un hombre. Total: 56 maneras.
 
-    \subsection*{20. Pintar un logotipo (1 círculo central, 6 alrededor) con 7 colores distintos.}
-    Se elige un color para el círculo central (7 opciones).
-    Los 6 colores restantes se usan para los 6 círculos exteriores. Como están en círculo, es una permutación circular de 6 elementos: $(6-1)! = 5! = 120$.
-    Total: $7 \times 120 = 840$ maneras.
+    \subsection*{20. Se ha diseñado el siguiente logotipo para cierto producto, que debe ser pintado con 7 colores distintos. ¿De cuántas maneras se puede pintar con colores diferentes en cada circunferencia?}
+    El logotipo tiene un círculo central y 6 círculos alrededor.
+    \begin{enumerate}
+        \item Se elige un color para el círculo central. Hay 7 opciones.
+        \item Quedan 6 colores para los 6 círculos exteriores. Como están dispuestos en círculo, es una permutación circular de 6 elementos: $(6-1)! = 5! = 120$.
+    \end{enumerate}
+    Por el principio de multiplicación, el total de maneras es: $7 \times (6-1)! = 7 \times 120 = 840$ maneras.
     
 \end{document}

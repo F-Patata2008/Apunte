@@ -383,3 +383,121 @@ Haciendo push...
 branch 'main' set up to track 'origin/main'.
 [2025-07-09 16:40:22] ✅ Push exitoso
 ========== 2025-07-10 08:02:01 ==========
+Mensaje de commit (dejar vacío para 'Auto-commit'): Haciendo commit...
+[main d38a6fd] }
+ 113 files changed, 3 insertions(+), 1 deletion(-)
+ rename Mates/Informe_Empanadas/{ => Original}/Informe_Empanadas.aux (100%)
+ rename Mates/Informe_Empanadas/{ => Original}/Informe_Empanadas.fdb_latexmk (100%)
+ rename Mates/Informe_Empanadas/{ => Original}/Informe_Empanadas.fls (100%)
+ rename Mates/Informe_Empanadas/{ => Original}/Informe_Empanadas.log (100%)
+ rename Mates/Informe_Empanadas/{ => Original}/Informe_Empanadas.pdf (100%)
+ rename Mates/Informe_Empanadas/{ => Original}/Informe_Empanadas.synctex.gz (100%)
+ rename Mates/Informe_Empanadas/{ => Original}/Informe_Empanadas.tex (100%)
+ rename Mates/Informe_Empanadas/{ => Original}/Informe_Empanadas.toc (100%)
+ rename Mates/Informe_Empanadas/{ => Original}/images/IN.png (100%)
+ rename Mates/Informe_Empanadas/{ => Original}/images/Oregano.png (100%)
+ rename Mates/Informe_Empanadas/{ => Original}/images/aceite.png (100%)
+ rename Mates/Informe_Empanadas/{ => Original}/images/central.png (100%)
+ rename Mates/Informe_Empanadas/{ => Original}/images/chile.png (100%)
+ rename Mates/Informe_Empanadas/{ => Original}/images/cholitos.png (100%)
+ rename Mates/Informe_Empanadas/{ => Original}/images/comino.png (100%)
+ rename Mates/Informe_Empanadas/{ => Original}/images/donhuevo.png (100%)
+ rename Mates/Informe_Empanadas/{ => Original}/images/empanadas.jpg (100%)
+ rename Mates/Informe_Empanadas/{ => Original}/images/fres.png (100%)
+ rename Mates/Informe_Empanadas/{ => Original}/images/frest.png (100%)
+ rename Mates/Informe_Empanadas/{ => Original}/images/gk.png (100%)
+ rename Mates/Informe_Empanadas/{ => Original}/images/gourmet.png (100%)
+ rename Mates/Informe_Empanadas/{ => Original}/images/kosa.png (100%)
+ rename Mates/Informe_Empanadas/{ => Original}/images/libre.png (100%)
+ rename Mates/Informe_Empanadas/{ => Original}/images/lobos.png (100%)
+ rename Mates/Informe_Empanadas/{ => Original}/images/mitierra.png (100%)
+ rename Mates/Informe_Empanadas/{ => Original}/images/montan1.png (100%)
+ rename Mates/Informe_Empanadas/{ => Original}/images/nat.png (100%)
+ rename Mates/Informe_Empanadas/{ => Original}/images/negra.png (100%)
+ rename Mates/Informe_Empanadas/{ => Original}/images/nueva.png (100%)
+ rename Mates/Informe_Empanadas/{ => Original}/images/nutri.png (100%)
+ rename Mates/Informe_Empanadas/{ => Original}/images/oceanic.png (100%)
+ rename Mates/Informe_Empanadas/{ => Original}/images/oceanica.png (100%)
+ rename Mates/Informe_Empanadas/{ => Original}/images/olive.png (100%)
+ rename Mates/Informe_Empanadas/{ => Original}/images/online.png (100%)
+ rename Mates/Informe_Empanadas/{ => Original}/images/paiquito.png (100%)
+ rename Mates/Informe_Empanadas/{ => Original}/images/palaci.png (100%)
+ rename Mates/Informe_Empanadas/{ => Original}/images/pimienta.png (100%)
+ rename Mates/Informe_Empanadas/{ => Original}/images/prosud.png (100%)
+ rename Mates/Informe_Empanadas/{ => Original}/images/santiago.png (100%)
+ rename Mates/Informe_Empanadas/{ => Original}/images/vega.png (100%)
+ rename Mates/{ => Informe_Empanadas}/copia/images/IN.png (100%)
+ rename Mates/{copia => Informe_Empanadas/copia/images}/Oregano.png (100%)
+ rename Mates/{copia => Informe_Empanadas/copia/images}/aceite.png (100%)
+ rename Mates/{copia => Informe_Empanadas/copia/images}/central.png (100%)
+ rename Mates/{copia => Informe_Empanadas/copia/images}/chile.png (100%)
+ rename Mates/{copia => Informe_Empanadas/copia/images}/cholitos.png (100%)
+ rename Mates/{copia => Informe_Empanadas/copia/images}/comino.png (100%)
+ rename Mates/{copia => Informe_Empanadas/copia/images}/donhuevo.png (100%)
+ rename Mates/{copia => Informe_Empanadas/copia/images}/empanadas.jpg (100%)
+ rename Mates/{copia => Informe_Empanadas/copia/images}/fres.png (100%)
+ rename Mates/{copia => Informe_Empanadas/copia/images}/frest.png (100%)
+ rename Mates/{copia => Informe_Empanadas/copia/images}/gk.png (100%)
+ rename Mates/{copia => Informe_Empanadas/copia/images}/gourmet.png (100%)
+ rename Mates/{ => Informe_Empanadas}/copia/images/kosa.png (100%)
+ rename Mates/{ => Informe_Empanadas}/copia/images/libre.png (100%)
+ rename Mates/{ => Informe_Empanadas}/copia/images/lobos.png (100%)
+ rename Mates/{ => Informe_Empanadas}/copia/images/logo.png (100%)
+ rename Mates/{ => Informe_Empanadas}/copia/images/mitierra.png (100%)
+ rename Mates/{ => Informe_Empanadas}/copia/images/montan1.png (100%)
+ rename Mates/{ => Informe_Empanadas}/copia/images/nat.png (100%)
+ rename Mates/{ => Informe_Empanadas}/copia/images/negra.png (100%)
+ rename Mates/{ => Informe_Empanadas}/copia/images/nueva.png (100%)
+ rename Mates/{ => Informe_Empanadas}/copia/images/nutri.png (100%)
+ rename Mates/{ => Informe_Empanadas}/copia/images/oceanic.png (100%)
+ rename Mates/{ => Informe_Empanadas}/copia/images/oceanica.png (100%)
+ rename Mates/{ => Informe_Empanadas}/copia/images/olive.png (100%)
+ rename Mates/{ => Informe_Empanadas}/copia/images/online.png (100%)
+ rename Mates/{ => Informe_Empanadas}/copia/images/paiquito.png (100%)
+ rename Mates/{ => Informe_Empanadas}/copia/images/palaci.png (100%)
+ rename Mates/{ => Informe_Empanadas}/copia/images/pimienta.png (100%)
+ rename Mates/{ => Informe_Empanadas}/copia/images/prosud.png (100%)
+ rename Mates/{ => Informe_Empanadas}/copia/images/santiago.png (100%)
+ rename Mates/{ => Informe_Empanadas}/copia/images/vega.png (100%)
+ rename Mates/{ => Informe_Empanadas}/copia/main.aux (100%)
+ rename Mates/{ => Informe_Empanadas}/copia/main.fdb_latexmk (100%)
+ rename Mates/{ => Informe_Empanadas}/copia/main.fls (100%)
+ rename Mates/{ => Informe_Empanadas}/copia/main.log (100%)
+ rename Mates/{ => Informe_Empanadas}/copia/main.pdf (100%)
+ rename Mates/{ => Informe_Empanadas}/copia/main.synctex.gz (100%)
+ rename Mates/{ => Informe_Empanadas}/copia/main.tex (99%)
+ rename Mates/{ => Informe_Empanadas}/copia/main.toc (100%)
+ delete mode 100644 Mates/copia/images/Oregano.png
+ delete mode 100644 Mates/copia/images/aceite.png
+ delete mode 100644 Mates/copia/images/central.png
+ delete mode 100644 Mates/copia/images/chile.png
+ delete mode 100644 Mates/copia/images/cholitos.png
+ delete mode 100644 Mates/copia/images/comino.png
+ delete mode 100644 Mates/copia/images/donhuevo.png
+ delete mode 100644 Mates/copia/images/empanadas.jpg
+ delete mode 100644 Mates/copia/images/fres.png
+ delete mode 100644 Mates/copia/images/frest.png
+ delete mode 100644 Mates/copia/images/gk.png
+ delete mode 100644 Mates/copia/images/gourmet.png
+ delete mode 100644 Mates/copia/kosa.png
+ delete mode 100644 Mates/copia/libre.png
+ delete mode 100644 Mates/copia/lobos.png
+ delete mode 100644 Mates/copia/mitierra.png
+ delete mode 100644 Mates/copia/montan1.png
+ delete mode 100644 Mates/copia/nat.png
+ delete mode 100644 Mates/copia/negra.png
+ delete mode 100644 Mates/copia/nueva.png
+ delete mode 100644 Mates/copia/nutri.png
+ delete mode 100644 Mates/copia/oceanic.png
+ delete mode 100644 Mates/copia/oceanica.png
+ delete mode 100644 Mates/copia/olive.png
+ delete mode 100644 Mates/copia/online.png
+ delete mode 100644 Mates/copia/paiquito.png
+ delete mode 100644 Mates/copia/palaci.png
+ delete mode 100644 Mates/copia/pimienta.png
+ delete mode 100644 Mates/copia/prosud.png
+ delete mode 100644 Mates/copia/santiago.png
+ delete mode 100644 Mates/copia/vega.png
+Haciendo push...
+branch 'main' set up to track 'origin/main'.
+[2025-07-10 08:02:01] ✅ Push exitoso

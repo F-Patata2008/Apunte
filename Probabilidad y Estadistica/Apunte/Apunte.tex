@@ -6,6 +6,7 @@
 \usepackage{graphicx} % Include graphics
 \usepackage[spanish]{babel} % Spanish language support (ACTIVADO)
 \usepackage{tabularx}
+\usepackage{enumitem}
 \renewcommand{\arraystretch}{1.5} % Incrementa el espaciado vertical
 \graphicspath{ {./images/}} 
 
@@ -50,7 +51,7 @@
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.75\textwidth]{gatito}
+    \includegraphics[width=0.55\textwidth]{gatito}
     \caption{Gatito para hacer bonito el apunte.}
     \label{fig:gatito}
 \end{figure}
@@ -515,6 +516,28 @@ L.Q.Q.D.
                 \newpage
 
 
+
+\section{30/05}
+Dado un Conjunto de datos Ordenados se define:
+
+\subsection{Cuartiles}
+Son tres valores que dividen en parte iguales a un conjuntode datos ordenaods. Se denominan $Q_1$, $Q_2$ y $Q_3$
+\textbf{Observacion:} $Q_2 = Me$
+
+\subsection{Quintiles}
+Son los 4 valores que dividen en partes igaules a los datos, que corresponden al 20\%, 40\%, 60\% y 80\%
+
+\subsection{Deciles}
+Son los 9 valores que dividen en partes igaules a los datos, que corresponden al 10\%, 20\%, 30\%, 40\%, 50\%, 60\%, 70\%, 80\% y 90\%
+
+
+\subsection{Percentiles}
+Son los 99 valores que dividen en partes igaules a los datos, que corresponden al 1\%, 2\%, 3\%, ... ,99\%
+\[ P_i= \frac{i \cdot n}{100} \] Corresponde a la posición del percentil.
+
+
+\newpage
+
 \section{11/06}
 \subsection{Combinatoria} 
 Son técnicas de conteo. Sean A y B dos sucesos, que pueden ocurrir de $a$ y $b$ maneras respectivamente.
@@ -562,5 +585,73 @@ Son técnicas de conteo. Sean A y B dos sucesos, que pueden ocurrir de $a$ y $b$
     Total de combos: $5 \text{ (hamburguesas)} \times 6 \text{ (líquidos)} = 30$. \\
     \textbf{Respuesta: Se puede elegir de 30 maneras distintas.}
 \end{enumerate}
+\newpage
+
+
+\section{07/07}
+\textbf{\textit{\large{Diferenciar distintas Permutaciones}}}
+
+\subsection{Combinatoria}
+Evento A: a maneras 
+
+Evento B: b maneras
+
+\begin{itemize}
+    \item Principio Aditivo: $a + b$ \textbf{Excluyentes}
+    \item Principio Multiplicativo: $a \cdot b$ \textbf{Simultaneos} 
+    \item \textbf{\textit{Ej:}}
+    \begin{itemize}
+        \item Evento A: Lamzar un dado
+        \item Evento B: lanzar un dado 2 veces
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Permutacion simple} Correpsonde a la manera en que se pueden ordenar $n$ objetos
+
+    \begin{minipage}{0.35\textwidth}
+        \centering
+        \[ P_n = n! \]
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.55\textwidth}
+        \centering
+        \[ P_4 = 4!= 4 \cdot 3 \cdot 2 \cdot 1 \]
+    \end{minipage}
+
+\subsubsection{Permutacion con repetición} Si tienes $n$ elementos y un elemento se repite $r_1$ veces, otro $r_2$ veces y así sucesivamente, entonces se pueden ordenar:
+
+\[ P_{r_1, r_2, ...}^n = \frac{n!}{r_1! \cdot r_2! \cdot ...} \]
+
+
+\subsubsection{Permutacion Circular} Si tenemos $n$ elementos, los podemos ordenar de :
+\[ PC_n = \frac{n!}{n} = (n-1)! \]
+
+\subsection{Ejercicios}
+
+\begin{enumerate}[label=\alph*.)]
+    \item ¿De cuantas maneras se peuden ordenar las letras de la palabara LEMUR  para fomrar otra palabara (con o sin sentido)
+        \[ P_5 = 5! = 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 120 \] \\
+
+    \item ¿Y para la plabra ARROYO? ¿Y CARRERA?
+
+        \begin{minipage}{0.45\textwidth}
+            \centering
+            \textbf{ARROYO:}
+            \[ P_{2, 2}^6 = \frac{6!}{2! \cdot 2!} = \frac{720}{4} = 180 \]
+        \end{minipage}
+        \hfill
+        \begin{minipage}{0.45\textwidth}
+            \centering
+            \textbf{CARRERA}
+            \[ P_{2,3}^7 = \frac{7!}{2! \cdot 3!} = \frac{7\cdot 6 \cdot 5 \cdot 4}{2} = 420 \]
+        \end{minipage}
+        
+        \phantom p \\
+
+    \item ¿De cuantas maneras se pueden sentar en una mesa de 4 sillas, 4 personas?
+        \[ PC_4 = \frac{4!}{4} =\frac{4 \cdot 3!}{4} = 3! = 6 \]
+\end{enumerate}
+\newpage
+
 
 \end{document}

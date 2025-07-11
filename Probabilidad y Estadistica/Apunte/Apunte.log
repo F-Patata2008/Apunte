@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.7.3)  9 JUL 2025 16:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.7.3)  11 JUL 2025 08:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -158,61 +158,69 @@ Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
 \TX@delta=\dimen160
 \TX@cols=\count285
 \TX@ftn=\toks27
+) (/usr/share/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\labelindent=\skip56
+\enit@outerparindent=\dimen161
+\enit@toks=\toks28
+\enit@inbox=\box56
+\enit@count@id=\count286
+\enitdp@description=\count287
 ) (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count286
-\l__pdf_internal_box=\box56
+\l__color_backend_stack_int=\count288
+\l__pdf_internal_box=\box57
 ) (./Apunte.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 )
 \openout1 = `Apunte.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count287
-\scratchdimen=\dimen161
-\scratchbox=\box57
-\nofMPsegments=\count288
-\nofMParguments=\count289
-\everyMPshowfont=\toks28
-\MPscratchCnt=\count290
-\MPscratchDim=\dimen162
-\MPnumerator=\count291
-\makeMPintoPDFobject=\count292
-\everyMPtoPDFconversion=\toks29
+\scratchcounter=\count289
+\scratchdimen=\dimen162
+\scratchbox=\box58
+\nofMPsegments=\count290
+\nofMParguments=\count291
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count292
+\MPscratchDim=\dimen163
+\MPnumerator=\count293
+\makeMPintoPDFobject=\count294
+\everyMPtoPDFconversion=\toks30
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Info: Redefining \. on input line 12.
-LaTeX Info: Redefining \% on input line 12.
+LaTeX Info: Redefining \. on input line 13.
+LaTeX Info: Redefining \% on input line 13.
 <./images/IN.png, id=1, 198.7425pt x 255.95625pt>
 File: ./images/IN.png Graphic file (type png)
 <use ./images/IN.png>
-Package pdftex.def Info: ./images/IN.png  used on input line 17.
+Package pdftex.def Info: ./images/IN.png  used on input line 18.
 (pdftex.def)             Requested size: 56.9055pt x 73.28807pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 32.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 33.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 32.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 33.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
@@ -223,37 +231,37 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <./images/gatito.png, id=14, 200.75pt x 200.75pt>
 File: ./images/gatito.png Graphic file (type png)
 <use ./images/gatito.png>
-Package pdftex.def Info: ./images/gatito.png  used on input line 53.
-(pdftex.def)             Requested size: 292.5pt x 292.54424pt.
+Package pdftex.def Info: ./images/gatito.png  used on input line 54.
+(pdftex.def)             Requested size: 214.50119pt x 214.51549pt.
 
 
-[1]
-
-[2 <./images/gatito.png>] (./Apunte.toc
+[1 <./images/gatito.png>] (./Apunte.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 
 
-[3])
+[2])
 \tf@toc=\write3
 \openout3 = `Apunte.toc'.
 
 
 
+[3]
+
 [4]
 
-[5]
+[5{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 
-[6{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+[6]
 
 [7]
-
-[8]
-Overfull \hbox (2.53964pt too wide) in alignment at lines 187--187
+Overfull \hbox (2.53964pt too wide) in alignment at lines 188--188
 [][] 
  []
 
 
+
+[8]
 
 [9]
 
@@ -264,34 +272,34 @@ Overfull \hbox (2.53964pt too wide) in alignment at lines 187--187
 [12]
 
 [13]
-
-[14]
-<./images/patata.png, id=76, 220.825pt x 237.88875pt>
+<./images/patata.png, id=73, 220.825pt x 237.88875pt>
 File: ./images/patata.png Graphic file (type png)
 <use ./images/patata.png>
-Package pdftex.def Info: ./images/patata.png  used on input line 341.
+Package pdftex.def Info: ./images/patata.png  used on input line 342.
 (pdftex.def)             Requested size: 292.5pt x 315.11758pt.
 
 
-[15 <./images/patata.png>]
+[14 <./images/patata.png>]
+
+[15]
 
 [16]
 
 [17]
+Underfull \hbox (badness 10000) in paragraph at lines 420--422
+
+ []
+
+
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 419--421
+Underfull \hbox (badness 10000) in paragraph at lines 424--426
 
  []
 
 
 
 [19]
-Underfull \hbox (badness 10000) in paragraph at lines 423--425
-
- []
-
-
 
 [20]
 
@@ -303,7 +311,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 423--425
 
 [24]
 
-[25] (./Apunte.aux
+[25]
+
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 633--634
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 649--650
+
+ []
+
+
+
+[27] (./Apunte.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 )
@@ -313,18 +335,18 @@ L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4473 strings out of 473190
- 66725 string characters out of 5722594
- 469377 words of memory out of 5000000
- 27679 multiletter control sequences out of 15000+600000
- 579770 words of font info for 84 fonts, out of 8000000 for 9000
+ 4809 strings out of 473190
+ 72475 string characters out of 5722594
+ 477117 words of memory out of 5000000
+ 28010 multiletter control sequences out of 15000+600000
+ 580471 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,11n,65p,889b,418s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbi1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1728.pfb>
-Output written on Apunte.pdf (26 pages, 424714 bytes).
+ 57i,11n,65p,889b,427s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbi1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbi1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1728.pfb>
+Output written on Apunte.pdf (28 pages, 455883 bytes).
 PDF statistics:
- 220 PDF objects out of 1000 (max. 8388607)
- 135 compressed objects within 2 object streams
+ 231 PDF objects out of 1000 (max. 8388607)
+ 142 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

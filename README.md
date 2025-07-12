@@ -9,4 +9,5 @@ Incluyen
 - Filosofía Política
 - Probabilidad y Estadística
 - Matemáticas
+- Trabajos Del Lukas
 - Y un script bash que automatiza la subida a GitHub de los apuntes

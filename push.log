@@ -523,3 +523,10 @@ Haciendo push...
 branch 'main' set up to track 'origin/main'.
 [2025-07-14 16:18:03] ✅ Push exitoso
 ========== 2025-07-18 08:45:16 ==========
+Mensaje de commit (dejar vacío para 'Auto-commit'): Haciendo commit...
+[main bf050c6] }
+ 2 files changed, 1 insertion(+)
+ create mode 100644 Limites/Apunte.tex
+Haciendo push...
+branch 'main' set up to track 'origin/main'.
+[2025-07-18 08:45:16] ✅ Push exitoso

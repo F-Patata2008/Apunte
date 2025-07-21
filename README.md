@@ -7,6 +7,7 @@ Incluyen
 - Ingles
 - Lenguaje
 - Filosofía Política
+- Filosofía
 - Probabilidad y Estadística
 - Matemáticas
 - Trabajos Del Lukas

@@ -1,0 +1,203 @@
+\documentclass[12pt, a4paper]{article}
+
+% PAQUETES BÁSICOS
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{geometry}
+\geometry{a4paper, margin=2.5cm}
+\usepackage{setspace}
+\usepackage{csquotes} % Recomendado para biblatex y manejo de comillas
+\usepackage{graphicx} % Include graphics
+
+
+% PAQUETE PARA BIBLIOGRAFÍA ESTILO APA 7
+\usepackage[
+    backend=biber,
+    style=apa,
+    sorting=nyt % Ordena por Nombre, Año, Título
+]{biblatex}
+
+% TÍTULOS EN ESPAÑOL PARA BIBLATEX
+\DefineBibliographyStrings{spanish}{
+  bibliography = {Referencias},
+  references = {Referencias},
+}
+
+% HIPERVÍNCULOS (OPCIONAL, PERO RECOMENDADO)
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=blue,
+    citecolor=black,
+}
+
+% --- INICIO DE LA BIBLIOGRAFÍA (.bib) ---
+% Usamos el entorno filecontents para incluir la bibliografía en el mismo archivo.
+\usepackage{filecontents}
+\begin{filecontents*}{referencias.bib}
+@book{Arendt1958,
+  author = {Arendt, Hannah},
+  title = {La condición humana},
+  translator = {Gil Novales, Ramón},
+  publisher = {Paidós},
+  year = {2005},
+  origdate = {1958},
+  location = {Barcelona},
+}
+@book{Hobbes1651,
+  author = {Hobbes, Thomas},
+  title = {Leviatán: O la materia, forma y poder de una república eclesiástica y civil},
+  translator = {Sánchez Sarto, Manuel},
+  publisher = {Fondo de Cultura Económica},
+  year = {2009},
+  origdate = {1651},
+  location = {México, D.F.},
+}
+@book{Kant1785,
+  author = {Kant, Immanuel},
+  title = {Fundamentación de la metafísica de las costumbres},
+  translator = {García Morente, Manuel},
+  publisher = {Alianza Editorial},
+  year = {2012},
+  origdate = {1785},
+  location = {Madrid},
+}
+@book{Locke1689,
+  author = {Locke, John},
+  title = {Segundo tratado sobre el gobierno civil},
+  translator = {Mellizo, Carlos},
+  publisher = {Tecnos},
+  year = {2017},
+  origdate = {1689},
+  location = {Madrid},
+}
+@book{Macpherson1962,
+  author = {Macpherson, C. B.},
+  title = {La teoría política del individualismo posesivo: De Hobbes a Locke},
+  translator = {Capella, Juan-Ramón},
+  publisher = {Trotta},
+  year = {2005},
+  origdate = {1962},
+  location = {Madrid},
+}
+@book{Rousseau1755,
+  author = {Rousseau, Jean-Jacques},
+  title = {Discurso sobre el origen y los fundamentos de la desigualdad entre los hombres},
+  translator = {Masó, Salustiano},
+  publisher = {Alianza Editorial},
+  year = {2014},
+  origdate = {1755},
+  location = {Madrid},
+}
+@book{Smith1776,
+  author = {Smith, Adam},
+  title = {Una investigación sobre la naturaleza y causas de la riqueza de las naciones},
+  translator = {Franco, Gabriel},
+  publisher = {Fondo de Cultura Económica},
+  year = {2011},
+  origdate = {1776},
+  location = {México, D.F.},
+}
+\end{filecontents*}
+
+% CARGAR EL ARCHIVO DE BIBLIOGRAFÍA
+\addbibresource{referencias.bib}
+
+% --- DATOS PARA LA PORTADA ---
+\author{Felipe Colli Olea - Isaías Vivanco Escobar}
+\date{19 de Julio de 2025}
+\graphicspath{ {./images/}} 
+
+
+
+\begin{document}
+
+% --- PORTADA ---
+\begin{titlepage}
+    \centering
+    \includegraphics[width=2cm]{IN}\\[2cm]
+    \vspace*{1cm}
+    \large
+    \textbf{Instituto Nacional José Miguel Carrera} \\
+    \textbf{Departamento de Filosofía}
+    
+    \vspace{2.5cm}
+    \rule{\linewidth}{0.5mm}
+    \vspace{0.4cm}
+    
+    \Huge
+    \textbf{¿Es el hombre bueno, malo o simplemente humano?}
+    
+    \vspace{0.4cm}
+    \rule{\linewidth}{0.5mm}
+    
+    \vspace{3cm}
+    
+    \Large
+    \textbf{Filosofía Política - Sección 2025}
+    
+    \vfill % Empuja el contenido hacia abajo
+    
+    \large
+    \begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r}
+        \textbf{Autores:} & \textbf{Profesora:} \\
+        Felipe Colli Olea & Claudia González \\
+        Isaías Vivanco Escobar & \\
+    \end{tabular*}
+    
+    \vspace{1cm}
+    
+    \large{19 de Julio de 2025} % Fecha explícita
+    
+\end{titlepage}
+
+% --- INICIO DEL CONTENIDO ---
+\onehalfspacing
+\pagestyle{plain}
+
+\tableofcontents
+\newpage
+
+\section*{Introducción}
+\addcontentsline{toc}{section}{Introducción}
+
+Desde los albores del pensamiento político, la pregunta sobre la esencia de la naturaleza humana ha sido una encrucijada fundamental. ¿Nacemos con una inclinación hacia la bondad, como defendía Rousseau \autocite{Rousseau1755}, o somos seres intrínsecamente egoístas, condenados a un conflicto perpetuo si no fuera por un poder coercitivo, como postulaba Hobbes? Este ensayo se adentra en este debate clásico para proponer una hipótesis diferente: que el ser humano no es ni bueno ni malo por naturaleza, sino que su condición se define por una tensión inherente y constante. Esta tensión se manifiesta en el conflicto entre actuar movido por el interés propio y la capacidad racional para reconocer y actuar conforme a un deber moral universal. A través del análisis de pensadores como Thomas Hobbes y Adam Smith, y poniendo un énfasis especial en la filosofía de Immanuel Kant —filósofo central de nuestro estudio—, se argumentará que ser ``simplemente humano'' significa vivir en la encrucijada de esta lucha, donde nuestra verdadera moralidad se revela no en la ausencia de egoísmo, sino en nuestra capacidad para superarlo en nombre del deber.
+
+\section*{El Interés Propio como Principio Rector: De la Guerra a la Cooperación}
+\addcontentsline{toc}{section}{El Interés Propio como Principio Rector: De la Guerra a la Cooperación}
+
+La visión más sombría del interés propio proviene de Thomas Hobbes, quien en su obra \textit{Leviatán} describe el ``estado de naturaleza'' como una condición de ``guerra de todos contra todos'' (\textit{bellum omnium contra omnes}). Para Hobbes, sin un Estado que imponga orden, el ser humano, guiado por su instinto de autoconservación y su deseo de poder, vive en un miedo constante. En esta visión, las acciones no son ``buenas'' o ``malas'' en un sentido moral, sino meramente funcionales para la supervivencia. Como señala Hobbes, ``la vida del hombre es solitaria, pobre, desagradable, brutal y corta'' \autocite[p.~107]{Hobbes1651}. El hombre no es malo por malicia, sino por necesidad; su interés propio es una fuerza caótica que sólo puede ser contenida por el temor a un castigo. Frente a esta visión pesimista, otros pensadores como John Locke ofrecían una perspectiva más moderada, argumentando que el estado de naturaleza estaba regido por una ley natural que la razón podía comprender, limitando el interés propio a través de los derechos inherentes a la vida, la libertad y la propiedad \autocite{Locke1689}.
+
+Un siglo más tarde, Adam Smith ofrece una perspectiva radicalmente distinta sobre el mismo impulso. En \textit{La riqueza de las naciones}, Smith no ve el interés propio como una fuerza destructiva, sino como el motor del progreso social y económico. Mediante su famosa metáfora de la ``mano invisible'', argumenta que, al buscar su propio beneficio, el individuo es ``conducido por una mano invisible a promover un fin que no entraba en sus intenciones''. No es de la benevolencia del panadero que obtenemos nuestro pan, sino de su legítimo interés en ganarse la vida. Aquí, el interés propio no es ni bueno ni malo; es una fuerza neutral y productiva que, dentro de un marco de leyes y competencia justa, armoniza los intereses individuales para generar bienestar colectivo. El hombre de Smith no es un lobo, sino un comerciante racional \autocite{Smith1776}.
+
+\section*{La Revolución Kantiana: La Moralidad más allá de Todo Interés}
+\addcontentsline{toc}{section}{La Revolución Kantiana: La Moralidad más allá de Todo Interés}
+
+Si bien Hobbes y Smith ofrecen explicaciones poderosas sobre gran parte del comportamiento humano, sus teorías reducen la acción a un cálculo de consecuencias, ya sea para evitar el dolor o para obtener un beneficio. Es aquí donde Immanuel Kant introduce una revolución en el pensamiento ético. Para Kant, el valor moral de una acción no reside en sus resultados ni en la inclinación que la motiva (como el miedo, el placer o el interés propio), sino exclusivamente en la intención con la que se realiza.
+
+Kant establece una distinción crucial entre actuar ``conforme al deber'' y actuar ``por deber''. Un comerciante que no estafa a sus clientes para mantener una buena reputación y asegurar su negocio actúa ``conforme al deber'', pero su acción carece de valor moral porque su motivación es el interés propio. En cambio, si el comerciante es honesto porque reconoce que la honestidad es un principio universalmente correcto y que es su obligación moral actuar así, independientemente de las consecuencias, entonces actúa ``por deber''. Una acción de este tipo, motivada puramente por la reverencia a la ley moral, es la única que posee ``genuino contenido moral'' \autocite[p.~25]{Kant1785}.
+
+Esta idea se cristaliza en su principio moral supremo: el Imperativo Categórico. En una de sus formulaciones más influyentes, Kant nos ordena: ``Obra de tal modo que uses a la humanidad, tanto en tu persona como en la persona de cualquier otro, siempre como un fin al mismo tiempo y nunca solamente como un medio''. Este principio ataca directamente la noción de que el hombre ``solo sirve a sus intereses propios''. Si actuamos únicamente por interés, inevitablemente tratamos a los demás como meros instrumentos para nuestros fines: el cliente es una fuente de ingresos, el empleado un medio de producción. Para Kant, esto es la definición misma de la inmoralidad. La verdadera acción moral exige reconocer el valor intrínseco (la dignidad) de cada persona, un valor que trasciende cualquier utilidad o beneficio personal.
+
+\section*{El Conflicto como Condición Humana: La Lucha Interior}
+\addcontentsline{toc}{section}{El Conflicto como Condición Humana: La Lucha Interior}
+
+La perspectiva kantiana nos obliga a redefinir la pregunta inicial. Quizás el ser humano no es una cosa (bueno, malo, egoísta), sino un proceso: una lucha. Kant mismo no era un optimista ingenuo; reconocía en la naturaleza humana lo que llamó el ``mal radical''. Este no es un mal demoníaco, sino la propensión innata del ser humano a invertir el orden de sus motivaciones: a priorizar sus inclinaciones y su amor propio por encima de la ley moral que su propia razón le dicta. Sabemos lo que debemos hacer, pero nos sentimos tentados a hacer lo que nos conviene.
+
+En esta tensión reside la respuesta a nuestra pregunta. Ser ``simplemente humano'' no es ser un autómata del interés propio, como podría sugerir una lectura superficial de Hobbes o Smith. Es ser un agente libre, consciente de la ley moral universal gracias a su razón, pero simultáneamente arrastrado por sus deseos e inclinaciones egoístas. La vida moral no consiste en erradicar el interés propio —una tarea imposible—, sino en la lucha constante por someterlo al dictado del deber.
+
+\section*{Conclusión}
+\addcontentsline{toc}{section}{Conclusión}
+
+El recorrido a través de Hobbes, Smith y, fundamentalmente, Kant, nos revela que las etiquetas de ``bueno'' o ``malo'' son insuficientes para capturar la complejidad de la condición humana. Reducir al hombre a un ser que solo sirve a sus intereses, si bien explica una gran parte de su comportamiento en la esfera social y económica, ignora la dimensión más profunda de su ser: la capacidad para la moralidad. Esta dicotomía, sin embargo, podría ser cuestionada como una construcción histórica. Autores como C.B. Macpherson sugieren que la figura del individuo egoísta no es una constante antropológica, sino el reflejo del ``individualismo posesivo'' propio de las sociedades de mercado emergentes \autocite{Macpherson1962}.
+
+Kant nos demuestra que la moral no nace del interés, sino en oposición a él. Es en el momento en que elegimos actuar por deber, tratando a la humanidad como un fin en sí misma, cuando trascendemos nuestra naturaleza inclinada al egoísmo y afirmamos nuestra dignidad y libertad. Por lo tanto, ¿es el hombre bueno, malo o simplemente humano? La respuesta más certera parece ser la última, pero con una comprensión renovada. Ser ``simplemente humano'' es ser el escenario de una batalla perpetua entre el interés propio y el deber moral. Nuestra esencia no se encuentra en ninguno de los dos polos, sino en la libertad que poseemos para navegar esa tensión y en la responsabilidad de elegir, una y otra vez, el camino que dicta nuestra razón, una capacidad que, para pensadoras como Hannah Arendt, encuentra su más alta expresión no solo en la deliberación interna, sino en la ``acción'' junto a otros en el espacio público \autocite{Arendt1958}.
+
+\newpage
+% IMPRIMIR LA BIBLIOGRAFÍA
+\printbibliography
+
+\end{document}

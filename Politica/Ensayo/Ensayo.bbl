@@ -1,0 +1,671 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/apasortcite//global/global/global}
+    \entry{Arendt1958}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f50f57f3bb1808b3fd67c3e65baf025f}{%
+           family={Arendt},
+           familyi={A\bibinitperiod},
+           given={Hannah},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{translator}{1}{}{%
+        {{hash=4a1e19d569babad8648e94ec5b473e0d}{%
+           family={Gil\bibnamedelima Novales},
+           familyi={G\bibinitperiod\bibinitdelim N\bibinitperiod},
+           given={Ramón},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Barcelona}%
+      }
+      \list{publisher}{1}{%
+        {Paidós}%
+      }
+      \strng{namehash}{f50f57f3bb1808b3fd67c3e65baf025f}
+      \strng{fullhash}{f50f57f3bb1808b3fd67c3e65baf025f}
+      \strng{fullhashraw}{f50f57f3bb1808b3fd67c3e65baf025f}
+      \strng{bibnamehash}{f50f57f3bb1808b3fd67c3e65baf025f}
+      \strng{authorbibnamehash}{f50f57f3bb1808b3fd67c3e65baf025f}
+      \strng{authornamehash}{f50f57f3bb1808b3fd67c3e65baf025f}
+      \strng{authorfullhash}{f50f57f3bb1808b3fd67c3e65baf025f}
+      \strng{authorfullhashraw}{f50f57f3bb1808b3fd67c3e65baf025f}
+      \strng{translatorbibnamehash}{4a1e19d569babad8648e94ec5b473e0d}
+      \strng{translatornamehash}{4a1e19d569babad8648e94ec5b473e0d}
+      \strng{translatorfullhash}{4a1e19d569babad8648e94ec5b473e0d}
+      \strng{translatorfullhashraw}{4a1e19d569babad8648e94ec5b473e0d}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{origyear}{1958}
+      \field{title}{La condición humana}
+      \field{year}{2005}
+      \field{origdateera}{ce}
+    \endentry
+    \entry{Hobbes1651}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=225ea03e130430d41c202d9fe7612ed0}{%
+           family={Hobbes},
+           familyi={H\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{translator}{1}{}{%
+        {{hash=521478d3f011a7576eaca5f013fc5e29}{%
+           family={Sánchez\bibnamedelima Sarto},
+           familyi={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {México, D.F.}%
+      }
+      \list{publisher}{1}{%
+        {Fondo de Cultura Económica}%
+      }
+      \strng{namehash}{225ea03e130430d41c202d9fe7612ed0}
+      \strng{fullhash}{225ea03e130430d41c202d9fe7612ed0}
+      \strng{fullhashraw}{225ea03e130430d41c202d9fe7612ed0}
+      \strng{bibnamehash}{225ea03e130430d41c202d9fe7612ed0}
+      \strng{authorbibnamehash}{225ea03e130430d41c202d9fe7612ed0}
+      \strng{authornamehash}{225ea03e130430d41c202d9fe7612ed0}
+      \strng{authorfullhash}{225ea03e130430d41c202d9fe7612ed0}
+      \strng{authorfullhashraw}{225ea03e130430d41c202d9fe7612ed0}
+      \strng{translatorbibnamehash}{521478d3f011a7576eaca5f013fc5e29}
+      \strng{translatornamehash}{521478d3f011a7576eaca5f013fc5e29}
+      \strng{translatorfullhash}{521478d3f011a7576eaca5f013fc5e29}
+      \strng{translatorfullhashraw}{521478d3f011a7576eaca5f013fc5e29}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{origyear}{1651}
+      \field{title}{Leviatán: O la materia, forma y poder de una república eclesiástica y civil}
+      \field{year}{2009}
+      \field{origdateera}{ce}
+    \endentry
+    \entry{Kant1785}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e1e09a59acd7633f469747be85d5edc0}{%
+           family={Kant},
+           familyi={K\bibinitperiod},
+           given={Immanuel},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{translator}{1}{}{%
+        {{hash=fcab1de35b2e2d4425782bdebc2cf50c}{%
+           family={García\bibnamedelima Morente},
+           familyi={G\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Madrid}%
+      }
+      \list{publisher}{1}{%
+        {Alianza Editorial}%
+      }
+      \strng{namehash}{e1e09a59acd7633f469747be85d5edc0}
+      \strng{fullhash}{e1e09a59acd7633f469747be85d5edc0}
+      \strng{fullhashraw}{e1e09a59acd7633f469747be85d5edc0}
+      \strng{bibnamehash}{e1e09a59acd7633f469747be85d5edc0}
+      \strng{authorbibnamehash}{e1e09a59acd7633f469747be85d5edc0}
+      \strng{authornamehash}{e1e09a59acd7633f469747be85d5edc0}
+      \strng{authorfullhash}{e1e09a59acd7633f469747be85d5edc0}
+      \strng{authorfullhashraw}{e1e09a59acd7633f469747be85d5edc0}
+      \strng{translatorbibnamehash}{fcab1de35b2e2d4425782bdebc2cf50c}
+      \strng{translatornamehash}{fcab1de35b2e2d4425782bdebc2cf50c}
+      \strng{translatorfullhash}{fcab1de35b2e2d4425782bdebc2cf50c}
+      \strng{translatorfullhashraw}{fcab1de35b2e2d4425782bdebc2cf50c}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{origyear}{1785}
+      \field{title}{Fundamentación de la metafísica de las costumbres}
+      \field{year}{2012}
+      \field{origdateera}{ce}
+    \endentry
+    \entry{Locke1689}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b850f7e9b02245eddd11b3a5d656a240}{%
+           family={Locke},
+           familyi={L\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{translator}{1}{}{%
+        {{hash=6e36b44434699879f2523084b2b1f6a6}{%
+           family={Mellizo},
+           familyi={M\bibinitperiod},
+           given={Carlos},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Madrid}%
+      }
+      \list{publisher}{1}{%
+        {Tecnos}%
+      }
+      \strng{namehash}{b850f7e9b02245eddd11b3a5d656a240}
+      \strng{fullhash}{b850f7e9b02245eddd11b3a5d656a240}
+      \strng{fullhashraw}{b850f7e9b02245eddd11b3a5d656a240}
+      \strng{bibnamehash}{b850f7e9b02245eddd11b3a5d656a240}
+      \strng{authorbibnamehash}{b850f7e9b02245eddd11b3a5d656a240}
+      \strng{authornamehash}{b850f7e9b02245eddd11b3a5d656a240}
+      \strng{authorfullhash}{b850f7e9b02245eddd11b3a5d656a240}
+      \strng{authorfullhashraw}{b850f7e9b02245eddd11b3a5d656a240}
+      \strng{translatorbibnamehash}{6e36b44434699879f2523084b2b1f6a6}
+      \strng{translatornamehash}{6e36b44434699879f2523084b2b1f6a6}
+      \strng{translatorfullhash}{6e36b44434699879f2523084b2b1f6a6}
+      \strng{translatorfullhashraw}{6e36b44434699879f2523084b2b1f6a6}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{origyear}{1689}
+      \field{title}{Segundo tratado sobre el gobierno civil}
+      \field{year}{2017}
+      \field{origdateera}{ce}
+    \endentry
+    \entry{Macpherson1962}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=18f099ea3624474b9882dc52bcb55681}{%
+           family={Macpherson},
+           familyi={M\bibinitperiod},
+           given={C.\bibnamedelimi B.},
+           giveni={C\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{translator}{1}{}{%
+        {{hash=ab0074416ffda5740169e77333cc4c51}{%
+           family={Capella},
+           familyi={C\bibinitperiod},
+           given={Juan-Ramón},
+           giveni={J\bibinithyphendelim R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Madrid}%
+      }
+      \list{publisher}{1}{%
+        {Trotta}%
+      }
+      \strng{namehash}{18f099ea3624474b9882dc52bcb55681}
+      \strng{fullhash}{18f099ea3624474b9882dc52bcb55681}
+      \strng{fullhashraw}{18f099ea3624474b9882dc52bcb55681}
+      \strng{bibnamehash}{18f099ea3624474b9882dc52bcb55681}
+      \strng{authorbibnamehash}{18f099ea3624474b9882dc52bcb55681}
+      \strng{authornamehash}{18f099ea3624474b9882dc52bcb55681}
+      \strng{authorfullhash}{18f099ea3624474b9882dc52bcb55681}
+      \strng{authorfullhashraw}{18f099ea3624474b9882dc52bcb55681}
+      \strng{translatorbibnamehash}{ab0074416ffda5740169e77333cc4c51}
+      \strng{translatornamehash}{ab0074416ffda5740169e77333cc4c51}
+      \strng{translatorfullhash}{ab0074416ffda5740169e77333cc4c51}
+      \strng{translatorfullhashraw}{ab0074416ffda5740169e77333cc4c51}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{origyear}{1962}
+      \field{title}{La teoría política del individualismo posesivo: De Hobbes a Locke}
+      \field{year}{2005}
+      \field{origdateera}{ce}
+    \endentry
+    \entry{Rousseau1755}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=aa9c913cb991c0d4c3a32bb678547bab}{%
+           family={Rousseau},
+           familyi={R\bibinitperiod},
+           given={Jean-Jacques},
+           giveni={J\bibinithyphendelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{translator}{1}{}{%
+        {{hash=3530217b01a0afa0f299cad1c2a5621f}{%
+           family={Masó},
+           familyi={M\bibinitperiod},
+           given={Salustiano},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Madrid}%
+      }
+      \list{publisher}{1}{%
+        {Alianza Editorial}%
+      }
+      \strng{namehash}{aa9c913cb991c0d4c3a32bb678547bab}
+      \strng{fullhash}{aa9c913cb991c0d4c3a32bb678547bab}
+      \strng{fullhashraw}{aa9c913cb991c0d4c3a32bb678547bab}
+      \strng{bibnamehash}{aa9c913cb991c0d4c3a32bb678547bab}
+      \strng{authorbibnamehash}{aa9c913cb991c0d4c3a32bb678547bab}
+      \strng{authornamehash}{aa9c913cb991c0d4c3a32bb678547bab}
+      \strng{authorfullhash}{aa9c913cb991c0d4c3a32bb678547bab}
+      \strng{authorfullhashraw}{aa9c913cb991c0d4c3a32bb678547bab}
+      \strng{translatorbibnamehash}{3530217b01a0afa0f299cad1c2a5621f}
+      \strng{translatornamehash}{3530217b01a0afa0f299cad1c2a5621f}
+      \strng{translatorfullhash}{3530217b01a0afa0f299cad1c2a5621f}
+      \strng{translatorfullhashraw}{3530217b01a0afa0f299cad1c2a5621f}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{origyear}{1755}
+      \field{title}{Discurso sobre el origen y los fundamentos de la desigualdad entre los hombres}
+      \field{year}{2014}
+      \field{origdateera}{ce}
+    \endentry
+    \entry{Smith1776}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5ccecf114bbd51a1a2979a23dd69c78c}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{translator}{1}{}{%
+        {{hash=84c827742767830234ea64a548c9170e}{%
+           family={Franco},
+           familyi={F\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {México, D.F.}%
+      }
+      \list{publisher}{1}{%
+        {Fondo de Cultura Económica}%
+      }
+      \strng{namehash}{5ccecf114bbd51a1a2979a23dd69c78c}
+      \strng{fullhash}{5ccecf114bbd51a1a2979a23dd69c78c}
+      \strng{fullhashraw}{5ccecf114bbd51a1a2979a23dd69c78c}
+      \strng{bibnamehash}{5ccecf114bbd51a1a2979a23dd69c78c}
+      \strng{authorbibnamehash}{5ccecf114bbd51a1a2979a23dd69c78c}
+      \strng{authornamehash}{5ccecf114bbd51a1a2979a23dd69c78c}
+      \strng{authorfullhash}{5ccecf114bbd51a1a2979a23dd69c78c}
+      \strng{authorfullhashraw}{5ccecf114bbd51a1a2979a23dd69c78c}
+      \strng{translatorbibnamehash}{84c827742767830234ea64a548c9170e}
+      \strng{translatornamehash}{84c827742767830234ea64a548c9170e}
+      \strng{translatorfullhash}{84c827742767830234ea64a548c9170e}
+      \strng{translatorfullhashraw}{84c827742767830234ea64a548c9170e}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{origyear}{1776}
+      \field{title}{Una investigación sobre la naturaleza y causas de la riqueza de las naciones}
+      \field{year}{2011}
+      \field{origdateera}{ce}
+    \endentry
+  \enddatalist
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{Arendt1958}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f50f57f3bb1808b3fd67c3e65baf025f}{%
+           family={Arendt},
+           familyi={A\bibinitperiod},
+           given={Hannah},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{translator}{1}{}{%
+        {{hash=4a1e19d569babad8648e94ec5b473e0d}{%
+           family={Gil\bibnamedelima Novales},
+           familyi={G\bibinitperiod\bibinitdelim N\bibinitperiod},
+           given={Ramón},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Barcelona}%
+      }
+      \list{publisher}{1}{%
+        {Paidós}%
+      }
+      \strng{namehash}{f50f57f3bb1808b3fd67c3e65baf025f}
+      \strng{fullhash}{f50f57f3bb1808b3fd67c3e65baf025f}
+      \strng{fullhashraw}{f50f57f3bb1808b3fd67c3e65baf025f}
+      \strng{bibnamehash}{f50f57f3bb1808b3fd67c3e65baf025f}
+      \strng{authorbibnamehash}{f50f57f3bb1808b3fd67c3e65baf025f}
+      \strng{authornamehash}{f50f57f3bb1808b3fd67c3e65baf025f}
+      \strng{authorfullhash}{f50f57f3bb1808b3fd67c3e65baf025f}
+      \strng{authorfullhashraw}{f50f57f3bb1808b3fd67c3e65baf025f}
+      \strng{translatorbibnamehash}{4a1e19d569babad8648e94ec5b473e0d}
+      \strng{translatornamehash}{4a1e19d569babad8648e94ec5b473e0d}
+      \strng{translatorfullhash}{4a1e19d569babad8648e94ec5b473e0d}
+      \strng{translatorfullhashraw}{4a1e19d569babad8648e94ec5b473e0d}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{origyear}{1958}
+      \field{title}{La condición humana}
+      \field{year}{2005}
+      \field{origdateera}{ce}
+    \endentry
+    \entry{Hobbes1651}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=225ea03e130430d41c202d9fe7612ed0}{%
+           family={Hobbes},
+           familyi={H\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{translator}{1}{}{%
+        {{hash=521478d3f011a7576eaca5f013fc5e29}{%
+           family={Sánchez\bibnamedelima Sarto},
+           familyi={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {México, D.F.}%
+      }
+      \list{publisher}{1}{%
+        {Fondo de Cultura Económica}%
+      }
+      \strng{namehash}{225ea03e130430d41c202d9fe7612ed0}
+      \strng{fullhash}{225ea03e130430d41c202d9fe7612ed0}
+      \strng{fullhashraw}{225ea03e130430d41c202d9fe7612ed0}
+      \strng{bibnamehash}{225ea03e130430d41c202d9fe7612ed0}
+      \strng{authorbibnamehash}{225ea03e130430d41c202d9fe7612ed0}
+      \strng{authornamehash}{225ea03e130430d41c202d9fe7612ed0}
+      \strng{authorfullhash}{225ea03e130430d41c202d9fe7612ed0}
+      \strng{authorfullhashraw}{225ea03e130430d41c202d9fe7612ed0}
+      \strng{translatorbibnamehash}{521478d3f011a7576eaca5f013fc5e29}
+      \strng{translatornamehash}{521478d3f011a7576eaca5f013fc5e29}
+      \strng{translatorfullhash}{521478d3f011a7576eaca5f013fc5e29}
+      \strng{translatorfullhashraw}{521478d3f011a7576eaca5f013fc5e29}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{origyear}{1651}
+      \field{title}{Leviatán: O la materia, forma y poder de una república eclesiástica y civil}
+      \field{year}{2009}
+      \field{origdateera}{ce}
+    \endentry
+    \entry{Kant1785}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e1e09a59acd7633f469747be85d5edc0}{%
+           family={Kant},
+           familyi={K\bibinitperiod},
+           given={Immanuel},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{translator}{1}{}{%
+        {{hash=fcab1de35b2e2d4425782bdebc2cf50c}{%
+           family={García\bibnamedelima Morente},
+           familyi={G\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Madrid}%
+      }
+      \list{publisher}{1}{%
+        {Alianza Editorial}%
+      }
+      \strng{namehash}{e1e09a59acd7633f469747be85d5edc0}
+      \strng{fullhash}{e1e09a59acd7633f469747be85d5edc0}
+      \strng{fullhashraw}{e1e09a59acd7633f469747be85d5edc0}
+      \strng{bibnamehash}{e1e09a59acd7633f469747be85d5edc0}
+      \strng{authorbibnamehash}{e1e09a59acd7633f469747be85d5edc0}
+      \strng{authornamehash}{e1e09a59acd7633f469747be85d5edc0}
+      \strng{authorfullhash}{e1e09a59acd7633f469747be85d5edc0}
+      \strng{authorfullhashraw}{e1e09a59acd7633f469747be85d5edc0}
+      \strng{translatorbibnamehash}{fcab1de35b2e2d4425782bdebc2cf50c}
+      \strng{translatornamehash}{fcab1de35b2e2d4425782bdebc2cf50c}
+      \strng{translatorfullhash}{fcab1de35b2e2d4425782bdebc2cf50c}
+      \strng{translatorfullhashraw}{fcab1de35b2e2d4425782bdebc2cf50c}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{origyear}{1785}
+      \field{title}{Fundamentación de la metafísica de las costumbres}
+      \field{year}{2012}
+      \field{origdateera}{ce}
+    \endentry
+    \entry{Locke1689}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b850f7e9b02245eddd11b3a5d656a240}{%
+           family={Locke},
+           familyi={L\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{translator}{1}{}{%
+        {{hash=6e36b44434699879f2523084b2b1f6a6}{%
+           family={Mellizo},
+           familyi={M\bibinitperiod},
+           given={Carlos},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Madrid}%
+      }
+      \list{publisher}{1}{%
+        {Tecnos}%
+      }
+      \strng{namehash}{b850f7e9b02245eddd11b3a5d656a240}
+      \strng{fullhash}{b850f7e9b02245eddd11b3a5d656a240}
+      \strng{fullhashraw}{b850f7e9b02245eddd11b3a5d656a240}
+      \strng{bibnamehash}{b850f7e9b02245eddd11b3a5d656a240}
+      \strng{authorbibnamehash}{b850f7e9b02245eddd11b3a5d656a240}
+      \strng{authornamehash}{b850f7e9b02245eddd11b3a5d656a240}
+      \strng{authorfullhash}{b850f7e9b02245eddd11b3a5d656a240}
+      \strng{authorfullhashraw}{b850f7e9b02245eddd11b3a5d656a240}
+      \strng{translatorbibnamehash}{6e36b44434699879f2523084b2b1f6a6}
+      \strng{translatornamehash}{6e36b44434699879f2523084b2b1f6a6}
+      \strng{translatorfullhash}{6e36b44434699879f2523084b2b1f6a6}
+      \strng{translatorfullhashraw}{6e36b44434699879f2523084b2b1f6a6}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{origyear}{1689}
+      \field{title}{Segundo tratado sobre el gobierno civil}
+      \field{year}{2017}
+      \field{origdateera}{ce}
+    \endentry
+    \entry{Macpherson1962}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=18f099ea3624474b9882dc52bcb55681}{%
+           family={Macpherson},
+           familyi={M\bibinitperiod},
+           given={C.\bibnamedelimi B.},
+           giveni={C\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{translator}{1}{}{%
+        {{hash=ab0074416ffda5740169e77333cc4c51}{%
+           family={Capella},
+           familyi={C\bibinitperiod},
+           given={Juan-Ramón},
+           giveni={J\bibinithyphendelim R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Madrid}%
+      }
+      \list{publisher}{1}{%
+        {Trotta}%
+      }
+      \strng{namehash}{18f099ea3624474b9882dc52bcb55681}
+      \strng{fullhash}{18f099ea3624474b9882dc52bcb55681}
+      \strng{fullhashraw}{18f099ea3624474b9882dc52bcb55681}
+      \strng{bibnamehash}{18f099ea3624474b9882dc52bcb55681}
+      \strng{authorbibnamehash}{18f099ea3624474b9882dc52bcb55681}
+      \strng{authornamehash}{18f099ea3624474b9882dc52bcb55681}
+      \strng{authorfullhash}{18f099ea3624474b9882dc52bcb55681}
+      \strng{authorfullhashraw}{18f099ea3624474b9882dc52bcb55681}
+      \strng{translatorbibnamehash}{ab0074416ffda5740169e77333cc4c51}
+      \strng{translatornamehash}{ab0074416ffda5740169e77333cc4c51}
+      \strng{translatorfullhash}{ab0074416ffda5740169e77333cc4c51}
+      \strng{translatorfullhashraw}{ab0074416ffda5740169e77333cc4c51}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{origyear}{1962}
+      \field{title}{La teoría política del individualismo posesivo: De Hobbes a Locke}
+      \field{year}{2005}
+      \field{origdateera}{ce}
+    \endentry
+    \entry{Rousseau1755}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=aa9c913cb991c0d4c3a32bb678547bab}{%
+           family={Rousseau},
+           familyi={R\bibinitperiod},
+           given={Jean-Jacques},
+           giveni={J\bibinithyphendelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{translator}{1}{}{%
+        {{hash=3530217b01a0afa0f299cad1c2a5621f}{%
+           family={Masó},
+           familyi={M\bibinitperiod},
+           given={Salustiano},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Madrid}%
+      }
+      \list{publisher}{1}{%
+        {Alianza Editorial}%
+      }
+      \strng{namehash}{aa9c913cb991c0d4c3a32bb678547bab}
+      \strng{fullhash}{aa9c913cb991c0d4c3a32bb678547bab}
+      \strng{fullhashraw}{aa9c913cb991c0d4c3a32bb678547bab}
+      \strng{bibnamehash}{aa9c913cb991c0d4c3a32bb678547bab}
+      \strng{authorbibnamehash}{aa9c913cb991c0d4c3a32bb678547bab}
+      \strng{authornamehash}{aa9c913cb991c0d4c3a32bb678547bab}
+      \strng{authorfullhash}{aa9c913cb991c0d4c3a32bb678547bab}
+      \strng{authorfullhashraw}{aa9c913cb991c0d4c3a32bb678547bab}
+      \strng{translatorbibnamehash}{3530217b01a0afa0f299cad1c2a5621f}
+      \strng{translatornamehash}{3530217b01a0afa0f299cad1c2a5621f}
+      \strng{translatorfullhash}{3530217b01a0afa0f299cad1c2a5621f}
+      \strng{translatorfullhashraw}{3530217b01a0afa0f299cad1c2a5621f}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{origyear}{1755}
+      \field{title}{Discurso sobre el origen y los fundamentos de la desigualdad entre los hombres}
+      \field{year}{2014}
+      \field{origdateera}{ce}
+    \endentry
+    \entry{Smith1776}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5ccecf114bbd51a1a2979a23dd69c78c}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{translator}{1}{}{%
+        {{hash=84c827742767830234ea64a548c9170e}{%
+           family={Franco},
+           familyi={F\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {México, D.F.}%
+      }
+      \list{publisher}{1}{%
+        {Fondo de Cultura Económica}%
+      }
+      \strng{namehash}{5ccecf114bbd51a1a2979a23dd69c78c}
+      \strng{fullhash}{5ccecf114bbd51a1a2979a23dd69c78c}
+      \strng{fullhashraw}{5ccecf114bbd51a1a2979a23dd69c78c}
+      \strng{bibnamehash}{5ccecf114bbd51a1a2979a23dd69c78c}
+      \strng{authorbibnamehash}{5ccecf114bbd51a1a2979a23dd69c78c}
+      \strng{authornamehash}{5ccecf114bbd51a1a2979a23dd69c78c}
+      \strng{authorfullhash}{5ccecf114bbd51a1a2979a23dd69c78c}
+      \strng{authorfullhashraw}{5ccecf114bbd51a1a2979a23dd69c78c}
+      \strng{translatorbibnamehash}{84c827742767830234ea64a548c9170e}
+      \strng{translatornamehash}{84c827742767830234ea64a548c9170e}
+      \strng{translatorfullhash}{84c827742767830234ea64a548c9170e}
+      \strng{translatorfullhashraw}{84c827742767830234ea64a548c9170e}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{origyear}{1776}
+      \field{title}{Una investigación sobre la naturaleza y causas de la riqueza de las naciones}
+      \field{year}{2011}
+      \field{origdateera}{ce}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -531,3 +531,26 @@ Haciendo push...
 branch 'main' set up to track 'origin/main'.
 [2025-07-18 08:45:16] ✅ Push exitoso
 ========== 2025-07-20 23:30:24 ==========
+Mensaje de commit (dejar vacío para 'Auto-commit'): Haciendo commit...
+[main 991e23b] Auto-commit: 2025-07-20 23:30:24
+ 18 files changed, 5268 insertions(+)
+ create mode 100644 Politica/Ensayo/Ensayo.aux
+ create mode 100644 Politica/Ensayo/Ensayo.bbl
+ create mode 100644 Politica/Ensayo/Ensayo.bcf
+ create mode 100644 Politica/Ensayo/Ensayo.blg
+ create mode 100644 Politica/Ensayo/Ensayo.fdb_latexmk
+ create mode 100644 Politica/Ensayo/Ensayo.fls
+ create mode 100644 Politica/Ensayo/Ensayo.log
+ create mode 100644 Politica/Ensayo/Ensayo.out
+ create mode 100644 Politica/Ensayo/Ensayo.pdf
+ create mode 100644 Politica/Ensayo/Ensayo.run.xml
+ create mode 100644 Politica/Ensayo/Ensayo.synctex.gz
+ create mode 100644 Politica/Ensayo/Ensayo.tex
+ create mode 100644 Politica/Ensayo/Ensayo.toc
+ create mode 100644 Politica/Ensayo/images/IN.png
+ create mode 100644 Politica/Ensayo/images/gatito.png
+ create mode 100644 Politica/Ensayo/images/patata.png
+ create mode 100644 Politica/Ensayo/referencias.bib
+Haciendo push...
+branch 'main' set up to track 'origin/main'.
+[2025-07-20 23:30:24] ✅ Push exitoso

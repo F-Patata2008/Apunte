@@ -641,7 +641,7 @@ Evento B: b maneras
         \hfill
         \begin{minipage}{0.45\textwidth}
             \centering
-            \textbf{CARRERA}
+            \textbf{CARRERA}No
             \[ P_{2,3}^7 = \frac{7!}{2! \cdot 3!} = \frac{7\cdot 6 \cdot 5 \cdot 4}{2} = 420 \]
         \end{minipage}
         
@@ -652,5 +652,92 @@ Evento B: b maneras
 \end{enumerate}
 \newpage
 
+\section{04/08}
+    \subsection{Variacion(o arreglo)}
+        Corres al número de ordenaciones de $K$ elementos, con $k \leq n$, de un total de $n$ elementos.
+        \[V_k^n = n \cdot (n - 1) \cdot (n - 2) \cdot ... \cdot (n - (k - 1)) = \frac{n!}{(n - k)!} \]
+        \subsubsection*{Con repetición}
+            \[VR_k^n = n^k \]
+    \subsection{Combinaciones} Corresponde a la cantiadad de grupos (o subconjuntos) de $k$ ekemnots de un total de n elemntos. 
+        \[C_k^n = \frac{V_k^n}{k!} = \frac{n!}{(n - k)! \cdot k!} \]
+
+    \subsection*{¿Cómo Diferenciar?}
+Para determinar qué fórmula usar, sigue este diagrama de flujo:
+
+\begin{enumerate}[label=\bfseries Paso \arabic*:, wide, labelwidth=!, leftmargin=0pt]
+    \item \textbf{¿Importa el orden de los elementos seleccionados?}
+    \begin{enumerate}[label=\alph*)]
+        \item \textbf{Sí, el orden importa:} Considera Permutaciones o Variaciones.
+        \begin{enumerate}[label=\roman*)]
+            \item \textbf{¿Se utilizan TODOS los $n$ elementos disponibles en cada arreglo?}
+            \begin{enumerate}[label=\alph*)]
+                \item \textbf{Sí (Permutación):}
+                \begin{enumerate}[label=\roman*)]
+                    \item \textbf{¿Hay elementos repetidos en el conjunto original (e.g., letras en una palabra)?}
+                        \[ P_{n_1, n_2, \dots, n_k}^n = \frac{n!}{n_1! n_2! \dots n_k!} \]
+                    \item \textbf{No (todos los elementos son distintos):}
+                        \[ P_n = n! \]
+                \end{enumerate}
+                \item \textbf{No (se selecciona un subconjunto $k$ de $n$ elementos - Variación):}
+                \begin{enumerate}[label=\roman*)]
+                    \item \textbf{¿Se permiten repeticiones al seleccionar los $k$ elementos?}
+                        \[ VR_k^n = n^k \]
+                    \item \textbf{No (los $k$ elementos deben ser distintos):}
+                        \[ V_k^n = \frac{n!}{(n - k)!} \]
+                \end{enumerate}
+            \end{enumerate}
+        \end{enumerate}
+        \item \textbf{No, el orden NO importa:} Considera Combinaciones.
+        \begin{enumerate}[label=\roman*)]
+            \item \textbf{¿Se permiten repeticiones al seleccionar los $k$ elementos?}
+                \[ CR_k^n = \frac{(n+k-1)!}{k!(n-1)!} \]
+            \item \textbf{No (los $k$ elementos deben ser distintos):}
+                \[ C_k^n = \frac{n!}{(n - k)! \cdot k!} \]
+        \end{enumerate}
+    \end{enumerate}
+\end{enumerate}
+
+
+\subsection*{Ejercicios Resueltos}
+Aquí tienes los ejercicios con sus soluciones y el razonamiento para cada uno:
+
+\begin{enumerate}[leftmargin=*,label=\arabic*.]
+    \item \textbf{En una carrera participan 15 estudiantes. ¿De cuantas maneras se puede formar el podio (1er, 2do, 3er lugar)?}
+    \begin{itemize}
+        \item \textbf{Razonamiento:} El orden importa (1er lugar es diferente de 2do). No hay repetición de estudiantes. Se seleccionan 3 de 15. Esto es una **Variación simple**.
+        \item \textbf{Cálculo:} $V_3^{15} = 15 \cdot 14 \cdot 13 = 2730$ maneras.
+    \end{itemize}
+
+    \item \textbf{¿De cuantas maneras se puede formar una clave numérica de 4 dígitos?}
+    \begin{itemize}
+        \item \textbf{Razonamiento:} El orden importa (1234 es diferente de 4321). Los dígitos pueden repetirse (ej. 1111). Se seleccionan 4 dígitos de 10 posibles (0-9). Esto es una **Variación con repetición**.
+        \item \textbf{Cálculo:} $VR_4^{10} = 10^4 = 10000$ maneras.
+    \end{itemize}
+
+    \item \textbf{¿Y si no se repiten los dígitos (para la clave numérica de 4 dígitos)?}
+    \begin{itemize}
+        \item \textbf{Razonamiento:} El orden sigue importando. Los dígitos NO pueden repetirse. Se seleccionan 4 dígitos distintos de 10 posibles. Esto es una **Variación simple**.
+        \item \textbf{Cálculo:} $V_4^{10} = 10 \cdot 9 \cdot 8 \cdot 7 = 5040$ maneras.
+    \end{itemize}
+
+    \item \textbf{En un curso de 40 estudiantes, ¿Cuántas directivas (Presidente, Vicepresidente, Tesorero) se pueden formar?}
+    \begin{itemize}
+        \item \textbf{Razonamiento:} El orden importa (ser Presidente es distinto de ser Vicepresidente). Los estudiantes no pueden ocupar múltiples cargos. Se seleccionan 3 de 40. Esto es una **Variación simple**.
+        \item \textbf{Cálculo:} $V_3^{40} = 40 \cdot 39 \cdot 38 = 59280$ maneras.
+    \end{itemize}
+
+    \item \textbf{En una asamblea de 100 personas, se escoge una directiva de 3 personas ¿De cuantas maneras se puede hacer?}
+    \begin{itemize}
+        \item \textbf{Razonamiento:} Esta pregunta es ambigua. Si "directiva" implica roles específicos (similar al ejercicio anterior), el orden importa. Sin embargo, si es solo un grupo de 3 personas sin roles definidos, el orden no importa (ver el siguiente ejercicio). Asumiendo que se refiere a un grupo donde el orden no importa, como una comisión.
+        \item \textbf{Cálculo (asumiendo que el orden NO importa, es decir, una comisión):} $C_3^{100} = \frac{100 \cdot 99 \cdot 98}{3 \cdot 2 \cdot 1} = \frac{970200}{6} = 161700$ maneras.
+        \item \textbf{Nota:} Si la intención era que el orden SÍ importaba (ej. Presidente, Secretario, Vocal), entonces sería una Variación: $V_3^{100} = 100 \cdot 99 \cdot 98 = 970200$ maneras. Es crucial aclarar si los roles son distinguibles o no en el enunciado.
+    \end{itemize}
+
+    \item \textbf{Y cuantas comisiones de 3 personas se pueden hacer (en la asamblea de 100 personas)?}
+    \begin{itemize}
+        \item \textbf{Razonamiento:} El orden NO importa (una comisión de Juan, Pedro y María es la misma que María, Pedro y Juan). No hay repetición de personas. Se seleccionan 3 de 100. Esto es una **Combinación simple**.
+        \item \textbf{Cálculo:} $C_3^{100} = \frac{100!}{3!(100-3)!} = \frac{100 \cdot 99 \cdot 98}{3 \cdot 2 \cdot 1} = \frac{970200}{6} = 161700$ maneras.
+    \end{itemize}
+\end{enumerate}
 
 \end{document}

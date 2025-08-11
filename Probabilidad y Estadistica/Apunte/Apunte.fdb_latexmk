@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1754324347.65406 "Apunte.tex" "Apunte.pdf" "Apunte" 1754324348.78823 2
+["pdflatex"] 1754930771.45023 "Apunte.tex" "Apunte.pdf" "Apunte" 1754930772.93343 0
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1742685315 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1742685315 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1742685315 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -56,7 +56,6 @@
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb" 1742685315 135942 859a90cad7494a1e79c94baf546d7de5 ""
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb" 1742685315 139826 9213617a7cb78635fc326b859c0b2273 ""
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb" 1742685315 135938 299ac3a69892db3b7674a8b2543b0a77 ""
-  "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb" 1742685315 108594 1a08a22405bc37650b977f219cc3597d ""
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb" 1742685315 107203 e671936e3a8639d41d1d76852217c874 ""
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc2074.pfb" 1742685315 108041 d4d5c0c81dd56faa0d597651bf0ab019 ""
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb" 1742685315 164227 3df942b4ff2124425d8fb1b6d3e01c7a ""
@@ -99,11 +98,13 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1742685315 42087 b0f9697c952c8f5a8eede4134282cb0d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1753478620 5311557 9da84c45f5b388655502706482323571 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1753482593 2081320 31ab6e5f145a6c9be157ecbfebc5af70 ""
-  "Apunte.aux" 1754324348.59099 7176 61416b51ffaf1c983072420f40232da8 "pdflatex"
-  "Apunte.tex" 1754324345.97896 41703 06b3c56caa40ed9e389db4a815f83f40 ""
-  "Apunte.toc" 1754324348.59396 4429 25c963c34e6c35191962416aabad31d8 "pdflatex"
+  "Apunte.aux" 1754930772.69777 8975 f98a2e1b905b64ab7ffc156bfaf3289b "pdflatex"
+  "Apunte.tex" 1754930769.88269 48842 99023ea70eb5a1dd0630bd63d55aa9e7 ""
+  "Apunte.toc" 1754930772.70377 5517 3ab525ca925bb2c14041164ffc71d19e "pdflatex"
+  "images/Gat.png" 1754952206 5909 08ee0e71bac1ef14ed650e4f47d7d9aa ""
   "images/IN.png" 1753454929.56759 7949 cc26bed184e5e1103c6a6f769f5412fa ""
   "images/gatito.png" 1753454929.56945 9212 9561eeb358642cf722040fc98250ce16 ""
+  "images/pascal.png" 1754928959.96307 39296 3dccd1261bc1f1e101239ac3834a8780 ""
   "images/patata.png" 1753454929.56945 5350 59d00e6702605223625b39f8e3256329 ""
   (generated)
   "Apunte.aux"

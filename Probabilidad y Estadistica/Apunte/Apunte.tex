@@ -59,7 +59,7 @@
 \tableofcontents
 \newpage % Start sections on a new page after ToC
 
-\section{14/03}
+\section{14/03 - Conceptos Fundamentales de Estadística}
 \subsection{Materia}
 \textbf{Población:} % Simplificado el énfasis
 Conjunto de todos los elementos que se quieren estudiar. Cuando la información deseada está disponible para todos los objetos de la población, lo llamamos \textbf{censo}. En la práctica es muy difícil o casi imposible realizar un censo.
@@ -141,7 +141,7 @@ Para cada una de las siguientes situaciones, identifica la población de interé
 \end{enumerate}
 \newpage
 
-\section{17/03}
+\section{17/03 - Tablas de Frecuencia y Medidas de Tendencia Central}
 \subsection{Materia}
 Medidas de Tendencia Central \\
 Medidas de Posición \\
@@ -172,7 +172,7 @@ Medidas de Dispersión
     \begin{center}
         \begin{minipage}{0.35\textwidth}
             \centering
-            \begin{tabularx}{\linewidth}{|c|c|} 
+            \begin{tabular}{|c|c|} 
                 \hline
                 \textbf{Marca ($c_i$)} & \textbf{Frec. ($f_i$)} \\
                 \hline
@@ -184,7 +184,7 @@ Medidas de Dispersión
                 \hline
                 $c_k$ & $f_k$ \\
                 \hline
-             \end{tabularx}
+             \end{tabular}
         \end{minipage}
         \hfill
         \begin{minipage}{0.55\textwidth}
@@ -209,7 +209,7 @@ Medidas de Dispersión
 \end{itemize}
 \newpage
 
-\section{26/03}
+\section{26/03 - Ejercicios de Medidas de Tendencia Central}
 \subsection{Ejercicios:}
 
 \noindent % Evita la sangría
@@ -285,7 +285,7 @@ Por lo tanto, la cantidad de datos $n$ no puede ser un número impar. \\
 \textbf{Respuesta:} La cantidad de datos no puede ser un número impar.
 \newpage
 
-\section{04/04}
+\section{04/04 - Muestreo y Representatividad}
 \subsection{Población y Muestra}
 ¿Qué inconvenientes puede implicar realizar un censo?
 \begin{itemize}
@@ -344,7 +344,7 @@ La selección se basa en el juicio del investigador o en la facilidad de acceso 
 \end{figure}
 \newpage
 
-\section{10/04}
+\section{10/04 - Medidas de Dispersión}
 \textbf{\textit{Objetivo: Aplicar y comprender propiedades de las medidas de dispersión}}
 \subsection{Medidas de Dispersión}
 Las medidas de tendencia central (como la media) no son suficientes por sí solas para describir un conjunto de datos, ya que no indican cuán dispersos o concentrados están los datos alrededor de ese centro. Consideremos dos conjuntos con la misma media $\bar{x}=0$:
@@ -392,7 +392,7 @@ Es la raíz cuadrada positiva de la varianza. Tiene la ventaja de estar expresad
 \end{center}
 \newpage
 
-\section{16/04}
+\section{16/04 - Propiedades de la Varianza y Desviación Estándar}
 \subsection{Demostración Propiedad 4 (Multiplicación por una constante)}
 Sea la variable $X$ con datos $x_1, \dots, x_n$, media $\bar{x}$ y varianza $\sigma_x^2$.
 Sea $Y$ una nueva variable tal que $y_i = k \cdot x_i$ para cada $i$.
@@ -447,7 +447,7 @@ Reconocemos que $\frac{\sum x_i^2}{n} = \overline{x^2}$ (la media de los cuadrad
 L.Q.Q.D.
 \newpage
 
-    \section{23/04}
+    \section{23/04 - Demostraciones sobre el Valor de la Desviación Estándar}
         \subsection{Demostraciones de Propiedades Relacionadas con el Valor de $\sigma$}
             Recordar que $\sigma \ge 0$ por definición (es una raíz cuadrada positiva o cero).
 
@@ -516,7 +516,7 @@ L.Q.Q.D.
 
 
 
-\section{30/05}
+\section{30/05 - Medidas de Posición: Cuartiles, Quintiles, Deciles y Percentiles}
 Dado un Conjunto de datos Ordenados se define:
 
 \subsection{Cuartiles}
@@ -537,7 +537,7 @@ Son los 99 valores que dividen en partes igaules a los datos, que corresponden a
 
 \newpage
 
-\section{11/06}
+\section{11/06 - Principios Fundamentales de la Combinatoria}
 \subsection{Combinatoria} 
 Son técnicas de conteo. Sean A y B dos sucesos, que pueden ocurrir de $a$ y $b$ maneras respectivamente.
 \begin{itemize}
@@ -587,7 +587,7 @@ Son técnicas de conteo. Sean A y B dos sucesos, que pueden ocurrir de $a$ y $b$
 \newpage
 
 
-\section{07/07}
+\section{07/07 - Permutaciones}
 \textbf{\textit{\large{Diferenciar distintas Permutaciones}}}
 
 \subsection{Combinatoria}
@@ -641,7 +641,7 @@ Evento B: b maneras
         \hfill
         \begin{minipage}{0.45\textwidth}
             \centering
-            \textbf{CARRERA}No
+            \textbf{CARRERA}
             \[ P_{2,3}^7 = \frac{7!}{2! \cdot 3!} = \frac{7\cdot 6 \cdot 5 \cdot 4}{2} = 420 \]
         \end{minipage}
         
@@ -652,7 +652,7 @@ Evento B: b maneras
 \end{enumerate}
 \newpage
 
-\section{04/08}
+\section{04/08 - Variaciones y Combinaciones}
     \subsection{Variacion(o arreglo)}
         Corres al número de ordenaciones de $K$ elementos, con $k \leq n$, de un total de $n$ elementos.
         \[V_k^n = n \cdot (n - 1) \cdot (n - 2) \cdot ... \cdot (n - (k - 1)) = \frac{n!}{(n - k)!} \]
@@ -664,39 +664,31 @@ Evento B: b maneras
     \subsection*{¿Cómo Diferenciar?}
 Para determinar qué fórmula usar, sigue este diagrama de flujo:
 
-\begin{enumerate}[label=\bfseries Paso \arabic*:, wide, labelwidth=!, leftmargin=0pt]
+% CORREGIDO: Se reestructuró la lista para evitar el error "Too deeply nested".
+% Se simplificaron las opciones de 'enumerate'.
+\begin{enumerate}[label=\bfseries Paso \arabic*:, wide]
     \item \textbf{¿Importa el orden de los elementos seleccionados?}
-    \begin{enumerate}[label=\alph*)]
-        \item \textbf{Sí, el orden importa:} Considera Permutaciones o Variaciones.
-        \begin{enumerate}[label=\roman*)]
-            \item \textbf{¿Se utilizan TODOS los $n$ elementos disponibles en cada arreglo?}
-            \begin{enumerate}[label=\alph*)]
-                \item \textbf{Sí (Permutación):}
-                \begin{enumerate}[label=\roman*)]
-                    \item \textbf{¿Hay elementos repetidos en el conjunto original (e.g., letras en una palabra)?}
-                        \[ P_{n_1, n_2, \dots, n_k}^n = \frac{n!}{n_1! n_2! \dots n_k!} \]
-                    \item \textbf{No (todos los elementos son distintos):}
-                        \[ P_n = n! \]
-                \end{enumerate}
-                \item \textbf{No (se selecciona un subconjunto $k$ de $n$ elementos - Variación):}
-                \begin{enumerate}[label=\roman*)]
-                    \item \textbf{¿Se permiten repeticiones al seleccionar los $k$ elementos?}
-                        \[ VR_k^n = n^k \]
-                    \item \textbf{No (los $k$ elementos deben ser distintos):}
-                        \[ V_k^n = \frac{n!}{(n - k)!} \]
-                \end{enumerate}
-            \end{enumerate}
-        \end{enumerate}
-        \item \textbf{No, el orden NO importa:} Considera Combinaciones.
-        \begin{enumerate}[label=\roman*)]
-            \item \textbf{¿Se permiten repeticiones al seleccionar los $k$ elementos?}
-                \[ CR_k^n = \frac{(n+k-1)!}{k!(n-1)!} \]
-            \item \textbf{No (los $k$ elementos deben ser distintos):}
-                \[ C_k^n = \frac{n!}{(n - k)! \cdot k!} \]
-        \end{enumerate}
-    \end{enumerate}
+    \begin{itemize}
+        \item[\bfseries a)] \textbf{Sí, el orden importa $\rightarrow$ PERMUTACIÓN / VARIACIÓN}
+            \begin{itemize}
+                \item \textbf{¿Se usan TODOS los elementos ($k=n$)? $\rightarrow$ PERMUTACIÓN}
+                    \begin{itemize}
+                        \item ¿Hay elementos repetidos? (ej. palabra C-A-S-A) $\rightarrow$ Permutación con repetición: $P_{n_1, \dots, n_k}^n = \frac{n!}{n_1! \dots n_k!}$
+                        \item ¿Son todos los elementos distintos? $\rightarrow$ Permutación simple: $P_n = n!$
+                    \end{itemize}
+                \item \textbf{¿Se elige un SUBCONJUNTO ($k<n$)? $\rightarrow$ VARIACIÓN}
+                    \begin{itemize}
+                        \item ¿Se permite repetir elementos? $\rightarrow$ Variación con repetición: $VR_k^n = n^k$
+                        \item ¿No se permite repetir? $\rightarrow$ Variación simple: $V_k^n = \frac{n!}{(n-k)!}$
+                    \end{itemize}
+            \end{itemize}
+        \item[\bfseries b)] \textbf{No, el orden NO importa $\rightarrow$ COMBINACIÓN}
+            \begin{itemize}
+                \item ¿Se permite repetir elementos? $\rightarrow$ Combinación con repetición: $CR_k^n = \binom{n+k-1}{k}$
+                \item ¿No se permite repetir? $\rightarrow$ Combinación simple: $C_k^n = \binom{n}{k} = \frac{n!}{k!(n-k)!}$
+            \end{itemize}
+    \end{itemize}
 \end{enumerate}
-
 
 \subsection*{Ejercicios Resueltos}
 Aquí tienes los ejercicios con sus soluciones y el razonamiento para cada uno:
@@ -739,5 +731,107 @@ Aquí tienes los ejercicios con sus soluciones y el razonamiento para cada uno:
         \item \textbf{Cálculo:} $C_3^{100} = \frac{100!}{3!(100-3)!} = \frac{100 \cdot 99 \cdot 98}{3 \cdot 2 \cdot 1} = \frac{970200}{6} = 161700$ maneras.
     \end{itemize}
 \end{enumerate}
+
+\newpage
+
+\section{11/08 - Propiedades de Combinatoria y Triángulo de Pascal}
+\subsection{Propiedades de los Números Combinatorios}
+Los números combinatorios, denotados como $\binom{n}{k}$, tienen propiedades útiles que simplifican los cálculos. [1]
+\begin{enumerate}
+    \item \textbf{Combinaciones de los extremos:} Seleccionar todos los elementos de un conjunto es posible de una sola manera, al igual que no seleccionar ninguno (eligiendo el conjunto vacío).
+    \[ \binom{n}{n} = \binom{n}{0} = 1 \]
+
+    \item \textbf{Propiedad de simetría:} El número de maneras de elegir $k$ elementos de un conjunto de $n$ es igual al número de maneras de *no elegir* (o dejar) $n-k$ elementos.
+    \[ \binom{n}{k} = \binom{n}{n-k} \quad \text{para } k \leq n \]
+
+    \item \textbf{Identidad de Pascal:} Esta identidad es la base para construir el Triángulo de Pascal. [2] Establece que la suma de dos números combinatorios consecutivos en una fila del triángulo da como resultado el número combinatorio que se encuentra debajo de ellos.
+    \[ \binom{n}{k} + \binom{n}{k+1} = \binom{n+1}{k+1} \]
+\end{enumerate}
+
+\subsection{Demostraciones}
+La demostración se basa en la aplicación directa de la fórmula de la combinación, $\binom{n}{k} = \frac{n!}{k!(n-k)!}$, y en la definición matemática de que $0! = 1$.
+
+\vspace{1em}
+\noindent \textbf{Caso 1: $\binom{n}{n}$}
+\[ \binom{n}{n} = \frac{n!}{(n-n)! \cdot n!} = \frac{n!}{0! \cdot n!} \]
+\textit{Comentario: Al aplicar la fórmula, el término $(n-n)!$ se convierte en $0!$. Luego, los términos $n!$ del numerador y denominador se cancelan, dejando $1/0!$. Como $0!$ es 1, el resultado es 1.}
+\[ \frac{n!}{0! \cdot n!} = \frac{1}{0!} = \frac{1}{1} = 1 \]
+\textit{Interpretación: Solo hay una forma de elegir n elementos de un conjunto de n (es decir, tomarlos todos).}
+
+\vspace{1em}
+\noindent \textbf{Caso 2: $\binom{n}{0}$}
+\[ \binom{n}{0} = \frac{n!}{(n-0)! \cdot 0!} = \frac{n!}{n! \cdot 0!} \]
+\textit{Comentario: De forma similar, $(n-0)!$ es simplemente $n!$. Al cancelar los términos $n!$, nuevamente obtenemos $1/0!$, que es igual a 1.}
+\[ \frac{n!}{n! \cdot 0!} = \frac{1}{0!} = \frac{1}{1} = 1 \]
+\textit{Interpretación: Solo hay una forma de elegir 0 elementos de un conjunto (es decir, no tomar ninguno).}
+
+\subsubsection{Propiedad 2 (Simetría): $\binom{n}{k} = \binom{n}{n-k}$}
+\textit{Comentario: Esta propiedad muestra una hermosa simetría en las combinaciones. Intuitivamente, significa que el acto de elegir $k$ elementos para formar un grupo es equivalente al acto de elegir $n-k$ elementos para dejarlos fuera de ese grupo. La demostración es algebraica.}
+
+\vspace{1em}
+\noindent Partimos de la definición de $\binom{n}{k}$:
+\[ \binom{n}{k} = \frac{n!}{k! \cdot (n-k)!} \]
+\textit{Comentario: El producto en el denominador es conmutativo, lo que significa que podemos cambiar el orden de $k!$ y $(n-k)!$ sin alterar el resultado.}
+\[ \frac{n!}{k! \cdot (n-k)!} = \frac{n!}{(n-k)! \cdot k!} \]
+\textit{Comentario: Ahora, si observamos esta expresión final, corresponde exactamente a la definición de $\binom{n}{n-k}$. Por lo tanto, hemos demostrado que las dos expresiones son iguales.}
+\[ \binom{n}{n-k} = \frac{n!}{(n-k)! \cdot (n-(n-k))!} = \frac{n!}{(n-k)! \cdot k!} \]
+Así, se concluye que $\binom{n}{k} = \binom{n}{n-k}$.
+
+\subsection{Triángulo de Pascal y Binomio de Newton}
+El \textbf{Triángulo de Pascal} es una disposición triangular de números donde cada número es la suma de los dos que tiene directamente encima. [9] Este triángulo está íntimamente relacionado con el \textbf{Teorema del Binomio} (o Binomio de Newton), que proporciona una fórmula para expandir potencias de un binomio $(a+b)^n$.
+
+La fórmula del Binomio de Newton utiliza los números combinatorios como coeficientes para cada término de la expansión. [9, 10] Notablemente, los coeficientes de la expansión de $(a+b)^n$ corresponden exactamente a los números en la fila $n+1$ del Triángulo de Pascal.
+\[ (a+b)^n = \sum_{k=0}^{n} \binom{n}{k} a^{n-k} b^k = \binom{n}{0}a^n + \binom{n}{1}a^{n-1}b + \dots + \binom{n}{n}b^n \]
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{pascal}
+    \caption{El Triángulo de Pascal, donde cada fila $n$ corresponde a los coeficientes de $(a+b)^n$.}
+    \label{fig:pascaltrig}
+\end{figure}
+
+
+\subsection{Conjunto Potencia}
+El \textbf{Conjunto Potencia} de un conjunto $A$, denotado como $P(A)$, es el conjunto formado por \textbf{todos los subconjuntos} posibles de $A$, incluyendo el conjunto vacío y el propio conjunto $A$. [12, 14]
+
+La \textbf{cardinalidad} (número de elementos) del conjunto potencia se puede calcular sumando el número de subconjuntos de cada tamaño posible (de tamaño 0, de tamaño 1, de tamaño 2, etc.), lo cual es una suma de números combinatorios. Si el conjunto original $A$ tiene $n$ elementos, la cardinalidad de su conjunto potencia es $2^n$. [3, 6]
+\[ |P(A)| = \sum_{k=0}^{n} \binom{n}{k} = 2^n \]
+
+\subsection{Ejercicios}
+\begin{enumerate}
+    \item \textbf{¿De cuántas maneras se pueden sentar 5 personas en una mesa redonda?} \\
+    \textit{Solución:} Es una permutación circular. $PC_5 = (5-1)! = 4! = 24$ maneras.
+
+    \item \textbf{En una competición participan 40 personas y solo quedan seleccionadas 5.}
+        \begin{enumerate}
+            \item \textbf{¿Cuántos grupos distintos pueden quedar seleccionados?} \\
+            \textit{Solución:} El orden no importa, es una combinación. \\
+            $C_5^{40} = \binom{40}{5} = \frac{40!}{5!(35!)} = \frac{40 \cdot 39 \cdot 38 \cdot 37 \cdot 36}{5 \cdot 4 \cdot 3 \cdot 2 \cdot 1} = 658,008$ grupos.
+            \item \textbf{¿Cuántos primeros 5 puntajes distintos puede haber?} \\
+            \textit{Solución:} El orden importa (1er, 2do, etc.), es una variación. \\
+            $V_5^{40} = \frac{40!}{(40-5)!} = \frac{40!}{35!} = 40 \cdot 39 \cdot 38 \cdot 37 \cdot 36 = 78,960,960$ maneras.
+        \end{enumerate}
+
+    \item \textbf{Si se dispone de 5 frutas distintas.}
+        \begin{enumerate}
+            \item \textbf{¿Cuántos jugos de dos frutas se pueden hacer?} \\
+            \textit{Solución:} El orden no importa, es una combinación. \\
+            $C_2^5 = \binom{5}{2} = \frac{5!}{2!3!} = 10$ jugos.
+            \item \textbf{¿Y de 3 frutas?} \\
+            \textit{Solución:} Combinación. $C_3^5 = \binom{5}{3} = \frac{5!}{3!2!} = 10$ jugos.
+            \item \textbf{¿Y de al menos 2 frutas?} \\
+            \textit{Solución:} Se suman los jugos de 2, 3, 4 y 5 frutas. \\
+            $C_2^5 + C_3^5 + C_4^5 + C_5^5 = 10 + 10 + 5 + 1 = 26$ jugos.
+        \end{enumerate}
+\end{enumerate}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Gat}
+    \caption{Gatito Para hacer bonito el apunte}
+    \label{fig:Gat}
+\end{figure}
+
+
+\newpage
 
 \end{document}

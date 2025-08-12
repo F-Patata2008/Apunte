@@ -159,19 +159,15 @@ Para cada una de las siguientes situaciones, identifica la población de interé
 \newpage
 
 \section{17/03 - Tablas de Frecuencia y Medidas de Tendencia Central}
-\subsection{Materia}
-Medidas de Tendencia Central \\
-Medidas de Posición \\
-Medidas de Dispersión 
 
-\textbf{Tablas de Frecuencia: Conceptos Básicos}
+\subsection{Tablas de Frecuencia: Conceptos Básicos}
 \begin{itemize}
     \item \textbf{Dato o Intervalo:} Información (variable) que se estudia en estadística.
     \item \textbf{Marca de Clase ($c_i$):} Promedio entre los extremos de un intervalo.
     \item \textbf{Amplitud de un intervalo:} Es la diferencia entre el límite superior y el límite inferior del intervalo.
 \end{itemize}
 
-\textbf{Tipos de Frecuencia:}
+\subsection{Tipos de Frecuencia:}
 \begin{itemize}
     \item \textbf{Frecuencia Absoluta ($f_i$):} Cantidad de veces que se repite un dato o que los datos caen en un intervalo.
     \item \textbf{Frecuencia Absoluta Acumulada ($F_i$):} Suma de las frecuencias absolutas hasta determinado dato o intervalo. $F_i = \sum_{j=1}^{i} f_j$.
@@ -180,50 +176,54 @@ Medidas de Dispersión
 \end{itemize}
 \newpage
 
-\textbf{Medidas de Tendencia Central:}
-\begin{itemize}
-    \item \textbf{Media Aritmética ($\bar{x}$):} Es el cociente entre la suma de todos los datos y el número total de datos ($n$). Si se tienen $n$ datos $x_1, x_2, \dots, x_n$:
-        \[ \bar{x}=\frac{x_1+x_2+\dots+x_n}{n} = \frac{\sum_{i=1}^{n} x_i}{n} \] \\
-    Para datos agrupados en una tabla de frecuencia con $k$ clases:
-    % NOTA: Se ajustó el layout con minipage para evitar el Overfull hbox.
-    \begin{center}
-        \begin{minipage}{0.35\textwidth}
-            \centering
-            \begin{tabular}{|c|c|} 
-                \hline
-                \textbf{Marca ($c_i$)} & \textbf{Frec. ($f_i$)} \\
-                \hline
-                $c_1$ & $f_1$ \\
-                \hline
-                $c_2$ & $f_2$ \\
-                \hline
-                $\vdots$ & $\vdots$ \\
-                \hline
-                $c_k$ & $f_k$ \\
-                \hline
-             \end{tabular}
-        \end{minipage}
-        \hfill
-        \begin{minipage}{0.55\textwidth}
-            \centering
-            \[ \bar{x}=\frac{c_1 f_1 + c_2 f_2 + \dots + c_k f_k}{f_1+f_2+\dots+f_k} = \frac{\sum_{i=1}^{k} c_i f_i}{n} \]
-            (donde $n = \sum_{i=1}^{k} f_i$)
-        \end{minipage}
-    \end{center}
+\subsection{Medidas de Tendencia Central:}
 
-    \item \textbf{Mediana ($M_e$):} Es el valor que ocupa la posición central de la muestra cuando los datos se encuentran ordenados. \textbf{Si la muestra tiene un número par de datos, la mediana es la media aritmética de los dos términos centrales.}
-        \begin{itemize}
-            \item Si $n$ es impar, la posición es $\frac{n+1}{2}$. $M_e = x_{(\frac{n+1}{2})}$.
-            \item Si $n$ es par, las posiciones son $\frac{n}{2}$ y $\frac{n}{2}+1$. $M_e = \frac{x_{(\frac{n}{2})} + x_{(\frac{n}{2}+1)}}{2}$.
-        \end{itemize}
-    \item \textbf{Moda ($M_o$):} Es el dato o intervalo con la mayor frecuencia absoluta. La muestra puede ser:
-        \begin{itemize}
-            \item \textbf{Amodal:} No presenta moda.
-            \item \textbf{Unimodal:} Una sola moda.
-            \item \textbf{Bimodal:} Dos modas.
-            \item \textbf{Polimodal (o Multimodal):} Más de dos modas.
-        \end{itemize}
+\subsubsection{Media Aritmética ($\bar{x}$):}
+Es el cociente entre la suma de todos los datos y el número total de datos ($n$). Si se tienen $n$ datos $x_1, x_2, \dots, x_n$:
+\[ \bar{x}=\frac{x_1+x_2+\dots+x_n}{n} = \frac{\sum_{i=1}^{n} x_i}{n} \] \\
+Para datos agrupados en una tabla de frecuencia con $k$ clases:
+    % NOTA: Se ajustó el layout con minipage para evitar el Overfull hbox.
+
+\begin{center}
+    \begin{minipage}{0.35\textwidth}
+        \centering
+        \begin{tabular}{|c|c|} 
+            \hline
+            \textbf{Marca ($c_i$)} & \textbf{Frec. ($f_i$)} \\
+            \hline
+            $c_1$ & $f_1$ \\
+            \hline
+            $c_2$ & $f_2$ \\
+            \hline
+            $\vdots$ & $\vdots$ \\
+            \hline
+            $c_k$ & $f_k$ \\
+            \hline
+         \end{tabular}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.55\textwidth}
+        \centering
+        \[ \bar{x}=\frac{c_1 f_1 + c_2 f_2 + \dots + c_k f_k}{f_1+f_2+\dots+f_k} = \frac{\sum_{i=1}^{k} c_i f_i}{n} \]
+        (donde $n = \sum_{i=1}^{k} f_i$)
+    \end{minipage}
+\end{center}
+
+\subsubsection{Mediana ($M_e$):}
+Es el valor que ocupa la posición central de la muestra cuando los datos se encuentran ordenados. \textbf{Si la muestra tiene un número par de datos, la mediana es la media aritmética de los dos términos centrales.}
+        
+\begin{itemize}
+    \item Si $n$ es impar, la posición es $\frac{n+1}{2}$. $M_e = x_{(\frac{n+1}{2})}$.
+    \item Si $n$ es par, las posiciones son $\frac{n}{2}$ y $\frac{n}{2}+1$. $M_e = \frac{x_{(\frac{n}{2})} + x_{(\frac{n}{2}+1)}}{2}$.
 \end{itemize}
+
+\subsubsection{Moda ($M_o$):} Es el dato o intervalo con la mayor frecuencia absoluta. La muestra puede ser:
+    \begin{itemize}
+        \item \textbf{Amodal:} No presenta moda.
+        \item \textbf{Unimodal:} Una sola moda.
+        \item \textbf{Bimodal:} Dos modas.
+        \item \textbf{Polimodal (o Multimodal):} Más de dos modas.
+    \end{itemize}
 \newpage
 
 \section{26/03 - Ejercicios de Medidas de Tendencia Central}
@@ -718,6 +718,8 @@ Evento B: b maneras
     \item ¿De cuantas maneras se pueden sentar en una mesa de 4 sillas, 4 personas?
         \[ PC_4 = \frac{4!}{4} =\frac{4 \cdot 3!}{4} = 3! = 6 \]
 \end{enumerate}
+%insertar imgane bonita
+
 \newpage
 
 \section{04/08 - Variaciones y Combinaciones}

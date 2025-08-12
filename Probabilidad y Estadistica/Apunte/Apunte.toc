@@ -10,7 +10,12 @@
 \contentsline {subsubsection}{\numberline {1.2.2}Variables cuantitativas:}{6}{}%
 \contentsline {subsection}{\numberline {1.3}Ejercicios:}{7}{}%
 \contentsline {section}{\numberline {2}17/03 - Tablas de Frecuencia y Medidas de Tendencia Central}{9}{}%
-\contentsline {subsection}{\numberline {2.1}Materia}{9}{}%
+\contentsline {subsection}{\numberline {2.1}Tablas de Frecuencia: Conceptos Básicos}{9}{}%
+\contentsline {subsection}{\numberline {2.2}Tipos de Frecuencia:}{9}{}%
+\contentsline {subsection}{\numberline {2.3}Medidas de Tendencia Central:}{10}{}%
+\contentsline {subsubsection}{\numberline {2.3.1}Media Aritmética ($\bar {x}$):}{10}{}%
+\contentsline {subsubsection}{\numberline {2.3.2}Mediana ($M_e$):}{10}{}%
+\contentsline {subsubsection}{\numberline {2.3.3}Moda ($M_o$):}{10}{}%
 \contentsline {section}{\numberline {3}26/03 - Ejercicios de Medidas de Tendencia Central}{11}{}%
 \contentsline {subsection}{\numberline {3.1}Ejercicios:}{11}{}%
 \contentsline {section}{\numberline {4}04/04 - Muestreo y Representatividad}{14}{}%

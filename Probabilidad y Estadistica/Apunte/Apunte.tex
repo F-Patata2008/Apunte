@@ -60,20 +60,30 @@
 \newpage % Start sections on a new page after ToC
 
 \section{14/03 - Conceptos Fundamentales de Estadística}
-\subsection{Materia}
-\textbf{Población:} % Simplificado el énfasis
+\subsection{Conceptos Basicos}
+\subsubsection{Población:} % Simplificado el énfasis
 Conjunto de todos los elementos que se quieren estudiar. Cuando la información deseada está disponible para todos los objetos de la población, lo llamamos \textbf{censo}. En la práctica es muy difícil o casi imposible realizar un censo.
 
-\textbf{Muestra:} % Simplificado el énfasis
+\subsubsection{Muestra:} % Simplificado el énfasis
 Subconjunto de la población que se mide u observa.
 
-\textbf{Parámetro:} % Simplificado el énfasis
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.85\textwidth]{muestra}
+    \caption{Representacion de la muestra dentro de la población.}
+    \label{fig:muestra}
+\end{figure}
+
+
+\subsubsection{Parámetro:} % Simplificado el énfasis
 Es una medición numérica que describe alguna característica de una población.
 
-\textbf{Estadístico (o estadígrafo):} % Simplificado el énfasis, añadido "o"
+\subsubsection{Estadístico (o estadígrafo):} % Simplificado el énfasis, añadido "o"
 Es una medición numérica que describe alguna característica de la muestra.
 
-\textbf{Variables cualitativas:} % Simplificado el énfasis
+\subsection{Tipos de Variables}
+
+\subsubsection{Variables cualitativas:} % Simplificado el énfasis
 \begin{itemize}
     \item Se describen mediante palabras o categorías.
     \item Se usan para categorizar a los individuos o para identificar.
@@ -82,13 +92,20 @@ Es una medición numérica que describe alguna característica de la muestra.
     \item Ejemplos: el color del cabello, el deporte favorito, la comida favorita, el lugar de nacimiento.
 \end{itemize}
 
-\textbf{Variables cuantitativas:} % Simplificado el énfasis
+\subsubsection{Variables cuantitativas:} % Simplificado el énfasis
 \begin{itemize}
     \item Se expresan mediante números, es decir, se pueden contar o medir.
     \item Permiten más operaciones matemáticas.
     \item Se pueden usar para conocer fenómenos o situaciones a través de la recolección y generación de números y datos.
     \item Ejemplos: la edad, los ingresos, el peso, la altura, la presión, la humedad o cantidad de hermanos.
 \end{itemize}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.58\textwidth]{variables}
+    \caption{}\label{fig:}
+\end{figure}
+
 
 \subsection{Ejercicios:}
 Para cada una de las siguientes situaciones, identifica la población de interés, la variable estadística, clasifícala, y entrega un ejemplo de cuál podría ser una posible muestra.
@@ -313,15 +330,46 @@ Cada unidad tiene una probabilidad conocida y no nula de ser seleccionada.
 
 \subsubsection{Muestreo Aleatorio Simple (M.A.S)}
 Cada posible muestra de tamaño $n$ tiene la misma probabilidad de ser elegida. Requiere un listado completo (marco muestral).
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{MAS}
+    \caption{Muestreo Aleatorio Simple}
+    \label{fig:MAS}
+\end{figure}
+
 
 \subsubsection{Muestreo Estratificado}
-Se usa cuando la población se puede dividir en subgrupos (estratos) internamente homogéneos. Se toma una muestra aleatoria de cada estrato. Es más preciso si hay baja variabilidad dentro de los estratos y alta variabilidad entre ellos.
+Se usa cuando la población se puede dividir en subgrupos (estratos) internamente homogéneos. Se toma una muestra aleatoria de cada estrato. Es más preciso si hay baja variabilidad dentro de los estratos y alta variabilidad entre ellos
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{MEP}
+    \caption{Muestreo Estratificado Proporcional}
+    \label{fig:MEP}
+\end{figure}
+
 
 \subsubsection{Muestreo por Conglomerados (Clusters)}
 Se usa cuando la población está dividida en grupos naturales (conglomerados). Se selecciona una muestra aleatoria de conglomerados y se analizan \textbf{todos} los individuos de los conglomerados elegidos. Es eficiente en costos, especialmente si los conglomerados son internamente heterogéneos.
 
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.65\textwidth]{MPC}
+    \caption{Muestreo Por Conglomerados}
+    \label{fig:MPC}
+\end{figure}
+
+
 \subsubsection{Muestreo Aleatorio Sistemático}
 Se elige un elemento al azar al principio y luego se seleccionan los demás a intervalos regulares ($k=N/n$) de una lista ordenada.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.6\textwidth]{MASIS}
+    \caption{Muestreo Aleatorio Sistemático}
+    \label{fig:MASIS}
+\end{figure}
+\newpage
 
 \subsection{Muestreos No Probabilísticos}
 La selección es subjetiva y no permite inferencia estadística formal.
@@ -329,16 +377,36 @@ La selección es subjetiva y no permite inferencia estadística formal.
 \subsubsection{Muestreo por Cuotas}
 Se fijan "cuotas" de individuos con ciertas características y el entrevistador los selecciona por conveniencia hasta llenar la cuota.
 
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{MPCU}
+    \caption{Muestreo por cuotas}
+    \label{fig:MPCU}
+\end{figure}
+
 \subsubsection{Muestreo Bola de Nieve}
 Los primeros individuos contactados ayudan a encontrar a otros, útil para poblaciones difíciles de localizar.
 
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{MBN}
+    \caption{Muestreo Bola de Nieve}
+    \label{fig:MBC}
+\end{figure}
+
 \subsubsection{Muestreo por Juicio o Conveniencia}
 La selección se basa en el juicio del investigador o en la facilidad de acceso a los sujetos.
-\bigskip
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.75\linewidth]{patata}
+    \includegraphics[width=0.75\textwidth]{MPJ}
+    \caption{Muestreo Por Juicio}
+    \label{fig:MPJ}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.35\linewidth]{patata}
     \caption{Patata para rellenar el espacio}
     \label{fig:patata}
 \end{figure}
@@ -749,6 +817,7 @@ Los números combinatorios, denotados como $\binom{n}{k}$, tienen propiedades ú
 \end{enumerate}
 
 \subsection{Demostraciones}
+\subsubsection{Propiedad 1: $\binom{n}{n} = \binom{n}{0} = 1$}
 La demostración se basa en la aplicación directa de la fórmula de la combinación, $\binom{n}{k} = \frac{n!}{k!(n-k)!}$, y en la definición matemática de que $0! = 1$.
 
 \vspace{1em}

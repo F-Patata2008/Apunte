@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.7.25)  11 AUG 2025 12:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.7.25)  12 AUG 2025 17:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -249,21 +249,33 @@ LaTeX Info: Redefining \% on input line 1.
 
 
 [4]
+<./images/muestra.png, id=40, 272.01625pt x 118.4425pt>
+File: ./images/muestra.png Graphic file (type png)
+<use ./images/muestra.png>
+Package pdftex.def Info: ./images/muestra.png  used on input line 72.
+(pdftex.def)             Requested size: 331.50238pt x 144.35143pt.
 
-[5]
 
-[6{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+[5 <./images/muestra.png>]
+<./images/variables.png, id=44, 385.44pt x 286.06876pt>
+File: ./images/variables.png Graphic file (type png)
+<use ./images/variables.png>
+Package pdftex.def Info: ./images/variables.png  used on input line 105.
+(pdftex.def)             Requested size: 226.20071pt x 167.8799pt.
 
-[7]
+
+[6 <./images/variables.png>]
+
+[7{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 
 [8]
-Overfull \hbox (2.53964pt too wide) in paragraph at lines 175--188
+
+[9]
+Overfull \hbox (2.53964pt too wide) in paragraph at lines 192--205
  [][] 
  []
 
 
-
-[9]
 
 [10]
 
@@ -272,85 +284,119 @@ Overfull \hbox (2.53964pt too wide) in paragraph at lines 175--188
 [12]
 
 [13]
+<./images/MAS.png, id=75, 403.5075pt x 277.035pt>
+File: ./images/MAS.png Graphic file (type png)
+<use ./images/MAS.png>
+Package pdftex.def Info: ./images/MAS.png  used on input line 335.
+(pdftex.def)             Requested size: 195.0pt x 133.8799pt.
+
 
 [14]
-<./images/patata.png, id=76, 220.825pt x 237.88875pt>
+<./images/MEP.png, id=79, 425.59pt x 271.0125pt>
+File: ./images/MEP.png Graphic file (type png)
+<use ./images/MEP.png>
+Package pdftex.def Info: ./images/MEP.png  used on input line 346.
+(pdftex.def)             Requested size: 195.0pt x 124.17516pt.
+
+
+[15 <./images/MAS.png> <./images/MEP.png>]
+<./images/MPC.png, id=83, 271.0125pt x 186.6975pt>
+File: ./images/MPC.png Graphic file (type png)
+<use ./images/MPC.png>
+Package pdftex.def Info: ./images/MPC.png  used on input line 357.
+(pdftex.def)             Requested size: 253.49762pt x 174.63818pt.
+<./images/MASIS.png, id=85, 330.23375pt x 137.51375pt>
+File: ./images/MASIS.png Graphic file (type png)
+<use ./images/MASIS.png>
+Package pdftex.def Info: ./images/MASIS.png  used on input line 368.
+(pdftex.def)             Requested size: 234.00238pt x 97.44449pt.
+
+
+[16 <./images/MPC.png> <./images/MASIS.png>]
+<./images/MPCU.png, id=90, 425.59pt x 263.98625pt>
+File: ./images/MPCU.png Graphic file (type png)
+<use ./images/MPCU.png>
+Package pdftex.def Info: ./images/MPCU.png  used on input line 382.
+(pdftex.def)             Requested size: 195.0pt x 120.9558pt.
+<./images/MBN.png, id=91, 417.56pt x 310.15875pt>
+File: ./images/MBN.png Graphic file (type png)
+<use ./images/MBN.png>
+Package pdftex.def Info: ./images/MBN.png  used on input line 392.
+(pdftex.def)             Requested size: 195.0pt x 144.84703pt.
+<./images/MPJ.png, id=92, 471.7625pt x 303.1325pt>
+File: ./images/MPJ.png Graphic file (type png)
+<use ./images/MPJ.png>
+Package pdftex.def Info: ./images/MPJ.png  used on input line 402.
+(pdftex.def)             Requested size: 292.5pt x 187.94945pt.
+
+
+[17 <./images/MPCU.png> <./images/MBN.png>]
+<./images/patata.png, id=96, 220.825pt x 237.88875pt>
 File: ./images/patata.png Graphic file (type png)
 <use ./images/patata.png>
-Package pdftex.def Info: ./images/patata.png  used on input line 341.
-(pdftex.def)             Requested size: 292.5pt x 315.11758pt.
+Package pdftex.def Info: ./images/patata.png  used on input line 409.
+(pdftex.def)             Requested size: 136.50238pt x 147.05753pt.
 
 
-[15 <./images/patata.png>]
-
-[16]
-
-[17]
-
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 419--421
-
- []
-
-
+[18 <./images/MPJ.png> <./images/patata.png>]
 
 [19]
-Underfull \hbox (badness 10000) in paragraph at lines 423--425
-
- []
-
-
 
 [20]
 
 [21]
+Underfull \hbox (badness 10000) in paragraph at lines 487--489
+
+ []
+
+
 
 [22]
+Underfull \hbox (badness 10000) in paragraph at lines 491--493
+
+ []
+
+
 
 [23]
-Overfull \hbox (6.10095pt too wide) in paragraph at lines 519--519
+
+[24]
+
+[25]
+
+[26]
+Overfull \hbox (6.10095pt too wide) in paragraph at lines 587--587
 []\T1/cmr/bx/n/17.28 30/05 - Me-di-das de Po-si-ción: Cuar-ti-les, Quin-
  []
 
 
 
-[24]
-Overfull \hbox (2.07619pt too wide) in paragraph at lines 540--540
+[27]
+Overfull \hbox (2.07619pt too wide) in paragraph at lines 608--608
 []\T1/cmr/bx/n/17.28 11/06 - Prin-ci-pios Fun-da-men-ta-les de la Com-
  []
 
 
 
-[25]
-
-[26]
-
-[27]
-Underfull \hbox (badness 10000) in paragraph at lines 632--633
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 648--649
-
- []
-
-
-
 [28]
-Overfull \hbox (12.08945pt too wide) in paragraph at lines 687--688
-[]\T1/cmr/m/n/12 ¾Se per-mi-te re-pe-tir ele-men-tos? $\OMS/cmsy/m/n/12 !$ \T1/cmr/m/n/12 Com-bi-na-ción con re-pe-ti-ción: $\OML/cmm/m/it/12 CR[] \OT1/cmr/m/n/12 =
- []
-
-
 
 [29]
 
 [30]
+Underfull \hbox (badness 10000) in paragraph at lines 700--701
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 716--717
+
+ []
+
+
 
 [31]
-Overfull \hbox (19.82716pt too wide) in paragraph at lines 737--737
-[]\T1/cmr/bx/n/17.28 11/08 - Pro-pie-da-des de Com-bi-na-to-ria y Trián-
+Overfull \hbox (12.08945pt too wide) in paragraph at lines 755--756
+[]\T1/cmr/m/n/12 ¾Se per-mi-te re-pe-tir ele-men-tos? $\OMS/cmsy/m/n/12 !$ \T1/cmr/m/n/12 Com-bi-na-ción con re-pe-ti-ción: $\OML/cmm/m/it/12 CR[] \OT1/cmr/m/n/12 =
  []
 
 
@@ -358,24 +404,37 @@ Overfull \hbox (19.82716pt too wide) in paragraph at lines 737--737
 [32]
 
 [33]
-<./images/pascal.png, id=142, 522.95375pt x 346.29375pt>
+
+[34]
+Overfull \hbox (19.82716pt too wide) in paragraph at lines 805--805
+[]\T1/cmr/bx/n/17.28 11/08 - Pro-pie-da-des de Com-bi-na-to-ria y Trián-
+ []
+
+
+
+[35]
+
+[36]
+<./images/pascal.png, id=163, 522.95375pt x 346.29375pt>
 File: ./images/pascal.png Graphic file (type png)
 <use ./images/pascal.png>
-Package pdftex.def Info: ./images/pascal.png  used on input line 788.
+Package pdftex.def Info: ./images/pascal.png  used on input line 857.
 (pdftex.def)             Requested size: 195.0pt x 129.12535pt.
 
 
-[34 <./images/pascal.png>]
+[37 <./images/pascal.png>]
 
-[35]
-<./images/Gat.png, id=149, 200.75pt x 200.75pt>
+[38]
+<./images/Gat.png, id=170, 200.75pt x 200.75pt>
 File: ./images/Gat.png Graphic file (type png)
 <use ./images/Gat.png>
-Package pdftex.def Info: ./images/Gat.png  used on input line 829.
+Package pdftex.def Info: ./images/Gat.png  used on input line 898.
 (pdftex.def)             Requested size: 292.5pt x 292.54424pt.
 
 
-[36 <./images/Gat.png>] (./Apunte.aux
+[39 <./images/Gat.png>]
+
+[40] (./Apunte.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 )
@@ -385,18 +444,18 @@ L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4838 strings out of 475068
- 73029 string characters out of 5764374
- 474316 words of memory out of 5000000
- 27798 multiletter control sequences out of 15000+600000
+ 4955 strings out of 475068
+ 75277 string characters out of 5764374
+ 473529 words of memory out of 5000000
+ 27915 multiletter control sequences out of 15000+600000
  580471 words of font info for 85 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
  57i,11n,65p,889b,454s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbi1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbi1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1728.pfb>
-Output written on Apunte.pdf (37 pages, 527622 bytes).
+Output written on Apunte.pdf (41 pages, 1521823 bytes).
 PDF statistics:
- 265 PDF objects out of 1000 (max. 8388607)
- 164 compressed objects within 2 object streams
+ 288 PDF objects out of 1000 (max. 8388607)
+ 173 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 

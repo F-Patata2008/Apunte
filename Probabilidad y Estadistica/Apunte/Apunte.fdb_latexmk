@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1754930771.45023 "Apunte.tex" "Apunte.pdf" "Apunte" 1754930772.93343 0
+["pdflatex"] 1755034125.88195 "Apunte.tex" "Apunte.pdf" "Apunte" 1755034127.83352 0
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1742685315 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1742685315 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1742685315 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -98,14 +98,23 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1742685315 42087 b0f9697c952c8f5a8eede4134282cb0d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1753478620 5311557 9da84c45f5b388655502706482323571 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1753482593 2081320 31ab6e5f145a6c9be157ecbfebc5af70 ""
-  "Apunte.aux" 1754930772.69777 8975 f98a2e1b905b64ab7ffc156bfaf3289b "pdflatex"
-  "Apunte.tex" 1754930769.88269 48842 99023ea70eb5a1dd0630bd63d55aa9e7 ""
-  "Apunte.toc" 1754930772.70377 5517 3ab525ca925bb2c14041164ffc71d19e "pdflatex"
+  "Apunte.aux" 1755034127.50609 11587 85ec5fec3abbbf9986300efa2c3ef8ba "pdflatex"
+  "Apunte.tex" 1755034123.19591 50437 d3bcc08facfdd5adf988df548b8bb4a3 ""
+  "Apunte.toc" 1755034127.51109 6202 ed5241be5047854a79c6ab7188ee0568 "pdflatex"
   "images/Gat.png" 1754952206 5909 08ee0e71bac1ef14ed650e4f47d7d9aa ""
   "images/IN.png" 1753454929.56759 7949 cc26bed184e5e1103c6a6f769f5412fa ""
+  "images/MAS.png" 1755032422.05575 127399 4f2f0560c671bdbdc7aa00cf0f1969a7 ""
+  "images/MASIS.png" 1755033079.39973 74242 5d209487991dcf43dd020d7984cc94ba ""
+  "images/MBN.png" 1755033911.90926 72597 9fc5d88db565ada3ebbc0b540eccc682 ""
+  "images/MEP.png" 1755032656.0873 95432 ba3388efc556fa6450e9a020f6e5e901 ""
+  "images/MPC.png" 1755032930.79745 89364 086642bd5ec02ce4227cd3f81da25a86 ""
+  "images/MPCU.png" 1755033851.66518 126704 dcf08e584498b9b8aa0a83021b334e37 ""
+  "images/MPJ.png" 1755034005.12296 181630 dfb3d2e1bbd04b55a2bb2c28ebc8d3bf ""
   "images/gatito.png" 1753454929.56945 9212 9561eeb358642cf722040fc98250ce16 ""
+  "images/muestra.png" 1755031558.66666 34079 124e5439d89dc7e1a7956fdb59cb355e ""
   "images/pascal.png" 1754928959.96307 39296 3dccd1261bc1f1e101239ac3834a8780 ""
   "images/patata.png" 1753454929.56945 5350 59d00e6702605223625b39f8e3256329 ""
+  "images/variables.png" 1755031885.10339 66226 4876dee54b4d9b136383a0ab19ce9782 ""
   (generated)
   "Apunte.aux"
   "Apunte.log"

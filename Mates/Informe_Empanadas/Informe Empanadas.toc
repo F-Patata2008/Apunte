@@ -1,0 +1,16 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Resumen}{3}{}%
+\contentsline {section}{\numberline {2}Introducción}{3}{}%
+\contentsline {subsection}{\numberline {2.1}Objetivos del Negocio:}{3}{}%
+\contentsline {section}{\numberline {3}Desarrollo}{5}{}%
+\contentsline {subsection}{\numberline {3.1}Tabla de Costos de Ingredientes por Proveedor}{5}{}%
+\contentsline {subsection}{\numberline {3.2}Cotizaciones de Ingredientes (Imágenes)}{7}{}%
+\contentsline {subsection}{\numberline {3.3}Facturas e IVA}{11}{}%
+\contentsline {subsubsection}{\numberline {3.3.1}Lista de Compras Detallada y Costos Seleccionados}{11}{}%
+\contentsline {subsubsection}{\numberline {3.3.2}Factura de Compra (Simulada)}{12}{}%
+\contentsline {subsection}{\numberline {3.4}Definición de Precios y Proyección de Ingresos}{13}{}%
+\contentsline {subsubsection}{\numberline {3.4.1}Costos Unitarios y Precios de Venta}{13}{}%
+\contentsline {subsubsection}{\numberline {3.4.2}Proyección de Ingresos y Cálculo de IVA Débito Fiscal}{14}{}%
+\contentsline {subsubsection}{\numberline {3.4.3}Cálculo de IVA a Pagar al Fisco}{14}{}%
+\contentsline {subsection}{\numberline {3.5}Cálculo de Ganancias y Viabilidad Inicial}{14}{}%
+\contentsline {section}{\numberline {4}Conclusiones}{15}{}%

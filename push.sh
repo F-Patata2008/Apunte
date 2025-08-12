@@ -20,7 +20,7 @@ timestamp="$(date '+%Y-%m-%d %H:%M:%S')"
   read commit_message
 
   if [[ -z "$commit_message" ]]; then
-    commit_message="Auto-commit: $timestamp"
+    commit_message="Patata: $timestamp"
   fi
 
   echo "Haciendo commit..."

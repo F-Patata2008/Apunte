@@ -72,4 +72,4 @@
 \contentsline {subsection}{\numberline {12.3}Triángulo de Pascal y Binomio de Newton}{37}{}%
 \contentsline {subsection}{\numberline {12.4}Conjunto Potencia}{38}{}%
 \contentsline {subsection}{\numberline {12.5}Ejercicios}{38}{}%
-\contentsline {section}{\numberline {13}}{40}{}%
+\contentsline {section}{\numberline {13}13/08 - }{40}{}%

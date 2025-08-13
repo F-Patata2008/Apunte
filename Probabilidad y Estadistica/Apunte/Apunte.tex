@@ -729,38 +729,50 @@ Evento B: b maneras
         \subsubsection*{Con repetición}
             \[VR_k^n = n^k \]
     \subsection{Combinaciones} Corresponde a la cantiadad de grupos (o subconjuntos) de $k$ ekemnots de un total de n elemntos. 
-        \[C_k^n = \frac{V_k^n}{k!} = \frac{n!}{(n - k)! \cdot k!} \]
+    \[C_k^n = \binom{n}{k} = \frac{V_k^n}{k!} = \frac{n!}{(n - k)! \cdot k!} \]
 
     \subsection*{¿Cómo Diferenciar?}
 Para determinar qué fórmula usar, sigue este diagrama de flujo:
 
 % CORREGIDO: Se reestructuró la lista para evitar el error "Too deeply nested".
 % Se simplificaron las opciones de 'enumerate'.
-\begin{enumerate}[label=\bfseries Paso \arabic*:, wide]
+\begin{enumerate}[label=\bfseries, wide]
     \item \textbf{¿Importa el orden de los elementos seleccionados?}
     \begin{itemize}
-        \item[\bfseries a)] \textbf{Sí, el orden importa $\rightarrow$ PERMUTACIÓN / VARIACIÓN}
+        \item[\bfseries a)] \textbf{Sí, el orden importa $\rightarrow$ PERMUTACIÓN o VARIACIÓN}
             \begin{itemize}
-                \item \textbf{¿Se usan TODOS los elementos ($k=n$)? $\rightarrow$ PERMUTACIÓN}
+                \item \textbf{¿Se usan TODOS los elementos ($k=n$)? $\rightarrow$ Es una PERMUTACIÓN.}
+                \noindent Ahora, distingue el tipo de arreglo:
                     \begin{itemize}
-                        \item ¿Hay elementos repetidos? (ej. palabra C-A-S-A) $\rightarrow$ Permutación con repetición: $P_{n_1, \dots, n_k}^n = \frac{n!}{n_1! \dots n_k!}$
-                        \item ¿Son todos los elementos distintos? $\rightarrow$ Permutación simple: $P_n = n!$
+                        \item \textbf{Arreglo Lineal (en una fila):}
+                            \begin{itemize}
+                                \item Si todos los elementos son distintos $\rightarrow$ \textbf{Permutación Simple}: 
+                                      $ P_n = n! $
+                                \item Si hay elementos repetidos (ej. palabra C-A-S-A) $\rightarrow$ \textbf{Permutación con Repetición}: 
+                                      $ P_{n_1, \dots, n_k}^n = \frac{n!}{n_1! \dots n_k!} $
+                            \end{itemize}
+                        
+                        \item \textbf{Arreglo Circular (en una mesa, un llavero, etc.):}
+                            \begin{itemize}
+                                \item Asume que los elementos son distintos y las rotaciones no cuentan como un nuevo orden.
+                                \item $\rightarrow$ \textbf{Permutación Circular}: $ PC_n = (n-1)! $
+                            \end{itemize}
                     \end{itemize}
-                \item \textbf{¿Se elige un SUBCONJUNTO ($k<n$)? $\rightarrow$ VARIACIÓN}
+
+                \item \textbf{¿Se elige un SUBCONJUNTO ($k<n$)? $\rightarrow$ Es una VARIACIÓN.}
                     \begin{itemize}
-                        \item ¿Se permite repetir elementos? $\rightarrow$ Variación con repetición: $VR_k^n = n^k$
-                        \item ¿No se permite repetir? $\rightarrow$ Variación simple: $V_k^n = \frac{n!}{(n-k)!}$
+                        \item ¿Se permite repetir elementos? $\rightarrow$ \textbf{Variación con Repetición}: $ VR_k^n = n^k $
+                        \item ¿No se permite repetir? $\rightarrow$ \textbf{Variación Simple}: $ V_k^n = \frac{n!}{(n-k)!} $
                     \end{itemize}
             \end{itemize}
-        \item[\bfseries b)] \textbf{No, el orden NO importa $\rightarrow$ COMBINACIÓN}
+        
+        \item[\bfseries b)] \textbf{No, el orden NO importa $\rightarrow$ Es una COMBINACIÓN}
             \begin{itemize}
-                \item ¿Se permite repetir elementos? $\rightarrow$ Combinación con repetición: $CR_k^n = \binom{n+k-1}{k}$
-                \item ¿No se permite repetir? $\rightarrow$ Combinación simple: $C_k^n = \binom{n}{k} = \frac{n!}{k!(n-k)!}$
+                \item ¿Se permite repetir elementos? $\rightarrow$ \textbf{Combinación con Repetición}: $CR_k^n = \binom{n+k-1}{k}$
+                \item ¿No se permite repetir? $\rightarrow$ \textbf{Combinación Simple}: $C_k^n = \binom{n}{k} = \frac{n!}{k!(n-k)!}$
             \end{itemize}
     \end{itemize}
-\end{enumerate}
-
-\subsection*{Ejercicios Resueltos}
+\end{enumerate}\subsection*{Ejercicios Resueltos}
 Aquí tienes los ejercicios con sus soluciones y el razonamiento para cada uno:
 
 \begin{enumerate}[leftmargin=*,label=\arabic*.]
@@ -905,7 +917,50 @@ La \textbf{cardinalidad} (número de elementos) del conjunto potencia se puede c
 
 \newpage
 
-\section{}
+\section{13/08 - }
+%Esquema sobre si permuatcion, varaicion o Combinacion
+\begin{enumerate}[label=\bfseries, wide]
+    \item \textbf{¿Importa el orden de los elementos seleccionados?}
+    \begin{itemize}
+        \item[\bfseries a)] \textbf{Sí, el orden importa $\rightarrow$ PERMUTACIÓN o VARIACIÓN}
+            \begin{itemize}
+                \item \textbf{¿Se usan TODOS los elementos ($k=n$)? $\rightarrow$ Es una PERMUTACIÓN.}
+                \noindent Ahora, distingue el tipo de arreglo:
+                    \begin{itemize}
+                        \item \textbf{Arreglo Lineal (en una fila):}
+                            \begin{itemize}
+                                \item Si todos los elementos son distintos $\rightarrow$ \textbf{Permutación Simple}: 
+                                      $ P_n = n! $
+                                \item Si hay elementos repetidos (ej. palabra C-A-S-A) $\rightarrow$ \textbf{Permutación con Repetición}: 
+                                      $ P_{n_1, \dots, n_k}^n = \frac{n!}{n_1! \dots n_k!} $
+                            \end{itemize}
+                        
+                        \item \textbf{Arreglo Circular (en una mesa, un llavero, etc.):}
+                            \begin{itemize}
+                                \item Asume que los elementos son distintos y las rotaciones no cuentan como un nuevo orden.
+                                \item $\rightarrow$ \textbf{Permutación Circular}: $ PC_n = (n-1)! $
+                            \end{itemize}
+                    \end{itemize}
+
+                \item \textbf{¿Se elige un SUBCONJUNTO ($k<n$)? $\rightarrow$ Es una VARIACIÓN.}
+                    \begin{itemize}
+                        \item ¿Se permite repetir elementos? $\rightarrow$ \textbf{Variación con Repetición}: $ VR_k^n = n^k $
+                        \item ¿No se permite repetir? $\rightarrow$ \textbf{Variación Simple}: $ V_k^n = \frac{n!}{(n-k)!} $
+                    \end{itemize}
+            \end{itemize}
+        
+        \item[\bfseries b)] \textbf{No, el orden NO importa $\rightarrow$ Es una COMBINACIÓN}
+            \begin{itemize}
+                \item ¿Se permite repetir elementos? $\rightarrow$ \textbf{Combinación con Repetición}: $CR_k^n = \binom{n+k-1}{k}$
+                \item ¿No se permite repetir? $\rightarrow$ \textbf{Combinación Simple}: $C_k^n = \binom{n}{k} = \frac{n!}{k!(n-k)!}$
+            \end{itemize}
+    \end{itemize}
+\end{enumerate}
+
+
+%hacemos Ejercicos sobre la guía de combianciones/permtacuiosn y varaicion
+
+
 
 
 \end{document}

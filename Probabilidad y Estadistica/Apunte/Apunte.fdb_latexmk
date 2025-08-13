@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1755036024.66912 "Apunte.tex" "Apunte.pdf" "Apunte" 1755036027.00968 0
+["pdflatex"] 1755098595.6619 "Apunte.tex" "Apunte.pdf" "Apunte" 1755098597.71343 0
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1742685315 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1742685315 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1742685315 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -23,6 +23,7 @@
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecti1200.tfm" 1742685315 3072 8b5a64dc91775463bc95e2d818524028 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecti1728.tfm" 1742685315 3072 c4e6e6654c343ab96bdbac99d696869b ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1742685315 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
+  "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcti1728.tfm" 1742685315 2048 5f7f9806cad602742ed9cc9918b074c8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1742685315 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1742685315 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1742685315 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -98,9 +99,9 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1742685315 42087 b0f9697c952c8f5a8eede4134282cb0d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1753478620 5311557 9da84c45f5b388655502706482323571 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1753482593 2081320 31ab6e5f145a6c9be157ecbfebc5af70 ""
-  "Apunte.aux" 1755036026.54765 12214 7c311f9c9d6bff623f33589b228c0636 "pdflatex"
-  "Apunte.tex" 1755036024.04131 50157 87ec097606d6d3dc33a9b34be5e970d2 ""
-  "Apunte.toc" 1755036026.55466 6623 ccdd4e4e99dcb6cb2fb4482962deae08 "pdflatex"
+  "Apunte.aux" 1755098597.39538 12222 d8f4ba5edb2bfcf1f3a425ba3e61ec48 "pdflatex"
+  "Apunte.tex" 1755098594.55997 53562 ffda2327339af2a498a232d6fd768cc4 ""
+  "Apunte.toc" 1755098597.40539 6631 eb8d3b0ca1801d95ca7c27bd91e0765b "pdflatex"
   "images/Gat.png" 1754952206 5909 08ee0e71bac1ef14ed650e4f47d7d9aa ""
   "images/IN.png" 1753454929.56759 7949 cc26bed184e5e1103c6a6f769f5412fa ""
   "images/MAS.png" 1755032422.05575 127399 4f2f0560c671bdbdc7aa00cf0f1969a7 ""

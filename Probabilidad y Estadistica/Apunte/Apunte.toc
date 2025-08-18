@@ -72,7 +72,5 @@
 \contentsline {subsection}{\numberline {12.3}Triángulo de Pascal y Binomio de Newton}{37}{}%
 \contentsline {subsection}{\numberline {12.4}Conjunto Potencia}{38}{}%
 \contentsline {subsection}{\numberline {12.5}Ejercicios}{38}{}%
-\contentsline {section}{\numberline {13}13/08 - }{40}{}%
-\contentsline {subsection}{\numberline {13.1}Esquema de Diferenciacion}{40}{}%
-\contentsline {section}{\numberline {14}18/08 - Repaso Para Prueba}{41}{}%
-\contentsline {subsection}{\numberline {14.1}Ejercicios}{41}{}%
+\contentsline {section}{\numberline {13}18/08 - Repaso Para Prueba}{40}{}%
+\contentsline {subsection}{\numberline {13.1}Ejercicios}{40}{}%

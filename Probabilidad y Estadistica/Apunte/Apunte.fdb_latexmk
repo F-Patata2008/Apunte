@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1755531629.34658 "Apunte.tex" "Apunte.pdf" "Apunte" 1755531631.22168 0
+["pdflatex"] 1755533305.14749 "Apunte.tex" "Apunte.pdf" "Apunte" 1755533307.17595 0
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1742685315 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1742685315 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1742685315 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -99,9 +99,9 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1742685315 42087 b0f9697c952c8f5a8eede4134282cb0d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1755391423 5311557 9da84c45f5b388655502706482323571 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1755391400 2081318 cecf0ae638810bb84727d8c45e454026 ""
-  "Apunte.aux" 1755531630.94138 12563 2c140c57f1d1da5e444159a8e51f0bb0 "pdflatex"
-  "Apunte.tex" 1755531628.05033 53790 b6d0ad61d7becf854a53ea5fc377ea46 ""
-  "Apunte.toc" 1755531630.94538 6849 adafa5919b01356407802e1f6ad02716 "pdflatex"
+  "Apunte.aux" 1755533306.88662 12345 e72cfa64f1f4a794654d374d36ea32c3 "pdflatex"
+  "Apunte.tex" 1755533304.5786 51669 0022639988949dfc399f91bb7f88fedf ""
+  "Apunte.toc" 1755533306.89362 6713 e216f51621c8151e4ead7545f47c9cd7 "pdflatex"
   "images/Gat.png" 1754952206 5909 08ee0e71bac1ef14ed650e4f47d7d9aa ""
   "images/IN.png" 1753454929.56759 7949 cc26bed184e5e1103c6a6f769f5412fa ""
   "images/MAS.png" 1755032422.05575 127399 4f2f0560c671bdbdc7aa00cf0f1969a7 ""

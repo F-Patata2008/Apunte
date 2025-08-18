@@ -967,11 +967,13 @@ La \textbf{cardinalidad} (número de elementos) del conjunto potencia se puede c
 \subsection{Ejercicios}
 \begin{enumerate}
 	\item Las cifras que componen un número son 1, 2, 3, 4 y 5. ¿Cuátos números diferentes de 5 cifras, menores de $54.000$, pueden formarse sin que se repita ninguna de las cifras? \\
-        $4 \times 4!$
+        $4 \times 4! = 96$ $1 \times 3 \times 3! = 18 $ Total 114, ya que los 2 casos son excuyentes, (menores a 50.000, y mayores a 50k, y menores a 54k)
 	\item Con cuator oficiales y 8 soldados, calcualr el numero de grupos de 6 miembors que peuden formarse de manera que en cada grupo haya:
 	      \begin{enumerate}
-		      \item Un solo oficial
-		      \item Como mínimo un oficial
+		      \item Un solo oficial \\
+                  $\binom{4}{1} \times \binom{8}{5} = \frac{4!}{3!} \times \frac{8!}{5! \times 3!} = 4 \times 8 \times 7 = 224 $
+		      \item Como mínimo un oficial \\
+                  $\binom{12}{6} - \binom{8}{6} $
 	      \end{enumerate}
 	\item ¿De cuántas maneras pueden colocarse en un circulo 7 personas? \\ 
         $PC_7 = (7-1)! = 6! = 720$

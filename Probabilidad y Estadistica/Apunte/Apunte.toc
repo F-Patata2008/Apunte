@@ -73,4 +73,4 @@
 \contentsline {subsection}{\numberline {12.4}Conjunto Potencia}{38}{}%
 \contentsline {subsection}{\numberline {12.5}Ejercicios}{38}{}%
 \contentsline {section}{\numberline {13}18/08 - Repaso Para Prueba}{40}{}%
-\contentsline {subsection}{\numberline {13.1}Ejercicios}{40}{}%
+\contentsline {subsection}{\numberline {13.1}Ejercicios Resueltos}{40}{}%

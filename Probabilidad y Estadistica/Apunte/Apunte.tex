@@ -918,31 +918,70 @@ La \textbf{cardinalidad} (número de elementos) del conjunto potencia se puede c
 
 
 \section{18/08 - Repaso Para Prueba}
-\subsection{Ejercicios}
+\subsection{Ejercicios Resueltos}
 \begin{enumerate}
-	\item Las cifras que componen un número son 1, 2, 3, 4 y 5. ¿Cuátos números diferentes de 5 cifras, menores de $54.000$, pueden formarse sin que se repita ninguna de las cifras? \\
-        $4 \times 4! = 96$ $1 \times 3 \times 3! = 18 $ Total 114, ya que los 2 casos son excuyentes, (menores a 50.000, y mayores a 50k, y menores a 54k)
-	\item Con cuator oficiales y 8 soldados, calcualr el numero de grupos de 6 miembors que peuden formarse de manera que en cada grupo haya:
-	      \begin{enumerate}
-		      \item Un solo oficial \\
-                  $\binom{4}{1} \times \binom{8}{5} = \frac{4!}{3!} \times \frac{8!}{5! \times 3!} = 4 \times 8 \times 7 = 224 $
-		      \item Como mínimo un oficial \\
-                  $\binom{12}{6} - \binom{8}{6} $
-	      \end{enumerate}
-	\item ¿De cuántas maneras pueden colocarse en un circulo 7 personas? \\ 
-        $PC_7 = (7-1)! = 6! = 720$
-	\item En una estantería hay dos obras de 3 volúmenes cada una y otras 2 de de 2 volúmenes cada una, Hallar el número total de formas en que peuden colocarse los 10 libros en un mismo estante, sin dejar separados los diversos volumenes de una misma obra:
-	      \begin{enumerate}
-		      \item Ordenados en cualquier orden \\
-                  $4! \times 3! \times 3! \times 2! \times 2! = 24 \times 4 \times 36 = 96 \times 36 = 3456$
-		      \item Ordenados en orden Ascendente \\
-                  $4! = 24$
-	      \end{enumerate}
-	\item Se tienen 7 libros de estadística y 3 de informatica, ¿De cuantas maneras peuden colocarse en un estante cuatro librso de estadística y uno de informatica, si este ultimo debe estar siempre en el centro? \\
-        $3 \times \frac{7!}{3!} = 7 \times 6 \times 5 \times 4 \times 3 = 42 \times 60 = 2520 $
-    \item ¿Cuantas ordenaciones pueden formarse con las letras de la expresion $a^3b^2c^4$ cuando esta dessarrollada? \\
-        $\frac{9!}{3! \times 2! \times 4!} = \frac{9 \times 8 \times 7 \times 6 \times 5}{6 \times 2} = 36 \times 35 = 1260 $
+\item \textbf{Las cifras que componen un número son 1, 2, 3, 4 y 5. ¿Cuántos números diferentes de 5 cifras, menores de 54,000, pueden formarse sin que se repita ninguna de las cifras?}
+    
+\textit{Solución:} Se divide el problema en dos casos mutuamente excluyentes.
+\begin{itemize}
+    \item \textbf{Caso 1: El número empieza en 1, 2, 3 o 4.}
+    Hay 4 opciones para la primera cifra. Las 4 cifras restantes se pueden permutar de $4!$ maneras.
+    \[ 4 \times 4! = 4 \times 24 = 96 \text{ números.} \]
+    \item \textbf{Caso 2: El número empieza en 5.}
+    La primera cifra es 5 (1 opción). La segunda cifra debe ser menor que 4 (es decir, 1, 2 o 3), lo que nos da 3 opciones. Las 3 cifras restantes se permutan de $3!$ maneras.
+    \[ 1 \times 3 \times 3! = 3 \times 6 = 18 \text{ números.} \]
+\end{itemize}
+\textbf{Total:} Como los casos son excluyentes, sumamos los resultados: $96 + 18 = 114$.
+
+\item \textbf{Con cuatro oficiales y 8 soldados, calcular el número de grupos de 6 miembros que pueden formarse de manera que en cada grupo haya:}
+\begin{enumerate}
+    \item \textbf{Un solo oficial.}
+    
+    \textit{Solución:} Se debe elegir 1 oficial de 4 Y 5 soldados de 8.
+    \[ \binom{4}{1} \times \binom{8}{5} = 4 \times \frac{8!}{5!(8-5)!} = 4 \times 56 = 224 \text{ grupos.} \]
+
+    \item \textbf{Como mínimo un oficial.}
+
+    \textit{Solución:} Se usa el método del complemento: Total de grupos menos los grupos sin oficiales.
+    \begin{itemize}
+        \item Total de grupos: $\binom{12}{6} = \frac{12!}{6!6!} = 924$.
+        \item Grupos sin oficiales (todos soldados): $\binom{8}{6} = \frac{8!}{6!2!} = 28$.
+    \end{itemize}
+    \[ \text{Total} = 924 - 28 = 896 \text{ grupos.} \]
 \end{enumerate}
 
+\item \textbf{¿De cuántas maneras pueden colocarse en un círculo 7 personas?}
+
+\textit{Solución:} Es una permutación circular de 7 elementos.
+\[ PC_7 = (7-1)! = 6! = 720 \text{ maneras.} \]
+
+\item \textbf{En una estantería hay dos obras de 3 volúmenes cada una y otras dos de 2 volúmenes cada una. Hallar el número total de formas en que pueden colocarse los 10 libros en un estante, sin dejar separados los volúmenes de una misma obra:}
+\begin{enumerate}
+    \item \textbf{Ordenados en cualquier orden.}
+
+    \textit{Solución:} Se consideran las 4 obras como 4 "bloques" que se pueden permutar. Luego, se permutan los volúmenes dentro de cada bloque.
+    \[ (\text{Permutar bloques}) \times (\text{Permutar volúmenes internos}) \]
+    \[ 4! \times (3! \times 3! \times 2! \times 2!) = 24 \times (6 \times 6 \times 2 \times 2) = 3,456 \text{ formas.} \]
+
+    \item \textbf{Ordenados en orden Ascendente.}
+
+    \textit{Solución:} El orden interno de los volúmenes está fijo (solo 1 manera por obra). Solo se permutan los 4 bloques.
+    \[ 4! \times (1 \times 1 \times 1 \times 1) = 24 \text{ formas.} \]
+\end{enumerate}
+
+\item \textbf{Se tienen 7 libros de estadística y 3 de informática. ¿De cuántas maneras pueden colocarse en un estante cuatro libros de estadística y uno de informática, si este último debe estar siempre en el centro?}
+
+\textit{Solución:} Se llenan las 5 posiciones. El centro se llena primero con un libro de informática (3 opciones). Los 4 lugares restantes se llenan con 4 de los 7 libros de estadística (una variación).
+\[ (\text{Opciones para el centro}) \times (\text{Variación para los otros 4 puestos}) \]
+\[ 3 \times V_4^7 = 3 \times \frac{7!}{(7-4)!} = 3 \times (7 \cdot 6 \cdot 5 \cdot 4) = 3 \times 840 = 2,520 \text{ maneras.} \]
+
+\item \textbf{¿Cuántas ordenaciones pueden formarse con las letras de la expresión $a^3b^2c^4$ cuando está desarrollada?}
+
+\textit{Solución:} La expresión desarrollada es `aaabbcccc`. Es una permutación con repetición de 9 elementos, donde los elementos se repiten 3, 2 y 4 veces.
+\[ P_{3,2,4}^{9} = \frac{9!}{3! \cdot 2! \cdot 4!} = \frac{362,880}{6 \cdot 2 \cdot 24} = \frac{362,880}{288} = 1,260 \text{ ordenaciones.} \]
+
+  
+
+\end{enumerate}
 
 \end{document}

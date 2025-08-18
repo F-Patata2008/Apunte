@@ -8,51 +8,50 @@
 \usepackage{tabularx}
 \usepackage{enumitem}
 \renewcommand{\arraystretch}{1.5} % Incrementa el espaciado vertical
-\graphicspath{ {./images/}} 
+\graphicspath{ {./images/}}
 
 \begin{document}
 \begin{titlepage}
-    \centering
-    % NOTA: He asumido que 'IN.png' es el logo correcto.
-    \includegraphics[width=2cm]{IN}\\[2cm] 
-    \textsc{\LARGE  Instituto Nacional General José Miguel Carrera}\\[0.5cm]
-    \textsc{\Large Departamento de Matemáticas}\\[1.5cm] % Corregido: Matemáticas
-    
-    \rule{\textwidth}{1.5pt}\vspace{0.4cm}
-    {\Huge \bfseries Apunte Completo: \\[0.5cm] Probabilidad y Estadística}\\[0.4cm] % Corregido: Estadística
-    \rule{\textwidth}{1.5pt}\\[1.5cm]
-    
-    {\Large \textit{ Probabilidad y Estadística - Sección 4° Medio 2025}}\\[2cm] % Corregido: Estadística
-    
-    \begin{minipage}{0.45\textwidth}
-        \begin{flushleft} \large
-            \textbf{Autor:}\\ 
-            Felipe Colli Olea
-        \end{flushleft}
-    \end{minipage}
-    \hfill
-    \begin{minipage}{0.45\textwidth}
-        \begin{flushright} \large
-            \textbf{Profesor:}\\
-            Sergio Díaz
-        \end{flushright}
-    \end{minipage}
+	\centering
+	\includegraphics[width=2cm]{IN}\\[2cm]
+	\textsc{\LARGE  Instituto Nacional General José Miguel Carrera}\\[0.5cm]
+	\textsc{\Large Departamento de Matemáticas}\\[1.5cm] % Corregido: Matemáticas
 
-    \vfill
-    
-    {\large 2 de julio de 2025}
+	\rule{\textwidth}{1.5pt}\vspace{0.4cm}
+	{\Huge \bfseries Apunte Completo: \\[0.5cm] Probabilidad y Estadística}\\[0.4cm] % Corregido: Estadística
+	\rule{\textwidth}{1.5pt}\\[1.5cm]
+
+	{\Large \textit{ Probabilidad y Estadística - Sección 4° Medio 2025}}\\[2cm] % Corregido: Estadística
+
+	\begin{minipage}{0.45\textwidth}
+		\begin{flushleft} \large
+			\textbf{Autor:}\\
+			Felipe Colli Olea
+		\end{flushleft}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\begin{flushright} \large
+			\textbf{Profesor:}\\
+			Sergio Díaz
+		\end{flushright}
+	\end{minipage}
+
+	\vfill
+
+	{\large 2 de julio de 2025}
 \end{titlepage}
 
 \begin{abstract}
-    \noindent \textbf{Resumen} \\
-    Este apunte ofrece una introducción completa a los conceptos fundamentales de la probabilidad y la estadística. Comienza con la definición de términos esenciales como población, muestra, parámetro y estadígrafo, y la clasificación de variables en cualitativas y cuantitativas. Posteriormente, se profundiza en la estadística descriptiva, abordando las medidas de tendencia central (media, mediana, moda) y de dispersión (rango, varianza, desviación estándar), incluyendo sus propiedades y demostraciones matemáticas. El documento también explora diversas técnicas de muestreo, diferenciando entre métodos probabilísticos (aleatorio simple, estratificado, por conglomerados, sistemático) y no probabilísticos. Finalmente, se introduce la combinatoria mediante los principios aditivo y multiplicativo como base para el cálculo de probabilidades.
+	\noindent \textbf{Resumen} \\
+	Este apunte ofrece una introducción completa a los conceptos fundamentales de la probabilidad y la estadística. Comienza con la definición de términos esenciales como población, muestra, parámetro y estadígrafo, y la clasificación de variables en cualitativas y cuantitativas. Posteriormente, se profundiza en la estadística descriptiva, abordando las medidas de tendencia central (media, mediana, moda) y de dispersión (rango, varianza, desviación estándar), incluyendo sus propiedades y demostraciones matemáticas. El documento también explora diversas técnicas de muestreo, diferenciando entre métodos probabilísticos (aleatorio simple, estratificado, por conglomerados, sistemático) y no probabilísticos. Finalmente, se introduce la combinatoria mediante los principios aditivo y multiplicativo como base para el cálculo de probabilidades.
 \end{abstract}
 
 \begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.55\textwidth]{gatito}
-    \caption{Gatito para hacer bonito el apunte.}
-    \label{fig:gatito}
+	\centering
+	\includegraphics[width=0.55\textwidth]{gatito}
+	\caption{Gatito para hacer bonito el apunte.}
+	\label{fig:gatito}
 \end{figure}
 \newpage
 
@@ -68,10 +67,10 @@ Conjunto de todos los elementos que se quieren estudiar. Cuando la información 
 Subconjunto de la población que se mide u observa.
 
 \begin{figure}[h]
-    \centering
-    \includegraphics[width=0.85\textwidth]{muestra}
-    \caption{Representacion de la muestra dentro de la población.}
-    \label{fig:muestra}
+	\centering
+	\includegraphics[width=0.85\textwidth]{muestra}
+	\caption{Representacion de la muestra dentro de la población.}
+	\label{fig:muestra}
 \end{figure}
 
 
@@ -85,25 +84,25 @@ Es una medición numérica que describe alguna característica de la muestra.
 
 \subsubsection{Variables cualitativas:} % Simplificado el énfasis
 \begin{itemize}
-    \item Se describen mediante palabras o categorías.
-    \item Se usan para categorizar a los individuos o para identificar.
-    \item Sirven para comprender aspectos subjetivos y complejos.
-    \item Se pueden clasificar en nominales y ordinales.
-    \item Ejemplos: el color del cabello, el deporte favorito, la comida favorita, el lugar de nacimiento.
+	\item Se describen mediante palabras o categorías.
+	\item Se usan para categorizar a los individuos o para identificar.
+	\item Sirven para comprender aspectos subjetivos y complejos.
+	\item Se pueden clasificar en nominales y ordinales.
+	\item Ejemplos: el color del cabello, el deporte favorito, la comida favorita, el lugar de nacimiento.
 \end{itemize}
 
 \subsubsection{Variables cuantitativas:} % Simplificado el énfasis
 \begin{itemize}
-    \item Se expresan mediante números, es decir, se pueden contar o medir.
-    \item Permiten más operaciones matemáticas.
-    \item Se pueden usar para conocer fenómenos o situaciones a través de la recolección y generación de números y datos.
-    \item Ejemplos: la edad, los ingresos, el peso, la altura, la presión, la humedad o cantidad de hermanos.
+	\item Se expresan mediante números, es decir, se pueden contar o medir.
+	\item Permiten más operaciones matemáticas.
+	\item Se pueden usar para conocer fenómenos o situaciones a través de la recolección y generación de números y datos.
+	\item Ejemplos: la edad, los ingresos, el peso, la altura, la presión, la humedad o cantidad de hermanos.
 \end{itemize}
 
 \begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.58\textwidth]{variables}
-    \caption{}\label{fig:}
+	\centering
+	\includegraphics[width=0.58\textwidth]{variables}
+	\caption{}\label{fig:}
 \end{figure}
 
 
@@ -111,50 +110,50 @@ Es una medición numérica que describe alguna característica de la muestra.
 Para cada una de las siguientes situaciones, identifica la población de interés, la variable estadística, clasifícala, y entrega un ejemplo de cuál podría ser una posible muestra.
 
 \begin{enumerate}
-    \item Un investigador universitario desea estimar la proporción de ciudadanos chilenos de la \textit{GEN X} que están interesados en iniciar sus propios negocios.
-        \begin{enumerate}
-            \item \textbf{Población:} Chilenos de la Generación X.
-            \item \textbf{Muestra (ejemplo):} 500 chilenos de la Generación X seleccionados aleatoriamente del padrón electoral.
-            \item \textbf{Variable:} Interés en iniciar un negocio (Sí/No) (\textit{cualitativa nominal}).
-        \end{enumerate}
+	\item Un investigador universitario desea estimar la proporción de ciudadanos chilenos de la \textit{GEN X} que están interesados en iniciar sus propios negocios.
+	      \begin{enumerate}
+		      \item \textbf{Población:} Chilenos de la Generación X.
+		      \item \textbf{Muestra (ejemplo):} 500 chilenos de la Generación X seleccionados aleatoriamente del padrón electoral.
+		      \item \textbf{Variable:} Interés en iniciar un negocio (Sí/No) (\textit{cualitativa nominal}).
+	      \end{enumerate}
 
-    \item Durante más de un siglo, la temperatura corporal normal en seres humanos ha sido aceptada como 37°C. ¿Es así realmente? Los investigadores desean estimar el promedio de temperatura de adultos sanos en Chile.
-        \begin{enumerate}
-            \item \textbf{Población:} Adultos sanos en Chile.
-            \item \textbf{Muestra (ejemplo):} Adultos sanos de Santiago seleccionados de diversos centros de salud.
-            \item \textbf{Variable:} Temperatura corporal (\textit{cuantitativa continua}).
-        \end{enumerate}
+	\item Durante más de un siglo, la temperatura corporal normal en seres humanos ha sido aceptada como 37°C. ¿Es así realmente? Los investigadores desean estimar el promedio de temperatura de adultos sanos en Chile.
+	      \begin{enumerate}
+		      \item \textbf{Población:} Adultos sanos en Chile.
+		      \item \textbf{Muestra (ejemplo):} Adultos sanos de Santiago seleccionados de diversos centros de salud.
+		      \item \textbf{Variable:} Temperatura corporal (\textit{cuantitativa continua}).
+	      \end{enumerate}
 
-    \item Un ingeniero municipal desea estimar el promedio de consumo semanal de agua para unidades habitacionales unifamiliares en la ciudad.
-        \begin{enumerate}
-            \item \textbf{Población:} Unidades habitacionales unifamiliares de la ciudad.
-            \item \textbf{Muestra (ejemplo):} 200 unidades habitacionales unifamiliares de distintos barrios de la ciudad, seleccionadas aleatoriamente.
-            \item \textbf{Variable:} Consumo semanal de agua (en litros) (\textit{cuantitativa continua}).
-        \end{enumerate}
-    \item El National Highway Safety Council desea estimar la proporción de llantas para automóvil con dibujo o superficie de rodadura insegura, entre todas las llantas manufacturadas por una empresa específica durante el presente año de producción.
-        \begin{enumerate}
-            \item \textbf{Población:} Todas las llantas para automóvil manufacturadas por la empresa específica durante el presente año de producción.
-            \item \textbf{Muestra (ejemplo):} Una selección aleatoria de llantas producidas en diferentes lotes o días del año.
-            \item \textbf{Variable:} Estado de la superficie de rodadura (segura/insegura) (\textit{cualitativa nominal}).
-        \end{enumerate}
-    \item Un politólogo desea estimar si la mayoría de los residentes adultos de una región están a favor de una legislatura unicameral.
-        \begin{enumerate}
-            \item \textbf{Población:} Residentes adultos de la región.
-            \item \textbf{Muestra (ejemplo):} Residentes adultos de varias comunas seleccionadas aleatoriamente de la región.
-            \item \textbf{Variable:} Opinión sobre la legislatura unicameral (a favor/en contra/indeciso) (\textit{cualitativa nominal}).
-        \end{enumerate}
-    \item Un científico del área médica desea determinar el tiempo promedio para que se vuelva a presentar cierta enfermedad infecciosa, una vez que las personas se recuperan de ella por primera vez.
-        \begin{enumerate}
-            \item \textbf{Población:} Personas que se han recuperado de la enfermedad infecciosa por primera vez.
-            \item \textbf{Muestra (ejemplo):} Pacientes recuperados seleccionados de registros médicos de diversos hospitales.
-            \item \textbf{Variable:} Tiempo hasta la recurrencia de la enfermedad (\textit{cuantitativa continua}).
-        \end{enumerate}
-    \item Un ingeniero electricista desea determinar si el promedio de vida útil de transistores de cierto tipo es mayor que 500 horas.
-        \begin{enumerate}
-            \item \textbf{Población:} Todos los transistores de cierto tipo.
-            \item \textbf{Muestra (ejemplo):} Una muestra de 100 transistores de ese tipo, seleccionados aleatoriamente de la producción.
-            \item \textbf{Variable:} Vida útil del transistor (en horas) (\textit{cuantitativa continua}).
-        \end{enumerate}
+	\item Un ingeniero municipal desea estimar el promedio de consumo semanal de agua para unidades habitacionales unifamiliares en la ciudad.
+	      \begin{enumerate}
+		      \item \textbf{Población:} Unidades habitacionales unifamiliares de la ciudad.
+		      \item \textbf{Muestra (ejemplo):} 200 unidades habitacionales unifamiliares de distintos barrios de la ciudad, seleccionadas aleatoriamente.
+		      \item \textbf{Variable:} Consumo semanal de agua (en litros) (\textit{cuantitativa continua}).
+	      \end{enumerate}
+	\item El National Highway Safety Council desea estimar la proporción de llantas para automóvil con dibujo o superficie de rodadura insegura, entre todas las llantas manufacturadas por una empresa específica durante el presente año de producción.
+	      \begin{enumerate}
+		      \item \textbf{Población:} Todas las llantas para automóvil manufacturadas por la empresa específica durante el presente año de producción.
+		      \item \textbf{Muestra (ejemplo):} Una selección aleatoria de llantas producidas en diferentes lotes o días del año.
+		      \item \textbf{Variable:} Estado de la superficie de rodadura (segura/insegura) (\textit{cualitativa nominal}).
+	      \end{enumerate}
+	\item Un politólogo desea estimar si la mayoría de los residentes adultos de una región están a favor de una legislatura unicameral.
+	      \begin{enumerate}
+		      \item \textbf{Población:} Residentes adultos de la región.
+		      \item \textbf{Muestra (ejemplo):} Residentes adultos de varias comunas seleccionadas aleatoriamente de la región.
+		      \item \textbf{Variable:} Opinión sobre la legislatura unicameral (a favor/en contra/indeciso) (\textit{cualitativa nominal}).
+	      \end{enumerate}
+	\item Un científico del área médica desea determinar el tiempo promedio para que se vuelva a presentar cierta enfermedad infecciosa, una vez que las personas se recuperan de ella por primera vez.
+	      \begin{enumerate}
+		      \item \textbf{Población:} Personas que se han recuperado de la enfermedad infecciosa por primera vez.
+		      \item \textbf{Muestra (ejemplo):} Pacientes recuperados seleccionados de registros médicos de diversos hospitales.
+		      \item \textbf{Variable:} Tiempo hasta la recurrencia de la enfermedad (\textit{cuantitativa continua}).
+	      \end{enumerate}
+	\item Un ingeniero electricista desea determinar si el promedio de vida útil de transistores de cierto tipo es mayor que 500 horas.
+	      \begin{enumerate}
+		      \item \textbf{Población:} Todos los transistores de cierto tipo.
+		      \item \textbf{Muestra (ejemplo):} Una muestra de 100 transistores de ese tipo, seleccionados aleatoriamente de la producción.
+		      \item \textbf{Variable:} Vida útil del transistor (en horas) (\textit{cuantitativa continua}).
+	      \end{enumerate}
 \end{enumerate}
 \newpage
 
@@ -162,17 +161,17 @@ Para cada una de las siguientes situaciones, identifica la población de interé
 
 \subsection{Tablas de Frecuencia: Conceptos Básicos}
 \begin{itemize}
-    \item \textbf{Dato o Intervalo:} Información (variable) que se estudia en estadística.
-    \item \textbf{Marca de Clase ($c_i$):} Promedio entre los extremos de un intervalo.
-    \item \textbf{Amplitud de un intervalo:} Es la diferencia entre el límite superior y el límite inferior del intervalo.
+	\item \textbf{Dato o Intervalo:} Información (variable) que se estudia en estadística.
+	\item \textbf{Marca de Clase ($c_i$):} Promedio entre los extremos de un intervalo.
+	\item \textbf{Amplitud de un intervalo:} Es la diferencia entre el límite superior y el límite inferior del intervalo.
 \end{itemize}
 
 \subsection{Tipos de Frecuencia:}
 \begin{itemize}
-    \item \textbf{Frecuencia Absoluta ($f_i$):} Cantidad de veces que se repite un dato o que los datos caen en un intervalo.
-    \item \textbf{Frecuencia Absoluta Acumulada ($F_i$):} Suma de las frecuencias absolutas hasta determinado dato o intervalo. $F_i = \sum_{j=1}^{i} f_j$.
-    \item \textbf{Frecuencia Relativa ($h_i$ o $f_{ri}$):} Es la proporción (fracción, decimal o porcentaje) de observaciones que corresponden a cierto valor o intervalo. ($h_i = \frac{f_i}{n}$), donde $n$ es el número total de datos.
-    \item \textbf{Frecuencia Relativa Acumulada ($H_i$):} Es la proporción (fracción, decimal o porcentaje) de la frecuencia acumulada hasta cierto dato o intervalo. ($H_i = \frac{F_i}{n} = \sum_{j=1}^{i} h_j$).
+	\item \textbf{Frecuencia Absoluta ($f_i$):} Cantidad de veces que se repite un dato o que los datos caen en un intervalo.
+	\item \textbf{Frecuencia Absoluta Acumulada ($F_i$):} Suma de las frecuencias absolutas hasta determinado dato o intervalo. $F_i = \sum_{j=1}^{i} f_j$.
+	\item \textbf{Frecuencia Relativa ($h_i$ o $f_{ri}$):} Es la proporción (fracción, decimal o porcentaje) de observaciones que corresponden a cierto valor o intervalo. ($h_i = \frac{f_i}{n}$), donde $n$ es el número total de datos.
+	\item \textbf{Frecuencia Relativa Acumulada ($H_i$):} Es la proporción (fracción, decimal o porcentaje) de la frecuencia acumulada hasta cierto dato o intervalo. ($H_i = \frac{F_i}{n} = \sum_{j=1}^{i} h_j$).
 \end{itemize}
 \newpage
 
@@ -182,48 +181,48 @@ Para cada una de las siguientes situaciones, identifica la población de interé
 Es el cociente entre la suma de todos los datos y el número total de datos ($n$). Si se tienen $n$ datos $x_1, x_2, \dots, x_n$:
 \[ \bar{x}=\frac{x_1+x_2+\dots+x_n}{n} = \frac{\sum_{i=1}^{n} x_i}{n} \] \\
 Para datos agrupados en una tabla de frecuencia con $k$ clases:
-    % NOTA: Se ajustó el layout con minipage para evitar el Overfull hbox.
+% NOTA: Se ajustó el layout con minipage para evitar el Overfull hbox.
 
 \begin{center}
-    \begin{minipage}{0.35\textwidth}
-        \centering
-        \begin{tabular}{|c|c|} 
-            \hline
-            \textbf{Marca ($c_i$)} & \textbf{Frec. ($f_i$)} \\
-            \hline
-            $c_1$ & $f_1$ \\
-            \hline
-            $c_2$ & $f_2$ \\
-            \hline
-            $\vdots$ & $\vdots$ \\
-            \hline
-            $c_k$ & $f_k$ \\
-            \hline
-         \end{tabular}
-    \end{minipage}
-    \hfill
-    \begin{minipage}{0.55\textwidth}
-        \centering
-        \[ \bar{x}=\frac{c_1 f_1 + c_2 f_2 + \dots + c_k f_k}{f_1+f_2+\dots+f_k} = \frac{\sum_{i=1}^{k} c_i f_i}{n} \]
-        (donde $n = \sum_{i=1}^{k} f_i$)
-    \end{minipage}
+	\begin{minipage}{0.35\textwidth}
+		\centering
+		\begin{tabular}{|c|c|}
+			\hline
+			\textbf{Marca ($c_i$)} & \textbf{Frec. ($f_i$)} \\
+			\hline
+			$c_1$                  & $f_1$                  \\
+			\hline
+			$c_2$                  & $f_2$                  \\
+			\hline
+			$\vdots$               & $\vdots$               \\
+			\hline
+			$c_k$                  & $f_k$                  \\
+			\hline
+		\end{tabular}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.55\textwidth}
+		\centering
+		\[ \bar{x}=\frac{c_1 f_1 + c_2 f_2 + \dots + c_k f_k}{f_1+f_2+\dots+f_k} = \frac{\sum_{i=1}^{k} c_i f_i}{n} \]
+		(donde $n = \sum_{i=1}^{k} f_i$)
+	\end{minipage}
 \end{center}
 
 \subsubsection{Mediana ($M_e$):}
 Es el valor que ocupa la posición central de la muestra cuando los datos se encuentran ordenados. \textbf{Si la muestra tiene un número par de datos, la mediana es la media aritmética de los dos términos centrales.}
-        
+
 \begin{itemize}
-    \item Si $n$ es impar, la posición es $\frac{n+1}{2}$. $M_e = x_{(\frac{n+1}{2})}$.
-    \item Si $n$ es par, las posiciones son $\frac{n}{2}$ y $\frac{n}{2}+1$. $M_e = \frac{x_{(\frac{n}{2})} + x_{(\frac{n}{2}+1)}}{2}$.
+	\item Si $n$ es impar, la posición es $\frac{n+1}{2}$. $M_e = x_{(\frac{n+1}{2})}$.
+	\item Si $n$ es par, las posiciones son $\frac{n}{2}$ y $\frac{n}{2}+1$. $M_e = \frac{x_{(\frac{n}{2})} + x_{(\frac{n}{2}+1)}}{2}$.
 \end{itemize}
 
 \subsubsection{Moda ($M_o$):} Es el dato o intervalo con la mayor frecuencia absoluta. La muestra puede ser:
-    \begin{itemize}
-        \item \textbf{Amodal:} No presenta moda.
-        \item \textbf{Unimodal:} Una sola moda.
-        \item \textbf{Bimodal:} Dos modas.
-        \item \textbf{Polimodal (o Multimodal):} Más de dos modas.
-    \end{itemize}
+\begin{itemize}
+	\item \textbf{Amodal:} No presenta moda.
+	\item \textbf{Unimodal:} Una sola moda.
+	\item \textbf{Bimodal:} Dos modas.
+	\item \textbf{Polimodal (o Multimodal):} Más de dos modas.
+\end{itemize}
 \newpage
 
 \section{26/03 - Ejercicios de Medidas de Tendencia Central}
@@ -232,52 +231,52 @@ Es el valor que ocupa la posición central de la muestra cuando los datos se enc
 \noindent % Evita la sangría
 Si las notas de Esteban en una asignatura son \(3, 4, 6, 3, 5, 5, 6, 3, 4\) y de estas notas se cambian un $6$ por un $7$. ¿Cuál(es) de las siguientes medidas de tendencia central cambia(n)?
 \begin{enumerate}
-    \item La moda
-    \item La mediana
-    \item La media aritmética
+	\item La moda
+	\item La mediana
+	\item La media aritmética
 \end{enumerate}
 \textit{Solución:}
 Notas originales (ordenadas): \(3, 3, 3, 4, 4, 5, 5, 6, 6\). $n=9$.
 \begin{itemize}
-    \item Moda original: 3 (frecuencia 3).
-    \item Mediana original: El dato en la posición $\frac{9+1}{2}=5$. Mediana = 4.
-    \item Media original: $\frac{3 \cdot 3 + 2 \cdot 4 + 2 \cdot 5 + 2 \cdot 6}{9} = \frac{39}{9} \approx 4.33$.
+	\item Moda original: 3 (frecuencia 3).
+	\item Mediana original: El dato en la posición $\frac{9+1}{2}=5$. Mediana = 4.
+	\item Media original: $\frac{3 \cdot 3 + 2 \cdot 4 + 2 \cdot 5 + 2 \cdot 6}{9} = \frac{39}{9} \approx 4.33$.
 \end{itemize}
 Notas nuevas (se cambia un 6 por un 7), ordenadas: \(3, 3, 3, 4, 4, 5, 5, 6, 7\). $n=9$.
 \begin{itemize}
-    \item Moda nueva: 3 (sigue siendo la más frecuente). $\rightarrow$ No cambia.
-    \item Mediana nueva: El dato en la posición 5 sigue siendo 4. $\rightarrow$ No cambia.
-    \item Media nueva: $\frac{39 - 6 + 7}{9} = \frac{40}{9} \approx 4.44$. $\rightarrow$ Cambia.
+	\item Moda nueva: 3 (sigue siendo la más frecuente). $\rightarrow$ No cambia.
+	\item Mediana nueva: El dato en la posición 5 sigue siendo 4. $\rightarrow$ No cambia.
+	\item Media nueva: $\frac{39 - 6 + 7}{9} = \frac{40}{9} \approx 4.44$. $\rightarrow$ Cambia.
 \end{itemize}
 \textbf{Respuesta:} Solo la media aritmética cambia (opción 3).
 
-\vspace{1em} 
+\vspace{1em}
 \noindent La siguiente tabla muestra los valores de una variable \(X\) y sus respectivas frecuencias. ¿Cuál es el valor de la mediana?
 \begin{center}
-    \begin{tabular}{|c|c|c|}
-        \hline
-        \textbf{\(X_i\)} & \textbf{Frecuencia ($f_i$)} & \textbf{Frecuencia Acumulada ($F_i$)} \\
-        \hline
-        4 & 4 & 4 \\
-        \hline
-        5 & 8 & 12 \\
-        \hline
-        6 & 10 & 22 \\
-        \hline
-        7 & 20 & 42 \\
-        \hline
-        8 & 8 & 50 \\
-        \hline
-        \textbf{Total} & \textbf{n=50} & \\
-        \hline
-    \end{tabular}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{\(X_i\)} & \textbf{Frecuencia ($f_i$)} & \textbf{Frecuencia Acumulada ($F_i$)} \\
+		\hline
+		4                & 4                           & 4                                     \\
+		\hline
+		5                & 8                           & 12                                    \\
+		\hline
+		6                & 10                          & 22                                    \\
+		\hline
+		7                & 20                          & 42                                    \\
+		\hline
+		8                & 8                           & 50                                    \\
+		\hline
+		\textbf{Total}   & \textbf{n=50}               &                                       \\
+		\hline
+	\end{tabular}
 \end{center}
 \textit{Solución:}
 Total de datos $n=50$ (par). La mediana es el promedio de los datos en las posiciones $\frac{50}{2}=25$ y $\frac{50}{2}+1 = 26$.
 Buscamos en la Frecuencia Acumulada ($F_i$):
 \begin{itemize}
-    \item Hasta $X=6$, se acumulan 22 datos.
-    \item Para $X=7$, la frecuencia acumulada llega a 42. Esto significa que los datos desde la posición 23 hasta la 42 son iguales a 7.
+	\item Hasta $X=6$, se acumulan 22 datos.
+	\item Para $X=7$, la frecuencia acumulada llega a 42. Esto significa que los datos desde la posición 23 hasta la 42 son iguales a 7.
 \end{itemize}
 Por lo tanto, el dato 25 y el dato 26 son ambos 7.
 La mediana es $M_e = \frac{7+7}{2} = 7$. \\
@@ -288,8 +287,8 @@ La mediana es $M_e = \frac{7+7}{2} = 7$. \\
 \textit{Solución:}
 Muestra ordenada: \(a+2, a+2, a+4, a+4, a+6, a+6, a+6\). $n=7$.
 \begin{itemize}
-    \item \textbf{Moda ($M_o$):} El dato más frecuente es \(a+6\).
-    \item \textbf{Mediana ($M_e$):} Como $n=7$ (impar), la mediana es el dato en la posición $\frac{7+1}{2}=4$. El cuarto dato es \(a+4\).
+	\item \textbf{Moda ($M_o$):} El dato más frecuente es \(a+6\).
+	\item \textbf{Mediana ($M_e$):} Como $n=7$ (impar), la mediana es el dato en la posición $\frac{7+1}{2}=4$. El cuarto dato es \(a+4\).
 \end{itemize}
 \textbf{Suma:} $M_o + M_e = (a+6) + (a+4) = 2a+10$.\\
 \textbf{Respuesta:} $2a+10$.
@@ -306,11 +305,11 @@ Por lo tanto, la cantidad de datos $n$ no puede ser un número impar. \\
 \subsection{Población y Muestra}
 ¿Qué inconvenientes puede implicar realizar un censo?
 \begin{itemize}
-    \item \textbf{Cardinalidad (tamaño):} La población puede ser demasiado grande o infinita.
-    \item \textbf{Destrucción:} El proceso de medición puede destruir el elemento (ej. pruebas de vida útil).
-    \item \textbf{Costos:} Implica altos costos en tiempo, dinero y recursos.
-    \item \textbf{Acceso:} Puede ser logísticamente imposible acceder a todos los miembros.
-    \item \textbf{Tiempo:} Puede tomar tanto tiempo que la información obtenida se vuelve obsoleta.
+	\item \textbf{Cardinalidad (tamaño):} La población puede ser demasiado grande o infinita.
+	\item \textbf{Destrucción:} El proceso de medición puede destruir el elemento (ej. pruebas de vida útil).
+	\item \textbf{Costos:} Implica altos costos en tiempo, dinero y recursos.
+	\item \textbf{Acceso:} Puede ser logísticamente imposible acceder a todos los miembros.
+	\item \textbf{Tiempo:} Puede tomar tanto tiempo que la información obtenida se vuelve obsoleta.
 \end{itemize}
 
 \subsection{Muestreo}
@@ -320,8 +319,8 @@ Proceso para escoger los elementos que conformarán la muestra. \\
 \subsubsection{Representatividad}
 Debe reflejar las características de la población. Claves:
 \begin{itemize}
-    \item \textbf{Tamaño ($n$):} Debe ser suficientemente grande.
-    \item \textbf{Aleatoriedad:} Cada elemento debe tener una probabilidad conocida de ser seleccionado para minimizar el sesgo.
+	\item \textbf{Tamaño ($n$):} Debe ser suficientemente grande.
+	\item \textbf{Aleatoriedad:} Cada elemento debe tener una probabilidad conocida de ser seleccionado para minimizar el sesgo.
 \end{itemize}
 Notación: \textbf{N} para el tamaño de la población y \textbf{n} para el tamaño de la muestra.
 
@@ -331,10 +330,10 @@ Cada unidad tiene una probabilidad conocida y no nula de ser seleccionada.
 \subsubsection{Muestreo Aleatorio Simple (M.A.S)}
 Cada posible muestra de tamaño $n$ tiene la misma probabilidad de ser elegida. Requiere un listado completo (marco muestral).
 \begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.5\textwidth]{MAS}
-    \caption{Muestreo Aleatorio Simple}
-    \label{fig:MAS}
+	\centering
+	\includegraphics[width=0.5\textwidth]{MAS}
+	\caption{Muestreo Aleatorio Simple}
+	\label{fig:MAS}
 \end{figure}
 
 
@@ -342,10 +341,10 @@ Cada posible muestra de tamaño $n$ tiene la misma probabilidad de ser elegida. 
 Se usa cuando la población se puede dividir en subgrupos (estratos) internamente homogéneos. Se toma una muestra aleatoria de cada estrato. Es más preciso si hay baja variabilidad dentro de los estratos y alta variabilidad entre ellos
 
 \begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.5\textwidth]{MEP}
-    \caption{Muestreo Estratificado Proporcional}
-    \label{fig:MEP}
+	\centering
+	\includegraphics[width=0.5\textwidth]{MEP}
+	\caption{Muestreo Estratificado Proporcional}
+	\label{fig:MEP}
 \end{figure}
 
 
@@ -353,10 +352,10 @@ Se usa cuando la población se puede dividir en subgrupos (estratos) internament
 Se usa cuando la población está dividida en grupos naturales (conglomerados). Se selecciona una muestra aleatoria de conglomerados y se analizan \textbf{todos} los individuos de los conglomerados elegidos. Es eficiente en costos, especialmente si los conglomerados son internamente heterogéneos.
 
 \begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.65\textwidth]{MPC}
-    \caption{Muestreo Por Conglomerados}
-    \label{fig:MPC}
+	\centering
+	\includegraphics[width=0.65\textwidth]{MPC}
+	\caption{Muestreo Por Conglomerados}
+	\label{fig:MPC}
 \end{figure}
 
 
@@ -364,10 +363,10 @@ Se usa cuando la población está dividida en grupos naturales (conglomerados). 
 Se elige un elemento al azar al principio y luego se seleccionan los demás a intervalos regulares ($k=N/n$) de una lista ordenada.
 
 \begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.6\textwidth]{MASIS}
-    \caption{Muestreo Aleatorio Sistemático}
-    \label{fig:MASIS}
+	\centering
+	\includegraphics[width=0.6\textwidth]{MASIS}
+	\caption{Muestreo Aleatorio Sistemático}
+	\label{fig:MASIS}
 \end{figure}
 \newpage
 
@@ -378,37 +377,37 @@ La selección es subjetiva y no permite inferencia estadística formal.
 Se fijan "cuotas" de individuos con ciertas características y el entrevistador los selecciona por conveniencia hasta llenar la cuota.
 
 \begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.5\textwidth]{MPCU}
-    \caption{Muestreo por cuotas}
-    \label{fig:MPCU}
+	\centering
+	\includegraphics[width=0.5\textwidth]{MPCU}
+	\caption{Muestreo por cuotas}
+	\label{fig:MPCU}
 \end{figure}
 
 \subsubsection{Muestreo Bola de Nieve}
 Los primeros individuos contactados ayudan a encontrar a otros, útil para poblaciones difíciles de localizar.
 
 \begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.5\textwidth]{MBN}
-    \caption{Muestreo Bola de Nieve}
-    \label{fig:MBC}
+	\centering
+	\includegraphics[width=0.5\textwidth]{MBN}
+	\caption{Muestreo Bola de Nieve}
+	\label{fig:MBC}
 \end{figure}
 
 \subsubsection{Muestreo por Juicio o Conveniencia}
 La selección se basa en el juicio del investigador o en la facilidad de acceso a los sujetos.
 
 \begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.75\textwidth]{MPJ}
-    \caption{Muestreo Por Juicio}
-    \label{fig:MPJ}
+	\centering
+	\includegraphics[width=0.75\textwidth]{MPJ}
+	\caption{Muestreo Por Juicio}
+	\label{fig:MPJ}
 \end{figure}
 
 \begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.35\linewidth]{patata}
-    \caption{Patata para rellenar el espacio}
-    \label{fig:patata}
+	\centering
+	\includegraphics[width=0.35\linewidth]{patata}
+	\caption{Patata para rellenar el espacio}
+	\label{fig:patata}
 \end{figure}
 \newpage
 
@@ -447,16 +446,16 @@ Es la raíz cuadrada positiva de la varianza. Tiene la ventaja de estar expresad
 
 \subsubsection{Propiedades de $\sigma$ y $\sigma^2$ (usando la definición con denominador $n$)}
 \begin{center}
-    \begin{enumerate}
-        \item $\sigma \ge 0$ y $\sigma^2 \ge 0$. Son siempre no negativas.
-        \item $\sigma = 0 \iff \sigma^2 = 0 \iff x_i = \bar{x}$ para todo $i \iff x_i = x_j$ para todo $i, j \in \{1, \dots, n\}$. La desviación estándar (y varianza) es cero si y sólo si todos los datos son iguales.
-        \item Si a todos los datos de un conjunto se les suma (o resta) una constante $k$ (transformación $y_i = x_i + k$), la nueva media es $\bar{y} = \bar{x} + k$, pero la varianza y la desviación estándar no cambian: $\sigma_y^2 = \sigma_x^2$ y $\sigma_y = \sigma_x$.
-        \item Si todos los datos de un conjunto se multiplican (o dividen) por una constante $k$ (transformación $y_i = k \cdot x_i$), la nueva media es $\bar{y} = k\bar{x}$, la nueva varianza es $\sigma_y^2 = k^2 \sigma_x^2$, y la nueva desviación estándar es $\sigma_y = |k| \sigma_x$.
-        \item Fórmula computacional (o abreviada) para la varianza: $\sigma^2 = \frac{\sum x_i^2}{n} - (\bar{x})^2 = \overline{x^2} - (\bar{x})^2$. Es decir, la varianza es la media de los cuadrados de los datos menos el cuadrado de la media de los datos.
-        \item $\sigma^2=\sigma \iff \sigma=0 \vee \sigma=1$. (Asumiendo que $\sigma$ es el valor numérico de la desviación estándar).
-        \item $\sigma^2 < \sigma \iff 0 < \sigma < 1$.
-        \item $\sigma^2 > \sigma \iff \sigma > 1$.
-    \end{enumerate}
+	\begin{enumerate}
+		\item $\sigma \ge 0$ y $\sigma^2 \ge 0$. Son siempre no negativas.
+		\item $\sigma = 0 \iff \sigma^2 = 0 \iff x_i = \bar{x}$ para todo $i \iff x_i = x_j$ para todo $i, j \in \{1, \dots, n\}$. La desviación estándar (y varianza) es cero si y sólo si todos los datos son iguales.
+		\item Si a todos los datos de un conjunto se les suma (o resta) una constante $k$ (transformación $y_i = x_i + k$), la nueva media es $\bar{y} = \bar{x} + k$, pero la varianza y la desviación estándar no cambian: $\sigma_y^2 = \sigma_x^2$ y $\sigma_y = \sigma_x$.
+		\item Si todos los datos de un conjunto se multiplican (o dividen) por una constante $k$ (transformación $y_i = k \cdot x_i$), la nueva media es $\bar{y} = k\bar{x}$, la nueva varianza es $\sigma_y^2 = k^2 \sigma_x^2$, y la nueva desviación estándar es $\sigma_y = |k| \sigma_x$.
+		\item Fórmula computacional (o abreviada) para la varianza: $\sigma^2 = \frac{\sum x_i^2}{n} - (\bar{x})^2 = \overline{x^2} - (\bar{x})^2$. Es decir, la varianza es la media de los cuadrados de los datos menos el cuadrado de la media de los datos.
+		\item $\sigma^2=\sigma \iff \sigma=0 \vee \sigma=1$. (Asumiendo que $\sigma$ es el valor numérico de la desviación estándar).
+		\item $\sigma^2 < \sigma \iff 0 < \sigma < 1$.
+		\item $\sigma^2 > \sigma \iff \sigma > 1$.
+	\end{enumerate}
 \end{center}
 \newpage
 
@@ -484,18 +483,18 @@ L.Q.Q.D. (Lo Que Queríamos Demostrar)
 \subsection{Ejercicio}
 Dados los datos: -2, 0, 2, 4, 6. ($n=5$). Determinar:
 \begin{enumerate}
-    \item $\bar{x}$ \\
-        \textit{Solución:} $\bar{x} = \frac{-2+0+2+4+6}{5} = \frac{10}{5} = 2$. \\
-    \item $\sigma$ (desviación estándar) \\
-        \textit{Solución:} Primero calculamos la varianza $\sigma^2$:
-        \begin{align*} \sigma^2 &= \frac{\sum (x_i - \bar{x})^2}{n} \\ &= \frac{(-2-2)^2+(0-2)^2+(2-2)^2+(4-2)^2+(6-2)^2}{5} \\ &= \frac{(-4)^2+(-2)^2+(0)^2+(2)^2+(4)^2}{5} \\ &= \frac{16+4+0+4+16}{5} = \frac{40}{5} = 8 \end{align*}
-        Ahora la desviación estándar: $\sigma = \sqrt{\sigma^2} = \sqrt{8} = \sqrt{4 \cdot 2} = 2\sqrt{2} \approx 2.828$. \\
-    \item $\overline{x^2}$ (el promedio de los cuadrados de los datos) \\
-        \textit{Solución:} Los cuadrados de los datos son: $(-2)^2=4, 0^2=0, 2^2=4, 4^2=16, 6^2=36$.
-        \[ \overline{x^2} = \frac{4+0+4+16+36}{5} = \frac{60}{5} = 12 \]
-    \item Calcular $\overline{x^2}-(\bar{x})^2$ y comparar con $\sigma^2$. \\
-        \textit{Solución:} $\overline{x^2}-(\bar{x})^2 = 12 - (2)^2 = 12 - 4 = 8$. \\
-        Este resultado (8) es igual a la varianza $\sigma^2$ calculada en el punto 2, lo cual verifica la propiedad 5 (fórmula computacional de la varianza).
+	\item $\bar{x}$ \\
+	      \textit{Solución:} $\bar{x} = \frac{-2+0+2+4+6}{5} = \frac{10}{5} = 2$. \\
+	\item $\sigma$ (desviación estándar) \\
+	      \textit{Solución:} Primero calculamos la varianza $\sigma^2$:
+	      \begin{align*} \sigma^2 &= \frac{\sum (x_i - \bar{x})^2}{n} \\ &= \frac{(-2-2)^2+(0-2)^2+(2-2)^2+(4-2)^2+(6-2)^2}{5} \\ &= \frac{(-4)^2+(-2)^2+(0)^2+(2)^2+(4)^2}{5} \\ &= \frac{16+4+0+4+16}{5} = \frac{40}{5} = 8 \end{align*}
+	      Ahora la desviación estándar: $\sigma = \sqrt{\sigma^2} = \sqrt{8} = \sqrt{4 \cdot 2} = 2\sqrt{2} \approx 2.828$. \\
+	\item $\overline{x^2}$ (el promedio de los cuadrados de los datos) \\
+	      \textit{Solución:} Los cuadrados de los datos son: $(-2)^2=4, 0^2=0, 2^2=4, 4^2=16, 6^2=36$.
+	      \[ \overline{x^2} = \frac{4+0+4+16+36}{5} = \frac{60}{5} = 12 \]
+	\item Calcular $\overline{x^2}-(\bar{x})^2$ y comparar con $\sigma^2$. \\
+	      \textit{Solución:} $\overline{x^2}-(\bar{x})^2 = 12 - (2)^2 = 12 - 4 = 8$. \\
+	      Este resultado (8) es igual a la varianza $\sigma^2$ calculada en el punto 2, lo cual verifica la propiedad 5 (fórmula computacional de la varianza).
 \end{enumerate}
 \newpage
 
@@ -515,72 +514,72 @@ Reconocemos que $\frac{\sum x_i^2}{n} = \overline{x^2}$ (la media de los cuadrad
 L.Q.Q.D.
 \newpage
 
-    \section{23/04 - Demostraciones sobre el Valor de la Desviación Estándar}
-        \subsection{Demostraciones de Propiedades Relacionadas con el Valor de $\sigma$}
-            Recordar que $\sigma \ge 0$ por definición (es una raíz cuadrada positiva o cero).
+\section{23/04 - Demostraciones sobre el Valor de la Desviación Estándar}
+\subsection{Demostraciones de Propiedades Relacionadas con el Valor de $\sigma$}
+Recordar que $\sigma \ge 0$ por definición (es una raíz cuadrada positiva o cero).
 
-            \subsubsection{Propiedad 6: $\sigma^2 = \sigma \iff \sigma=0 \vee \sigma=1$}
-                Partimos de la ecuación:
-                \[\sigma^2=\sigma \]
-                Reordenamos para formar una ecuación cuadrática en $\sigma$:
-                \[\sigma^2-\sigma=0 \]
-                Factorizamos $\sigma$:
-                \[\sigma(\sigma-1)=0 \]
-                Esto implica que uno de los factores debe ser cero:
-                \[\sigma=0 \quad \text{o} \quad \sigma-1=0 \]
-                Por lo tanto:
-                \[\sigma=0 \vee \sigma=1 \]
-                L.Q.Q.D.
+\subsubsection{Propiedad 6: $\sigma^2 = \sigma \iff \sigma=0 \vee \sigma=1$}
+Partimos de la ecuación:
+\[\sigma^2=\sigma \]
+Reordenamos para formar una ecuación cuadrática en $\sigma$:
+\[\sigma^2-\sigma=0 \]
+Factorizamos $\sigma$:
+\[\sigma(\sigma-1)=0 \]
+Esto implica que uno de los factores debe ser cero:
+\[\sigma=0 \quad \text{o} \quad \sigma-1=0 \]
+Por lo tanto:
+\[\sigma=0 \vee \sigma=1 \]
+L.Q.Q.D.
 
-            \subsubsection{Propiedad 7: $\sigma^2 < \sigma \iff 0 < \sigma < 1$}
-                Partimos de la desigualdad:
-                \[\sigma^2 < \sigma \]
-                Reordenamos:
-                \[\sigma^2-\sigma < 0 \]
-                Factorizamos:
-                \[\sigma(\sigma-1) < 0 \]
-                Para que el producto de dos factores sea negativo, uno debe ser positivo y el otro negativo. Analizamos los signos de $\sigma$ y $(\sigma-1)$:
-                
-                \begin{center}
-                    \begin{tabular}{c|ccccc}
-                        Intervalo & $(-\infty, 0)$ & $0$ & $(0, 1)$ & $1$ & $(1, +\infty)$ \\
-                        \hline
-                        Signo de $\sigma$ & $-$ & $0$ & $+$ & $+$ & $+$ \\
-                        Signo de $(\sigma-1)$ & $-$ & $-$ & $-$ & $0$ & $+$ \\
-                        \hline
-                        Signo de $\sigma(\sigma-1)$ & $+$ & $0$ & $-$ & $0$ & $+$ \\
-                    \end{tabular}
-                \end{center}
-                
-                La desigualdad $\sigma(\sigma-1) < 0$ se cumple cuando $\sigma \in (0, 1)$.
-                Dado que $\sigma \ge 0$ por definición, el intervalo $(-\infty, 0)$ no es relevante para la desviación estándar.
-                Por lo tanto:
-                \[0 < \sigma < 1 \]
-                L.Q.Q.D.
+\subsubsection{Propiedad 7: $\sigma^2 < \sigma \iff 0 < \sigma < 1$}
+Partimos de la desigualdad:
+\[\sigma^2 < \sigma \]
+Reordenamos:
+\[\sigma^2-\sigma < 0 \]
+Factorizamos:
+\[\sigma(\sigma-1) < 0 \]
+Para que el producto de dos factores sea negativo, uno debe ser positivo y el otro negativo. Analizamos los signos de $\sigma$ y $(\sigma-1)$:
 
-            \subsubsection{Propiedad 8: $\sigma^2 > \sigma \iff \sigma > 1$}
-                Partimos de la desigualdad:
-                \[\sigma^2 > \sigma \]
-                Reordenamos:
-                \[\sigma^2-\sigma > 0 \]
-                Factorizamos:
-                \[\sigma(\sigma-1) > 0 \]
-                Para que el producto de dos factores sea positivo, ambos deben ser positivos o ambos deben ser negativos. Usando la tabla de signos anterior:
-                \begin{itemize}
-                    \item Ambos negativos: $\sigma < 0$ y $\sigma-1 < 0$ (es decir, $\sigma < 0$). No es posible para $\sigma$.
-                    \item Ambos positivos: $\sigma > 0$ y $\sigma-1 > 0$ (es decir, $\sigma > 1$).
-                \end{itemize}
-                La desigualdad $\sigma(\sigma-1) > 0$ se cumple cuando $\sigma \in (-\infty, 0) \cup (1, +\infty)$.
-                Considerando la restricción $\sigma \ge 0$:
-                \begin{itemize}
-                    \item Si $\sigma=0$, entonces $\sigma(\sigma-1)=0$, lo cual no satisface $0>0$.
-                    \item El intervalo $(-\infty,0)$ no es válido para $\sigma$.
-                    \item Nos queda el intervalo $(1, +\infty)$.
-                \end{itemize}
-                Por lo tanto:
-                \[\sigma > 1\]
-                L.Q.Q.D.
-                \newpage
+\begin{center}
+	\begin{tabular}{c|ccccc}
+		Intervalo                   & $(-\infty, 0)$ & $0$ & $(0, 1)$ & $1$ & $(1, +\infty)$ \\
+		\hline
+		Signo de $\sigma$           & $-$            & $0$ & $+$      & $+$ & $+$            \\
+		Signo de $(\sigma-1)$       & $-$            & $-$ & $-$      & $0$ & $+$            \\
+		\hline
+		Signo de $\sigma(\sigma-1)$ & $+$            & $0$ & $-$      & $0$ & $+$            \\
+	\end{tabular}
+\end{center}
+
+La desigualdad $\sigma(\sigma-1) < 0$ se cumple cuando $\sigma \in (0, 1)$.
+Dado que $\sigma \ge 0$ por definición, el intervalo $(-\infty, 0)$ no es relevante para la desviación estándar.
+Por lo tanto:
+\[0 < \sigma < 1 \]
+L.Q.Q.D.
+
+\subsubsection{Propiedad 8: $\sigma^2 > \sigma \iff \sigma > 1$}
+Partimos de la desigualdad:
+\[\sigma^2 > \sigma \]
+Reordenamos:
+\[\sigma^2-\sigma > 0 \]
+Factorizamos:
+\[\sigma(\sigma-1) > 0 \]
+Para que el producto de dos factores sea positivo, ambos deben ser positivos o ambos deben ser negativos. Usando la tabla de signos anterior:
+\begin{itemize}
+	\item Ambos negativos: $\sigma < 0$ y $\sigma-1 < 0$ (es decir, $\sigma < 0$). No es posible para $\sigma$.
+	\item Ambos positivos: $\sigma > 0$ y $\sigma-1 > 0$ (es decir, $\sigma > 1$).
+\end{itemize}
+La desigualdad $\sigma(\sigma-1) > 0$ se cumple cuando $\sigma \in (-\infty, 0) \cup (1, +\infty)$.
+Considerando la restricción $\sigma \ge 0$:
+\begin{itemize}
+	\item Si $\sigma=0$, entonces $\sigma(\sigma-1)=0$, lo cual no satisface $0>0$.
+	\item El intervalo $(-\infty,0)$ no es válido para $\sigma$.
+	\item Nos queda el intervalo $(1, +\infty)$.
+\end{itemize}
+Por lo tanto:
+\[\sigma > 1\]
+L.Q.Q.D.
+\newpage
 
 
 
@@ -606,51 +605,51 @@ Son los 99 valores que dividen en partes igaules a los datos, que corresponden a
 \newpage
 
 \section{11/06 - Principios Fundamentales de la Combinatoria}
-\subsection{Combinatoria} 
+\subsection{Combinatoria}
 Son técnicas de conteo. Sean A y B dos sucesos, que pueden ocurrir de $a$ y $b$ maneras respectivamente.
 \begin{itemize}
-    \item \textbf{\textit{Principio Aditivo:}} Si los sucesos no pueden ocurrir de manera simultánea (son mutuamente excluyentes), entonces hay \textit{a+b} maneras posibles de que ocurra \textit{A o B}.
-    \item \textbf{\textit{Principio Multiplicativo:}} Si los sucesos ocurren uno a continuación del otro o de manera simultánea, entonces hay $a \cdot b$ formas de que ocurra \textit{A y B}.
+	\item \textbf{\textit{Principio Aditivo:}} Si los sucesos no pueden ocurrir de manera simultánea (son mutuamente excluyentes), entonces hay \textit{a+b} maneras posibles de que ocurra \textit{A o B}.
+	\item \textbf{\textit{Principio Multiplicativo:}} Si los sucesos ocurren uno a continuación del otro o de manera simultánea, entonces hay $a \cdot b$ formas de que ocurra \textit{A y B}.
 \end{itemize}
 
 \subsection{Ejercicios}
 \begin{enumerate}
-    \item Al lanzar una moneda y un dado, ¿cuántos resultados posibles hay? \\
-    \textit{Solución:}
-    Lanzar una moneda y un dado son sucesos independientes que ocurren simultáneamente. Usamos el principio multiplicativo.
-    \begin{itemize}
-        \item Resultados de la moneda: 2 (cara, sello).
-        \item Resultados del dado: 6 (1, 2, 3, 4, 5, 6).
-    \end{itemize}
-    Total de resultados: $2 \times 6 = 12$. \\
-    \textbf{Respuesta: 12 resultados posibles.}
+	\item Al lanzar una moneda y un dado, ¿cuántos resultados posibles hay? \\
+	      \textit{Solución:}
+	      Lanzar una moneda y un dado son sucesos independientes que ocurren simultáneamente. Usamos el principio multiplicativo.
+	      \begin{itemize}
+		      \item Resultados de la moneda: 2 (cara, sello).
+		      \item Resultados del dado: 6 (1, 2, 3, 4, 5, 6).
+	      \end{itemize}
+	      Total de resultados: $2 \times 6 = 12$. \\
+	      \textbf{Respuesta: 12 resultados posibles.}
 
-    \item Si Pedro tiene 5 lápices de pasta, 4 de tinta y 3 de grafito, ¿de cuántas maneras puede elegir un lápiz para escribir? \\
-    \textit{Solución:}
-    Pedro debe elegir un lápiz de pasta \textbf{o} uno de tinta \textbf{o} uno de grafito. Son elecciones mutuamente excluyentes. Usamos el principio aditivo.
-    \begin{itemize}
-        \item Maneras de elegir un lápiz de pasta: 5.
-        \item Maneras de elegir un lápiz de tinta: 4.
-        \item Maneras de elegir un lápiz de grafito: 3.
-    \end{itemize}
-    Total de maneras: $5 + 4 + 3 = 12$. \\
-    \textbf{Respuesta: 12 maneras distintas.}
+	\item Si Pedro tiene 5 lápices de pasta, 4 de tinta y 3 de grafito, ¿de cuántas maneras puede elegir un lápiz para escribir? \\
+	      \textit{Solución:}
+	      Pedro debe elegir un lápiz de pasta \textbf{o} uno de tinta \textbf{o} uno de grafito. Son elecciones mutuamente excluyentes. Usamos el principio aditivo.
+	      \begin{itemize}
+		      \item Maneras de elegir un lápiz de pasta: 5.
+		      \item Maneras de elegir un lápiz de tinta: 4.
+		      \item Maneras de elegir un lápiz de grafito: 3.
+	      \end{itemize}
+	      Total de maneras: $5 + 4 + 3 = 12$. \\
+	      \textbf{Respuesta: 12 maneras distintas.}
 
-    \item En un local se puede elegir un combo con las siguientes opciones disponibles: 5 tipos de hamburguesas, 4 bebidas distintas o bien un jugo de 2 sabores distintos. Si el combo consiste en una hamburguesa y una bebida/jugo, ¿de cuántas maneras distintas se puede elegir? \\
-    \textit{Solución:}
-    La elección del combo tiene dos etapas: elegir una hamburguesa \textbf{y} elegir un líquido.
-    \begin{itemize}
-        \item \textbf{Etapa 1 (Hamburguesa):} Hay 5 opciones.
-        \item \textbf{Etapa 2 (Líquido):} Se puede elegir una bebida \textbf{o} un jugo. Esta es una sub-decisión que usa el principio aditivo.
-        \begin{itemize}
-            \item Opciones de bebida: 4.
-            \item Opciones de jugo: 2.
-            \item Total de opciones de líquido: $4 + 2 = 6$.
-        \end{itemize}
-    \end{itemize}
-    Para formar el combo, se aplica el principio multiplicativo entre la Etapa 1 y la Etapa 2.
-    Total de combos: $5 \text{ (hamburguesas)} \times 6 \text{ (líquidos)} = 30$. \\
-    \textbf{Respuesta: Se puede elegir de 30 maneras distintas.}
+	\item En un local se puede elegir un combo con las siguientes opciones disponibles: 5 tipos de hamburguesas, 4 bebidas distintas o bien un jugo de 2 sabores distintos. Si el combo consiste en una hamburguesa y una bebida/jugo, ¿de cuántas maneras distintas se puede elegir? \\
+	      \textit{Solución:}
+	      La elección del combo tiene dos etapas: elegir una hamburguesa \textbf{y} elegir un líquido.
+	      \begin{itemize}
+		      \item \textbf{Etapa 1 (Hamburguesa):} Hay 5 opciones.
+		      \item \textbf{Etapa 2 (Líquido):} Se puede elegir una bebida \textbf{o} un jugo. Esta es una sub-decisión que usa el principio aditivo.
+		            \begin{itemize}
+			            \item Opciones de bebida: 4.
+			            \item Opciones de jugo: 2.
+			            \item Total de opciones de líquido: $4 + 2 = 6$.
+		            \end{itemize}
+	      \end{itemize}
+	      Para formar el combo, se aplica el principio multiplicativo entre la Etapa 1 y la Etapa 2.
+	      Total de combos: $5 \text{ (hamburguesas)} \times 6 \text{ (líquidos)} = 30$. \\
+	      \textbf{Respuesta: Se puede elegir de 30 maneras distintas.}
 \end{enumerate}
 \newpage
 
@@ -659,31 +658,31 @@ Son técnicas de conteo. Sean A y B dos sucesos, que pueden ocurrir de $a$ y $b$
 \textbf{\textit{\large{Diferenciar distintas Permutaciones}}}
 
 \subsection{Combinatoria}
-Evento A: a maneras 
+Evento A: a maneras
 
 Evento B: b maneras
 
 \begin{itemize}
-    \item Principio Aditivo: $a + b$ \textbf{Excluyentes}
-    \item Principio Multiplicativo: $a \cdot b$ \textbf{Simultaneos} 
-    \item \textbf{\textit{Ej:}}
-    \begin{itemize}
-        \item Evento A: Lamzar un dado
-        \item Evento B: lanzar un dado 2 veces
-    \end{itemize}
+	\item Principio Aditivo: $a + b$ \textbf{Excluyentes}
+	\item Principio Multiplicativo: $a \cdot b$ \textbf{Simultaneos}
+	\item \textbf{\textit{Ej:}}
+	      \begin{itemize}
+		      \item Evento A: Lamzar un dado
+		      \item Evento B: lanzar un dado 2 veces
+	      \end{itemize}
 \end{itemize}
 
 \subsubsection{Permutacion simple} Correpsonde a la manera en que se pueden ordenar $n$ objetos
 
-    \begin{minipage}{0.35\textwidth}
-        \centering
-        \[ P_n = n! \]
-    \end{minipage}
-    \hfill
-    \begin{minipage}{0.55\textwidth}
-        \centering
-        \[ P_4 = 4!= 4 \cdot 3 \cdot 2 \cdot 1 \]
-    \end{minipage}
+\begin{minipage}{0.35\textwidth}
+	\centering
+	\[ P_n = n! \]
+\end{minipage}
+\hfill
+\begin{minipage}{0.55\textwidth}
+	\centering
+	\[ P_4 = 4!= 4 \cdot 3 \cdot 2 \cdot 1 \]
+\end{minipage}
 
 \subsubsection{Permutacion con repetición} Si tienes $n$ elementos y un elemento se repite $r_1$ veces, otro $r_2$ veces y así sucesivamente, entonces se pueden ordenar:
 
@@ -696,122 +695,122 @@ Evento B: b maneras
 \subsection{Ejercicios}
 
 \begin{enumerate}[label=\alph*.)]
-    \item ¿De cuantas maneras se peuden ordenar las letras de la palabara LEMUR  para fomrar otra palabara (con o sin sentido)
-        \[ P_5 = 5! = 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 120 \] \\
+	\item ¿De cuantas maneras se peuden ordenar las letras de la palabara LEMUR  para fomrar otra palabara (con o sin sentido)
+	      \[ P_5 = 5! = 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 120 \] \\
 
-    \item ¿Y para la plabra ARROYO? ¿Y CARRERA?
+	\item ¿Y para la plabra ARROYO? ¿Y CARRERA?
 
-        \begin{minipage}{0.45\textwidth}
-            \centering
-            \textbf{ARROYO:}
-            \[ P_{2, 2}^6 = \frac{6!}{2! \cdot 2!} = \frac{720}{4} = 180 \]
-        \end{minipage}
-        \hfill
-        \begin{minipage}{0.45\textwidth}
-            \centering
-            \textbf{CARRERA}
-            \[ P_{2,3}^7 = \frac{7!}{2! \cdot 3!} = \frac{7\cdot 6 \cdot 5 \cdot 4}{2} = 420 \]
-        \end{minipage}
-        
-        \phantom p \\
+	      \begin{minipage}{0.45\textwidth}
+		      \centering
+		      \textbf{ARROYO:}
+		      \[ P_{2, 2}^6 = \frac{6!}{2! \cdot 2!} = \frac{720}{4} = 180 \]
+	      \end{minipage}
+	      \hfill
+	      \begin{minipage}{0.45\textwidth}
+		      \centering
+		      \textbf{CARRERA}
+		      \[ P_{2,3}^7 = \frac{7!}{2! \cdot 3!} = \frac{7\cdot 6 \cdot 5 \cdot 4}{2} = 420 \]
+	      \end{minipage}
 
-    \item ¿De cuantas maneras se pueden sentar en una mesa de 4 sillas, 4 personas?
-        \[ PC_4 = \frac{4!}{4} =\frac{4 \cdot 3!}{4} = 3! = 6 \]
+	      \phantom p \\
+
+	\item ¿De cuantas maneras se pueden sentar en una mesa de 4 sillas, 4 personas?
+	      \[ PC_4 = \frac{4!}{4} =\frac{4 \cdot 3!}{4} = 3! = 6 \]
 \end{enumerate}
 %insertar imgane bonita
 
 \newpage
 
 \section{04/08 - Variaciones y Combinaciones}
-    \subsection{Variacion(o arreglo)}
-        Corres al número de ordenaciones de $K$ elementos, con $k \leq n$, de un total de $n$ elementos.
-        \[V_k^n = n \cdot (n - 1) \cdot (n - 2) \cdot ... \cdot (n - (k - 1)) = \frac{n!}{(n - k)!} \]
-        \subsubsection*{Con repetición}
-            \[VR_k^n = n^k \]
-    \subsection{Combinaciones} Corresponde a la cantiadad de grupos (o subconjuntos) de $k$ ekemnots de un total de n elemntos. 
-    \[C_k^n = \binom{n}{k} = \frac{V_k^n}{k!} = \frac{n!}{(n - k)! \cdot k!} \]
+\subsection{Variacion(o arreglo)}
+Corres al número de ordenaciones de $K$ elementos, con $k \leq n$, de un total de $n$ elementos.
+\[V_k^n = n \cdot (n - 1) \cdot (n - 2) \cdot ... \cdot (n - (k - 1)) = \frac{n!}{(n - k)!} \]
+\subsubsection*{Con repetición}
+\[VR_k^n = n^k \]
+\subsection{Combinaciones} Corresponde a la cantiadad de grupos (o subconjuntos) de $k$ ekemnots de un total de n elemntos.
+\[C_k^n = \binom{n}{k} = \frac{V_k^n}{k!} = \frac{n!}{(n - k)! \cdot k!} \]
 
-    \subsection*{¿Cómo Diferenciar?}
+\subsection*{¿Cómo Diferenciar?}
 Para determinar qué fórmula usar, sigue este diagrama de flujo:
 
 % CORREGIDO: Se reestructuró la lista para evitar el error "Too deeply nested".
 % Se simplificaron las opciones de 'enumerate'.
 \begin{enumerate}[label=\bfseries, wide]
-    \item \textbf{¿Importa el orden de los elementos seleccionados?}
-    \begin{itemize}
-        \item[\bfseries a)] \textbf{Sí, el orden importa $\rightarrow$ PERMUTACIÓN o VARIACIÓN}
-            \begin{itemize}
-                \item \textbf{¿Se usan TODOS los elementos ($k=n$)? $\rightarrow$ Es una PERMUTACIÓN.}
-                \noindent Ahora, distingue el tipo de arreglo:
-                    \begin{itemize}
-                        \item \textbf{Arreglo Lineal (en una fila):}
-                            \begin{itemize}
-                                \item Si todos los elementos son distintos $\rightarrow$ \textbf{Permutación Simple}: 
-                                      $ P_n = n! $
-                                \item Si hay elementos repetidos (ej. palabra C-A-S-A) $\rightarrow$ \textbf{Permutación con Repetición}: 
-                                      $ P_{n_1, \dots, n_k}^n = \frac{n!}{n_1! \dots n_k!} $
-                            \end{itemize}
-                        
-                        \item \textbf{Arreglo Circular (en una mesa, un llavero, etc.):}
-                            \begin{itemize}
-                                \item Asume que los elementos son distintos y las rotaciones no cuentan como un nuevo orden.
-                                \item $\rightarrow$ \textbf{Permutación Circular}: $ PC_n = (n-1)! $
-                            \end{itemize}
-                    \end{itemize}
+	\item \textbf{¿Importa el orden de los elementos seleccionados?}
+	      \begin{itemize}
+		      \item[\bfseries a)] \textbf{Sí, el orden importa $\rightarrow$ PERMUTACIÓN o VARIACIÓN}
+		            \begin{itemize}
+			            \item \textbf{¿Se usan TODOS los elementos ($k=n$)? $\rightarrow$ Es una PERMUTACIÓN.}
+			                  \noindent Ahora, distingue el tipo de arreglo:
+			                  \begin{itemize}
+				                  \item \textbf{Arreglo Lineal (en una fila):}
+				                        \begin{itemize}
+					                        \item Si todos los elementos son distintos $\rightarrow$ \textbf{Permutación Simple}:
+					                              $ P_n = n! $
+					                        \item Si hay elementos repetidos (ej. palabra C-A-S-A) $\rightarrow$ \textbf{Permutación con Repetición}:
+					                              $ P_{n_1, \dots, n_k}^n = \frac{n!}{n_1! \dots n_k!} $
+				                        \end{itemize}
 
-                \item \textbf{¿Se elige un SUBCONJUNTO ($k<n$)? $\rightarrow$ Es una VARIACIÓN.}
-                    \begin{itemize}
-                        \item ¿Se permite repetir elementos? $\rightarrow$ \textbf{Variación con Repetición}: $ VR_k^n = n^k $
-                        \item ¿No se permite repetir? $\rightarrow$ \textbf{Variación Simple}: $ V_k^n = \frac{n!}{(n-k)!} $
-                    \end{itemize}
-            \end{itemize}
-        
-        \item[\bfseries b)] \textbf{No, el orden NO importa $\rightarrow$ Es una COMBINACIÓN}
-            \begin{itemize}
-                \item ¿Se permite repetir elementos? $\rightarrow$ \textbf{Combinación con Repetición}: $CR_k^n = \binom{n+k-1}{k}$
-                \item ¿No se permite repetir? $\rightarrow$ \textbf{Combinación Simple}: $C_k^n = \binom{n}{k} = \frac{n!}{k!(n-k)!}$
-            \end{itemize}
-    \end{itemize}
+				                  \item \textbf{Arreglo Circular (en una mesa, un llavero, etc.):}
+				                        \begin{itemize}
+					                        \item Asume que los elementos son distintos y las rotaciones no cuentan como un nuevo orden.
+					                        \item $\rightarrow$ \textbf{Permutación Circular}: $ PC_n = (n-1)! $
+				                        \end{itemize}
+			                  \end{itemize}
+
+			            \item \textbf{¿Se elige un SUBCONJUNTO ($k<n$)? $\rightarrow$ Es una VARIACIÓN.}
+			                  \begin{itemize}
+				                  \item ¿Se permite repetir elementos? $\rightarrow$ \textbf{Variación con Repetición}: $ VR_k^n = n^k $
+				                  \item ¿No se permite repetir? $\rightarrow$ \textbf{Variación Simple}: $ V_k^n = \frac{n!}{(n-k)!} $
+			                  \end{itemize}
+		            \end{itemize}
+
+		      \item[\bfseries b)] \textbf{No, el orden NO importa $\rightarrow$ Es una COMBINACIÓN}
+		            \begin{itemize}
+			            \item ¿Se permite repetir elementos? $\rightarrow$ \textbf{Combinación con Repetición}: $CR_k^n = \binom{n+k-1}{k}$
+			            \item ¿No se permite repetir? $\rightarrow$ \textbf{Combinación Simple}: $C_k^n = \binom{n}{k} = \frac{n!}{k!(n-k)!}$
+		            \end{itemize}
+	      \end{itemize}
 \end{enumerate}\subsection*{Ejercicios Resueltos}
 Aquí tienes los ejercicios con sus soluciones y el razonamiento para cada uno:
 
 \begin{enumerate}[leftmargin=*,label=\arabic*.]
-    \item \textbf{En una carrera participan 15 estudiantes. ¿De cuantas maneras se puede formar el podio (1er, 2do, 3er lugar)?}
-    \begin{itemize}
-        \item \textbf{Razonamiento:} El orden importa (1er lugar es diferente de 2do). No hay repetición de estudiantes. Se seleccionan 3 de 15. Esto es una **Variación simple**.
-        \item \textbf{Cálculo:} $V_3^{15} = 15 \cdot 14 \cdot 13 = 2730$ maneras.
-    \end{itemize}
+	\item \textbf{En una carrera participan 15 estudiantes. ¿De cuantas maneras se puede formar el podio (1er, 2do, 3er lugar)?}
+	      \begin{itemize}
+		      \item \textbf{Razonamiento:} El orden importa (1er lugar es diferente de 2do). No hay repetición de estudiantes. Se seleccionan 3 de 15. Esto es una **Variación simple**.
+		      \item \textbf{Cálculo:} $V_3^{15} = 15 \cdot 14 \cdot 13 = 2730$ maneras.
+	      \end{itemize}
 
-    \item \textbf{¿De cuantas maneras se puede formar una clave numérica de 4 dígitos?}
-    \begin{itemize}
-        \item \textbf{Razonamiento:} El orden importa (1234 es diferente de 4321). Los dígitos pueden repetirse (ej. 1111). Se seleccionan 4 dígitos de 10 posibles (0-9). Esto es una **Variación con repetición**.
-        \item \textbf{Cálculo:} $VR_4^{10} = 10^4 = 10000$ maneras.
-    \end{itemize}
+	\item \textbf{¿De cuantas maneras se puede formar una clave numérica de 4 dígitos?}
+	      \begin{itemize}
+		      \item \textbf{Razonamiento:} El orden importa (1234 es diferente de 4321). Los dígitos pueden repetirse (ej. 1111). Se seleccionan 4 dígitos de 10 posibles (0-9). Esto es una **Variación con repetición**.
+		      \item \textbf{Cálculo:} $VR_4^{10} = 10^4 = 10000$ maneras.
+	      \end{itemize}
 
-    \item \textbf{¿Y si no se repiten los dígitos (para la clave numérica de 4 dígitos)?}
-    \begin{itemize}
-        \item \textbf{Razonamiento:} El orden sigue importando. Los dígitos NO pueden repetirse. Se seleccionan 4 dígitos distintos de 10 posibles. Esto es una **Variación simple**.
-        \item \textbf{Cálculo:} $V_4^{10} = 10 \cdot 9 \cdot 8 \cdot 7 = 5040$ maneras.
-    \end{itemize}
+	\item \textbf{¿Y si no se repiten los dígitos (para la clave numérica de 4 dígitos)?}
+	      \begin{itemize}
+		      \item \textbf{Razonamiento:} El orden sigue importando. Los dígitos NO pueden repetirse. Se seleccionan 4 dígitos distintos de 10 posibles. Esto es una **Variación simple**.
+		      \item \textbf{Cálculo:} $V_4^{10} = 10 \cdot 9 \cdot 8 \cdot 7 = 5040$ maneras.
+	      \end{itemize}
 
-    \item \textbf{En un curso de 40 estudiantes, ¿Cuántas directivas (Presidente, Vicepresidente, Tesorero) se pueden formar?}
-    \begin{itemize}
-        \item \textbf{Razonamiento:} El orden importa (ser Presidente es distinto de ser Vicepresidente). Los estudiantes no pueden ocupar múltiples cargos. Se seleccionan 3 de 40. Esto es una **Variación simple**.
-        \item \textbf{Cálculo:} $V_3^{40} = 40 \cdot 39 \cdot 38 = 59280$ maneras.
-    \end{itemize}
+	\item \textbf{En un curso de 40 estudiantes, ¿Cuántas directivas (Presidente, Vicepresidente, Tesorero) se pueden formar?}
+	      \begin{itemize}
+		      \item \textbf{Razonamiento:} El orden importa (ser Presidente es distinto de ser Vicepresidente). Los estudiantes no pueden ocupar múltiples cargos. Se seleccionan 3 de 40. Esto es una **Variación simple**.
+		      \item \textbf{Cálculo:} $V_3^{40} = 40 \cdot 39 \cdot 38 = 59280$ maneras.
+	      \end{itemize}
 
-    \item \textbf{En una asamblea de 100 personas, se escoge una directiva de 3 personas ¿De cuantas maneras se puede hacer?}
-    \begin{itemize}
-        \item \textbf{Razonamiento:} Esta pregunta es ambigua. Si "directiva" implica roles específicos (similar al ejercicio anterior), el orden importa. Sin embargo, si es solo un grupo de 3 personas sin roles definidos, el orden no importa (ver el siguiente ejercicio). Asumiendo que se refiere a un grupo donde el orden no importa, como una comisión.
-        \item \textbf{Cálculo (asumiendo que el orden NO importa, es decir, una comisión):} $C_3^{100} = \frac{100 \cdot 99 \cdot 98}{3 \cdot 2 \cdot 1} = \frac{970200}{6} = 161700$ maneras.
-        \item \textbf{Nota:} Si la intención era que el orden SÍ importaba (ej. Presidente, Secretario, Vocal), entonces sería una Variación: $V_3^{100} = 100 \cdot 99 \cdot 98 = 970200$ maneras. Es crucial aclarar si los roles son distinguibles o no en el enunciado.
-    \end{itemize}
+	\item \textbf{En una asamblea de 100 personas, se escoge una directiva de 3 personas ¿De cuantas maneras se puede hacer?}
+	      \begin{itemize}
+		      \item \textbf{Razonamiento:} Esta pregunta es ambigua. Si "directiva" implica roles específicos (similar al ejercicio anterior), el orden importa. Sin embargo, si es solo un grupo de 3 personas sin roles definidos, el orden no importa (ver el siguiente ejercicio). Asumiendo que se refiere a un grupo donde el orden no importa, como una comisión.
+		      \item \textbf{Cálculo (asumiendo que el orden NO importa, es decir, una comisión):} $C_3^{100} = \frac{100 \cdot 99 \cdot 98}{3 \cdot 2 \cdot 1} = \frac{970200}{6} = 161700$ maneras.
+		      \item \textbf{Nota:} Si la intención era que el orden SÍ importaba (ej. Presidente, Secretario, Vocal), entonces sería una Variación: $V_3^{100} = 100 \cdot 99 \cdot 98 = 970200$ maneras. Es crucial aclarar si los roles son distinguibles o no en el enunciado.
+	      \end{itemize}
 
-    \item \textbf{Y cuantas comisiones de 3 personas se pueden hacer (en la asamblea de 100 personas)?}
-    \begin{itemize}
-        \item \textbf{Razonamiento:} El orden NO importa (una comisión de Juan, Pedro y María es la misma que María, Pedro y Juan). No hay repetición de personas. Se seleccionan 3 de 100. Esto es una **Combinación simple**.
-        \item \textbf{Cálculo:} $C_3^{100} = \frac{100!}{3!(100-3)!} = \frac{100 \cdot 99 \cdot 98}{3 \cdot 2 \cdot 1} = \frac{970200}{6} = 161700$ maneras.
-    \end{itemize}
+	\item \textbf{Y cuantas comisiones de 3 personas se pueden hacer (en la asamblea de 100 personas)?}
+	      \begin{itemize}
+		      \item \textbf{Razonamiento:} El orden NO importa (una comisión de Juan, Pedro y María es la misma que María, Pedro y Juan). No hay repetición de personas. Se seleccionan 3 de 100. Esto es una **Combinación simple**.
+		      \item \textbf{Cálculo:} $C_3^{100} = \frac{100!}{3!(100-3)!} = \frac{100 \cdot 99 \cdot 98}{3 \cdot 2 \cdot 1} = \frac{970200}{6} = 161700$ maneras.
+	      \end{itemize}
 \end{enumerate}
 
 \newpage
@@ -820,14 +819,14 @@ Aquí tienes los ejercicios con sus soluciones y el razonamiento para cada uno:
 \subsection{Propiedades de los Números Combinatorios}
 Los números combinatorios, denotados como $\binom{n}{k}$, tienen propiedades útiles que simplifican los cálculos. [1]
 \begin{enumerate}
-    \item \textbf{Combinaciones de los extremos:} Seleccionar todos los elementos de un conjunto es posible de una sola manera, al igual que no seleccionar ninguno (eligiendo el conjunto vacío).
-    \[ \binom{n}{n} = \binom{n}{0} = 1 \]
+	\item \textbf{Combinaciones de los extremos:} Seleccionar todos los elementos de un conjunto es posible de una sola manera, al igual que no seleccionar ninguno (eligiendo el conjunto vacío).
+	      \[ \binom{n}{n} = \binom{n}{0} = 1 \]
 
-    \item \textbf{Propiedad de simetría:} El número de maneras de elegir $k$ elementos de un conjunto de $n$ es igual al número de maneras de *no elegir* (o dejar) $n-k$ elementos.
-    \[ \binom{n}{k} = \binom{n}{n-k} \quad \text{para } k \leq n \]
+	\item \textbf{Propiedad de simetría:} El número de maneras de elegir $k$ elementos de un conjunto de $n$ es igual al número de maneras de *no elegir* (o dejar) $n-k$ elementos.
+	      \[ \binom{n}{k} = \binom{n}{n-k} \quad \text{para } k \leq n \]
 
-    \item \textbf{Identidad de Pascal:} Esta identidad es la base para construir el Triángulo de Pascal. [2] Establece que la suma de dos números combinatorios consecutivos en una fila del triángulo da como resultado el número combinatorio que se encuentra debajo de ellos.
-    \[ \binom{n}{k} + \binom{n}{k+1} = \binom{n+1}{k+1} \]
+	\item \textbf{Identidad de Pascal:} Esta identidad es la base para construir el Triángulo de Pascal. [2] Establece que la suma de dos números combinatorios consecutivos en una fila del triángulo da como resultado el número combinatorio que se encuentra debajo de ellos.
+	      \[ \binom{n}{k} + \binom{n}{k+1} = \binom{n+1}{k+1} \]
 \end{enumerate}
 
 \subsection{Demostraciones}
@@ -867,10 +866,10 @@ La fórmula del Binomio de Newton utiliza los números combinatorios como coefic
 \[ (a+b)^n = \sum_{k=0}^{n} \binom{n}{k} a^{n-k} b^k = \binom{n}{0}a^n + \binom{n}{1}a^{n-1}b + \dots + \binom{n}{n}b^n \]
 
 \begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.5\textwidth]{pascal}
-    \caption{El Triángulo de Pascal, donde cada fila $n$ corresponde a los coeficientes de $(a+b)^n$.}
-    \label{fig:pascaltrig}
+	\centering
+	\includegraphics[width=0.5\textwidth]{pascal}
+	\caption{El Triángulo de Pascal, donde cada fila $n$ corresponde a los coeficientes de $(a+b)^n$.}
+	\label{fig:pascaltrig}
 \end{figure}
 
 
@@ -882,36 +881,36 @@ La \textbf{cardinalidad} (número de elementos) del conjunto potencia se puede c
 
 \subsection{Ejercicios}
 \begin{enumerate}
-    \item \textbf{¿De cuántas maneras se pueden sentar 5 personas en una mesa redonda?} \\
-    \textit{Solución:} Es una permutación circular. $PC_5 = (5-1)! = 4! = 24$ maneras.
+	\item \textbf{¿De cuántas maneras se pueden sentar 5 personas en una mesa redonda?} \\
+	      \textit{Solución:} Es una permutación circular. $PC_5 = (5-1)! = 4! = 24$ maneras.
 
-    \item \textbf{En una competición participan 40 personas y solo quedan seleccionadas 5.}
-        \begin{enumerate}
-            \item \textbf{¿Cuántos grupos distintos pueden quedar seleccionados?} \\
-            \textit{Solución:} El orden no importa, es una combinación. \\
-            $C_5^{40} = \binom{40}{5} = \frac{40!}{5!(35!)} = \frac{40 \cdot 39 \cdot 38 \cdot 37 \cdot 36}{5 \cdot 4 \cdot 3 \cdot 2 \cdot 1} = 658,008$ grupos.
-            \item \textbf{¿Cuántos primeros 5 puntajes distintos puede haber?} \\
-            \textit{Solución:} El orden importa (1er, 2do, etc.), es una variación. \\
-            $V_5^{40} = \frac{40!}{(40-5)!} = \frac{40!}{35!} = 40 \cdot 39 \cdot 38 \cdot 37 \cdot 36 = 78,960,960$ maneras.
-        \end{enumerate}
+	\item \textbf{En una competición participan 40 personas y solo quedan seleccionadas 5.}
+	      \begin{enumerate}
+		      \item \textbf{¿Cuántos grupos distintos pueden quedar seleccionados?} \\
+		            \textit{Solución:} El orden no importa, es una combinación. \\
+		            $C_5^{40} = \binom{40}{5} = \frac{40!}{5!(35!)} = \frac{40 \cdot 39 \cdot 38 \cdot 37 \cdot 36}{5 \cdot 4 \cdot 3 \cdot 2 \cdot 1} = 658,008$ grupos.
+		      \item \textbf{¿Cuántos primeros 5 puntajes distintos puede haber?} \\
+		            \textit{Solución:} El orden importa (1er, 2do, etc.), es una variación. \\
+		            $V_5^{40} = \frac{40!}{(40-5)!} = \frac{40!}{35!} = 40 \cdot 39 \cdot 38 \cdot 37 \cdot 36 = 78,960,960$ maneras.
+	      \end{enumerate}
 
-    \item \textbf{Si se dispone de 5 frutas distintas.}
-        \begin{enumerate}
-            \item \textbf{¿Cuántos jugos de dos frutas se pueden hacer?} \\
-            \textit{Solución:} El orden no importa, es una combinación. \\
-            $C_2^5 = \binom{5}{2} = \frac{5!}{2!3!} = 10$ jugos.
-            \item \textbf{¿Y de 3 frutas?} \\
-            \textit{Solución:} Combinación. $C_3^5 = \binom{5}{3} = \frac{5!}{3!2!} = 10$ jugos.
-            \item \textbf{¿Y de al menos 2 frutas?} \\
-            \textit{Solución:} Se suman los jugos de 2, 3, 4 y 5 frutas. \\
-            $C_2^5 + C_3^5 + C_4^5 + C_5^5 = 10 + 10 + 5 + 1 = 26$ jugos.
-        \end{enumerate}
+	\item \textbf{Si se dispone de 5 frutas distintas.}
+	      \begin{enumerate}
+		      \item \textbf{¿Cuántos jugos de dos frutas se pueden hacer?} \\
+		            \textit{Solución:} El orden no importa, es una combinación. \\
+		            $C_2^5 = \binom{5}{2} = \frac{5!}{2!3!} = 10$ jugos.
+		      \item \textbf{¿Y de 3 frutas?} \\
+		            \textit{Solución:} Combinación. $C_3^5 = \binom{5}{3} = \frac{5!}{3!2!} = 10$ jugos.
+		      \item \textbf{¿Y de al menos 2 frutas?} \\
+		            \textit{Solución:} Se suman los jugos de 2, 3, 4 y 5 frutas. \\
+		            $C_2^5 + C_3^5 + C_4^5 + C_5^5 = 10 + 10 + 5 + 1 = 26$ jugos.
+	      \end{enumerate}
 \end{enumerate}
 \begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.75\textwidth]{Gat}
-    \caption{Gatito Para hacer bonito el apunte}
-    \label{fig:Gat}
+	\centering
+	\includegraphics[width=0.75\textwidth]{Gat}
+	\caption{Gatito Para hacer bonito el apunte}
+	\label{fig:Gat}
 \end{figure}
 
 
@@ -922,41 +921,41 @@ La \textbf{cardinalidad} (número de elementos) del conjunto potencia se puede c
 
 \subsection{Esquema de Diferenciacion}
 \begin{enumerate}[label=\bfseries, wide]
-    \item \textbf{¿Importa el orden de los elementos seleccionados?}
-    \begin{itemize}
-        \item[\bfseries a)] \textbf{Sí, el orden importa $\rightarrow$ PERMUTACIÓN o VARIACIÓN}
-            \begin{itemize}
-                \item \textbf{¿Se usan TODOS los elementos ($k=n$)? $\rightarrow$ Es una PERMUTACIÓN.}
-                \noindent Ahora, distingue el tipo de arreglo:
-                    \begin{itemize}
-                        \item \textbf{Arreglo Lineal (en una fila):}
-                            \begin{itemize}
-                                \item Si todos los elementos son distintos $\rightarrow$ \textbf{Permutación Simple}: 
-                                      $ P_n = n! $
-                                \item Si hay elementos repetidos (ej. palabra C-A-S-A) $\rightarrow$ \textbf{Permutación con Repetición}: 
-                                      $ P_{n_1, \dots, n_k}^n = \frac{n!}{n_1! \dots n_k!} $
-                            \end{itemize}
-                        
-                        \item \textbf{Arreglo Circular (en una mesa, un llavero, etc.):}
-                            \begin{itemize}
-                                \item Asume que los elementos son distintos y las rotaciones no cuentan como un nuevo orden.
-                                \item $\rightarrow$ \textbf{Permutación Circular}: $ PC_n = (n-1)! $
-                            \end{itemize}
-                    \end{itemize}
+	\item \textbf{¿Importa el orden de los elementos seleccionados?}
+	      \begin{itemize}
+		      \item[\bfseries a)] \textbf{Sí, el orden importa $\rightarrow$ PERMUTACIÓN o VARIACIÓN}
+		            \begin{itemize}
+			            \item \textbf{¿Se usan TODOS los elementos ($k=n$)? $\rightarrow$ Es una PERMUTACIÓN.}
+			                  \noindent Ahora, distingue el tipo de arreglo:
+			                  \begin{itemize}
+				                  \item \textbf{Arreglo Lineal (en una fila):}
+				                        \begin{itemize}
+					                        \item Si todos los elementos son distintos $\rightarrow$ \textbf{Permutación Simple}:
+					                              $ P_n = n! $
+					                        \item Si hay elementos repetidos (ej. palabra C-A-S-A) $\rightarrow$ \textbf{Permutación con Repetición}:
+					                              $ P_{n_1, \dots, n_k}^n = \frac{n!}{n_1! \dots n_k!} $
+				                        \end{itemize}
 
-                \item \textbf{¿Se elige un SUBCONJUNTO ($k<n$)? $\rightarrow$ Es una VARIACIÓN.}
-                    \begin{itemize}
-                        \item ¿Se permite repetir elementos? $\rightarrow$ \textbf{Variación con Repetición}: $ VR_k^n = n^k $
-                        \item ¿No se permite repetir? $\rightarrow$ \textbf{Variación Simple}: $ V_k^n = \frac{n!}{(n-k)!} $
-                    \end{itemize}
-            \end{itemize}
-        
-        \item[\bfseries b)] \textbf{No, el orden NO importa $\rightarrow$ Es una COMBINACIÓN}
-            \begin{itemize}
-                \item ¿Se permite repetir elementos? $\rightarrow$ \textbf{Combinación con Repetición}: $CR_k^n = \binom{n+k-1}{k}$
-                \item ¿No se permite repetir? $\rightarrow$ \textbf{Combinación Simple}: $C_k^n = \binom{n}{k} = \frac{n!}{k!(n-k)!}$
-            \end{itemize}
-    \end{itemize}
+				                  \item \textbf{Arreglo Circular (en una mesa, un llavero, etc.):}
+				                        \begin{itemize}
+					                        \item Asume que los elementos son distintos y las rotaciones no cuentan como un nuevo orden.
+					                        \item $\rightarrow$ \textbf{Permutación Circular}: $ PC_n = (n-1)! $
+				                        \end{itemize}
+			                  \end{itemize}
+
+			            \item \textbf{¿Se elige un SUBCONJUNTO ($k<n$)? $\rightarrow$ Es una VARIACIÓN.}
+			                  \begin{itemize}
+				                  \item ¿Se permite repetir elementos? $\rightarrow$ \textbf{Variación con Repetición}: $ VR_k^n = n^k $
+				                  \item ¿No se permite repetir? $\rightarrow$ \textbf{Variación Simple}: $ V_k^n = \frac{n!}{(n-k)!} $
+			                  \end{itemize}
+		            \end{itemize}
+
+		      \item[\bfseries b)] \textbf{No, el orden NO importa $\rightarrow$ Es una COMBINACIÓN}
+		            \begin{itemize}
+			            \item ¿Se permite repetir elementos? $\rightarrow$ \textbf{Combinación con Repetición}: $CR_k^n = \binom{n+k-1}{k}$
+			            \item ¿No se permite repetir? $\rightarrow$ \textbf{Combinación Simple}: $C_k^n = \binom{n}{k} = \frac{n!}{k!(n-k)!}$
+		            \end{itemize}
+	      \end{itemize}
 \end{enumerate}
 
 

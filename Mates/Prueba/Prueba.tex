@@ -1,0 +1,130 @@
+\documentclass[11pt]{article}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}  % Math
+\usepackage{amssymb}  % Symbols
+\usepackage{graphicx} % Images
+\graphicspath{ {./images/}}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{array} % Para mejorar las tablas
+
+\title{Apunte Prueba Viernes}
+\author{Felipe Colli}
+\date{21 de agosto de 2025}
+
+\begin{document}
+\maketitle
+
+\section{Contenidos Prueba 29/08}
+\begin{itemize}
+    \item Boletas de Honorarios
+    \item Liquidaciones de sueldo
+    \item Interés Simple
+    \item Interés Compuesto
+\end{itemize}
+
+\section{Boletas de Honorarios}
+Están Asociadas al trabajo Independiente $\rightarrow$ No hay contrato de por medio. La retención de impuestos ha ido aumentando gradualmente según la Ley N°21.133 para fortalecer la protección social. Para el año 2025, la retención es del 14.5\%.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|c|}
+    \hline
+    \textbf{Concepto} & \textbf{Porcentaje} \\ 
+    \hline
+    Total Honorarios & $100\%$ \\ 
+    \hline
+    Impuesto retenido (2025) & $14.5\%$ \\
+    \hline
+    Líquido a pago & $85.5\%$ \\
+    \hline
+\end{tabular}
+\end{table}
+
+\section{Liquidaciones de Sueldo}
+Trabajo Dependiente $\rightarrow$ Existe un contrato de trabajo (Fijo/Indefinido).
+
+\subsection{Haberes}
+Son todos los ingresos que recibe el trabajador. Se dividen en imponibles y no imponibles.
+\begin{itemize}
+    \item \textbf{Imponibles:} Son aquellos a los que se aplican los descuentos legales.
+        \begin{itemize}
+            \item Sueldo Base: Monto fijo pactado.
+            \item Horas extras.
+            \item Bonos y Comisiones.
+            \item Gratificaciones: Parte de las utilidades de la empresa. Generalmente es el 25\% de todo lo anterior, con un tope.
+        \end{itemize}
+    \item \textbf{No Imponibles:} No están sujetos a descuentos previsionales.
+        \begin{itemize}
+            \item Movilización (Transporte).
+            \item Colación.
+            \item Viáticos.
+            \item Asignación Familiar.
+        \end{itemize}
+\end{itemize}
+
+\subsection{Descuentos Legales}
+Son las deducciones obligatorias por ley.
+\begin{itemize}
+    \item \textbf{Salud (Fonasa o Isapre):} Corresponde a un 7\% de la renta imponible.
+    \item \textbf{AFP (Pensión):} Corresponde a un 10\% para el fondo de pensión, más una comisión que varía según la AFP.
+    \item \textbf{AFC (Seguro de Cesantía):} Para contratos indefinidos, el descuento al trabajador es del 0.6\% del total imponible.
+    \item \textbf{Impuesto Único de 2da Categoría:} Se aplica solo si la renta, una vez aplicados los descuentos anteriores, excede las 13.5 UTM mensuales. Es un impuesto progresivo. A continuación un ejemplo de tabla (los valores cambian mensualmente según la UTM):
+\end{itemize}
+
+\begin{table}[h!]
+\centering
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|>{\centering\arraybackslash}p{4.5cm}|c|>{\centering\arraybackslash}p{3cm}|}
+    \hline
+    \textbf{Renta Líquida Imponible Mensual} & \textbf{Factor} & \textbf{Cantidad a Rebajar} \\
+    \hline
+    \$0 a \$926.734,50 & Exento & - \\
+    \hline
+    \$926.734,51 a \$2.059.410,00 & 0,04 & \$37.069,38 \\
+    \hline
+    \$2.059.410,01 a \$3.432.350,00 & 0,08 & \$119.445,78 \\
+    \hline
+    \$3.432.350,01 a \$4.805.290,00 & 0,135 & \$308.225,03 \\
+    \hline
+    \$4.805.290,01 a \$6.178.230,00 & 0,23 & \$764.727,58 \\
+    \hline
+    \$6.178.230,01 a \$8.237.640,00 & 0,304 & \$1.221.916,60 \\
+    \hline
+\end{tabular}
+\caption{Tabla de ejemplo para el Impuesto Único (Agosto 2025).}
+\end{table}
+
+\section{Interés Simple}
+El interés simple se calcula únicamente sobre el capital inicial (C) durante todo el período. El interés generado no se reinvierte.
+
+La fórmula para calcular el interés es:
+\begin{equation*}
+I = C \cdot r \cdot t
+\end{equation*}
+Donde:
+\begin{itemize}
+    \item \textbf{I} = Interés generado.
+    \item \textbf{C} = Capital inicial.
+    \item \textbf{r} = Tasa de interés por período (en formato decimal).
+    \item \textbf{t} = Número de períodos de tiempo.
+\end{itemize}
+El capital final (Cf) sería $Cf = C + I$.
+
+\section{Interés Compuesto}
+El interés compuesto se calcula sobre el capital inicial más los intereses acumulados en períodos anteriores. Los intereses generan nuevos intereses.
+
+La fórmula para calcular el capital final es:
+\begin{equation*}
+C_f = C \cdot (1 + r)^t
+\end{equation*}
+Donde:
+\begin{itemize}
+    \item \textbf{C$_f$} = Capital final.
+    \item \textbf{C} = Capital inicial.
+    \item \textbf{r} = Tasa de interés por período de capitalización.
+    \item \textbf{t} = Número de períodos de capitalización.
+\end{itemize}
+
+\end{document}

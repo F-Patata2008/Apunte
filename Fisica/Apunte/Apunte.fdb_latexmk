@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1748634251.31183 "Apunte.tex" "Apunte.pdf" "Apunte" 1748634252.55748 0
-  "/home/fpatata/Clases/Fisica/images/logo.png" 1747419118.46849 7949 cc26bed184e5e1103c6a6f769f5412fa ""
+["pdflatex"] 1755886099.00303 "Apunte.tex" "Apunte.pdf" "Apunte" 1755886100.47988 0
+  "/home/F-Patata/Apunte/Fisica/images/logo.png" 1753454929.46359 7949 cc26bed184e5e1103c6a6f769f5412fa ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1742685315 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1742685315 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecbx1095.tfm" 1742685315 3584 21b378cca2e40816b0e6d74a4dc98f04 ""
@@ -168,11 +168,11 @@
   "/usr/share/texmf-dist/tex/latex/transparent/transparent.sty" 1742685315 1918 c8d1ecb3722721d6f624992cbc042b70 ""
   "/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty" 1742685315 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1742685315 42087 b0f9697c952c8f5a8eede4134282cb0d ""
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1746973900 5311557 9da84c45f5b388655502706482323571 ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1747956315 2030636 ce3491baba5b3c930ca2ed50b13c11cd ""
-  "Apunte.aux" 1748634252.37234 1739 a897c0b7afe9c7212221c710371ba336 "pdflatex"
-  "Apunte.tex" 1748634248.97025 5178 653fc9e04de57dfc3b5ffbef0fc8074e ""
-  "Apunte.toc" 1748634252.37834 984 530943d1c9716ef7fea41bd110ed316d "pdflatex"
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1755391423 5311557 9da84c45f5b388655502706482323571 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1755391400 2081318 cecf0ae638810bb84727d8c45e454026 ""
+  "Apunte.aux" 1755886100.26985 1739 a897c0b7afe9c7212221c710371ba336 "pdflatex"
+  "Apunte.tex" 1755886097.01486 5179 ae58e67db9044523cbf089e6996bee3e ""
+  "Apunte.toc" 1755886100.27385 984 530943d1c9716ef7fea41bd110ed316d "pdflatex"
   (generated)
   "Apunte.aux"
   "Apunte.log"

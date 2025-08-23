@@ -1,0 +1,18 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Introducción a la Cinemática}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Clase de 23/05/2025: Movimientos Rectilíneos}{2}{subsection.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1}Movimiento Rectilíneo Uniforme (MRU)}{2}{subsubsection.1.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.2}Movimiento Rectilíneo Uniformemente Acelerado (MRUA)}{2}{subsubsection.1.1.2}%
+\contentsline {subsubsection}{\numberline {1.1.3}Análisis Gráfico y Derivadas}{2}{subsubsection.1.1.3}%
+\contentsline {section}{\numberline {2}Clase del 30/05/2025: Movimiento Circular}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Movimiento Circular Uniforme (MCU)}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Clase 22/08/2025 - Movimiento Circular Uniformemente Variado (MCUV)}{3}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Clase del 18/07/2025: Dinámica}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Leyes de Newton}{6}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Primera Ley de Newton (Ley de Inercia)}{6}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Segunda Ley de Newton (Ley Fundamental de la Dinámica)}{6}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}Tercera Ley de Newton (Principio de Acción y Reacción)}{7}{subsubsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.2}Impulso y Momentum}{7}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Momentum o Cantidad de Movimiento}{7}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Impulso}{7}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}Relación entre Impulso y Momentum}{8}{subsubsection.3.2.3}%

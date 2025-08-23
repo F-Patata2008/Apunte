@@ -1,0 +1,195 @@
+\documentclass[11pt]{article}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{eso-pic}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{lipsum}
+\usepackage{tikz}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+}
+
+\graphicspath{{./images/}} % Ruta sugerida para las imágenes
+\newcommand\BackgroundPic{
+    \put(0,0){
+        \parbox[b][\paperheight]{\paperwidth}{
+            \vfill
+            \centering
+            \includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{logo} % Imagen de fondo
+            \vfill
+        }
+    }
+}
+
+\title{Apuntes de Física Teórica (AFTIN)}
+\author{Felipe Colli \thanks{AFTIN y Profesor Paul Cáceres}}
+\date{\today}
+\AddToShipoutPicture{\BackgroundPic} % Descomentar si tienes una imagen de fondo
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Apuntes de Física}
+\fancyhead[R]{Felipe Colli}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Introducción a la Cinemática}
+La cinemática es la rama de la física que estudia el movimiento de los objetos sólidos y su trayectoria en función del tiempo, sin tomar en cuenta el origen de las fuerzas que lo motivan. Para esto, se toma en consideración la velocidad (el cambio en el desplazamiento por unidad de tiempo) y la aceleración (cambio de velocidad del objeto que se mueve).
+
+\subsection{Clase de 23/05/2025: Movimientos Rectilíneos}
+\subsubsection{Movimiento Rectilíneo Uniforme (MRU)}
+\begin{enumerate}
+	\item La trayectoria del móvil es una línea recta.
+	\item La velocidad es constante, lo que implica que la aceleración es nula ($\vec{a}=0 \frac{m}{s^2}$).
+\end{enumerate}
+
+\textbf{Ecuaciones principales:}
+\begin{itemize}
+	\item Velocidad: $v = \frac{\Delta x}{\Delta t}$
+	\item Ecuación de itinerario: $x(t) = x_i + v \cdot t$
+\end{itemize}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.8\textwidth]{mru_graficos.png}
+	\caption{Gráficos de posición, velocidad y aceleración en función del tiempo para un MRU.}
+\end{figure}
+
+\subsubsection{Movimiento Rectilíneo Uniformemente Acelerado (MRUA)}
+\begin{enumerate}
+	\item La trayectoria del móvil es una línea recta.
+	\item La velocidad varía de manera uniforme, lo que significa que la aceleración es constante y no nula.
+\end{enumerate}
+
+\textbf{Ecuaciones principales:}
+\begin{itemize}
+	\item Aceleración: $a = \frac{\Delta v}{\Delta t}$
+	\item Ecuación de la velocidad: $v(t) = v_i + a \cdot t$
+	\item Ecuación de itinerario: $x(t) = x_i + v_i t + \frac{1}{2}at^2$
+	\item Ecuación independiente del tiempo: $v_f^2 = v_i^2 + 2a\Delta x$
+\end{itemize}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.8\textwidth]{mrua_graficos.png}
+	\caption{Gráficos de posición, velocidad y aceleración en función del tiempo para un MRUA.}
+\end{figure}
+
+\subsubsection{Análisis Gráfico y Derivadas}
+La relación entre las magnitudes cinemáticas se puede entender a través del cálculo diferencial e integral.
+\begin{itemize}
+	\item La \textbf{velocidad} es la derivada de la posición respecto al tiempo: $v(t) = \frac{dx(t)}{dt}$.
+	\item La \textbf{aceleración} es la derivada de la velocidad respecto al tiempo: $a(t) = \frac{dv(t)}{dt}$.
+	\item El \textbf{cambio en la posición} (desplazamiento) es la integral de la velocidad respecto al tiempo.
+	\item El \textbf{cambio en la velocidad} es la integral de la aceleración respecto al tiempo.
+\end{itemize}
+
+\newpage
+
+\section{Clase del 30/05/2025: Movimiento Circular}
+\subsection{Movimiento Circular Uniforme (MCU)}
+Es un movimiento de trayectoria circular en el que la rapidez es constante. Aunque la rapidez no cambia, la velocidad sí lo hace (cambia de dirección), lo que implica la existencia de una aceleración.
+
+\begin{itemize}
+	\item \textbf{Aceleración centrípeta ($a_c$):} Apunta siempre hacia el centro de la trayectoria. Su módulo es $a_c = \frac{v^2}{r} = \omega^2 r$.
+	\item \textbf{Velocidad angular ($\omega$):} Rapidez con la que varía el ángulo en el tiempo. Se mide en radianes por segundo. $\omega = \frac{\Delta \theta}{\Delta t}$.
+	\item \textbf{Relación entre velocidad lineal y angular:} $v = r\omega$.
+\end{itemize}
+
+\begin{figure}[h!]
+	\centering
+	\begin{tikzpicture}
+		\draw[->] (0,0) -- (2,0) node[right] {$v$};
+		\draw[->] (0,0) -- (0,-2) node[below] {$a_c$};
+		\draw[dashed] (0,0) circle (2);
+		\fill (0,0) circle (2pt);
+	\end{tikzpicture}
+	\caption{En un MCU, la velocidad es tangencial a la trayectoria y la aceleración centrípeta apunta hacia el centro.}
+\end{figure}
+
+
+\subsection{Clase 22/08/2025 - Movimiento Circular Uniformemente Variado (MCUV)}
+En este movimiento, la rapidez del objeto cambia de manera constante. Por lo tanto, además de la aceleración centrípeta, existe una aceleración tangencial.
+
+\begin{itemize}
+	\item \textbf{Aceleración angular ($\alpha$):} Es constante e indica cómo cambia la velocidad angular. $\alpha = \frac{\Delta \omega}{\Delta t}$.
+	\item \textbf{Aceleración tangencial ($a_t$):} Es responsable del cambio en el módulo de la velocidad. $a_t = \alpha \cdot r$.
+	\item \textbf{Aceleración total ($\vec{A}$):} Es la suma vectorial de las aceleraciones centrípeta y tangencial. $|\vec{A}| = \sqrt{a_c^2 + a_t^2}$.
+\end{itemize}
+
+\textbf{Ecuaciones angulares (análogas al MRUA):}
+\begin{itemize}
+	\item $\omega(t) = \omega_i + \alpha t$
+	\item $\theta(t) = \theta_i + \omega_i t + \frac{1}{2}\alpha t^2$
+	\item $\omega_f^2 = \omega_i^2 + 2\alpha \Delta\theta$
+\end{itemize}
+
+
+\newpage
+\section{Clase del 18/07/2025: Dinámica}
+
+\subsection{Leyes de Newton}
+La dinámica es la parte de la física que estudia la relación entre el movimiento y las causas que lo producen (las fuerzas). Se basa en las tres leyes formuladas por Isaac Newton.
+
+\subsubsection{Primera Ley de Newton (Ley de Inercia)}
+"Todo cuerpo persevera en su estado de reposo o movimiento uniforme y rectilíneo a no ser que sea obligado a cambiar su estado por fuerzas impresas sobre él."
+
+Esto significa que si la fuerza neta sobre un objeto es cero, su velocidad permanecerá constante (si estaba en reposo, seguirá en reposo; si estaba en movimiento, continuará moviéndose con velocidad constante).
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.6\textwidth]{ley_inercia.jpg}
+	\caption{Un objeto en reposo permanecerá en reposo si no actúan fuerzas sobre él.}
+\end{figure}
+
+\subsubsection{Segunda Ley de Newton (Ley Fundamental de la Dinámica)}
+"El cambio de movimiento es directamente proporcional a la fuerza motriz impresa y ocurre según la línea recta a lo largo de la cual aquella fuerza se imprime."
+
+Matemáticamente se expresa como:
+\[ \sum \vec{F} = m \cdot \vec{a} \]
+Donde $\sum \vec{F}$ es la fuerza neta aplicada sobre el cuerpo, $m$ es su masa y $\vec{a}$ es la aceleración que adquiere.
+
+\subsubsection{Tercera Ley de Newton (Principio de Acción y Reacción)}
+"Con toda acción ocurre siempre una reacción igual y contraria: o sea, las acciones mutuas de dos cuerpos siempre son iguales y dirigidas en sentido opuesto."
+
+Si un cuerpo A ejerce una fuerza sobre un cuerpo B ($\vec{F}_{AB}$), entonces el cuerpo B ejerce una fuerza de igual magnitud y en sentido opuesto sobre el cuerpo A ($\vec{F}_{BA}$).
+\[ \vec{F}_{AB} = - \vec{F}_{BA} \]
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.6\textwidth]{accion_reaccion.png}
+	\caption{A toda acción corresponde una reacción de igual magnitud pero en sentido contrario.}
+\end{figure}
+
+\subsection{Impulso y Momentum}
+\subsubsection{Momentum o Cantidad de Movimiento}
+Es una magnitud vectorial que describe el "movimiento" de un cuerpo. Se define como el producto de la masa del cuerpo por su velocidad.
+\[ \vec{p} = m \cdot \vec{v} \]
+Sus unidades en el Sistema Internacional son kg·m/s.
+
+\subsubsection{Impulso}
+El impulso ($\vec{I}$) es una magnitud vectorial que se define como el producto de la fuerza por el intervalo de tiempo durante el cual actúa. Mide el efecto de una fuerza durante un tiempo.
+\[ \vec{I} = \vec{F} \cdot \Delta t \]
+Si la fuerza no es constante, el impulso se calcula como la integral de la fuerza en el tiempo. Sus unidades son N·s.
+
+\subsubsection{Relación entre Impulso y Momentum}
+El \textbf{Teorema del Impulso y la Cantidad de Movimiento} establece que el impulso aplicado a un cuerpo es igual a la variación en su cantidad de movimiento.
+\[ \vec{I}_{neto} = \Delta \vec{p} = \vec{p}_f - \vec{p}_i \]
+Esta es una de las formulaciones más importantes de la física, ya que conecta directamente las fuerzas (causas) con los cambios en el estado de movimiento (efectos).
+
+\end{document}

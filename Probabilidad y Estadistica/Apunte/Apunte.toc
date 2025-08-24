@@ -1,76 +1,76 @@
 \babel@toc {spanish}{}\relax 
-\contentsline {section}{\numberline {1}14/03 - Conceptos Fundamentales de Estadística}{5}{}%
-\contentsline {subsection}{\numberline {1.1}Conceptos Basicos}{5}{}%
-\contentsline {subsubsection}{\numberline {1.1.1}Población:}{5}{}%
-\contentsline {subsubsection}{\numberline {1.1.2}Muestra:}{5}{}%
-\contentsline {subsubsection}{\numberline {1.1.3}Parámetro:}{5}{}%
-\contentsline {subsubsection}{\numberline {1.1.4}Estadístico (o estadígrafo):}{5}{}%
-\contentsline {subsection}{\numberline {1.2}Tipos de Variables}{6}{}%
-\contentsline {subsubsection}{\numberline {1.2.1}Variables cualitativas:}{6}{}%
-\contentsline {subsubsection}{\numberline {1.2.2}Variables cuantitativas:}{6}{}%
-\contentsline {subsection}{\numberline {1.3}Ejercicios:}{7}{}%
-\contentsline {section}{\numberline {2}17/03 - Tablas de Frecuencia y Medidas de Tendencia Central}{9}{}%
-\contentsline {subsection}{\numberline {2.1}Tablas de Frecuencia: Conceptos Básicos}{9}{}%
-\contentsline {subsection}{\numberline {2.2}Tipos de Frecuencia:}{9}{}%
-\contentsline {subsection}{\numberline {2.3}Medidas de Tendencia Central:}{10}{}%
-\contentsline {subsubsection}{\numberline {2.3.1}Media Aritmética ($\bar {x}$):}{10}{}%
-\contentsline {subsubsection}{\numberline {2.3.2}Mediana ($M_e$):}{10}{}%
-\contentsline {subsubsection}{\numberline {2.3.3}Moda ($M_o$):}{10}{}%
-\contentsline {section}{\numberline {3}26/03 - Ejercicios de Medidas de Tendencia Central}{11}{}%
-\contentsline {subsection}{\numberline {3.1}Ejercicios:}{11}{}%
-\contentsline {section}{\numberline {4}04/04 - Muestreo y Representatividad}{14}{}%
-\contentsline {subsection}{\numberline {4.1}Población y Muestra}{14}{}%
-\contentsline {subsection}{\numberline {4.2}Muestreo}{14}{}%
-\contentsline {subsubsection}{\numberline {4.2.1}Representatividad}{14}{}%
-\contentsline {subsection}{\numberline {4.3}Tipos de Muestreo Probabilístico}{14}{}%
-\contentsline {subsubsection}{\numberline {4.3.1}Muestreo Aleatorio Simple (M.A.S)}{15}{}%
-\contentsline {subsubsection}{\numberline {4.3.2}Muestreo Estratificado}{15}{}%
-\contentsline {subsubsection}{\numberline {4.3.3}Muestreo por Conglomerados (Clusters)}{16}{}%
-\contentsline {subsubsection}{\numberline {4.3.4}Muestreo Aleatorio Sistemático}{16}{}%
-\contentsline {subsection}{\numberline {4.4}Muestreos No Probabilísticos}{17}{}%
-\contentsline {subsubsection}{\numberline {4.4.1}Muestreo por Cuotas}{17}{}%
-\contentsline {subsubsection}{\numberline {4.4.2}Muestreo Bola de Nieve}{17}{}%
-\contentsline {subsubsection}{\numberline {4.4.3}Muestreo por Juicio o Conveniencia}{18}{}%
-\contentsline {section}{\numberline {5}10/04 - Medidas de Dispersión}{19}{}%
-\contentsline {subsection}{\numberline {5.1}Medidas de Dispersión}{19}{}%
-\contentsline {subsubsection}{\numberline {5.1.1}Rango (o Amplitud Total):}{19}{}%
-\contentsline {subsubsection}{\numberline {5.1.2}Desviación Media (DM):}{19}{}%
-\contentsline {subsubsection}{\numberline {5.1.3}Varianza ($\sigma ^2$ para población, $s^2$ para muestra):}{20}{}%
-\contentsline {subsubsection}{\numberline {5.1.4}Desviación Estándar (o Típica) ($\sigma $ para población, $s$ para muestra):}{20}{}%
-\contentsline {subsubsection}{\numberline {5.1.5}Propiedades de $\sigma $ y $\sigma ^2$ (usando la definición con denominador $n$)}{20}{}%
-\contentsline {section}{\numberline {6}16/04 - Propiedades de la Varianza y Desviación Estándar}{22}{}%
-\contentsline {subsection}{\numberline {6.1}Demostración Propiedad 4 (Multiplicación por una constante)}{22}{}%
-\contentsline {subsection}{\numberline {6.2}Ejercicio}{23}{}%
-\contentsline {subsection}{\numberline {6.3}Demostración Propiedad 5 (Fórmula Computacional de la Varianza)}{24}{}%
-\contentsline {section}{\numberline {7}23/04 - Demostraciones sobre el Valor de la Desviación Estándar}{25}{}%
-\contentsline {subsection}{\numberline {7.1}Demostraciones de Propiedades Relacionadas con el Valor de $\sigma $}{25}{}%
-\contentsline {subsubsection}{\numberline {7.1.1}Propiedad 6: $\sigma ^2 = \sigma \DOTSB \tmspace +\thickmuskip {.2777em}\DOTSB \Leftarrow \joinrel \Rightarrow \tmspace +\thickmuskip {.2777em}\sigma =0 \vee \sigma =1$}{25}{}%
-\contentsline {subsubsection}{\numberline {7.1.2}Propiedad 7: $\sigma ^2 < \sigma \DOTSB \tmspace +\thickmuskip {.2777em}\DOTSB \Leftarrow \joinrel \Rightarrow \tmspace +\thickmuskip {.2777em}0 < \sigma < 1$}{25}{}%
-\contentsline {subsubsection}{\numberline {7.1.3}Propiedad 8: $\sigma ^2 > \sigma \DOTSB \tmspace +\thickmuskip {.2777em}\DOTSB \Leftarrow \joinrel \Rightarrow \tmspace +\thickmuskip {.2777em}\sigma > 1$}{26}{}%
-\contentsline {section}{\numberline {8}30/05 - Medidas de Posición: Cuartiles, Quintiles, Deciles y Percentiles}{27}{}%
-\contentsline {subsection}{\numberline {8.1}Cuartiles}{27}{}%
-\contentsline {subsection}{\numberline {8.2}Quintiles}{27}{}%
-\contentsline {subsection}{\numberline {8.3}Deciles}{27}{}%
-\contentsline {subsection}{\numberline {8.4}Percentiles}{27}{}%
-\contentsline {section}{\numberline {9}11/06 - Principios Fundamentales de la Combinatoria}{28}{}%
-\contentsline {subsection}{\numberline {9.1}Combinatoria}{28}{}%
-\contentsline {subsection}{\numberline {9.2}Ejercicios}{28}{}%
-\contentsline {section}{\numberline {10}07/07 - Permutaciones}{30}{}%
-\contentsline {subsection}{\numberline {10.1}Combinatoria}{30}{}%
-\contentsline {subsubsection}{\numberline {10.1.1}Permutacion simple}{30}{}%
-\contentsline {subsubsection}{\numberline {10.1.2}Permutacion con repetición}{30}{}%
-\contentsline {subsubsection}{\numberline {10.1.3}Permutacion Circular}{30}{}%
-\contentsline {subsection}{\numberline {10.2}Ejercicios}{31}{}%
-\contentsline {section}{\numberline {11}04/08 - Variaciones y Combinaciones}{32}{}%
-\contentsline {subsection}{\numberline {11.1}Variacion(o arreglo)}{32}{}%
-\contentsline {subsection}{\numberline {11.2}Combinaciones}{32}{}%
-\contentsline {section}{\numberline {12}11/08 - Propiedades de Combinatoria y Triángulo de Pascal}{35}{}%
-\contentsline {subsection}{\numberline {12.1}Propiedades de los Números Combinatorios}{35}{}%
-\contentsline {subsection}{\numberline {12.2}Demostraciones}{35}{}%
-\contentsline {subsubsection}{\numberline {12.2.1}Propiedad 1: $\binom {n}{n} = \binom {n}{0} = 1$}{35}{}%
-\contentsline {subsubsection}{\numberline {12.2.2}Propiedad 2 (Simetría): $\binom {n}{k} = \binom {n}{n-k}$}{36}{}%
-\contentsline {subsection}{\numberline {12.3}Triángulo de Pascal y Binomio de Newton}{37}{}%
-\contentsline {subsection}{\numberline {12.4}Conjunto Potencia}{38}{}%
-\contentsline {subsection}{\numberline {12.5}Ejercicios}{38}{}%
-\contentsline {section}{\numberline {13}18/08 - Repaso Para Prueba}{40}{}%
-\contentsline {subsection}{\numberline {13.1}Ejercicios Resueltos}{40}{}%
+\contentsline {section}{\numberline {1}14/03 - Conceptos Fundamentales de Estadística}{5}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Conceptos Basicos}{5}{subsection.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1}Población:}{5}{subsubsection.1.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.2}Muestra:}{5}{subsubsection.1.1.2}%
+\contentsline {subsubsection}{\numberline {1.1.3}Parámetro:}{5}{subsubsection.1.1.3}%
+\contentsline {subsubsection}{\numberline {1.1.4}Estadístico (o estadígrafo):}{5}{subsubsection.1.1.4}%
+\contentsline {subsection}{\numberline {1.2}Tipos de Variables}{6}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Variables cualitativas:}{6}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2}Variables cuantitativas:}{6}{subsubsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.3}Ejercicios:}{7}{subsection.1.3}%
+\contentsline {section}{\numberline {2}17/03 - Tablas de Frecuencia y Medidas de Tendencia Central}{9}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Tablas de Frecuencia: Conceptos Básicos}{9}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Tipos de Frecuencia:}{9}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Medidas de Tendencia Central:}{10}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Media Aritmética ($\bar {x}$):}{10}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Mediana (Me)}{10}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}Moda (Mo)}{10}{subsubsection.2.3.3}%
+\contentsline {section}{\numberline {3}26/03 - Ejercicios de Medidas de Tendencia Central}{11}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Ejercicios:}{11}{subsection.3.1}%
+\contentsline {section}{\numberline {4}04/04 - Muestreo y Representatividad}{14}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Población y Muestra}{14}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Muestreo}{14}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Representatividad}{14}{subsubsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.3}Tipos de Muestreo Probabilístico}{14}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Muestreo Aleatorio Simple (M.A.S)}{15}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Muestreo Estratificado}{15}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}Muestreo por Conglomerados (Clusters)}{16}{subsubsection.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.3.4}Muestreo Aleatorio Sistemático}{16}{subsubsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.4}Muestreos No Probabilísticos}{17}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Muestreo por Cuotas}{17}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}Muestreo Bola de Nieve}{17}{subsubsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.3}Muestreo por Juicio o Conveniencia}{18}{subsubsection.4.4.3}%
+\contentsline {section}{\numberline {5}10/04 - Medidas de Dispersión}{19}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Medidas de Dispersión}{19}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Rango (o Amplitud Total):}{19}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Desviación Media (DM):}{19}{subsubsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.3}Varianza (sigma-cuadrado para población, s-cuadrado para muestra)}{20}{subsubsection.5.1.3}%
+\contentsline {subsubsection}{\numberline {5.1.4}Desviación Estándar (sigma para población, s para muestra)}{20}{subsubsection.5.1.4}%
+\contentsline {subsubsection}{\numberline {5.1.5}Propiedades de sigma y sigma-cuadrado}{20}{subsubsection.5.1.5}%
+\contentsline {section}{\numberline {6}16/04 - Propiedades de la Varianza y Desviación Estándar}{22}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Demostración Propiedad 4 (Multiplicación por una constante)}{22}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Ejercicio}{23}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Demostración Propiedad 5 (Fórmula Computacional de la Varianza)}{24}{subsection.6.3}%
+\contentsline {section}{\numberline {7}23/04 - Demostraciones sobre el Valor de la Desviación Estándar}{25}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Demostraciones de Propiedades Relacionadas con el Valor de sigma}{25}{subsection.7.1}%
+\contentsline {subsubsection}{\numberline {7.1.1}Propiedad 6: sigma-cuadrado = sigma si y solo si sigma=0 o sigma=1}{25}{subsubsection.7.1.1}%
+\contentsline {subsubsection}{\numberline {7.1.2}Propiedad 7: sigma-cuadrado < sigma si y solo si 0 < sigma < 1}{25}{subsubsection.7.1.2}%
+\contentsline {subsubsection}{\numberline {7.1.3}Propiedad 8: sigma-cuadrado > sigma si y solo si sigma > 1}{26}{subsubsection.7.1.3}%
+\contentsline {section}{\numberline {8}30/05 - Medidas de Posición: Cuartiles, Quintiles, Deciles y Percentiles}{27}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Cuartiles}{27}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Quintiles}{27}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Deciles}{27}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Percentiles}{27}{subsection.8.4}%
+\contentsline {section}{\numberline {9}11/06 - Principios Fundamentales de la Combinatoria}{28}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Combinatoria}{28}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Ejercicios}{28}{subsection.9.2}%
+\contentsline {section}{\numberline {10}07/07 - Permutaciones}{30}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Combinatoria}{30}{subsection.10.1}%
+\contentsline {subsubsection}{\numberline {10.1.1}Permutación simple}{30}{subsubsection.10.1.1}%
+\contentsline {subsubsection}{\numberline {10.1.2}Permutación con repetición}{30}{subsubsection.10.1.2}%
+\contentsline {subsubsection}{\numberline {10.1.3}Permutación Circular}{30}{subsubsection.10.1.3}%
+\contentsline {subsection}{\numberline {10.2}Ejercicios}{31}{subsection.10.2}%
+\contentsline {section}{\numberline {11}04/08 - Variaciones y Combinaciones}{32}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Variación (o arreglo)}{32}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}Combinaciones}{32}{subsection.11.2}%
+\contentsline {section}{\numberline {12}11/08 - Propiedades de Combinatoria y Triángulo de Pascal}{35}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Propiedades de los Números Combinatorios}{35}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}Demostraciones}{35}{subsection.12.2}%
+\contentsline {subsubsection}{\numberline {12.2.1}Propiedad 1: C(n,n) = C(n,0) = 1}{35}{subsubsection.12.2.1}%
+\contentsline {subsubsection}{\numberline {12.2.2}Propiedad 2 (Simetría): C(n,k) = C(n, n-k)}{36}{subsubsection.12.2.2}%
+\contentsline {subsection}{\numberline {12.3}Triángulo de Pascal y Binomio de Newton}{37}{subsection.12.3}%
+\contentsline {subsection}{\numberline {12.4}Conjunto Potencia}{38}{subsection.12.4}%
+\contentsline {subsection}{\numberline {12.5}Ejercicios}{38}{subsection.12.5}%
+\contentsline {section}{\numberline {13}18/08 - Repaso Para Prueba}{40}{section.13}%
+\contentsline {subsection}{\numberline {13.1}Ejercicios Resueltos}{40}{subsection.13.1}%

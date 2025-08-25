@@ -8,11 +8,11 @@
 \usepackage{tabularx}
 \usepackage{enumitem}
 
-% ----- PAQUETES DE MEJORA -----
+% ----- PAQUETES DE MEJORA Y CORRECCIONES -----
 \usepackage{microtype} % Soluciona problemas de Overfull/Underfull hbox y mejora la tipografía
 \renewcommand{\arraystretch}{1.5} % Incrementa el espaciado vertical
 \graphicspath{ {./images/}}
-% -----------------------------
+% --------------------------------------------
 
 % ----- PAQUETES Y CONFIGURACIÓN DE AUTORÍA Y MARCA DE PÁGINA -----
 \usepackage{fancyhdr}
@@ -30,6 +30,7 @@
     pdfproducer={LaTeX with hyperref}
 }
 % --------------------------------------------------------------------------
+
 
 \begin{document}
 
@@ -216,7 +217,7 @@ Para cada una de las siguientes situaciones, identifica la población de interé
 
 \subsection{Medidas de Tendencia Central:}
 
-\subsubsection{\texorpdfstring{Media Aritmética ($\bar{x}$)}{Media Aritmética (x barra)}}
+\subsubsection{\texorpdfstring{Media Aritmética ($\bar{x}$):}{Media Aritmética (x barra)}}
 Es el cociente entre la suma de todos los datos y el número total de datos ($n$). Si se tienen $n$ datos $x_1, x_2, \dots, x_n$:
 \[ \bar{x}=\frac{x_1+x_2+\dots+x_n}{n} = \frac{\sum_{i=1}^{n} x_i}{n} \] \\
 Para datos agrupados en una tabla de frecuencia con $k$ clases:
@@ -242,14 +243,14 @@ Para datos agrupados en una tabla de frecuencia con $k$ clases:
 	\end{minipage}
 \end{center}
 
-\subsubsection{\texorpdfstring{Mediana ($M_e$)}{Mediana (Me)}}
+\subsubsection{\texorpdfstring{Mediana ($M_e$):}{Mediana (Me)}}
 Es el valor que ocupa la posición central de la muestra cuando los datos se encuentran ordenados. \textbf{Si la muestra tiene un número par de datos, la mediana es la media aritmética de los dos términos centrales.}
 \begin{itemize}
     \item Si $n$ es impar, la posición es $\frac{n+1}{2}$. $M_e = x_{(\frac{n+1}{2})}$.
     \item Si $n$ es par, las posiciones son $\frac{n}{2}$ y $\frac{n}{2}+1$. $M_e = \frac{x_{(\frac{n}{2})} + x_{(\frac{n}{2}+1)}}{2}$.
 \end{itemize}
 
-\subsubsection{\texorpdfstring{Moda ($M_o$)}{Moda (Mo)}}
+\subsubsection{\texorpdfstring{Moda ($M_o$):}{Moda (Mo)}}
 Es el dato o intervalo con la mayor frecuencia absoluta. La muestra puede ser:
 \begin{itemize}
 	\item \textbf{Amodal:} No presenta moda.
@@ -452,7 +453,7 @@ Dada una variable $X$, con $n$ datos $x_1, x_2, \dots, x_n$ y media aritmética 
 \[ DM = \frac{|x_1-\bar{x}|+|x_2-\bar{x}|+\dots+|x_n-\bar{x}|}{n} = \frac{\sum_{i=1}^{n} |x_i - \bar{x}|}{n} \]
 Mide el promedio de cuánto se desvían los datos de la media, en valor absoluto.
 
-\subsubsection{\texorpdfstring{Varianza ($\sigma^2$ para población, $s^2$ para muestra):}{Varianza (sigma-cuadrado para población, s-cuadrado para muestra)}}
+\subsubsection{\texorpdfstring{Varianza ($\sigma^2$ para población, $s^2$ para muestra)}{Varianza (sigma-cuadrado para población, s-cuadrado para muestra)}}
 Es el promedio de las desviaciones al cuadrado de cada dato respecto a la media. Es la medida de dispersión más utilizada junto con su raíz cuadrada (la desviación estándar).
 Para una \textbf{población} de $N$ datos:
 \[ \sigma^2 = \frac{\sum_{i=1}^{N} (x_i - \mu)^2}{N} \]
@@ -462,7 +463,7 @@ Para una \textbf{muestra} de $n$ datos, la varianza muestral \textit{insesgada} 
 \[ s^2 = \frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n-1} \]
 (En este curso, si no se especifica, $\sigma^2$ con denominador $n$ se refiere a la varianza de un conjunto de datos específico, sea este una población o una muestra descrita como tal).
 
-\subsubsection{\texorpdfstring{Desviación Estándar (o Típica) ($\sigma$ para población, $s$ para muestra):}{Desviación Estándar (o Típica) (sigma para población, s para muestra)}}
+\subsubsection{\texorpdfstring{Desviación Estándar (o Típica) ($\sigma$ para población, $s$ para muestra)}{Desviación Estándar (o Típica) (sigma para población, s para muestra)}}
 Es la raíz cuadrada positiva de la varianza. Tiene la ventaja de estar expresada en las mismas unidades que los datos originales.
 \[ \sigma = \sqrt{\sigma^2} = \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n}} \]
 \[ s = \sqrt{s^2} = \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n-1}} \]
@@ -506,13 +507,13 @@ L.Q.Q.D. (Lo Que Queríamos Demostrar)
 \subsection{Ejercicio}
 Dados los datos: -2, 0, 2, 4, 6. ($n=5$). Determinar:
 \begin{enumerate}
-	\item $\bar{x}$ \\
+	\item \texorpdfstring{$\bar{x}$}{x barra} \\
 	      \textit{Solución:} $\bar{x} = \frac{-2+0+2+4+6}{5} = \frac{10}{5} = 2$. \\
 	\item \texorpdfstring{$\sigma$ (desviación estándar)}{sigma (desviación estándar)} \\
 	      \textit{Solución:} Primero calculamos la varianza $\sigma^2$:
 	      \begin{align*} \sigma^2 &= \frac{\sum (x_i - \bar{x})^2}{n} \\ &= \frac{(-2-2)^2+(0-2)^2+(2-2)^2+(4-2)^2+(6-2)^2}{5} \\ &= \frac{(-4)^2+(-2)^2+(0)^2+(2)^2+(4)^2}{5} \\ &= \frac{16+4+0+4+16}{5} = \frac{40}{5} = 8 \end{align*}
 	      Ahora la desviación estándar: $\sigma = \sqrt{\sigma^2} = \sqrt{8} = \sqrt{4 \cdot 2} = 2\sqrt{2} \approx 2.828$. \\
-	\item $\overline{x^2}$ (el promedio de los cuadrados de los datos) \\
+	\item \texorpdfstring{$\overline{x^2}$ (el promedio de los cuadrados de los datos)}{x-cuadrado barra (el promedio...)} \\
 	      \textit{Solución:} Los cuadrados de los datos son: $(-2)^2=4, 0^2=0, 2^2=4, 4^2=16, 6^2=36$.
 	      \[ \overline{x^2} = \frac{4+0+4+16+36}{5} = \frac{60}{5} = 12 \]
 	\item \texorpdfstring{Calcular $\overline{x^2}-(\bar{x})^2$ y comparar con $\sigma^2$}{Calcular x-cuadrado-barra - (x-barra)-cuadrado y comparar con sigma-cuadrado}. \\
@@ -537,11 +538,11 @@ Reconocemos que $\frac{\sum x_i^2}{n} = \overline{x^2}$ (la media de los cuadrad
 L.Q.Q.D.
 \newpage
 
-\section[23/04 - Demostraciones sobre el Valor de la Desviación Estándar]{23/04 - Demostraciones sobre el Valor de la Desviación Estándar}
-\subsection[Demostraciones de Propiedades Relacionadas con el Valor de sigma]{Demostraciones de Propiedades Relacionadas con el Valor de $\sigma$}
+\section{23/04 - Demostraciones sobre el Valor de la Desviación Estándar}
+\subsection{Demostraciones de Propiedades Relacionadas con el Valor de $\sigma$}
 Recordar que $\sigma \ge 0$ por definición (es una raíz cuadrada positiva o cero).
 
-\subsubsection[Propiedad 6: sigma-cuadrado = sigma si y solo si sigma=0 o sigma=1]{Propiedad 6: \texorpdfstring{$\sigma^2 = \sigma \iff \sigma=0 \vee \sigma=1$}{sigma-cuadrado = sigma <=> sigma=0 v sigma=1}}
+\subsubsection{Propiedad 6: \texorpdfstring{$\sigma^2 = \sigma \iff \sigma=0 \vee \sigma=1$}{sigma-cuadrado = sigma <=> sigma=0 v sigma=1}}
 Partimos de la ecuación:
 \[\sigma^2=\sigma \]
 Reordenamos para formar una ecuación cuadrática en $\sigma$:
@@ -554,7 +555,7 @@ Por lo tanto:
 \[\sigma=0 \vee \sigma=1 \]
 L.Q.Q.D.
 
-\subsubsection[Propiedad 7: sigma-cuadrado < sigma si y solo si 0 < sigma < 1]{Propiedad 7: \texorpdfstring{$\sigma^2 < \sigma \iff 0 < \sigma < 1$}{sigma-cuadrado < sigma <=> 0 < sigma < 1}}
+\subsubsection{Propiedad 7: \texorpdfstring{$\sigma^2 < \sigma \iff 0 < \sigma < 1$}{sigma-cuadrado < sigma <=> 0 < sigma < 1}}
 Partimos de la desigualdad:
 \[\sigma^2 < \sigma \]
 Reordenamos:
@@ -578,7 +579,7 @@ Por lo tanto:
 \[0 < \sigma < 1 \]
 L.Q.Q.D.
 
-\subsubsection[Propiedad 8: sigma-cuadrado > sigma si y solo si sigma > 1]{Propiedad 8: \texorpdfstring{$\sigma^2 > \sigma \iff \sigma > 1$}{sigma-cuadrado > sigma <=> sigma > 1}}
+\subsubsection{Propiedad 8: \texorpdfstring{$\sigma^2 > \sigma \iff \sigma > 1$}{sigma-cuadrado > sigma <=> sigma > 1}}
 Partimos de la desigualdad:
 \[\sigma^2 > \sigma \]
 Reordenamos:
@@ -602,6 +603,7 @@ Por lo tanto:
 L.Q.Q.D.
 \newpage
 
+
 \section{30/05 - Medidas de Posición: Cuartiles, Quintiles, Deciles y Percentiles}
 Dado un conjunto de datos ordenados se define:
 
@@ -614,6 +616,7 @@ Son los 4 valores que dividen en partes iguales a los datos, que corresponden al
 
 \subsection{Deciles}
 Son los 9 valores que dividen en partes iguales a los datos, que corresponden al 10\%, 20\%, 30\%, 40\%, 50\%, 60\%, 70\%, 80\% y 90\%.
+
 
 \subsection{Percentiles}
 Son los 99 valores que dividen en partes iguales a los datos, que corresponden al 1\%, 2\%, 3\%, ... ,99\%.
@@ -688,8 +691,7 @@ Evento B: b maneras
 	      \end{itemize}
 \end{itemize}
 
-\subsubsection{Permutación simple}
-Corresponde a la manera en que se pueden ordenar $n$ objetos.
+\subsubsection{Permutación simple} Corresponde a la manera en que se pueden ordenar $n$ objetos.
 \begin{minipage}{0.35\textwidth}
 	\centering
 	\[ P_n = n! \]
@@ -700,12 +702,10 @@ Corresponde a la manera en que se pueden ordenar $n$ objetos.
 	\[ P_4 = 4!= 4 \cdot 3 \cdot 2 \cdot 1 \]
 \end{minipage}
 
-\subsubsection{Permutación con repetición}
-Si tienes $n$ elementos y un elemento se repite $r_1$ veces, otro $r_2$ veces y así sucesivamente, entonces se pueden ordenar:
+\subsubsection{Permutación con repetición} Si tienes $n$ elementos y un elemento se repite $r_1$ veces, otro $r_2$ veces y así sucesivamente, entonces se pueden ordenar:
 \[ P_{r_1, r_2, \dots}^n = \frac{n!}{r_1! \cdot r_2! \cdot \dots} \]
 
-\subsubsection{Permutación Circular}
-Si tenemos $n$ elementos, los podemos ordenar de:
+\subsubsection{Permutación Circular} Si tenemos $n$ elementos, los podemos ordenar de:
 \[ PC_n = \frac{n!}{n} = (n-1)! \]
 
 \subsection{Ejercicios}
@@ -741,12 +741,10 @@ Corresponde al número de ordenaciones de $k$ elementos, con $k \leq n$, de un t
 \subsubsection*{Con repetición}
 \[VR_k^n = n^k \]
 
-\subsection{Combinaciones}
-Corresponde a la cantidad de grupos (o subconjuntos) de $k$ elementos de un total de $n$ elementos.
+\subsection{Combinaciones} Corresponde a la cantidad de grupos (o subconjuntos) de $k$ elementos de un total de $n$ elementos.
 \[C_k^n = \binom{n}{k} = \frac{V_k^n}{k!} = \frac{n!}{(n - k)! \cdot k!} \]
 
 \subsection*{¿Cómo Diferenciar?}
-\begin{sloppypar}
 Para determinar qué fórmula usar, sigue este diagrama de flujo:
 \begin{enumerate}[label=\bfseries Paso \arabic*:, wide]
 	\item \textbf{¿Importa el orden de los elementos seleccionados?}
@@ -779,7 +777,6 @@ Para determinar qué fórmula usar, sigue este diagrama de flujo:
 		            \end{itemize}
 	      \end{itemize}
 \end{enumerate}
-\end{sloppypar}
 
 \subsection*{Ejercicios Resueltos}
 Aquí tienes los ejercicios con sus soluciones y el razonamiento para cada uno:
@@ -827,18 +824,18 @@ Aquí tienes los ejercicios con sus soluciones y el razonamiento para cada uno:
 \subsection{Propiedades de los Números Combinatorios}
 Los números combinatorios, denotados como $\binom{n}{k}$, tienen propiedades útiles que simplifican los cálculos.
 \begin{enumerate}
-    \item \textbf{Combinaciones de los extremos:} Seleccionar todos los elementos de un conjunto es posible de una sola manera, al igual que no seleccionar ninguno (eligiendo el conjunto vacío).
-    \[ \binom{n}{n} = \binom{n}{0} = 1 \]
+	\item \textbf{Combinaciones de los extremos:} Seleccionar todos los elementos de un conjunto es posible de una sola manera, al igual que no seleccionar ninguno (eligiendo el conjunto vacío).
+	      \[ \binom{n}{n} = \binom{n}{0} = 1 \]
 
-    \item \textbf{Propiedad de simetría:} El número de maneras de elegir $k$ elementos de un conjunto de $n$ es igual al número de maneras de *no elegir* (o dejar) $n-k$ elementos.
-    \[ \binom{n}{k} = \binom{n}{n-k} \quad \text{para } k \leq n \]
+	\item \textbf{Propiedad de simetría:} El número de maneras de elegir $k$ elementos de un conjunto de $n$ es igual al número de maneras de *no elegir* (o dejar) $n-k$ elementos.
+	      \[ \binom{n}{k} = \binom{n}{n-k} \quad \text{para } k \leq n \]
 
-    \item \textbf{Identidad de Pascal:} Esta identidad es la base para construir el Triángulo de Pascal. Establece que la suma de dos números combinatorios consecutivos en una fila del triángulo da como resultado el número combinatorio que se encuentra debajo de ellos.
-    \[ \binom{n}{k} + \binom{n}{k+1} = \binom{n+1}{k+1} \]
+	\item \textbf{Identidad de Pascal:} Esta identidad es la base para construir el Triángulo de Pascal. Establece que la suma de dos números combinatorios consecutivos en una fila del triángulo da como resultado el número combinatorio que se encuentra debajo de ellos.
+	      \[ \binom{n}{k} + \binom{n}{k+1} = \binom{n+1}{k+1} \]
 \end{enumerate}
 
 \subsection{Demostraciones}
-\subsubsection[Propiedad 1: C(n,n) = C(n,0) = 1]{Propiedad 1: \texorpdfstring{$\binom{n}{n} = \binom{n}{0} = 1$}{C(n,n) = C(n,0) = 1}}
+\subsubsection{\texorpdfstring{Propiedad 1: $\binom{n}{n} = \binom{n}{0} = 1$}{Propiedad 1: C(n,n) = C(n,0) = 1}}
 La demostración se basa en la aplicación directa de la fórmula de la combinación, $\binom{n}{k} = \frac{n!}{k!(n-k)!}$, y en la definición matemática de que $0! = 1$.
 
 \vspace{1em}
@@ -855,7 +852,7 @@ La demostración se basa en la aplicación directa de la fórmula de la combinac
 \[ \frac{n!}{n! \cdot 0!} = \frac{1}{0!} = \frac{1}{1} = 1 \]
 \textit{Interpretación: Solo hay una forma de elegir 0 elementos de un conjunto (es decir, no tomar ninguno).}
 
-\subsubsection[Propiedad 2 (Simetría): C(n,k) = C(n, n-k)]{Propiedad 2 (Simetría): \texorpdfstring{$\binom{n}{k} = \binom{n}{n-k}$}{C(n,k) = C(n, n-k)}}
+\subsubsection{\texorpdfstring{Propiedad 2 (Simetría): $\binom{n}{k} = \binom{n}{n-k}$}{Propiedad 2 (Simetría): C(n,k) = C(n,n-k)}}
 \textit{Comentario: Esta propiedad muestra una hermosa simetría en las combinaciones. Intuitivamente, significa que el acto de elegir $k$ elementos para formar un grupo es equivalente al acto de elegir $n-k$ elementos para dejarlos fuera de ese grupo. La demostración es algebraica.}
 
 \vspace{1em}
@@ -874,10 +871,10 @@ La fórmula del Binomio de Newton utiliza los números combinatorios como coefic
 \[ (a+b)^n = \sum_{k=0}^{n} \binom{n}{k} a^{n-k} b^k = \binom{n}{0}a^n + \binom{n}{1}a^{n-1}b + \dots + \binom{n}{n}b^n \]
 
 \begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.5\textwidth]{pascal}
-    \caption{El Triángulo de Pascal, donde cada fila $n$ corresponde a los coeficientes de $(a+b)^n$.}
-    \label{fig:pascaltrig}
+	\centering
+	\includegraphics[width=0.5\textwidth]{pascal}
+	\caption{El Triángulo de Pascal, donde cada fila $n$ corresponde a los coeficientes de $(a+b)^n$.}
+	\label{fig:pascaltrig}
 \end{figure}
 
 \subsection{Conjunto Potencia}
@@ -888,30 +885,30 @@ La \textbf{cardinalidad} (número de elementos) del conjunto potencia se puede c
 
 \subsection{Ejercicios}
 \begin{enumerate}
-    \item \textbf{¿De cuántas maneras se pueden sentar 5 personas en una mesa redonda?} \\
-    \textit{Solución:} Es una permutación circular. $PC_5 = (5-1)! = 4! = 24$ maneras.
+	\item \textbf{¿De cuántas maneras se pueden sentar 5 personas en una mesa redonda?} \\
+	      \textit{Solución:} Es una permutación circular. $PC_5 = (5-1)! = 4! = 24$ maneras.
 
-    \item \textbf{En una competición participan 40 personas y solo quedan seleccionadas 5.}
-        \begin{enumerate}
-            \item \textbf{¿Cuántos grupos distintos pueden quedar seleccionados?} \\
-            \textit{Solución:} El orden no importa, es una combinación. \\
-            $C_5^{40} = \binom{40}{5} = \frac{40!}{5!(35!)} = \frac{40 \cdot 39 \cdot 38 \cdot 37 \cdot 36}{5 \cdot 4 \cdot 3 \cdot 2 \cdot 1} = 658,008$ grupos.
-            \item \textbf{¿Cuántos primeros 5 puntajes distintos puede haber?} \\
-            \textit{Solución:} El orden importa (1er, 2do, etc.), es una variación. \\
-            $V_5^{40} = \frac{40!}{(40-5)!} = 40 \cdot 39 \cdot 38 \cdot 37 \cdot 36 = 78,960,960$ maneras.
-        \end{enumerate}
+	\item \textbf{En una competición participan 40 personas y solo quedan seleccionadas 5.}
+	      \begin{enumerate}
+		      \item \textbf{¿Cuántos grupos distintos pueden quedar seleccionados?} \\
+		            \textit{Solución:} El orden no importa, es una combinación. \\
+		            $C_5^{40} = \binom{40}{5} = \frac{40!}{5!(35!)} = \frac{40 \cdot 39 \cdot 38 \cdot 37 \cdot 36}{5 \cdot 4 \cdot 3 \cdot 2 \cdot 1} = 658,008$ grupos.
+		      \item \textbf{¿Cuántos primeros 5 puntajes distintos puede haber?} \\
+		            \textit{Solución:} El orden importa (1er, 2do, etc.), es una variación. \\
+		            $V_5^{40} = \frac{40!}{(40-5)!} = 40 \cdot 39 \cdot 38 \cdot 37 \cdot 36 = 78,960,960$ maneras.
+	      \end{enumerate}
 
-    \item \textbf{Si se dispone de 5 frutas distintas.}
-        \begin{enumerate}
-            \item \textbf{¿Cuántos jugos de dos frutas se pueden hacer?} \\
-            \textit{Solución:} El orden no importa, es una combinación. \\
-            $C_2^5 = \binom{5}{2} = \frac{5!}{2!3!} = 10$ jugos.
-            \item \textbf{¿Y de 3 frutas?} \\
-            \textit{Solución:} Combinación. $C_3^5 = \binom{5}{3} = \frac{5!}{3!2!} = 10$ jugos.
-            \item \textbf{¿Y de al menos 2 frutas?} \\
-            \textit{Solución:} Se suman los jugos de 2, 3, 4 y 5 frutas. \\
-            $C_2^5 + C_3^5 + C_4^5 + C_5^5 = 10 + 10 + 5 + 1 = 26$ jugos.
-        \end{enumerate}
+	\item \textbf{Si se dispone de 5 frutas distintas.}
+	      \begin{enumerate}
+		      \item \textbf{¿Cuántos jugos de dos frutas se pueden hacer?} \\
+		            \textit{Solución:} El orden no importa, es una combinación. \\
+		            $C_2^5 = \binom{5}{2} = \frac{5!}{2!3!} = 10$ jugos.
+		      \item \textbf{¿Y de 3 frutas?} \\
+		            \textit{Solución:} Combinación. $C_3^5 = \binom{5}{3} = \frac{5!}{3!2!} = 10$ jugos.
+		      \item \textbf{¿Y de al menos 2 frutas?} \\
+		            \textit{Solución:} Se suman los jugos de 2, 3, 4 y 5 frutas. \\
+		            $C_2^5 + C_3^5 + C_4^5 + C_5^5 = 10 + 10 + 5 + 1 = 26$ jugos.
+	      \end{enumerate}
 \end{enumerate}
 \begin{figure}[h!]
 	\centering
@@ -924,53 +921,53 @@ La \textbf{cardinalidad} (número de elementos) del conjunto potencia se puede c
 \section{18/08 - Repaso Para Prueba}
 \subsection{Ejercicios Resueltos}
 \begin{enumerate}
-    \item \textbf{Las cifras que componen un número son 1, 2, 3, 4 y 5. ¿Cuántos números diferentes de 5 cifras, menores de 54,000, pueden formarse sin que se repita ninguna de las cifras?}
-	\textit{Solución:} Se divide el problema en dos casos mutuamente excluyentes.
-	\begin{itemize}
-		\item \textbf{Caso 1: El número empieza en 1, 2, 3 o 4.} Hay 4 opciones para la primera cifra. Las 4 cifras restantes se pueden permutar de $4!$ maneras.
-		      \[ 4 \times 4! = 4 \times 24 = 96 \text{ números.} \]
-		\item \textbf{Caso 2: El número empieza en 5.} La primera cifra es 5 (1 opción). La segunda cifra debe ser menor que 4 (es decir, 1, 2 o 3), lo que nos da 3 opciones. Las 3 cifras restantes se permutan de $3!$ maneras.
-		      \[ 1 \times 3 \times 3! = 3 \times 6 = 18 \text{ números.} \]
-	\end{itemize}
-	\textbf{Total:} Como los casos son excluyentes, sumamos los resultados: $96 + 18 = 114$.
+	\item \textbf{Las cifras que componen un número son 1, 2, 3, 4 y 5. ¿Cuántos números diferentes de 5 cifras, menores de 54,000, pueden formarse sin que se repita ninguna de las cifras?}
+	      \textit{Solución:} Se divide el problema en dos casos mutuamente excluyentes.
+	      \begin{itemize}
+		      \item \textbf{Caso 1: El número empieza en 1, 2, 3 o 4.} Hay 4 opciones para la primera cifra. Las 4 cifras restantes se pueden permutar de $4!$ maneras.
+		            \[ 4 \times 4! = 4 \times 24 = 96 \text{ números.} \]
+		      \item \textbf{Caso 2: El número empieza en 5.} La primera cifra es 5 (1 opción). La segunda cifra debe ser menor que 4 (es decir, 1, 2 o 3), lo que nos da 3 opciones. Las 3 cifras restantes se permutan de $3!$ maneras.
+		            \[ 1 \times 3 \times 3! = 3 \times 6 = 18 \text{ números.} \]
+	      \end{itemize}
+	      \textbf{Total:} Como los casos son excluyentes, sumamos los resultados: $96 + 18 = 114$.
 
-    \item \textbf{Con cuatro oficiales y 8 soldados, calcular el número de grupos de 6 miembros que pueden formarse de manera que en cada grupo haya:}
-	\begin{enumerate}
-		\item \textbf{Un solo oficial} \\
-		      \textit{Solución:} Se debe elegir 1 oficial de 4 Y 5 soldados de 8.
-		      \[ \binom{4}{1} \times \binom{8}{5} = 4 \times \frac{8!}{5!(8-5)!} = 4 \times 56 = 224 \text{ grupos.} \]
-		\item \textbf{Como mínimo un oficial} \\
-		      \textit{Solución:} Se usa el método del complemento: Total de grupos menos los grupos sin oficiales.
-		      \begin{itemize}
-			      \item Total de grupos: $\binom{12}{6} = \frac{12!}{6!6!} = 924$.
-			      \item Grupos sin oficiales (todos soldados): $\binom{8}{6} = \frac{8!}{6!2!} = 28$.
-		      \end{itemize}
-		      \[ \text{Total} = 924 - 28 = 896 \text{ grupos.} \]
-	\end{enumerate}
+	\item \textbf{Con cuatro oficiales y 8 soldados, calcular el número de grupos de 6 miembros que pueden formarse de manera que en cada grupo haya:}
+	      \begin{enumerate}
+		      \item \textbf{Un solo oficial} \\
+		            \textit{Solución:} Se debe elegir 1 oficial de 4 Y 5 soldados de 8.
+		            \[ \binom{4}{1} \times \binom{8}{5} = 4 \times \frac{8!}{5!(8-5)!} = 4 \times 56 = 224 \text{ grupos.} \]
+		      \item \textbf{Como mínimo un oficial} \\
+		            \textit{Solución:} Se usa el método del complemento: Total de grupos menos los grupos sin oficiales.
+		            \begin{itemize}
+			            \item Total de grupos: $\binom{12}{6} = \frac{12!}{6!6!} = 924$.
+			            \item Grupos sin oficiales (todos soldados): $\binom{8}{6} = \frac{8!}{6!2!} = 28$.
+		            \end{itemize}
+		            \[ \text{Total} = 924 - 28 = 896 \text{ grupos.} \]
+	      \end{enumerate}
 
-    \item \textbf{¿De cuántas maneras pueden colocarse en un círculo 7 personas?}
-        \textit{Solución:} Es una permutación circular de 7 elementos.
-        \[ PC_7 = (7-1)! = 6! = 720 \text{ maneras.} \]
+	\item \textbf{¿De cuántas maneras pueden colocarse en un círculo 7 personas?}
+	      \textit{Solución:} Es una permutación circular de 7 elementos.
+	      \[ PC_7 = (7-1)! = 6! = 720 \text{ maneras.} \]
 
-    \item \textbf{En una estantería hay dos obras de 3 volúmenes cada una y otras dos de 2 volúmenes cada una. Hallar el número total de formas en que pueden colocarse los 10 libros en un mismo estante, sin dejar separados los diversos volúmenes de una misma obra:}
-        \begin{enumerate}
-            \item \textbf{Ordenados en cualquier orden} \\
-                \textit{Solución:} Se consideran las 4 obras como 4 "bloques" que se pueden permutar. Luego, se permutan los volúmenes dentro de cada bloque.
-                \[ (\text{Permutar bloques}) \times (\text{Permutar volúmenes internos}) \]
-                \[ 4! \times (3! \times 3! \times 2! \times 2!) = 24 \times (6 \times 6 \times 2 \times 2) = 3,456 \text{ formas.} \]
-            \item \textbf{Ordenados en orden Ascendente} \\
-                \textit{Solución:} El orden interno de los volúmenes está fijo (solo 1 manera por obra). Solo se permutan los 4 bloques.
-                \[ 4! \times (1 \times 1 \times 1 \times 1) = 24 \text{ formas.} \]
-        \end{enumerate}
+	\item \textbf{En una estantería hay dos obras de 3 volúmenes cada una y otras dos de 2 volúmenes cada una. Hallar el número total de formas en que pueden colocarse los 10 libros en un mismo estante, sin dejar separados los diversos volúmenes de una misma obra:}
+	      \begin{enumerate}
+		      \item \textbf{Ordenados en cualquier orden} \\
+		            \textit{Solución:} Se consideran las 4 obras como 4 "bloques" que se pueden permutar. Luego, se permutan los volúmenes dentro de cada bloque.
+		            \[ (\text{Permutar bloques}) \times (\text{Permutar volúmenes internos}) \]
+		            \[ 4! \times (3! \times 3! \times 2! \times 2!) = 24 \times (6 \times 6 \times 2 \times 2) = 3,456 \text{ formas.} \]
+		      \item \textbf{Ordenados en orden Ascendente} \\
+		            \textit{Solución:} El orden interno de los volúmenes está fijo (solo 1 manera por obra). Solo se permutan los 4 bloques.
+		            \[ 4! \times (1 \times 1 \times 1 \times 1) = 24 \text{ formas.} \]
+	      \end{enumerate}
 
-    \item \textbf{Se tienen 7 libros de estadística y 3 de informática. ¿De cuántas maneras pueden colocarse en un estante cuatro libros de estadística y uno de informática, si este último debe estar siempre en el centro?}
-        \textit{Solución:} Se llenan las 5 posiciones. El centro se llena primero con un libro de informática (3 opciones). Los 4 lugares restantes se llenan con 4 de los 7 libros de estadística (una variación).
-        \[ (\text{Opciones para el centro}) \times (\text{Variación para los otros 4 puestos}) \]
-        \[ 3 \times V_4^7 = 3 \times \frac{7!}{(7-4)!} = 3 \times (7 \cdot 6 \cdot 5 \cdot 4) = 3 \times 840 = 2,520 \text{ maneras.} \]
+	\item \textbf{Se tienen 7 libros de estadística y 3 de informática. ¿De cuántas maneras pueden colocarse en un estante cuatro libros de estadística y uno de informática, si este último debe estar siempre en el centro?}
+	      \textit{Solución:} Se llenan las 5 posiciones. El centro se llena primero con un libro de informática (3 opciones). Los 4 lugares restantes se llenan con 4 de los 7 libros de estadística (una variación).
+	      \[ (\text{Opciones para el centro}) \times (\text{Variación para los otros 4 puestos}) \]
+	      \[ 3 \times V_4^7 = 3 \times \frac{7!}{(7-4)!} = 3 \times (7 \cdot 6 \cdot 5 \cdot 4) = 3 \times 840 = 2,520 \text{ maneras.} \]
 
-    \item \textbf{¿Cuántas ordenaciones pueden formarse con las letras de la expresión \texorpdfstring{$a^3b^2c^4$}{a3b2c4} cuando está desarrollada?}
-        \textit{Solución:} La expresión desarrollada es `aaabbcccc`. Es una permutación con repetición de 9 elementos, donde los elementos se repiten 3, 2 y 4 veces.
-        \[ P_{3,2,4}^{9} = \frac{9!}{3! \cdot 2! \cdot 4!} = \frac{362,880}{6 \cdot 2 \cdot 24} = \frac{362,880}{288} = 1,260 \text{ ordenaciones.} \]
+	\item \textbf{¿Cuántas ordenaciones pueden formarse con las letras de la expresión \texorpdfstring{$a^3b^2c^4$}{a3b2c4} cuando está desarrollada?}
+	      \textit{Solución:} La expresión desarrollada es `aaabbcccc`. Es una permutación con repetición de 9 elementos, donde los elementos se repiten 3, 2 y 4 veces.
+	      \[ P_{3,2,4}^{9} = \frac{9!}{3! \cdot 2! \cdot 4!} = \frac{362,880}{6 \cdot 2 \cdot 24} = \frac{362,880}{288} = 1,260 \text{ ordenaciones.} \]
 \end{enumerate}
 \newpage
 

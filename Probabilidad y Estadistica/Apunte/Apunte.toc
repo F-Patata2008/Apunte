@@ -13,9 +13,9 @@
 \contentsline {subsection}{\numberline {2.1}Tablas de Frecuencia: Conceptos Básicos}{9}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Tipos de Frecuencia:}{9}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Medidas de Tendencia Central:}{10}{subsection.2.3}%
-\contentsline {subsubsection}{\numberline {2.3.1}Media Aritmética ($\bar {x}$)}{10}{subsubsection.2.3.1}%
-\contentsline {subsubsection}{\numberline {2.3.2}Mediana ($M_e$)}{10}{subsubsection.2.3.2}%
-\contentsline {subsubsection}{\numberline {2.3.3}Moda ($M_o$)}{10}{subsubsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Media Aritmética ($\bar {x}$):}{10}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Mediana ($M_e$):}{10}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}Moda ($M_o$):}{10}{subsubsection.2.3.3}%
 \contentsline {section}{\numberline {3}26/03 - Ejercicios de Medidas de Tendencia Central}{11}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Ejercicios:}{11}{subsection.3.1}%
 \contentsline {section}{\numberline {4}04/04 - Muestreo y Representatividad}{14}{section.4}%
@@ -35,18 +35,18 @@
 \contentsline {subsection}{\numberline {5.1}Medidas de Dispersión}{19}{subsection.5.1}%
 \contentsline {subsubsection}{\numberline {5.1.1}Rango (o Amplitud Total):}{19}{subsubsection.5.1.1}%
 \contentsline {subsubsection}{\numberline {5.1.2}Desviación Media (DM):}{19}{subsubsection.5.1.2}%
-\contentsline {subsubsection}{\numberline {5.1.3}Varianza ($\sigma ^2$ para población, $s^2$ para muestra):}{20}{subsubsection.5.1.3}%
-\contentsline {subsubsection}{\numberline {5.1.4}Desviación Estándar (o Típica) ($\sigma $ para población, $s$ para muestra):}{20}{subsubsection.5.1.4}%
+\contentsline {subsubsection}{\numberline {5.1.3}Varianza ($\sigma ^2$ para población, $s^2$ para muestra)}{20}{subsubsection.5.1.3}%
+\contentsline {subsubsection}{\numberline {5.1.4}Desviación Estándar (o Típica) ($\sigma $ para población, $s$ para muestra)}{20}{subsubsection.5.1.4}%
 \contentsline {subsubsection}{\numberline {5.1.5}Propiedades de $\sigma $ y $\sigma ^2$ (usando la definición con denominador $n$)}{20}{subsubsection.5.1.5}%
 \contentsline {section}{\numberline {6}16/04 - Propiedades de la Varianza y Desviación Estándar}{22}{section.6}%
 \contentsline {subsection}{\numberline {6.1}Demostración Propiedad 4 (Multiplicación por una constante)}{22}{subsection.6.1}%
 \contentsline {subsection}{\numberline {6.2}Ejercicio}{23}{subsection.6.2}%
 \contentsline {subsection}{\numberline {6.3}Demostración Propiedad 5 (Fórmula Computacional de la Varianza)}{24}{subsection.6.3}%
 \contentsline {section}{\numberline {7}23/04 - Demostraciones sobre el Valor de la Desviación Estándar}{25}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Demostraciones de Propiedades Relacionadas con el Valor de sigma}{25}{subsection.7.1}%
-\contentsline {subsubsection}{\numberline {7.1.1}Propiedad 6: sigma-cuadrado = sigma si y solo si sigma=0 o sigma=1}{25}{subsubsection.7.1.1}%
-\contentsline {subsubsection}{\numberline {7.1.2}Propiedad 7: sigma-cuadrado < sigma si y solo si 0 < sigma < 1}{25}{subsubsection.7.1.2}%
-\contentsline {subsubsection}{\numberline {7.1.3}Propiedad 8: sigma-cuadrado > sigma si y solo si sigma > 1}{26}{subsubsection.7.1.3}%
+\contentsline {subsection}{\numberline {7.1}Demostraciones de Propiedades Relacionadas con el Valor de $\sigma $}{25}{subsection.7.1}%
+\contentsline {subsubsection}{\numberline {7.1.1}Propiedad 6: $\sigma ^2 = \sigma \DOTSB \tmspace +\thickmuskip {.2777em}\DOTSB \Leftarrow \joinrel \Rightarrow \tmspace +\thickmuskip {.2777em}\sigma =0 \vee \sigma =1$}{25}{subsubsection.7.1.1}%
+\contentsline {subsubsection}{\numberline {7.1.2}Propiedad 7: $\sigma ^2 < \sigma \DOTSB \tmspace +\thickmuskip {.2777em}\DOTSB \Leftarrow \joinrel \Rightarrow \tmspace +\thickmuskip {.2777em}0 < \sigma < 1$}{25}{subsubsection.7.1.2}%
+\contentsline {subsubsection}{\numberline {7.1.3}Propiedad 8: $\sigma ^2 > \sigma \DOTSB \tmspace +\thickmuskip {.2777em}\DOTSB \Leftarrow \joinrel \Rightarrow \tmspace +\thickmuskip {.2777em}\sigma > 1$}{26}{subsubsection.7.1.3}%
 \contentsline {section}{\numberline {8}30/05 - Medidas de Posición: Cuartiles, Quintiles, Deciles y Percentiles}{27}{section.8}%
 \contentsline {subsection}{\numberline {8.1}Cuartiles}{27}{subsection.8.1}%
 \contentsline {subsection}{\numberline {8.2}Quintiles}{27}{subsection.8.2}%
@@ -67,8 +67,8 @@
 \contentsline {section}{\numberline {12}11/08 - Propiedades de Combinatoria y Triángulo de Pascal}{35}{section.12}%
 \contentsline {subsection}{\numberline {12.1}Propiedades de los Números Combinatorios}{35}{subsection.12.1}%
 \contentsline {subsection}{\numberline {12.2}Demostraciones}{35}{subsection.12.2}%
-\contentsline {subsubsection}{\numberline {12.2.1}Propiedad 1: C(n,n) = C(n,0) = 1}{35}{subsubsection.12.2.1}%
-\contentsline {subsubsection}{\numberline {12.2.2}Propiedad 2 (Simetría): C(n,k) = C(n, n-k)}{36}{subsubsection.12.2.2}%
+\contentsline {subsubsection}{\numberline {12.2.1}Propiedad 1: $\binom {n}{n} = \binom {n}{0} = 1$}{35}{subsubsection.12.2.1}%
+\contentsline {subsubsection}{\numberline {12.2.2}Propiedad 2 (Simetría): $\binom {n}{k} = \binom {n}{n-k}$}{36}{subsubsection.12.2.2}%
 \contentsline {subsection}{\numberline {12.3}Triángulo de Pascal y Binomio de Newton}{37}{subsection.12.3}%
 \contentsline {subsection}{\numberline {12.4}Conjunto Potencia}{38}{subsection.12.4}%
 \contentsline {subsection}{\numberline {12.5}Ejercicios}{38}{subsection.12.5}%

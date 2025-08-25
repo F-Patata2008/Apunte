@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.8.16)  23 AUG 2025 15:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.8.24)  24 AUG 2025 21:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -330,24 +330,24 @@ LaTeX Info: Redefining \% on input line 11.
 )
 \openout1 = `Apunte.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count303
@@ -367,22 +367,22 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Info: Redefining \. on input line 35.
-LaTeX Info: Redefining \% on input line 35.
-LaTeX Info: Redefining \microtypecontext on input line 35.
-Package microtype Info: Applying patch `item' on input line 35.
-Package microtype Info: Applying patch `toc' on input line 35.
-Package microtype Info: Applying patch `eqnum' on input line 35.
-Package microtype Info: Applying patch `footnote' on input line 35.
-Package microtype Info: Applying patch `verbatim' on input line 35.
-LaTeX Info: Redefining \microtypesetup on input line 35.
+LaTeX Info: Redefining \. on input line 34.
+LaTeX Info: Redefining \% on input line 34.
+LaTeX Info: Redefining \microtypecontext on input line 34.
+Package microtype Info: Applying patch `item' on input line 34.
+Package microtype Info: Applying patch `toc' on input line 34.
+Package microtype Info: Applying patch `eqnum' on input line 34.
+Package microtype Info: Applying patch `footnote' on input line 34.
+Package microtype Info: Applying patch `verbatim' on input line 34.
+LaTeX Info: Redefining \microtypesetup on input line 34.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 35.
+LaTeX Info: Redefining \showhyphens on input line 34.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -395,7 +395,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
  (/usr/share/texmf-dist/tex/latex/graphics/mathcolor.ltx))
-Package hyperref Info: Link coloring ON on input line 35.
+Package hyperref Info: Link coloring ON on input line 34.
  (./Apunte.out) (./Apunte.out)
 \@outlinefile=\write3
 \openout3 = `Apunte.out'.
@@ -403,15 +403,15 @@ Package hyperref Info: Link coloring ON on input line 35.
 <./images/IN.png, id=305, 198.7425pt x 255.95625pt>
 File: ./images/IN.png Graphic file (type png)
 <use ./images/IN.png>
-Package pdftex.def Info: ./images/IN.png  used on input line 47.
+Package pdftex.def Info: ./images/IN.png  used on input line 46.
 (pdftex.def)             Requested size: 56.9055pt x 73.28807pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 62.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 61.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/share/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 62.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 61.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/share/texmf-dist/tex/latex/microtype/mt-msb.cfg
@@ -424,12 +424,12 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 <./images/gatito.png, id=321, 200.75pt x 200.75pt>
 File: ./images/gatito.png Graphic file (type png)
 <use ./images/gatito.png>
-Package pdftex.def Info: ./images/gatito.png  used on input line 83.
+Package pdftex.def Info: ./images/gatito.png  used on input line 82.
 (pdftex.def)             Requested size: 175.49881pt x 175.51183pt.
 <./images/by-nc-nd.png, id=322, 97.0827pt x 33.9669pt>
 File: ./images/by-nc-nd.png Graphic file (type png)
 <use ./images/by-nc-nd.png>
-Package pdftex.def Info: ./images/by-nc-nd.png  used on input line 91.
+Package pdftex.def Info: ./images/by-nc-nd.png  used on input line 90.
 (pdftex.def)             Requested size: 71.13188pt x 24.8884pt.
 
 
@@ -437,7 +437,7 @@ Package pdftex.def Info: ./images/by-nc-nd.png  used on input line 91.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.96 \newpage
+l.95 \newpage
               [1 <./images/gatito.png> <./images/by-nc-nd.png>] (./Apunte.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -452,18 +452,18 @@ LaTeX Info: Redefining \% on input line 1.
 
 
 [4]
-<./images/muestra.png, id=437, 272.01625pt x 118.4425pt>
+<./images/muestra.png, id=439, 272.01625pt x 118.4425pt>
 File: ./images/muestra.png Graphic file (type png)
 <use ./images/muestra.png>
-Package pdftex.def Info: ./images/muestra.png  used on input line 110.
+Package pdftex.def Info: ./images/muestra.png  used on input line 109.
 (pdftex.def)             Requested size: 331.50238pt x 144.35143pt.
 
 
 [5 <./images/muestra.png>]
-<./images/variables.png, id=443, 385.44pt x 286.06876pt>
+<./images/variables.png, id=445, 385.44pt x 286.06876pt>
 File: ./images/variables.png Graphic file (type png)
 <use ./images/variables.png>
-Package pdftex.def Info: ./images/variables.png  used on input line 143.
+Package pdftex.def Info: ./images/variables.png  used on input line 142.
 (pdftex.def)             Requested size: 226.20071pt x 167.8799pt.
 
 
@@ -474,16 +474,7 @@ Package pdftex.def Info: ./images/variables.png  used on input line 143.
 [8]
 
 [9]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 220.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 220.
-
-
-Overfull \hbox (2.53964pt too wide) in paragraph at lines 227--237
+Overfull \hbox (2.53964pt too wide) in paragraph at lines 226--236
  [][] 
  []
 
@@ -583,7 +574,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 513--515
 [28]
 
 [29]
-Overfull \hbox (67.09447pt too wide) in paragraph at lines 694--704
+Overfull \hbox (67.09447pt too wide) in paragraph at lines 692--702
 []\T1/cmr/m/n/12 (-20) Corresponde a la ma-ne-ra en que se pue-den or-de-nar $\OML/cmm/m/it/12 n$ \T1/cmr/m/n/12 (-20) ob-je-tos. $[]$
  []
 
@@ -620,7 +611,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 730--731
 <./images/pascal.png, id=669, 522.95375pt x 346.29375pt>
 File: ./images/pascal.png Graphic file (type png)
 <use ./images/pascal.png>
-Package pdftex.def Info: ./images/pascal.png  used on input line 875.
+Package pdftex.def Info: ./images/pascal.png  used on input line 878.
 (pdftex.def)             Requested size: 195.0pt x 129.12535pt.
 
 
@@ -630,7 +621,7 @@ Package pdftex.def Info: ./images/pascal.png  used on input line 875.
 <./images/Gat.png, id=687, 200.75pt x 200.75pt>
 File: ./images/Gat.png Graphic file (type png)
 <use ./images/Gat.png>
-Package pdftex.def Info: ./images/Gat.png  used on input line 915.
+Package pdftex.def Info: ./images/Gat.png  used on input line 918.
 (pdftex.def)             Requested size: 292.5pt x 292.54424pt.
 
 
@@ -647,18 +638,18 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `Apunte.out' has not changed.
-(rerunfilecheck)             Checksum: A9C01FFD83534CA4B2CC62BBABB62450;16331.
+(rerunfilecheck)             Checksum: 964D064BD4457BCF6AB6A06324EC872B;16666.
  ) 
 Here is how much of TeX's memory you used:
- 14980 strings out of 475068
- 233324 string characters out of 5764374
+ 14984 strings out of 475068
+ 233406 string characters out of 5764374
  673626 words of memory out of 5000000
- 37307 multiletter control sequences out of 15000+600000
- 591906 words of font info for 231 fonts, out of 8000000 for 9000
+ 37309 multiletter control sequences out of 15000+600000
+ 591965 words of font info for 232 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
- 75i,12n,79p,1003b,926s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,79p,1003b,944s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbi1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbi1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1728.pfb>
-Output written on Apunte.pdf (42 pages, 1581985 bytes).
+Output written on Apunte.pdf (42 pages, 1582242 bytes).
 PDF statistics:
  875 PDF objects out of 1000 (max. 8388607)
  748 compressed objects within 8 object streams

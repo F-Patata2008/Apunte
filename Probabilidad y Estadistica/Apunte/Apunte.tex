@@ -8,11 +8,11 @@
 \usepackage{tabularx}
 \usepackage{enumitem}
 
-% ----- PAQUETES DE MEJORA Y CORRECCIONES -----
+% ----- PAQUETES DE MEJORA -----
 \usepackage{microtype} % Soluciona problemas de Overfull/Underfull hbox y mejora la tipografía
 \renewcommand{\arraystretch}{1.5} % Incrementa el espaciado vertical
 \graphicspath{ {./images/}}
-% --------------------------------------------
+% -----------------------------
 
 % ----- PAQUETES Y CONFIGURACIÓN DE AUTORÍA Y MARCA DE PÁGINA -----
 \usepackage{fancyhdr}
@@ -30,7 +30,6 @@
     pdfproducer={LaTeX with hyperref}
 }
 % --------------------------------------------------------------------------
-
 
 \begin{document}
 
@@ -217,7 +216,7 @@ Para cada una de las siguientes situaciones, identifica la población de interé
 
 \subsection{Medidas de Tendencia Central:}
 
-\subsubsection{Media Aritmética ($\bar{x}$):}
+\subsubsection{\texorpdfstring{Media Aritmética ($\bar{x}$)}{Media Aritmética (x barra)}}
 Es el cociente entre la suma de todos los datos y el número total de datos ($n$). Si se tienen $n$ datos $x_1, x_2, \dots, x_n$:
 \[ \bar{x}=\frac{x_1+x_2+\dots+x_n}{n} = \frac{\sum_{i=1}^{n} x_i}{n} \] \\
 Para datos agrupados en una tabla de frecuencia con $k$ clases:
@@ -243,14 +242,15 @@ Para datos agrupados en una tabla de frecuencia con $k$ clases:
 	\end{minipage}
 \end{center}
 
-\subsubsection[Mediana (Me)]{Mediana ($M_e$):}
+\subsubsection{\texorpdfstring{Mediana ($M_e$)}{Mediana (Me)}}
 Es el valor que ocupa la posición central de la muestra cuando los datos se encuentran ordenados. \textbf{Si la muestra tiene un número par de datos, la mediana es la media aritmética de los dos términos centrales.}
 \begin{itemize}
     \item Si $n$ es impar, la posición es $\frac{n+1}{2}$. $M_e = x_{(\frac{n+1}{2})}$.
     \item Si $n$ es par, las posiciones son $\frac{n}{2}$ y $\frac{n}{2}+1$. $M_e = \frac{x_{(\frac{n}{2})} + x_{(\frac{n}{2}+1)}}{2}$.
 \end{itemize}
 
-\subsubsection[Moda (Mo)]{Moda ($M_o$):} Es el dato o intervalo con la mayor frecuencia absoluta. La muestra puede ser:
+\subsubsection{\texorpdfstring{Moda ($M_o$)}{Moda (Mo)}}
+Es el dato o intervalo con la mayor frecuencia absoluta. La muestra puede ser:
 \begin{itemize}
 	\item \textbf{Amodal:} No presenta moda.
 	\item \textbf{Unimodal:} Una sola moda.
@@ -334,11 +334,11 @@ Por lo tanto, la cantidad de datos $n$ no puede ser un número impar. \\
 \subsection{Población y Muestra}
 ¿Qué inconvenientes puede implicar realizar un censo?
 \begin{itemize}
-    \item \textbf{Cardinalidad (tamaño):} La población puede ser demasiado grande o infinita.
-    \item \textbf{Destrucción:} El proceso de medición puede destruir el elemento (ej. pruebas de vida útil).
-    \item \textbf{Costos:} Implica altos costos en tiempo, dinero y recursos.
-    \item \textbf{Acceso:} Puede ser logísticamente imposible acceder a todos los miembros.
-    \item \textbf{Tiempo:} Puede tomar tanto tiempo que la información obtenida se vuelve obsoleta.
+	\item \textbf{Cardinalidad (tamaño):} La población puede ser demasiado grande o infinita.
+	\item \textbf{Destrucción:} El proceso de medición puede destruir el elemento (ej. pruebas de vida útil).
+	\item \textbf{Costos:} Implica altos costos en tiempo, dinero y recursos.
+	\item \textbf{Acceso:} Puede ser logísticamente imposible acceder a todos los miembros.
+	\item \textbf{Tiempo:} Puede tomar tanto tiempo que la información obtenida se vuelve obsoleta.
 \end{itemize}
 
 \subsection{Muestreo}
@@ -348,8 +348,8 @@ Proceso para escoger los elementos que conformarán la muestra. \\
 \subsubsection{Representatividad}
 Debe reflejar las características de la población. Claves:
 \begin{itemize}
-    \item \textbf{Tamaño ($n$):} Debe ser suficientemente grande.
-    \item \textbf{Aleatoriedad:} Cada elemento debe tener una probabilidad conocida de ser seleccionado para minimizar el sesgo.
+	\item \textbf{Tamaño ($n$):} Debe ser suficientemente grande.
+	\item \textbf{Aleatoriedad:} Cada elemento debe tener una probabilidad conocida de ser seleccionado para minimizar el sesgo.
 \end{itemize}
 Notación: \textbf{N} para el tamaño de la población y \textbf{n} para el tamaño de la muestra.
 
@@ -359,40 +359,40 @@ Cada unidad tiene una probabilidad conocida y no nula de ser seleccionada.
 \subsubsection{Muestreo Aleatorio Simple (M.A.S)}
 Cada posible muestra de tamaño $n$ tiene la misma probabilidad de ser elegida. Requiere un listado completo (marco muestral).
 \begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.5\textwidth]{MAS}
-    \caption{Muestreo Aleatorio Simple}
-    \label{fig:MAS}
+	\centering
+	\includegraphics[width=0.5\textwidth]{MAS}
+	\caption{Muestreo Aleatorio Simple}
+	\label{fig:MAS}
 \end{figure}
 
 
 \subsubsection{Muestreo Estratificado}
 Se usa cuando la población se puede dividir en subgrupos (estratos) internamente homogéneos. Se toma una muestra aleatoria de cada estrato. Es más preciso si hay baja variabilidad dentro de los estratos y alta variabilidad entre ellos.
 \begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.5\textwidth]{MEP}
-    \caption{Muestreo Estratificado Proporcional}
-    \label{fig:MEP}
+	\centering
+	\includegraphics[width=0.5\textwidth]{MEP}
+	\caption{Muestreo Estratificado Proporcional}
+	\label{fig:MEP}
 \end{figure}
 
 
 \subsubsection{Muestreo por Conglomerados (Clusters)}
 Se usa cuando la población está dividida en grupos naturales (conglomerados). Se selecciona una muestra aleatoria de conglomerados y se analizan \textbf{todos} los individuos de los conglomerados elegidos. Es eficiente en costos, especialmente si los conglomerados son internamente heterogéneos.
 \begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.65\textwidth]{MPC}
-    \caption{Muestreo Por Conglomerados}
-    \label{fig:MPC}
+	\centering
+	\includegraphics[width=0.65\textwidth]{MPC}
+	\caption{Muestreo por Conglomerados}
+	\label{fig:MPC}
 \end{figure}
 
 
 \subsubsection{Muestreo Aleatorio Sistemático}
 Se elige un elemento al azar al principio y luego se seleccionan los demás a intervalos regulares ($k=N/n$) de una lista ordenada.
 \begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.6\textwidth]{MASIS}
-    \caption{Muestreo Aleatorio Sistemático}
-    \label{fig:MASIS}
+	\centering
+	\includegraphics[width=0.6\textwidth]{MASIS}
+	\caption{Muestreo Aleatorio Sistemático}
+	\label{fig:MASIS}
 \end{figure}
 \newpage
 
@@ -402,35 +402,35 @@ La selección es subjetiva y no permite inferencia estadística formal.
 \subsubsection{Muestreo por Cuotas}
 Se fijan "cuotas" de individuos con ciertas características y el entrevistador los selecciona por conveniencia hasta llenar la cuota.
 \begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.5\textwidth]{MPCU}
-    \caption{Muestreo por cuotas}
-    \label{fig:MPCU}
+	\centering
+	\includegraphics[width=0.5\textwidth]{MPCU}
+	\caption{Muestreo por cuotas}
+	\label{fig:MPCU}
 \end{figure}
 
 \subsubsection{Muestreo Bola de Nieve}
 Los primeros individuos contactados ayudan a encontrar a otros, útil para poblaciones difíciles de localizar.
 \begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.5\textwidth]{MBN}
-    \caption{Muestreo Bola de Nieve}
-    \label{fig:MBC}
+	\centering
+	\includegraphics[width=0.5\textwidth]{MBN}
+	\caption{Muestreo Bola de Nieve}
+	\label{fig:MBC}
 \end{figure}
 
 \subsubsection{Muestreo por Juicio o Conveniencia}
 La selección se basa en el juicio del investigador o en la facilidad de acceso a los sujetos.
 \begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.75\textwidth]{MPJ}
-    \caption{Muestreo Por Juicio}
-    \label{fig:MPJ}
+	\centering
+	\includegraphics[width=0.75\textwidth]{MPJ}
+	\caption{Muestreo Por Juicio}
+	\label{fig:MPJ}
 \end{figure}
 
 \begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.35\linewidth]{patata}
-    \caption{Patata para rellenar el espacio}
-    \label{fig:patata}
+	\centering
+	\includegraphics[width=0.35\linewidth]{patata}
+	\caption{Patata para rellenar el espacio}
+	\label{fig:patata}
 \end{figure}
 \newpage
 
@@ -452,7 +452,7 @@ Dada una variable $X$, con $n$ datos $x_1, x_2, \dots, x_n$ y media aritmética 
 \[ DM = \frac{|x_1-\bar{x}|+|x_2-\bar{x}|+\dots+|x_n-\bar{x}|}{n} = \frac{\sum_{i=1}^{n} |x_i - \bar{x}|}{n} \]
 Mide el promedio de cuánto se desvían los datos de la media, en valor absoluto.
 
-\subsubsection[Varianza (sigma-cuadrado para población, s-cuadrado para muestra)]{Varianza ($\sigma^2$ para población, $s^2$ para muestra):}
+\subsubsection{\texorpdfstring{Varianza ($\sigma^2$ para población, $s^2$ para muestra):}{Varianza (sigma-cuadrado para población, s-cuadrado para muestra)}}
 Es el promedio de las desviaciones al cuadrado de cada dato respecto a la media. Es la medida de dispersión más utilizada junto con su raíz cuadrada (la desviación estándar).
 Para una \textbf{población} de $N$ datos:
 \[ \sigma^2 = \frac{\sum_{i=1}^{N} (x_i - \mu)^2}{N} \]
@@ -462,12 +462,12 @@ Para una \textbf{muestra} de $n$ datos, la varianza muestral \textit{insesgada} 
 \[ s^2 = \frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n-1} \]
 (En este curso, si no se especifica, $\sigma^2$ con denominador $n$ se refiere a la varianza de un conjunto de datos específico, sea este una población o una muestra descrita como tal).
 
-\subsubsection[Desviación Estándar (sigma para población, s para muestra)]{Desviación Estándar (o Típica) ($\sigma$ para población, $s$ para muestra):}
+\subsubsection{\texorpdfstring{Desviación Estándar (o Típica) ($\sigma$ para población, $s$ para muestra):}{Desviación Estándar (o Típica) (sigma para población, s para muestra)}}
 Es la raíz cuadrada positiva de la varianza. Tiene la ventaja de estar expresada en las mismas unidades que los datos originales.
 \[ \sigma = \sqrt{\sigma^2} = \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n}} \]
 \[ s = \sqrt{s^2} = \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n-1}} \]
 
-\subsubsection[Propiedades de sigma y sigma-cuadrado]{Propiedades de $\sigma$ y $\sigma^2$ (usando la definición con denominador $n$)}
+\subsubsection{\texorpdfstring{Propiedades de $\sigma$ y $\sigma^2$ (usando la definición con denominador $n$)}{Propiedades de sigma y sigma-cuadrado (usando la definición con denominador n)}}
 \begin{center}
 	\begin{enumerate}
 		\item $\sigma \ge 0$ y $\sigma^2 \ge 0$. Son siempre no negativas.
@@ -508,14 +508,14 @@ Dados los datos: -2, 0, 2, 4, 6. ($n=5$). Determinar:
 \begin{enumerate}
 	\item $\bar{x}$ \\
 	      \textit{Solución:} $\bar{x} = \frac{-2+0+2+4+6}{5} = \frac{10}{5} = 2$. \\
-	\item $\sigma$ (desviación estándar) \\
+	\item \texorpdfstring{$\sigma$ (desviación estándar)}{sigma (desviación estándar)} \\
 	      \textit{Solución:} Primero calculamos la varianza $\sigma^2$:
 	      \begin{align*} \sigma^2 &= \frac{\sum (x_i - \bar{x})^2}{n} \\ &= \frac{(-2-2)^2+(0-2)^2+(2-2)^2+(4-2)^2+(6-2)^2}{5} \\ &= \frac{(-4)^2+(-2)^2+(0)^2+(2)^2+(4)^2}{5} \\ &= \frac{16+4+0+4+16}{5} = \frac{40}{5} = 8 \end{align*}
 	      Ahora la desviación estándar: $\sigma = \sqrt{\sigma^2} = \sqrt{8} = \sqrt{4 \cdot 2} = 2\sqrt{2} \approx 2.828$. \\
 	\item $\overline{x^2}$ (el promedio de los cuadrados de los datos) \\
 	      \textit{Solución:} Los cuadrados de los datos son: $(-2)^2=4, 0^2=0, 2^2=4, 4^2=16, 6^2=36$.
 	      \[ \overline{x^2} = \frac{4+0+4+16+36}{5} = \frac{60}{5} = 12 \]
-	\item Calcular $\overline{x^2}-(\bar{x})^2$ y comparar con $\sigma^2$. \\
+	\item \texorpdfstring{Calcular $\overline{x^2}-(\bar{x})^2$ y comparar con $\sigma^2$}{Calcular x-cuadrado-barra - (x-barra)-cuadrado y comparar con sigma-cuadrado}. \\
 	      \textit{Solución:} $\overline{x^2}-(\bar{x})^2 = 12 - (2)^2 = 12 - 4 = 8$. \\
 	      Este resultado (8) es igual a la varianza $\sigma^2$ calculada en el punto 2, lo cual verifica la propiedad 5 (fórmula computacional de la varianza).
 \end{enumerate}
@@ -541,7 +541,7 @@ L.Q.Q.D.
 \subsection[Demostraciones de Propiedades Relacionadas con el Valor de sigma]{Demostraciones de Propiedades Relacionadas con el Valor de $\sigma$}
 Recordar que $\sigma \ge 0$ por definición (es una raíz cuadrada positiva o cero).
 
-\subsubsection[Propiedad 6: sigma-cuadrado = sigma si y solo si sigma=0 o sigma=1]{Propiedad 6: $\sigma^2 = \sigma \iff \sigma=0 \vee \sigma=1$}
+\subsubsection[Propiedad 6: sigma-cuadrado = sigma si y solo si sigma=0 o sigma=1]{Propiedad 6: \texorpdfstring{$\sigma^2 = \sigma \iff \sigma=0 \vee \sigma=1$}{sigma-cuadrado = sigma <=> sigma=0 v sigma=1}}
 Partimos de la ecuación:
 \[\sigma^2=\sigma \]
 Reordenamos para formar una ecuación cuadrática en $\sigma$:
@@ -554,7 +554,7 @@ Por lo tanto:
 \[\sigma=0 \vee \sigma=1 \]
 L.Q.Q.D.
 
-\subsubsection[Propiedad 7: sigma-cuadrado < sigma si y solo si 0 < sigma < 1]{Propiedad 7: $\sigma^2 < \sigma \iff 0 < \sigma < 1$}
+\subsubsection[Propiedad 7: sigma-cuadrado < sigma si y solo si 0 < sigma < 1]{Propiedad 7: \texorpdfstring{$\sigma^2 < \sigma \iff 0 < \sigma < 1$}{sigma-cuadrado < sigma <=> 0 < sigma < 1}}
 Partimos de la desigualdad:
 \[\sigma^2 < \sigma \]
 Reordenamos:
@@ -578,7 +578,7 @@ Por lo tanto:
 \[0 < \sigma < 1 \]
 L.Q.Q.D.
 
-\subsubsection[Propiedad 8: sigma-cuadrado > sigma si y solo si sigma > 1]{Propiedad 8: $\sigma^2 > \sigma \iff \sigma > 1$}
+\subsubsection[Propiedad 8: sigma-cuadrado > sigma si y solo si sigma > 1]{Propiedad 8: \texorpdfstring{$\sigma^2 > \sigma \iff \sigma > 1$}{sigma-cuadrado > sigma <=> sigma > 1}}
 Partimos de la desigualdad:
 \[\sigma^2 > \sigma \]
 Reordenamos:
@@ -602,8 +602,6 @@ Por lo tanto:
 L.Q.Q.D.
 \newpage
 
-
-
 \section{30/05 - Medidas de Posición: Cuartiles, Quintiles, Deciles y Percentiles}
 Dado un conjunto de datos ordenados se define:
 
@@ -616,7 +614,6 @@ Son los 4 valores que dividen en partes iguales a los datos, que corresponden al
 
 \subsection{Deciles}
 Son los 9 valores que dividen en partes iguales a los datos, que corresponden al 10\%, 20\%, 30\%, 40\%, 50\%, 60\%, 70\%, 80\% y 90\%.
-
 
 \subsection{Percentiles}
 Son los 99 valores que dividen en partes iguales a los datos, que corresponden al 1\%, 2\%, 3\%, ... ,99\%.
@@ -691,7 +688,8 @@ Evento B: b maneras
 	      \end{itemize}
 \end{itemize}
 
-\subsubsection{Permutación simple} Corresponde a la manera en que se pueden ordenar $n$ objetos.
+\subsubsection{Permutación simple}
+Corresponde a la manera en que se pueden ordenar $n$ objetos.
 \begin{minipage}{0.35\textwidth}
 	\centering
 	\[ P_n = n! \]
@@ -702,10 +700,12 @@ Evento B: b maneras
 	\[ P_4 = 4!= 4 \cdot 3 \cdot 2 \cdot 1 \]
 \end{minipage}
 
-\subsubsection{Permutación con repetición} Si tienes $n$ elementos y un elemento se repite $r_1$ veces, otro $r_2$ veces y así sucesivamente, entonces se pueden ordenar:
+\subsubsection{Permutación con repetición}
+Si tienes $n$ elementos y un elemento se repite $r_1$ veces, otro $r_2$ veces y así sucesivamente, entonces se pueden ordenar:
 \[ P_{r_1, r_2, \dots}^n = \frac{n!}{r_1! \cdot r_2! \cdot \dots} \]
 
-\subsubsection{Permutación Circular} Si tenemos $n$ elementos, los podemos ordenar de:
+\subsubsection{Permutación Circular}
+Si tenemos $n$ elementos, los podemos ordenar de:
 \[ PC_n = \frac{n!}{n} = (n-1)! \]
 
 \subsection{Ejercicios}
@@ -741,10 +741,12 @@ Corresponde al número de ordenaciones de $k$ elementos, con $k \leq n$, de un t
 \subsubsection*{Con repetición}
 \[VR_k^n = n^k \]
 
-\subsection{Combinaciones} Corresponde a la cantidad de grupos (o subconjuntos) de $k$ elementos de un total de $n$ elementos.
+\subsection{Combinaciones}
+Corresponde a la cantidad de grupos (o subconjuntos) de $k$ elementos de un total de $n$ elementos.
 \[C_k^n = \binom{n}{k} = \frac{V_k^n}{k!} = \frac{n!}{(n - k)! \cdot k!} \]
 
 \subsection*{¿Cómo Diferenciar?}
+\begin{sloppypar}
 Para determinar qué fórmula usar, sigue este diagrama de flujo:
 \begin{enumerate}[label=\bfseries Paso \arabic*:, wide]
 	\item \textbf{¿Importa el orden de los elementos seleccionados?}
@@ -777,6 +779,7 @@ Para determinar qué fórmula usar, sigue este diagrama de flujo:
 		            \end{itemize}
 	      \end{itemize}
 \end{enumerate}
+\end{sloppypar}
 
 \subsection*{Ejercicios Resueltos}
 Aquí tienes los ejercicios con sus soluciones y el razonamiento para cada uno:
@@ -808,7 +811,7 @@ Aquí tienes los ejercicios con sus soluciones y el razonamiento para cada uno:
 	\item \textbf{En una asamblea de 100 personas, se escoge una directiva de 3 personas ¿De cuantas maneras se puede hacer?}
 	      \begin{itemize}
 		      \item \textbf{Razonamiento:} Esta pregunta es ambigua. Si "directiva" implica roles específicos (similar al ejercicio anterior), el orden importa. Sin embargo, si es solo un grupo de 3 personas sin roles definidos, el orden no importa (ver el siguiente ejercicio). Asumiendo que se refiere a un grupo donde el orden no importa, como una comisión.
-		      \item \textbf{Cálculo (asumiendo que el orden NO importa, es decir, una comisión):} $C_3^{100} = \frac{100 \cdot 99 \cdot 98}{3 \cdot 2 \cdot 1} = \frac{970200}{6} = 161700$ maneras.
+		      \item \textbf{Cálculo (asumiendo que el orden NO importa, es decir, una comisión):} $C_3^{100} = \frac{100 \cdot 99 \cdot 98}{3 \cdot 2 \cdot 1} = 161700$ maneras.
 		      \item \textbf{Nota:} Si la intención era que el orden SÍ importaba (ej. Presidente, Secretario, Vocal), entonces sería una Variación: $V_3^{100} = 100 \cdot 99 \cdot 98 = 970200$ maneras. Es crucial aclarar si los roles son distinguibles o no en el enunciado.
 	      \end{itemize}
 

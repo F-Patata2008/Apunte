@@ -13,9 +13,9 @@
 \contentsline {subsection}{\numberline {2.1}Tablas de Frecuencia: Conceptos Básicos}{9}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Tipos de Frecuencia:}{9}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Medidas de Tendencia Central:}{10}{subsection.2.3}%
-\contentsline {subsubsection}{\numberline {2.3.1}Media Aritmética ($\bar {x}$):}{10}{subsubsection.2.3.1}%
-\contentsline {subsubsection}{\numberline {2.3.2}Mediana (Me)}{10}{subsubsection.2.3.2}%
-\contentsline {subsubsection}{\numberline {2.3.3}Moda (Mo)}{10}{subsubsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Media Aritmética ($\bar {x}$)}{10}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Mediana ($M_e$)}{10}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}Moda ($M_o$)}{10}{subsubsection.2.3.3}%
 \contentsline {section}{\numberline {3}26/03 - Ejercicios de Medidas de Tendencia Central}{11}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Ejercicios:}{11}{subsection.3.1}%
 \contentsline {section}{\numberline {4}04/04 - Muestreo y Representatividad}{14}{section.4}%
@@ -35,9 +35,9 @@
 \contentsline {subsection}{\numberline {5.1}Medidas de Dispersión}{19}{subsection.5.1}%
 \contentsline {subsubsection}{\numberline {5.1.1}Rango (o Amplitud Total):}{19}{subsubsection.5.1.1}%
 \contentsline {subsubsection}{\numberline {5.1.2}Desviación Media (DM):}{19}{subsubsection.5.1.2}%
-\contentsline {subsubsection}{\numberline {5.1.3}Varianza (sigma-cuadrado para población, s-cuadrado para muestra)}{20}{subsubsection.5.1.3}%
-\contentsline {subsubsection}{\numberline {5.1.4}Desviación Estándar (sigma para población, s para muestra)}{20}{subsubsection.5.1.4}%
-\contentsline {subsubsection}{\numberline {5.1.5}Propiedades de sigma y sigma-cuadrado}{20}{subsubsection.5.1.5}%
+\contentsline {subsubsection}{\numberline {5.1.3}Varianza ($\sigma ^2$ para población, $s^2$ para muestra):}{20}{subsubsection.5.1.3}%
+\contentsline {subsubsection}{\numberline {5.1.4}Desviación Estándar (o Típica) ($\sigma $ para población, $s$ para muestra):}{20}{subsubsection.5.1.4}%
+\contentsline {subsubsection}{\numberline {5.1.5}Propiedades de $\sigma $ y $\sigma ^2$ (usando la definición con denominador $n$)}{20}{subsubsection.5.1.5}%
 \contentsline {section}{\numberline {6}16/04 - Propiedades de la Varianza y Desviación Estándar}{22}{section.6}%
 \contentsline {subsection}{\numberline {6.1}Demostración Propiedad 4 (Multiplicación por una constante)}{22}{subsection.6.1}%
 \contentsline {subsection}{\numberline {6.2}Ejercicio}{23}{subsection.6.2}%

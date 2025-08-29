@@ -1012,6 +1012,68 @@ La \textbf{cardinalidad} (número de elementos) del conjunto potencia se puede c
 
 \newpage
 
-\section{28/08 - }
+\section{29/08 - } % No se me ociurre como roganizar las secione sy subseciones
+
+Suponga que tiene los siguientes datos: $6$, $12$, $18$
+\begin{enumerate}
+    \item Determine todas las muestras posibles (sin importar el orden) (sin repeticion) de dos datos\\ \textbf{R:} Solo hay 3 muestras
+    \item Determine el promedio de cada muestra\\ \textbf{R:} 9, 12, 15
+    \item Determine el primedio de periodos\\ \textbf{R:} 12
+\end{enumerate}
+Ahora haga lo ismo para una pobalcion con $x_1$, $x_2$, $x_3$
+\begin{enumerate}
+    \begin{minipage}{0.45\textwidth}
+           \item $x_1$, $x_2$ \\ $x_2$, $x_3$ \\ $x_3$, $x_1$ 
+    \end{minipage}
+    \begin{minipage}{0.45\textwidth}
+           \item $\bar{x}_1 = \frac{x_1 + x_2}{2} $ \\ $\bar{x}_2 = \frac{x_2 + x_3}{2} $ \\ $\bar{x}_3 = \frac{x_3 + x_1}{2} $ 
+    \end{minipage}
+    \item $\bar{x} = \frac{\sum_{i = 1}^3 x_i}{n} $
+\end{enumerate}
+
+
+Supongamos que tenemos n elementos, $x_1$, $x_2$, $x_3$, ..., $x_n$ y escojemos todas las muestras posibles de $k$ elementos:
+Hay $\binom{n}{k} $ muestras
+
+\[\bar{x}_{Muestras} = \frac{\bar{x_1} + \bar{x_2} + \cdots + \bar{x_{\binom{n}{k}}}}{\binom{n}{k}} = \frac{\frac{1}{k} (\bar{x_1} + \bar{x_2}+ \cdots + \bar{x_{\binom{n}{k}}})}{\binom{n}{k}} \]
+¿Cunras veces aparece $x_i$ en una muestra?
+\[\binom{n-1}{k-1} \]
+
+\[\bar{x}_{Muestra} = \frac{\binom{n-1}{k-1} \frac{1}{k}(\sum_{i=1}^{n} x_i)}{\binom{n}{k}} = \frac{\frac{(n-1)!}{(n-1-(k-1))!(k-1)!}\cdot \frac{1}{k} \sum_{i=1}^n x_i}{\frac{n!}{(n-k)!k!}} \]
+
+\[\bar{x}_{Muestra} = \frac{(n-1)! \cdot \sum_{i=1}^n x_i}{n!} = \frac{\sum_{i=1}^n x_i}{n} = \bar{x} \]
+
+Esta relacion no se cumple con la desvaicion estandar, sin embargo esto se peude arrgelar si para cada muetsra calculamos la desviación estandar de la siguiente manera:
+\[\sqrt{\frac{\sum_{i = 1}^n (x_i-\bar{x})^2 }{n-1}} \]
+Solo para estadistica inferencial
+
+\subsection{} %No se que poner como titulo de subsection
+\subsubsection{Experimento aleatorio} Es un experimente cuyo reuslatdo no se puede predecir, teniendo los casos posibles
+\subsubsection{Espacio muestral $\Omega$} Es el conjunto de todoas los reultados posibles de un experimento aleatorio
+\subsubsection{Evento o Suceso} Es un subconjunto del espacio muestral
+\subsubsection{Ejemplos:}
+\begin{enumerate}
+    \item \textbf{Exp. Aleatorio:} Lanzar un dado
+    \begin{itemize}
+        \item \textbf{$\Omega$} $={{1,2,3,4,5,6}} $
+        \item \textbf{Evento } Que salga primo o par (A)
+        \item \textbf{A} $= {{2,3,4,5,6}} $
+        \item \textbf{$P(A)$} $= \frac{5}{6} $
+    \end{itemize}
+
+    \item \textbf{Exp. Aleatorio:} Lanzar dos dados y registar la suma de las caras
+        \begin{enumerate}
+            \item Que la suma sea 6
+            \item Que la suma sea menor o igual a 6
+            \item Que la suma sea mayor que 6
+        \end{enumerate}
+
+\end{enumerate}
+
+\subsection{Propabilidad} La probabilidad de un evento A es una mediada del grado de certidumbre de un evento A
+
+\subsection{Regal de laplace} Dado un experimento aleatorio, \textit{si todos sus reuslatdos son equiprobables}, entonces la probabilidad de un evento A se define como:
+\[P(A) = \frac{casos favorables}{casos totatles}= \frac{\#A}{\#\Omega} \]
+
 
 \end{document}

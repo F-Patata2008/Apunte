@@ -77,4 +77,11 @@
 \contentsline {section}{\numberline {14}27/08 - }{42}{section.14}%
 \contentsline {subsection}{\numberline {14.1}Revision de Prueba}{42}{subsection.14.1}%
 \contentsline {subsection}{\numberline {14.2}Ejercicios}{42}{subsection.14.2}%
-\contentsline {section}{\numberline {15}28/08 - }{43}{section.15}%
+\contentsline {section}{\numberline {15}29/08 - }{43}{section.15}%
+\contentsline {subsection}{\numberline {15.1}}{44}{subsection.15.1}%
+\contentsline {subsubsection}{\numberline {15.1.1}Experimento aleatorio}{44}{subsubsection.15.1.1}%
+\contentsline {subsubsection}{\numberline {15.1.2}Espacio muestral $\Omega $}{44}{subsubsection.15.1.2}%
+\contentsline {subsubsection}{\numberline {15.1.3}Evento o Suceso}{44}{subsubsection.15.1.3}%
+\contentsline {subsubsection}{\numberline {15.1.4}Ejemplos:}{44}{subsubsection.15.1.4}%
+\contentsline {subsection}{\numberline {15.2}Propabilidad}{45}{subsection.15.2}%
+\contentsline {subsection}{\numberline {15.3}Regal de laplace}{45}{subsection.15.3}%

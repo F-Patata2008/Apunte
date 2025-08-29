@@ -1,201 +1,276 @@
 \documentclass[11pt]{article}
-\usepackage{amsmath}  % Math
-\usepackage{amssymb}  % Symbols
-\usepackage{graphicx} % Images
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[margin=1in]{geometry}
-\usepackage{transparent}
 \usepackage{eso-pic}
 \usepackage{xcolor}
-\usepackage{fancyhdr} % Headers and footers
-\usepackage{lipsum} % Dummy text
-\usepackage{tikz} % For drawing
-\usepackage[spanish]{babel} % For custom section titles
+\usepackage{fancyhdr}
+\usepackage{tikz}
+\usepackage{hyperref} % Para links internos y externos
 
-\graphicspath{{/home/F-Patata/Apunte/Fisica/images/}} % Path to images
+% --- Configuración de Hyperref ---
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    pdftitle={Apuntes de Fisica Teorica},
+    pdfauthor={Felipe Colli},
+}
+
+% --- Configuración de la ruta de imágenes ---
+% Se recomienda crear una carpeta "images" en el mismo directorio que tu archivo .tex
+\graphicspath{{images/}}
+
+% --- Comando para imagen de fondo (opcional) ---
 \newcommand\BackgroundPic{
     \put(0,0){
         \parbox[b][\paperheight]{\paperwidth}{
             \vfill
             \centering
-            \transparent{0.1}\includegraphics[width=\paperwidth]{logo.png} % your image
+            % \transparent{0.1}\includegraphics[width=\paperwidth]{logo.png} % Descomenta si tienes un logo
             \vfill
         }
     }
 }
+%\AddToShipoutPicture{\BackgroundPic} % Descomentar para activar el fondo
 
-
-
-\title{Apuntes Fisica Teorica (AFTIN)}
+% --- Configuración de Encabezado y Pie de Página con Copyright ---
+\pagestyle{fancy}
+\fancyhf{} % Limpia todos los campos
+\fancyhead[L]{Física Teórica}
+\fancyhead[R]{Felipe Colli}
+\fancyfoot[L]{\small \textcopyright{} 2025, Felipe Colli. Todos los derechos reservados.}
+\fancyfoot[R]{\thepage} % Número de página a la derecha
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}\title{Apuntes de Física Teórica (AFTIN)}
 \author{Felipe Colli \thanks{AFTIN y Profesor Paul Cáceres}}
-\date{2025}
-\AddToShipoutPicture{\BackgroundPic}
-
+\date{Versión: \today}
 
 \begin{document}
 \maketitle
+
+% --- NUEVO: Bloque de Copyright en la página del título ---
+\thispagestyle{empty} % Opcional: quita el encabezado y pie de la página del título
+\vfill % Empuja el contenido hacia abajo
+\begin{center}
+	\small
+	\textcopyright{} 2025, Felipe Colli. \\
+	Todos los derechos reservados. \\
+	\vspace{0.5cm} % Un pequeño espacio vertical
+	Queda prohibida la reproducción total o parcial de este documento, por cualquier medio o procedimiento, sin para ello contar con la autorización previa, expresa y por escrito del autor.
+\end{center}
+% --- FIN del bloque de Copyright ---
+
+
 \tableofcontents
 \newpage
 
-\section{Clase de 23/05/2025}
-\subsection{Cinemática}
-\subsubsection{Movimiento Rectilíneo Uniforme (MRU)}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Cinemática: El Estudio del Movimiento}
+\label{sec:cinematica}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% ... (El resto de tu documento sigue aquí sin cambios) ...
+
+\subsection{Movimiento Rectilíneo Uniforme (MRU)}
+Es el movimiento más simple, caracterizado por:
 \begin{enumerate}
-	\item Poseen una trayectoria rectilinea
-	\item Velocidad constante ($\vec{a}=0\frac{m}{s^2}$)
+	\item \textbf{Trayectoria rectilínea}: El objeto se mueve en línea recta.
+	\item \textbf{Velocidad constante}: No hay cambios en la velocidad, lo que implica que la \textbf{aceleración es nula} ($\vec{a}=0 \frac{m}{s^2}$).
 \end{enumerate}
+
+\subsubsection{Ecuaciones del MRU}
 \begin{itemize}
-	\item $v = \frac{\Delta x}{\Delta t}$ $\vec{v}=\frac{\vec{d}}{t}$ $(\frac{m}{s})$ $|\vec{v}|=v$
-	\item $x(t) = x_i + vt$
-	\item $a = 0$
-	\item $|\vec{d}|=d$
+	\item \textbf{Velocidad}: $v = \frac{\Delta x}{\Delta t} = \frac{x_f - x_i}{t_f - t_i}$
+	\item \textbf{Ecuación de Itinerario} (Posición en función del tiempo): $x(t) = x_i + v \cdot t$
 \end{itemize}
 
-\subsubsection{Movimiento Rectilíneo Uniformemente Acelerado (MRUA)}
+\subsection{Movimiento Rectilíneo Uniformemente Acelerado (MRUA)}
+Este movimiento describe un objeto que se mueve en línea recta pero con una aceleración constante.
 \begin{enumerate}
-	\item Poseen una trayectoria rectilinea
-	\item Velocidad variable $\vec{a}=\frac{\Delta v}{\Delta t}$ $(\frac{m}{s^2})$
-	\item Si la aceleración es del mismo signo que la velocidad, el objeto se acelera. Si la aceleración es del signo opuesto a la velocidad, el objeto desacelera.
+	\item \textbf{Trayectoria rectilínea}.
+	\item \textbf{Aceleración constante}: La velocidad cambia a un ritmo constante ($\vec{a} = \frac{\Delta v}{\Delta t} = \text{constante}$).
+	\item Si $\vec{a}$ y $\vec{v}$ tienen el mismo signo, el objeto acelera. Si tienen signos opuestos, desacelera (frena).
 \end{enumerate}
+
+\subsubsection{Ecuaciones del MRUA}
 \begin{itemize}
-	\item Ecuancion de la Velocidad en Función del Tiempo $v = v_i + a\Delta t$
-	\item Ecuación Iterinerario $x(t) = x_i + v_i t + \frac{1}{2}at^2$
-	\item Ecuacion Independiente del Tiempo $v_f^2 = v_i^2 + 2a(x_f-x_i)$
-	\item $|\vec{d}|=d$
+	\item \textbf{Velocidad en función del tiempo}: $v_f = v_i + a \cdot t$
+	\item \textbf{Ecuación de Itinerario}: $x(t) = x_i + v_i t + \frac{1}{2}at^2$
+	\item \textbf{Ecuación independiente del tiempo}: $v_f^2 = v_i^2 + 2a(x_f - x_i)$
 \end{itemize}
 
-\subsubsection{Graficos}
-\begin{enumerate}
-	\item Pendiente (Derivada) de la función
-	\item Área bajo la curva (Integral) de la función
-\end{enumerate}
+\subsection{Análisis Gráfico y Relación con el Cálculo}
 \begin{itemize}
-	\item $x$ vs $t$ $\rightarrow$ Pendiente = Velocidad, Area bajo la curva = Velocidad
-	\item $v$ vs $t$ $\rightarrow$ $\Delta{x}=\frac{\Delta{v} \cdot t}{2}+v_i t$ Pendiente = Aceleración, Area bajo la curva = Distancia Recorrida
+	\item La \textbf{pendiente} en un gráfico de \textbf{posición vs. tiempo (x-t)} representa la \textbf{velocidad}.
+	\item La \textbf{pendiente} en un gráfico de \textbf{velocidad vs. tiempo (v-t)} representa la \textbf{aceleración}.
+	\item El \textbf{área bajo la curva} en un gráfico de \textbf{velocidad vs. tiempo (v-t)} representa el \textbf{desplazamiento ($\Delta x$)}.
 \end{itemize}
 
-\subsubsection{Aplicando la Derivada a la ecuación de la Itininerario}
-\[x_f=x_i+v_i t+\frac{1}{2}at^2 \]
-\[v(t)=x'=v_1+at^2 \]
-\[v(t)'=a \]
-
-
-
-
-\section{Clase del 30/05/2025}
-\subsection{Movimiento Circunferencial Uniforme (MCU)}
+\subsubsection{Aplicando Derivadas}
+La cinemática es la manifestación física del cálculo diferencial.
 \begin{itemize}
-	\item Movimiento circular con rapidez constante
-	\item Trayectoria circular
-	\item Aceleración centrípeta $a_c = \frac{v^2}{r}$ $(\frac{m}{s^2})$
-	\item Velocidad angular $\omega = \frac{\Delta \theta}{\Delta t}$ $(\frac{rad}{s})$
-	\item Relación entre velocidad lineal y angular $v = r\omega$ $(\frac{m}{s})$
+	\item \textbf{Velocidad instantánea}: Es la derivada de la posición respecto al tiempo.
+	      \[ v(t) = \frac{d}{dt} x(t) = \frac{d}{dt} \left(x_i + v_i t + \frac{1}{2}at^2\right) = v_i + at \]
+	\item \textbf{Aceleración instantánea}: Es la derivada de la velocidad respecto al tiempo.
+	      \[ a(t) = \frac{d}{dt} v(t) = \frac{d}{dt} (v_i + at) = a \]
 \end{itemize}
-\subsubsection{Magnitudes Fisicas Temporales asociadas al Movimiento Ciclicos}
-\begin{itemize}
-	\item Periodo $T = \frac{2\pi r}{v} = \frac{t}{N} = \frac{1}{f} [s]$ \\
-	      Tiempo que tarda en completar una vuelta
-	\item Frecuencia $f = \frac{1}{T} = \frac{N}{t} [Hz]$
-	\item Longitud de onda $\lambda = \frac{v}{f} = \frac{vT}{N}$
-\end{itemize}
-
-\subsubsection{Estudio lineal del M.C.U.}
-\begin{itemize}
-	\item Rapidez tangencial $v = \frac{2\pi r}{T} = 2\pi rf $
-	\item Aceleración centrípeta $a_c = \frac{v^2}{r} $
-	\item Aceleración tangencial $a_t = r\alpha$ donde $\alpha$ es la aceleración angular
-	\item Aceleración total $a = \sqrt{a_c^2 + a_t^2}$
-\end{itemize}
-
-\subsubsection{Estudio Angular del M.C.U.}
-\begin{itemize}
-	\item $1 rad \approx 57.3° $
-	\item $360° = 2\pi rad$
-	\item Rapidez angular $\omega = \frac{2\pi}{T} = 2\pi f$
-	\item Aceleración angular $\alpha = \frac{\Delta \omega}{\Delta t}$
-	\item Relación entre aceleración centrípeta y angular $a_c = r\omega^2$
-	\item Relación entre aceleración tangencial y angular $a_t = r\alpha$
-	\item Aceleración total $a = \sqrt{a_c^2 + a_t^2} $
-\end{itemize}
-
-\begin{tikzpicture}
-	\filldraw[color=red, fill=white, very thick](-1,0) circle (1.5);
-\end{tikzpicture}
 
 \newpage
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Movimiento Circular}
+\label{sec:mov_circular}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Clase 22/08/2025 - Mmvimiento Circunferencial Uniformemente Variado (MRUV)}
-\subsection{Velocidad Angular media ($\vec{\omega_m} $)}
+\subsection{Movimiento Circular Uniforme (MCU)}
+Describe un objeto que se mueve en una trayectoria circular con \textbf{rapidez constante}. Aunque la rapidez no cambia, la dirección del vector velocidad sí lo hace, lo que implica que existe una aceleración.
 
-\begin{minipage}{0.45\textwidth}
-	\begin{flushleft}
-        \[\vec{\omega_m}= \frac{\Delta \vec{\theta}}{\Delta t} (\frac{rad}{s}) \]
-	\end{flushleft}
-\end{minipage}
-\begin{minipage}{0.45\textwidth}
-	\begin{flushleft}
-		%Insertar imgane de w>0 y w <0 para el sentido de giro
+\begin{itemize}
+	\item \textbf{Aceleración centrípeta ($a_c$)}: Siempre apunta hacia el centro del círculo y es responsable del cambio de dirección de la velocidad. Su magnitud es: $a_c = \frac{v^2}{r}$.
+	\item \textbf{Velocidad angular ($\omega$)}: Es la rapidez con la que cambia el ángulo. Se mide en $\frac{rad}{s}$. $\omega = \frac{\Delta \theta}{\Delta t}$.
+	\item \textbf{Relación lineal-angular}: $v = \omega \cdot r$.
+\end{itemize}
 
-	\end{flushleft}
-\end{minipage}
+\subsubsection{Magnitudes Cíclicas}
+\begin{itemize}
+	\item \textbf{Periodo (T)}: Tiempo en completar una vuelta. $T = \frac{2\pi r}{v} = \frac{2\pi}{\omega}$. Se mide en segundos [s].
+	\item \textbf{Frecuencia (f)}: Número de vueltas por unidad de tiempo. $f = \frac{1}{T}$. Se mide en Hertz [Hz].
+\end{itemize}
 
-\subsection{Velocidad Angular Instantanea}
-\[\vec{\omega} = \lim_{{\Delta}t \to 0} \vec{\omega_m} = \frac{\Delta \vec{\theta}}{\Delta t} \]
+\subsection{Movimiento Circular Uniformemente Variado (MCUV)}
+En este caso, la rapidez del objeto cambia a un ritmo constante, es decir, existe una \textbf{aceleración angular ($\alpha$)} constante.
 
-\subsection{Aceleracion Angular Media ($\vec{\alpha_m} $) (Constante)}
-\[\vec{\alpha_m} = \frac{\Delta \vec{\omega}}{\Delta t} (\frac{ras}{s^2})\]
+\begin{itemize}
+	\item \textbf{Aceleración angular ($\alpha$)}: Es la tasa de cambio de la velocidad angular. $\alpha = \frac{\Delta \omega}{\Delta t}$. Se mide en $\frac{rad}{s^2}$.
+	\item \textbf{Aceleración tangencial ($a_t$)}: Es responsable del cambio en la magnitud de la velocidad (rapidez). $a_t = \alpha \cdot r$.
+	\item \textbf{Aceleración total ($\vec{a}$)}: Es la suma vectorial de la aceleración centrípeta y tangencial. Su magnitud es: $|\vec{a}| = \sqrt{a_c^2 + a_t^2}$.
+\end{itemize}
 
-\subsection{Aceleracion Angular Instantanea}
-\[\vec{\alpha}= \lim_{\Delta t \to 0} \frac{\Delta \vec{\omega}}{\Delta t} \]
+\subsubsection{Ecuaciones del MCUV (Análogas al MRUA)}
+\begin{itemize}
+	\item $\omega_f = \omega_i + \alpha t$
+	\item $\theta(t) = \theta_i + \omega_i t + \frac{1}{2}\alpha t^2$
+	\item $\omega_f^2 = \omega_i^2 + 2\alpha (\Delta\theta)$
+\end{itemize}
 
-\subsection{Analisis Gráfico} 
-\subsubsection{$\alpha = f(t)$}
-%Inssertar grafico generico de acleacion vs tiempo a la izquiera, a la deracha las formulas con minipage
-\[A = \alpha \cdot t = \Delta \vec{\omega} \]
-
-\subsubsection{$\omega = f(t)$}
-%Insertar grafico gnerecio de \omega vs tiempo a la izquirda, y ala derecha la formula con minipage
-\[\omega(t) = \omega_i + \alpha t \]
-
-\[A_1 = \frac{1}{2} \Delta\omega t \]
-\[A_2 = \omega_i t \]
-
-\[A = \Delta\theta = A_1 + A_2 = \omega_i t + \frac{1}{2}\omega_i t \] 
-\[\theta_f - \theta_i = \omega_i t + \frac{1}{2}\alpha t^2 \]
-\[\theta(t) = \theta_i + \omega_i t + \frac{1}{2}\alpha t^2 \]
-
-\subsection{Cantidades Lineales}
-%Insertar imagen de acelarcion tangencial en distintos moentos (t1 y t2)
-
-\subsubsection{Velocidad Lineal Instantanea}
-\[v = r\omega \]
-
-\subsubsection{Aceleracion Tangencial}
-\[A_t = \frac{\Delta v}{\Delta t} = \frac{r\Delta\omega}{\Delta t} = \alpha \cdot r \]
-
-\subsubsection{Aceleracion Centripeta}
-\[A_c = \omega^2 r \]
-
-\[\vec{A} = \vec{A_c} + \vec{A_t} \]
-
-\subsubsection{Aceleracion Neta}
-\[|\vec{A}| = \sqrt{A_c^2+ A_t^2} \]
-
-\subsection{Problemas}
+\subsection{Problema de Aplicación (Corregido)}
+Una rueda de 50 cm de diámetro parte del reposo y tarda 10 segundos en alcanzar una rapidez angular constante de $180\pi$ rad/s. Calcule:
 \begin{enumerate}
-    \item Una cuerda de 50 cm de diamtreo trada 10 segundos en adquirir una rapidez constante de 180 pi rad/s, calcula:
-        \begin{enumerate}
-            \item la acelarcion angular\\
-                $\alpha = \frac{\Delta\omega}{\Delta t} = \frac{\omega_f - (\omega_i =  0)}{10} = \frac{180\pi}{10} = 18 (\frac{rad}{s^2}) $\\
+	\item \textbf{La aceleración angular ($\alpha$):}
+	      \[ \alpha = \frac{\omega_f - \omega_i}{\Delta t} = \frac{180\pi - 0}{10} = 18\pi \ \frac{\text{rad}}{\text{s}^2} \]
 
-            \item Cual es la rapidez lineal en un putno de la periferia cuando alcanza esa rapidez angular\\
-                $v = \omega r = 180\pi \cdot 0.5 = 90\pi (\frac{rad}{s}) $\\
+	\item \textbf{La rapidez lineal final en un punto de la periferia:} (Radio $r = \frac{0.5 \text{ m}}{2} = 0.25$ m)
+	      \[ v_f = \omega_f \cdot r = (180\pi \ \text{rad/s}) \cdot (0.25 \text{ m}) = 45\pi \ \frac{\text{m}}{\text{s}} \]
 
-            \item LA acelaraciopn centripeta a laos 5 degundo de inciado el mov\\
-                $A_c = \omega^2 r = (90\pi)^2 \cdot 0.5 = 8100 \pi^2 \cdot 0.5 = 4050\pi^2 (\frac{rad}{s^2}) $
-        \end{enumerate}
+	\item \textbf{La aceleración centrípeta a los 5 segundos:}
+	      Primero, calculamos la velocidad angular a los 5s:
+	      \[ \omega(5s) = \omega_i + \alpha \cdot t = 0 + (18\pi) \cdot 5 = 90\pi \ \frac{\text{rad}}{\text{s}} \]
+	      Ahora, la aceleración centrípeta en ese instante:
+	      \[ a_c = (\omega(5s))^2 \cdot r = (90\pi)^2 \cdot 0.25 = (8100\pi^2) \cdot 0.25 = 2025\pi^2 \ \frac{\text{m}}{\text{s}^2} \]
 \end{enumerate}
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Dinámica Lineal: Causas del Movimiento}
+\label{sec:dinamica_lineal}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Leyes de Newton}
+Son los pilares fundamentales de la mecánica clásica.
+
+\subsubsection{Primera Ley (Ley de Inercia)}
+Un objeto permanece en reposo o en MRU a menos que una fuerza neta externa actúe sobre él.
+\[ \text{Si } \sum \vec{F} = 0 \quad \iff \quad \vec{v} = \text{constante} \]
+
+\subsubsection{Segunda Ley (Ley Fundamental de la Dinámica)}
+La aceleración de un objeto es directamente proporcional a la fuerza neta que actúa sobre él e inversamente proporcional a su masa.
+\[ \sum \vec{F} = m \cdot \vec{a} \]
+
+\subsubsection{Tercera Ley (Principio de Acción y Reacción)}
+Si un objeto A ejerce una fuerza sobre un objeto B, entonces el objeto B ejerce una fuerza de igual magnitud y dirección opuesta sobre el objeto A.
+\[ \vec{F}_{A \to B} = - \vec{F}_{B \to A} \]
+
+\subsection{Momentum e Impulso}
+
+\subsubsection{Momentum o Cantidad de Movimiento ($\vec{p}$)}
+Es una medida de la "inercia en movimiento" de un objeto. Es una cantidad vectorial.
+\[ \vec{p} = m \cdot \vec{v} \quad \left[\frac{\text{kg} \cdot \text{m}}{\text{s}}\right] \]
+La Segunda Ley de Newton se puede reescribir en términos del momentum:
+\[ \sum \vec{F} = \frac{d\vec{p}}{dt} \]
+
+\subsubsection{Impulso ($\vec{I}$)}
+Mide el efecto de una fuerza neta aplicada durante un intervalo de tiempo.
+\[ \vec{I} = \int_{t_i}^{t_f} \vec{F} dt \]
+Si la fuerza es constante:
+\[ \vec{I} = \vec{F}_{neta} \cdot \Delta t \quad [\text{N} \cdot \text{s}] \]
+
+\subsubsection{Teorema del Impulso y la Cantidad de Movimiento}
+Este teorema establece que el impulso neto aplicado a un objeto es igual al cambio en su momentum.
+\[ \vec{I}_{neto} = \Delta \vec{p} = \vec{p}_f - \vec{p}_i \]
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Dinámica Rotacional}
+\label{sec:dinamica_rotacional}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Torque o Momento de Torsión ($\vec{\tau}$)}
+Es el análogo rotacional de la fuerza. Es una medida de la capacidad de una fuerza para causar una rotación alrededor de un eje.
+\[ \vec{\tau} = \vec{r} \times \vec{F} \]
+Donde $\vec{r}$ es el vector de posición desde el eje de rotación hasta el punto de aplicación de la fuerza $\vec{F}$. La magnitud del torque es:
+\[ |\vec{\tau}| = |\vec{r}| |\vec{F}| \sin(\theta) \quad [\text{N} \cdot \text{m}] \]
+donde $\theta$ es el ángulo entre $\vec{r}$ y $\vec{F}$. El torque es máximo cuando la fuerza es perpendicular al brazo de palanca ($\theta=90^\circ$).
+
+\begin{figure}[h!]
+	\centering
+	% \includegraphics[width=0.7\textwidth]{torque_diagrama.png} % <-- Inserta aquí un diagrama de torque
+	\caption{Ilustración del torque. La componente perpendicular de la fuerza ($F\sin\theta$) es la que genera la rotación.}
+	\label{fig:torque}
+\end{figure}
+
+\subsection{Momento de Inercia ($I$)}
+Es el análogo rotacional de la masa. Representa la resistencia de un objeto a cambiar su estado de movimiento rotacional. Depende de la masa del objeto y de cómo está distribuida alrededor del eje de giro.
+\begin{itemize}
+	\item Para una partícula puntual: $I = m r^2$
+	\item Para un cuerpo rígido: $I = \int r^2 dm$
+\end{itemize}
+Se mide en $\text{kg} \cdot \text{m}^2$. Un cilindro hueco tiene mayor momento de inercia que uno sólido de la misma masa y radio, porque su masa está más alejada del centro.
+
+\subsection{Segunda Ley de Newton para la Rotación}
+El torque neto sobre un objeto es igual a su momento de inercia por su aceleración angular.
+\[ \sum \vec{\tau} = I \cdot \vec{\alpha} \]
+Esta es la ecuación fundamental de la dinámica rotacional, análoga a $\sum \vec{F} = m\vec{a}$.
+
+\subsection{Momentum Angular ($\vec{L}$)}
+Es el análogo rotacional del momentum lineal. Describe la "cantidad de movimiento de rotación" de un cuerpo.
+\begin{itemize}
+	\item Definición general (partícula): $\vec{L} = \vec{r} \times \vec{p}$
+	\item Para un cuerpo rígido rotando sobre un eje fijo: $\vec{L} = I \cdot \vec{\omega}$
+\end{itemize}
+
+\subsubsection{Relación entre Torque y Momentum Angular}
+El torque neto es igual a la tasa de cambio del momentum angular.
+\[ \sum \vec{\tau} = \frac{d\vec{L}}{dt} \]
+Esta es la forma más general de la segunda ley para rotaciones.
+
+\subsubsection{Conservación del Momentum Angular}
+Si el torque neto externo que actúa sobre un sistema es cero, su momentum angular total se conserva.
+\[ \text{Si } \sum \vec{\tau}_{ext} = 0 \implies \vec{L}_{inicial} = \vec{L}_{final} \implies I_i \omega_i = I_f \omega_f \]
+Este principio explica por qué una patinadora sobre hielo gira más rápido al encoger sus brazos: disminuye su momento de inercia ($I$), por lo que su velocidad angular ($\omega$) debe aumentar para mantener $L$ constante.
+
+\subsection{Aceleración centrípeta y Fuerza Centrípeta}
+La aceleración centrípeta es causada por una fuerza neta que apunta hacia el centro de la trayectoria circular, llamada \textbf{fuerza centrípeta ($F_c$)}.
+\[ a_c = \frac{v^2}{r} = \omega^2 r \]
+Aplicando la segunda ley de Newton ($F=ma$):
+\[ F_c = m \cdot a_c = m \frac{v^2}{r} = m \omega^2 r \]
+Es importante notar que la fuerza centrípeta no es un nuevo tipo de fuerza, sino la \textit{fuerza neta} que provoca la rotación (puede ser la tensión de una cuerda, la gravedad, etc.).
 
 \end{document}

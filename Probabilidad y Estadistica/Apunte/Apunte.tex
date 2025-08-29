@@ -37,7 +37,7 @@
 % --- CONFIGURACIÓN DEL PIE DE PÁGINA ---
 \pagestyle{fancy}
 \fancyhf{} % Limpia cabecera y pie de página
-\fancyfoot[C]{\footnotesize Apunte por Felipe Colli Olea -- Licencia CC BY-NC-ND 4.0 \\ Todos los derechos reservados} 
+\fancyfoot[C]{\footnotesize Apunte por Felipe Colli Olea -- Licencia CC BY-NC-ND 4.0 \\ Algunos derechos reservados.} 
 \fancyfoot[R]{\thepage} % Número de página a la derecha
 \renewcommand{\headrulewidth}{0pt} % Sin línea en la cabecera
 % ---------------------------------------
@@ -98,7 +98,7 @@
 \newpage % Start sections on a new page after ToC
 
 \section{14/03 - Conceptos Fundamentales de Estadística}
-\subsection{Conceptos Basicos}
+\subsection{Conceptos Básicos}
 \subsubsection{Población:}
 Conjunto de todos los elementos que se quieren estudiar. Cuando la información deseada está disponible para todos los objetos de la población, lo llamamos \textbf{censo}. En la práctica es muy difícil o casi imposible realizar un censo.
 
@@ -108,7 +108,7 @@ Subconjunto de la población que se mide u observa.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.85\textwidth]{muestra}
-	\caption{Representacion de la muestra dentro de la población.}
+	\caption{Representación de la muestra dentro de la población.}
 	\label{fig:muestra}
 \end{figure}
 
@@ -972,108 +972,154 @@ La \textbf{cardinalidad} (número de elementos) del conjunto potencia se puede c
 \newpage
 
 
-\section{27/08 - } %Falta agregar partes de la prueba
-\subsection{Revision de Prueba}
+\section{27/08 - Aplicaciones de Combinatoria}
+\subsection{Revisión de Prueba (Ejercicios Notables)}
+\textit{Nota: Esta sección resume algunos ejercicios clave de la evaluación anterior.}
 \begin{enumerate}
-    \item Item 1
+    \item \textbf{Ítem 1: Operatoria Combinatoria}
     \begin{enumerate}
-        \item $\binom{5}{3} + \binom{7}{3} - \binom{5}{2} + \binom{7}{4} = 2 \cdot \binom{7}{3} = \frac{2 \cdot 7!}{4! \cdot 3!} = 2 \cdot 7 \cdot 5 = 70 $
-        \item $\frac{(9-4)!}{8!}= \frac{5!}{8!}= \frac{1}{8\cdot 7\cdot 6} = \frac{1}{336} $
-        \item $\frac{7!}{5!}- \frac{5!}{6!} $
+        \item $\binom{5}{3} + \binom{7}{3} - \binom{5}{2} + \binom{7}{4} = 2 \cdot \binom{7}{3} = \frac{2 \cdot 7!}{4! \cdot 3!} = 2 \cdot 35 = 70$
+        \item $\frac{(9-4)!}{8!} = \frac{5!}{8!} = \frac{1}{8\cdot 7\cdot 6} = \frac{1}{336}$
     \end{enumerate}
-\item Item 2
-    \begin{enumerate}
-        \item a
-        \begin{enumerate}
-            \item Permuatcion Circular
-            \item $PC_6$
-        \end{enumerate}
-        \begin{enumerate}
-            \item Combinacion 
-            \item $C_3^15 = \binom{15}{3} $
-        \end{enumerate}
-        \begin{enumerate}
-            \item 
-        \end{enumerate}
-    \end{enumerate}
+    \item \textbf{Ítem 2: Identificación de Técnica de Conteo}
+    \begin{itemize}
+        \item Para sentar 6 personas en una mesa redonda, se usa una \textbf{Permutación Circular}: $PC_6 = (6-1)! = 5! = 120$.
+        \item Para elegir un comité de 3 personas de un grupo de 15, se usa una \textbf{Combinación}: $C_3^{15} = \binom{15}{3} = \frac{15 \cdot 14 \cdot 13}{3 \cdot 2 \cdot 1} = 455$.
+    \end{itemize}
 \end{enumerate}
 
-
-\subsection{Ejercicios}
+\subsection{Ejercicios: Diagonales de un Polígono}
 \begin{enumerate}
-    \item Determinar la cantidad de diagonales de un poligono de 20 lados\\
-        $\binom{20}{2} - n = \frac{n!}{2 \cdot (n - 2)!} - n = \frac{n(n - 1) - 2n}{2} = \frac{n^2- 3n}{2} = \frac{400-60}{2} = \frac{340}{2} = 170 $
-    \item Determinar una expresion para la cantidad de diagonales de un poligono de n lados.\\
-        $\binom{n}{2} - n = \frac{n!}{2(n-2)!} - n = \frac{n(n-1)}{2} - n = \frac{n^2-n -2n}{2} = \frac{n^2-3n}{2} $
-    \item Si un poligono tine 65 diagonales, ¿Cuantos lados tiene?\\
-        $\frac{n^2-3n}{2}= 65 \rightarrow n^2-3n-130= 0 \rightarrow (n-13)(n+10)= 0 \rightarrow x_1 = 13, x_2 = -10 $\\
-        Ya que $x_2$ es negativo, no podemos seleccionarlo como solucion, por lo tanto, tiene 13 lados este poligono de 65 diagonales
+    \item Determinar la cantidad de diagonales de un polígono de 20 lados.
+    \item Determinar una expresión para la cantidad de diagonales de un polígono de n lados.
+    \item Si un polígono tiene 65 diagonales, ¿cuántos lados tiene?
+\end{enumerate}
+
+\subsection{Soluciones}
+\begin{enumerate}
+    \item \textbf{Deducción de la fórmula y cálculo para 20 lados.} \\
+    \textit{Solución:} Para resolver esto, primero deduciremos la fórmula general para un polígono de $n$ lados, como se pide en el ejercicio 2.
+    
+    Un polígono de $n$ lados tiene $n$ vértices. Una diagonal es una línea que une dos vértices no consecutivos. Desde un punto de vista combinatorio:
+    \begin{itemize}
+        \item El número total de líneas que se pueden trazar entre $n$ vértices es equivalente a escoger 2 vértices de un total de $n$, sin importar el orden. Esto es una combinación:
+        \[ \text{Total de líneas} = \binom{n}{2} = \frac{n(n-1)}{2} \]
+        \item Este total incluye tanto las diagonales como los $n$ lados del polígono. Para obtener solo las diagonales, debemos restar los lados.
+    \end{itemize}
+    La expresión para el número de diagonales ($D$) es:
+    \[ D(n) = \binom{n}{2} - n = \frac{n(n-1)}{2} - n = \frac{n^2 - n - 2n}{2} = \frac{n(n-3)}{2} \]
+    Ahora, aplicamos la fórmula para un polígono de 20 lados ($n=20$):
+    \[ D(20) = \frac{20(20-3)}{2} = \frac{20 \cdot 17}{2} = 10 \cdot 17 = 170 \]
+    \textbf{Respuesta:} Un polígono de 20 lados tiene 170 diagonales.
+
+    \item \textbf{Expresión para la cantidad de diagonales de un polígono de $n$ lados.} \\
+    \textit{Solución:} Como se dedujo en el punto anterior, la expresión general es:
+    \[ D(n) = \frac{n(n-3)}{2} \]
+    \textbf{Respuesta:} La expresión es $\frac{n(n-3)}{2}$.
+
+    \item \textbf{Si un polígono tiene 65 diagonales, ¿cuántos lados tiene?} \\
+    \textit{Solución:} Usamos la fórmula, la igualamos a 65, y despejamos $n$.
+    \[ \frac{n(n-3)}{2} = 65 \]
+    \[ n(n-3) = 130 \]
+    \[ n^2 - 3n - 130 = 0 \]
+    Resolvemos la ecuación cuadrática factorizando. Buscamos dos números que multipliquen -130 y sumen -3. Estos son -13 y 10.
+    \[ (n-13)(n+10) = 0 \]
+    Las soluciones son $n_1 = 13$ y $n_2 = -10$. Como el número de lados de un polígono no puede ser negativo, descartamos $n_2$.
+    
+    \textbf{Respuesta:} El polígono tiene 13 lados.
 \end{enumerate}
 
 \newpage
 
-\section{29/08 - } % No se me ociurre como roganizar las secione sy subseciones
+\section{29/08 - Muestreo e Introducción a la Probabilidad}
+\subsection{El Promedio de las Medias Muestrales}
+En esta sección se demuestra una propiedad fundamental de la estadística inferencial: la media de todas las medias muestrales posibles es igual a la media de la población.
 
-Suponga que tiene los siguientes datos: $6$, $12$, $18$
+\subsubsection{Ejemplo Numérico Intuitivo}
+Suponga que se tiene una población de 3 elementos: $\{6, 12, 18\}$.
 \begin{enumerate}
-    \item Determine todas las muestras posibles (sin importar el orden) (sin repeticion) de dos datos\\ \textbf{R:} Solo hay 3 muestras
-    \item Determine el promedio de cada muestra\\ \textbf{R:} 9, 12, 15
-    \item Determine el primedio de periodos\\ \textbf{R:} 12
+    \item \textbf{Determine todas las muestras posibles de tamaño 2 (sin orden y sin repetición).} \\
+    \textit{Solución:} Las muestras son $\{6, 12\}$, $\{6, 18\}$ y $\{12, 18\}$. Hay $\binom{3}{2}=3$ muestras posibles.
+    
+    \item \textbf{Determine el promedio de cada muestra.} \\
+    \textit{Solución:} \\
+    $\bar{x}_1 = \frac{6+12}{2} = 9$ \\
+    $\bar{x}_2 = \frac{6+18}{2} = 12$ \\
+    $\bar{x}_3 = \frac{12+18}{2} = 15$
+    
+    \item \textbf{Determine el promedio de los promedios muestrales y compárelo con el promedio de la población.} \\
+    \textit{Solución:} \\
+    El promedio de los promedios muestrales es: $\frac{9+12+15}{3} = \frac{36}{3} = 12$. \\
+    El promedio de la población original es: $\frac{6+12+18}{3} = \frac{36}{3} = 12$.
+    
+    \textbf{Conclusión:} Ambos promedios son iguales.
 \end{enumerate}
-Ahora haga lo ismo para una pobalcion con $x_1$, $x_2$, $x_3$
+
+\subsubsection{Generalización y Demostración Formal}
+Sea una población de $n$ elementos $\{x_1, x_2, \dots, x_n\}$ y escojamos todas las muestras posibles de tamaño $k$. El número total de muestras es $\binom{n}{k}$.
+
+El promedio de todas las medias muestrales, denotado $\mu_{\bar{x}}$, se calcula como:
+\[ \mu_{\bar{x}} = \frac{\sum \bar{x}_i}{\binom{n}{k}} \]
+Para realizar esta suma, nos preguntamos: ¿cuántas veces aparece cada elemento $x_i$ en el conjunto de todas las muestras? Si elegimos un $x_i$, debemos escoger los $k-1$ elementos restantes de los $n-1$ elementos disponibles. Por lo tanto, cada $x_i$ aparece en $\binom{n-1}{k-1}$ muestras.
+
+La suma de todos los valores en todas las muestras es: $\binom{n-1}{k-1} \sum_{i=1}^{n} x_i$.
+La suma de todos los promedios muestrales es $\frac{1}{k}$ de esa cantidad.
+\begin{align*}
+\mu_{\bar{x}} &= \frac{\frac{1}{k} \binom{n-1}{k-1} \sum_{i=1}^{n} x_i}{\binom{n}{k}} \\
+&= \frac{\binom{n-1}{k-1}}{\binom{n}{k}} \cdot \frac{1}{k} \sum_{i=1}^{n} x_i \\
+&= \frac{\frac{(n-1)!}{(k-1)!(n-k)!}}{\frac{n!}{k!(n-k)!}} \cdot \frac{1}{k} \sum_{i=1}^{n} x_i \\
+&= \frac{(n-1)! \cdot k!(n-k)!}{(k-1)!(n-k)! \cdot n!} \cdot \frac{1}{k} \sum_{i=1}^{n} x_i \\
+&= \frac{k}{n} \cdot \frac{1}{k} \sum_{i=1}^{n} x_i = \frac{1}{n} \sum_{i=1}^{n} x_i \\
+&= \bar{x}_{\text{población}}
+\end{align*}
+\textbf{Conclusión:} Queda demostrado que el promedio de las medias de todas las muestras posibles de tamaño $k$ es igual al promedio de la población. Esto significa que la media muestral es un \textbf{estimador insesgado} de la media poblacional.
+
+\subsubsection{Implicaciones para la Varianza y la Inferencia}
+Esta relación no se cumple de la misma forma para la varianza o la desviación estándar. Si calculamos la varianza de cada muestra usando $n$ en el denominador, el promedio de estas varianzas no será igual a la varianza de la población.
+
+Para corregir esto, en estadística inferencial se utiliza la \textbf{varianza muestral insesgada}, que divide por $k-1$ (el tamaño de la muestra menos uno) en lugar de $k$:
+\[ s^2 = \frac{\sum_{i=1}^{k} (x_i - \bar{x})^2}{k-1} \]
+Este factor de corrección (conocido como corrección de Bessel) asegura que la varianza muestral sea un estimador insesgado de la varianza poblacional.
+
+\subsection{Conceptos Fundamentales de Probabilidad}
+
+\subsubsection{Definiciones Básicas}
+\begin{itemize}
+    \item \textbf{Experimento aleatorio:} Es un experimento cuyo resultado no se puede predecir con certeza, aunque se conozcan todos los resultados posibles.
+    \item \textbf{Espacio Muestral ($\Omega$):} Es el conjunto de todos los resultados posibles de un experimento aleatorio.
+    \item \textbf{Evento o Suceso (A):} Es un subconjunto del espacio muestral. Es decir, uno o más de los posibles resultados.
+\end{itemize}
+
+\subsubsection{Regla de Laplace}
+La probabilidad de un evento A, $P(A)$, es una medida del grado de certidumbre de que dicho evento ocurra.
+La Regla de Laplace se aplica a experimentos aleatorios donde \textbf{todos sus resultados son equiprobables} (tienen la misma probabilidad de ocurrir). En este caso, la probabilidad de un evento A se define como:
+\[ P(A) = \frac{\text{Número de casos favorables}}{\text{Número de casos totales}} = \frac{\#A}{\#\Omega} \]
+
+\subsubsection{Ejemplos Resueltos}
 \begin{enumerate}
-    \begin{minipage}{0.45\textwidth}
-           \item $x_1$, $x_2$ \\ $x_2$, $x_3$ \\ $x_3$, $x_1$ 
-    \end{minipage}
-    \begin{minipage}{0.45\textwidth}
-           \item $\bar{x}_1 = \frac{x_1 + x_2}{2} $ \\ $\bar{x}_2 = \frac{x_2 + x_3}{2} $ \\ $\bar{x}_3 = \frac{x_3 + x_1}{2} $ 
-    \end{minipage}
-    \item $\bar{x} = \frac{\sum_{i = 1}^3 x_i}{n} $
-\end{enumerate}
-
-
-Supongamos que tenemos n elementos, $x_1$, $x_2$, $x_3$, ..., $x_n$ y escojemos todas las muestras posibles de $k$ elementos:
-Hay $\binom{n}{k} $ muestras
-
-\[\bar{x}_{Muestras} = \frac{\bar{x_1} + \bar{x_2} + \cdots + \bar{x_{\binom{n}{k}}}}{\binom{n}{k}} = \frac{\frac{1}{k} (\bar{x_1} + \bar{x_2}+ \cdots + \bar{x_{\binom{n}{k}}})}{\binom{n}{k}} \]
-¿Cunras veces aparece $x_i$ en una muestra?
-\[\binom{n-1}{k-1} \]
-
-\[\bar{x}_{Muestra} = \frac{\binom{n-1}{k-1} \frac{1}{k}(\sum_{i=1}^{n} x_i)}{\binom{n}{k}} = \frac{\frac{(n-1)!}{(n-1-(k-1))!(k-1)!}\cdot \frac{1}{k} \sum_{i=1}^n x_i}{\frac{n!}{(n-k)!k!}} \]
-
-\[\bar{x}_{Muestra} = \frac{(n-1)! \cdot \sum_{i=1}^n x_i}{n!} = \frac{\sum_{i=1}^n x_i}{n} = \bar{x} \]
-
-Esta relacion no se cumple con la desvaicion estandar, sin embargo esto se peude arrgelar si para cada muetsra calculamos la desviación estandar de la siguiente manera:
-\[\sqrt{\frac{\sum_{i = 1}^n (x_i-\bar{x})^2 }{n-1}} \]
-Solo para estadistica inferencial
-
-\subsection{} %No se que poner como titulo de subsection
-\subsubsection{Experimento aleatorio} Es un experimente cuyo reuslatdo no se puede predecir, teniendo los casos posibles
-\subsubsection{Espacio muestral $\Omega$} Es el conjunto de todoas los reultados posibles de un experimento aleatorio
-\subsubsection{Evento o Suceso} Es un subconjunto del espacio muestral
-\subsubsection{Ejemplos:}
-\begin{enumerate}
-    \item \textbf{Exp. Aleatorio:} Lanzar un dado
+    \item \textbf{Experimento Aleatorio:} Lanzar un dado de 6 caras.
     \begin{itemize}
-        \item \textbf{$\Omega$} $={{1,2,3,4,5,6}} $
-        \item \textbf{Evento } Que salga primo o par (A)
-        \item \textbf{A} $= {{2,3,4,5,6}} $
-        \item \textbf{$P(A)$} $= \frac{5}{6} $
+        \item \textbf{Espacio Muestral:} $\Omega = \{1, 2, 3, 4, 5, 6\}$, por lo tanto $\#\Omega = 6$.
+        \item \textbf{Evento A:} Que el resultado sea un número primo.
+        \item \textbf{Casos Favorables:} $A = \{2, 3, 5\}$, por lo tanto $\#A = 3$.
+        \item \textbf{Probabilidad:} $P(A) = \frac{\#A}{\#\Omega} = \frac{3}{6} = \frac{1}{2}$.
     \end{itemize}
 
-    \item \textbf{Exp. Aleatorio:} Lanzar dos dados y registar la suma de las caras
-        \begin{enumerate}
-            \item Que la suma sea 6
-            \item Que la suma sea menor o igual a 6
-            \item Que la suma sea mayor que 6
-        \end{enumerate}
-
+    \item \textbf{Experimento Aleatorio:} Lanzar dos dados y registrar la suma de las caras.
+    \begin{itemize}
+        \item \textbf{Espacio Muestral:} Hay $6 \times 6 = 36$ resultados posibles. El valor de la suma va desde 2 hasta 12. $\#\Omega = 36$.
+        \item \textbf{Evento A:} Que la suma sea igual a 6. \\
+            \textit{Casos favorables:} $\{(1,5), (2,4), (3,3), (4,2), (5,1)\}$. $\#A=5$. \\
+            \textit{Probabilidad:} $P(A) = \frac{5}{36}$.
+        \item \textbf{Evento B:} Que la suma sea menor o igual a 6. \\
+            \textit{Casos favorables:} Suma=2:\{(1,1)\}; Suma=3:\{(1,2),(2,1)\}; Suma=4:\{(1,3),(2,2),(3,1)\}; Suma=5:\{(1,4),(2,3),(3,2),(4,1)\}; Suma=6: (ya contados, son 5). \\
+            Total casos favorables: $1+2+3+4+5=15$. $\#B=15$. \\
+            \textit{Probabilidad:} $P(B) = \frac{15}{36} = \frac{5}{12}$.
+        \item \textbf{Evento C:} Que la suma sea mayor que 6. \\
+            \textit{Solución:} Este es el evento complementario al evento B. Podemos calcularlo como $1 - P(B)$ o contando los casos.
+            $\#C = \#\Omega - \#B = 36 - 15 = 21$. \\
+            \textit{Probabilidad:} $P(C) = \frac{21}{36} = \frac{7}{12}$.
+    \end{itemize}
 \end{enumerate}
-
-\subsection{Propabilidad} La probabilidad de un evento A es una mediada del grado de certidumbre de un evento A
-
-\subsection{Regal de laplace} Dado un experimento aleatorio, \textit{si todos sus reuslatdos son equiprobables}, entonces la probabilidad de un evento A se define como:
-\[P(A) = \frac{casos favorables}{casos totatles}= \frac{\#A}{\#\Omega} \]
-
 
 \end{document}

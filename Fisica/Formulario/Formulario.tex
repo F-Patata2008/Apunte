@@ -1,32 +1,183 @@
 \documentclass[11pt]{article}
-\usepackage{amsmath}  % Math
-\usepackage{amssymb}  % Symbols
-\usepackage{graphicx} % Images
-\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[margin=0.75in]{geometry} % Márgenes más pequeños
 \usepackage[T1]{fontenc}
-\usepackage[margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol} % Para usar dos columnas
+\usepackage[most]{tcolorbox} % Para las cajas de colores
+\usepackage{fancyhdr} % <<--- PAQUETE AÑADIDO (soluciona los errores)
+\usepackage{enumitem} % <<--- PAQUETE AÑADIDO (para compactar listas)
 
-\title{Formulario}
+% --- Configuración de las cajas de TColorBox ---
+\tcbset{
+    colback=blue!5!white, % Color de fondo de la caja
+    colframe=blue!75!black, % Color del marco
+    fonttitle=\bfseries,
+    arc=2mm, % Esquinas redondeadas
+    boxsep=5pt,
+    left=6pt,
+    right=6pt,
+    top=6pt,
+    bottom=6pt
+}
+
+
+\title{Formulario Completo de Física Teórica}
 \author{Felipe Colli \thanks{AFTIN y Profesor Paul Cáceres}}
 \date{2025}
+
+% --- Configuración del Pie de Página ---
+\pagestyle{fancy} % Activa el estilo fancy para todo el documento
+\fancyhf{} % Limpia encabezado y pie de página
+\fancyfoot[C]{\small \textcopyright{} 2025, Felipe Colli. Todos los derechos reservados.}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt} % Sin línea en el encabezado
+\renewcommand{\footrulewidth}{0.4pt} % Línea en el pie de página
 
 \begin{document}
 
 \maketitle
+\thispagestyle{fancy} % Se asegura que la primera página también use el estilo fancy
+
+\begin{multicols}{2} % Inicia el entorno de dos columnas
+\setlist{nosep} % Reduce el espacio vertical en todas las listas de aquí en adelante
+
+%===========================================================
+% CINEMÁTICA LINEAL
+%===========================================================
+\begin{tcolorbox}[title=Cinemática Lineal]
+\subsection*{Movimiento Rectilíneo Uniforme (MRU)}
+\begin{itemize}
+    \item $v = \frac{\Delta x}{\Delta t}$
+    \item $x(t) = x_i + v \cdot t$
+\end{itemize}
+
+\subsection*{Movimiento Rectilíneo Uniformemente Acelerado (MRUA)}
+\begin{itemize}
+    \item $v_f = v_i + a \cdot t$
+    \item $x(t) = x_i + v_i t + \frac{1}{2}at^2$
+    \item $v_f^2 = v_i^2 + 2a\Delta x$
+\end{itemize}
+
+\subsubsection*{Definiciones}
+\begin{itemize}
+    \item $x$: Posición [m]
+    \item $v$: Velocidad [m/s]
+    \item $a$: Aceleración [m/s$^2$]
+    \item $t$: Tiempo [s]
+\end{itemize}
+\end{tcolorbox}
 
 
-\section{MRU}
-    \begin{itemize}
-        \item $v=\frac{\Delta{x}}{\Delta{t}}$ $\vec{v}=\frac{\vec{d}}{t}$ $(\frac{m}{s})$ $|\vec{v}|=v$ 
-        \item $x(t)=x_i+vt $
-    \end{itemize}
+%===========================================================
+% MOVIMIENTO CIRCULAR
+%===========================================================
+\begin{tcolorbox}[title=Movimiento Circular]
+\subsection*{Relaciones Lineal-Angular}
+\begin{itemize}
+    \item $s = \theta \cdot r$ (Arco)
+    \item $v_t = \omega \cdot r$ (Velocidad tangencial)
+    \item $a_t = \alpha \cdot r$ (Aceleración tangencial)
+\end{itemize}
 
-\section{MRUA}
-    \begin{itemize}
-        \item $a=\frac{\Delta{v}}{\Delta{t}}$ $\vec{a}=\frac{\Delta{\vec{v}}}{\Delta{t}}$ $(\frac{m}{s^2})$ $|\vec{a}|=a$
-        \item $v(t)=v_i+at$
-        \item $x(t)=x_i+v_it+\frac{1}{2}at^2$
-        \item $v_f^2=v_i^2+2a(x_f-x_i)$
-    \end{itemize}
+\subsection*{Movimiento Circular Uniforme (MCU)}
+\begin{itemize}
+    \item $a_c = \frac{v_t^2}{r} = \omega^2 r$ (Acel. centrípeta)
+    \item $T = \frac{2\pi}{\omega} = \frac{1}{f}$ (Periodo)
+    \item $f = \frac{1}{T}$ (Frecuencia)
+\end{itemize}
+
+\subsection*{Movimiento Circular Uniformemente Variado (MCUV)}
+\begin{itemize}
+    \item $\omega_f = \omega_i + \alpha t$
+    \item $\theta(t) = \theta_i + \omega_i t + \frac{1}{2}\alpha t^2$
+    \item $\omega_f^2 = \omega_i^2 + 2\alpha \Delta\theta$
+    \item $\vec{a}_{total} = \vec{a}_c + \vec{a}_t$
+\end{itemize}
+
+\subsubsection*{Definiciones}
+\begin{itemize}
+    \item $\theta$: Posición angular [rad]
+    \item $\omega$: Velocidad angular [rad/s]
+    \item $\alpha$: Aceleración angular [rad/s$^2$]
+    \item $r$: Radio [m]
+    \item $T$: Periodo [s]
+    \item $f$: Frecuencia [Hz]
+\end{itemize}
+\end{tcolorbox}
+
+%===========================================================
+% DINÁMICA LINEAL
+%===========================================================
+\begin{tcolorbox}[title=Dinámica Lineal]
+\subsection*{Leyes de Newton}
+\begin{itemize}
+    \item \textbf{1ª Ley (Inercia):} Si $\sum \vec{F} = 0 \iff \vec{v} = \text{cte.}$
+    \item \textbf{2ª Ley:} $\sum \vec{F} = m \cdot \vec{a}$
+    \item \textbf{3ª Ley:} $\vec{F}_{A \to B} = - \vec{F}_{B \to A}$
+\end{itemize}
+
+\subsection*{Momentum e Impulso}
+\begin{itemize}
+    \item $\vec{p} = m \cdot \vec{v}$ (Momentum)
+    \item $\vec{I} = \vec{F} \cdot \Delta t$ (Impulso, F cte.)
+    \item $\vec{I}_{neto} = \Delta \vec{p} = \vec{p}_f - \vec{p}_i$
+\end{itemize}
+
+\subsection*{Fuerza Centrípeta}
+\begin{itemize}
+    \item $F_c = m \cdot a_c = m \frac{v^2}{r} = m \omega^2 r$
+\end{itemize}
+
+\subsubsection*{Definiciones}
+\begin{itemize}
+    \item $\vec{F}$: Fuerza [N]
+    \item $m$: Masa [kg]
+    \item $\vec{p}$: Momentum [kg·m/s]
+    \item $\vec{I}$: Impulso [N·s]
+\end{itemize}
+\end{tcolorbox}
+
+
+%===========================================================
+% DINÁMICA ROTACIONAL
+%===========================================================
+\begin{tcolorbox}[title=Dinámica Rotacional]
+\subsection*{Torque y Momento de Inercia}
+\begin{itemize}
+    \item $\vec{\tau} = \vec{r} \times \vec{F}$ (Torque)
+    \item $|\tau| = r F \sin(\theta)$
+    \item $I = \sum m_i r_i^2$ (Momento de Inercia)
+\end{itemize}
+
+\subsection*{Leyes de Rotación}
+\begin{itemize}
+    \item \textbf{2ª Ley (Rotación):} $\sum \vec{\tau} = I \cdot \vec{\alpha}$
+\end{itemize}
+
+\subsection*{Momentum Angular}
+\begin{itemize}
+    \item $\vec{L} = \vec{r} \times \vec{p}$ (partícula)
+    \item $\vec{L} = I \cdot \vec{\omega}$ (cuerpo rígido)
+    \item $\sum \vec{\tau} = \frac{d\vec{L}}{dt}$
+\end{itemize}
+
+\subsection*{Conservación del Momentum Angular}
+\begin{itemize}
+    \item Si $\sum \vec{\tau}_{ext} = 0 \implies \vec{L} = \text{cte.}$
+    \item $I_i \omega_i = I_f \omega_f$
+\end{itemize}
+
+\subsubsection*{Definiciones}
+\begin{itemize}
+    \item $\vec{\tau}$: Torque [N·m]
+    \item $I$: Momento de Inercia [kg·m$^2$]
+    \item $\vec{L}$: Momentum Angular [kg·m$^2$/s]
+\end{itemize}
+\end{tcolorbox}
+
+\end{multicols} % Finaliza el entorno de dos columnas
 
 \end{document}

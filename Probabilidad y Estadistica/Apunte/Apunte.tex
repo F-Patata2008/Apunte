@@ -1123,23 +1123,49 @@ La Regla de Laplace se aplica a experimentos aleatorios donde \textbf{todos sus 
 
 
 
-\section{01/09 - }
-\subsection{Godell}
-\textbf{P.D.: Que hay infinitos números primos}
-\textbf{D:} Supongamos que hay una cnatidad finita de números primos, dígamos $p_1$, $p_2$, ..., $p_k$, $k N$
-Sea
-\[M=p_1 \cdot p_2 \cdot p_3 \cdot ... \cdot p_k + 1\]
-\[M \neq p_i , \forall \{1, ..., k\} (M no es primo) \]
+\section{01/09 - Fundamentos Axiomáticos de la Probabilidad}
+\subsection{Digresión: La Infinitud de los Números Primos (Demostración de Euclides)}
+Como preámbulo al pensamiento axiomático, se presenta una de las demostraciones más elegantes de la matemática. A menudo es atribuida erróneamente a Gödel, pero su autor original fue el matemático griego Euclides.
 
-¿$p_1$ divide a $M$? $\rightarrow$ resto 1 $\times$
+\noindent\textbf{Proposición:} Existen infinitos números primos.
 
-¿$p_2$ divide a $M$? $\rightarrow$ resto 1, No
+\noindent\textbf{Demostración por Reducción al Absurdo:}
+\begin{enumerate}
+	\item \textbf{Supuesto inicial:} Asumamos que la proposición es falsa. Es decir, supongamos que solo existe una cantidad finita de números primos.
+	\item \textbf{Construcción del conjunto:} Si son finitos, podemos listarlos todos en un conjunto: $P = \{p_1, p_2, p_3, \dots, p_n\}$, donde $p_n$ es el último y más grande de los primos.
+	\item \textbf{Construcción de un nuevo número (M):} Consideremos el número M, definido como el producto de todos los primos de nuestra lista más uno:
+	      \[ M = (p_1 \cdot p_2 \cdot p_3 \cdot \dots \cdot p_n) + 1 \]
+	\item \textbf{Análisis de M:} Por definición, todo número entero mayor que 1 es primo o es compuesto. Analicemos M:
+	      \begin{itemize}
+		      \item Al dividir M por cualquier primo de nuestra lista ($p_i$), el primer término $(p_1 \cdot \dots \cdot p_n)$ es divisible por $p_i$, pero siempre quedará un resto de 1.
+		      \item Por ejemplo, $M \div p_1 = (p_2 \cdot \dots \cdot p_n)$ con resto 1.
+		      \item Esto significa que M \textbf{no es divisible} por ninguno de los números primos que supuestamente conformaban la lista completa de todos los primos.
+	      \end{itemize}
+	\item \textbf{La Contradicción:} Esto nos deja con dos posibilidades para M, ambas problemáticas para nuestro supuesto inicial:
+	      \begin{itemize}
+		      \item \textbf{Caso A: M es primo.} Si M es primo, entonces hemos encontrado un nuevo número primo que no estaba en nuestra lista finita $P$. Esto contradice que la lista estaba completa.
+		      \item \textbf{Caso B: M es compuesto.} Si M es compuesto, por el Teorema Fundamental de la Aritmética, debe poder descomponerse como un producto de números primos. Sin embargo, ya demostramos que M no es divisible por ninguno de los primos de nuestra lista $P$. Por lo tanto, M debe ser divisible por algún otro primo que no está en la lista. Esto también contradice que la lista estaba completa.
+	      \end{itemize}
+	\item \textbf{Conclusión:} En ambos casos llegamos a una contradicción ($\Rightarrow\Leftarrow$). Por lo tanto, el supuesto inicial de que hay una cantidad finita de números primos es falso. Queda demostrado que \textbf{hay infinitos números primos.}
+\end{enumerate}
 
-\[\therefore M es primo \]
-\[\Rightarrow \Leftarrow \]
+\subsection{Axiomas de Kolmogorov (1933)}
+Sea $(\Omega, \mathcal{A})$ un espacio medible asociado a un experimento aleatorio (donde $\Omega$ es el espacio muestral y $\mathcal{A}$ es la $\sigma$-álgebra de sucesos).
+Una función $P: \mathcal{A} \rightarrow \mathbb{R}$ es una función (o medida) de probabilidad sobre $(\Omega, \mathcal{A})$ si y solo si verifica los siguientes tres axiomas:
 
-
-
+\begin{enumerate}[label=\textbf{A\arabic*:}]
+	\item \textbf{Axioma de no negatividad:} La probabilidad de cualquier evento es no negativa.
+	      \[ P(A) \ge 0, \quad \forall A \in \mathcal{A} \]
+	\item \textbf{Axioma del suceso seguro:} La probabilidad del espacio muestral completo es igual a 1.
+	      \[ P(\Omega) = 1 \]
+	\item \textbf{Axioma de aditividad (o $\sigma$-aditividad):}
+	      \begin{itemize}
+		      \item \textbf{Versión formal ($\sigma$-aditividad):} Para cualquier sucesión infinita de eventos mutuamente excluyentes $\{A_i\}_{i=1}^{\infty}$ (es decir, $A_i \cap A_j = \varnothing$ para todo $i \neq j$), la probabilidad de su unión es la suma de sus probabilidades individuales.
+		            \[ P\left(\bigcup_{i=1}^{\infty} A_i\right) = \sum_{i=1}^{\infty} P(A_i) \]
+		      \item \textbf{Versión simple (para dos eventos):} Si $A$ y $B$ son dos eventos mutuamente excluyentes ($A \cap B = \varnothing$), entonces la probabilidad de que ocurra A o B es la suma de sus probabilidades.
+		            \[ P(A \cup B) = P(A) + P(B) \]
+	      \end{itemize}
+\end{enumerate}
 
 
 

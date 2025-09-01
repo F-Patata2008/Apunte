@@ -87,3 +87,5 @@
 \contentsline {subsubsection}{\numberline {15.2.1}Definiciones Básicas}{46}{subsubsection.15.2.1}%
 \contentsline {subsubsection}{\numberline {15.2.2}Regla de Laplace}{46}{subsubsection.15.2.2}%
 \contentsline {subsubsection}{\numberline {15.2.3}Ejemplos Resueltos}{46}{subsubsection.15.2.3}%
+\contentsline {section}{\numberline {16}01/09 - }{48}{section.16}%
+\contentsline {subsection}{\numberline {16.1}Godell}{48}{subsection.16.1}%

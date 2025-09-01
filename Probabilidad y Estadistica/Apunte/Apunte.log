@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.8.24)  29 AUG 2025 15:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.8.24)  1 SEP 2025 11:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -400,7 +400,7 @@ Package hyperref Info: Link coloring ON on input line 35.
 \@outlinefile=\write3
 \openout3 = `Apunte.out'.
 
-<./images/IN.png, id=357, 198.7425pt x 255.95625pt>
+<./images/IN.png, id=365, 198.7425pt x 255.95625pt>
 File: ./images/IN.png Graphic file (type png)
 <use ./images/IN.png>
 Package pdftex.def Info: ./images/IN.png  used on input line 47.
@@ -421,24 +421,19 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./images/IN.png>]
-<./images/gatito.png, id=373, 200.75pt x 200.75pt>
+<./images/gatito.png, id=381, 200.75pt x 200.75pt>
 File: ./images/gatito.png Graphic file (type png)
 <use ./images/gatito.png>
 Package pdftex.def Info: ./images/gatito.png  used on input line 83.
 (pdftex.def)             Requested size: 175.49881pt x 175.51183pt.
-<./images/by-nc-nd.png, id=374, 97.0827pt x 33.9669pt>
-File: ./images/by-nc-nd.png Graphic file (type png)
-<use ./images/by-nc-nd.png>
-Package pdftex.def Info: ./images/by-nc-nd.png  used on input line 91.
-(pdftex.def)             Requested size: 71.13188pt x 24.8884pt.
 
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.96 \newpage
-              [1 <./images/gatito.png> <./images/by-nc-nd.png>] (./Apunte.toc
+l.94 \newpage
+              [1 <./images/gatito.png>] (./Apunte.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 
@@ -452,18 +447,18 @@ LaTeX Info: Redefining \% on input line 1.
 
 
 [4]
-<./images/muestra.png, id=503, 272.01625pt x 118.4425pt>
+<./images/muestra.png, id=508, 272.01625pt x 118.4425pt>
 File: ./images/muestra.png Graphic file (type png)
 <use ./images/muestra.png>
-Package pdftex.def Info: ./images/muestra.png  used on input line 110.
+Package pdftex.def Info: ./images/muestra.png  used on input line 108.
 (pdftex.def)             Requested size: 331.50238pt x 144.35143pt.
 
 
 [5 <./images/muestra.png>]
-<./images/variables.png, id=509, 385.44pt x 286.06876pt>
+<./images/variables.png, id=515, 385.44pt x 286.06876pt>
 File: ./images/variables.png Graphic file (type png)
 <use ./images/variables.png>
-Package pdftex.def Info: ./images/variables.png  used on input line 143.
+Package pdftex.def Info: ./images/variables.png  used on input line 141.
 (pdftex.def)             Requested size: 226.20071pt x 167.8799pt.
 
 
@@ -474,7 +469,7 @@ Package pdftex.def Info: ./images/variables.png  used on input line 143.
 [8]
 
 [9]
-Overfull \hbox (2.53964pt too wide) in paragraph at lines 227--237
+Overfull \hbox (2.53964pt too wide) in paragraph at lines 225--235
  [][] 
  []
 
@@ -487,57 +482,57 @@ Overfull \hbox (2.53964pt too wide) in paragraph at lines 227--237
 [12]
 
 [13]
-<./images/MAS.png, id=580, 403.5075pt x 277.035pt>
+<./images/MAS.png, id=585, 403.5075pt x 277.035pt>
 File: ./images/MAS.png Graphic file (type png)
 <use ./images/MAS.png>
-Package pdftex.def Info: ./images/MAS.png  used on input line 364.
+Package pdftex.def Info: ./images/MAS.png  used on input line 362.
 (pdftex.def)             Requested size: 195.0pt x 133.8799pt.
 
 
 [14]
-<./images/MEP.png, id=585, 425.59pt x 271.0125pt>
+<./images/MEP.png, id=590, 425.59pt x 271.0125pt>
 File: ./images/MEP.png Graphic file (type png)
 <use ./images/MEP.png>
-Package pdftex.def Info: ./images/MEP.png  used on input line 374.
+Package pdftex.def Info: ./images/MEP.png  used on input line 372.
 (pdftex.def)             Requested size: 195.0pt x 124.17516pt.
-<./images/MPC.png, id=586, 271.0125pt x 186.6975pt>
+<./images/MPC.png, id=591, 271.0125pt x 186.6975pt>
 File: ./images/MPC.png Graphic file (type png)
 <use ./images/MPC.png>
-Package pdftex.def Info: ./images/MPC.png  used on input line 384.
+Package pdftex.def Info: ./images/MPC.png  used on input line 382.
 (pdftex.def)             Requested size: 253.49762pt x 174.63818pt.
 
 
 [15 <./images/MAS.png> <./images/MEP.png>]
-<./images/MASIS.png, id=593, 330.23375pt x 137.51375pt>
+<./images/MASIS.png, id=599, 330.23375pt x 137.51375pt>
 File: ./images/MASIS.png Graphic file (type png)
 <use ./images/MASIS.png>
-Package pdftex.def Info: ./images/MASIS.png  used on input line 394.
+Package pdftex.def Info: ./images/MASIS.png  used on input line 392.
 (pdftex.def)             Requested size: 234.00238pt x 97.44449pt.
 
 
 [16 <./images/MPC.png> <./images/MASIS.png>]
-<./images/MPCU.png, id=601, 425.59pt x 263.98625pt>
+<./images/MPCU.png, id=607, 425.59pt x 263.98625pt>
 File: ./images/MPCU.png Graphic file (type png)
 <use ./images/MPCU.png>
-Package pdftex.def Info: ./images/MPCU.png  used on input line 407.
+Package pdftex.def Info: ./images/MPCU.png  used on input line 405.
 (pdftex.def)             Requested size: 195.0pt x 120.9558pt.
-<./images/MBN.png, id=602, 417.56pt x 310.15875pt>
+<./images/MBN.png, id=608, 417.56pt x 310.15875pt>
 File: ./images/MBN.png Graphic file (type png)
 <use ./images/MBN.png>
-Package pdftex.def Info: ./images/MBN.png  used on input line 416.
+Package pdftex.def Info: ./images/MBN.png  used on input line 414.
 (pdftex.def)             Requested size: 195.0pt x 144.84703pt.
-<./images/MPJ.png, id=603, 471.7625pt x 303.1325pt>
+<./images/MPJ.png, id=609, 471.7625pt x 303.1325pt>
 File: ./images/MPJ.png Graphic file (type png)
 <use ./images/MPJ.png>
-Package pdftex.def Info: ./images/MPJ.png  used on input line 425.
+Package pdftex.def Info: ./images/MPJ.png  used on input line 423.
 (pdftex.def)             Requested size: 292.5pt x 187.94945pt.
 
 
 [17 <./images/MPCU.png> <./images/MBN.png>]
-<./images/patata.png, id=610, 220.825pt x 237.88875pt>
+<./images/patata.png, id=617, 220.825pt x 237.88875pt>
 File: ./images/patata.png Graphic file (type png)
 <use ./images/patata.png>
-Package pdftex.def Info: ./images/patata.png  used on input line 432.
+Package pdftex.def Info: ./images/patata.png  used on input line 430.
 (pdftex.def)             Requested size: 136.50238pt x 147.05753pt.
 
 
@@ -548,14 +543,14 @@ Package pdftex.def Info: ./images/patata.png  used on input line 432.
 [20]
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 510--512
+Underfull \hbox (badness 10000) in paragraph at lines 508--510
 
  []
 
 
 
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 514--516
+Underfull \hbox (badness 10000) in paragraph at lines 512--514
 
  []
 
@@ -566,15 +561,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 514--516
 [24]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 542.
+(hyperref)                removing `math shift' on input line 540.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sigma' on input line 542.
+(hyperref)                removing `\sigma' on input line 540.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 542.
+(hyperref)                removing `math shift' on input line 540.
 
 
 
@@ -587,24 +582,24 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [28]
 
 [29]
-Overfull \hbox (67.09447pt too wide) in paragraph at lines 694--704
+Overfull \hbox (67.09447pt too wide) in paragraph at lines 692--702
 []\T1/cmr/m/n/12 (-20) Corresponde a la ma-ne-ra en que se pue-den or-de-nar $\OML/cmm/m/it/12 n$ \T1/cmr/m/n/12 (-20) ob-je-tos. $[]$
  []
 
 
 
 [30]
-Underfull \hbox (badness 10000) in paragraph at lines 715--716
+Underfull \hbox (badness 10000) in paragraph at lines 713--714
 
  []
 
 
-Overfull \hbox (50.9541pt too wide) in paragraph at lines 717--729
+Overfull \hbox (50.9541pt too wide) in paragraph at lines 715--727
 []\T1/cmr/m/n/12 (-20) ¾Y pa-ra la pa-la-bra ARRO-YO? ¾Y CA-RRE-RA? $[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 730--731
+Underfull \hbox (badness 10000) in paragraph at lines 728--729
 
  []
 
@@ -621,20 +616,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 730--731
 [35]
 
 [36]
-<./images/pascal.png, id=731, 522.95375pt x 346.29375pt>
+<./images/pascal.png, id=737, 522.95375pt x 346.29375pt>
 File: ./images/pascal.png Graphic file (type png)
 <use ./images/pascal.png>
-Package pdftex.def Info: ./images/pascal.png  used on input line 875.
+Package pdftex.def Info: ./images/pascal.png  used on input line 873.
 (pdftex.def)             Requested size: 195.0pt x 129.12535pt.
 
 
 [37 <./images/pascal.png>]
 
 [38]
-<./images/Gat.png, id=748, 200.75pt x 200.75pt>
+<./images/Gat.png, id=754, 200.75pt x 200.75pt>
 File: ./images/Gat.png Graphic file (type png)
 <use ./images/Gat.png>
-Package pdftex.def Info: ./images/Gat.png  used on input line 915.
+Package pdftex.def Info: ./images/Gat.png  used on input line 913.
 (pdftex.def)             Requested size: 292.5pt x 292.54424pt.
 
 
@@ -653,13 +648,15 @@ Package pdftex.def Info: ./images/Gat.png  used on input line 915.
 [45]
 
 [46]
-Overfull \hbox (89.41463pt too wide) in paragraph at lines 1114--1118
+Overfull \hbox (89.41463pt too wide) in paragraph at lines 1112--1116
 \T1/cmr/m/it/12 (-20) Casos fa-vo-ra-bles: \T1/cmr/m/n/12 (-20) Su-ma=2:{(1,1)}; Su-ma=3:{(1,2),(2,1)}; Su-ma=4:{(1,3),(2,2),(3,1)};
  []
 
 
 
-[47] (./Apunte.aux
+[47]
+
+[48] (./Apunte.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -668,21 +665,21 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `Apunte.out' has not changed.
-(rerunfilecheck)             Checksum: BBE68DFEAA0713E8FD02A014DA70ABDA;19458.
+(rerunfilecheck)             Checksum: 15575862AE2C40406CA047F1A52C8FFD;19639.
  ) 
 Here is how much of TeX's memory you used:
- 15044 strings out of 475068
- 234094 string characters out of 5764374
+ 15038 strings out of 475068
+ 233901 string characters out of 5764374
  673627 words of memory out of 5000000
- 37321 multiletter control sequences out of 15000+600000
- 592440 words of font info for 239 fonts, out of 8000000 for 9000
+ 37314 multiletter control sequences out of 15000+600000
+ 592382 words of font info for 238 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
  75i,12n,79p,1003b,926s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbi1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbi1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1728.pfb>
-Output written on Apunte.pdf (48 pages, 1604899 bytes).
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbi1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbi1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1728.pfb>
+Output written on Apunte.pdf (49 pages, 1597931 bytes).
 PDF statistics:
- 985 PDF objects out of 1000 (max. 8388607)
- 851 compressed objects within 9 object streams
- 245 named destinations out of 1000 (max. 500000)
- 58124 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 1002 PDF objects out of 1200 (max. 8388607)
+ 867 compressed objects within 9 object streams
+ 248 named destinations out of 1000 (max. 500000)
+ 58135 words of extra memory for PDF output out of 61914 (max. 10000000)
 

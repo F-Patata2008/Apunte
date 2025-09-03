@@ -65,7 +65,7 @@
 		\begin{flushright} \large
 			\textbf{Profesor:}\\
 			Sergio Díaz
-		\end{flushright}
+        \end{flushright}
 	\end{minipage}
 
 	\vfill
@@ -482,7 +482,7 @@ Es la raíz cuadrada positiva de la varianza. Tiene la ventaja de estar expresad
 \newpage
 
 \section{16/04 - Propiedades de la Varianza y Desviación Estándar}
-\subsection{Demostración Propiedad 4 (Multiplicación por una constante)}
+\subsection{\texorpdfstring{Demostración de Propiedades Relacionadas con el Valor de $\sigma$}{Demostraciones de Propiedades Relacionadas con el Valor de sigma}}
 Sea la variable $X$ con datos $x_1, \dots, x_n$, media $\bar{x}$ y varianza $\sigma_x^2$.
 Sea $Y$ una nueva variable tal que $y_i = k \cdot x_i$ para cada $i$.
 Sabemos que la media de $Y$ es $\bar{y} = k \cdot \bar{x}$.
@@ -537,7 +537,7 @@ L.Q.Q.D.
 \newpage
 
 \section{23/04 - Demostraciones sobre el Valor de la Desviación Estándar}
-\subsection{Demostraciones de Propiedades Relacionadas con el Valor de $\sigma$}
+\subsection{\texorpdfstring{Demostraciones de Propiedades Relacionadas con el Valor de $\sigma$}{Demostraciones de Propiedades Relacionadas con el Valor de sigma}}
 Recordar que $\sigma \ge 0$ por definición (es una raíz cuadrada positiva o cero).
 
 \subsubsection{Propiedad 6: \texorpdfstring{$\sigma^2 = \sigma \iff \sigma=0 \vee \sigma=1$}{sigma-cuadrado = sigma <=> sigma=0 v sigma=1}}
@@ -1168,5 +1168,76 @@ Una función $P: \mathcal{A} \rightarrow \mathbb{R}$ es una función (o medida) 
 \end{enumerate}
 \newpage
 
+
+\section{03/09 - Propiedades y Aplicaciones de la Probabilidad}
+A partir de los axiomas de Kolmogorov, podemos extender la regla de aditividad y deducir propiedades fundamentales.
+
+\subsection{Generalización del Axioma de Aditividad}
+Si tenemos un conjunto finito de eventos mutuamente excluyentes dos a dos, como A, B y C, donde $A \cap B = \varnothing$, $A \cap C = \varnothing$ y $B \cap C = \varnothing$, podemos aplicar el tercer axioma de forma recursiva:
+\begin{align*}
+	P(A \cup B \cup C) &= P((A \cup B) \cup C) \\
+	                   &= P(A \cup B) + P(C) \\
+	                   &= P(A) + P(B) + P(C)
+\end{align*}
+Esto se puede generalizar para cualquier número de eventos mutuamente excluyentes.
+
+\subsection{Propiedades Derivadas de los Axiomas}
+\begin{enumerate}
+	\item \textbf{Probabilidad del Suceso Imposible:} $P(\varnothing) = 0$.
+	\item \textbf{Rango de la Probabilidad:} Para todo evento A, su probabilidad está acotada entre 0 y 1.
+	      \[ 0 \le P(A) \le 1 \]
+	\item \textbf{Regla de la Suma (Caso General):} Para dos eventos cualesquiera (no necesariamente excluyentes).
+	      \[ P(A \cup B) = P(A) + P(B) - P(A \cap B) \]
+	\item \textbf{Probabilidad del Complemento:}
+	      \[ P(A^c) = 1 - P(A) \]
+	      \textit{Demostración:}
+	      \begin{itemize}
+		      \item Por definición, un evento y su complemento son mutuamente excluyentes, es decir, $A \cap A^c = \varnothing$.
+		      \item La unión de un evento y su complemento es el espacio muestral completo: $A \cup A^c = \Omega$.
+		      \item Aplicamos el Axioma 3 a su unión: $P(A \cup A^c) = P(A) + P(A^c)$.
+		      \item Sustituimos la unión por el espacio muestral: $P(\Omega) = P(A) + P(A^c)$.
+		      \item Por el Axioma 2, sabemos que $P(\Omega)=1$. Por lo tanto: $1 = P(A) + P(A^c)$.
+		      \item Despejando, obtenemos $P(A^c) = 1 - P(A)$.
+	      \end{itemize}
+	\item \textbf{Monotonicidad de la Probabilidad:} Si un evento A es un subconjunto de un evento B ($A \subset B$), entonces la probabilidad de A es menor o igual a la probabilidad de B.
+	      \[ \text{Si } A \subset B \implies P(A) \le P(B) \]
+\end{enumerate}
+
+\subsection{Ejercicios Resueltos}
+\begin{enumerate}
+	\item \textbf{Determinar la probabilidad de que al lanzar un dado se obtenga un número primo o impar.}
+	      \begin{itemize}
+		      \item \textbf{Espacio Muestral:} $\Omega = \{1,2,3,4,5,6\}$.
+		      \item \textbf{Evento A (sale primo):} $A=\{2,3,5\} \implies P(A) = 3/6$.
+		      \item \textbf{Evento B (sale impar):} $B=\{1,3,5\} \implies P(B) = 3/6$.
+		      \item \textbf{Intersección (primo e impar):} $A \cap B = \{3,5\} \implies P(A \cap B) = 2/6$.
+		      \item \textbf{Probabilidad de la Unión:} Usamos la regla de la suma.
+		            \[ P(A\cup B) = P(A) + P(B) - P(A \cap B) = \frac{3}{6} + \frac{3}{6} - \frac{2}{6} = \frac{4}{6} = \frac{2}{3} \]
+	      \end{itemize}
+	\item \textbf{Determinar la probabilidad de que al lanzar 2 dados se obtenga al menos una cara con número par o que ambas caras sean múltiplos de 3.}
+	      \begin{itemize}
+		      \item \textbf{Espacio Muestral:} Hay $6 \times 6 = 36$ resultados posibles. Visualmente:
+		            \begin{center}
+			            \begin{tabular}{c|cccccc}
+				            & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} \\
+				            \hline
+				            \textbf{1} & (1,1)      & (1,2)      & (1,3)      & (1,4)      & (1,5)      & (1,6)      \\
+				            \textbf{2} & (2,1)      & (2,2)      & (2,3)      & (2,4)      & (2,5)      & (2,6)      \\
+				            \textbf{3} & (3,1)      & (3,2)      & (3,3)      & (3,4)      & (3,5)      & (3,6)      \\
+				            \textbf{4} & (4,1)      & (4,2)      & (4,3)      & (4,4)      & (4,5)      & (4,6)      \\
+				            \textbf{5} & (5,1)      & (5,2)      & (5,3)      & (5,4)      & (5,5)      & (5,6)      \\
+				            \textbf{6} & (6,1)      & (6,2)      & (6,3)      & (6,4)      & (6,5)      & (6,6)      \\
+			            \end{tabular}
+		            \end{center}
+		      \item \textbf{Evento A (al menos un par):} Es más fácil calcular su complemento, $A^c$ (ambos impares). Los impares son $\{1,3,5\}$, por lo que hay $3 \times 3 = 9$ resultados donde ambos son impares.
+		            \[ P(A) = 1 - P(A^c) = 1 - \frac{9}{36} = \frac{27}{36} \]
+		      \item \textbf{Evento B (ambas múltiplos de 3):} Los múltiplos de 3 en un dado son $\{3,6\}$. Los pares de resultados son $\{(3,3), (3,6), (6,3), (6,6)\}$. Hay 4 casos favorables.
+		            \[ P(B) = \frac{4}{36} \]
+		      \item \textbf{Intersección ($A \cap B$):} "Al menos un par" Y "ambas múltiplos de 3". De los casos de B, los que cumplen A son: $\{(3,6), (6,3), (6,6)\}$. Hay 3 casos favorables.
+		            \[ P(A \cap B) = \frac{3}{36} \]
+		      \item \textbf{Probabilidad de la Unión:}
+		            \[ P(A \cup B) = P(A) + P(B) - P(A\cap B) = \frac{27}{36} + \frac{4}{36} - \frac{3}{36} = \frac{28}{36} = \frac{7}{9} \]
+	      \end{itemize}
+\end{enumerate}
 
 \end{document}

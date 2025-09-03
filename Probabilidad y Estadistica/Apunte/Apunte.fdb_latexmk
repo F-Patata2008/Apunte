@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1756914710.79856 "Apunte.tex" "Apunte.pdf" "Apunte" 1756914715.15206 0
+["pdflatex"] 1756916434.20134 "Apunte.tex" "Apunte.pdf" "Apunte" 1756916437.17573 0
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1755987285 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1755987285 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1755987285 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -61,6 +61,7 @@
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb" 1755987285 135938 299ac3a69892db3b7674a8b2543b0a77 ""
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb" 1755987285 107203 e671936e3a8639d41d1d76852217c874 ""
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc2074.pfb" 1755987285 108041 d4d5c0c81dd56faa0d597651bf0ab019 ""
+  "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb" 1755987285 162624 9dcc92cd3b1dfe2ecc80e6da7f2eb6bd ""
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb" 1755987285 164227 3df942b4ff2124425d8fb1b6d3e01c7a ""
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb" 1755987285 138258 6525c253f16cededa14c7fd0da7f67b2 ""
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb" 1755987285 145929 f25e56369a345c4ff583b067cd87ce8e ""
@@ -140,10 +141,10 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1755987285 42087 b0f9697c952c8f5a8eede4134282cb0d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1756045669 5311557 9da84c45f5b388655502706482323571 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1756045527 2081313 4db42119f07c1679ee4e4c3aaab5bc61 ""
-  "Apunte.aux" 1756914714.74302 16892 c3e90d3012d694c9da949143a4119801 "pdflatex"
-  "Apunte.out" 1756914714.75002 20780 8bce62aa1f801a4b02628750acffdcd3 "pdflatex"
-  "Apunte.tex" 1756914710.14602 71870 a542b8f3aa6bbc7f7c7839078b97b4cc ""
-  "Apunte.toc" 1756914714.75202 9816 7df2e30d560cdbfdda2095eab0e0928c "pdflatex"
+  "Apunte.aux" 1756916436.86586 17121 2c86d5e3bf8c3a7cc66f6ca04d9e41ba "pdflatex"
+  "Apunte.out" 1756916436.87186 21475 6b18de54876db04090ac7042e611a33d "pdflatex"
+  "Apunte.tex" 1756916429.78566 74896 b1af5e37e8d3bfa2e7e78af686344b53 ""
+  "Apunte.toc" 1756916436.87286 10004 2e2aea12df180cf5d5ded073a7b44837 "pdflatex"
   "images/Gat.png" 1754952206 5909 08ee0e71bac1ef14ed650e4f47d7d9aa ""
   "images/IN.png" 1753454929.56759 7949 cc26bed184e5e1103c6a6f769f5412fa ""
   "images/MAS.png" 1755032422.05575 127399 4f2f0560c671bdbdc7aa00cf0f1969a7 ""

@@ -1149,7 +1149,7 @@ Como preámbulo al pensamiento axiomático, se presenta una de las demostracione
 	\item \textbf{Conclusión:} En ambos casos llegamos a una contradicción ($\Rightarrow\Leftarrow$). Por lo tanto, el supuesto inicial de que hay una cantidad finita de números primos es falso. Queda demostrado que \textbf{hay infinitos números primos.}
 \end{enumerate}
 
-\subsection{Axiomas de Kolmogorov (1933)}
+\subsection{Axiomas de Kolmogorov (~1933)}
 Sea $(\Omega, \mathcal{A})$ un espacio medible asociado a un experimento aleatorio (donde $\Omega$ es el espacio muestral y $\mathcal{A}$ es la $\sigma$-álgebra de sucesos).
 Una función $P: \mathcal{A} \rightarrow \mathbb{R}$ es una función (o medida) de probabilidad sobre $(\Omega, \mathcal{A})$ si y solo si verifica los siguientes tres axiomas:
 
@@ -1166,7 +1166,50 @@ Una función $P: \mathcal{A} \rightarrow \mathbb{R}$ es una función (o medida) 
 		            \[ P(A \cup B) = P(A) + P(B) \]
 	      \end{itemize}
 \end{enumerate}
+\newpage
 
 
+\section{03/09 - }
+Nuestra version:
+
+\textbf{\textit{SI}} $A \cap B = \varnothing $, entonces $P=(A \cup B) = P(A) + P(B) $
+
+$A\cap B = \varnothing= A\cap C = B \cap C $
+
+$P(A\cup B\cup C\cup) = P(A\cup B) + P(C) = P(A) + P(B) + P(C) $
+
+
+\subsection{Observacciones}
+\begin{enumerate}
+	\item $0 \leq P(A) \leq 1 $ Para todo evento A
+	\item $P(A\cup B)= P(A) + P(B) - P(A\cap B) $
+	\item $P(\varnothing) = 0 $
+	\item Si $A \subset B$, entonces $P(A) \leq P(B) $
+	\item $P(A^c) = 1 - P(A) $ \\
+	      $A \cap A^c = \Omega $ \\
+	      $P(A \cap A^c) = P(\Omega) = 1  $ \\
+	      $P(A) + P(A^c) - P(A\cup A^c) = 1 $ \\
+	      $P(A + P(A^c) -0 = 1 $
+\end{enumerate}
+
+\subsection{Ejemplos}
+\begin{enumerate}
+	\item \textbf{Determinar la probabilidad de que al lanzar un dado se obtenja un número primo o impar}
+	      \begin{itemize}
+		      \item $\Omega = \{1,2,3,4,5,6\} $
+		      \item \textbf{A:} sale número primo $A=\{2,3,5\} $
+		      \item \textbf{B:} sale impar $B=\{1,3,5\}$
+		      \item \textbf{$P(A\cup B) $}$ = P(A) + P(B) - P(A \cap B)= \frac{3}{6} + \frac{3}{6} - \frac{2}{6}= \frac{4}{6} $
+	      \end{itemize}
+	\item \textbf{Determinar la probabilidad de que al lanzar 2 dados se obtenga al menos una car a con numero par o que ambasa caras sean multiplos de 3}
+        \begin{itemize}
+            \item $\Omega = $ $\#\Omega = 36$ % Agrega una tabla con el espacio muestral, pero que las columas/fila sean 1,2, ..., 6
+            \item \textbf{A:} se obtenga al menos una cara con número par \\
+                $P(A) = 1 - P(A^c) = 1 - \frac{9}{36} = frac{27}{36} $
+            \item \textbf{B:} Ambas son multiplos de 3 \\
+                $P(B) = \frac{4}{6} $
+            \item \textbf{$P(A \cup B) = P(A) + P(B) - P(A\cap B) = \frac{27}{36} + \frac{4}{36} - \frac{3}{36} = \frac{28}{36} = \frac{7}{9} $}
+        \end{itemize}
+\end{enumerate}
 
 \end{document}

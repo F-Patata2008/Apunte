@@ -65,7 +65,7 @@
 		\begin{flushright} \large
 			\textbf{Profesor:}\\
 			Sergio Díaz
-        \end{flushright}
+		\end{flushright}
 	\end{minipage}
 
 	\vfill
@@ -1175,9 +1175,9 @@ A partir de los axiomas de Kolmogorov, podemos extender la regla de aditividad y
 \subsection{Generalización del Axioma de Aditividad}
 Si tenemos un conjunto finito de eventos mutuamente excluyentes dos a dos, como A, B y C, donde $A \cap B = \varnothing$, $A \cap C = \varnothing$ y $B \cap C = \varnothing$, podemos aplicar el tercer axioma de forma recursiva:
 \begin{align*}
-	P(A \cup B \cup C) &= P((A \cup B) \cup C) \\
-	                   &= P(A \cup B) + P(C) \\
-	                   &= P(A) + P(B) + P(C)
+	P(A \cup B \cup C) & = P((A \cup B) \cup C) \\
+	                   & = P(A \cup B) + P(C)   \\
+	                   & = P(A) + P(B) + P(C)
 \end{align*}
 Esto se puede generalizar para cualquier número de eventos mutuamente excluyentes.
 
@@ -1219,7 +1219,7 @@ Esto se puede generalizar para cualquier número de eventos mutuamente excluyent
 		      \item \textbf{Espacio Muestral:} Hay $6 \times 6 = 36$ resultados posibles. Visualmente:
 		            \begin{center}
 			            \begin{tabular}{c|cccccc}
-				            & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} \\
+				                       & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} \\
 				            \hline
 				            \textbf{1} & (1,1)      & (1,2)      & (1,3)      & (1,4)      & (1,5)      & (1,6)      \\
 				            \textbf{2} & (2,1)      & (2,2)      & (2,3)      & (2,4)      & (2,5)      & (2,6)      \\
@@ -1238,6 +1238,123 @@ Esto se puede generalizar para cualquier número de eventos mutuamente excluyent
 		      \item \textbf{Probabilidad de la Unión:}
 		            \[ P(A \cup B) = P(A) + P(B) - P(A\cap B) = \frac{27}{36} + \frac{4}{36} - \frac{3}{36} = \frac{28}{36} = \frac{7}{9} \]
 	      \end{itemize}
+\end{enumerate}
+\newpage
+
+
+\section{05/09 - Ejercicios de Probabilidad Clásica}
+\subsection{Enunciados}
+\begin{enumerate}
+	\item Calcular la probabilidad de que al lanzar 2 dados la suma sea 5.
+	\item Hay 60 alumnos en un salón, de los cuales a 37 les gusta el fútbol y a 38 el básquetbol. Además, a todos los alumnos les gusta al menos uno de esos dos deportes. Si se selecciona uno al azar:
+	      \begin{enumerate}
+		      \item ¿Cuál es la probabilidad de que le guste solo el fútbol?
+		      \item ¿Y solo el básquetbol?
+	      \end{enumerate}
+	\item Calcule la probabilidad de sacar un 3 de corazones o un 5 de corazones de una baraja española (52 cartas).
+	\item En un salón hay 7 hombres y 8 mujeres. Si se desea formar un comité de 2 personas, ¿cuál es la probabilidad de que el comité esté formado por un hombre y una mujer?
+	\item Se lanza un dado $n$ veces, ¿cuál es la probabilidad de haber obtenido al menos un 2 en los $n$ lanzamientos?
+	\item Un chef observó que el $65\%$ de sus clientes consume mayonesa, el $70\%$ consume kétchup y el $80\%$ consume mayonesa o kétchup. ¿Cuál es la probabilidad de que un cliente consuma ambas salsas al mismo tiempo?
+	\item En un grupo de estudiantes de sabe que el $30\%$ habla inglés, el $65\%$ habla francés y el $12\%$ habla ambos idiomas. Si se selecciona un alumno al azar:
+	      \begin{enumerate}
+		      \item ¿Cuál es la probabilidad de que hable inglés o francés?
+		      \item ¿Cuál es la probabilidad de que no hable ni inglés ni francés?
+	      \end{enumerate}
+	\item ¿Cuál es la probabilidad de que al lanzar una moneda 5 veces salga al menos un sello?
+\end{enumerate}
+
+\subsection{Soluciones Detalladas}
+\begin{enumerate}
+	\item \textbf{Suma de dados igual a 5:} \\
+	      \textit{Solución:} El espacio muestral al lanzar dos dados tiene 36 resultados. Los casos favorables para que la suma sea 5 son: $\{(1,4), (2,3), (3,2), (4,1)\}$. Hay 4 casos favorables.
+	      \[ P(\text{Suma=5}) = \frac{\text{Casos favorables}}{\text{Casos totales}} = \frac{4}{36} = \frac{1}{9} \]
+
+	\item \textbf{Alumnos y deportes:} \\
+	      \textit{Solución:} Usamos el principio de inclusión-exclusión. Sea F "le gusta el fútbol" y B "le gusta el básquetbol".
+	      \begin{itemize}
+		      \item Datos: $|\Omega|=60$, $|F|=37$, $|B|=38$.
+		      \item Como a todos les gusta al menos uno, $|F \cup B| = 60$.
+		      \item Calculamos la intersección (les gustan ambos):
+		            $|F \cup B| = |F| + |B| - |F \cap B| \implies 60 = 37 + 38 - |F \cap B| \implies |F \cap B| = 15$.
+	      \end{itemize}
+	      \begin{enumerate}
+		      \item \textbf{Solo fútbol:} Son los que les gusta el fútbol menos los que les gustan ambos: $|F| - |F \cap B| = 37 - 15 = 22$.
+		            \[ P(\text{Solo fútbol}) = \frac{22}{60} = \frac{11}{30} \]
+		      \item \textbf{Solo básquetbol:} $|B| - |F \cap B| = 38 - 15 = 23$.
+		            \[ P(\text{Solo básquetbol}) = \frac{23}{60} \]
+	      \end{enumerate}
+
+	\item \textbf{Sacar cartas específicas:} \\
+	      \textit{Solución:} Los eventos "sacar un 3 de corazones" y "sacar un 5 de corazones" son mutuamente excluyentes. Por lo tanto, sus probabilidades se suman.
+	      \[ P(\text{3}\heartsuit \cup \text{5}\heartsuit) = P(3\heartsuit) + P(5\heartsuit) = \frac{1}{52} + \frac{1}{52} = \frac{2}{52} = \frac{1}{26} \]
+
+	\item \textbf{Comité de un hombre y una mujer:} \\
+	      \textit{Solución:} Usamos combinatoria para contar los casos.
+	      \begin{itemize}
+		      \item \textbf{Casos totales:} El número de maneras de elegir 2 personas de un total de 15 (7 hombres + 8 mujeres).
+		            \[ |\Omega| = \binom{15}{2} = \frac{15 \cdot 14}{2} = 105 \]
+		      \item \textbf{Casos favorables:} El número de maneras de elegir 1 hombre de 7 \textbf{Y} 1 mujer de 8.
+		            \[ |A| = \binom{7}{1} \times \binom{8}{1} = 7 \times 8 = 56 \]
+		      \item \textbf{Probabilidad:}
+		            \[ P(A) = \frac{56}{105} = \frac{8 \times 7}{15 \times 7} = \frac{8}{15} \]
+	      \end{itemize}
+
+	\item \textbf{Obtener al menos un 2 en n lanzamientos:} \\
+	      \textit{Solución:} Este problema se resuelve más fácil usando el evento complementario.
+	      \begin{itemize}
+		      \item \textbf{Evento A:} "Obtener al menos un 2".
+		      \item \textbf{Evento $A^c$ (complemento):} "No obtener ningún 2 en los n lanzamientos".
+		      \item La probabilidad de NO sacar un 2 en un solo lanzamiento es $\frac{5}{6}$.
+		      \item Como los lanzamientos son independientes, la probabilidad de que esto ocurra n veces seguidas es:
+		            \[ P(A^c) = \left(\frac{5}{6}\right)^n \]
+		      \item La probabilidad del evento original es $1 - P(A^c)$.
+		            \[ P(A) = 1 - \left(\frac{5}{6}\right)^n \]
+	      \end{itemize}
+	      
+	\item \textbf{Clientes y salsas:} \\
+	      \textit{Solución:} Es una aplicación directa de la regla de la suma.
+	      \begin{itemize}
+		      \item \textbf{Eventos:} M="consume mayonesa", K="consume kétchup".
+		      \item \textbf{Datos:} $P(M)=0.65$, $P(K)=0.70$, $P(M \cup K)=0.80$.
+		      \item Buscamos la probabilidad de que consuma ambas, es decir, $P(M \cap K)$.
+		      \item Usamos la fórmula: $P(M \cup K) = P(M) + P(K) - P(M \cap K)$.
+		      \item Despejamos la intersección:
+		            \begin{align*}
+			            P(M \cap K) & = P(M) + P(K) - P(M \cup K) \\
+			                         & = 0.65 + 0.70 - 0.80        \\
+			                         & = 0.55
+		            \end{align*}
+	      \end{itemize}
+	      \textbf{Respuesta:} La probabilidad de que un cliente consuma ambas salsas es del 55\%.
+
+	\item \textbf{Estudiantes e idiomas:} \\
+	      \textit{Solución:} Sea I="habla inglés" y F="habla francés".
+	      \begin{itemize}
+		      \item \textbf{Datos:} $P(I)=0.30$, $P(F)=0.65$, $P(I \cap F)=0.12$.
+		      \item \textbf{a) Probabilidad de que hable inglés o francés ($P(I \cup F)$):}
+		            \begin{align*}
+			            P(I \cup F) & = P(I) + P(F) - P(I \cap F) \\
+			                        & = 0.30 + 0.65 - 0.12        \\
+			                        & = 0.83 \quad (83\%)
+		            \end{align*}
+		      \item \textbf{b) Probabilidad de que no hable ni inglés ni francés ($P((I \cup F)^c)$):} \\
+		            Este es el complemento del evento anterior.
+		            \[ P((I \cup F)^c) = 1 - P(I \cup F) = 1 - 0.83 = 0.17 \quad (17\%) \]
+	      \end{itemize}
+
+	\item \textbf{Lanzar una moneda 5 veces:} \\
+	      \textit{Solución:} Usamos el evento complementario.
+	      \begin{itemize}
+		      \item \textbf{Evento A:} "Sale al menos un sello".
+		      \item \textbf{Evento $A^c$:} "No sale ningún sello", lo que es igual a "salen 5 caras seguidas".
+		      \item \textbf{Espacio muestral:} Cada lanzamiento tiene 2 resultados. En 5 lanzamientos, hay $2^5 = 32$ resultados totales.
+		      \item \textbf{Casos favorables del complemento:} Solo hay un caso donde salen 5 caras: $\{C,C,C,C,C\}$.
+		      \item \textbf{Probabilidad del complemento:}
+		            \[ P(A^c) = \frac{1}{32} \]
+		      \item \textbf{Probabilidad del evento original:}
+		            \[ P(A) = 1 - P(A^c) = 1 - \frac{1}{32} = \frac{31}{32} \]
+	      \end{itemize}
+
 \end{enumerate}
 
 \end{document}

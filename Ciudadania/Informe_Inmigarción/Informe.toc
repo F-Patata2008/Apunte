@@ -2,6 +2,6 @@
 \contentsline {section}{Introducción}{2}{section*.2}%
 \contentsline {section}{\numberline {1}Desarrollo}{3}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Contexto: Seguridad y Migración en Cifras}{3}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Análisis de Resultados: Encuesta sobre Percepción Ciudadana}{3}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.2}Análisis de Resultados: Encuesta sobre Percepción Ciudadana}{4}{subsection.1.2}%
 \contentsline {section}{Discusión: La Brecha entre Percepción y Realidad Estadística}{5}{section*.10}%
-\contentsline {section}{Conclusión}{6}{section*.11}%
+\contentsline {section}{Conclusión}{7}{section*.11}%

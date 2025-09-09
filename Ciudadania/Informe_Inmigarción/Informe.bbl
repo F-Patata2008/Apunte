@@ -1,0 +1,377 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/apasortcite//global/global/global}
+    \entry{INE2024enusc}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fb47e2367fcfe0fcc0f92da24eb66198}{%
+           family={{Instituto Nacional de Estadísticas (INE)}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Instituto Nacional de Estadísticas}%
+      }
+      \list{location}{1}{%
+        {Santiago, Chile}%
+      }
+      \strng{namehash}{fb47e2367fcfe0fcc0f92da24eb66198}
+      \strng{fullhash}{fb47e2367fcfe0fcc0f92da24eb66198}
+      \strng{fullhashraw}{fb47e2367fcfe0fcc0f92da24eb66198}
+      \strng{bibnamehash}{fb47e2367fcfe0fcc0f92da24eb66198}
+      \strng{authorbibnamehash}{fb47e2367fcfe0fcc0f92da24eb66198}
+      \strng{authornamehash}{fb47e2367fcfe0fcc0f92da24eb66198}
+      \strng{authorfullhash}{fb47e2367fcfe0fcc0f92da24eb66198}
+      \strng{authorfullhashraw}{fb47e2367fcfe0fcc0f92da24eb66198}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{4}
+      \field{title}{Síntesis de Resultados Encuesta Nacional Urbana de Seguridad Ciudadana (ENUSC) 2023}
+      \field{type}{techreport}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.ine.gob.cl/docs/default-source/seguridad-ciudadana/publicaciones-y-anuarios/2024/sintesis-de-resultados-enusc-2024.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.ine.gob.cl/docs/default-source/seguridad-ciudadana/publicaciones-y-anuarios/2024/sintesis-de-resultados-enusc-2024.pdf
+      \endverb
+    \endentry
+    \entry{INE2024estimacion}{report}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=fb47e2367fcfe0fcc0f92da24eb66198}{%
+           family={{Instituto Nacional de Estadísticas (INE)}},
+           familyi={I\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=35ccbb8c3d75a3f9f95991d308d6c39a}{%
+           family={{Servicio Nacional de Migraciones (SERMIG)}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Instituto Nacional de Estadísticas y Servicio Nacional de Migraciones}%
+      }
+      \list{location}{1}{%
+        {Santiago, Chile}%
+      }
+      \strng{namehash}{3146a27d35acde545a6e2b806e907656}
+      \strng{fullhash}{3146a27d35acde545a6e2b806e907656}
+      \strng{fullhashraw}{3146a27d35acde545a6e2b806e907656}
+      \strng{bibnamehash}{3146a27d35acde545a6e2b806e907656}
+      \strng{authorbibnamehash}{3146a27d35acde545a6e2b806e907656}
+      \strng{authornamehash}{3146a27d35acde545a6e2b806e907656}
+      \strng{authorfullhash}{3146a27d35acde545a6e2b806e907656}
+      \strng{authorfullhashraw}{3146a27d35acde545a6e2b806e907656}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Estimación de personas extranjeras residentes habituales en Chile al 31 de diciembre de 2023}
+      \field{type}{techreport}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.ine.gob.cl/docs/default-source/demografia-y-migracion/publicaciones-y-anuarios/migraci%C3%B3n-internacional/estimaci%C3%B3n-poblaci%C3%B3n-extranjera-en-chile-2018/informe-resultados-epe2023.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.ine.gob.cl/docs/default-source/demografia-y-migracion/publicaciones-y-anuarios/migraci%C3%B3n-internacional/estimaci%C3%B3n-poblaci%C3%B3n-extranjera-en-chile-2018/informe-resultados-epe2023.pdf
+      \endverb
+    \endentry
+    \entry{MP2023}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a59018648ae86117bbaac6df66982a88}{%
+           family={{Ministerio Público de Chile}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{a59018648ae86117bbaac6df66982a88}
+      \strng{fullhash}{a59018648ae86117bbaac6df66982a88}
+      \strng{fullhashraw}{a59018648ae86117bbaac6df66982a88}
+      \strng{bibnamehash}{a59018648ae86117bbaac6df66982a88}
+      \strng{authorbibnamehash}{a59018648ae86117bbaac6df66982a88}
+      \strng{authornamehash}{a59018648ae86117bbaac6df66982a88}
+      \strng{authorfullhash}{a59018648ae86117bbaac6df66982a88}
+      \strng{authorfullhashraw}{a59018648ae86117bbaac6df66982a88}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Datos de participación de extranjeros en delitos reportados y consolidados para el sistema judicial.}
+      \field{title}{Cifras consolidadas de imputados por nacionalidad para el año 2023}
+      \field{year}{2024}
+    \endentry
+    \entry{SJM2024seguridad}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=75b1cfbf0a24d37df80f9e700430fa4e}{%
+           family={{Servicio Jesuita a Migrantes (SJM Chile)}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{75b1cfbf0a24d37df80f9e700430fa4e}
+      \strng{fullhash}{75b1cfbf0a24d37df80f9e700430fa4e}
+      \strng{fullhashraw}{75b1cfbf0a24d37df80f9e700430fa4e}
+      \strng{bibnamehash}{75b1cfbf0a24d37df80f9e700430fa4e}
+      \strng{authorbibnamehash}{75b1cfbf0a24d37df80f9e700430fa4e}
+      \strng{authornamehash}{75b1cfbf0a24d37df80f9e700430fa4e}
+      \strng{authorfullhash}{75b1cfbf0a24d37df80f9e700430fa4e}
+      \strng{authorfullhashraw}{75b1cfbf0a24d37df80f9e700430fa4e}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Análisis basado en datos del Poder Judicial.}
+      \field{title}{Seguridad y Convivencia: Cifras}
+      \field{urlday}{27}
+      \field{urlmonth}{10}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://sjmchile.org/incidencia-y-estudios/cifras/seguridad-y-convivencia
+      \endverb
+      \verb{url}
+      \verb https://sjmchile.org/incidencia-y-estudios/cifras/seguridad-y-convivencia
+      \endverb
+    \endentry
+    \entry{SERMIG2023encuesta}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=35ccbb8c3d75a3f9f95991d308d6c39a}{%
+           family={{Servicio Nacional de Migraciones (SERMIG)}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Servicio Nacional de Migraciones}%
+      }
+      \list{location}{1}{%
+        {Santiago, Chile}%
+      }
+      \strng{namehash}{35ccbb8c3d75a3f9f95991d308d6c39a}
+      \strng{fullhash}{35ccbb8c3d75a3f9f95991d308d6c39a}
+      \strng{fullhashraw}{35ccbb8c3d75a3f9f95991d308d6c39a}
+      \strng{bibnamehash}{35ccbb8c3d75a3f9f95991d308d6c39a}
+      \strng{authorbibnamehash}{35ccbb8c3d75a3f9f95991d308d6c39a}
+      \strng{authornamehash}{35ccbb8c3d75a3f9f95991d308d6c39a}
+      \strng{authorfullhash}{35ccbb8c3d75a3f9f95991d308d6c39a}
+      \strng{authorfullhashraw}{35ccbb8c3d75a3f9f95991d308d6c39a}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Encuesta de Caracterización de la Población Migrante de Chile (ECPOME) 2022: Informe de Resultados}
+      \field{type}{techreport}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://serviciomigraciones.cl/wp-content/uploads/2023/06/Resultados-Encuesta-Migrantes-2022.pdf
+      \endverb
+      \verb{url}
+      \verb https://serviciomigraciones.cl/wp-content/uploads/2023/06/Resultados-Encuesta-Migrantes-2022.pdf
+      \endverb
+    \endentry
+  \enddatalist
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{INE2024enusc}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fb47e2367fcfe0fcc0f92da24eb66198}{%
+           family={{Instituto Nacional de Estadísticas (INE)}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Instituto Nacional de Estadísticas}%
+      }
+      \list{location}{1}{%
+        {Santiago, Chile}%
+      }
+      \strng{namehash}{fb47e2367fcfe0fcc0f92da24eb66198}
+      \strng{fullhash}{fb47e2367fcfe0fcc0f92da24eb66198}
+      \strng{fullhashraw}{fb47e2367fcfe0fcc0f92da24eb66198}
+      \strng{bibnamehash}{fb47e2367fcfe0fcc0f92da24eb66198}
+      \strng{authorbibnamehash}{fb47e2367fcfe0fcc0f92da24eb66198}
+      \strng{authornamehash}{fb47e2367fcfe0fcc0f92da24eb66198}
+      \strng{authorfullhash}{fb47e2367fcfe0fcc0f92da24eb66198}
+      \strng{authorfullhashraw}{fb47e2367fcfe0fcc0f92da24eb66198}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{4}
+      \field{title}{Síntesis de Resultados Encuesta Nacional Urbana de Seguridad Ciudadana (ENUSC) 2023}
+      \field{type}{techreport}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.ine.gob.cl/docs/default-source/seguridad-ciudadana/publicaciones-y-anuarios/2024/sintesis-de-resultados-enusc-2024.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.ine.gob.cl/docs/default-source/seguridad-ciudadana/publicaciones-y-anuarios/2024/sintesis-de-resultados-enusc-2024.pdf
+      \endverb
+    \endentry
+    \entry{INE2024estimacion}{report}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=fb47e2367fcfe0fcc0f92da24eb66198}{%
+           family={{Instituto Nacional de Estadísticas (INE)}},
+           familyi={I\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=35ccbb8c3d75a3f9f95991d308d6c39a}{%
+           family={{Servicio Nacional de Migraciones (SERMIG)}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Instituto Nacional de Estadísticas y Servicio Nacional de Migraciones}%
+      }
+      \list{location}{1}{%
+        {Santiago, Chile}%
+      }
+      \strng{namehash}{3146a27d35acde545a6e2b806e907656}
+      \strng{fullhash}{3146a27d35acde545a6e2b806e907656}
+      \strng{fullhashraw}{3146a27d35acde545a6e2b806e907656}
+      \strng{bibnamehash}{3146a27d35acde545a6e2b806e907656}
+      \strng{authorbibnamehash}{3146a27d35acde545a6e2b806e907656}
+      \strng{authornamehash}{3146a27d35acde545a6e2b806e907656}
+      \strng{authorfullhash}{3146a27d35acde545a6e2b806e907656}
+      \strng{authorfullhashraw}{3146a27d35acde545a6e2b806e907656}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Estimación de personas extranjeras residentes habituales en Chile al 31 de diciembre de 2023}
+      \field{type}{techreport}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.ine.gob.cl/docs/default-source/demografia-y-migracion/publicaciones-y-anuarios/migraci%C3%B3n-internacional/estimaci%C3%B3n-poblaci%C3%B3n-extranjera-en-chile-2018/informe-resultados-epe2023.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.ine.gob.cl/docs/default-source/demografia-y-migracion/publicaciones-y-anuarios/migraci%C3%B3n-internacional/estimaci%C3%B3n-poblaci%C3%B3n-extranjera-en-chile-2018/informe-resultados-epe2023.pdf
+      \endverb
+    \endentry
+    \entry{MP2023}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a59018648ae86117bbaac6df66982a88}{%
+           family={{Ministerio Público de Chile}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{a59018648ae86117bbaac6df66982a88}
+      \strng{fullhash}{a59018648ae86117bbaac6df66982a88}
+      \strng{fullhashraw}{a59018648ae86117bbaac6df66982a88}
+      \strng{bibnamehash}{a59018648ae86117bbaac6df66982a88}
+      \strng{authorbibnamehash}{a59018648ae86117bbaac6df66982a88}
+      \strng{authornamehash}{a59018648ae86117bbaac6df66982a88}
+      \strng{authorfullhash}{a59018648ae86117bbaac6df66982a88}
+      \strng{authorfullhashraw}{a59018648ae86117bbaac6df66982a88}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Datos de participación de extranjeros en delitos reportados y consolidados para el sistema judicial.}
+      \field{title}{Cifras consolidadas de imputados por nacionalidad para el año 2023}
+      \field{year}{2024}
+    \endentry
+    \entry{SJM2024seguridad}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=75b1cfbf0a24d37df80f9e700430fa4e}{%
+           family={{Servicio Jesuita a Migrantes (SJM Chile)}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{75b1cfbf0a24d37df80f9e700430fa4e}
+      \strng{fullhash}{75b1cfbf0a24d37df80f9e700430fa4e}
+      \strng{fullhashraw}{75b1cfbf0a24d37df80f9e700430fa4e}
+      \strng{bibnamehash}{75b1cfbf0a24d37df80f9e700430fa4e}
+      \strng{authorbibnamehash}{75b1cfbf0a24d37df80f9e700430fa4e}
+      \strng{authornamehash}{75b1cfbf0a24d37df80f9e700430fa4e}
+      \strng{authorfullhash}{75b1cfbf0a24d37df80f9e700430fa4e}
+      \strng{authorfullhashraw}{75b1cfbf0a24d37df80f9e700430fa4e}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Análisis basado en datos del Poder Judicial.}
+      \field{title}{Seguridad y Convivencia: Cifras}
+      \field{urlday}{27}
+      \field{urlmonth}{10}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://sjmchile.org/incidencia-y-estudios/cifras/seguridad-y-convivencia
+      \endverb
+      \verb{url}
+      \verb https://sjmchile.org/incidencia-y-estudios/cifras/seguridad-y-convivencia
+      \endverb
+    \endentry
+    \entry{SERMIG2023encuesta}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=35ccbb8c3d75a3f9f95991d308d6c39a}{%
+           family={{Servicio Nacional de Migraciones (SERMIG)}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Servicio Nacional de Migraciones}%
+      }
+      \list{location}{1}{%
+        {Santiago, Chile}%
+      }
+      \strng{namehash}{35ccbb8c3d75a3f9f95991d308d6c39a}
+      \strng{fullhash}{35ccbb8c3d75a3f9f95991d308d6c39a}
+      \strng{fullhashraw}{35ccbb8c3d75a3f9f95991d308d6c39a}
+      \strng{bibnamehash}{35ccbb8c3d75a3f9f95991d308d6c39a}
+      \strng{authorbibnamehash}{35ccbb8c3d75a3f9f95991d308d6c39a}
+      \strng{authornamehash}{35ccbb8c3d75a3f9f95991d308d6c39a}
+      \strng{authorfullhash}{35ccbb8c3d75a3f9f95991d308d6c39a}
+      \strng{authorfullhashraw}{35ccbb8c3d75a3f9f95991d308d6c39a}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Encuesta de Caracterización de la Población Migrante de Chile (ECPOME) 2022: Informe de Resultados}
+      \field{type}{techreport}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://serviciomigraciones.cl/wp-content/uploads/2023/06/Resultados-Encuesta-Migrantes-2022.pdf
+      \endverb
+      \verb{url}
+      \verb https://serviciomigraciones.cl/wp-content/uploads/2023/06/Resultados-Encuesta-Migrantes-2022.pdf
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

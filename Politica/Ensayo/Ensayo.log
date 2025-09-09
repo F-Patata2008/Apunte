@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.7.3)  20 JUL 2025 23:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.8.24)  8 SEP 2025 21:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -33,7 +33,7 @@ Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 Package: babel 2025/02/14 v25.4 The multilingual framework for pdfLaTeX, LuaLaTeX and XeLaTeX
 \babel@savecnt=\count270
 \U@D=\dimen142
-\l@unhyphenated=\language90
+\l@unhyphenated=\language8
  (/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
 \bbl@dirlevel=\count271
@@ -187,7 +187,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \bibhang=\skip58
 \blx@bcfin=\read3
 \blx@bcfout=\write3
-\blx@langwohyphens=\language91
+\blx@langwohyphens=\language9
 \c@mincomprange=\count327
 \c@maxcomprange=\count328
 \c@mincompwidth=\count329
@@ -483,10 +483,7 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'spanish'.
-(./Ensayo.aux
-LaTeX Info: Redefining \. on input line 12.
-LaTeX Info: Redefining \% on input line 12.
-)
+(./Ensayo.aux)
 \openout1 = `Ensayo.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 116.
@@ -599,7 +596,7 @@ Package hyperref Info: Link coloring ON on input line 116.
 \@outlinefile=\write4
 \openout4 = `Ensayo.out'.
 
-<./images/IN.png, id=24, 198.7425pt x 255.95625pt>
+<./images/IN.png, id=4, 198.7425pt x 255.95625pt>
 File: ./images/IN.png Graphic file (type png)
 <use ./images/IN.png>
 Package pdftex.def Info: ./images/IN.png  used on input line 121.
@@ -644,25 +641,40 @@ LaTeX Info: Redefining \% on input line 12.
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-Package rerunfilecheck Info: File `Ensayo.out' has not changed.
-(rerunfilecheck)             Checksum: DAF175D238C4E2BA2E99A89FB02C216F;1358.
+
+
+LaTeX Warning: There were undefined references.
+
+
+Package rerunfilecheck Warning: File `Ensayo.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Ensayo.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  DAF175D238C4E2BA2E99A89FB02C216F;1358.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                Ensayo
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'Ensayo.run.xml'.
 \openout1 = `Ensayo.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 19197 strings out of 473190
- 337309 string characters out of 5722594
- 1270570 words of memory out of 5000000
- 42246 multiletter control sequences out of 15000+600000
+ 19176 strings out of 475068
+ 337087 string characters out of 5764374
+ 1265167 words of memory out of 5000000
+ 41984 multiletter control sequences out of 15000+600000
  566906 words of font info for 49 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
+ 62 hyphenation exceptions out of 8191
  66i,6n,81p,1241b,2813s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on Ensayo.pdf (6 pages, 159151 bytes).
+Output written on Ensayo.pdf (6 pages, 158649 bytes).
 PDF statistics:
- 116 PDF objects out of 1000 (max. 8388607)
- 91 compressed objects within 1 object stream
+ 100 PDF objects out of 1000 (max. 8388607)
+ 75 compressed objects within 1 object stream
  20 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

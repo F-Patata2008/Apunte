@@ -11,6 +11,7 @@
 \usepackage{graphicx}
 \usepackage{caption}
 \usepackage{parskip} % PAQUETE PARA ESPACIADO ENTRE PÁRRAFOS
+\usepackage{fancyhdr} % <-- NUEVO PAQUETE PARA PIE DE PÁGINA
 
 % Ruta a la carpeta de imágenes
 \graphicspath{ {./images/} }
@@ -50,9 +51,9 @@
     \large
     \textbf{Instituto Nacional José Miguel Carrera} \\
     % Puedes añadir el departamento aquí si lo necesitas
-    % \textbf{Departamento de Historia y Ciencias Sociales}
+    \textbf{Departamento de Historia y Ciencias Sociales}
     
-    \vspace{2.5cm}
+    \vspace{1.5cm}
     \rule{\linewidth}{0.5mm}
     \vspace{0.4cm}
     
@@ -62,11 +63,11 @@
     \vspace{0.4cm}
     \rule{\linewidth}{0.5mm}
     
-    \vspace{3cm}
+    \vspace{2cm}
     
     % Puedes añadir el nombre de la asignatura si quieres
-    % \Large
-    % \textbf{Educación Ciudadana}
+    \Large
+    \textbf{Educación Ciudadana}
     
     \vfill % Empuja el contenido hacia abajo
     
@@ -79,7 +80,7 @@
         Luciano Arevalo & \\
     \end{tabular*}
     
-    \vspace{1.5cm}
+    \vspace{0.5cm}
     
     \large{\today} % Fecha de compilación
     
@@ -88,7 +89,16 @@
 
 % --- CONFIGURACIÓN E ÍNDICE ---
 \onehalfspacing
-\pagestyle{plain}
+% \pagestyle{plain} % <-- LÍNEA ORIGINAL ELIMINADA
+
+% --- NUEVA CONFIGURACIÓN DEL PIE DE PÁGINA ---
+\pagestyle{fancy} % Activa el estilo fancy
+\fancyhf{} % Borra todas las cabeceras y pies de página actuales
+\renewcommand{\headrulewidth}{0pt} % Elimina la línea de la cabecera
+\lfoot{Todos los derechos reservados} % Tu texto a la izquierda
+\rfoot{\thepage} % El número de página a la derecha
+% --- FIN DE LA NUEVA CONFIGURACIÓN ---
+
 \tableofcontents
 \newpage
 

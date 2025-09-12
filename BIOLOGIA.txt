@@ -1,0 +1,243 @@
+#separator:tab
+#html:true
+¿Cuál es el principio fundamental de la teoría celular?	Que todos los organismos están compuestos por células.
+¿Cómo se diferencian los organismos unicelulares de los pluricelulares?	Los unicelulares tienen una sola célula, los pluricelulares tienen células especializadas.
+¿Cuál es la principal diferencia entre células procariontes y eucariontes?	Las procariontes no tienen núcleo definido, las eucariontes sí.
+¿Qué permite la especialización celular en organismos pluricelulares?	La formación de tejidos y órganos.
+¿Qué estructura celular es crucial para el transporte de sustancias?	La membrana celular.
+¿Qué proceso permite a las células detectar y responder a estímulos?	La señalización celular.
+¿Qué fases incluye el ciclo celular?	Mitosis y citocinesis.
+¿Cuál es la función principal de la mitocondria?	Producir ATP mediante la respiración celular.
+¿Qué organelo es responsable de la fotosíntesis en células vegetales?	El cloroplasto.
+¿Qué tipo de reacciones comprende el metabolismo celular?	Catabolismo y anabolismo.
+¿Qué función cumple el aparato de Golgi en la célula?	Modificación y empaquetamiento de proteínas.
+¿Qué función tienen las microvellosidades en los enterocitos?	Aumentar la superficie de absorción.
+¿Cuál es la función de los ribosomas?	Síntesis de proteínas.
+¿Qué organelo se encarga de degradar y reciclar macromoléculas?	Lisosomas.
+¿Cuál es la función de los flagelos en las células procariontes?	Movilidad.
+¿Qué permite la pared celular en células vegetales?	Protección estructural y soporte.
+¿Qué estructura celular controla la actividad celular y alberga el ADN?	El núcleo.
+¿Cuál es el rol de los plasmodesmos en células vegetales?	Comunicación entre células.
+¿Qué diferencia estructural tienen las células animales de las vegetales?	Las vegetales tienen cloroplastos y pared celular.
+¿Qué es el nucleoide en células procariotas?	Región donde se encuentra el ADN.
+¿Qué proceso convierte la glucosa en ATP en la célula?	La respiración celular.
+¿Qué ventaja dan los plásmidos a las células procariontes?	Resistencia a antibióticos.
+¿Qué función tienen los peroxisomas?	Metabolismo de lípidos y desintoxicación.
+¿Qué especialización tienen las células musculares esqueléticas?	Contienen miofibrillas para la contracción.
+¿Qué estructura en las neuronas facilita la transmisión de señales?	Axón.
+¿Qué es el retículo sarcoplásmico en células musculares?	Regula niveles de calcio.
+¿Cómo se comunican las células a través de señales químicas?	Mediante señales químicas para coordinar actividades.
+¿Qué organelo participa en la traducción del ARN en proteínas?	Ribosomas.
+¿Qué facilita la cápsula en células procariontes?	Protección contra desecación y fagocitosis.
+¿Qué proceso realiza el cloroplasto en células vegetales?	Fotosíntesis.
+¿Qué tipo de reacciones metabólicas realizan los organismos productores?	Reacciones anabólicas para sintetizar moléculas como glúcidos, aminoácidos y ácidos grasos.
+¿Qué organismos son conocidos como productores y por qué?	Cianobacterias, células vegetales y algunos protozoos, porque sintetizan nutrientes para otros seres vivos.
+¿Cómo se define la fotosíntesis?	Síntesis de carbohidratos, lípidos y proteínas utilizando CO₂, luz y ATP.
+¿Dónde ocurre la fotosíntesis en las plantas y las cianobacterias?	En los cloroplastos de las plantas y en la membrana plasmática de las cianobacterias.
+¿Qué rol juega la clorofila en la fotosíntesis?	Absorbe luz, elevando electrones para iniciar reacciones químicas.
+¿Por qué la clorofila refleja la luz verde?	No absorbe la longitud de onda verde, reflejándola.
+¿Cómo están organizados los pigmentos y proteínas en los cloroplastos?	En la membrana del tilacoide en estructuras llamadas fotosistemas.
+¿Qué ocurre en la fase dependiente de la luz de la fotosíntesis?	La clorofila absorbe luz, produciendo ATP y NADPH.
+¿Qué es el ciclo de Calvin?	Proceso de fijación de carbono en el estroma mediante 13 reacciones.
+¿Cómo afecta la intensidad luminosa la fotosíntesis?	Incrementa la actividad fotosintética hasta alcanzar la saturación lumínica.
+¿Por qué el color de la luz influye en la fotosíntesis?	La clorofila absorbe mejor las longitudes de onda que no reflejan, como el azul y rojo.
+¿Cómo afecta la temperatura a la fotosíntesis?	A mayor temperatura, aumenta la actividad hasta que las enzimas se desnaturalizan.
+¿Cuál es el efecto de la concentración de CO₂ en la fotosíntesis?	Incrementa la actividad fotosintética hasta un valor máximo.
+¿Cómo influye la concentración de O₂ en la fotosíntesis?	A mayor O₂, baja el rendimiento fotosintético debido a la fotorrespiración.
+¿Qué sucede si hay escasez de agua en la fotosíntesis?	Los estomas se cierran, reduciendo CO₂ y afectando la actividad fotosintética.
+¿Qué es un ecosistema?	Sistema de biotopos con componentes bióticos y abióticos, interactuando en un entorno.
+¿Qué papel juega la luz solar en los ecosistemas?	Es la principal fuente de energía para la biosfera y alimenta a los productores primarios.
+¿Qué son los autótrofos y heterótrofos en un ecosistema?	Autótrofos producen su propio alimento; heterótrofos dependen de otros para alimentarse.
+¿Qué es una cadena alimentaria o trófica?	Secuencia de transferencia de energía entre organismos, desde productores hasta depredadores.
+¿Qué es una red trófica?	Conjunto de cadenas tróficas interconectadas que muestran las relaciones alimenticias.
+¿Cómo se define una población en ecología?	Conjunto de organismos de la misma especie que viven en un área y tiempo específicos.
+¿Qué es una comunidad en ecología?	Todas las poblaciones de un área limitada que interactúan transfiriendo materia y energía.
+¿Qué es un nicho ecológico?	Rol o función de una especie en su comunidad, abarcando su lugar y papel ecológico.
+¿Qué es la exclusión competitiva en ecología?	Dos especies compiten por un mismo nicho, y una debe adaptarse o cambiar de nicho.
+¿Qué es la estratificación en una comunidad?	Organización en niveles en el hábitat, como en un bosque con estratos desde suelo a follaje.
+¿Qué son las especies dominantes en una comunidad?	Especies que controlan el ecosistema por su número o influencia en transferencia de materia y energía.
+¿Cómo se mide la biodiversidad en un ecosistema?	Por la variedad y cantidad de especies e individuos en el ecosistema.
+¿Qué es la sucesión primaria?	Proceso de cambio en especies en un hábitat sin organismos previos, como una roca recién expuesta.
+¿Qué es la sucesión secundaria?	Cambio en especies tras una perturbación, como un incendio, en áreas previamente habitadas.
+¿Cómo interactúan las fases clara y oscura en la fotosíntesis?	La fase clara produce ATP y NADPH, que la fase oscura usa para fijar carbono en el ciclo de Calvin.
+¿Qué es el metabolismo celular?	Conjunto de reacciones bioquímicas necesarias para la vida celular.
+¿Cuál es la primera ley de la termodinámica en biología?	La energía se conserva; no se crea ni se destruye.
+¿Qué es el ATP?	Una molécula que almacena y libera energía para la célula.
+¿Qué diferencia el catabolismo del anabolismo?	El catabolismo descompone moléculas; el anabolismo las construye.
+"¿Por qué el ATP se considera la &#x27;moneda energética&#x27;?"	Porque su ruptura libera energía controlada y segura para la célula.
+¿Qué tipo de moléculas se degradan en el catabolismo?	Glucosa, grasas y proteínas.
+¿Qué es la glucólisis?	Proceso que convierte glucosa en energía y piruvato.
+¿Qué produce el ciclo de Krebs?	Energía en forma de NADH, FADH₂ y algo de ATP.
+¿Qué es la β-oxidación de ácidos grasos?	Proceso que descompone grasas para obtener energía.
+¿Cómo pueden los aminoácidos proporcionar energía?	Se degradan y entran al ciclo de Krebs.
+¿Cuál es la función de la fosforilación oxidativa?	Producir ATP usando electrones.
+¿Qué rol tiene la cadena transportadora de electrones?	Mover electrones para generar energía en forma de ATP.
+¿Cuál es el papel de la insulina?	Disminuir el nivel de glucosa en sangre y promover su almacenamiento.
+¿Cómo afecta el glucagón el nivel de glucosa?	Aumenta el nivel de glucosa al promover su liberación.
+¿Qué es la evolución biológica?	Cambio en características heredables de poblaciones a través del tiempo.
+¿Cuál es la base de la evolución según Darwin?	La selección natural, donde los individuos más aptos sobreviven y se reproducen.
+¿Qué es una mutación en el contexto evolutivo?	Alteración en el ADN que puede ser beneficiosa, neutra o perjudicial.
+¿Por qué es importante la variabilidad genética?	Proporciona material para que actúe la selección natural, favoreciendo la adaptación.
+¿Qué es la deriva genética?	Cambios aleatorios en la frecuencia genética, afectando más a poblaciones pequeñas.
+¿Qué es la especiación?	Proceso en el que una población se divide y forma nuevas especies.
+¿Cómo el registro fósil apoya la teoría evolutiva?	Muestra cambios en organismos y formas intermedias entre especies.
+¿Qué son las estructuras homólogas?	Estructuras con origen común que pueden tener diferentes funciones.
+"¿Qué representa el &#x27;árbol de la vida&#x27; en evolución?"	La conexión de todas las especies vivas y extintas a través de ancestros comunes.
+¿Qué es la coevolución?	Evolución influenciada mutuamente entre dos o más especies, como depredadores y presas.
+¿Qué es el principio de exclusión competitiva?	Dos especies no pueden ocupar el mismo nicho de forma estable.
+¿Qué plantea el lamarckismo?	Las características adquiridas durante la vida se heredan a la descendencia.
+¿Cómo actúa la selección natural estabilizadora?	Favorece fenotipos intermedios, eliminando extremos.
+¿Qué implica la selección natural direccional?	Favorece un fenotipo extremo, aumentando su frecuencia en la población.
+¿Qué es la selección disruptiva?	Favorece fenotipos extremos, reduciendo los intermedios.
+¿Qué evidencia proporciona la embriología comparada?	Similitudes en etapas de desarrollo que sugieren un ancestro común.
+¿Qué importancia tiene el código genético como evidencia evolutiva?	Su universalidad en los seres vivos sugiere un origen común.
+¿Qué es un órgano análogo?	Órganos con funciones similares pero estructura y origen diferentes.
+¿Qué significa evolución como un proceso dinámico?	Cambios continuos en organismos adaptándose al ambiente.
+¿Qué es el ciclo menstrual?	Proceso natural en personas de sexo femenino que regula la salud reproductiva.
+¿Cuáles son las cuatro fases del ciclo menstrual?	Fase menstrual, fase folicular, ovulación, y fase lútea.
+¿Qué ocurre en la fase menstrual?	Desprendimiento del endometrio con sangrado, debido a bajos niveles de estrógeno y progesterona.
+¿Qué caracteriza la fase folicular?	Maduración de los folículos en los ovarios, con aumento de estrógeno.
+¿Qué es la ovulación y cuándo ocurre?	Liberación del óvulo del ovario, aproximadamente el día 14 del ciclo.
+¿Qué sucede en la fase lútea?	Formación del cuerpo lúteo y producción de progesterona para preparar el útero.
+¿Por qué es importante conocer el ciclo menstrual?	Para planificar o prevenir embarazos y detectar problemas de salud.
+¿Cuál es la función del hipotálamo en el ciclo menstrual?	Secreta GnRH, que estimula la liberación de LH y FSH de la hipófisis.
+¿Qué es la retroalimentación negativa en el control hormonal?	Mecanismo donde una hormona inhibe su propia producción para mantener niveles estables.
+¿Qué ejemplo hay de retroalimentación positiva en el ciclo menstrual?	El aumento de estrógenos antes de la ovulación, que eleva la LH.
+¿Cuál es el papel de la FSH en la reproducción femenina?	Estimula el desarrollo del folículo en los ovarios.
+¿Cuál es la función de la LH en el ciclo menstrual?	Provoca la ovulación y promueve la formación del cuerpo lúteo.
+¿Qué es la testosterona y dónde se produce?	Hormona que regula características sexuales secundarias masculinas, producida en los testículos.
+¿Qué es la inhibina y cuál es su función en el hombre?	Hormona que inhibe la FSH, regulando la producción de esperma.
+¿Cuál es la diferencia en la producción de gametos entre hombres y mujeres?	Los hombres producen espermatozoides continuamente; las mujeres un óvulo por ciclo.
+¿Qué ocurre durante la fecundación?	El espermatozoide penetra el óvulo, fusionando material genético y formando un cigoto.
+¿Qué es la singamia?	Fusión de los pronúcleos del óvulo y el espermatozoide, iniciando un nuevo ser.
+¿Qué papel tiene la placenta durante el embarazo?	Proporciona nutrientes y oxígeno al embrión y elimina desechos.
+¿Qué función tiene la gonadotropina coriónica humana (GCh)?	Señaliza al cuerpo lúteo para mantener el embarazo.
+¿Qué es la segmentación en el desarrollo embrionario?	Divisiones celulares que aumentan el número de células sin aumentar el tamaño del embrión.
+¿Cuál es la función del hipotálamo en el sistema endocrino?	Controlar la liberación de hormonas de la hipófisis.
+¿Qué hormonas producen los ovarios?	Estrógeno y progesterona.
+¿Qué hormona es responsable de los caracteres sexuales secundarios en los hombres?	Testosterona.
+¿Qué órgano produce insulina y glucagón?	El páncreas.
+¿Cuál es la principal función del estrógeno en el ciclo menstrual?	Regular el ciclo menstrual.
+¿Cuál es el propósito de la reproducción en los organismos?	Asegurar la continuidad de la especie.
+¿Qué caracteriza la reproducción asexual?	No requiere macho y hembra; se basa en la clonación genética.
+¿Qué define a la reproducción sexual en términos celulares?	Fusión de gametos con la mitad de la carga genética.
+¿Cuál es la desventaja principal de la reproducción sexual?	Mayor gasto energético y tiempo de gestación.
+"¿Qué se entiende por &#x27;variabilidad genética&#x27; en la meiosis?"	Generación de células con información genética distinta.
+¿Qué tipo de células se forman al final de la meiosis?	Cuatro células haploides.
+"¿Qué es el &#x27;cuerpo lúteo&#x27; en el ciclo menstrual?"	Estructura que produce progesterona tras la ovulación.
+¿Cuántos días dura en promedio el ciclo menstrual?	28 días.
+¿Qué fase del ciclo menstrual implica la liberación del óvulo?	Ovulación.
+¿Qué hormona se encarga de regular los niveles de azúcar en sangre?	Insulina.
+¿Qué etapa del ciclo celular meiótico asegura la variabilidad genética?	Permutación cromosómica y crossing-over en meiosis I.
+¿Qué órgano produce cortisol y adrenalina?	Glándulas suprarrenales.
+¿Qué hormonas secreta la neurohipófisis?	Hormonas producidas por el hipotálamo.
+¿Cuál es el resultado de la fecundación en la reproducción humana?	Formación de un cigoto.
+¿Qué hormona estimula la producción de espermatozoides?	Testosterona.
+¿En qué parte del ciclo menstrual se desprende el revestimiento uterino?	Menstruación.
+¿Qué tipo de retroalimentación implica la inhibición de una hormona inicial?	Retroalimentación negativa.
+¿Qué es la retroalimentación positiva en el control hormonal?	Estimula la producción de la misma hormona o de otra.
+¿Qué hormona interviene en el crecimiento de los órganos reproductores femeninos?	Estrógeno.
+¿Qué hormonas producen los testículos?	Testosterona e inhibina.
+¿Qué función tienen las glándulas exocrinas?	"Liberan &#x27;jugos&#x27; en cavidades, como bilis."
+¿Cuál es la función de la hipófisis en el sistema endocrino?	Regular otras glándulas endocrinas.
+¿Qué hormona se libera al acercarse la ovulación?	Estrógeno.
+¿Qué hormona es sintetizada por las células de Leydig en los testículos?	Testosterona, una prohormona esteroidal responsable de los caracteres sexuales masculinos.
+¿Qué proceso asegura la variabilidad genética durante la meiosis?	Crossing-over y permutación cromosómica en la meiosis I.
+¿Qué hormona regula la maduración del folículo en el ciclo menstrual?	FSH, que estimula la foliculogénesis.
+¿Qué es el ciclo ovárico y sus principales fases?	Ciclo de cambios hormonales y físicos en los ovarios: folicular, ovulación y lútea.
+¿Cuál es el rol del cuerpo lúteo tras la ovulación?	Secretar progesterona para mantener el endometrio.
+¿Qué cambios ocurren en el endometrio durante el ciclo menstrual?	Se desprende en la menstruación y se prepara para un embarazo potencial en la fase lútea.
+¿Qué proceso define la ovogénesis?	Formación de ovocitos en el ovario, comenzando en la vida fetal.
+¿Qué hormona estimula el crecimiento del folículo y secreción de estrógenos?	LH, especialmente antes de la ovulación.
+¿Cuál es la duración promedio de la fase menstrual en el ciclo?	Entre 0-5/7 días, coincide con el inicio de la fase folicular.
+¿Cómo es la división celular en la espermatogénesis?	Comienza con mitosis y sigue con meiosis para formar espermatozoides.
+¿Qué hormonas se producen en la neurohipófisis?	Hormonas como la oxitocina y vasopresina, de origen hipotalámico.
+¿Qué sucede con el endometrio si no hay fecundación?	Se desprende y expulsa durante la menstruación.
+¿Qué indica un aumento en los niveles de LH?	La proximidad de la ovulación en el ciclo menstrual.
+¿Cuál es la principal función de los estrógenos en las mujeres?	Desarrollo de caracteres sexuales secundarios y regulación del ciclo menstrual.
+¿Qué ocurre en la fase lútea del ciclo menstrual?	El cuerpo lúteo secreta progesterona para preparar el endometrio.
+¿Qué es el blastocelo en el desarrollo temprano del embrión?	La cavidad de líquido dentro de la blástula.
+¿Cuál es el papel de las mitocondrias en el embrión humano?	Herencia materna, ya que la mayoría son de origen del ovocito.
+¿Qué hormona del ciclo menstrual estimula el desarrollo del folículo?	FSH.
+¿Qué indica un nivel elevado de estrógenos en el ciclo menstrual?	Aproximación de la ovulación y peak de LH.
+¿Qué es el cuerpo lúteo y su función principal?	Una estructura que produce progesterona para mantener el endometrio si hay embarazo.
+¿Dónde ocurre la espermatogénesis y la ovogénesis?	Espermatogénesis en túbulos seminíferos de testículos; ovogénesis en ovarios
+¿Cuándo comienza la espermatogénesis en hombres y la ovogénesis en mujeres?	Espermatogénesis inicia en la pubertad; ovogénesis antes del nacimiento
+¿Cuál es la duración del proceso de espermatogénesis y ovogénesis?	Espermatogénesis dura toda la vida reproductiva masculina; ovogénesis se detiene en la menopausia
+¿Cuántas células funcionales resultan de la espermatogénesis y la ovogénesis?	Cuatro espermatozoides en espermatogénesis; un óvulo funcional y tres cuerpos polares en ovogénesis
+¿Cuánto tiempo toma el ciclo de espermatogénesis en hombres?	Aproximadamente 64 días
+¿En qué etapa se completa la diferenciación en la espermatogénesis y la ovogénesis?	Espermatogénesis completa al final de la meiosis; ovogénesis solo si el óvulo es fecundado
+¿Qué tamaño y movilidad tienen las células en espermatogénesis y ovogénesis?	Espermatozoides son pequeños y móviles; óvulos son grandes y no móviles
+¿Qué hormonas regulan la espermatogénesis y la ovogénesis?	Testosterona en espermatogénesis; estrógenos y progesterona en ovogénesis
+¿Dónde ocurre la maduración final de los espermatozoides y óvulos?	Espermatozoides en el epidídimo; óvulos en la trompa de Falopio
+¿Cuándo se reinicia la meiosis en la espermatogénesis y la ovogénesis?	Espermatogénesis continúa sin pausas; ovogénesis se detiene en Profase I y Metafase II hasta fecundación
+¿Cuáles son las principales reservas energéticas en espermatozoides y óvulos?	Espermatozoides tienen bajas reservas; óvulos altas reservas en el citoplasma
+¿Cuál es la definición principal de mitosis y meiosis?	Mitosis: división celular para células idénticas; meiosis: división para producir células genéticamente diferentes
+¿Cuántas divisiones ocurren en la mitosis y meiosis?	Mitosis una vez; meiosis dos veces
+¿Qué número de cromosomas resulta de la mitosis y meiosis?	Mitosis: diploide (2n); meiosis: haploide (n)
+¿Qué rol tiene la mitosis y la meiosis en el organismo?	Mitosis para crecimiento y reparación; meiosis para producción de gametos
+¿Qué tipo de variabilidad genética introduce la meiosis y cómo?	Meiosis introduce variabilidad genética por recombinación y segregación
+¿Qué tipo de células produce la mitosis en comparación con la meiosis?	Mitosis produce células somáticas; meiosis produce gametos
+¿En qué fase de la meiosis ocurre el crossing-over?	En la Profase I
+¿Qué ocurre con el número de cromosomas en la meiosis?	Se reduce a la mitad
+¿En qué fase se separan las cromátidas hermanas en la mitosis y meiosis?	Mitosis: anafase; meiosis: anafase II
+¿Qué es la mitosis y cuál es su rol biológico?	Es la división del núcleo celular que crea dos células genéticamente idénticas, crucial para el crecimiento y la reparación de tejidos
+¿Cuáles son las fases del ciclo celular mitótico?	G1, S, G2, y M (Mitosis), donde la célula crece, replica su ADN y finalmente se divide
+¿Qué sucede en la fase S del ciclo celular?	Se replica el ADN, pasando de 2n/2c a 2n/4c
+¿Cuál es la diferencia entre citocinesis en células animales y vegetales?	En animales ocurre por constricción; en vegetales, el aparato de Golgi forma una nueva pared celular
+¿Qué caracteriza la profase en la mitosis?	Condensación de cromatina, desaparición de la membrana nuclear y formación del huso mitótico
+¿Qué ocurre durante la metafase de la mitosis?	Cromosomas se alinean en el ecuador de la célula y se unen al huso mitótico
+¿Cuál es el rol de la meiosis en la reproducción?	Producir cuatro células haploides para asegurar variabilidad genética en gametos
+¿Qué es el ADN recombinante?	Moléculas de ADN que expresan genes de un origen distinto en la célula huésped
+¿Qué es la reacción en cadena de la polimerasa (PCR)?	Técnica para amplificar ADN, usada en análisis forense y estudios biomoleculares
+¿Qué se requiere para realizar PCR?	Muestra de ADN, nucleótidos, enzimas, primers y controladores de temperatura
+¿Cuál es el objetivo de la clonación artificial?	Crear copias genéticamente idénticas de organismos, células o moléculas para fines científicos y médicos
+¿Qué es la electroforesis y su uso?	Técnica para separar biomoléculas en gel, usada en genética forense
+¿Qué es ELISA y para qué se utiliza?	Ensayo para detectar antígenos o anticuerpos, utilizado en diagnósticos como VIH
+¿Qué son las mutaciones puntuales?	Cambios en uno o más nucleótidos, que pueden incluir inserciones, deleciones o sustituciones
+¿Cuál es la importancia evolutiva de la meiosis?	Genera variabilidad genética, asegurando que la descendencia sea distinta a sus progenitores
+¿Qué es la intercinesis en meiosis?	Período entre meiosis I y II sin replicación de ADN, preparando la célula para una nueva división
+¿Cuál es la función principal del sistema inmune?	Proteger contra patógenos como virus, bacterias, hongos y protozoos
+¿Qué tipos de patógenos afectan al cuerpo humano?	Virus, bacterias, hongos y protozoos
+¿Cómo funciona el barrido cilial traqueal en la defensa inmune?	Captura microorganismos y partículas en el moco, que luego son expulsados hacia la faringe
+¿Qué papel tienen los jugos gástricos en la defensa primaria?	Su pH entre 1-2 es inhóspito para la mayoría de los microorganismos
+¿Qué caracteriza a la barrera secundaria del sistema inmune?	Respuesta inmune innata rápida y no específica, activada tras romperse la barrera primaria
+¿Cuál es el rol de los anticuerpos en la respuesta inmune adaptativa?	Neutralizar microorganismos, opsonizar para fagocitosis y activar el complemento
+¿Qué provoca la fiebre en una respuesta inmune?	Elevación de temperatura por citoquinas como IL-6 y TNF, mejorando circulación de leucocitos
+¿Cómo se diferencia la inmunidad innata de la adaptativa?	La innata es rápida y no específica, mientras que la adaptativa es específica y más lenta
+¿Cuál es la función de los linfocitos T Helper en la inmunidad?	Activar linfocitos T citotóxicos y B, potenciando la respuesta inmune
+¿Cuál es el propósito de la inmunidad adaptativa celular?	Atacar infecciones intracelulares mediante linfocitos T citotóxicos
+¿Cuál es la función de la fase M en el ciclo celular?	División celular, compuesta por mitosis y citocinesis
+¿Qué ocurre en la fase G1 del ciclo celular?	La célula crece, produce ATP, proteínas, enzimas y ARN para la célula hija
+¿Qué proceso ocurre durante la fase S?	Replicación del ADN, cambiando la condición de 2n/2c a 2n/4c
+¿Qué sucede en la fase G2 del ciclo celular?	La célula completa su crecimiento y se prepara para la división
+¿Cuáles son las etapas de la mitosis?	Profase, Metafase, Anafase y Telofase
+¿Qué sucede durante la profase en mitosis?	La cromatina se condensa y la membrana nuclear comienza a desaparecer
+¿Cómo se comportan los cromosomas en la metafase?	Los cromosomas se alinean en el ecuador de la célula y se adhieren al huso mitótico
+¿Qué ocurre en la anafase de la mitosis?	Las cromátidas hermanas se separan hacia polos opuestos
+¿Cuál es el rol de la telofase en la mitosis?	Reorganización de la membrana nuclear y descondensación de cromosomas
+¿Qué es la citocinesis?	División del citoplasma para formar dos células hijas idénticas
+¿Cuál es el resultado de la meiosis?	Cuatro células haploides con variabilidad genética
+¿Qué es la profase I en la meiosis?	Apareamiento de cromosomas homólogos e intercambio de material genético (crossing-over)
+¿Qué ocurre en la metafase I durante la meiosis?	Las tétradas se alinean en el ecuador de la célula con permutación cromosómica
+¿Qué caracteriza a la anafase I en meiosis?	Separación de tétradas hacia polos opuestos
+¿Qué sucede en la telofase I de la meiosis?	Reorganización nuclear en cada grupo de cromosomas replicados
+¿Qué es la intercinesis?	Periodo breve entre meiosis I y II sin replicación de ADN
+¿Cómo se organiza la metafase II en meiosis?	Cromosomas se alinean en el ecuador en preparación para la separación
+¿Qué evento importante ocurre en la anafase II?	Separación de cromátidas hermanas hacia polos opuestos
+¿Qué indica el final de la meiosis II?	Formación de cuatro células con carga genética n/c
+¿Qué sucede en la fase G1 del ciclo celular?	La célula crece, duplica organelos y sintetiza proteínas y enzimas
+¿Cuál es la función de la fase S en el ciclo celular?	Replicación del ADN, creando dos cromátidas hermanas para cada cromosoma
+¿Qué ocurre en la fase G2?	La célula continúa creciendo, prepara la mitosis y reorganiza microtúbulos
+¿Cuál es el objetivo principal de la mitosis?	Dividir el núcleo celular para formar dos células genéticamente idénticas
+¿Qué ocurre durante la profase en mitosis?	La cromatina se condensa en cromosomas y se forma el huso mitótico
+¿Cómo se comportan los cromosomas en la metafase de la mitosis?	Se alinean en el ecuador celular y se adhieren al huso mitótico
+¿Qué sucede en la anafase de la mitosis?	Las cromátidas hermanas se separan hacia polos opuestos
+¿Qué caracteriza la telofase en mitosis?	Los cromosomas se descondensan y se forma la nueva membrana nuclear
+¿Qué es la citocinesis y cuándo ocurre?	División del citoplasma para formar dos células hijas, ocurre tras la telofase
+¿Qué diferencia existe entre la citocinesis en células animales y vegetales?	En animales ocurre por constricción; en vegetales, se forma una nueva pared celular
+¿Qué función tiene el huso mitótico en la mitosis?	Organiza y separa los cromosomas durante la división nuclear
+¿Qué sucede con los cromosomas en la prometafase?	La envoltura nuclear se desintegra y los cromosomas se conectan al huso mitótico
+¿Cuál es el rol del centrómero durante la mitosis?	Une cromátidas hermanas y facilita la unión de microtúbulos
+¿Qué es el punto de control de la metafase?	Verifica la correcta alineación y conexión de cromosomas al huso antes de continuar
+¿Cuál es la importancia de la mitosis en organismos multicelulares?	Permite el crecimiento, reparación de tejidos y mantenimiento celular

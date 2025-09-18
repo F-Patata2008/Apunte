@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.9.8)  17 SEP 2025 22:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.9.8)  17 SEP 2025 23:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -312,10 +312,6 @@ Package pdftex.def Info: ./images/IN.png  used on input line 37.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/IN.png>]
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 73.
- (/usr/share/texmf-dist/tex/latex/base/ulasy.fd
-File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
@@ -325,6 +321,47 @@ l.74 \newpage
               [1]
 
 [2]
+
+./Ensayo.tex:90: LaTeX Error: \begin{document} ended by \end{quoting}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.90 ...zada por la falacia del ``trabajo sexual>>
+                                                   y una oferta globalizada ...
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./Ensayo.tex:90: Extra \endgroup.
+\end  ...end#1\endcsname \@checkend {#1}\endgroup 
+                                                  \UseHook {env/#1/after}\if...
+l.90 ...zada por la falacia del ``trabajo sexual>>
+                                                   y una oferta globalizada ...
+Things are pretty mixed up, but I think the worst is over.
+
+
+./Ensayo.tex:94: LaTeX Error: \begin{document} ended by \end{quoting}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.94 ...njero, mientras se absuelve al ``cliente>>
+                                                   chileno que consume sexo ...
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./Ensayo.tex:94: Extra \endgroup.
+\end  ...end#1\endcsname \@checkend {#1}\endgroup 
+                                                  \UseHook {env/#1/after}\if...
+l.94 ...njero, mientras se absuelve al ``cliente>>
+                                                   chileno que consume sexo ...
+Things are pretty mixed up, but I think the worst is over.
+
+
 
 [3]
 
@@ -342,18 +379,18 @@ Package rerunfilecheck Info: File `Ensayo.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 10638 strings out of 475068
- 167446 string characters out of 5764375
- 581796 words of memory out of 5000000
- 33529 multiletter control sequences out of 15000+600000
- 562350 words of font info for 48 fonts, out of 8000000 for 9000
+ 10612 strings out of 475068
+ 166958 string characters out of 5764375
+ 580796 words of memory out of 5000000
+ 33508 multiletter control sequences out of 15000+600000
+ 561945 words of font info for 46 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
- 75i,5n,79p,950b,463s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/latxfont/lasy10.pfb>
-Output written on Ensayo.pdf (6 pages, 86094 bytes).
+ 75i,5n,79p,1024b,463s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on Ensayo.pdf (6 pages, 70141 bytes).
 PDF statistics:
- 80 PDF objects out of 1000 (max. 8388607)
- 59 compressed objects within 1 object stream
+ 71 PDF objects out of 1000 (max. 8388607)
+ 54 compressed objects within 1 object stream
  19 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,13 +1,15 @@
 # Fdb version 4
-["pdflatex"] 1758166841.87607 "Ensayo.tex" "Ensayo.pdf" "Ensayo" 1758166842.93794 0
+["pdflatex"] 1758167203.14596 "Ensayo.tex" "Ensayo.pdf" "Ensayo" 1758167204.32492 0
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1755987285 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1755987285 1324 c910af8c371558dc20f2d7822f66fe64 ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm" 1755987285 1532 9162035f4e7176612125649e348e2195 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1755987285 1524 4414a8315f39513458b80dfc63bff03a ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1755987285 1288 655e228510b4c2a1abe905c368440826 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr17.tfm" 1755987285 1292 296a67155bdbfc32aa9c636f21e91433 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1755987285 1124 6c73e740cf17375f03eec0ee63599741 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmti12.tfm" 1755987285 1484 ed72f8f5cf654cda15ecc8e32bfcbee5 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1755987285 32080 340ef9bf63678554ee606688e7b5339d ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb" 1755987285 36554 b67dc2cfa451409e100b3fcf5f506509 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1755987285 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1755987285 36118 fad905eba93cff5bce1e185fe980a177 ""
   "/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1755987285 71627 94eb9990bed73c364d7f53f960cc8c5b ""
@@ -65,9 +67,9 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1755987285 42087 b0f9697c952c8f5a8eede4134282cb0d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1757380537 5311557 9da84c45f5b388655502706482323571 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1757380337 2081304 7d6458c40765e7b3dbe19463267caa67 ""
-  "Ensayo.aux" 1758166842.82427 460 54658d50036498a47c0a967cf0e0ae98 "pdflatex"
-  "Ensayo.out" 1758166842.61227 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "Ensayo.tex" 1758166840.99625 11418 8195ce768096104f6f02584d44932ad3 ""
+  "Ensayo.aux" 1758167204.20652 546 0ada31d10b65a06725b9dd9966000a01 "pdflatex"
+  "Ensayo.out" 1758167203.98552 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "Ensayo.tex" 1758167201.7275 12296 97b60b1e519f8205b2b69b3ce6cfb5f9 ""
   "images/IN.png" 1753454929.56759 7949 cc26bed184e5e1103c6a6f769f5412fa ""
   (generated)
   "Ensayo.aux"

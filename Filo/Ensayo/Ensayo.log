@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.9.8)  18 SEP 2025 00:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.9.8)  18 SEP 2025 00:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -214,25 +214,6 @@ File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 ) (./Ensayo.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
 )
 \openout1 = `Ensayo.aux'.
 
@@ -334,7 +315,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.59 \newpage
+l.58 \newpage
               [1]
 
 [2]
@@ -345,37 +326,7 @@ l.59 \newpage
 
 [5]
 
-[6
-pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.117 \end{document}
-                    
-pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.117 \end{document}
-                    
-pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.117 \end{document}
-                    
-pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.117 \end{document}
-                    
-pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.117 \end{document}
-                    
-pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.117 \end{document}
-                    ] (./Ensayo.aux
+[6] (./Ensayo.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -383,26 +334,22 @@ LaTeX Info: Redefining \% on input line 11.
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `Ensayo.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 10878 strings out of 475068
- 171337 string characters out of 5764375
- 590090 words of memory out of 5000000
- 33772 multiletter control sequences out of 15000+600000
- 561954 words of font info for 46 fonts, out of 8000000 for 9000
+ 10894 strings out of 475068
+ 171569 string characters out of 5764375
+ 590316 words of memory out of 5000000
+ 33781 multiletter control sequences out of 15000+600000
+ 562879 words of font info for 49 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
- 69i,7n,79p,1024b,447s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Ensayo.pdf (7 pages, 71762 bytes).
+ 69i,7n,79p,993b,447s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on Ensayo.pdf (7 pages, 85492 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
- 50 compressed objects within 1 object stream
- 17 named destinations out of 1000 (max. 500000)
+ 81 PDF objects out of 1000 (max. 8388607)
+ 61 compressed objects within 1 object stream
+ 23 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

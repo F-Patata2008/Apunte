@@ -46,6 +46,8 @@ INPUT /usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
 INPUT /usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
 INPUT /usr/share/texmf-dist/tex/latex/ragged2e/ragged2e.sty
 INPUT /usr/share/texmf-dist/tex/latex/ragged2e/ragged2e.sty
+INPUT /usr/share/texmf-dist/tex/latex/titling/titling.sty
+INPUT /usr/share/texmf-dist/tex/latex/titling/titling.sty
 INPUT /usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
 INPUT /usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
 INPUT /usr/share/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty

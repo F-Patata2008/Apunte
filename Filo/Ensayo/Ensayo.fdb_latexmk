@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1758158022.32606 "Ensayo.tex" "Ensayo.pdf" "Ensayo" 1758158023.00598 2
+["pdflatex"] 1758158366.56777 "Ensayo.tex" "Ensayo.pdf" "Ensayo" 1758158367.29908 0
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1755987285 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1755987285 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1755987285 1288 655e228510b4c2a1abe905c368440826 ""
@@ -60,13 +60,14 @@
   "/usr/share/texmf-dist/tex/latex/refcount/refcount.sty" 1755987285 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "/usr/share/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1755987285 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "/usr/share/texmf-dist/tex/latex/setspace/setspace.sty" 1755987285 22490 8cac309b79a4c53a4ffce4b1b07aead0 ""
+  "/usr/share/texmf-dist/tex/latex/titling/titling.sty" 1755987285 7358 95ac619994bd30d405a74f3eca431c84 ""
   "/usr/share/texmf-dist/tex/latex/url/url.sty" 1755987285 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1755987285 42087 b0f9697c952c8f5a8eede4134282cb0d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1757380537 5311557 9da84c45f5b388655502706482323571 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1757380337 2081304 7d6458c40765e7b3dbe19463267caa67 ""
-  "Ensayo.aux" 1758158022.94011 481 7ed57ad39ba78b063e2514466d2766ea "pdflatex"
-  "Ensayo.out" 1758158022.79212 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "Ensayo.tex" 1758158020.66003 10501 54472d870d60068fe330e199e16a9071 ""
+  "Ensayo.aux" 1758158367.19797 481 0bc4c070b78e2b728869ab568ccfa7bf "pdflatex"
+  "Ensayo.out" 1758158367.03497 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "Ensayo.tex" 1758158365.12793 10627 b4bdfdd458220263bcc3033cb39bfab0 ""
   "images/IN.png" 1753454929.56759 7949 cc26bed184e5e1103c6a6f769f5412fa ""
   (generated)
   "Ensayo.aux"

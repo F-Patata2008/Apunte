@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.9.8)  17 SEP 2025 23:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.9.8)  17 SEP 2025 23:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -322,47 +322,6 @@ l.74 \newpage
 
 [2]
 
-./Ensayo.tex:90: LaTeX Error: \begin{document} ended by \end{quoting}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.90 ...zada por la falacia del ``trabajo sexual>>
-                                                   y una oferta globalizada ...
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-./Ensayo.tex:90: Extra \endgroup.
-\end  ...end#1\endcsname \@checkend {#1}\endgroup 
-                                                  \UseHook {env/#1/after}\if...
-l.90 ...zada por la falacia del ``trabajo sexual>>
-                                                   y una oferta globalizada ...
-Things are pretty mixed up, but I think the worst is over.
-
-
-./Ensayo.tex:94: LaTeX Error: \begin{document} ended by \end{quoting}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.94 ...njero, mientras se absuelve al ``cliente>>
-                                                   chileno que consume sexo ...
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-./Ensayo.tex:94: Extra \endgroup.
-\end  ...end#1\endcsname \@checkend {#1}\endgroup 
-                                                  \UseHook {env/#1/after}\if...
-l.94 ...njero, mientras se absuelve al ``cliente>>
-                                                   chileno que consume sexo ...
-Things are pretty mixed up, but I think the worst is over.
-
-
-
 [3]
 
 [4]
@@ -379,18 +338,18 @@ Package rerunfilecheck Info: File `Ensayo.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 10612 strings out of 475068
- 166958 string characters out of 5764375
- 580796 words of memory out of 5000000
- 33508 multiletter control sequences out of 15000+600000
+ 10608 strings out of 475068
+ 166880 string characters out of 5764375
+ 581825 words of memory out of 5000000
+ 33503 multiletter control sequences out of 15000+600000
  561945 words of font info for 46 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
  75i,5n,79p,1024b,463s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Ensayo.pdf (6 pages, 70141 bytes).
+Output written on Ensayo.pdf (6 pages, 70921 bytes).
 PDF statistics:
- 71 PDF objects out of 1000 (max. 8388607)
- 54 compressed objects within 1 object stream
- 19 named destinations out of 1000 (max. 500000)
+ 73 PDF objects out of 1000 (max. 8388607)
+ 56 compressed objects within 1 object stream
+ 20 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

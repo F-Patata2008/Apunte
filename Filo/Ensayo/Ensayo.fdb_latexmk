@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1758160177.69549 "Ensayo.tex" "Ensayo.pdf" "Ensayo" 1758160178.38372 0
+["pdflatex"] 1758160547.92953 "Ensayo.tex" "Ensayo.pdf" "Ensayo" 1758160548.62695 0
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1755987285 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1755987285 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1755987285 1288 655e228510b4c2a1abe905c368440826 ""
@@ -67,9 +67,9 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1755987285 42087 b0f9697c952c8f5a8eede4134282cb0d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1757380537 5311557 9da84c45f5b388655502706482323571 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1757380337 2081304 7d6458c40765e7b3dbe19463267caa67 ""
-  "Ensayo.aux" 1758160178.29799 481 0bc4c070b78e2b728869ab568ccfa7bf "pdflatex"
-  "Ensayo.out" 1758160178.1352 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "Ensayo.tex" 1758160177.16596 10618 6e739f9ff05ffcc359a4690c4394a621 ""
+  "Ensayo.aux" 1758160548.55021 481 da0355e988cd536df61990dd3e6b35b1 "pdflatex"
+  "Ensayo.out" 1758160548.41021 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "Ensayo.tex" 1758160546.88519 10626 18f26457eae29857af83bab918d9ff7c ""
   "images/IN.png" 1753454929.56759 7949 cc26bed184e5e1103c6a6f769f5412fa ""
   (generated)
   "Ensayo.aux"

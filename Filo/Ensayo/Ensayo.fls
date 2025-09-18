@@ -139,11 +139,11 @@ INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
-INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 INPUT /usr/share/texmf-dist/tex/latex/base/ulasy.fd
 INPUT /usr/share/texmf-dist/tex/latex/base/ulasy.fd
 INPUT /usr/share/texmf-dist/tex/latex/base/ulasy.fd
 INPUT /usr/share/texmf-dist/fonts/tfm/public/latex-fonts/lasy10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 INPUT Ensayo.aux
 INPUT ./Ensayo.out
 INPUT ./Ensayo.out

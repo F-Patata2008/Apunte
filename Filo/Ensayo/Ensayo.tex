@@ -9,8 +9,16 @@
 \usepackage{titling}
 \usepackage{parskip}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
+\usepackage[hidelinks]{hyperref} % Opción corregida
 \graphicspath{ {./images/}} % Ruta para las imágenes
+
+% --- CONFIGURACIÓN DE METADATOS DEL PDF ---
+\hypersetup{
+    pdftitle={La Moral Cambiante y el Crimen Constante},
+    pdfauthor={Felipe Colli Olea},
+    pdfsubject={Ensayo de Filosofía},
+    pdfkeywords={Filosofía, Feminismo, Trata de Personas, Chile}
+}
 
 % --- CONFIGURACIÓN DEL DOCUMENTO ---
 \geometry{
@@ -22,31 +30,51 @@
 }
 \onehalfspacing % Interlineado 1.5
 
-% --- DATOS DEL ENSAYO (PARA LA PORTADA) ---
-\title{
-    \vspace{-2cm}
-    \includegraphics[width=2.5cm]{IN}\\[1.5cm]
-    \large Instituto Nacional General José Miguel Carrera\\
-    \large Departamento de Filosofía\\[2.5cm]
-    \huge\bfseries Ensayo Seminario de Filosofía\\[1.5cm]
-    \LARGE\itshape La Moral Cambiante y el Crimen Constante: El Caso del Tren de Aragua en Concepción como Síntoma de una Falsa Liberación
-}
-\author{
-    \large\textbf{Nombre del Estudiante:} Felipe Colli Olea\\
-    \large\textbf{Curso:} 4to Medio H\\
-    \large\textbf{Asignatura:} Filosofía Común - 4to Medio\\
-    \large\textbf{Profesora:} Claudia González
-}
+% --- DATOS DEL ENSAYO ---
+% Se definen aquí para que el paquete 'titling' los pueda usar
+\title{La Moral Cambiante y el Crimen Constante: El Caso del Tren de Aragua en Concepción como Síntoma de una Falsa Liberación}
+\author{Felipe Colli Olea}
 \date{18 de septiembre de 2025}
 
 % --- COMIENZO DEL DOCUMENTO ---
 \begin{document}
 
 % --- PORTADA (Página 1) ---
-\maketitle
-\thispagestyle{empty}
+\begin{titlepage}
+	\begin{center}
+		\includegraphics[width=2.5cm]{IN}
 
-\newpage
+		\vspace{1cm}
+		{\large Instituto Nacional General José Miguel Carrera\\Departamento de Filosofía}
+
+		\vspace{1cm}
+
+		{\Huge \bfseries Ensayo de Filosofía 4to Medio\par}
+
+		\vspace{1cm}
+
+		{\LARGE \itshape \thetitle\par} % <-- Corregido, ahora funciona
+
+		\vspace{3cm}
+
+		{\large \textbf{Nombre del Estudiante:} \theauthor\par} % <-- Corregido, ahora funciona
+		\vspace{0.2cm}
+		{\large \textbf{Curso:} 4to Medio H\par}
+		\vspace{0.2cm}
+		{\large \textbf{Asignatura:} Filosofía Común - 4to Medio\par}
+		\vspace{0.2cm}
+		{\large \textbf{Profesora:} Claudia González\par}
+
+		\vfill
+
+		{\large \today\par}
+		
+		\vspace{0.5cm}
+		\small{\copyright\ 2025, Felipe Colli Olea. Todos los derechos reservados.}
+
+	\end{center}
+\end{titlepage}
+
 % --- INTRODUCCIÓN (Página 2) ---
 \setcounter{page}{1}
 \section*{Introducción}
@@ -78,7 +106,7 @@ Sin embargo, esta postura se vuelve insostenible frente a la realidad de la inmi
 
 \subsection*{El Burdel como Escuela del Patriarcado: La Lección de Simone de Beauvoir}
 
-Para comprender la persistencia de la demanda masculina, es crucial analizar no solo sus manifestaciones actuales, sino su función en la reproducción cultural del patriarcado. La filósofa Simone de Beauvoir, en su obra monumental \textit{El Segundo Sexo}, ya identificaba el burdel como una institución pedagógica fundamental para la masculinidad. Ella observó que, tradicionalmente, eran los padres, tíos o hermanos mayores quienes llevaban a los jóvenes a los prostíbulos para su iniciación sexual [1]. Este acto no tenía como único fin la experiencia carnal, sino que constituía un rito de paso cargado de lecciones ideológicas.
+Para comprender la persistencia de la demanda masculina, es crucial analizar no solo sus manifestaciones actuales, sino su función en la reproducción cultural del patriarcado. La filósofa Simone de Beauvoir, en su obra monumental \textit{El Segundo Sexo}, ya identificaba el burdel como una institución pedagógica fundamental para la masculinidad. Ella observó que, tradicionalmente, eran los padres, tíos o hermanos mayores quienes llevaban a los jóvenes a los prostíbulos para su iniciación sexual \cite{beauvoir}. Este acto no tenía como único fin la experiencia carnal, sino que constituía un rito de paso cargado de lecciones ideológicas.
 
 La primera lección es la de la mujer como objeto. Al pagar por el acceso a un cuerpo, el joven aprende que la sexualidad femenina es una mercancía que puede ser adquirida, y que el deseo y la voluntad de la mujer son irrelevantes mientras se cumpla la transacción. La segunda lección es que el sexo es un acto de conquista y dominio, no de mutualidad. Es una prueba de virilidad en la que se demuestra ser ``hombre''. Finalmente, este rito crea un poderoso lazo homosocial: es una experiencia compartida entre hombres que los confirma como miembros del grupo dominante, unidos por el privilegio común de acceder a los cuerpos de las mujeres. Los clientes del Tren de Aragua, por tanto, no son una anomalía; son los graduados de esta ``escuela'' patriarcal, actuando bajo una lógica cultural profundamente arraigada que la sociedad chilena, a pesar de sus avances feministas, aún no ha logrado desmantelar.
 
@@ -87,9 +115,9 @@ La primera lección es la de la mujer como objeto. Al pagar por el acceso a un c
 
 \subsection*{La Demanda Institucionalizada: El Contrato Sexual y la Industria}
 
-Esta función cultural se sostiene sobre una estructura político-filosófica aún más profunda. La teórica Carole Pateman, en \textit{El Contrato Sexual}, argumenta que el ``contrato social'' que funda el Estado moderno está construido sobre un pacto previo y oculto: un contrato sexual entre hombres que les garantiza el acceso y control sobre los cuerpos de las mujeres. La prostitución, entonces, no es un accidente, sino una de las cláusulas más explícitas de este contrato patriarcal [6]. El Estado, al no abolir la prostitución, se convierte en el garante de este derecho masculino.
+Esta función cultural se sostiene sobre una estructura político-filosófica aún más profunda. La teórica Carole Pateman, en \textit{El Contrato Sexual}, argumenta que el ``contrato social'' que funda el Estado moderno está construido sobre un pacto previo y oculto: un contrato sexual entre hombres que les garantiza el acceso y control sobre los cuerpos de las mujeres. La prostitución, entonces, no es un accidente, sino una de las cláusulas más explícitas de este contrato patriarcal \cite{pateman}. El Estado, al no abolir la prostitución, se convierte en el garante de este derecho masculino.
 
-Sheila Jeffreys complementa esta idea al analizar cómo este contrato se manifiesta en la era neoliberal: ``la prostitución no es un empleo más, sino la institucionalización de la subordinación femenina'' [4]. El hombre que paga por los servicios de una mujer traficada por el Tren de Aragua no es ontológicamente diferente del que paga en un burdel regulado. Ambos están ejerciendo un privilegio garantizado por este pacto fundacional. El crimen de Concepción es simplemente la manifestación más cruda de una violencia que es estructural a toda la industria del sexo, una industria que el Estado, al tolerar y regular parcialmente, termina por amparar. Esta regulación no protege a las mujeres, sino que legitima y gestiona la explotación, convirtiendo al Estado en el último proxeneta, como argumenta Jeffreys.
+Sheila Jeffreys complementa esta idea al analizar cómo este contrato se manifiesta en la era neoliberal: ``la prostitución no es un empleo más, sino la institucionalización de la subordinación femenina'' \cite{jeffreys}. El hombre que paga por los servicios de una mujer traficada por el Tren de Aragua no es ontológicamente diferente del que paga en un burdel regulado. Ambos están ejerciendo un privilegio garantizado por este pacto fundacional. El crimen de Concepción es simplemente la manifestación más cruda de una violencia que es estructural a toda la industria del sexo, una industria que el Estado, al tolerar y regular parcialmente, termina por amparar. Esta regulación no protege a las mujeres, sino que legitima y gestiona la explotación, convirtiendo al Estado en el último proxeneta, como argumenta Jeffreys.
 
 % --- CONCLUSIÓN (Página 6) ---
 \newpage
@@ -105,21 +133,21 @@ En definitiva, siguiendo las tesis de De Beauvoir, Pateman y Jeffreys, y en cont
 \renewcommand{\refname}{Referencias}
 
 \begin{thebibliography}{9}
-\itemsep0em 
-	
+	\itemsep0em
+
 	\bibitem{beauvoir} De Beauvoir, S. (1949). \textit{El Segundo Sexo}.
-	
-	\bibitem{chv2024} Chilevisión. (2024). ``Chile y el alarmante aumento de casos de trata y explotación sexual''. \textit{Chilevisión Noticias}. Recuperado de chilevision.cl
-	
-	\bibitem{elpais2024} El País Chile. (2024, 18 de diciembre). ``Tren de Aragua en Chile: trata de personas en las cercanías de La Moneda''. \textit{El País Chile}. Recuperado de elpais.com
-	
+
+	\bibitem{chv2024} Chilevisión. (2024). ``Chile y el alarmante aumento de casos de trata y explotación sexual''. \textit{Chilevisión Noticias}. Recuperado de \href{https://www.chilevision.cl/noticias/reportajes/a-fondo/chile-y-el-alarmante-aumento-de-casos-de-trata-y-explotacion-sexual}{chilevision.cl}
+
+	\bibitem{elpais2024} El País Chile. (2024, 18 de diciembre). ``Tren de Aragua en Chile: trata de personas en las cercanías de La Moneda''. \textit{El País Chile}. Recuperado de \href{https://elpais.com/chile/2024-12-18/tren-de-aragua-en-chile-trata-de-personas-en-las-cercanias-de-la-moneda.html}{elpais.com}
+
 	\bibitem{jeffreys} Jeffreys, S. (2011). \textit{La industria de la vagina: La economía política de la comercialización global del sexo}. Buenos Aires: Paidós.
-	
-	\bibitem{latercera_indh} La Tercera. (s.f.). ``Trata de personas: INDH pide presidio perpetuo para cúpula del Tren de Aragua en Chile''. \textit{La Tercera}. Recuperado de latercera.com
-	
+
+	\bibitem{latercera_indh} La Tercera. (s.f.). ``Trata de personas: INDH pide presidio perpetuo para cúpula del Tren de Aragua en Chile''. \textit{La Tercera}. Recuperado de \href{https://www.latercera.com/nacional/noticia/trata-de-personas-indh-pide-presidio-perpetuo-para-cupula-del-tren-de-aragua-en-chile/}{latercera.com}
+
 	\bibitem{pateman} Pateman, C. (1988). \textit{The Sexual Contract}. Stanford: Stanford University Press.
-	
-	\bibitem{biobio2025} Radio Bío-Bío. (2025, 21 de agosto). ``Trata de personas en Concepción: tribunal entregará veredicto sobre grupo vinculado a Tren de Aragua''. \textit{BioBioChile.cl}. Recuperado de biobiochile.cl
+
+	\bibitem{biobio2025} Radio Bío-Bío. (2025, 21 de agosto). ``Trata de personas en Concepción: tribunal entregará veredicto sobre grupo vinculado a Tren de Aragua''. \textit{BioBioChile.cl}. Recuperado de \href{https://www.biobiochile.cl/noticias/nacional/region-del-bio-bio/2025/08/21/trata-de-personas-en-concepcion-tribunal-entregara-veredicto-sobre-grupo-vinculado-a-tren-de-aragua.shtml}{biobiochile.cl}
 
 \end{thebibliography}
 

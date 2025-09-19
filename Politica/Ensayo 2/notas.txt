@@ -1,0 +1,99 @@
+el estilo d epagina de portada y pie de pagina:
+\documentclass[12pt, letterpaper]{article}
+\usepackage[utf8]{inputenc} % Input encoding
+\usepackage[T1]{fontenc} % Font encoding
+\usepackage{amsmath} % Math symbols and environments
+\usepackage{amssymb} % More math symbols
+\usepackage{graphicx} % Include graphics
+\usepackage[spanish]{babel} % Spanish language support (ACTIVADO)
+\usepackage{tabularx}
+\usepackage{enumitem}
+
+% ----- PAQUETES DE MEJORA Y CORRECCIONES -----
+\usepackage{microtype} % Soluciona problemas de Overfull/Underfull hbox y mejora la tipografía
+\renewcommand{\arraystretch}{1.5} % Incrementa el espaciado vertical
+\graphicspath{ {./images/}}
+% --------------------------------------------
+
+% ----- PAQUETES Y CONFIGURACIÓN DE AUTORÍA Y MARCA DE PÁGINA -----
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,      % Activa los colores para los enlaces
+    linkcolor=black,        % Color para enlaces internos (índice, referencias)
+    filecolor=magenta,      % Color para enlaces a archivos locales
+    urlcolor=cyan,          % Color para enlaces web (href)
+    pdftitle={Apunte Completo: Probabilidad y Estadística},
+    pdfauthor={Felipe Colli Olea},
+    pdfsubject={Apunte de la asignatura para 4° Medio 2025},
+    pdfkeywords={probabilidad, estadistica, instituto nacional, felipe colli},
+    pdfcreator={pdfLaTeX},
+    pdfproducer={LaTeX with hyperref}
+}
+% --------------------------------------------------------------------------
+
+
+\begin{document}
+
+% --- CONFIGURACIÓN DEL PIE DE PÁGINA ---
+\pagestyle{fancy}
+\fancyhf{} % Limpia cabecera y pie de página
+\fancyfoot[C]{\footnotesize Apunte por Felipe Colli Olea -- Todos los derechos reservados.}
+\fancyfoot[R]{\thepage} % Número de página a la derecha
+\renewcommand{\headrulewidth}{0pt} % Sin línea en la cabecera
+% ---------------------------------------
+
+\begin{titlepage}
+	\centering
+	\includegraphics[width=2cm]{IN}\\[2cm]
+	\textsc{\LARGE  Instituto Nacional General José Miguel Carrera}\\[0.5cm]
+	\textsc{\Large Departamento de Matemáticas}\\[1.5cm]
+
+	\rule{\textwidth}{1.5pt}\vspace{0.4cm}
+	{\Huge \bfseries Apunte Completo: \\[0.5cm] Probabilidad y Estadística}\\[0.4cm]
+	\rule{\textwidth}{1.5pt}\\[1.5cm]
+
+	{\Large \textit{ Probabilidad y Estadística - Sección 4° Medio 2025}}\\[2cm]
+
+	\begin{minipage}{0.45\textwidth}
+		\begin{flushleft} \large
+			\textbf{Autor:}\\
+			Felipe Colli Olea
+		\end{flushleft}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\begin{flushright} \large
+			\textbf{Profesor:}\\
+			Sergio Díaz
+		\end{flushright}
+	\end{minipage}
+
+	\vfill
+	\copyright~2025, Felipe Colli Olea.
+\end{titlepage}
+
+\newpage
+\begin{abstract}
+	\noindent \textbf{Resumen} \\
+	Este apunte ofrece una introducción completa a los conceptos fundamentales de la probabilidad y la estadística. Comienza con la definición de términos esenciales como población, muestra, parámetro y estadígrafo, y la clasificación de variables en cualitativas y cuantitativas. Posteriormente, se profundiza en la estadística descriptiva, abordando las medidas de tendencia central (media, mediana, moda) y de dispersión (rango, varianza, desviación estándar), incluyendo sus propiedades y demostraciones matemáticas. El documento también explora diversas técnicas de muestreo, diferenciando entre métodos probabilísticos (aleatorio simple, estratificado, por conglomerados, sistemático) y no probabilísticos. Finalmente, se introduce la combinatoria mediante los principios aditivo y multiplicativo como base para el cálculo de probabilidades.
+\end{abstract}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.45\textwidth]{gatito}
+	\caption{Gatito para hacer bonito el apunte.}
+	\label{fig:gatito}
+\end{figure}
+
+\vfill % Empuja el bloque de la licencia al fondo de la página
+
+\begin{center}
+	\vspace{0.2cm} % Un pequeño espacio vertical
+	\parbox{0.8\textwidth}{\footnotesize \centering Esta obra está protegida por las leyes de derechos de autor. Todos los derechos están reservados. Queda prohibida la reproducción, distribución o modificación total o parcial de este documento sin la autorización explícita y por escrito del autor.}
+\end{center}
+\newpage
+\tableofcontents
+\newpage % Start sections on a new page after ToC
+
+\end{document}

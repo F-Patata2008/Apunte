@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.9.8)  22 SEP 2025 20:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.9.8)  22 SEP 2025 20:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -378,118 +378,91 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./images/IN.png>]
 
-[2{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.103 
-       [1]
+l.94 \newpage
+              [1{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 
-./Ensayo.tex:112: LaTeX Error: Unicode character ổ (U+1ED5)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.112 ...n 1986 se lanzó el proceso llamado Đổ
-                                                  i Mới (“renovación”...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-./Ensayo.tex:112: LaTeX Error: Unicode character ớ (U+1EDB)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.112 ... se lanzó el proceso llamado Đổi Mớ
-                                                  i (“renovación”), que...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.113 
-       [2]
+[2]
 
 [3]
 
 [4]
 
 [5]
+
+[6]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (245.42763pt too wide) in paragraph at lines 137--138
+Overfull \hbox (429.32373pt too wide) in paragraph at lines 139--140
+\T1/cmtt/m/n/12 worldbank . org / en / news / press-[]release / 2022 / 04 / 01 / lifting-[]800-[]million-[]people-[]out-[]of-[]poverty-[]new-[]report-[]looks-[]at-[]lessons-[]from-[]china-[]s-[]experience$[][] 
+ []
+
+
+Overfull \hbox (245.42763pt too wide) in paragraph at lines 145--146
 [][][]$\T1/cmtt/m/n/12 https : / / www . vietnam . vn / en / ky-[]tich-[]kinh-[]te-[]viet-[]nam-[]tang-[]truong-[]106-[]lan-[]dan-[]dau-[]asean-[]va-[]khat-[]vong-[]den-[]nam-[]2045$[][] 
  []
 
 
-Overfull \hbox (125.48332pt too wide) in paragraph at lines 138--139
+Overfull \hbox (125.48332pt too wide) in paragraph at lines 146--147
 [][][]$\T1/cmtt/m/n/12 https : / / en . vietnamplus . vn / multidimensional-[]poverty-[]rate-[]drops-[]to-[]below-[]1-[]in-[]2024-[]post307692 .
  []
 
 
-Overfull \hbox (291.31557pt too wide) in paragraph at lines 139--140
+Overfull \hbox (291.31557pt too wide) in paragraph at lines 147--148
 [][][]$\T1/cmtt/m/n/12 https : / / en . qdnd . vn / social-[]affairs / special-[]reports / poverty-[]in-[]vietnam-[]declines-[]substantially-[]over-[]past-[]decade-[]wb-[]540638$[][] 
  []
 
 
-Overfull \hbox (132.15681pt too wide) in paragraph at lines 140--141
+Overfull \hbox (132.15681pt too wide) in paragraph at lines 148--149
 [][][]$\T1/cmtt/m/n/12 https : / / e . vnexpress . net / news / news / vietnam-[]to-[]spend-[]3-[]3-[]bln-[]on-[]poverty-[]reduction-[]plan-[]4418366 .
  []
 
 
-Overfull \hbox (128.9451pt too wide) in paragraph at lines 148--149
+Overfull \hbox (128.9451pt too wide) in paragraph at lines 156--157
 []\T1/cmr/bx/n/12 (-20) Pobreza In-dia: [][]$\T1/cmtt/m/n/12 https : / / www . swissinfo . ch / spa / la-[]india-[]reduce-[]la-[]tasa-[]de-[]pobreza-[]extrema-[]al-[]5-[] %
  []
 
 
-Overfull \hbox (306.5834pt too wide) in paragraph at lines 149--150
+Overfull \hbox (306.5834pt too wide) in paragraph at lines 157--158
 []\T1/cmr/bx/n/12 (-20) Mortalidad in-fan-til: [][]$\T1/cmtt/m/n/12 https : / / themorningcontext . com / yesterday / how-[]kerala-[]brought-[]its-[]infant-[]mortality-[]rate-[]to-[]a-[]historic-[]low$[][] 
  []
 
 
-Overfull \hbox (329.26302pt too wide) in paragraph at lines 150--151
+Overfull \hbox (329.26302pt too wide) in paragraph at lines 158--159
 []\T1/cmr/bx/n/12 (-20) Esperanza de vi-da Ke-ra-la: [][]$\T1/cmtt/m/n/12 https : / / testbook . com / question-[]answer / the-[]average-[]life-[]expectancy-[]in-[]kerala-[]-[]67e26f4d17242a5156bd0b7b$[][] 
  []
 
 
-Overfull \hbox (391.23236pt too wide) in paragraph at lines 151--152
+
+[7]
+Overfull \hbox (391.23236pt too wide) in paragraph at lines 159--160
 []\T1/cmr/bx/n/12 (-20) Pobreza Ke-ra-la: [][]$\T1/cmtt/m/n/12 https : / / thesouthfirst . com / kerala / zero-[]extreme-[]poverty-[]keralas-[]vision-[]for-[]a-[]poverty-[]free-[]state-[]takes-[]shape-[]in-[]dharmadam/$[][] 
  []
 
 
-Overfull \hbox (414.96265pt too wide) in paragraph at lines 152--153
+Overfull \hbox (414.96265pt too wide) in paragraph at lines 160--161
 []\T1/cmr/bx/n/12 (-20) Alfabetizaci�n Ke-ra-la: [][]$\T1/cmtt/m/n/12 https : / / www . jagranjosh . com / general-[]knowledge / list-[]of-[]indian-[]states-[]with-[]highest-[]and-[]lowest-[]literacy-[]rate-[]1748938921-[]1$[][] 
  []
 
 
-Overfull \hbox (201.77058pt too wide) in paragraph at lines 153--154
+Overfull \hbox (201.77058pt too wide) in paragraph at lines 161--162
 []\T1/cmr/bx/n/12 (-20) Educaci�n/Activismo Ke-ra-la: [][]$\T1/cmtt/m/n/12 https : / / www . keralatourism . org / faq / why-[]is-[]the-[]literacy-[]rate-[]in-[]kerala-[]so-[]high$[][] 
  []
 
 
-Overfull \hbox (353.69374pt too wide) in paragraph at lines 155--156
+Overfull \hbox (353.69374pt too wide) in paragraph at lines 163--164
 []\T1/cmr/bx/n/12 (-20) Salud p�-bli-ca: [][]$\T1/cmtt/m/n/12 https : / / peoplesdispatch . org / 2025 / 02 / 17 / keralas-[]healthcare-[]revolution-[]a-[]triumph-[]over-[]corporate-[]greed-[]and-[]inequality/$[][] 
  []
 
 
 
-[6]
-
-[7] (./Ensayo.aux
+[8] (./Ensayo.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -501,18 +474,18 @@ Package rerunfilecheck Info: File `Ensayo.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 13469 strings out of 475068
- 214639 string characters out of 5764375
- 675495 words of memory out of 5000000
- 36183 multiletter control sequences out of 15000+600000
- 577727 words of font info for 130 fonts, out of 8000000 for 9000
+ 13479 strings out of 475068
+ 214763 string characters out of 5764375
+ 673556 words of memory out of 5000000
+ 36180 multiletter control sequences out of 15000+600000
+ 578904 words of font info for 136 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
- 75i,12n,79p,1243b,633s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on Ensayo.pdf (9 pages, 230804 bytes).
+ 75i,12n,79p,1243b,639s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on Ensayo.pdf (9 pages, 257995 bytes).
 PDF statistics:
- 155 PDF objects out of 1000 (max. 8388607)
- 113 compressed objects within 2 object streams
- 20 named destinations out of 1000 (max. 500000)
- 39430 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 166 PDF objects out of 1000 (max. 8388607)
+ 122 compressed objects within 2 object streams
+ 22 named destinations out of 1000 (max. 500000)
+ 41478 words of extra memory for PDF output out of 42996 (max. 10000000)
 

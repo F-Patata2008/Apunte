@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.9.8)  22 SEP 2025 20:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.9.8)  22 SEP 2025 20:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -340,18 +340,18 @@ Package rerunfilecheck Info: File `Ensayo.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 10920 strings out of 475068
- 171908 string characters out of 5764375
- 591028 words of memory out of 5000000
- 33799 multiletter control sequences out of 15000+600000
+ 10922 strings out of 475068
+ 171943 string characters out of 5764375
+ 591064 words of memory out of 5000000
+ 33800 multiletter control sequences out of 15000+600000
  565024 words of font info for 56 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
  69i,7n,79p,993b,461s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on Ensayo.pdf (7 pages, 93234 bytes).
+Output written on Ensayo.pdf (7 pages, 93662 bytes).
 PDF statistics:
- 96 PDF objects out of 1000 (max. 8388607)
- 74 compressed objects within 1 object stream
- 24 named destinations out of 1000 (max. 500000)
+ 100 PDF objects out of 1000 (max. 8388607)
+ 78 compressed objects within 1 object stream
+ 25 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

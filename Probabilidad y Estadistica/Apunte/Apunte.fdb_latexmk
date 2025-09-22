@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1757088666.80558 "Apunte.tex" "Apunte.pdf" "Apunte" 1757088669.5367 0
+["pdflatex"] 1758553313.49027 "Apunte.tex" "Apunte.pdf" "Apunte" 1758553316.83315 0
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1755987285 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1755987285 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1755987285 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -139,12 +139,12 @@
   "/usr/share/texmf-dist/tex/latex/tools/tabularx.sty" 1755987285 7243 e5dac1240636811edb77568b81818372 ""
   "/usr/share/texmf-dist/tex/latex/url/url.sty" 1755987285 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1755987285 42087 b0f9697c952c8f5a8eede4134282cb0d ""
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1756045669 5311557 9da84c45f5b388655502706482323571 ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1756045527 2081313 4db42119f07c1679ee4e4c3aaab5bc61 ""
-  "Apunte.aux" 1757088669.29038 17521 77f478724e5486747ee518244d64f053 "pdflatex"
-  "Apunte.out" 1757088669.29638 22070 3d56f4feb87f05f393b030f4e9d81a20 "pdflatex"
-  "Apunte.tex" 1757088662.84187 82392 bcc38370fb72acaa79c570edd306926e ""
-  "Apunte.toc" 1757088669.29738 10281 a5525a24751e4bc8f8c2e1833fe5d7f0 "pdflatex"
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1757380537 5311557 9da84c45f5b388655502706482323571 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1757380337 2081304 7d6458c40765e7b3dbe19463267caa67 ""
+  "Apunte.aux" 1758553316.55827 17771 6f3099afe190c54a7e2e43543dcc3e37 "pdflatex"
+  "Apunte.out" 1758553316.56527 22391 57a5b076ae51e6eeafe46e863a8ce8bc "pdflatex"
+  "Apunte.tex" 1758553309.19671 82754 03d8697dbbbd12038903c4e9e6a7c782 ""
+  "Apunte.toc" 1758553316.56627 10449 269f8da586f07fcc47ef4f7aeb1fc5f9 "pdflatex"
   "images/Gat.png" 1754952206 5909 08ee0e71bac1ef14ed650e4f47d7d9aa ""
   "images/IN.png" 1753454929.56759 7949 cc26bed184e5e1103c6a6f769f5412fa ""
   "images/MAS.png" 1755032422.05575 127399 4f2f0560c671bdbdc7aa00cf0f1969a7 ""

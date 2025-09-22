@@ -97,3 +97,5 @@
 \contentsline {section}{\numberline {18}05/09 - Ejercicios de Probabilidad Clásica}{55}{section.18}%
 \contentsline {subsection}{\numberline {18.1}Enunciados}{55}{subsection.18.1}%
 \contentsline {subsection}{\numberline {18.2}Soluciones Detalladas}{56}{subsection.18.2}%
+\contentsline {section}{\numberline {19}22/07 - Resolver Guia Probabilidad }{59}{section.19}%
+\contentsline {subsection}{\numberline {19.1}Notas}{59}{subsection.19.1}%

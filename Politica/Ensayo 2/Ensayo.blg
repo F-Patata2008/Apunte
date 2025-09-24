@@ -1,0 +1,14 @@
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is 'Ensayo.blg'
+[133] biber:342> INFO - === Wed Sep 24, 2025, 09:46:02
+[160] Biber.pm:421> INFO - Reading 'Ensayo.bcf'
+[279] Biber.pm:1002> INFO - Found 22 citekeys in bib section 0
+[315] Biber.pm:4487> INFO - Processing section 0
+[330] Biber.pm:4678> INFO - Looking for bibtex file 'bibliografia.bib' for section 0
+[332] bibtex.pm:1713> INFO - LaTeX decoding ...
+[354] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliografia.bib'
+[606] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[607] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[607] Biber.pm:4307> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'es-ES'
+[656] bbl.pm:676> INFO - Writing 'Ensayo.bbl' with encoding 'UTF-8'
+[668] bbl.pm:779> INFO - Output to Ensayo.bbl

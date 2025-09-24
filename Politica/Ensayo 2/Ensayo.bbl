@@ -1,0 +1,668 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{banco_mundial_sf_china}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=081c29fc27b70573aca57b57327d4b03}{%
+           family={{Banco Mundial}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{081c29fc27b70573aca57b57327d4b03}
+      \strng{fullhash}{081c29fc27b70573aca57b57327d4b03}
+      \strng{fullhashraw}{081c29fc27b70573aca57b57327d4b03}
+      \strng{bibnamehash}{081c29fc27b70573aca57b57327d4b03}
+      \strng{authorbibnamehash}{081c29fc27b70573aca57b57327d4b03}
+      \strng{authornamehash}{081c29fc27b70573aca57b57327d4b03}
+      \strng{authorfullhash}{081c29fc27b70573aca57b57327d4b03}
+      \strng{authorfullhashraw}{081c29fc27b70573aca57b57327d4b03}
+      \field{extraname}{1}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Datos sobre China}
+      \field{urlday}{24}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://datos.bancomundial.org/pais/china
+      \endverb
+      \verb{url}
+      \verb https://datos.bancomundial.org/pais/china
+      \endverb
+    \endentry
+    \entry{banco_mundial_sf_india}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=081c29fc27b70573aca57b57327d4b03}{%
+           family={{Banco Mundial}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{081c29fc27b70573aca57b57327d4b03}
+      \strng{fullhash}{081c29fc27b70573aca57b57327d4b03}
+      \strng{fullhashraw}{081c29fc27b70573aca57b57327d4b03}
+      \strng{bibnamehash}{081c29fc27b70573aca57b57327d4b03}
+      \strng{authorbibnamehash}{081c29fc27b70573aca57b57327d4b03}
+      \strng{authornamehash}{081c29fc27b70573aca57b57327d4b03}
+      \strng{authorfullhash}{081c29fc27b70573aca57b57327d4b03}
+      \strng{authorfullhashraw}{081c29fc27b70573aca57b57327d4b03}
+      \field{extraname}{2}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Esperanza de vida al nacer, total (años) - India}
+      \field{urlday}{24}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://datos.bancomundial.org/indicador/SP.DYN.LE00.IN?locations=IN
+      \endverb
+      \verb{url}
+      \verb https://datos.bancomundial.org/indicador/SP.DYN.LE00.IN?locations=IN
+      \endverb
+    \endentry
+    \entry{banco_mundial_2022}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=081c29fc27b70573aca57b57327d4b03}{%
+           family={{Banco Mundial}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{081c29fc27b70573aca57b57327d4b03}
+      \strng{fullhash}{081c29fc27b70573aca57b57327d4b03}
+      \strng{fullhashraw}{081c29fc27b70573aca57b57327d4b03}
+      \strng{bibnamehash}{081c29fc27b70573aca57b57327d4b03}
+      \strng{authorbibnamehash}{081c29fc27b70573aca57b57327d4b03}
+      \strng{authornamehash}{081c29fc27b70573aca57b57327d4b03}
+      \strng{authorfullhash}{081c29fc27b70573aca57b57327d4b03}
+      \strng{authorfullhashraw}{081c29fc27b70573aca57b57327d4b03}
+      \field{extraname}{3}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Lifting 800 Million People Out of Poverty – New Report Looks at Lessons from China’s Experience}
+      \field{urlday}{24}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.worldbank.org/en/news/press-release/2022/04/01/lifting-800-million-people-out-of-poverty-new-report-looks-at-lessons-from-china-s-experience
+      \endverb
+      \verb{url}
+      \verb https://www.worldbank.org/en/news/press-release/2022/04/01/lifting-800-million-people-out-of-poverty-new-report-looks-at-lessons-from-china-s-experience
+      \endverb
+    \endentry
+    \entry{bbc_news_2019}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=3bcfea2f189f0839ca5746e02b910cf8}{%
+           family={{BBC News}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{3bcfea2f189f0839ca5746e02b910cf8}
+      \strng{fullhash}{3bcfea2f189f0839ca5746e02b910cf8}
+      \strng{fullhashraw}{3bcfea2f189f0839ca5746e02b910cf8}
+      \strng{bibnamehash}{3bcfea2f189f0839ca5746e02b910cf8}
+      \strng{authorbibnamehash}{3bcfea2f189f0839ca5746e02b910cf8}
+      \strng{authornamehash}{3bcfea2f189f0839ca5746e02b910cf8}
+      \strng{authorfullhash}{3bcfea2f189f0839ca5746e02b910cf8}
+      \strng{authorfullhashraw}{3bcfea2f189f0839ca5746e02b910cf8}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{China at 70: How the Communist Party has survived and thrived}
+      \field{urlday}{24}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.bbc.com/news/world-asia-china-49631120
+      \endverb
+      \verb{url}
+      \verb https://www.bbc.com/news/world-asia-china-49631120
+      \endverb
+    \endentry
+    \entry{datosmacro_sf}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=9f5aea17f3ad9f3db77ca6158d99f817}{%
+           family={{DatosMacro Expansión}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{9f5aea17f3ad9f3db77ca6158d99f817}
+      \strng{fullhash}{9f5aea17f3ad9f3db77ca6158d99f817}
+      \strng{fullhashraw}{9f5aea17f3ad9f3db77ca6158d99f817}
+      \strng{bibnamehash}{9f5aea17f3ad9f3db77ca6158d99f817}
+      \strng{authorbibnamehash}{9f5aea17f3ad9f3db77ca6158d99f817}
+      \strng{authornamehash}{9f5aea17f3ad9f3db77ca6158d99f817}
+      \strng{authorfullhash}{9f5aea17f3ad9f3db77ca6158d99f817}
+      \strng{authorfullhashraw}{9f5aea17f3ad9f3db77ca6158d99f817}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{India: Economía y demografía}
+      \field{urlday}{24}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://datosmacro.expansion.com/paises/india
+      \endverb
+      \verb{url}
+      \verb https://datosmacro.expansion.com/paises/india
+      \endverb
+    \endentry
+    \entry{elamon_et_al_2021}{incollection}{}{}
+      \name{author}{3}{}{%
+        {{hash=61a704ab7481aa8d8a4b0b2e73fe73ed}{%
+           family={Elamon},
+           familyi={E\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8891473ba2d4188df506e0c39f7bb642}{%
+           family={Ramakrishnan},
+           familyi={R\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=c330dfaaa5b66e84864f229b7755ab03}{%
+           family={Harikrishnan},
+           familyi={H\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{8d28f22e4bf23008ea6b2e8fbaa84d56}
+      \strng{fullhash}{8d28f22e4bf23008ea6b2e8fbaa84d56}
+      \strng{fullhashraw}{8d28f22e4bf23008ea6b2e8fbaa84d56}
+      \strng{bibnamehash}{8d28f22e4bf23008ea6b2e8fbaa84d56}
+      \strng{authorbibnamehash}{8d28f22e4bf23008ea6b2e8fbaa84d56}
+      \strng{authornamehash}{8d28f22e4bf23008ea6b2e8fbaa84d56}
+      \strng{authorfullhash}{8d28f22e4bf23008ea6b2e8fbaa84d56}
+      \strng{authorfullhashraw}{8d28f22e4bf23008ea6b2e8fbaa84d56}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{25th year of People’s Plan Campaign in Kerala: Local governments and education}
+      \field{year}{2021}
+    \endentry
+    \entry{hobbes_1651}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=bc076c6f168060e74e9bd13a9e838f26}{%
+           family={Hobbes},
+           familyi={H\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{bc076c6f168060e74e9bd13a9e838f26}
+      \strng{fullhash}{bc076c6f168060e74e9bd13a9e838f26}
+      \strng{fullhashraw}{bc076c6f168060e74e9bd13a9e838f26}
+      \strng{bibnamehash}{bc076c6f168060e74e9bd13a9e838f26}
+      \strng{authorbibnamehash}{bc076c6f168060e74e9bd13a9e838f26}
+      \strng{authornamehash}{bc076c6f168060e74e9bd13a9e838f26}
+      \strng{authorfullhash}{bc076c6f168060e74e9bd13a9e838f26}
+      \strng{authorfullhashraw}{bc076c6f168060e74e9bd13a9e838f26}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Leviatán, o La materia, forma y poder de una república eclesiástica y civil}
+      \field{year}{1651}
+    \endentry
+    \entry{isaac_franke_2000}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=02f23c912d6f705ea43d105cd16087f8}{%
+           family={Isaac},
+           familyi={I\bibinitperiod},
+           given={T.\bibnamedelimi M.\bibnamedelimi T.},
+           giveni={T\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=edaf150681d9979541d644df5ad8b3c5}{%
+           family={Franke},
+           familyi={F\bibinitperiod},
+           given={R.\bibnamedelimi W.},
+           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{166c1850d5d9fb96cb4d45cac61576af}
+      \strng{fullhash}{166c1850d5d9fb96cb4d45cac61576af}
+      \strng{fullhashraw}{166c1850d5d9fb96cb4d45cac61576af}
+      \strng{bibnamehash}{166c1850d5d9fb96cb4d45cac61576af}
+      \strng{authorbibnamehash}{166c1850d5d9fb96cb4d45cac61576af}
+      \strng{authornamehash}{166c1850d5d9fb96cb4d45cac61576af}
+      \strng{authorfullhash}{166c1850d5d9fb96cb4d45cac61576af}
+      \strng{authorfullhashraw}{166c1850d5d9fb96cb4d45cac61576af}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Local democracy and development: The Kerala people's campaign for decentralized planning}
+      \field{year}{2000}
+    \endentry
+    \entry{jagran_josh_2024}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=133a174355719884436040ea0e40c0c5}{%
+           family={{Jagran Josh}},
+           familyi={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{133a174355719884436040ea0e40c0c5}
+      \strng{fullhash}{133a174355719884436040ea0e40c0c5}
+      \strng{fullhashraw}{133a174355719884436040ea0e40c0c5}
+      \strng{bibnamehash}{133a174355719884436040ea0e40c0c5}
+      \strng{authorbibnamehash}{133a174355719884436040ea0e40c0c5}
+      \strng{authornamehash}{133a174355719884436040ea0e40c0c5}
+      \strng{authorfullhash}{133a174355719884436040ea0e40c0c5}
+      \strng{authorfullhashraw}{133a174355719884436040ea0e40c0c5}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{List of Indian States with Highest and Lowest Literacy Rate 2024}
+      \field{urlday}{24}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.jagranjosh.com/general-knowledge/list-of-indian-states-with-highest-and-lowest-literacy-rate-1748938921-1
+      \endverb
+      \verb{url}
+      \verb https://www.jagranjosh.com/general-knowledge/list-of-indian-states-with-highest-and-lowest-literacy-rate-1748938921-1
+      \endverb
+    \endentry
+    \entry{keralatourism_sf}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=b0f6e85d9a0e8c72fac30ec419ca7019}{%
+           family={{Kerala Tourism}},
+           familyi={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{b0f6e85d9a0e8c72fac30ec419ca7019}
+      \strng{fullhash}{b0f6e85d9a0e8c72fac30ec419ca7019}
+      \strng{fullhashraw}{b0f6e85d9a0e8c72fac30ec419ca7019}
+      \strng{bibnamehash}{b0f6e85d9a0e8c72fac30ec419ca7019}
+      \strng{authorbibnamehash}{b0f6e85d9a0e8c72fac30ec419ca7019}
+      \strng{authornamehash}{b0f6e85d9a0e8c72fac30ec419ca7019}
+      \strng{authorfullhash}{b0f6e85d9a0e8c72fac30ec419ca7019}
+      \strng{authorfullhashraw}{b0f6e85d9a0e8c72fac30ec419ca7019}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Why is the literacy rate in Kerala so high?}
+      \field{urlday}{24}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.keralatourism.org/faq/why-is-the-literacy-rate-in-kerala-so-high
+      \endverb
+      \verb{url}
+      \verb https://www.keralatourism.org/faq/why-is-the-literacy-rate-in-kerala-so-high
+      \endverb
+    \endentry
+    \entry{marx_engels_1848}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=78ff8ae2ca82c3a680156682349d8533}{%
+           family={Marx},
+           familyi={M\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=241a42270a360a7488e9c76c6527d818}{%
+           family={Engels},
+           familyi={E\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{7810ceb1ded22e9f93982d43a04df920}
+      \strng{fullhash}{7810ceb1ded22e9f93982d43a04df920}
+      \strng{fullhashraw}{7810ceb1ded22e9f93982d43a04df920}
+      \strng{bibnamehash}{7810ceb1ded22e9f93982d43a04df920}
+      \strng{authorbibnamehash}{7810ceb1ded22e9f93982d43a04df920}
+      \strng{authornamehash}{7810ceb1ded22e9f93982d43a04df920}
+      \strng{authorfullhash}{7810ceb1ded22e9f93982d43a04df920}
+      \strng{authorfullhashraw}{7810ceb1ded22e9f93982d43a04df920}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Manifiesto Comunista}
+      \field{year}{1848}
+    \endentry
+    \entry{nhiem_2008}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=7bd63fd902b16c0c68d610dc6c0287ed}{%
+           family={Nhiệm},
+           familyi={N\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{7bd63fd902b16c0c68d610dc6c0287ed}
+      \strng{fullhash}{7bd63fd902b16c0c68d610dc6c0287ed}
+      \strng{fullhashraw}{7bd63fd902b16c0c68d610dc6c0287ed}
+      \strng{bibnamehash}{7bd63fd902b16c0c68d610dc6c0287ed}
+      \strng{authorbibnamehash}{7bd63fd902b16c0c68d610dc6c0287ed}
+      \strng{authornamehash}{7bd63fd902b16c0c68d610dc6c0287ed}
+      \strng{authorfullhash}{7bd63fd902b16c0c68d610dc6c0287ed}
+      \strng{authorfullhashraw}{7bd63fd902b16c0c68d610dc6c0287ed}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Giáo trình một số vấn đề về làng xã cổ truyền Việt Nam [Manual sobre algunos problemas de la aldea tradicional vietnamita]}
+      \field{year}{2008}
+    \endentry
+    \entry{qdnd_2023}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=46a14b320499b6c9e537d5a79cf2c5f9}{%
+           family={{QDND}},
+           familyi={Q\bibinitperiod}}}%
+      }
+      \strng{namehash}{46a14b320499b6c9e537d5a79cf2c5f9}
+      \strng{fullhash}{46a14b320499b6c9e537d5a79cf2c5f9}
+      \strng{fullhashraw}{46a14b320499b6c9e537d5a79cf2c5f9}
+      \strng{bibnamehash}{46a14b320499b6c9e537d5a79cf2c5f9}
+      \strng{authorbibnamehash}{46a14b320499b6c9e537d5a79cf2c5f9}
+      \strng{authornamehash}{46a14b320499b6c9e537d5a79cf2c5f9}
+      \strng{authorfullhash}{46a14b320499b6c9e537d5a79cf2c5f9}
+      \strng{authorfullhashraw}{46a14b320499b6c9e537d5a79cf2c5f9}
+      \field{sortinit}{Q}
+      \field{sortinithash}{ce69a400a872ddd02ee7fdb3b38c6abd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Poverty in Vietnam declines substantially over past decade}
+      \field{urlday}{24}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://en.qdnd.vn/social-affairs/special-reports/poverty-in-vietnam-declines-substantially-over-past-decade-wb-540638
+      \endverb
+      \verb{url}
+      \verb https://en.qdnd.vn/social-affairs/special-reports/poverty-in-vietnam-declines-substantially-over-past-decade-wb-540638
+      \endverb
+    \endentry
+    \entry{testbook_sf}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=142b20699a5b6f6cb9af1378918ff6f1}{%
+           family={{Testbook}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{142b20699a5b6f6cb9af1378918ff6f1}
+      \strng{fullhash}{142b20699a5b6f6cb9af1378918ff6f1}
+      \strng{fullhashraw}{142b20699a5b6f6cb9af1378918ff6f1}
+      \strng{bibnamehash}{142b20699a5b6f6cb9af1378918ff6f1}
+      \strng{authorbibnamehash}{142b20699a5b6f6cb9af1378918ff6f1}
+      \strng{authornamehash}{142b20699a5b6f6cb9af1378918ff6f1}
+      \strng{authorfullhash}{142b20699a5b6f6cb9af1378918ff6f1}
+      \strng{authorfullhashraw}{142b20699a5b6f6cb9af1378918ff6f1}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The average life expectancy in Kerala is...}
+      \field{urlday}{24}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://testbook.com/question-answer/the-average-life-expectancy-in-kerala--67e26f4d17242a5156bd0b7b
+      \endverb
+      \verb{url}
+      \verb https://testbook.com/question-answer/the-average-life-expectancy-in-kerala--67e26f4d17242a5156bd0b7b
+      \endverb
+    \endentry
+    \entry{themorningcontext_2023}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=e23fb12b5077fe4e01b025940669d1d9}{%
+           family={{The Morning Context}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{e23fb12b5077fe4e01b025940669d1d9}
+      \strng{fullhash}{e23fb12b5077fe4e01b025940669d1d9}
+      \strng{fullhashraw}{e23fb12b5077fe4e01b025940669d1d9}
+      \strng{bibnamehash}{e23fb12b5077fe4e01b025940669d1d9}
+      \strng{authorbibnamehash}{e23fb12b5077fe4e01b025940669d1d9}
+      \strng{authornamehash}{e23fb12b5077fe4e01b025940669d1d9}
+      \strng{authorfullhash}{e23fb12b5077fe4e01b025940669d1d9}
+      \strng{authorfullhashraw}{e23fb12b5077fe4e01b025940669d1d9}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{How Kerala brought its infant mortality rate to a historic low}
+      \field{urlday}{24}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://themorningcontext.com/yesterday/how-kerala-brought-its-infant-mortality-rate-to-a-historic-low
+      \endverb
+      \verb{url}
+      \verb https://themorningcontext.com/yesterday/how-kerala-brought-its-infant-mortality-rate-to-a-historic-low
+      \endverb
+    \endentry
+    \entry{thesouthfirst_2024}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=a622d4fef532395f1b61edaa3ac0b614}{%
+           family={{The South First}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{a622d4fef532395f1b61edaa3ac0b614}
+      \strng{fullhash}{a622d4fef532395f1b61edaa3ac0b614}
+      \strng{fullhashraw}{a622d4fef532395f1b61edaa3ac0b614}
+      \strng{bibnamehash}{a622d4fef532395f1b61edaa3ac0b614}
+      \strng{authorbibnamehash}{a622d4fef532395f1b61edaa3ac0b614}
+      \strng{authornamehash}{a622d4fef532395f1b61edaa3ac0b614}
+      \strng{authorfullhash}{a622d4fef532395f1b61edaa3ac0b614}
+      \strng{authorfullhashraw}{a622d4fef532395f1b61edaa3ac0b614}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Zero extreme poverty: Kerala’s vision for a poverty-free state takes shape}
+      \field{urlday}{24}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://thesouthfirst.com/kerala/zero-extreme-poverty-keralas-vision-for-a-poverty-free-state-takes-shape-in-dharmadam/
+      \endverb
+      \verb{url}
+      \verb https://thesouthfirst.com/kerala/zero-extreme-poverty-keralas-vision-for-a-poverty-free-state-takes-shape-in-dharmadam/
+      \endverb
+    \endentry
+    \entry{tsai_2002}{incollection}{}{}
+      \name{author}{1}{}{%
+        {{hash=e3b94b7510ecf3971687b9d5103f8000}{%
+           family={Tsai},
+           familyi={T\bibinitperiod},
+           given={L.\bibnamedelimi L.},
+           giveni={L\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{e3b94b7510ecf3971687b9d5103f8000}
+      \strng{fullhash}{e3b94b7510ecf3971687b9d5103f8000}
+      \strng{fullhashraw}{e3b94b7510ecf3971687b9d5103f8000}
+      \strng{bibnamehash}{e3b94b7510ecf3971687b9d5103f8000}
+      \strng{authorbibnamehash}{e3b94b7510ecf3971687b9d5103f8000}
+      \strng{authornamehash}{e3b94b7510ecf3971687b9d5103f8000}
+      \strng{authorfullhash}{e3b94b7510ecf3971687b9d5103f8000}
+      \strng{authorfullhashraw}{e3b94b7510ecf3971687b9d5103f8000}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Cadres, temple and lineage institutions, and governance in rural China}
+      \field{year}{2002}
+    \endentry
+    \entry{vietnamvn_2024}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=1b68ccea1dcc885db8efe6b90c94fd42}{%
+           family={{Vietnam.vn}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{1b68ccea1dcc885db8efe6b90c94fd42}
+      \strng{fullhash}{1b68ccea1dcc885db8efe6b90c94fd42}
+      \strng{fullhashraw}{1b68ccea1dcc885db8efe6b90c94fd42}
+      \strng{bibnamehash}{1b68ccea1dcc885db8efe6b90c94fd42}
+      \strng{authorbibnamehash}{1b68ccea1dcc885db8efe6b90c94fd42}
+      \strng{authornamehash}{1b68ccea1dcc885db8efe6b90c94fd42}
+      \strng{authorfullhash}{1b68ccea1dcc885db8efe6b90c94fd42}
+      \strng{authorfullhashraw}{1b68ccea1dcc885db8efe6b90c94fd42}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Vietnam’s economic miracle: 106-fold growth, leading ASEAN, and aspirations for 2045}
+      \field{urlday}{24}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.vietnam.vn/en/ky-tich-kinh-te-viet-nam-tang-truong-106-lan-dan-dau-asean-va-khat-vong-den-nam-2045
+      \endverb
+      \verb{url}
+      \verb https://www.vietnam.vn/en/ky-tich-kinh-te-viet-nam-tang-truong-106-lan-dan-dau-asean-va-khat-vong-den-nam-2045
+      \endverb
+    \endentry
+    \entry{vietnamplus_2024}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=dc6d1c82340341476c7c37382e4ce02e}{%
+           family={{VietnamPlus}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{dc6d1c82340341476c7c37382e4ce02e}
+      \strng{fullhash}{dc6d1c82340341476c7c37382e4ce02e}
+      \strng{fullhashraw}{dc6d1c82340341476c7c37382e4ce02e}
+      \strng{bibnamehash}{dc6d1c82340341476c7c37382e4ce02e}
+      \strng{authorbibnamehash}{dc6d1c82340341476c7c37382e4ce02e}
+      \strng{authornamehash}{dc6d1c82340341476c7c37382e4ce02e}
+      \strng{authorfullhash}{dc6d1c82340341476c7c37382e4ce02e}
+      \strng{authorfullhashraw}{dc6d1c82340341476c7c37382e4ce02e}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Multidimensional poverty rate drops to below 1\% in 2024}
+      \field{urlday}{24}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://en.vietnamplus.vn/multidimensional-poverty-rate-drops-to-below-1-in-2024-post307692.vnp
+      \endverb
+      \verb{url}
+      \verb https://en.vietnamplus.vn/multidimensional-poverty-rate-drops-to-below-1-in-2024-post307692.vnp
+      \endverb
+    \endentry
+    \entry{vneconomy_2021}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=fde54f191f18883da1bcb7d534df3e8c}{%
+           family={{VnEconomy}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{fde54f191f18883da1bcb7d534df3e8c}
+      \strng{fullhash}{fde54f191f18883da1bcb7d534df3e8c}
+      \strng{fullhashraw}{fde54f191f18883da1bcb7d534df3e8c}
+      \strng{bibnamehash}{fde54f191f18883da1bcb7d534df3e8c}
+      \strng{authorbibnamehash}{fde54f191f18883da1bcb7d534df3e8c}
+      \strng{authornamehash}{fde54f191f18883da1bcb7d534df3e8c}
+      \strng{authorfullhash}{fde54f191f18883da1bcb7d534df3e8c}
+      \strng{authorfullhashraw}{fde54f191f18883da1bcb7d534df3e8c}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Progress in economic reform}
+      \field{urlday}{24}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://en.vneconomy.vn/progress-in-economic-reform.htm
+      \endverb
+      \verb{url}
+      \verb https://en.vneconomy.vn/progress-in-economic-reform.htm
+      \endverb
+    \endentry
+    \entry{wikipedia_sf_activism}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{%
+           family={{Wikipedia}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhashraw}{9c677286866aad38f8e9b660f5411814}
+      \strng{bibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorfullhashraw}{9c677286866aad38f8e9b660f5411814}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Political activism in Kerala}
+      \field{urlday}{24}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/Political_activism_in_Kerala
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Political_activism_in_Kerala
+      \endverb
+    \endentry
+    \entry{wu_2023}{incollection}{}{}
+      \name{author}{1}{}{%
+        {{hash=a86e97589af4ebc957e84399c0ba5a1c}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{a86e97589af4ebc957e84399c0ba5a1c}
+      \strng{fullhash}{a86e97589af4ebc957e84399c0ba5a1c}
+      \strng{fullhashraw}{a86e97589af4ebc957e84399c0ba5a1c}
+      \strng{bibnamehash}{a86e97589af4ebc957e84399c0ba5a1c}
+      \strng{authorbibnamehash}{a86e97589af4ebc957e84399c0ba5a1c}
+      \strng{authornamehash}{a86e97589af4ebc957e84399c0ba5a1c}
+      \strng{authorfullhash}{a86e97589af4ebc957e84399c0ba5a1c}
+      \strng{authorfullhashraw}{a86e97589af4ebc957e84399c0ba5a1c}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The origin, fission, and social structure of a lineage village: Based on empirical study}
+      \field{year}{2023}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

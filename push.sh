@@ -1,11 +1,11 @@
 #!/bin/zsh
 
 cd "$(dirname "$0")"  # Ir al directorio donde está el script
-
 log_file="$PWD/push.log"
 timestamp="$(date '+%Y-%m-%d %H:%M:%S')"
 
 {
+    clear
   echo "========== $timestamp =========="
 
   git add .

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.9.8)  22 SEP 2025 20:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.9.8)  24 SEP 2025 09:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -378,141 +378,339 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./images/IN.png>]
 
+LaTeX Warning: Citation `marx_engels_1848' on page 1 undefined on input line 94.
+
+
+
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.94 \newpage
-              [1{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+l.95 
+      [1{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 
 [2]
 
+LaTeX Warning: Citation `bbc_news_2019' on page 3 undefined on input line 100.
+
+
+LaTeX Warning: Citation `banco_mundial_2022' on page 3 undefined on input line 105.
+
+
+LaTeX Warning: Citation `banco_mundial_sf_china' on page 3 undefined on input line 107.
+
+
+
 [3]
+
+LaTeX Warning: Citation `hobbes_1651' on page 4 undefined on input line 112.
+
+
+LaTeX Warning: Citation `vneconomy_2021' on page 4 undefined on input line 115.
+
+
+LaTeX Warning: Citation `vietnamvn_2024' on page 4 undefined on input line 115.
+
+
+LaTeX Warning: Citation `vietnamplus_2024' on page 4 undefined on input line 117.
+
+
+LaTeX Warning: Citation `qdnd_2023' on page 4 undefined on input line 117.
+
+
 
 [4]
 
+LaTeX Warning: Citation `datosmacro_sf' on page 5 undefined on input line 126.
+
+
+LaTeX Warning: Citation `banco_mundial_sf_india' on page 5 undefined on input line 126.
+
+
+LaTeX Warning: Citation `datosmacro_sf' on page 5 undefined on input line 126.
+
+
+
 [5]
 
+LaTeX Warning: Citation `testbook_sf' on page 6 undefined on input line 128.
+
+
+LaTeX Warning: Citation `thesouthfirst_2024' on page 6 undefined on input line 128.
+
+
+LaTeX Warning: Citation `themorningcontext_2023' on page 6 undefined on input line 128.
+
+
+LaTeX Warning: Citation `jagran_josh_2024' on page 6 undefined on input line 128.
+
+
+LaTeX Warning: Citation `wikipedia_sf_activism' on page 6 undefined on input line 130.
+
+
+LaTeX Warning: Citation `keralatourism_sf' on page 6 undefined on input line 130.
+
+
+LaTeX Warning: Citation `tsai_2002' on page 6 undefined on input line 135.
+
+
+LaTeX Warning: Citation `wu_2023' on page 6 undefined on input line 135.
+
+
+LaTeX Warning: Citation `nhiem_2008' on page 6 undefined on input line 135.
+
+
+LaTeX Warning: Citation `isaac_franke_2000' on page 6 undefined on input line 135.
+
+
+LaTeX Warning: Citation `elamon_et_al_2021' on page 6 undefined on input line 135.
+
+
+
 [6]
+
+[7]
+
+[8]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
 []\T1/cmr/m/n/12 (+20) Banco Mun-dial. (2022). \T1/cmr/m/it/12 (+20) Lif-ting 800 Mi-llion Peo-ple Out of Po-verty
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
 \T1/cmr/m/it/12 (+20) ^^U New Re-port Looks at Les-sons from Chi-na's Ex-pe-rien-ce\T1/cmr/m/n/12 (+20) . Re-cu-pe-ra-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
 \T1/cmr/m/n/12 (+20) do de [][]$\T1/cmtt/m/n/12 https : / / www . worldbank . org / en / news / press-[]release / 2022 / 04 / 01 /
  []
 
 
-Overfull \hbox (133.75179pt too wide) in paragraph at lines 140--141
+Overfull \hbox (133.75179pt too wide) in paragraph at lines 147--148
 \T1/cmtt/m/n/12 lifting-[]800-[]million-[]people-[]out-[]of-[]poverty-[]new-[]report-[]looks-[]at-[]lessons-[]from-[]china-[]s-[]experience$[][] 
  []
 
 
-Underfull \hbox (badness 1622) in paragraph at lines 158--159
+Underfull \hbox (badness 1622) in paragraph at lines 171--172
 []\T1/cmr/m/n/12 (+20) Jagran Josh. (2024). \T1/cmr/m/it/12 (+20) List of In-dian Sta-tes with Highest and Lo-west Li-te-racy
  []
 
 
-Underfull \hbox (badness 6125) in paragraph at lines 158--159
+Underfull \hbox (badness 6125) in paragraph at lines 171--172
 \T1/cmr/m/it/12 (+20) Ra-te 2024\T1/cmr/m/n/12 (+20) . Re-cu-pe-ra-do de [][]$\T1/cmtt/m/n/12 https : / / www . jagranjosh . com / general-[]knowledge /
  []
 
 
-Overfull \hbox (1.79977pt too wide) in paragraph at lines 158--159
+Overfull \hbox (1.79977pt too wide) in paragraph at lines 171--172
 \T1/cmtt/m/n/12 list-[]of-[]indian-[]states-[]with-[]highest-[]and-[]lowest-[]literacy-[]rate-[]1748938921-[]1$[][] 
  []
 
 
-Underfull \hbox (badness 6348) in paragraph at lines 164--165
+
+[9]
+
+./Ensayo.tex:183: LaTeX Error: Unicode character ệ (U+1EC7)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.183 	Nhiệ
+             m, V. (2008). \textit{Giáo trình một số vấn đề về ...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Ensayo.tex:183: LaTeX Error: Unicode character ộ (U+1ED9)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.183 ... về làng xã cổ truyền Việt Nam}
+                                                   [Manual sobre algunos pro...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Ensayo.tex:183: LaTeX Error: Unicode character ố (U+1ED1)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.183 ... về làng xã cổ truyền Việt Nam}
+                                                   [Manual sobre algunos pro...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Ensayo.tex:183: LaTeX Error: Unicode character ấ (U+1EA5)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.183 ... về làng xã cổ truyền Việt Nam}
+                                                   [Manual sobre algunos pro...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Ensayo.tex:183: LaTeX Error: Unicode character ề (U+1EC1)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.183 ... về làng xã cổ truyền Việt Nam}
+                                                   [Manual sobre algunos pro...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Ensayo.tex:183: LaTeX Error: Unicode character ề (U+1EC1)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.183 ... về làng xã cổ truyền Việt Nam}
+                                                   [Manual sobre algunos pro...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Ensayo.tex:183: LaTeX Error: Unicode character ổ (U+1ED5)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.183 ... về làng xã cổ truyền Việt Nam}
+                                                   [Manual sobre algunos pro...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Ensayo.tex:183: LaTeX Error: Unicode character ề (U+1EC1)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.183 ... về làng xã cổ truyền Việt Nam}
+                                                   [Manual sobre algunos pro...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Ensayo.tex:183: LaTeX Error: Unicode character ệ (U+1EC7)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.183 ... về làng xã cổ truyền Việt Nam}
+                                                   [Manual sobre algunos pro...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+Underfull \hbox (badness 6348) in paragraph at lines 186--187
 []\T1/cmr/m/n/12 (+20) QDND. (2023). \T1/cmr/m/it/12 (+20) Po-verty in Viet-nam de-cli-nes subs-tan-tially over past de-ca-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--165
+Underfull \hbox (badness 10000) in paragraph at lines 186--187
 \T1/cmr/m/it/12 (+20) de\T1/cmr/m/n/12 (+20) . Re-cu-pe-ra-do de [][]$\T1/cmtt/m/n/12 https : / / en . qdnd . vn / social-[]affairs / special-[]reports /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
 []\T1/cmr/m/n/12 (+20) Testbook. (s.f.). \T1/cmr/m/it/12 (+20) The ave-ra-ge li-fe ex-pec-tancy in Ke-ra-la
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
 \T1/cmr/m/it/12 (+20) is... \T1/cmr/m/n/12 (+20) Re-cu-pe-ra-do de [][]$\T1/cmtt/m/n/12 https : / / testbook . com / question-[]answer /
  []
 
 
-
-[7]
-Underfull \hbox (badness 2384) in paragraph at lines 170--171
+Underfull \hbox (badness 2384) in paragraph at lines 192--193
 []\T1/cmr/m/n/12 (+20) The Mor-ning Con-text. (2023). \T1/cmr/m/it/12 (+20) How Ke-ra-la brought its in-fant mor-ta-lity ra-te
  []
 
 
-Underfull \hbox (badness 1762) in paragraph at lines 170--171
+Underfull \hbox (badness 1762) in paragraph at lines 192--193
 \T1/cmr/m/it/12 (+20) to a his-to-ric low\T1/cmr/m/n/12 (+20) . Re-cu-pe-ra-do de [][]$\T1/cmtt/m/n/12 https : / / themorningcontext . com / yesterday /
  []
 
 
-Underfull \hbox (badness 1178) in paragraph at lines 173--174
+Underfull \hbox (badness 1178) in paragraph at lines 195--196
 []\T1/cmr/m/n/12 (+20) The South First. (2024). \T1/cmr/m/it/12 (+20) Ze-ro ex-tre-me po-verty: Ke-ra-la's vi-sion for a poverty-
  []
 
 
-Underfull \hbox (badness 7168) in paragraph at lines 173--174
+Underfull \hbox (badness 7168) in paragraph at lines 195--196
 \T1/cmr/m/it/12 (+20) free sta-te ta-kes sha-pe\T1/cmr/m/n/12 (+20) . Re-cu-pe-ra-do de [][]$\T1/cmtt/m/n/12 https : / / thesouthfirst . com / kerala /
  []
 
 
-Overfull \hbox (88.30264pt too wide) in paragraph at lines 173--174
+Overfull \hbox (88.30264pt too wide) in paragraph at lines 195--196
 \T1/cmtt/m/n/12 zero-[]extreme-[]poverty-[]keralas-[]vision-[]for-[]a-[]poverty-[]free-[]state-[]takes-[]shape-[]in-[]dharmadam/$[][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--177
+Underfull \hbox (badness 10000) in paragraph at lines 201--202
 []\T1/cmr/m/n/12 (+20) Vietnam.vn. (2024). \T1/cmr/m/it/12 (+20) Viet-nam's eco-no-mic mi-ra-cle: 106-fold growth, lea-ding
  []
 
 
-Overfull \hbox (79.69035pt too wide) in paragraph at lines 176--177
+Overfull \hbox (79.69035pt too wide) in paragraph at lines 201--202
 \T1/cmtt/m/n/12 ky-[]tich-[]kinh-[]te-[]viet-[]nam-[]tang-[]truong-[]106-[]lan-[]dan-[]dau-[]asean-[]va-[]khat-[]vong-[]den-[]nam-[]2045$[][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 179--180
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
 []\T1/cmr/m/n/12 (+20) VietnamPlus. (2024). \T1/cmr/m/it/12 (+20) Mul-ti-di-men-sio-nal po-verty ra-te drops to be-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 179--180
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
 \T1/cmr/m/it/12 (+20) low 1$ $% in 2024\T1/cmr/m/n/12 (+20) . Re-cu-pe-ra-do de [][]$\T1/cmtt/m/n/12 https : / / en . vietnamplus . vn /
  []
 
 
-Underfull \hbox (badness 1478) in paragraph at lines 182--183
+Underfull \hbox (badness 1478) in paragraph at lines 207--208
 []\T1/cmr/m/n/12 (+20) VnEconomy. (2021). \T1/cmr/m/it/12 (+20) Pro-gress in eco-no-mic re-form\T1/cmr/m/n/12 (+20) . Re-cu-pe-ra-do de [][]$\T1/cmtt/m/n/12 https : / / en .
  []
 
 
-Underfull \hbox (badness 2368) in paragraph at lines 188--189
+Underfull \hbox (badness 2368) in paragraph at lines 213--214
 []\T1/cmr/m/n/12 (+20) Wikipedia. (s.f.). \T1/cmr/m/it/12 (+20) Chi-ne-se Com-mu-nist Re-vo-lu-tion\T1/cmr/m/n/12 (+20) . Re-cu-pe-ra-do de [][]$\T1/cmtt/m/n/12 https : / / en .
  []
 
 
 
-[8] (./Ensayo.aux
+[10]
+
+[11] (./Ensayo.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -520,22 +718,29 @@ LaTeX Info: Redefining \% on input line 11.
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `Ensayo.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 13509 strings out of 475068
- 215562 string characters out of 5764375
- 671284 words of memory out of 5000000
- 36201 multiletter control sequences out of 15000+600000
- 578749 words of font info for 133 fonts, out of 8000000 for 9000
+ 13545 strings out of 475068
+ 215990 string characters out of 5764375
+ 672284 words of memory out of 5000000
+ 36218 multiletter control sequences out of 15000+600000
+ 577568 words of font info for 136 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
- 75i,11n,79p,1243b,641s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on Ensayo.pdf (9 pages, 273795 bytes).
+ 75i,11n,79p,1704b,641s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on Ensayo.pdf (12 pages, 273604 bytes).
 PDF statistics:
- 208 PDF objects out of 1000 (max. 8388607)
- 164 compressed objects within 2 object streams
- 37 named destinations out of 1000 (max. 500000)
- 41478 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 202 PDF objects out of 1000 (max. 8388607)
+ 159 compressed objects within 2 object streams
+ 48 named destinations out of 1000 (max. 500000)
+ 37382 words of extra memory for PDF output out of 42996 (max. 10000000)
 

@@ -5,7 +5,6 @@ log_file="$PWD/push.log"
 timestamp="$(date '+%Y-%m-%d %H:%M:%S')"
 
 {
-    clear
   echo "========== $timestamp =========="
 
   git add .
@@ -38,7 +37,6 @@ timestamp="$(date '+%Y-%m-%d %H:%M:%S')"
 
 } | tee -a "$log_file"
 git status > /dev/null
-clear
 
 
 

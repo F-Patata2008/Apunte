@@ -323,6 +323,34 @@
       \verb https://www.keralatourism.org/faq/why-is-the-literacy-rate-in-kerala-so-high
       \endverb
     \endentry
+    \entry{marx_engels_1848}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=af80d32a7d375e934f94bdfb27bf2999}{%
+           family={Marx},
+           familyi={M\bibinitperiod},
+           given={Karl},
+           giveni={K\bibinitperiod}}}%
+        {{hash=fce08a4b30fb50f3020b2fdfeb8aa2e6}{%
+           family={Engels},
+           familyi={E\bibinitperiod},
+           given={Friedrich},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{d64f9a685d9554a1ba64bb1121d77c37}
+      \strng{fullhash}{d64f9a685d9554a1ba64bb1121d77c37}
+      \strng{fullhashraw}{d64f9a685d9554a1ba64bb1121d77c37}
+      \strng{bibnamehash}{d64f9a685d9554a1ba64bb1121d77c37}
+      \strng{authorbibnamehash}{d64f9a685d9554a1ba64bb1121d77c37}
+      \strng{authornamehash}{d64f9a685d9554a1ba64bb1121d77c37}
+      \strng{authorfullhash}{d64f9a685d9554a1ba64bb1121d77c37}
+      \strng{authorfullhashraw}{d64f9a685d9554a1ba64bb1121d77c37}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Manifiesto Comunista}
+      \field{year}{1848}
+    \endentry
     \entry{nhiem_2008}{book}{}{}
       \name{author}{1}{}{%
         {{hash=a2468357ff5953e1a14460dea8a13bdc}{%
@@ -651,7 +679,6 @@
       \range{pages}{10}
     \endentry
   \enddatalist
-  \missing{marx_engels_18laberinto8}
 \endrefsection
 \endinput
 

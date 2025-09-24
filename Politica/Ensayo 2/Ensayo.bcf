@@ -2375,7 +2375,7 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">bibliografia.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1" intorder="1">marx_engels_18laberinto8</bcf:citekey>
+    <bcf:citekey order="1" intorder="1">marx_engels_1848</bcf:citekey>
     <bcf:citekey order="2" intorder="1">bbc_news_2019</bcf:citekey>
     <bcf:citekey order="3" intorder="1">banco_mundial_2022</bcf:citekey>
     <bcf:citekey order="4" intorder="1">banco_mundial_sf_china</bcf:citekey>

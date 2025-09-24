@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.9.8)  24 SEP 2025 10:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.9.8)  24 SEP 2025 10:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -339,21 +339,17 @@ File: biblatex.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
 \biburllcskip=\muskip21
 \c@smartand=\count410
 )
-Package biblatex Info: Trying to load bibliography style 'verbose-trad1'...
-Package biblatex Info: ... file 'verbose-trad1.bbx' found.
- (/usr/share/texmf-dist/tex/latex/biblatex/bbx/verbose-trad1.bbx
-File: verbose-trad1.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
-Package biblatex Info: Trying to load bibliography style 'authortitle'...
-Package biblatex Info: ... file 'authortitle.bbx' found.
- (/usr/share/texmf-dist/tex/latex/biblatex/bbx/authortitle.bbx
-File: authortitle.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+ (/usr/share/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  (/usr/share/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
 \c@bbx:relatedcount=\count411
 \c@bbx:relatedtotal=\count412
-)))
+))
 Package biblatex Info: Trying to load citation style 'verbose-trad1'...
 Package biblatex Info: ... file 'verbose-trad1.cbx' found.
  (/usr/share/texmf-dist/tex/latex/biblatex/cbx/verbose-trad1.cbx
@@ -519,199 +515,4 @@ LaTeX Font Info:    ... okay on input line 44.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
 LaTeX Font Info:    ... okay on input line 44.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Info: Redefining \. on input line 44.
-LaTeX Info: Redefining \% on input line 44.
- (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count425
-\scratchdimen=\dimen159
-\scratchbox=\box55
-\nofMPsegments=\count426
-\nofMParguments=\count427
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count428
-\MPscratchDim=\dimen160
-\MPnumerator=\count429
-\makeMPintoPDFobject=\count430
-\everyMPtoPDFconversion=\toks28
-) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
-))
-*geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
-*geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
-* paper: letterpaper
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(71.13188pt, 472.03123pt, 71.13188pt)
-* v-part:(T,H,B)=(71.13188pt, 638.47984pt, 85.35826pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=472.03123pt
-* \textheight=638.47984pt
-* \oddsidemargin=-1.1381pt
-* \evensidemargin=-1.1381pt
-* \topmargin=-38.1381pt
-* \headheight=12.0pt
-* \headsep=25.0pt
-* \topskip=12.0pt
-* \footskip=30.0pt
-* \marginparwidth=44.0pt
-* \marginparsep=10.0pt
-* \columnsep=10.0pt
-* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-LaTeX Info: Redefining \microtypecontext on input line 44.
-Package microtype Info: Applying patch `item' on input line 44.
-Package microtype Info: Applying patch `toc' on input line 44.
-Package microtype Info: Applying patch `eqnum' on input line 44.
-Package microtype Info: Applying patch `footnote' on input line 44.
-Package microtype Info: Applying patch `verbatim' on input line 44.
-LaTeX Info: Redefining \microtypesetup on input line 44.
-Package microtype Info: Generating PDF output.
-Package microtype Info: Character protrusion enabled (level 2).
-Package microtype Info: Using default protrusion set `alltext'.
-Package microtype Info: Automatic font expansion enabled (level 2),
-(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
-Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 44.
-Package microtype Info: No adjustment of tracking.
-Package microtype Info: No adjustment of interword spacing.
-Package microtype Info: No adjustment of character kerning.
-(/usr/share/texmf-dist/tex/latex/microtype/mt-cmr.cfg
-File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
-)
-Package biblatex Info: Trying to load language 'spanish'...
-Package biblatex Info: ... file 'spanish.lbx' found.
- (/usr/share/texmf-dist/tex/latex/biblatex/lbx/spanish.lbx
-File: spanish.lbx 2024/03/21 v3.20 biblatex localization (PK/MW)
-)
-Package biblatex Info: Input encoding 'utf8' detected.
-Package biblatex Info: Automatic encoding selection.
-(biblatex)             Assuming data encoding 'utf8'.
-\openout3 = `Ensayo.bcf'.
-
-Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'Ensayo.bbl' found.
- (./Ensayo.bbl)
-Package biblatex Info: Reference section=0 on input line 44.
-Package biblatex Info: Reference segment=0 on input line 44.
- (/usr/share/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2024/06/23 v1.3e Standard LaTeX Color (DPC)
- (/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package color Info: Driver file: pdftex.def on input line 149.
- (/usr/share/texmf-dist/tex/latex/graphics/mathcolor.ltx))
-Package hyperref Info: Link coloring ON on input line 44.
- (./Ensayo.out) (./Ensayo.out)
-\@outlinefile=\write4
-\openout4 = `Ensayo.out'.
-
-<./images/IN.png, id=4, 198.7425pt x 255.95625pt>
-File: ./images/IN.png Graphic file (type png)
-<use ./images/IN.png>
-Package pdftex.def Info: ./images/IN.png  used on input line 56.
-(pdftex.def)             Requested size: 56.9055pt x 73.28807pt.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 72.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 72.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 72.
-
-
-[1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./images/IN.png>]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 92.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 92.
-
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.93 
-      [1{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-
-[2]
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `cmtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-
-
-[3]
-
-[4]
-
-[5]
-
-[6]
-
-[7]
-
-[8]
-
-[9]
-Overfull \hbox (4.63799pt too wide) in paragraph at lines 140--140
-[][]\T1/cmr/m/n/12 (-20) DatosMacro Ex-pan-sión. \T1/cmr/m/it/12 (-20) In-dia: Eco-no-mía y de-mo-gra-fía\T1/cmr/m/n/12 (-20) . \T1/cmr/m/sc/12 (-20) url\T1/cmr/m/n/12 (-20) : [][]$\T1/cmtt/m/n/12 https : / / datosmacro . expansion .
- []
-
-
-Overfull \hbox (3.6938pt too wide) in paragraph at lines 140--140
-[][]\T1/cmr/m/n/12 (-20) Kerala Tou-rism. \T1/cmr/m/it/12 (-20) Why is the li-te-racy ra-te in Ke-ra-la so high? \T1/cmr/m/sc/12 (-20) url\T1/cmr/m/n/12 (-20) : [][]$\T1/cmtt/m/n/12 https : / / www . keralatourism .
- []
-
-
-
-[10]
-
-[11] (./Ensayo.aux
-LaTeX Info: Redefining \sptext on input line 12.
-LaTeX Info: Redefining \. on input line 12.
-LaTeX Info: Redefining \% on input line 12.
-)
- ***********
-LaTeX2e <2024-11-01> patch level 2
-L3 programming layer <2025-01-18>
- ***********
-Package rerunfilecheck Info: File `Ensayo.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package logreq Info: Writing requests to 'Ensayo.run.xml'.
-\openout1 = `Ensayo.run.xml'.
-
- ) 
-Here is how much of TeX's memory you used:
- 21717 strings out of 475068
- 380895 string characters out of 5764375
- 1264955 words of memory out of 5000000
- 44181 multiletter control sequences out of 15000+600000
- 583803 words of font info for 178 fonts, out of 8000000 for 9000
- 62 hyphenation exceptions out of 8191
- 66i,11n,81p,1722b,1947s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on Ensayo.pdf (12 pages, 412863 bytes).
-PDF statistics:
- 369 PDF objects out of 1000 (max. 8388607)
- 312 compressed objects within 4 object streams
- 113 named destinations out of 1000 (max. 500000)
- 52230 words of extra memory for PDF output out of 61914 (max. 10000000)
-
+LaTeX Font Info:    ... okay on i

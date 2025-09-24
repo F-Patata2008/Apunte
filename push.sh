@@ -38,6 +38,7 @@ timestamp="$(date '+%Y-%m-%d %H:%M:%S')"
 
 } | tee -a "$log_file"
 git status > /dev/null
+clear
 
 
 

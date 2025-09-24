@@ -65,7 +65,7 @@
 		\begin{flushright} \large
 			\textbf{Profesor:}\\
 			Sergio Díaz
-		\end{flushright}
+        \end{flushright}
 	\end{minipage}
 
 	\vfill
@@ -1241,7 +1241,6 @@ Esto se puede generalizar para cualquier número de eventos mutuamente excluyent
 \end{enumerate}
 \newpage
 
-
 \section{05/09 - Ejercicios de Probabilidad Clásica}
 \subsection{Enunciados}
 \begin{enumerate}
@@ -1255,7 +1254,7 @@ Esto se puede generalizar para cualquier número de eventos mutuamente excluyent
 	\item En un salón hay 7 hombres y 8 mujeres. Si se desea formar un comité de 2 personas, ¿cuál es la probabilidad de que el comité esté formado por un hombre y una mujer?
 	\item Se lanza un dado $n$ veces, ¿cuál es la probabilidad de haber obtenido al menos un 2 en los $n$ lanzamientos?
 	\item Un chef observó que el $65\%$ de sus clientes consume mayonesa, el $70\%$ consume kétchup y el $80\%$ consume mayonesa o kétchup. ¿Cuál es la probabilidad de que un cliente consuma ambas salsas al mismo tiempo?
-	\item En un grupo de estudiantes de sabe que el $30\%$ habla inglés, el $65\%$ habla francés y el $12\%$ habla ambos idiomas. Si se selecciona un alumno al azar:
+	\item En un grupo de estudiantes se sabe que el $30\%$ habla inglés, el $65\%$ habla francés y el $12\%$ habla ambos idiomas. Si se selecciona un alumno al azar:
 	      \begin{enumerate}
 		      \item ¿Cuál es la probabilidad de que hable inglés o francés?
 		      \item ¿Cuál es la probabilidad de que no hable ni inglés ni francés?
@@ -1321,8 +1320,8 @@ Esto se puede generalizar para cualquier número de eventos mutuamente excluyent
 		      \item Despejamos la intersección:
 		            \begin{align*}
 			            P(M \cap K) & = P(M) + P(K) - P(M \cup K) \\
-			                        & = 0.65 + 0.70 - 0.80        \\
-			                        & = 0.55
+			                         & = 0.65 + 0.70 - 0.80        \\
+			                         & = 0.55
 		            \end{align*}
 	      \end{itemize}
 	      \textbf{Respuesta:} La probabilidad de que un cliente consuma ambas salsas es del 55\%.
@@ -1354,77 +1353,100 @@ Esto se puede generalizar para cualquier número de eventos mutuamente excluyent
 		      \item \textbf{Probabilidad del evento original:}
 		            \[ P(A) = 1 - P(A^c) = 1 - \frac{1}{32} = \frac{31}{32} \]
 	      \end{itemize}
-
 \end{enumerate}
 \newpage
 
-\section{22/07 - Resolver Guia Probabilidad }
-%esta calse fijamos preubas, y dsp hicimos la guia
-\subsection{Notas}
+\section{22/09 - Repaso y Fechas Importantes}
+\subsection{Notas de la Clase}
 \begin{itemize}
-	\item \textbf{Guías}
-	\item \textbf{Prueba de Probabilidad (S/P. condicional)} Lunes 29
-	\item \textbf{Entrga Guía} Lunes 29
-	\item \textbf{Miercoles 24 Comienzo Probabilidad Condicional}
-	\item \textbf{Controles ($\bar{x} $ remplaza peor nota)}
+	\item \textbf{Prueba de Probabilidad (sin P. Condicional):} Lunes 29 de Julio.
+	\item \textbf{Entrega de Guía:} Lunes 29 de Julio.
+	\item \textbf{Inicio de Probabilidad Condicional:} Miércoles 24 de Julio.
+	\item \textbf{Controles:} El promedio de los controles reemplazará la peor nota de prueba.
 \end{itemize}
 \newpage
 
-\section{24/09 - Probabilidad Condicional} % Eso Se supine q vemos
-
-\subsection{Monty Hall Problem}
+\section{24/09 - Probabilidad Condicional}
+\subsection{El Problema de Monty Hall}
+Este es un famoso problema de probabilidad que desafía la intuición. El planteamiento es el siguiente:
 \begin{itemize}
-	\item Tenemos 3 puertas
-	\item Despés de elegir, el presentador abre una puertas con una cabra
-	\item Esta la opcion de cambiar
+	\item Hay 3 puertas cerradas. Detrás de una de ellas hay un auto y detrás de las otras dos, cabras.
+	\item El concursante elige una puerta (por ejemplo, la puerta 1).
+	\item El presentador, que sabe dónde está el auto, abre una de las \textit{otras} dos puertas (por ejemplo, la puerta 3), mostrando que contiene una cabra.
+	\item El presentador le ofrece al concursante la opción de cambiar su elección original (la puerta 1) por la otra puerta que queda cerrada (la puerta 2).
 \end{itemize}
-
 \begin{center}
-	\textsc{\large{Que es mas conveniente?}}
+	\textsc{\large{¿Qué es más conveniente?}}
 \end{center}
 \begin{enumerate}
-	\item Cambiar
-	\item Mantener
-	\item Es indiferente
+	\item Cambiar de puerta.
+	\item Mantener la puerta original.
+	\item Es indiferente, ambas tienen 50\% de probabilidad.
 \end{enumerate}
 
-\subsubsection{Previo} % creo que asi quedara bien el orden
+\subsubsection{Intuición Preliminar: ¿Cómo cambia la probabilidad la nueva información?}
 \begin{enumerate}
-	\item ¿Cuál es la probabilidad de que al lanzar dos daods la suama sea 3? \\ $\frac{2}{36} = \frac{1}{18} $
-	\item ¿Cúal es la probabiliad de que la suma sea 3, sabiendo que en un dado salió uno? \\ $\frac{1}{6} $
+	\item \textbf{Pregunta 1:} ¿Cuál es la probabilidad de que al lanzar dos dados la suma sea 3? \\
+	      \textit{Respuesta:} Casos favorables: $\{(1,2), (2,1)\}$. Casos totales: 36.
+	      \[ P(\text{Suma=3}) = \frac{2}{36} = \frac{1}{18} \]
+	\item \textbf{Pregunta 2:} ¿Cuál es la probabilidad de que la suma sea 3, \textbf{sabiendo que en el primer dado salió un 1}? \\
+	      \textit{Respuesta:} La nueva información reduce nuestro espacio muestral. Ahora solo consideramos los resultados que empiezan con 1: $\{(1,1), (1,2), (1,3), (1,4), (1,5), (1,6)\}$. De estos 6 casos, solo uno suma 3: (1,2).
+	      \[ P(\text{Suma=3 | Salió un 1}) = \frac{1}{6} \]
 \end{enumerate}
+La nueva información cambió drásticamente la probabilidad. Esto es el corazón de la probabilidad condicional.
 
-\subsubsection{Volviendo}
-Que pasa si ahora tenemos 100 puertas, con 1 auto, abrimos 98 de las puertas, todas con cabras
+\subsubsection{Análisis del Problema de Monty Hall}
+La clave es entender que el presentador \textbf{nunca} abrirá la puerta con el auto. Esta acción nos da información valiosa.
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Elección Inicial} & \textbf{Estrategia: Mantener} & \textbf{Estrategia: Cambiar} \\ \hline
+Puerta con Auto ($1/3$) & Gana (P) & Pierde (G) \\ \hline
+Puerta con Cabra ($2/3$) & Pierde (G) & Gana (P) \\
+\hline
+\end{tabular}
+\end{center}
+\textit{Leyenda: (P) es la puerta que elige el presentador para abrir.} \\
+El diagrama muestra que si elegiste el auto al principio (1/3 de probabilidad), ganas si te quedas. Pero si elegiste una cabra al principio (2/3 de probabilidad), el presentador te mostrará la otra cabra, y la única puerta que queda es la del auto, por lo que ganas si cambias.
 
-% un grafico que muestra q3 cajitas, 2 con c, y una con a, y que tien 2 flichitas, una que dice mantine, la otra cambia, y detalla si gana o pierde, con G, o P
+\subsection{Probabilidad Condicional}
+Dados dos sucesos $A$ y $B$, con $P(B)>0$, la probabilidad de $A$ \textbf{dado} $B$ (la probabilidad de que ocurra A asumiendo que ya ocurrió B) se define como:
+\[ P(A|B) = \frac{P(A \cap B)}{P(B)} \]
 
-\subsection{Probabilidad Condicional} Dados 2 sucesos $A$ y $B$, denotamos a ''A dado B'' como $A|B$, es decir asuimeindo que ocurrió $B$, Entonces:
-\[P(A|B) = \frac{P(A\cap B)}{P(B)} \]
-
-Sea
+\subsubsection{Análisis Formal del Problema de Monty Hall}
+Esta solución fue famosamente explicada por Marilyn vos Savant. Usemos la Ley de la Probabilidad Total.
+Sean los eventos:
 \begin{itemize}
-	\item \textbf{G:} Gnara el juego
-	\item \textbf{C:} elegir una cabra en la primera eleccion
-	\item \textbf{A:} Elegir un auto en la primera elccion
+	\item \textbf{G:} Ganar el auto al final del juego.
+	\item \textbf{A:} Eliges el auto en tu primera elección.
+	\item \textbf{C:} Eliges una cabra en tu primera elección.
 \end{itemize}
-
-%Marilyn Von Savant
-
-\[P(G) = P((G \cap C) \cup (G \cap A)) \]
-\[= P(G \cap C) + P(G \cap A) \]
-\[= P(G|C) \cdot P(C) + P(G|A) \cdot P(A) \]
-
+La probabilidad de ganar se puede descomponer en dos casos mutuamente excluyentes: ganas habiendo elegido el auto, o ganas habiendo elegido una cabra.
+\begin{align*}
+P(G) &= P((G \cap A) \cup (G \cap C)) \\
+&= P(G \cap A) + P(G \cap C) \\
+&= P(G|A) \cdot P(A) + P(G|C) \cdot P(C)
+\end{align*}
+Las probabilidades iniciales son $P(A)=\frac{1}{3}$ y $P(C)=\frac{2}{3}$.
 \begin{enumerate}
-	\item $P(C) = \frac{2}{3} $, $P(A) = \frac{1}{3} $
-	\item \textbf{\textit{Caso 1:}} Mantener la Elecion
-	      \[P(G) = 0 \cdot \frac{2}{3} + 1 \cdot \frac{1}{3} = \frac{1}{3} \]
+	\item \textbf{Caso 1: Estrategia de Mantener la Elección}
+	      \begin{itemize}
+		      \item $P(G|A)$: Prob. de ganar si elegiste el auto y te quedas. Es 1.
+		      \item $P(G|C)$: Prob. de ganar si elegiste una cabra y te quedas. Es 0.
+	      \end{itemize}
+	      \[ P(\text{Ganar al Mantener}) = (1) \cdot \frac{1}{3} + (0) \cdot \frac{2}{3} = \frac{1}{3} \]
 
-	\item \textbf{\textit{Caso 2:}} Cambio de la Eleccion
-	      \[P(G) = 1 \cdot \frac{2}{3} + 0 \cdot \frac{1}{3} = \frac{2}{3} \]
+	\item \textbf{Caso 2: Estrategia de Cambiar de Puerta}
+	      \begin{itemize}
+		      \item $P(G|A)$: Prob. de ganar si elegiste el auto y cambias. Es 0.
+		      \item $P(G|C)$: Prob. de ganar si elegiste una cabra y cambias. Es 1.
+	      \end{itemize}
+	      \[ P(\text{Ganar al Cambiar}) = (0) \cdot \frac{1}{3} + (1) \cdot \frac{2}{3} = \frac{2}{3} \]
 \end{enumerate}
+\textbf{Conclusión:} Es el doble de conveniente cambiar de puerta.
 
+\newpage
 
-
+\section{ / - }
 
 \end{document}

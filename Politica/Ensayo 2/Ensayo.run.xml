@@ -41,7 +41,7 @@
   >
 ]>
 <requests version="1.0">
-  <internal package="biblatex" priority="9" active="1">
+  <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
       <file>Ensayo.bcf</file>
@@ -55,8 +55,8 @@
       <file>biblatex.def</file>
       <file>standard.bbx</file>
       <file>authortitle.bbx</file>
-      <file>verbose.bbx</file>
-      <file>verbose.cbx</file>
+      <file>verbose-trad1.bbx</file>
+      <file>verbose-trad1.cbx</file>
       <file>biblatex.cfg</file>
       <file>spanish.lbx</file>
     </requires>

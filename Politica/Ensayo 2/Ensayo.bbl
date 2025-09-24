@@ -174,7 +174,7 @@
       \verb https://datosmacro.expansion.com/paises/india
       \endverb
     \endentry
-    \entry{elamon_et_al_2021}{incollection}{}{}
+    \entry{elamon_et_al_2021}{article}{}{}
       \name{author}{3}{}{%
         {{hash=61a704ab7481aa8d8a4b0b2e73fe73ed}{%
            family={Elamon},
@@ -204,25 +204,26 @@
       \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{journaltitle}{Economic and Political Weekly}
       \field{title}{25th year of People’s Plan Campaign in Kerala: Local governments and education}
       \field{year}{2021}
     \endentry
     \entry{hobbes_1651}{book}{}{}
       \name{author}{1}{}{%
-        {{hash=bc076c6f168060e74e9bd13a9e838f26}{%
+        {{hash=225ea03e130430d41c202d9fe7612ed0}{%
            family={Hobbes},
            familyi={H\bibinitperiod},
-           given={T.},
+           given={Thomas},
            giveni={T\bibinitperiod}}}%
       }
-      \strng{namehash}{bc076c6f168060e74e9bd13a9e838f26}
-      \strng{fullhash}{bc076c6f168060e74e9bd13a9e838f26}
-      \strng{fullhashraw}{bc076c6f168060e74e9bd13a9e838f26}
-      \strng{bibnamehash}{bc076c6f168060e74e9bd13a9e838f26}
-      \strng{authorbibnamehash}{bc076c6f168060e74e9bd13a9e838f26}
-      \strng{authornamehash}{bc076c6f168060e74e9bd13a9e838f26}
-      \strng{authorfullhash}{bc076c6f168060e74e9bd13a9e838f26}
-      \strng{authorfullhashraw}{bc076c6f168060e74e9bd13a9e838f26}
+      \strng{namehash}{225ea03e130430d41c202d9fe7612ed0}
+      \strng{fullhash}{225ea03e130430d41c202d9fe7612ed0}
+      \strng{fullhashraw}{225ea03e130430d41c202d9fe7612ed0}
+      \strng{bibnamehash}{225ea03e130430d41c202d9fe7612ed0}
+      \strng{authorbibnamehash}{225ea03e130430d41c202d9fe7612ed0}
+      \strng{authornamehash}{225ea03e130430d41c202d9fe7612ed0}
+      \strng{authorfullhash}{225ea03e130430d41c202d9fe7612ed0}
+      \strng{authorfullhashraw}{225ea03e130430d41c202d9fe7612ed0}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
       \field{labelnamesource}{author}
@@ -242,6 +243,9 @@
            familyi={F\bibinitperiod},
            given={R.\bibnamedelimi W.},
            giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {LeftWord Books}%
       }
       \strng{namehash}{166c1850d5d9fb96cb4d45cac61576af}
       \strng{fullhash}{166c1850d5d9fb96cb4d45cac61576af}
@@ -321,25 +325,25 @@
     \endentry
     \entry{marx_engels_1848}{book}{}{}
       \name{author}{2}{}{%
-        {{hash=78ff8ae2ca82c3a680156682349d8533}{%
+        {{hash=af80d32a7d375e934f94bdfb27bf2999}{%
            family={Marx},
            familyi={M\bibinitperiod},
-           given={K.},
+           given={Karl},
            giveni={K\bibinitperiod}}}%
-        {{hash=241a42270a360a7488e9c76c6527d818}{%
+        {{hash=fce08a4b30fb50f3020b2fdfeb8aa2e6}{%
            family={Engels},
            familyi={E\bibinitperiod},
-           given={F.},
+           given={Friedrich},
            giveni={F\bibinitperiod}}}%
       }
-      \strng{namehash}{7810ceb1ded22e9f93982d43a04df920}
-      \strng{fullhash}{7810ceb1ded22e9f93982d43a04df920}
-      \strng{fullhashraw}{7810ceb1ded22e9f93982d43a04df920}
-      \strng{bibnamehash}{7810ceb1ded22e9f93982d43a04df920}
-      \strng{authorbibnamehash}{7810ceb1ded22e9f93982d43a04df920}
-      \strng{authornamehash}{7810ceb1ded22e9f93982d43a04df920}
-      \strng{authorfullhash}{7810ceb1ded22e9f93982d43a04df920}
-      \strng{authorfullhashraw}{7810ceb1ded22e9f93982d43a04df920}
+      \strng{namehash}{d64f9a685d9554a1ba64bb1121d77c37}
+      \strng{fullhash}{d64f9a685d9554a1ba64bb1121d77c37}
+      \strng{fullhashraw}{d64f9a685d9554a1ba64bb1121d77c37}
+      \strng{bibnamehash}{d64f9a685d9554a1ba64bb1121d77c37}
+      \strng{authorbibnamehash}{d64f9a685d9554a1ba64bb1121d77c37}
+      \strng{authornamehash}{d64f9a685d9554a1ba64bb1121d77c37}
+      \strng{authorfullhash}{d64f9a685d9554a1ba64bb1121d77c37}
+      \strng{authorfullhashraw}{d64f9a685d9554a1ba64bb1121d77c37}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{labelnamesource}{author}
@@ -349,25 +353,28 @@
     \endentry
     \entry{nhiem_2008}{book}{}{}
       \name{author}{1}{}{%
-        {{hash=7bd63fd902b16c0c68d610dc6c0287ed}{%
-           family={Nhiệm},
+        {{hash=a2468357ff5953e1a14460dea8a13bdc}{%
+           family={Nhiem},
            familyi={N\bibinitperiod},
-           given={V.},
+           given={Vu},
            giveni={V\bibinitperiod}}}%
       }
-      \strng{namehash}{7bd63fd902b16c0c68d610dc6c0287ed}
-      \strng{fullhash}{7bd63fd902b16c0c68d610dc6c0287ed}
-      \strng{fullhashraw}{7bd63fd902b16c0c68d610dc6c0287ed}
-      \strng{bibnamehash}{7bd63fd902b16c0c68d610dc6c0287ed}
-      \strng{authorbibnamehash}{7bd63fd902b16c0c68d610dc6c0287ed}
-      \strng{authornamehash}{7bd63fd902b16c0c68d610dc6c0287ed}
-      \strng{authorfullhash}{7bd63fd902b16c0c68d610dc6c0287ed}
-      \strng{authorfullhashraw}{7bd63fd902b16c0c68d610dc6c0287ed}
+      \list{publisher}{1}{%
+        {Nha xuat ban Dai hoc quoc gia Ha Noi}%
+      }
+      \strng{namehash}{a2468357ff5953e1a14460dea8a13bdc}
+      \strng{fullhash}{a2468357ff5953e1a14460dea8a13bdc}
+      \strng{fullhashraw}{a2468357ff5953e1a14460dea8a13bdc}
+      \strng{bibnamehash}{a2468357ff5953e1a14460dea8a13bdc}
+      \strng{authorbibnamehash}{a2468357ff5953e1a14460dea8a13bdc}
+      \strng{authornamehash}{a2468357ff5953e1a14460dea8a13bdc}
+      \strng{authorfullhash}{a2468357ff5953e1a14460dea8a13bdc}
+      \strng{authorfullhashraw}{a2468357ff5953e1a14460dea8a13bdc}
       \field{sortinit}{N}
       \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Giáo trình một số vấn đề về làng xã cổ truyền Việt Nam [Manual sobre algunos problemas de la aldea tradicional vietnamita]}
+      \field{title}{Giao trinh mot so van de ve lang xa co truyen Viet Nam [Manual sobre algunos problemas de la aldea tradicional vietnamita]}
       \field{year}{2008}
     \endentry
     \entry{qdnd_2023}{online}{}{}
@@ -493,7 +500,7 @@
       \verb https://thesouthfirst.com/kerala/zero-extreme-poverty-keralas-vision-for-a-poverty-free-state-takes-shape-in-dharmadam/
       \endverb
     \endentry
-    \entry{tsai_2002}{incollection}{}{}
+    \entry{tsai_2002}{article}{}{}
       \name{author}{1}{}{%
         {{hash=e3b94b7510ecf3971687b9d5103f8000}{%
            family={Tsai},
@@ -513,8 +520,12 @@
       \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{journaltitle}{The China Journal}
       \field{title}{Cadres, temple and lineage institutions, and governance in rural China}
+      \field{volume}{48}
       \field{year}{2002}
+      \field{pages}{1\bibrangedash 27}
+      \range{pages}{27}
     \endentry
     \entry{vietnamvn_2024}{online}{}{}
       \name{author}{1}{}{%
@@ -639,7 +650,7 @@
       \verb https://en.wikipedia.org/wiki/Political_activism_in_Kerala
       \endverb
     \endentry
-    \entry{wu_2023}{incollection}{}{}
+    \entry{wu_2023}{article}{}{}
       \name{author}{1}{}{%
         {{hash=a86e97589af4ebc957e84399c0ba5a1c}{%
            family={Wu},
@@ -659,8 +670,13 @@
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{journaltitle}{Asian Journal of Social Science}
+      \field{number}{2}
       \field{title}{The origin, fission, and social structure of a lineage village: Based on empirical study}
+      \field{volume}{51}
       \field{year}{2023}
+      \field{pages}{80\bibrangedash 89}
+      \range{pages}{10}
     \endentry
   \enddatalist
 \endrefsection

@@ -1310,7 +1310,7 @@ Esto se puede generalizar para cualquier número de eventos mutuamente excluyent
 		      \item La probabilidad del evento original es $1 - P(A^c)$.
 		            \[ P(A) = 1 - \left(\frac{5}{6}\right)^n \]
 	      \end{itemize}
-	      
+
 	\item \textbf{Clientes y salsas:} \\
 	      \textit{Solución:} Es una aplicación directa de la regla de la suma.
 	      \begin{itemize}
@@ -1321,8 +1321,8 @@ Esto se puede generalizar para cualquier número de eventos mutuamente excluyent
 		      \item Despejamos la intersección:
 		            \begin{align*}
 			            P(M \cap K) & = P(M) + P(K) - P(M \cup K) \\
-			                         & = 0.65 + 0.70 - 0.80        \\
-			                         & = 0.55
+			                        & = 0.65 + 0.70 - 0.80        \\
+			                        & = 0.55
 		            \end{align*}
 	      \end{itemize}
 	      \textbf{Respuesta:} La probabilidad de que un cliente consuma ambas salsas es del 55\%.
@@ -1359,14 +1359,72 @@ Esto se puede generalizar para cualquier número de eventos mutuamente excluyent
 \newpage
 
 \section{22/07 - Resolver Guia Probabilidad }
-
+%esta calse fijamos preubas, y dsp hicimos la guia
 \subsection{Notas}
 \begin{itemize}
-    \item \textbf{Guías}
-    \item \textbf{Prueba de Probabilidad (S/P. condicional)} Lunes 29
-    \item \textbf{Entrga Guía} Lunes 29
-    \item \textbf{Miercoles 24 Comienzo Probabilidad Condicional}
-    \item \textbf{Controles ($\bar{x} $ remplaza peor nota)}
+	\item \textbf{Guías}
+	\item \textbf{Prueba de Probabilidad (S/P. condicional)} Lunes 29
+	\item \textbf{Entrga Guía} Lunes 29
+	\item \textbf{Miercoles 24 Comienzo Probabilidad Condicional}
+	\item \textbf{Controles ($\bar{x} $ remplaza peor nota)}
 \end{itemize}
+\newpage
+
+\section{24/09 - Probabilidad Condicional} % Eso Se supine q vemos
+
+\subsection{Monty Hall Problem}
+\begin{itemize}
+	\item Tenemos 3 puertas
+	\item Despés de elegir, el presentador abre una puertas con una cabra
+	\item Esta la opcion de cambiar
+\end{itemize}
+
+\begin{center}
+	\textsc{\large{Que es mas conveniente?}}
+\end{center}
+\begin{enumerate}
+	\item Cambiar
+	\item Mantener
+	\item Es indiferente
+\end{enumerate}
+
+\subsubsection{Previo} % creo que asi quedara bien el orden
+\begin{enumerate}
+	\item ¿Cuál es la probabilidad de que al lanzar dos daods la suama sea 3? \\ $\frac{2}{36} = \frac{1}{18} $
+	\item ¿Cúal es la probabiliad de que la suma sea 3, sabiendo que en un dado salió uno? \\ $\frac{1}{6} $
+\end{enumerate}
+
+\subsubsection{Volviendo}
+Que pasa si ahora tenemos 100 puertas, con 1 auto, abrimos 98 de las puertas, todas con cabras
+
+% un grafico que muestra q3 cajitas, 2 con c, y una con a, y que tien 2 flichitas, una que dice mantine, la otra cambia, y detalla si gana o pierde, con G, o P
+
+\subsection{Probabilidad Condicional} Dados 2 sucesos $A$ y $B$, denotamos a ''A dado B'' como $A|B$, es decir asuimeindo que ocurrió $B$, Entonces:
+\[P(A|B) = \frac{P(A\cap B)}{P(B)} \]
+
+Sea
+\begin{itemize}
+	\item \textbf{G:} Gnara el juego
+	\item \textbf{C:} elegir una cabra en la primera eleccion
+	\item \textbf{A:} Elegir un auto en la primera elccion
+\end{itemize}
+
+%Marilyn Von Savant
+
+\[P(G) = P((G \cap C) \cup (G \cap A)) \]
+\[= P(G \cap C) + P(G \cap A) \]
+\[= P(G|C) \cdot P(C) + P(G|A) \cdot P(A) \]
+
+\begin{enumerate}
+	\item $P(C) = \frac{2}{3} $, $P(A) = \frac{1}{3} $
+	\item \textbf{\textit{Caso 1:}} Mantener la Elecion
+	      \[P(G) = 0 \cdot \frac{2}{3} + 1 \cdot \frac{1}{3} = \frac{1}{3} \]
+
+	\item \textbf{\textit{Caso 2:}} Cambio de la Eleccion
+	      \[P(G) = 1 \cdot \frac{2}{3} + 0 \cdot \frac{1}{3} = \frac{2}{3} \]
+\end{enumerate}
+
+
+
 
 \end{document}

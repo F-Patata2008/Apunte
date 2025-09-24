@@ -1,9 +1,10 @@
 \documentclass[12pt, letterpaper]{article}
 
 % ----- PAQUETES BÁSICOS Y DE IDIOMA -----
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
+% \usepackage[utf8]{inputenc} % Reemplazado por fontspec para Unicode
+% \usepackage[T1]{fontenc}    % Reemplazado por fontspec para Unicode
 \usepackage[spanish]{babel}
+\usepackage{fontspec} % <-- NUEVO: Para manejar caracteres especiales (vietnamitas) y usar LuaLaTeX
 \usepackage{graphicx}
 
 % ----- PAQUETES DE FORMATO Y GEOMETRÍA -----
@@ -13,8 +14,9 @@
 \usepackage{microtype}
 \graphicspath{ {./images/}}
 
-% ----- PAQUETE DE CITAS (NUEVO) -----
-\usepackage[style=verbose, backend=biber]{biblatex}
+% ----- PAQUETE DE CITAS Y BIBLIOGRAFÍA -----
+\usepackage{csquotes} % Recomendado por biblatex
+\usepackage[style=verbose-trad1, backend=biber]{biblatex}
 \addbibresource{bibliografia.bib} % Llama a tu archivo de bibliografía
 
 % ----- CONFIGURACIÓN DE LA PÁGINA -----
@@ -23,7 +25,7 @@
     left=2.5cm,
     right=2.5cm,
     top=2.5cm,
-    bottom=2.5cm
+    bottom=3cm % Más espacio para las notas al pie
 }
 \setstretch{1.5}
 
@@ -36,9 +38,7 @@
     urlcolor=blue,
     pdftitle={El Comunismo: Un Análisis Comparativo de su Aplicación y Legado},
     pdfauthor={Felipe Colli Olea, Rodrigo Martinez, Nicolás Aguilera, Lautaro Palma, Isaias Vivanco},
-    pdfsubject={Ensayo del diferenciado de Filosofía Política},
-    pdfkeywords={comunismo, china, vietnam, kerala, filosofia politica, instituto nacional},
-    pdfcreator={pdfLaTeX}
+    pdfsubject={Ensayo del diferenciado de Filosofía Política}
 }
 
 % --- INICIO DEL DOCUMENTO ---
@@ -88,7 +88,7 @@
 
 \section*{Introducción}
 \thispagestyle{fancy}
-El debate sobre si el comunismo puede funcionar o no, tiene una historia extensa. Han habido muchos fracasos y problemas económicos en el pasado. Antes de decir nada más, es de vital importancia el detenernos a diferenciar dos conceptos que dentro del análisis marxiano son radicalmente distintos: socialismo y comunismo. Primero, el socialismo que plantea Marx recae sobre una estrategia para la transición de la sociedad al comunismo (a diferencia de otros planteamientos de socialismo) la cual consiste en la toma del poder del estado a través de la dictadura del proletariado –el gobierno de las mayorías según Marx– lo cual busca eliminar el antagonismo de clases existente en las sociedades capitalistas, es una etapa que busca eliminar los residuos capitalistas que aquejan a la sociedad usando como una de sus herramientas el poder centralizado del estado; después de que se logre la colectivización de la sociedad y desaparezcan las clases sociales es que se termina de transicionar a una sociedad comunista, es decir, la libre organización en comunidades donde exista una distribución equitativa de los recursos y los medios de producción estén desarrollados y colectivizados al punto de que el trabajo no sea una forma de autoexplotación sino aquello que permita el desarrollo íntegro. 
+El debate sobre si el comunismo puede funcionar o no, tiene una historia extensa. Han habido muchos fracasos y problemas económicos en el pasado. Antes de decir nada más, es de vital importancia el detenernos a diferenciar dos conceptos que dentro del análisis marxiano son radicalmente distintos: socialismo y comunismo. Primero, el socialismo que plantea Marx recae sobre una estrategia para la transición de la sociedad al comunismo (a diferencia de otros planteamientos de socialismo) la cual consiste en la toma del poder del estado a través de la dictadura del proletariado –el gobierno de las mayorías según Marx– lo cual busca eliminar el antagonismo de clases existente en las sociedades capitalistas. Es una etapa que busca eliminar los residuos capitalistas que aquejan a la sociedad usando como una de sus herramientas el poder centralizado del estado; después de que se logre la colectivización de la sociedad y desaparezcan las clases sociales es que se termina de transicionar a una sociedad comunista, es decir, la libre organización en comunidades donde exista una distribución equitativa de los recursos y los medios de producción estén desarrollados y colectivizados al punto de que el trabajo no sea una forma de autoexplotación sino aquello que permita el desarrollo íntegro. 
 
 Finalmente, en palabras de Marx: ``El proletariado se ve forzado a organizarse como clase para luchar contra la burguesía; la revolución le lleva al Poder; mas tan pronto como desde él, como clase gobernante, derribe por la fuerza el régimen vigente de producción, con éste hará desaparecer las condiciones que determinan el antagonismo de clases, las clases mismas, y, por tanto, su propia soberanía como tal clase''\footcite{marx_engels_1848}. Podemos decir que realmente los estados que han existido y existentes ahora pueden considerarse como socialistas. Sin embargo, algunos gobiernos se volvieron demasiados estrictos o autoritarios. A pesar de ello, algunos países demuestran que el socialismo puede dar buenos resultados. Estos se producen cuando el gobierno gestiona bien la economía y planifica de forma eficaz. Este ensayo promete analizar tres ejemplos contemporáneos: China, Vietnam y Kerala. Sostenemos que el socialismo no es siempre igual, sino que puede funcionar si se adapta a la historia reciente y cultura del país. En esta investigación, sostenemos que el socialismo puede generar crecimiento económico y bienestar social cuando los partidos gobernantes aplican reformas que integran mecanismos de mercado bajo control político. Analizaremos los datos económicos y los resultados sociales. Esto incluye el crecimiento, la reducción de la pobreza, la mejora en salud y de escuelas. Queremos entender por qué estos casos efectivamente tuvieron éxito. Nuestro objetivo es descubrir qué es lo que hace que funcione en algunos lugares. Esto nos ayuda a comprender mejor los sistemas políticos contemporáneos.
 

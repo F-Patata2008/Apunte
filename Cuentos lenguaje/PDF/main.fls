@@ -159,6 +159,10 @@ INPUT ./main.out
 INPUT ./main.out
 OUTPUT main.out
 OUTPUT main.pdf
+INPUT ./images/IN.png
+INPUT ./images/IN.png
+INPUT ./images/IN.png
+INPUT ./images/IN.png
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/eccc1200.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/eccc2074.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/eccc1728.tfm

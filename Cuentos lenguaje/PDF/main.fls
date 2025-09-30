@@ -159,10 +159,6 @@ INPUT ./main.out
 INPUT ./main.out
 OUTPUT main.out
 OUTPUT main.pdf
-INPUT ./images/IN.png
-INPUT ./images/IN.png
-INPUT ./images/IN.png
-INPUT ./images/IN.png
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/eccc1200.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/eccc2074.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/eccc1728.tfm
@@ -203,11 +199,11 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc
-INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecrm1000.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecbx1728.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecti1200.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecbi1200.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecrm1000.tfm
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out

@@ -7,11 +7,25 @@
 \usepackage[spanish]{babel} % Spanish language support (ACTIVADO)
 \usepackage{tabularx}
 \usepackage{enumitem}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{microtype}
+
 
 % ----- PAQUETES DE MEJORA Y CORRECCIONES -----
 \usepackage{microtype} % Soluciona problemas de Overfull/Underfull hbox y mejora la tipografía
 \renewcommand{\arraystretch}{1.5} % Incrementa el espaciado vertical
 \graphicspath{ {./images/} } % Ruta de la carpeta de imágenes
+
+
+\geometry{
+    letterpaper,
+    left=2.5cm,
+    right=2.5cm,
+    top=2.5cm,
+    bottom=3cm % Más espacio para las notas al pie
+}
+\setstretch{1.5}
 
 % ----- PAQUETES Y CONFIGURACIÓN DE AUTORÍA Y MARCA DE PÁGINA -----
 \usepackage{fancyhdr}
@@ -43,7 +57,7 @@
 
 \begin{titlepage}
 	\centering
-	\includegraphics[width=2.5cm]{IN}\\[2cm]
+	\includegraphics[width=2.5cm]{IN}\\[1.5cm]
 	\textsc{\LARGE  INSTITUTO NACIONAL GENERAL JOSÉ MIGUEL CARRERA}\\[0.7cm]
 	\textsc{\Large DEPARTAMENTO DE CASTELLANO}\\[0.5cm]
 

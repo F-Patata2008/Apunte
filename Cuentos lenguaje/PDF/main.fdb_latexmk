@@ -1,7 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1759236230.86685 "main.tex" "main.pdf" "main" 1759236232.29417 0
+["pdflatex"] 1759236742.16942 "main.tex" "main.pdf" "main" 1759236743.49351 0
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1755987285 2971 def0b6c1f0b107b3b936def894055589 ""
-  "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1755987285 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1755987285 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecbi0600.tfm" 1755987285 3072 003f289d7450a9a9eb8e1306360106fb ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecbi1200.tfm" 1755987285 3072 ccae1a240ab272417e4399fe942df546 ""
@@ -21,7 +20,6 @@
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecti0600.tfm" 1755987285 3072 80e486733e39bf8ad2a360793cc998ae ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecti1200.tfm" 1755987285 3072 8b5a64dc91775463bc95e2d818524028 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecti1728.tfm" 1755987285 3072 c4e6e6654c343ab96bdbac99d696869b ""
-  "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1755987285 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1755987285 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1755987285 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1755987285 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -126,9 +124,9 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1757380537 5311557 9da84c45f5b388655502706482323571 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1757380337 2081304 7d6458c40765e7b3dbe19463267caa67 ""
   "images/IN.png" 1753454929.56759 7949 cc26bed184e5e1103c6a6f769f5412fa ""
-  "main.aux" 1759236232.08241 362 f490e584a05859222ef692dc365eec1e "pdflatex"
-  "main.out" 1759236231.68941 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1759236229.95094 13176 01ddac5c49a6e2606d917a264f6fc304 ""
+  "main.aux" 1759236743.29109 362 117562da6a1e80eb6fb5d27362787089 "pdflatex"
+  "main.out" 1759236742.94608 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.tex" 1759236740.36203 13194 265b63e2b54a8b02d91f8398f6bf9000 ""
   (generated)
   "main.aux"
   "main.log"

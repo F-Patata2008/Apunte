@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.9.8)  30 SEP 2025 09:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.9.8)  30 SEP 2025 09:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -422,8 +422,6 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./images/IN.png>]
 
-[2{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
@@ -431,12 +429,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
 l.95 
       [1]
 
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.108 
-       [2]
+[2]
 
 [3]
 
@@ -454,18 +447,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 14324 strings out of 475068
- 223668 string characters out of 5764375
+ 14313 strings out of 475068
+ 223507 string characters out of 5764375
  668236 words of memory out of 5000000
- 36980 multiletter control sequences out of 15000+600000
- 582839 words of font info for 152 fonts, out of 8000000 for 9000
+ 36975 multiletter control sequences out of 15000+600000
+ 582414 words of font info for 149 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
  75i,11n,79p,1001b,630s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/cm-super/sfbi0600.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbi1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti0600.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1728.pfb>
-Output written on main.pdf (7 pages, 252876 bytes).
+Output written on main.pdf (6 pages, 250845 bytes).
 PDF statistics:
- 134 PDF objects out of 1000 (max. 8388607)
- 91 compressed objects within 1 object stream
+ 125 PDF objects out of 1000 (max. 8388607)
+ 84 compressed objects within 1 object stream
  18 named destinations out of 1000 (max. 500000)
- 45062 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 43014 words of extra memory for PDF output out of 51595 (max. 10000000)
 

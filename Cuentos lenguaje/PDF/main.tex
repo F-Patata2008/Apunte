@@ -1,45 +1,88 @@
-\documentclass[11pt]{article}
-\usepackage[spanish]{babel}
-\usepackage{amsmath}  % Math
-\usepackage{amssymb}  % Symbols
-\usepackage{graphicx} % Images
-\graphicspath{ {./images/} }
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage[margin=1in]{geometry}
-\usepackage{fancyhdr} % Para el pie de página personalizado
-\usepackage{hyperref} % Para metadatos y enlaces en el PDF
+\documentclass[12pt, letterpaper]{article}
+\usepackage[utf8]{inputenc} % Input encoding
+\usepackage[T1]{fontenc} % Font encoding
+\usepackage{amsmath} % Math symbols and environments
+\usepackage{amssymb} % More math symbols
+\usepackage{graphicx} % Include graphics
+\usepackage[spanish]{babel} % Spanish language support (ACTIVADO)
+\usepackage{tabularx}
+\usepackage{enumitem}
 
-% ----- CONFIGURACIÓN DE AUTORÍA Y PIE DE PÁGINA -----
+% ----- PAQUETES DE MEJORA Y CORRECCIONES -----
+\usepackage{microtype} % Soluciona problemas de Overfull/Underfull hbox y mejora la tipografía
+\renewcommand{\arraystretch}{1.5} % Incrementa el espaciado vertical
+\graphicspath{ {./images/}} % Descomenta y ajusta si tienes una carpeta de imágenes
+
+% ----- PAQUETES Y CONFIGURACIÓN DE AUTORÍA Y MARCA DE PÁGINA -----
+\usepackage{fancyhdr}
+\usepackage{hyperref}
 \hypersetup{
-    pdftitle={Trabajo de Lenguaje: Antología Universal de Cuentos},
-    pdfauthor={Felipe Colli Olea},
     colorlinks=true,
     linkcolor=black,
-    urlcolor=cyan
+    filecolor=magenta,
+    urlcolor=cyan,
+    pdftitle={Análisis Literario: Antología Universal de Cuentos},
+    pdfauthor={Felipe Colli Olea, Benjamín Fernández, Luciano Arévalo},
+    pdfsubject={Evaluación Lectora para Electivo Cuarto Medio},
+    pdfkeywords={literatura, cuentos, análisis, instituto nacional, felipe colli},
+    pdfcreator={pdfLaTeX},
+    pdfproducer={LaTeX with hyperref}
 }
+% --------------------------------------------------------------------------
 
-% Configuración del pie de página con fancyhdr
-\pagestyle{fancy}
-\fancyhf{} % Limpia la cabecera y el pie de página actuales
-\fancyfoot[C]{\footnotesize Felipe Colli, Todos los Derechos Reservados} % Tu texto en el centro
-\fancyfoot[R]{\thepage} % Número de página a la derecha
-\renewcommand{\headrulewidth}{0pt} % Elimina la línea de la cabecera
-
-\title{Trabajo de Lenguaje: Antología Universal de Cuentos}
-
-\date{\today}
 
 \begin{document}
 
-\maketitle
-\thispagestyle{fancy} % Aplica el estilo de pie de página a la primera página también
+% --- CONFIGURACIÓN DEL PIE DE PÁGINA ---
+\pagestyle{fancy}
+\fancyhf{} % Limpia cabecera y pie de página
+\fancyfoot[C]{\footnotesize Trabajo por F. Colli, B. Fernández y L. Arévalo -- Todos los derechos reservados.}
+\fancyfoot[R]{\thepage} % Número de página a la derecha
+\renewcommand{\headrulewidth}{0pt} % Sin línea en la cabecera
+% ---------------------------------------
 
-\section*{Texto 1: Pregunta Integradora}
+\begin{titlepage}
+	\centering
+	\includegraphics[width=2cm]{IN}\\[2cm] % Descomenta si tienes el logo 'IN.png' o 'IN.jpg'
+	\textsc{\LARGE  Instituto Nacional General José Miguel Carrera}\\[0.5cm]
+	\textsc{\Large Departamento de Castellano}\\[1.5cm]
+
+	\rule{\textwidth}{1.5pt}\vspace{0.4cm}
+	{\Huge \bfseries Análisis Literario: \\[0.5cm] Antología Universal de Cuentos}\\[0.4cm]
+	\rule{\textwidth}{1.5pt}\\[1.5cm]
+
+	{\Large \textit{Evaluación Lectora - Plan Común Cuarto Medio}}\\[2cm]
+
+	\begin{minipage}{0.4\textwidth}
+		\begin{flushleft} \large
+			\textbf{Autores:}\\
+			Felipe Colli Olea \\
+            Benjamín Fernández \\
+            Luciano Arévalo
+		\end{flushleft}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.4\textwidth}
+		\begin{flushright} \large
+			\textbf{Profesor:}\\
+			Alonso Garay Silva
+		\end{flushright}
+	\end{minipage}
+
+	\vfill
+	{\large \today \\[1cm]}
+	\copyright~2025, Felipe Colli Olea, Benjamín Fernández, Luciano Arévalo.
+\end{titlepage}
+
+\newpage
+\thispagestyle{fancy} % Aplica el pie de página desde la primera página de contenido
+
+\section*{Parte 1: Pregunta Integradora}
 
 La "Antología Universal de Cuentos" nos sumerge en un mosaico de realidades humanas, explorando desde la opresión social hasta los laberintos de la conciencia. Cada uno de los ocho relatos ofrece una visión particular del ser humano y la sociedad, presentando conflictos que desnudan la fragilidad, la crueldad y la persistente búsqueda de sentido en un mundo a menudo hostil.
 
-\begin{enumerate}
+\subsection*{Análisis de los Cuentos}
+\begin{enumerate}[label=\arabic*., wide, labelindent=0pt]
     \item \textbf{\textit{"El asesinato"} (Antón Chéjov):} Refleja una sociedad industrial deshumanizadora que explota a sus miembros más débiles. La visión del ser humano es la de una víctima de la opresión sistémica, cuya psique se quiebra bajo una carga insoportable. El conflicto social de Varka, una niña sirvienta privada de sueño, escala hasta convertirse en un conflicto psicológico que la lleva a cometer un acto atroz para alcanzar la paz, exponiendo cómo la crueldad social engendra tragedia.
 
     \item \textbf{\textit{"Corrido"} (Juan José Arreola):} Presenta una sociedad rural regida por un código de honor machista e ineludible. El ser humano es visto como un prisionero de su rol cultural, obligado a actuar según un guion de violencia para defender su hombría. El conflicto es social y fatalista; la disputa por una mujer es solo el catalizador de un destino trágico predeterminado, criticando una cultura donde la vida vale menos que el honor.
@@ -57,24 +100,23 @@ La "Antología Universal de Cuentos" nos sumerge en un mosaico de realidades hum
     \item \textbf{\textit{"El pícnic de un millón de años"} (Ray Bradbury):} Presenta una visión esperanzadora del ser humano con la capacidad de renacer de sus cenizas. El conflicto es la huida de una sociedad autodestructiva (la Tierra en guerra) para fundar una nueva en Marte. La crítica se dirige a una humanidad que priorizó la tecnología sobre la vida, mientras que la resolución explora la redefinición de la identidad humana y la posibilidad de un futuro libre de los errores del pasado.
 \end{enumerate}
 
-\subsection*{Análisis Comparativo}
+\subsection*{Análisis Comparativo Intercultural}
 
-Al comparar dos cuentos latinoamericanos, \textbf{\textit{"El árbol"}} y \textbf{\textit{"Muerte constante más allá del amor"}}, con el cuento ruso \textbf{\textit{"El asesinato"}}, emergen tanto similitudes en la condición humana de sus protagonistas como profundas diferencias en el enfoque y el estilo.
+Al comparar dos cuentos latinoamericanos, \textbf{\textit{"El árbol"}} y \textbf{\textit{"Muerte constante más allá del amor"}}, con el cuento extranjero \textbf{\textit{"El asesinato"}}, emergen tanto similitudes en la condición humana de sus protagonistas como profundas diferencias en el enfoque de sus conflictos y estilos narrativos.
 
-La \textbf{similitud} más evidente es que los tres protagonistas viven en una forma de encierro. Varka es prisionera de la explotación laboral, Brígida de las convenciones sociales y un matrimonio sin amor, y el senador Onésimo Sánchez de la farsa de su vida política y de un cuerpo sentenciado a muerte. En todos los casos, el individuo se ve aplastado por fuerzas mayores que él: el sistema social, las expectativas de género o el destino biológico.
+La \textbf{similitud} más evidente es que los tres protagonistas viven en una forma de encierro. Varka es prisionera de la explotación laboral que la deshumaniza; Brígida lo es de las convenciones sociales y un matrimonio sin amor que anula su espíritu; y el senador Onésimo Sánchez es cautivo de la farsa de su vida política y de un cuerpo sentenciado a muerte. En todos los casos, el individuo se ve aplastado por fuerzas mayores que él: el sistema social, las expectativas de género o el destino biológico.
 
-Las \textbf{diferencias} radican en la naturaleza de esa prisión y el lenguaje utilizado para describirla. Chéjov, en "El asesinato", aborda una \textbf{opresión socioeconómica} con un estilo realista y directo. El conflicto es externo y su impacto en la psique de Varka es una consecuencia directa y brutal. En contraste, los relatos latinoamericanos exploran opresiones más complejas y simbólicas. En "El árbol", Bombal se centra en la \textbf{asfixia psicológica y emocional} de Brígida. Su prosa es lírica y subjetiva, construyendo una realidad interna que es tan o más importante que la externa. Por su parte, García Márquez en "Muerte constante más allá del amor" critica la \textbf{prisión del poder político y la soledad existencial}. Su estilo, anclado en el realismo mágico, utiliza la hipérbole y la ironía para mostrar la absurdidad de un poder que es, en última instancia, impotente.
+Las \textbf{diferencias} radican en la naturaleza de esa prisión y el lenguaje utilizado para describirla. Chéjov, en "El asesinato", aborda una \textbf{opresión socioeconómica} con un estilo realista, crudo y directo. El conflicto es externo y su impacto en la psique de Varka es una consecuencia directa y brutal de su entorno material. En contraste, los relatos latinoamericanos exploran opresiones más complejas y simbólicas. En "El árbol", Bombal se centra en la \textbf{asfixia psicológica y emocional} de Brígida. Su prosa es lírica y subjetiva, construyendo una realidad interna que es tan o más importante que la externa. Por su parte, García Márquez en "Muerte constante más allá del amor" critica la \textbf{prisión del poder político y la soledad existencial}. Su estilo, anclado en el realismo mágico, utiliza la hipérbole y la ironía para mostrar la absurdidad de un poder que es, en última instancia, impotente.
 
-En resumen, mientras Chéjov denuncia la jaula material y visible de la explotación, Bombal y García Márquez exploran las jaulas invisibles del alma y la política, mostrando cómo la literatura, desde distintas latitudes, se ocupa de la lucha del individuo por su libertad y dignidad.
+En resumen, mientras Chéjov denuncia la jaula material y visible de la explotación, Bombal y García Márquez exploran las jaulas invisibles del alma y la política, mostrando cómo la literatura, desde distintas latitudes, se ocupa de la lucha universal del individuo por su libertad y dignidad.
 
-\vspace{1cm}
 \newpage
 
-\section*{Texto 2: Crítica Social y Poder}
+\section*{Parte 2: Crítica Social y Poder}
 
 Los cuentos \textit{"Corrido"} de Juan José Arreola, \textit{"Ana María"} de José Donoso y \textit{"Muerte constante más allá del amor"} de Gabriel García Márquez componen un tríptico revelador de las formas de dominación y desigualdad social en Latinoamérica. Cada relato, a su manera, disecciona los mecanismos de poder —sea cultural, social o político— y expone su impacto devastador sobre los personajes, quienes se ven atrapados en estructuras que los anulan, los violentan o los condenan a la soledad.
 
-En \textbf{\textit{"Corrido"}}, Arreola evidencia el \textbf{poder de los códigos culturales machistas} como un mecanismo de dominación fatalista. En esta sociedad rural, el honor masculino es el valor supremo, y la violencia es el ritual necesario para defenderlo. La mujer es despojada de su subjetividad y convertida en un objeto, el detonante pasivo de un conflicto que no le pertenece. El poder no lo ejerce un individuo, sino el sistema cultural en su conjunto, que obliga a los hombres a matarse para cumplir con las expectativas sociales. El efecto sobre los personajes es la aniquilación: los rivales mueren como "gallos buenos", cumpliendo su rol hasta el final, y la mujer es condenada a la "mala fama", cargando con la culpa de una tragedia dictada por el machismo.
+En \textbf{\textit{"Corrido"}}, Arreola evidencia el \textbf{poder de los códigos culturales machistas} como un mecanismo de dominación fatalista. En esta sociedad rural, el honor masculino es el valor supremo, y la violencia es el ritual necesario para defenderlo. La mujer es despojada de su subjetividad y convertida en un objeto, el detonante pasivo de un conflicto que no le pertenece. El poder no lo ejerce un individuo, sino el sistema cultural en su conjunto, que obliga a los hombres a matarse para cumplir con las expectativas sociales. El efecto sobre los personajes es la aniquilación: los rivales mueren como "gallos buenos", cumpliendo su rol hasta el final, y la mujer es condenada a la "mala fama", cargando con la culpa de una tragedia dictada por el machismo. Arreola critica así una estructura que sacrifica vidas en el altar de un honor viril obsoleto y destructivo.
 
 José Donoso, en \textbf{\textit{"Ana María"}}, explora un mecanismo de poder más silencioso pero igualmente cruel: \textbf{la negligencia como forma de dominación y la marginación social}. El poder es ejercido por los padres de la niña, quienes, a través de su abandono y desinterés, la reducen a un objeto sin importancia en sus vidas. Esta dinámica de poder se replica a nivel social con el anciano, un hombre expulsado del sistema productivo por su edad y considerado inútil. La desigualdad es evidente: los que tienen responsabilidades y poder (los padres, la sociedad activa) fallan en proteger a los más vulnerables. El efecto sobre los personajes es una profunda soledad y desamparo, que paradójicamente los une. Su improbable amistad es un acto de resistencia contra la indiferencia de un mundo que los ha descartado.
 

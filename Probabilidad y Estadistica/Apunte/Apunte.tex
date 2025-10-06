@@ -1447,6 +1447,140 @@ Las probabilidades iniciales son $P(A)=\frac{1}{3}$ y $P(C)=\frac{2}{3}$.
 
 \newpage
 
+\section{06/10 - Ejercicios de Probabilidad Condicional}
+\subsection{Enunciados}
+\begin{enumerate}
+	\item Al 25\% de un grupo de amigos le gusta la fresa y el chocolate, mientras que al 60\% le gusta el chocolate. ¿Cuál es la probabilidad de que a un amigo que le guste el chocolate también le guste la fresa?
+	\item En la ciudad de San José, el 8\% de las personas gana más de \$1000 al mes, mientras que al 60\% le gusta el helado de chocolate. Asumiendo que ambos sucesos son independientes, ¿cuál es la probabilidad de que una persona seleccionada al azar en San José gane más de \$1000 al mes y le guste el helado de chocolate?
+	\item El 76\% de los estudiantes de Ingeniería Civil han aprobado Resistencia de Materiales y el 45\% aprobaron Estática. Además, el 30\% aprobaron ambas asignaturas. Si se elige un estudiante que aprobó Resistencia de Materiales, ¿qué probabilidad tiene de haber aprobado también Estática?
+\end{enumerate}
+
+\subsection{Soluciones}
+\begin{enumerate}
+	\item \textbf{Amigos y sabores:} \\
+	      \textit{Solución:} Sean F="le gusta la fresa" y C="le gusta el chocolate". Nos piden $P(F|C)$.
+	      \begin{itemize}
+		      \item \textbf{Datos:} $P(F \cap C) = 0.25$ y $P(C) = 0.60$.
+		      \item \textbf{Fórmula:} Usamos la definición de probabilidad condicional.
+		            \[ P(F|C) = \frac{P(F \cap C)}{P(C)} = \frac{0.25}{0.60} = \frac{25}{60} = \frac{5}{12} \approx 41.67\% \]
+	      \end{itemize}
+
+	\item \textbf{Ingresos y helado:} \\
+	      \textit{Solución:} Sean G="gana más de \$1000" y C="le gusta el helado de chocolate". Nos piden $P(G \cap C)$ y nos dicen que los eventos son independientes.
+	      \begin{itemize}
+		      \item \textbf{Datos:} $P(G)=0.08$ y $P(C)=0.60$.
+		      \item \textbf{Fórmula para eventos independientes:} Si A y B son independientes, $P(A \cap B) = P(A) \cdot P(B)$.
+		            \[ P(G \cap C) = P(G) \cdot P(C) = 0.08 \cdot 0.6 = 0.048 = 4.8\% \]
+	      \end{itemize}
+
+	\item \textbf{Estudiantes de Ingeniería:} \\
+	      \textit{Solución:} Sean R="aprobó Resistencia de Materiales" y E="aprobó Estática". Nos piden $P(E|R)$.
+	      \begin{itemize}
+		      \item \textbf{Datos:} $P(R)=0.76$, $P(E)=0.45$ y $P(R \cap E) = 0.30$.
+		      \item \textbf{Fórmula:} Aplicamos directamente la probabilidad condicional.
+		            \[ P(E|R) = \frac{P(E \cap R)}{P(R)} = \frac{0.30}{0.76} = \frac{30}{76} = \frac{15}{38} \approx 39.47\% \]
+	      \end{itemize}
+\end{enumerate}
+\newpage
+
+\section{08/10 - Teorema de Bayes y Problemas con Tablas}
+\subsection{Enunciados}
+\begin{enumerate}
+	\setcounter{enumi}{3}
+	\item En un acuario se tienen solo 2 especies de peces. El 40\% de los peces son de la especie azul y el 60\% son de la especie roja. De la especie azul, el 30\% son machos; mientras que, de la especie roja, el 40\% son hembras. Si se selecciona un pez al azar:
+	      \begin{enumerate}
+		      \item Y resulta ser hembra, ¿cuál es la probabilidad de que sea de la especie azul?
+		      \item Y resulta ser macho, ¿cuál es la probabilidad de que sea de la especie azul?
+	      \end{enumerate}
+	\item En un consultorio, el 40\% de los pacientes fingen tener una enfermedad (para obtener un certificado médico). Además, el 10\% de los pacientes del consultorio son hombres. La probabilidad de que un paciente finja una enfermedad dado que es hombre es del 50\%. Calcule la probabilidad de que un paciente sea hombre, dado que finge una enfermedad.
+	\item La Tabla \ref{tab:ResultadosExamen} muestra los resultados de 4 grupos de personas que rindieron el examen para obtener la licencia de conducir B.
+	      \begin{table}[h!]
+		      \caption{Resultados Examen de Conducción}\label{tab:ResultadosExamen}
+		      \centering
+		      \begin{tabular}{|l|c|c|}
+			      \hline
+			      \textbf{Grupo} & \textbf{Aprobados} & \textbf{Reprobados} \\
+			      \hline
+			      Grupo 1        & 40                 & 5                   \\
+			      Grupo 2        & 35                 & 7                   \\
+			      Grupo 3        & 46                 & 12                  \\
+			      Grupo 4        & 50                 & 5                   \\
+			      \hline
+		      \end{tabular}
+	      \end{table}
+	      \begin{enumerate}
+		      \item ¿Cuál es la probabilidad de que una persona haya aprobado, sabiendo que es del grupo 3?
+		      \item ¿Cuál es la probabilidad de que una persona sea del grupo 1, si se sabe que reprobó el examen?
+		      \item ¿Cuál es la probabilidad de que una persona escogida al azar haya reprobado, si se sabe que rindió la prueba con el grupo 1?
+	      \end{enumerate}
+\end{enumerate}
+
+\subsection{Soluciones Detalladas}
+\begin{enumerate}
+	\setcounter{enumi}{3}
+	\item \textbf{Peces en el acuario (Teorema de Bayes):} \\
+	      \textit{Solución:} Definimos los eventos: A=especie azul, R=especie roja, M=macho, H=hembra.
+	      \begin{itemize}
+		      \item \textbf{Probabilidades dadas:}
+		            $P(A)=0.4$, $P(R)=0.6$, $P(M|A)=0.3$, $P(H|R)=0.4$.
+		      \item \textbf{Probabilidades deducidas:}
+		            $P(H|A) = 1 - P(M|A) = 0.7$.
+		            $P(M|R) = 1 - P(H|R) = 0.6$.
+	      \end{itemize}
+	      \begin{enumerate}
+		      \item \textbf{Calcular $P(A|H)$:} "Prob. de que sea azul, dado que es hembra".
+		            Por Teorema de Bayes: $P(A|H) = \frac{P(H|A)P(A)}{P(H)}$.
+		            Primero, calculamos la probabilidad total de ser hembra:
+		            $P(H) = P(H|A)P(A) + P(H|R)P(R) = (0.7 \cdot 0.4) + (0.4 \cdot 0.6) = 0.28 + 0.24 = 0.52$.
+		            \[ P(A|H) = \frac{0.28}{0.52} = \frac{28}{52} = \frac{7}{13} \]
+		      \item \textbf{Calcular $P(R|M)$:} "Prob. de que sea roja, dado que es macho".
+		            La probabilidad total de ser macho es $P(M) = 1 - P(H) = 1 - 0.52 = 0.48$.
+		            Por Bayes: $P(R|M) = \frac{P(M|R)P(R)}{P(M)}$.
+		            \[ P(R|M) = \frac{0.6 \cdot 0.6}{0.48} = \frac{0.36}{0.48} = \frac{36}{48} = \frac{3}{4} \]
+	      \end{enumerate}
+
+	\item \textbf{Pacientes en consultorio (Teorema de Bayes):} \\
+	      \textit{Solución:} Definimos los eventos: F="finge enfermedad", H="es hombre".
+	      \begin{itemize}
+		      \item \textbf{Datos:} $P(F)=0.40$, $P(H)=0.10$, $P(F|H)=0.50$.
+		      \item \textbf{Pregunta:} Calcular $P(H|F)$.
+		      \item \textbf{Fórmula de Bayes:} $P(H|F) = \frac{P(F|H)P(H)}{P(F)}$.
+		            \[ P(H|F) = \frac{0.50 \cdot 0.10}{0.40} = \frac{0.05}{0.40} = \frac{5}{40} = \frac{1}{8} = 12.5\% \]
+	      \end{itemize}
+
+	\item \textbf{Examen de conducir (Tabla de contingencia):} \\
+	      \textit{Solución:} Primero, completamos la tabla con los totales.
+	      \begin{center}
+		      \begin{tabular}{|l|c|c|c|}
+			      \hline
+			      \textbf{Grupo} & \textbf{Aprobados} & \textbf{Reprobados} & \textbf{Total} \\
+			      \hline
+			      Grupo 1        & 40                 & 5                   & 45             \\
+			      Grupo 2        & 35                 & 7                   & 42             \\
+			      Grupo 3        & 46                 & 12                  & 58             \\
+			      Grupo 4        & 50                 & 5                   & 55             \\
+			      \hline
+			      \textbf{Total} & \textbf{171}       & \textbf{29}         & \textbf{200}   \\
+			      \hline
+		      \end{tabular}
+	      \end{center}
+	      \begin{enumerate}
+		      \item \textbf{P(Aprobado | Grupo 3):} Miramos la fila "Grupo 3". 46 de 58 aprobaron.
+		            \[ P(A|G3) = \frac{46}{58} = \frac{23}{29} \]
+		      \item \textbf{P(Grupo 1 | Reprobado):} Miramos la columna "Reprobados". 5 de los 29 reprobados eran del Grupo 1.
+		            \[ P(G1|R) = \frac{5}{29} \]
+		      \item \textbf{P(Reprobado | Grupo 1):} Miramos la fila "Grupo 1". 5 de los 45 reprobaron.
+		            \[ P(R|G1) = \frac{5}{45} = \frac{1}{9} \]
+	      \end{enumerate}
+\end{enumerate}
+\newpage
+
 \section{ / - }
+
+\newpage
+
+
+
+
 
 \end{document}

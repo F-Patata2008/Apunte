@@ -1,0 +1,404 @@
+\documentclass[12pt, letterpaper]{article}
+\usepackage[utf8]{inputenc} % Input encoding
+\usepackage[T1]{fontenc} % Font encoding
+\usepackage{amsmath} % Math symbols and environments
+\usepackage{amssymb} % More math symbols
+\usepackage{graphicx} % Include graphics
+\usepackage[spanish]{babel} % Spanish language support (ACTIVADO)
+\usepackage{tabularx}
+\usepackage{enumitem}
+
+% ----- PAQUETES DE MEJORA Y CORRECCIONES -----
+\usepackage{microtype} % Soluciona problemas de Overfull/Underfull hbox y mejora la tipografía
+\renewcommand{\arraystretch}{1.5} % Incrementa el espaciado vertical
+\graphicspath{ {./images/}}
+% --------------------------------------------
+
+% ----- PAQUETES DE PROTECCIÓN Y MARCA DE AGUA -----
+\usepackage{eso-pic}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+
+% ----- CONFIGURACIÓN DE AUTORÍA Y METADATOS -----
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,
+    urlcolor=cyan,
+    pdftitle={Cuadernillo de Estudio: Técnicas de Conteo y Combinatoria},
+    pdfauthor={Felipe Colli Olea},
+    pdfsubject={Material de estudio para 4° Medio 2025},
+    pdfkeywords={combinatoria, permutacion, variacion, tecnicas de conteo},
+    pdfcreator={pdfLaTeX},
+    pdfproducer={LaTeX with hyperref}
+}
+% --------------------------------------------------------------------------
+
+% ----- CONFIGURACIÓN DE LA MARCA DE AGUA -----
+\definecolor{watermarkgray}{gray}{0.80} % Gris un poco más visible
+
+\AddToShipoutPictureBG{%
+  \AtPageCenter{%
+    \rotatebox{55}{%
+      \makebox[0pt]{\color{watermarkgray}\fontsize{50}{60}\selectfont\bfseries Copyright \copyright~2025 - Felipe Colli Olea}%
+    }%
+  }%
+}
+% --------------------------------------------
+
+
+\begin{document}
+
+% --- CONFIGURACIÓN DEL PIE DE PÁGINA ---
+\pagestyle{fancy}
+\fancyhf{} % Limpia cabecera y pie de página
+\fancyfoot[C]{\footnotesize Apunte por Felipe Colli Olea -- Copyright \copyright~2025. Todos los derechos reservados.}
+\fancyfoot[R]{\thepage} % Número de página a la derecha
+\renewcommand{\headrulewidth}{0pt} % Sin línea en la cabecera
+% ---------------------------------------
+
+\begin{titlepage}
+	% --- Desactivar la marca de agua SÓLO para la portada ---
+	\ClearShipoutPictureBG
+	\centering
+	\includegraphics[width=2cm]{IN}\\[1cm]
+	\textsc{\LARGE  Instituto Nacional General José Miguel Carrera}\\[0.5cm]
+	\textsc{\Large Departamento de Matemáticas}\\[1.5cm]
+
+	\rule{\textwidth}{1.5pt}\vspace{0.4cm}
+	{\Huge \bfseries Cuadernillo de Estudio: \\[0.5cm] Técnicas de Conteo y Combinatoria}\\[0.4cm]
+	{\large \textit{Extracto del Apunte Completo de Probabilidad y Estadística}}\\[0.4cm]
+	\rule{\textwidth}{1.5pt}\\[1.5cm]
+
+	{\Large \textit{Material de Estudio - 4° Medio 2025}}\\[2cm]
+
+	\begin{minipage}{0.45\textwidth}
+		\begin{flushleft} \large
+			\textbf{Autor:}\\
+			Felipe Colli Olea
+		\end{flushleft}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\begin{flushright} \large
+			\textbf{Profesor de Cátedra:}\\
+			Sergio Díaz
+        \end{flushright}
+	\end{minipage}
+
+	\vfill
+	\copyright~2025, Felipe Colli Olea. Todos los derechos reservados.
+\end{titlepage}
+
+\newpage
+% --- Desactivar la marca de agua SÓLO para la página de licencia ---
+\ClearShipoutPictureBG
+\vspace*{5cm} % Añade espacio vertical
+\begin{center}
+	\fbox{\begin{minipage}{0.8\textwidth}
+			\centering
+			\subsection*{Licencia de Uso Personal}
+			Este documento es una copia licenciada para uso exclusivamente personal y no transferible.
+			\vspace{0.5cm}
+
+			\parbox{0.9\textwidth}{\small
+				\begin{itemize}[leftmargin=*]
+					\item \textbf{Prohibida su reproducción:} No se permite la copia, escaneo o duplicación de este documento por ningún medio, ya sea físico o digital.
+					\item \textbf{Prohibida su distribución:} Queda estrictamente prohibido compartir, distribuir, cargar a plataformas en línea o revender este archivo o copias del mismo.
+					\item \textbf{Uso individual:} Esta licencia autoriza únicamente el uso personal del comprador original.
+				\end{itemize}
+			}
+			\vspace{0.5cm}
+
+			La infracción de estos términos constituye una violación a las leyes de derechos de autor y estará sujeta a las acciones legales correspondientes.
+
+			\vspace{0.5cm}
+			\textbf{\copyright~2025, Felipe Colli Olea. Todos los derechos reservados.}
+		\end{minipage}}
+\end{center}
+
+
+\newpage
+\tableofcontents
+\newpage % Start sections on a new page after ToC
+
+
+\section{11/06 - Principios Fundamentales de la Combinatoria}
+\subsection{Combinatoria}
+Son técnicas de conteo. Sean A y B dos sucesos, que pueden ocurrir de $a$ y $b$ maneras respectivamente.
+\begin{itemize}
+	\item \textbf{\textit{Principio Aditivo:}} Si los sucesos no pueden ocurrir de manera simultánea (son mutuamente excluyentes), entonces hay \textit{a+b} maneras posibles de que ocurra \textit{A o B}.
+	\item \textbf{\textit{Principio Multiplicativo:}} Si los sucesos ocurren uno a continuación del otro o de manera simultánea, entonces hay $a \cdot b$ formas de que ocurra \textit{A y B}.
+\end{itemize}
+
+\subsection{Ejercicios}
+\begin{enumerate}
+	\item Al lanzar una moneda y un dado, ¿cuántos resultados posibles hay? \\
+	      \textit{Solución:}
+	      Lanzar una moneda y un dado son sucesos independientes que ocurren simultáneamente. Usamos el principio multiplicativo.
+	      \begin{itemize}
+		      \item Resultados de la moneda: 2 (cara, sello).
+		      \item Resultados del dado: 6 (1, 2, 3, 4, 5, 6).
+	      \end{itemize}
+	      Total de resultados: $2 \times 6 = 12$. \\
+	      \textbf{Respuesta: 12 resultados posibles.}
+
+	\item Si Pedro tiene 5 lápices de pasta, 4 de tinta y 3 de grafito, ¿de cuántas maneras puede elegir un lápiz para escribir? \\
+	      \textit{Solución:}
+	      Pedro debe elegir un lápiz de pasta \textbf{o} uno de tinta \textbf{o} uno de grafito. Son elecciones mutuamente excluyentes. Usamos el principio aditivo.
+	      \begin{itemize}
+		      \item Maneras de elegir un lápiz de pasta: 5.
+		      \item Maneras de elegir un lápiz de tinta: 4.
+		      \item Maneras de elegir un lápiz de grafito: 3.
+	      \end{itemize}
+	      Total de maneras: $5 + 4 + 3 = 12$. \\
+	      \textbf{Respuesta: 12 maneras distintas.}
+
+	\item En un local se puede elegir un combo con las siguientes opciones disponibles: 5 tipos de hamburguesas, 4 bebidas distintas o bien un jugo de 2 sabores distintos. Si el combo consiste en una hamburguesa y una bebida/jugo, ¿de cuántas maneras distintas se puede elegir? \\
+	      \textit{Solución:}
+	      La elección del combo tiene dos etapas: elegir una hamburguesa \textbf{y} elegir un líquido.
+	      \begin{itemize}
+		      \item \textbf{Etapa 1 (Hamburguesa):} Hay 5 opciones.
+		      \item \textbf{Etapa 2 (Líquido):} Se puede elegir una bebida \textbf{o} un jugo. Esta es una sub-decisión que usa el principio aditivo.
+		            \begin{itemize}
+			            \item Opciones de bebida: 4.
+			            \item Opciones de jugo: 2.
+			            \item Total de opciones de líquido: $4 + 2 = 6$.
+		            \end{itemize}
+	      \end{itemize}
+	      Para formar el combo, se aplica el principio multiplicativo entre la Etapa 1 y la Etapa 2.
+	      Total de combos: $5 \text{ (hamburguesas)} \times 6 \text{ (líquidos)} = 30$. \\
+	      \textbf{Respuesta: Se puede elegir de 30 maneras distintas.}
+\end{enumerate}
+\newpage
+
+
+\section{07/07 - Permutaciones}
+\textbf{\textit{\large{Diferenciar distintas Permutaciones}}}
+
+\subsection{Principios Básicos de Conteo (Repaso)}
+Sean dos eventos A y B, que pueden ocurrir de $a$ y $b$ maneras respectivamente.
+\begin{itemize}
+	\item Principio Aditivo: $a + b$ \textbf{ (Eventos Excluyentes)}
+	\item Principio Multiplicativo: $a \cdot b$ \textbf{ (Eventos Simultáneos o Consecutivos)}
+\end{itemize}
+
+\subsubsection{Permutación simple} Corresponde a las distintas maneras en que se pueden ordenar $n$ objetos distintos.
+\[ P_n = n! \]
+\textit{Ejemplo: $P_4 = 4! = 4 \cdot 3 \cdot 2 \cdot 1 = 24$}
+
+\subsubsection{Permutación con repetición} Si tienes $n$ elementos en total, donde el primer elemento se repite $r_1$ veces, el segundo $r_2$ veces, y así sucesivamente, el número de permutaciones distintas es:
+\[ P_{r_1, r_2, \dots}^n = \frac{n!}{r_1! \cdot r_2! \cdot \dots} \]
+
+\subsubsection{Permutación Circular} Corresponde al número de maneras en que se pueden ordenar $n$ elementos alrededor de un círculo.
+\[ PC_n = (n-1)! \]
+
+\subsection{Ejercicios}
+\begin{enumerate}[label=\alph*.)]
+	\item ¿De cuántas maneras se pueden ordenar las letras de la palabra \textbf{LEMUR} para formar otra palabra (con o sin sentido)?
+	      \[ P_5 = 5! = 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 120 \]
+
+	\item ¿Y para la palabra \textbf{ARROYO}? ¿Y \textbf{CARRERA}? \\
+	      \begin{minipage}[t]{0.45\textwidth}
+		      \centering
+		      \textbf{ARROYO:} (6 letras, R se repite 2 veces, O se repite 2 veces)
+		      \[ P_{2, 2}^6 = \frac{6!}{2! \cdot 2!} = \frac{720}{4} = 180 \]
+	      \end{minipage}
+	      \hfill
+	      \begin{minipage}[t]{0.45\textwidth}
+		      \centering
+		      \textbf{CARRERA:} (7 letras, A se repite 2 veces, R se repite 3 veces)
+		      \[ P_{2,3}^7 = \frac{7!}{2! \cdot 3!} = \frac{5040}{2 \cdot 6} = 420 \]
+	      \end{minipage}
+
+	      \vspace{1cm} % Espacio vertical para separar
+
+	\item ¿De cuántas maneras se pueden sentar 4 personas en una mesa redonda?
+	      \[ PC_4 = (4-1)! = 3! = 6 \]
+\end{enumerate}
+\newpage
+
+\section{04/08 - Variaciones y Combinaciones}
+\subsection{Variación (o Arreglo)}
+Corresponde al número de ordenaciones de $k$ elementos seleccionados de un total de $n$ elementos, donde el orden importa ($k \le n$).
+\[V_k^n = n \cdot (n - 1) \cdot \dots \cdot (n - k + 1) = \frac{n!}{(n - k)!} \]
+\subsubsection*{Con repetición}
+El número de arreglos de $k$ elementos tomados de $n$, con repetición permitida.
+\[VR_k^n = n^k \]
+
+\subsection{Combinaciones} Corresponde a la cantidad de grupos (o subconjuntos) de $k$ elementos que se pueden formar de un total de $n$ elementos, donde el orden no importa.
+\[C_k^n = \binom{n}{k} = \frac{V_k^n}{k!} = \frac{n!}{(n - k)! \cdot k!} \]
+
+\subsection*{¿Cómo Diferenciar?}
+Sigue este diagrama de flujo mental:
+\begin{enumerate}[label=\bfseries Paso \arabic*:, wide]
+	\item \textbf{¿Importa el orden de los elementos seleccionados?}
+	      \begin{itemize}
+		      \item[\bfseries Sí $\rightarrow$] \textbf{PERMUTACIÓN / VARIACIÓN}
+		            \begin{itemize}
+			            \item \textbf{¿Se usan TODOS los elementos ($k=n$)? $\rightarrow$ PERMUTACIÓN}
+			                  \begin{itemize}
+				                  \item \textbf{Lineal:} $P_n = n!$ (con repetición: $P_{n_1,\dots}^n$)
+				                  \item \textbf{Circular:} $PC_n = (n-1)!$
+			                  \end{itemize}
+			            \item \textbf{¿Se elige un SUBCONJUNTO ($k<n$)? $\rightarrow$ VARIACIÓN}
+			                  \begin{itemize}
+				                  \item \textbf{Sin repetición:} $V_k^n = \frac{n!}{(n-k)!}$
+				                  \item \textbf{Con repetición:} $VR_k^n = n^k$
+			                  \end{itemize}
+		            \end{itemize}
+		      \item[\bfseries No $\rightarrow$] \textbf{COMBINACIÓN}
+		            \begin{itemize}
+			            \item \textbf{Sin repetición:} $C_k^n = \binom{n}{k}$
+			            % \item \textbf{Con repetición:} $CR_k^n = \binom{n+k-1}{k}$ (Se omite por brevedad)
+		            \end{itemize}
+	      \end{itemize}
+\end{enumerate}
+
+\subsection*{Ejercicios Resueltos}
+\begin{enumerate}[leftmargin=*,label=\arabic*.]
+	\item \textbf{En una carrera de 15 estudiantes, ¿de cuántas maneras se puede formar el podio (1er, 2do, 3er lugar)?}
+	      \begin{itemize}
+		      \item \textbf{Razonamiento:} El orden importa. Se eligen 3 de 15. Es una **Variación simple**.
+		      \item \textbf{Cálculo:} $V_3^{15} = 15 \cdot 14 \cdot 13 = 2730$ maneras.
+	      \end{itemize}
+
+	\item \textbf{¿De cuántas maneras se puede formar una clave numérica de 4 dígitos?}
+	      \begin{itemize}
+		      \item \textbf{Razonamiento:} El orden importa y los dígitos se pueden repetir (0-9). Es una **Variación con repetición**.
+		      \item \textbf{Cálculo:} $VR_4^{10} = 10^4 = 10000$ claves.
+	      \end{itemize}
+
+	\item \textbf{¿Y si no se pueden repetir los dígitos?}
+	      \begin{itemize}
+		      \item \textbf{Razonamiento:} El orden importa, pero sin repetición. Es una **Variación simple**.
+		      \item \textbf{Cálculo:} $V_4^{10} = 10 \cdot 9 \cdot 8 \cdot 7 = 5040$ claves.
+	      \end{itemize}
+
+	\item \textbf{En un curso de 40 estudiantes, ¿cuántas directivas (Presidente, Vicepresidente, Tesorero) se pueden formar?}
+	      \begin{itemize}
+		      \item \textbf{Razonamiento:} Los roles hacen que el orden importe. Es una **Variación simple**.
+		      \item \textbf{Cálculo:} $V_3^{40} = 40 \cdot 39 \cdot 38 = 59280$ directivas.
+	      \end{itemize}
+	      
+	\item \textbf{En una asamblea de 100 personas, ¿cuántas comisiones de 3 personas se pueden formar?}
+	      \begin{itemize}
+		      \item \textbf{Razonamiento:} En una comisión no hay jerarquía, el orden no importa. Es una **Combinación simple**.
+		      \item \textbf{Cálculo:} $C_3^{100} = \binom{100}{3} = \frac{100 \cdot 99 \cdot 98}{3 \cdot 2 \cdot 1} = 161700$ comisiones.
+	      \end{itemize}
+\end{enumerate}
+\newpage
+
+\section{11/08 - Propiedades de Combinatoria y Triángulo de Pascal}
+\subsection{Propiedades de los Números Combinatorios}
+Los números combinatorios, $\binom{n}{k}$, tienen propiedades que simplifican cálculos.
+\begin{enumerate}
+	\item \textbf{Combinaciones de los extremos:} 
+	      \[ \binom{n}{n} = 1 \quad \text{y} \quad \binom{n}{0} = 1 \]
+
+	\item \textbf{Propiedad de simetría:} Elegir $k$ elementos es lo mismo que elegir los $n-k$ que se dejarán fuera.
+	      \[ \binom{n}{k} = \binom{n}{n-k} \quad \text{para } 0 \le k \le n \]
+
+	\item \textbf{Identidad de Pascal:} Es la base del Triángulo de Pascal.
+	      \[ \binom{n}{k} + \binom{n}{k+1} = \binom{n+1}{k+1} \]
+\end{enumerate}
+
+\subsection{Triángulo de Pascal y Binomio de Newton}
+El **Triángulo de Pascal** es una disposición de números donde cada elemento es la suma de los dos que tiene encima. Los números en la fila $n$ (comenzando desde $n=0$) corresponden a los coeficientes de la expansión de $(a+b)^n$.
+
+El **Teorema del Binomio** formaliza esta relación:
+\[ (a+b)^n = \sum_{k=0}^{n} \binom{n}{k} a^{n-k} b^k = \binom{n}{0}a^n + \binom{n}{1}a^{n-1}b + \dots + \binom{n}{n}b^n \]
+
+\subsection{Conjunto Potencia}
+El **Conjunto Potencia** de un conjunto $A$, denotado $P(A)$, es el conjunto de \textbf{todos los subconjuntos} de $A$. Si $A$ tiene $n$ elementos, la cantidad total de subconjuntos es la suma de todas las combinaciones posibles (elegir 0, elegir 1, ..., elegir n):
+\[ |P(A)| = \sum_{k=0}^{n} \binom{n}{k} = \binom{n}{0} + \binom{n}{1} + \dots + \binom{n}{n} = 2^n \]
+
+\subsection{Ejercicios}
+\begin{enumerate}
+	\item \textbf{De un grupo de 40 personas se seleccionan 5. ¿Cuántos grupos distintos pueden formarse?} \\
+	      \textit{Solución:} El orden no importa, es una **combinación**. \\
+	      $C_5^{40} = \binom{40}{5} = \frac{40 \cdot 39 \cdot 38 \cdot 37 \cdot 36}{5 \cdot 4 \cdot 3 \cdot 2 \cdot 1} = 658,008$ grupos.
+
+	\item \textbf{Con 5 frutas distintas, ¿cuántos jugos se pueden hacer...}
+	      \begin{enumerate}
+		      \item \textbf{de dos frutas?} \\
+		            \textit{Solución:} $C_2^5 = \binom{5}{2} = \frac{5 \cdot 4}{2} = 10$ jugos.
+		      \item \textbf{de al menos 2 frutas?} \\
+		            \textit{Solución:} Sumamos los jugos de 2, 3, 4 y 5 frutas. \\
+		            $C_2^5 + C_3^5 + C_4^5 + C_5^5 = 10 + 10 + 5 + 1 = 26$ jugos.
+	      \end{enumerate}
+\end{enumerate}
+\newpage
+
+\section{18/08 - Repaso Para Prueba}
+\subsection{Ejercicios Resueltos de Combinatoria}
+\begin{enumerate}
+	\item \textbf{Con las cifras $\{1, 2, 3, 4, 5\}$, ¿cuántos números de 5 cifras, sin repetición, y menores que 54,000 se pueden formar?}
+	      \textit{Solución:} Dividimos el problema en dos casos mutuamente excluyentes.
+	      \begin{itemize}
+		      \item \textbf{Caso 1: El número empieza en 1, 2, 3 o 4.} (4 opciones). Las 4 cifras restantes se permutan.
+		            \[ 4 \times P_4 = 4 \times 4! = 4 \times 24 = 96 \text{ números.} \]
+		      \item \textbf{Caso 2: El número empieza en 5.} (1 opción). La segunda cifra debe ser 1, 2 o 3 (3 opciones). Las 3 cifras restantes se permutan.
+		            \[ 1 \times 3 \times P_3 = 1 \times 3 \times 3! = 18 \text{ números.} \]
+	      \end{itemize}
+	      \textbf{Total:} Como los casos son excluyentes, se suman: $96 + 18 = 114$ números.
+
+	\item \textbf{Con 4 oficiales y 8 soldados, ¿cuántos grupos de 6 miembros se pueden formar si debe haber...}
+	      \begin{enumerate}
+		      \item \textbf{...exactamente un oficial?} \\
+		            \textit{Solución:} Se elige 1 de 4 oficiales \textbf{Y} 5 de 8 soldados.
+		            \[ \binom{4}{1} \times \binom{8}{5} = 4 \times 56 = 224 \text{ grupos.} \]
+		      \item \textbf{...como mínimo un oficial?} \\
+		            \textit{Solución:} Es el total de grupos posibles menos los grupos sin oficiales (solo soldados).
+		            \[ \text{Total} = \binom{12}{6} - \binom{8}{6} = 924 - 28 = 896 \text{ grupos.} \]
+	      \end{enumerate}
+
+	\item \textbf{¿De cuántas maneras pueden 10 libros colocarse en un estante si 2 obras son de 3 volúmenes cada una y 2 son de 2 volúmenes cada una, y los volúmenes de cada obra no deben separarse?}
+	      \textit{Solución:} Se consideran las 4 obras como 4 "bloques" que se pueden permutar. Luego, se permutan los volúmenes dentro de cada bloque.
+	            \[ P_4 \times (P_3 \times P_3 \times P_2 \times P_2) = 4! \times (3! \cdot 3! \cdot 2! \cdot 2!) = 24 \times (6 \cdot 6 \cdot 2 \cdot 2) = 3,456 \text{ formas.} \]
+
+	\item \textbf{Con las letras de la expresión \texorpdfstring{$a^3b^2c^4$}{a3b2c4} desarrollada (`aaabbcccc`), ¿cuántas ordenaciones se pueden formar?}
+	      \textit{Solución:} Es una permutación con repetición de 9 elementos.
+	      \[ P_{3,2,4}^{9} = \frac{9!}{3! \cdot 2! \cdot 4!} = \frac{362,880}{6 \cdot 2 \cdot 24} = 1,260 \text{ ordenaciones.} \]
+\end{enumerate}
+\newpage
+
+\section{27/08 - Aplicaciones de Combinatoria}
+\subsection{Ejercicios: Diagonales de un Polígono}
+\begin{enumerate}
+	\item Determinar la cantidad de diagonales de un polígono de 20 lados.
+	\item Determinar una expresión para la cantidad de diagonales de un polígono de n lados.
+	\item Si un polígono tiene 65 diagonales, ¿cuántos lados tiene?
+\end{enumerate}
+
+\subsection{Soluciones}
+\begin{enumerate}
+	\item \textbf{Deducción de la fórmula y cálculo para 20 lados.} \\
+	      \textit{Solución:} Un polígono de $n$ lados tiene $n$ vértices. Una diagonal une dos vértices no consecutivos.
+	      \begin{itemize}
+		      \item El número total de líneas que se pueden trazar uniendo 2 vértices es una combinación:
+		            \[ \text{Total de líneas} = \binom{n}{2} = \frac{n(n-1)}{2} \]
+		      \item Este total incluye las diagonales y los $n$ lados. Para obtener solo las diagonales, restamos los lados.
+	      \end{itemize}
+	      La fórmula para el número de diagonales ($D$) es:
+	      \[ D(n) = \binom{n}{2} - n = \frac{n(n-1)}{2} - n = \frac{n^2 - n - 2n}{2} = \frac{n(n-3)}{2} \]
+	      Para un polígono de 20 lados ($n=20$):
+	      \[ D(20) = \frac{20(20-3)}{2} = 10 \cdot 17 = 170 \]
+	      \textbf{Respuesta:} 170 diagonales.
+
+	\item \textbf{Expresión para $n$ lados.} \\
+	      \textit{Solución:} Como se dedujo arriba, la expresión es $D(n) = \frac{n(n-3)}{2}$.
+
+	\item \textbf{Polígono con 65 diagonales.} \\
+	      \textit{Solución:} Igualamos la fórmula a 65 y despejamos $n$.
+	      \[ \frac{n(n-3)}{2} = 65 \implies n^2 - 3n = 130 \implies n^2 - 3n - 130 = 0 \]
+	      Factorizando la ecuación cuadrática:
+	      \[ (n-13)(n+10) = 0 \]
+	      Las soluciones son $n_1 = 13$ y $n_2 = -10$. Como el número de lados debe ser positivo, la respuesta es 13.
+
+	      \textbf{Respuesta:} El polígono tiene 13 lados.
+\end{enumerate}
+
+
+\end{document}

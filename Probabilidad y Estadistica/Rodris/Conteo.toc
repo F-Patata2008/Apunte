@@ -1,0 +1,23 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}11/06 - Principios Fundamentales de la Combinatoria}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Combinatoria}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Ejercicios}{3}{subsection.1.2}%
+\contentsline {section}{\numberline {2}07/07 - Permutaciones}{5}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Principios Básicos de Conteo (Repaso)}{5}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Permutación simple}{5}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Permutación con repetición}{5}{subsubsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.3}Permutación Circular}{5}{subsubsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.2}Ejercicios}{5}{subsection.2.2}%
+\contentsline {section}{\numberline {3}04/08 - Variaciones y Combinaciones}{7}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Variación (o Arreglo)}{7}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Combinaciones}{7}{subsection.3.2}%
+\contentsline {section}{\numberline {4}11/08 - Propiedades de Combinatoria y Triángulo de Pascal}{9}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Propiedades de los Números Combinatorios}{9}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Triángulo de Pascal y Binomio de Newton}{9}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Conjunto Potencia}{9}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Ejercicios}{10}{subsection.4.4}%
+\contentsline {section}{\numberline {5}18/08 - Repaso Para Prueba}{11}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Ejercicios Resueltos de Combinatoria}{11}{subsection.5.1}%
+\contentsline {section}{\numberline {6}27/08 - Aplicaciones de Combinatoria}{13}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Ejercicios: Diagonales de un Polígono}{13}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Soluciones}{13}{subsection.6.2}%

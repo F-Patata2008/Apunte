@@ -14,6 +14,7 @@ El repositorio está organizado en carpetas, cada una correspondiente a una asig
     *   `CPLC` - (Ciencias Para la Ciudadanía).
     *   `Educación Ciudadana`
     *   `Filosofía Política`
+    *   `Filosofía`
 *   **Idiomas:**
     *   `Ingles`
 *   **Otros:**

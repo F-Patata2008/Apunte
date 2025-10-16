@@ -1,2 +1,0 @@
-\babel@toc {spanish}{}\relax 
-\contentsline {section}{\numberline {1}Prender Leds}{3}{section.1}%

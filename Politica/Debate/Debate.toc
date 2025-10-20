@@ -1,0 +1,9 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Puntos Clave del Programa de Gobierno}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Economía: Hacia un Estado Popular y Socialista}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Seguridad: Nuevo Orden Institucional y Defensa de la Soberanía}{2}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Educación: Formación para una Nueva Sociedad}{3}{subsection.1.3}%
+\contentsline {section}{\numberline {2}Preguntas para Representantes de Otros Candidatos}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Para el representante de Johannes Kaiser (Ideas Libertarias)}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Para el representante de José Antonio Kast (Derecha Conservadora)}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Para el representante de Evelyn Matthei (Derecha Tradicional)}{4}{subsection.2.3}%

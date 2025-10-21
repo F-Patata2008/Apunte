@@ -1,14 +1,14 @@
 [1] Config.pm:328> INFO - This is Biber 2.21
 [1] Config.pm:331> INFO - Logfile is 'Informe-Politicas_Publicas.blg'
-[159] biber:342> INFO - === Tue Oct 21, 2025, 16:35:05
-[197] Biber.pm:421> INFO - Reading 'Informe-Politicas_Publicas.bcf'
-[377] Biber.pm:1002> INFO - Found 5 citekeys in bib section 0
-[433] Biber.pm:4487> INFO - Processing section 0
-[475] Biber.pm:4678> INFO - Looking for bibtex file 'bibliografia.bib' for section 0
-[478] bibtex.pm:1713> INFO - LaTeX decoding ...
-[502] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliografia.bib'
-[719] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
-[719] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[720] Biber.pm:4307> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'es-ES'
-[750] bbl.pm:676> INFO - Writing 'Informe-Politicas_Publicas.bbl' with encoding 'UTF-8'
-[759] bbl.pm:779> INFO - Output to Informe-Politicas_Publicas.bbl
+[177] biber:342> INFO - === Tue Oct 21, 2025, 16:37:42
+[217] Biber.pm:421> INFO - Reading 'Informe-Politicas_Publicas.bcf'
+[380] Biber.pm:1002> INFO - Found 8 citekeys in bib section 0
+[418] Biber.pm:4487> INFO - Processing section 0
+[445] Biber.pm:4678> INFO - Looking for bibtex file 'bibliografia.bib' for section 0
+[447] bibtex.pm:1713> INFO - LaTeX decoding ...
+[462] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliografia.bib'
+[606] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[607] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[607] Biber.pm:4307> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'es-ES'
+[630] bbl.pm:676> INFO - Writing 'Informe-Politicas_Publicas.bbl' with encoding 'UTF-8'
+[636] bbl.pm:779> INFO - Output to Informe-Politicas_Publicas.bbl

@@ -36,7 +36,7 @@
     linkcolor=black,
     urlcolor=blue,
     pdftitle={Propuesta de Política Pública: Mejora Democrática Digital},
-    pdfauthor={Nombre Apellido 1, Nombre Apellido 2},
+    pdfauthor={Felipe Colli Olea, Vastian Ortiz, Benjamin Ferandez Sudy, Juan Gonzales, Luciano Arevalo},
     pdfsubject={Propuesta de Política Pública para Formación Ciudadana}
 }
 
@@ -60,12 +60,11 @@
 	\rule{\textwidth}{1.5pt}\vspace{0.4cm}
 	{\Huge \bfseries Propuesta de Política Pública: \\ [0.4cm] Mejora Democrática Digital}\\[0.4cm]
 	\rule{\textwidth}{1.5pt}\\[0.7cm]
-	{\Large \textit{Regulación de Cuentas Automatizadas (Bots) y Transparencia Algorítmica para Fortalecer la Esfera Pública}}\\ %[1.5cm]
+	{\Large \textit{Regulación de Cuentas Automatizadas (Bots) y Transparencia Algorítmica para Fortalecer la Esfera Pública}}\\
 
 	\begin{minipage}{0.45\textwidth}
 		\begin{flushleft} \large
 			\textbf{Autores:}\\
-			% Reemplaza con los nombres de los integrantes
 			Felipe Colli Olea\\
 			Vastian Ortiz\\
 			Benjamin Ferandez Sudy\\
@@ -85,14 +84,17 @@
 \end{titlepage}
 
 \newpage
+\pagenumbering{roman} % Números de página romanos para el índice
 \tableofcontents
 \newpage
+\pagenumbering{arabic} % Volvemos a números arábigos
+\setcounter{page}{1} % Reiniciamos el contador de página
 
 % --- CUERPO DE LA PROPUESTA ---
 \thispagestyle{fancy}
 
 \section*{Resumen Ejecutivo}
-\addcontentsline{toc}{section}{Resumen Ejecutivo} % Añade esta línea
+\addcontentsline{toc}{section}{Resumen Ejecutivo}
 
 La democracia chilena enfrenta una creciente amenaza derivada de la manipulación informativa en redes sociales, impulsada por el uso de cuentas automatizadas (bots) y campañas de desinformación coordinadas. Este fenómeno erosiona la confianza en las instituciones, polariza el debate público y vulnera el derecho de los ciudadanos a una participación informada. La actual legislación es insuficiente para abordar la escala y tecnicidad de este problema.
 \par
@@ -107,25 +109,25 @@ Esta política busca proteger la integridad de la esfera pública digital, garan
 \newpage
 
 \section*{Análisis del Problema}
-\addcontentsline{toc}{section}{Análisis del Problema} % Añade esta línea
-
+\addcontentsline{toc}{section}{Análisis del Problema}
 \thispagestyle{fancy}
+
 La interacción entre las Tecnologías de la Información y la Comunicación (TIC) y la democracia en Chile presenta una vulnerabilidad crítica: la proliferación de desinformación y la manipulación del debate público a través de herramientas digitales. Este problema se manifiesta principalmente a través del uso de \textit{bots} y \textit{astroturfing} (creación artificial de apoyo popular), afectando la calidad de nuestra democracia de las siguientes maneras:
 \begin{itemize}[leftmargin=*, itemsep=0.5em]
-	\item \textbf{Erosión de la Esfera Pública:} Las redes de bots son capaces de instalar artificialmente tendencias, silenciar voces disidentes mediante ataques coordinados y difundir narrativas falsas a una velocidad inmanejable para la verificación tradicional\footcite{gurri_2018}. Esto degrada el debate, reemplazando la deliberación razonada por el ruido y la hostilidad, y creando "cámaras de eco" que refuerzan prejuicios y dificultan el consenso. Durante periodos electorales clave en Chile, se ha detectado un aumento significativo de actividad no auténtica destinada a influir en la percepción ciudadana\footcite{azerta_2021}.
+	\item \textbf{Erosión de la Esfera Pública y Fragmentación Social:} Las redes de bots son capaces de instalar artificialmente tendencias, silenciar voces disidentes mediante ataques coordinados y difundir narrativas falsas a una velocidad inmanejable para la verificación tradicional\footcite{gurri_2018}. Esto degrada el debate, reemplazando la deliberación razonada por el ruido y la hostilidad, y creando "cámaras de eco" que refuerzan prejuicios y dificultan el consenso. Este fenómeno se agrava por los algoritmos de recomendación, diseñados para maximizar la interacción del usuario, que a menudo priorizan contenido polarizante y emocional. Esto resulta en "burbujas de filtros" donde los ciudadanos dejan de estar expuestos a puntos de vista disidentes, fragmentando el debate público y erosionando la base común necesaria para el diálogo democrático\footcite{pariser_2011}. Durante periodos electorales clave en Chile, se ha detectado un aumento significativo de actividad no auténtica destinada a influir en la percepción ciudadana\footcite{azerta_2021}.
 
 	\item \textbf{Pérdida de Confianza y Polarización:} La exposición constante a \textit{fake news} y a discursos de odio amplificados por bots disminuye la confianza de los ciudadanos en los medios de comunicación, en las instituciones gubernamentales e incluso en la ciencia. Un estudio del Reuters Institute reveló que la confianza en las noticias en Chile ha caído, siendo las redes sociales una de las fuentes menos fiables pero de más alto consumo\footcite{reuters_institute_2023}. Esta desconfianza es el caldo de cultivo para una polarización afectiva extrema, que obstaculiza la gobernabilidad democrática.
 
-	\item \textbf{Vulneración del Voto Informado:} El \textit{microtargeting} político, combinado con la desinformación, permite dirigir mensajes engañosos a segmentos específicos del electorado con el fin de manipular sus decisiones. Al no existir una regulación sobre la transparencia de la publicidad política en línea, los ciudadanos quedan expuestos a una influencia invisible que atenta contra el principio de un voto libre e informado, pilar del sistema democrático.
+	\item \textbf{Vulneración del Voto Informado:} El \textit{microtargeting} político, combinado con la desinformación, permite dirigir mensajes engañosos a segmentos específicos del electorado con el fin de manipular sus decisiones. Al no existir una regulación sobre la transparencia de la publicidad política en línea, los ciudadanos quedan expuestos a una influencia invisible que atenta contra el principio de un voto libre e informado, pilar del sistema democrático. Este modelo se sustenta en la recolección masiva de datos personales para inferir perfiles psicológicos y explotar vulnerabilidades emocionales, una práctica característica del "capitalismo de la vigilancia"\footcite{zuboff_2019}.
 \end{itemize}
-La legislación actual, como la Ley de Prensa o la normativa del SERVEL sobre propaganda electoral, no fue diseñada para la era digital y carece de las herramientas para fiscalizar y sancionar estas nuevas formas de manipulación.
+La legislación actual, como la Ley de Prensa o la normativa del SERVEL sobre propaganda electoral, no fue diseñada para esta nueva realidad y carece de las herramientas para fiscalizar la manipulación algorítmica y el uso indebido de datos personales en campañas políticas\footcite{derechos_digitales_2022}.
 
 \newpage
 
 \section*{Recomendación de Política Pública}
-\addcontentsline{toc}{section}{Recomendación de Política Pública} % Añade esta línea
-
+\addcontentsline{toc}{section}{Recomendación de Política Pública}
 \thispagestyle{fancy}
+
 Para abordar de manera integral el problema descrito, se propone la tramitación de una \textbf{"Ley sobre Transparencia, Responsabilidad de Plataformas y Protección de la Democracia Digital"}. Esta ley establecerá un conjunto de obligaciones y creará una nueva institucionalidad para velar por la integridad del ecosistema informativo en línea. Sus componentes centrales son:
 
 \subsection{Obligaciones de Transparencia para Plataformas Digitales}
@@ -151,13 +153,12 @@ El Ministerio de Educación, en colaboración con universidades y organizaciones
 \newpage
 
 \section*{Justificación}
-\addcontentsline{toc}{section}{Justificación} % Añade esta línea
-
+\addcontentsline{toc}{section}{Justificación}
 \thispagestyle{fancy}
-Esta propuesta se fundamenta en principios éticos, constitucionales y en evidencia que demuestra su viabilidad y pertinencia para el contexto chileno.
 
+Esta propuesta se fundamenta en principios éticos, constitucionales y en evidencia que demuestra su viabilidad y pertinencia para el contexto chileno.
 \begin{itemize}[leftmargin=*, itemsep=0.5em]
-	\item \textbf{Principios Éticos:} La propuesta responde a los principios de \textbf{justicia}, \textbf{bien común} y \textbf{transparencia}. Promueve la justicia al nivelar el campo de juego informativo, reduciendo el poder de actores maliciosos para manipular la opinión pública. Contribuye al bien común al proteger la calidad del debate democrático, un pilar esencial para la cohesión social. Finalmente, la transparencia es el eje de la propuesta, pues empodera a los ciudadanos con la información necesaria para evaluar críticamente las fuentes y los mensajes que reciben\footcite{sunstein_2017}.
+	\item \textbf{Principios Éticos:} La propuesta responde a los principios de \textbf{justicia}, \textbf{bien común} y \textbf{transparencia}. Promueve la justicia al nivelar el campo de juego informativo, reduciendo el poder de actores maliciosos para manipular la opinión pública. Contribuye al bien común al proteger la calidad del debate democrático y mitigar la fragmentación social causada por las cámaras de eco, fomentando un entorno informativo más limpio y diverso que es esencial para la cohesión social. Finalmente, la transparencia es el eje de la propuesta, pues empodera a los ciudadanos con la información necesaria para evaluar críticamente las fuentes y los mensajes que reciben\footcite{sunstein_2017}.
 
 	\item \textbf{Marco Constitucional:} La política propuesta logra un equilibrio entre la \textbf{libertad de expresión} (Artículo 19, N°12 de la Constitución) y la protección de otros derechos fundamentales, como el \textbf{derecho a la honra} y el \textbf{orden público democrático}. La regulación no busca censurar contenidos, sino hacer visible la manipulación. No se castiga la opinión, sino la suplantación de identidad (bots) y la opacidad en la propaganda pagada. Esto es coherente con los límites que la propia Constitución establece para el ejercicio de las libertades.
 
@@ -167,6 +168,5 @@ Esta propuesta se fundamenta en principios éticos, constitucionales y en eviden
 \newpage
 \printbibliography[title=Bibliografía]
 \addcontentsline{toc}{section}{Bibliografía}
-
 
 \end{document}

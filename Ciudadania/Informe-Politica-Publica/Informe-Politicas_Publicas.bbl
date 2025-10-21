@@ -50,6 +50,37 @@
       \verb https://azerta.cl/comunicaciones/radiografia-a-la-desinformacion-y-las-fake-news-en-la-discusion-constituyente/
       \endverb
     \endentry
+    \entry{derechos_digitales_2022}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=a29fb024317a7ff6e317d2be5fe8ea43}{%
+           family={{Derechos Digitales}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{a29fb024317a7ff6e317d2be5fe8ea43}
+      \strng{fullhash}{a29fb024317a7ff6e317d2be5fe8ea43}
+      \strng{fullhashraw}{a29fb024317a7ff6e317d2be5fe8ea43}
+      \strng{bibnamehash}{a29fb024317a7ff6e317d2be5fe8ea43}
+      \strng{authorbibnamehash}{a29fb024317a7ff6e317d2be5fe8ea43}
+      \strng{authornamehash}{a29fb024317a7ff6e317d2be5fe8ea43}
+      \strng{authorfullhash}{a29fb024317a7ff6e317d2be5fe8ea43}
+      \strng{authorfullhashraw}{a29fb024317a7ff6e317d2be5fe8ea43}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Elecciones en el entorno digital en Chile: una agenda regulatoria pendiente}
+      \field{urlday}{21}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.derechosdigitales.org/17158/elecciones-en-el-entorno-digital-en-chile-una-agenda-regulatoria-pendiente/
+      \endverb
+      \verb{url}
+      \verb https://www.derechosdigitales.org/17158/elecciones-en-el-entorno-digital-en-chile-una-agenda-regulatoria-pendiente/
+      \endverb
+    \endentry
     \entry{european_commission_dsa}{online}{}{}
       \name{author}{1}{}{%
         {{hash=a1b813a6e85874b4c945aec2cdbea74c}{%
@@ -109,6 +140,35 @@
       \field{labeltitlesource}{title}
       \field{title}{The Revolt of the Public and the Crisis of Authority in the New Millennium}
       \field{year}{2018}
+    \endentry
+    \entry{pariser_2011}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=044b7cb82804417e8026861a006813eb}{%
+           family={Pariser},
+           familyi={P\bibinitperiod},
+           given={Eli},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {London}%
+      }
+      \list{publisher}{1}{%
+        {Penguin UK}%
+      }
+      \strng{namehash}{044b7cb82804417e8026861a006813eb}
+      \strng{fullhash}{044b7cb82804417e8026861a006813eb}
+      \strng{fullhashraw}{044b7cb82804417e8026861a006813eb}
+      \strng{bibnamehash}{044b7cb82804417e8026861a006813eb}
+      \strng{authorbibnamehash}{044b7cb82804417e8026861a006813eb}
+      \strng{authornamehash}{044b7cb82804417e8026861a006813eb}
+      \strng{authorfullhash}{044b7cb82804417e8026861a006813eb}
+      \strng{authorfullhashraw}{044b7cb82804417e8026861a006813eb}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Filter Bubble: What the Internet Is Hiding from You}
+      \field{year}{2011}
     \endentry
     \entry{reuters_institute_2023}{online}{}{}
       \name{author}{1}{}{%
@@ -170,6 +230,35 @@
       \field{labeltitlesource}{title}
       \field{title}{\#Republic: Divided Democracy in the Age of Social Media}
       \field{year}{2017}
+    \endentry
+    \entry{zuboff_2019}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=19b83c33a232c9892502d941e4cfcf56}{%
+           family={Zuboff},
+           familyi={Z\bibinitperiod},
+           given={Shoshana},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {PublicAffairs}%
+      }
+      \strng{namehash}{19b83c33a232c9892502d941e4cfcf56}
+      \strng{fullhash}{19b83c33a232c9892502d941e4cfcf56}
+      \strng{fullhashraw}{19b83c33a232c9892502d941e4cfcf56}
+      \strng{bibnamehash}{19b83c33a232c9892502d941e4cfcf56}
+      \strng{authorbibnamehash}{19b83c33a232c9892502d941e4cfcf56}
+      \strng{authornamehash}{19b83c33a232c9892502d941e4cfcf56}
+      \strng{authorfullhash}{19b83c33a232c9892502d941e4cfcf56}
+      \strng{authorfullhashraw}{19b83c33a232c9892502d941e4cfcf56}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power}
+      \field{year}{2019}
     \endentry
   \enddatalist
 \endrefsection

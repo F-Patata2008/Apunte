@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.10.3)  21 OCT 2025 16:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.10.3)  21 OCT 2025 16:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -672,7 +672,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 [6]
 
 [7]
-Overfull \hbox (0.65045pt too wide) in paragraph at lines 169--169
+Overfull \hbox (0.65045pt too wide) in paragraph at lines 175--175
 []\T1/cmr/m/n/12 (-20) European Com-mis-sion. \T1/cmr/m/it/12 (-20) The Di-gi-tal Ser-vi-ces Act\T1/cmr/m/n/12 (-20) . 2024. \T1/cmr/m/sc/12 (-20) url\T1/cmr/m/n/12 (-20) : [][]$\T1/cmtt/m/n/12 https : / / digital -[] strategy .
  []
 
@@ -688,21 +688,21 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `Informe-Politicas_Publicas.out' has not changed.
-(rerunfilecheck)             Checksum: 5EE858DCD9AFA71AEB4D45B3C7A76AF9;1883.
+(rerunfilecheck)             Checksum: CEA87EAE8659683556821ADA04A61A0D;1890.
 Package logreq Info: Writing requests to 'Informe-Politicas_Publicas.run.xml'.
 \openout1 = `Informe-Politicas_Publicas.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21521 strings out of 475068
- 376376 string characters out of 5764374
+ 21530 strings out of 475068
+ 376473 string characters out of 5764374
  1255324 words of memory out of 5000000
- 44082 multiletter control sequences out of 15000+600000
- 582371 words of font info for 159 fonts, out of 8000000 for 9000
+ 44083 multiletter control sequences out of 15000+600000
+ 582650 words of font info for 163 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
  66i,11n,81p,1171b,1932s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on Informe-Politicas_Publicas.pdf (10 pages, 386988 bytes).
+Output written on Informe-Politicas_Publicas.pdf (10 pages, 388795 bytes).
 PDF statistics:
  265 PDF objects out of 1000 (max. 8388607)
  210 compressed objects within 3 object streams

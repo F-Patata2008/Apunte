@@ -4,6 +4,6 @@
 \contentsline {section}{Recomendación de Política Pública}{4}{section*.4}%
 \contentsline {subsection}{\numberline {0.1}Obligaciones de Transparencia para Plataformas Digitales}{4}{subsection.0.1}%
 \contentsline {subsection}{\numberline {0.2}Creación del Consejo para la Transparencia Digital (CTD)}{4}{subsection.0.2}%
-\contentsline {subsection}{\numberline {0.3}Programa Nacional de Alfabetización Mediática e Informacional (AMI)}{5}{subsection.0.3}%
+\contentsline {subsection}{\numberline {0.3}Fortalecimiento de la Alfabetización Mediática en Educación Ciudadana}{5}{subsection.0.3}%
 \contentsline {section}{Justificación}{6}{section*.5}%
 \contentsline {section}{Bibliografía}{8}{section*.6}%

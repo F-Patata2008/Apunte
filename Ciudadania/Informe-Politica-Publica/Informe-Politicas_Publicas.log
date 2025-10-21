@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.10.3)  21 OCT 2025 16:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.10.3)  21 OCT 2025 17:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -618,17 +618,17 @@ Package hyperref Info: Link coloring ON on input line 44.
 \@outlinefile=\write4
 \openout4 = `Informe-Politicas_Publicas.out'.
 
-<./images/IN.png, id=36, 198.7425pt x 255.95625pt>
+<./images/IN.png, id=40, 198.7425pt x 255.95625pt>
 File: ./images/IN.png Graphic file (type png)
 <use ./images/IN.png>
-Package pdftex.def Info: ./images/IN.png  used on input line 57.
+Package pdftex.def Info: ./images/IN.png  used on input line 56.
 (pdftex.def)             Requested size: 71.13188pt x 91.6091pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 74.
+(Font)              <12> on input line 72.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 74.
+(Font)              <8> on input line 72.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 74.
+(Font)              <6> on input line 72.
 
 
 [1
@@ -649,12 +649,12 @@ LaTeX Info: Redefining \% on input line 1.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.109 \newpage
+l.106 \newpage
                [1]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 117.
+(Font)              <7> on input line 114.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 117.
+(Font)              <5> on input line 114.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
@@ -672,13 +672,17 @@ Package microtype Info: Loading generic protrusion settings for font family
 [6]
 
 [7]
-Overfull \hbox (0.65045pt too wide) in paragraph at lines 175--175
-[]\T1/cmr/m/n/12 (-20) European Com-mis-sion. \T1/cmr/m/it/12 (-20) The Di-gi-tal Ser-vi-ces Act\T1/cmr/m/n/12 (-20) . 2024. \T1/cmr/m/sc/12 (-20) url\T1/cmr/m/n/12 (-20) : [][]$\T1/cmtt/m/n/12 https : / / digital -[] strategy .
+
+[8]
+Overfull \hbox (0.73161pt too wide) in paragraph at lines 180--180
+\T1/cmtt/m/n/12 strategy . ec . europa . eu / en / policies / digital -[] services -[] act$[][] \T1/cmr/m/n/12 (-20) (vi-si-ta-do 21[]10[]2025). 
  []
 
 
 
-[8] (./Informe-Politicas_Publicas.aux
+[9]
+
+[10] (./Informe-Politicas_Publicas.aux
 LaTeX Info: Redefining \sptext on input line 12.
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
@@ -688,24 +692,24 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `Informe-Politicas_Publicas.out' has not changed.
-(rerunfilecheck)             Checksum: CEA87EAE8659683556821ADA04A61A0D;1890.
+(rerunfilecheck)             Checksum: 06C0EA4F79D865921C6A3AE08B7635BE;2187.
 Package logreq Info: Writing requests to 'Informe-Politicas_Publicas.run.xml'.
 \openout1 = `Informe-Politicas_Publicas.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21530 strings out of 475068
- 376473 string characters out of 5764374
- 1255324 words of memory out of 5000000
- 44083 multiletter control sequences out of 15000+600000
- 582650 words of font info for 163 fonts, out of 8000000 for 9000
+ 21586 strings out of 475068
+ 377880 string characters out of 5764374
+ 1256558 words of memory out of 5000000
+ 44110 multiletter control sequences out of 15000+600000
+ 583039 words of font info for 168 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
- 66i,11n,81p,1171b,1932s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 66i,11n,81p,1293b,1932s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on Informe-Politicas_Publicas.pdf (10 pages, 388795 bytes).
+Output written on Informe-Politicas_Publicas.pdf (12 pages, 402121 bytes).
 PDF statistics:
- 265 PDF objects out of 1000 (max. 8388607)
- 210 compressed objects within 3 object streams
- 54 named destinations out of 1000 (max. 500000)
- 54342 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 307 PDF objects out of 1000 (max. 8388607)
+ 250 compressed objects within 3 object streams
+ 73 named destinations out of 1000 (max. 500000)
+ 54350 words of extra memory for PDF output out of 61914 (max. 10000000)
 

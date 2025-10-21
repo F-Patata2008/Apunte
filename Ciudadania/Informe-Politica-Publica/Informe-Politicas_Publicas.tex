@@ -1,40 +1,162 @@
-\documentclass[11pt]{article}
-\usepackage[spanish]{babel}
-\usepackage{amsmath}  % Math
-\usepackage{amssymb}  % Symbols
-\usepackage{graphicx} % Images
-\graphicspath{ {./images/} }
+\documentclass[12pt, letterpaper]{article}
+
+% ----- PAQUETES BÁSICOS Y DE IDIOMA -----
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[margin=1in]{geometry}
-\usepackage{fancyhdr} % Para el pie de página personalizado
-\usepackage{hyperref} % Para metadatos y enlaces en el PDF
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
 
-% ----- CONFIGURACIÓN DE AUTORÍA Y PIE DE PÁGINA -----
+% ----- PAQUETES DE FORMATO Y GEOMETRÍA -----
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage{microtype}
+\graphicspath{ {./images/}} % Asegúrate de tener una carpeta "images" con el logo "IN.png"
+
+% ----- PAQUETE DE CITAS Y BIBLIOGRAFÍA -----
+\usepackage{csquotes} % Recomendado por biblatex
+\usepackage[style=verbose-trad1, bibstyle=numeric, backend=biber]{biblatex}
+\addbibresource{bibliografia.bib} % Llama a tu archivo de bibliografía
+
+% ----- CONFIGURACIÓN DE LA PÁGINA -----
+\geometry{
+    letterpaper,
+    left=2.5cm,
+    right=2.5cm,
+    top=2.5cm,
+    bottom=3cm
+}
+\setstretch{1.5}
+
+% ----- PAQUETES Y CONFIGURACIÓN DE PIE DE PÁGINA E HIPERVÍNCULOS -----
+\usepackage{fancyhdr}
+\usepackage{hyperref}
 \hypersetup{
-    pdftitle={Tu Título},
-    pdfauthor={Felipe Colli Olea},
     colorlinks=true,
     linkcolor=black,
-    urlcolor=cyan
+    urlcolor=blue,
+    pdftitle={Propuesta de Política Pública: Mejora Democrática Digital},
+    pdfauthor={Nombre Apellido 1, Nombre Apellido 2},
+    pdfsubject={Propuesta de Política Pública para Formación Ciudadana}
 }
 
-% Configuración del pie de página con fancyhdr
-\pagestyle{fancy}
-\fancyhf{} % Limpia la cabecera y el pie de página actuales
-\fancyfoot[C]{\footnotesize Felipe Colli, Todos los Derechos Reservados} % Tu texto en el centro
-\fancyfoot[R]{\thepage} % Número de página a la derecha
-\renewcommand{\headrulewidth}{0pt} % Elimina la línea de la cabecera
-
-\title{Tu Título}
-\author{Felipe Colli Olea}
-\date{\today}
-
+% --- INICIO DEL DOCUMENTO ---
 \begin{document}
 
-\maketitle
-\thispagestyle{fancy} % Aplica el estilo de pie de página a la primera página también
+% --- CONFIGURACIÓN DEL PIE DE PÁGINA ---
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\footnotesize Proyecto de Formación Ciudadana -- 4° Medio}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
 
-Empieza a escribir aquí...
+% --- PORTADA ---
+\begin{titlepage}
+	\centering
+	% Asegúrate de tener la imagen IN.png en la carpeta correcta
+	\includegraphics[width=2.5cm]{IN.png}\\[0.8cm]
+	\textsc{\LARGE Instituto Nacional General José Miguel Carrera}\\[0.5cm]
+	\textsc{\Large Departamento de Historia y Ciencias Sociales}\\[0.5cm]
+	\rule{\textwidth}{1.5pt}\vspace{0.4cm}
+	{\Huge \bfseries Propuesta de Política Pública: \\ [0.4cm] Mejora Democrática Digital}\\[0.4cm]
+	\rule{\textwidth}{1.5pt}\\[0.7cm]
+	{\Large \textit{Regulación de Cuentas Automatizadas (Bots) y Transparencia Algorítmica para Fortalecer la Esfera Pública}}\\ %[1.5cm]
+
+	\begin{minipage}{0.45\textwidth}
+		\begin{flushleft} \large
+			\textbf{Autores:}\\
+			% Reemplaza con los nombres de los integrantes
+			Felipe Colli Olea\\
+			Vastian Ortiz\\
+			Benjamin Ferandez Sudy\\
+			Juan Gonzales\\
+			Luciano Arevalo
+		\end{flushleft}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\begin{flushright} \large
+			\textbf{Profesora:}\\
+			Marcela Dávila Méndez
+		\end{flushright}
+	\end{minipage}
+	\vfill
+	{\large Santiago, Chile \\[0.5cm] \today}
+\end{titlepage}
+
+\newpage
+\tableofcontents
+\newpage
+
+% --- CUERPO DE LA PROPUESTA ---
+\thispagestyle{fancy}
+
+\section*{Resumen Ejecutivo}
+La democracia chilena enfrenta una creciente amenaza derivada de la manipulación informativa en redes sociales, impulsada por el uso de cuentas automatizadas (bots) y campañas de desinformación coordinadas. Este fenómeno erosiona la confianza en las instituciones, polariza el debate público y vulnera el derecho de los ciudadanos a una participación informada. La actual legislación es insuficiente para abordar la escala y tecnicidad de este problema.
+\par
+Esta propuesta de política pública se dirige al Congreso Nacional y a la Subsecretaría de Telecomunicaciones (SUBTEL), y recomienda la creación de un marco regulatorio centrado en tres pilares:
+\begin{enumerate}[label=\arabic*)]
+	\item \textbf{Transparencia Obligatoria:} Exigir a las plataformas digitales la identificación clara y visible de cuentas automatizadas y la publicidad política pagada, incluyendo su origen y financiamiento.
+	\item \textbf{Consejo para la Transparencia Digital:} Crear una entidad autónoma con facultades para fiscalizar el cumplimiento de la normativa, auditar los algoritmos de moderación de contenido y actuar como mediador en la remoción de desinformación dañina.
+	\item \textbf{Alfabetización Mediática:} Implementar un programa nacional de educación cívica digital, coordinado por el Ministerio de Educación, para dotar a la ciudadanía de herramientas críticas para identificar y resistir la manipulación en línea.
+\end{enumerate}
+Esta política busca proteger la integridad de la esfera pública digital, garantizando un ecosistema informativo más sano y resiliente, sin coartar la libertad de expresión.
+
+\newpage
+
+\section*{Análisis del Problema}
+\thispagestyle{fancy}
+La interacción entre las Tecnologías de la Información y la Comunicación (TIC) y la democracia en Chile presenta una vulnerabilidad crítica: la proliferación de desinformación y la manipulación del debate público a través de herramientas digitales. Este problema se manifiesta principalmente a través del uso de \textit{bots} y \textit{astroturfing} (creación artificial de apoyo popular), afectando la calidad de nuestra democracia de las siguientes maneras:
+\begin{itemize}[leftmargin=*, itemsep=0.5em]
+	\item \textbf{Erosión de la Esfera Pública:} Las redes de bots son capaces de instalar artificialmente tendencias, silenciar voces disidentes mediante ataques coordinados y difundir narrativas falsas a una velocidad inmanejable para la verificación tradicional\footcite{gurri_2018}. Esto degrada el debate, reemplazando la deliberación razonada por el ruido y la hostilidad, y creando "cámaras de eco" que refuerzan prejuicios y dificultan el consenso. Durante periodos electorales clave en Chile, se ha detectado un aumento significativo de actividad no auténtica destinada a influir en la percepción ciudadana\footcite{azerta_2021}.
+
+	\item \textbf{Pérdida de Confianza y Polarización:} La exposición constante a \textit{fake news} y a discursos de odio amplificados por bots disminuye la confianza de los ciudadanos en los medios de comunicación, en las instituciones gubernamentales e incluso en la ciencia. Un estudio del Reuters Institute reveló que la confianza en las noticias en Chile ha caído, siendo las redes sociales una de las fuentes menos fiables pero de más alto consumo\footcite{reuters_institute_2023}. Esta desconfianza es el caldo de cultivo para una polarización afectiva extrema, que obstaculiza la gobernabilidad democrática.
+
+	\item \textbf{Vulneración del Voto Informado:} El \textit{microtargeting} político, combinado con la desinformación, permite dirigir mensajes engañosos a segmentos específicos del electorado con el fin de manipular sus decisiones. Al no existir una regulación sobre la transparencia de la publicidad política en línea, los ciudadanos quedan expuestos a una influencia invisible que atenta contra el principio de un voto libre e informado, pilar del sistema democrático.
+\end{itemize}
+La legislación actual, como la Ley de Prensa o la normativa del SERVEL sobre propaganda electoral, no fue diseñada para la era digital y carece de las herramientas para fiscalizar y sancionar estas nuevas formas de manipulación.
+
+\newpage
+
+\section*{Recomendación de Política Pública}
+\thispagestyle{fancy}
+Para abordar de manera integral el problema descrito, se propone la tramitación de una **"Ley sobre Transparencia, Responsabilidad de Plataformas y Protección de la Democracia Digital"**. Esta ley establecerá un conjunto de obligaciones y creará una nueva institucionalidad para velar por la integridad del ecosistema informativo en línea. Sus componentes centrales son:
+
+\subsection*{1. Obligaciones de Transparencia para Plataformas Digitales}
+Las plataformas de redes sociales con más de un millón de usuarios en el territorio nacional deberán:
+\begin{itemize}[leftmargin=*, itemsep=0.5em]
+	\item \textbf{Etiquetado de Cuentas Automatizadas:} Desarrollar mecanismos técnicos para identificar y etiquetar de forma clara y permanente a las cuentas con comportamiento no humano (bots). La interacción con un bot debe ser evidente para el usuario.
+	\item \textbf{Registro Público de Publicidad Política:} Crear una biblioteca de anuncios de carácter político, de acceso público y en tiempo real. Este registro deberá detallar quién pagó por el anuncio, el monto invertido y los criterios de segmentación utilizados.
+	\item \textbf{Informes de Moderación:} Publicar informes trimestrales sobre la moderación de contenidos, detallando el volumen de cuentas y publicaciones eliminadas por infringir políticas sobre desinformación, discurso de odio y comportamiento no auténtico.
+\end{itemize}
+
+\subsection*{2. Creación del Consejo para la Transparencia Digital (CTD)}
+Se propone la creación de un organismo autónomo, similar en naturaleza al Consejo para la Transparencia, con las siguientes atribuciones:
+\begin{itemize}[leftmargin=*, itemsep=0.5em]
+	\item \textbf{Fiscalización y Sanción:} Vigilar el cumplimiento de las obligaciones de las plataformas y aplicar sanciones monetarias proporcionales en caso de incumplimiento.
+	\item \textbf{Auditoría Algorítmica:} Contar con la facultad de solicitar auditorías a los algoritmos de recomendación y moderación de las plataformas para asegurar que no promuevan sistemáticamente la desinformación o la polarización.
+	\item \textbf{Canal de Denuncia Ciudadana:} Servir como instancia para que los ciudadanos puedan denunciar campañas de desinformación coordinadas que representen un riesgo inminente para la salud pública o el orden democrático.
+\end{itemize}
+Los miembros del consejo serían designados a través de un sistema de Alta Dirección Pública para garantizar su independencia técnica y política.
+
+\subsection*{3. Programa Nacional de Alfabetización Mediática e Informacional (AMI)}
+El Ministerio de Educación, en colaboración con universidades y organizaciones de la sociedad civil, deberá diseñar e implementar un programa de carácter nacional y transversal en el currículum escolar (desde educación básica a media) para desarrollar habilidades de pensamiento crítico frente al contenido digital.
+
+\newpage
+
+\section*{Justificación}
+\thispagestyle{fancy}
+Esta propuesta se fundamenta en principios éticos, constitucionales y en evidencia que demuestra su viabilidad y pertinencia para el contexto chileno.
+
+\begin{itemize}[leftmargin=*, itemsep=0.5em]
+	\item \textbf{Principios Éticos:} La propuesta responde a los principios de \textbf{justicia}, \textbf{bien común} y \textbf{transparencia}. Promueve la justicia al nivelar el campo de juego informativo, reduciendo el poder de actores maliciosos para manipular la opinión pública. Contribuye al bien común al proteger la calidad del debate democrático, un pilar esencial para la cohesión social. Finalmente, la transparencia es el eje de la propuesta, pues empodera a los ciudadanos con la información necesaria para evaluar críticamente las fuentes y los mensajes que reciben\footcite{sunstein_2017}.
+
+	\item \textbf{Marco Constitucional:} La política propuesta logra un equilibrio entre la \textbf{libertad de expresión} (Artículo 19, N°12 de la Constitución) y la protección de otros derechos fundamentales, como el \textbf{derecho a la honra} y el \textbf{orden público democrático}. La regulación no busca censurar contenidos, sino hacer visible la manipulación. No se castiga la opinión, sino la suplantación de identidad (bots) y la opacidad en la propaganda pagada. Esto es coherente con los límites que la propia Constitución establece para el ejercicio de las libertades.
+
+	\item \textbf{Viabilidad y Evidencia:} La propuesta es realista y se inspira en modelos regulatorios que ya se están implementando en otras democracias, como la Ley de Servicios Digitales (DSA) de la Unión Europea\footcite{european_commission_dsa}. Esto demuestra que es técnicamente factible exigir mayor transparencia a las grandes plataformas. Además, la creación de una institucionalidad autónoma como el CTD sigue un modelo probado en Chile con el Consejo para la Transparencia, lo que asegura su viabilidad institucional. La pertinencia es innegable: la democracia no puede funcionar sobre la base de la falsedad y la manipulación. Fortalecer las defensas del ecosistema digital es una inversión indispensable para el futuro de nuestra convivencia democrática.
+\end{itemize}
+
+\newpage
+\printbibliography[title=Bibliografía]
 
 \end{document}

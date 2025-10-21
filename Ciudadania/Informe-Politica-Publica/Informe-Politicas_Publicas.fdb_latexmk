@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber Informe-Politicas_Publicas"] 1761084845.03899 "Informe-Politicas_Publicas.bcf" "Informe-Politicas_Publicas.bbl" "Informe-Politicas_Publicas" 1761084849.66783 0
-  "Informe-Politicas_Publicas.bcf" 1761084849.25856 109493 632594e4805febae53d4869ef3befd50 "pdflatex"
+["biber Informe-Politicas_Publicas"] 1761084845.03899 "Informe-Politicas_Publicas.bcf" "Informe-Politicas_Publicas.bbl" "Informe-Politicas_Publicas" 1761084940.94914 0
+  "Informe-Politicas_Publicas.bcf" 1761084940.68957 109493 632594e4805febae53d4869ef3befd50 "pdflatex"
   "bibliografia.bib" 1761084834.40455 3925 4f46af84c928dd686ce9dd5e7610e6e0 ""
   (generated)
   "Informe-Politicas_Publicas.bbl"
   "Informe-Politicas_Publicas.blg"
   (rewritten before read)
-["pdflatex"] 1761084846.6727 "Informe-Politicas_Publicas.tex" "Informe-Politicas_Publicas.pdf" "Informe-Politicas_Publicas" 1761084849.66846 0
+["pdflatex"] 1761084937.8215 "Informe-Politicas_Publicas.tex" "Informe-Politicas_Publicas.pdf" "Informe-Politicas_Publicas" 1761084940.94973 0
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1755987285 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1755987285 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1755987285 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -139,12 +139,12 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1755987285 42087 b0f9697c952c8f5a8eede4134282cb0d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1759531207 5311557 9da84c45f5b388655502706482323571 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1759531300 2081311 0ad7717c165370c4e7428dad1cc65a3e ""
-  "Informe-Politicas_Publicas.aux" 1761084849.24189 3445 686e1f3fc8e20cff71fd81da41b71ef0 "pdflatex"
+  "Informe-Politicas_Publicas.aux" 1761084940.6829 3445 686e1f3fc8e20cff71fd81da41b71ef0 "pdflatex"
   "Informe-Politicas_Publicas.bbl" 1761084846.62177 16556 c393796df07a545f7af55599d42457bf "biber Informe-Politicas_Publicas"
-  "Informe-Politicas_Publicas.out" 1761084849.25523 2187 06c0ea4f79d865921c6a3ae08b7635be "pdflatex"
-  "Informe-Politicas_Publicas.run.xml" 1761084849.26189 2467 0fb94dba953d9c9f55240e2cc320fdb9 "pdflatex"
-  "Informe-Politicas_Publicas.tex" 1761084820.80061 16806 1f4c62640742039be31f9a9ea31da7c4 ""
-  "Informe-Politicas_Publicas.toc" 1761084849.26189 836 5800486697b2b868ef62b81e6376af98 "pdflatex"
+  "Informe-Politicas_Publicas.out" 1761084940.68623 2187 06c0ea4f79d865921c6a3ae08b7635be "pdflatex"
+  "Informe-Politicas_Publicas.run.xml" 1761084940.6929 2467 0fb94dba953d9c9f55240e2cc320fdb9 "pdflatex"
+  "Informe-Politicas_Publicas.tex" 1761084937.3294 16811 a38319686ca6baa02c608ebbe1793ba8 ""
+  "Informe-Politicas_Publicas.toc" 1761084940.6929 836 5800486697b2b868ef62b81e6376af98 "pdflatex"
   "images/IN.png" 1753454929.56759 7949 cc26bed184e5e1103c6a6f769f5412fa ""
   (generated)
   "Informe-Politicas_Publicas.aux"

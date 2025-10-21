@@ -1,1 +1,9 @@
 \babel@toc {spanish}{}\relax 
+\contentsline {section}{Resumen Ejecutivo}{2}{section*.2}%
+\contentsline {section}{Análisis del Problema}{3}{section*.3}%
+\contentsline {section}{Recomendación de Política Pública}{5}{section*.4}%
+\contentsline {subsection}{\numberline {0.1}Obligaciones de Transparencia para Plataformas Digitales}{5}{subsection.0.1}%
+\contentsline {subsection}{\numberline {0.2}Creación del Consejo para la Transparencia Digital (CTD)}{5}{subsection.0.2}%
+\contentsline {subsection}{\numberline {0.3}Programa Nacional de Alfabetización Mediática e Informacional (AMI)}{6}{subsection.0.3}%
+\contentsline {section}{Justificación}{7}{section*.5}%
+\contentsline {section}{Bibliografía}{8}{section*.6}%

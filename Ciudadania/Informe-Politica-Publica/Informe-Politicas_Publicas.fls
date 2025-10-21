@@ -196,10 +196,10 @@ INPUT ./Informe-Politicas_Publicas.out
 INPUT ./Informe-Politicas_Publicas.out
 INPUT Informe-Politicas_Publicas.out
 INPUT Informe-Politicas_Publicas.out
+OUTPUT Informe-Politicas_Publicas.pdf
 INPUT ./Informe-Politicas_Publicas.out
 INPUT ./Informe-Politicas_Publicas.out
 OUTPUT Informe-Politicas_Publicas.out
-OUTPUT Informe-Politicas_Publicas.pdf
 INPUT ./images/IN.png
 INPUT ./images/IN.png
 INPUT ./images/IN.png
@@ -227,11 +227,11 @@ INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecbx1728.tfm
 INPUT ./Informe-Politicas_Publicas.toc
 INPUT ./Informe-Politicas_Publicas.toc
 INPUT Informe-Politicas_Publicas.toc
+INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm
 OUTPUT Informe-Politicas_Publicas.toc
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecrm1000.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
-INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecti1200.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecrm0800.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecrm0700.tfm

@@ -1,0 +1,7 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Introducción: El Gancho (00:00 - 00:30)}{2}{section.1}%
+\contentsline {section}{\numberline {2}¿Quién es Thomas Piketty? (00:30 - 01:15)}{2}{section.2}%
+\contentsline {section}{\numberline {3}La Fórmula de la Desigualdad: \( r > g \)}{2}{section.3}%
+\contentsline {section}{\numberline {4}La Justificación: ¿Por qué aceptamos la desigualdad?}{3}{section.4}%
+\contentsline {section}{\numberline {5}Análisis y Reflexión Personal: Rompiendo el Mito}{4}{section.5}%
+\contentsline {section}{\numberline {6}Conclusión (05:30 - 06:00)}{4}{section.6}%

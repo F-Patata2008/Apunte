@@ -87,12 +87,12 @@
 \textbf{Problema:} ¿A qué traslación equivale la rotación de un punto $A(x_0,y_0)$, en un ángulo de 45° con respecto al origen?
 
 \textbf{Solución:} Una rotación transforma un punto $A$ en un punto $A'$. La traslación equivalente es aquella definida por el vector que une el punto original con el punto final, es decir, $\vec{T} = A' - A$.
-Primero, calculamos las coordenadas del punto rotado $A'(x_1, y_1)$:
+Primero, calculamos las coordenadas del punto rotado $A'(x_1, y_1)$ usando la fórmula de rotación:
 \begin{align*}
     x_1 &= x_0\cos(45^\circ) - y_0\sin(45^\circ) = x_0\frac{\sqrt{2}}{2} - y_0\frac{\sqrt{2}}{2} = \frac{\sqrt{2}}{2}(x_0 - y_0) \\
     y_1 &= x_0\sin(45^\circ) + y_0\cos(45^\circ) = x_0\frac{\sqrt{2}}{2} + y_0\frac{\sqrt{2}}{2} = \frac{\sqrt{2}}{2}(x_0 + y_0)
 \end{align*}
-Luego, calculamos el vector de traslación $\vec{T} = (x_1 - x_0, y_1 - y_0)$.
+A continuación, calculamos el vector de traslación $\vec{T} = (x_1 - x_0, y_1 - y_0)$ restando las coordenadas originales a las nuevas.
 \begin{align*}
     T_x &= \frac{\sqrt{2}}{2}(x_0 - y_0) - x_0 = x_0\left(\frac{\sqrt{2}}{2}-1\right) - y_0\frac{\sqrt{2}}{2} \\
     T_y &= \frac{\sqrt{2}}{2}(x_0 + y_0) - y_0 = x_0\frac{\sqrt{2}}{2} + y_0\left(\frac{\sqrt{2}}{2}-1\right)
@@ -128,9 +128,15 @@ Esta serie tiene un primer término $a=10$ y una razón común $r=1/10$. Dado qu
 \textbf{Problema:} Misma situación que el ejercicio 3, pero con $\theta \in [0, 2\pi]$.
 \begin{enumerate}[label=\alph*)]
     \item $A(-2,-6)$ y $\vec{u}(\sqrt{5}, 120^\circ)$.
-    \[ A' = (-2 + \sqrt{5}\cos(120^\circ), -6 + \sqrt{5}\sin(120^\circ)) = \left(-2 + \sqrt{5}\cdot(-\frac{1}{2}), -6 + \sqrt{5}\cdot\frac{\sqrt{3}}{2}\right) = \mathbf{\left( -2-\frac{\sqrt{5}}{2}, -6+\frac{\sqrt{15}}{2} \right)} \]
+    \begin{align*}
+        A' &= (-2 + \sqrt{5}\cos(120^\circ), -6 + \sqrt{5}\sin(120^\circ)) \\
+           &= \left(-2 + \sqrt{5}\cdot(-\frac{1}{2}), -6 + \sqrt{5}\cdot\frac{\sqrt{3}}{2}\right) = \mathbf{\left( -2-\frac{\sqrt{5}}{2}, -6+\frac{\sqrt{15}}{2} \right)} 
+    \end{align*}
     \item $B(8,-3)$ y $\vec{T}(1, 225^\circ)$.
-    \[ B' = (8 + 1\cdot\cos(225^\circ), -3 + 1\cdot\sin(225^\circ)) = \mathbf{\left(8 - \frac{\sqrt{2}}{2}, -3 - \frac{\sqrt{2}}{2}\right)} \]
+    \begin{align*}
+        B' &= (8 + 1\cdot\cos(225^\circ), -3 + 1\cdot\sin(225^\circ)) \\
+           &= \left(8 + (-\frac{\sqrt{2}}{2}), -3 + (-\frac{\sqrt{2}}{2})\right) = \mathbf{\left(8 - \frac{\sqrt{2}}{2}, -3 - \frac{\sqrt{2}}{2}\right)}
+    \end{align*}
 \end{enumerate}
 
 \subsection{Ejercicio 6}
@@ -152,13 +158,19 @@ Esta serie tiene un primer término $a=10$ y una razón común $r=1/10$. Dado qu
 $A' = ((x-h)\cos\theta - (y-k)\sin\theta + h, (x-h)\sin\theta + (y-k)\cos\theta + k)$.
 \begin{enumerate}[label=\alph*)]
     \item $A(5,1), C(-1,4), \theta=135^\circ$. Calculamos las coordenadas relativas: $(x-h)=6, (y-k)=-3$.
-    $x' = 6\cos(135^\circ) - (-3)\sin(135^\circ) - 1 = 6(-\frac{\sqrt{2}}{2}) + 3(\frac{\sqrt{2}}{2}) - 1 = -3\sqrt{2} + \frac{3\sqrt{2}}{2} - 1 = -1 - \frac{3\sqrt{2}}{2}$.
-    $y' = 6\sin(135^\circ) + (-3)\cos(135^\circ) + 4 = 6(\frac{\sqrt{2}}{2}) - 3(-\frac{\sqrt{2}}{2}) + 4 = 3\sqrt{2} + \frac{3\sqrt{2}}{2} + 4 = 4 + \frac{9\sqrt{2}}{2}$.
+    \begin{align*}
+        x' &= 6\cos(135^\circ) - (-3)\sin(135^\circ) - 1 = 6(-\frac{\sqrt{2}}{2}) + 3(\frac{\sqrt{2}}{2}) - 1 = -1 - \frac{3\sqrt{2}}{2} \\
+        y' &= 6\sin(135^\circ) + (-3)\cos(135^\circ) + 4 = 6(\frac{\sqrt{2}}{2}) - 3(-\frac{\sqrt{2}}{2}) + 4 = 4 + \frac{9\sqrt{2}}{2}
+    \end{align*}
     \paragraph{Respuesta:} $\mathbf{A'\left( -1-\frac{3\sqrt{2}}{2}, 4+\frac{9\sqrt{2}}{2} \right)}$.
     
     \item $A(-10,14), C(2,-2), \theta=15^\circ$. Coordenadas relativas: $(x-h)=-12, (y-k)=16$. Usamos $\cos(15^\circ)=\frac{\sqrt{6}+\sqrt{2}}{4}$ y $\sin(15^\circ)=\frac{\sqrt{6}-\sqrt{2}}{4}$.
-    $x' = -12(\frac{\sqrt{6}+\sqrt{2}}{4}) - 16(\frac{\sqrt{6}-\sqrt{2}}{4}) + 2 = -3(\sqrt{6}+\sqrt{2}) - 4(\sqrt{6}-\sqrt{2}) + 2 = -7\sqrt{6}+\sqrt{2}+2$.
-    $y' = -12(\frac{\sqrt{6}-\sqrt{2}}{4}) + 16(\frac{\sqrt{6}+\sqrt{2}}{4}) - 2 = -3(\sqrt{6}-\sqrt{2}) + 4(\sqrt{6}+\sqrt{2}) - 2 = \sqrt{6}+7\sqrt{2}-2$.
+    \begin{align*}
+        x' &= -12(\frac{\sqrt{6}+\sqrt{2}}{4}) - 16(\frac{\sqrt{6}-\sqrt{2}}{4}) + 2 = -3(\sqrt{6}+\sqrt{2}) - 4(\sqrt{6}-\sqrt{2}) + 2 \\
+           &= -7\sqrt{6}+\sqrt{2}+2 \\
+        y' &= -12(\frac{\sqrt{6}-\sqrt{2}}{4}) + 16(\frac{\sqrt{6}+\sqrt{2}}{4}) - 2 = -3(\sqrt{6}-\sqrt{2}) + 4(\sqrt{6}+\sqrt{2}) - 2 \\
+           &= \sqrt{6}+7\sqrt{2}-2
+    \end{align*}
     \paragraph{Respuesta:} $\mathbf{A'(2+\sqrt{2}-7\sqrt{6}, -2+7\sqrt{2}+\sqrt{6})}$.
 \end{enumerate}
 
@@ -312,11 +324,11 @@ Como $AB^2+BC^2=2+18=20=AC^2$, por el Teorema de Pitágoras, el triángulo es re
 
 \subsection{Ejercicio 19}
 \textbf{Problema:} ¿Cuándo una homotecia es equivalente a una simetría central?
-\textbf{Solución:} Una simetría central con respecto a un punto C es equivalente a una rotación de 180° en torno a C. Esta transformación invierte la posición de cada punto a través del centro, lo cual corresponde exactamente a una homotecia con el mismo centro C y una razón $\mathbf{k=-1}$.
+\textbf{Solución:} Una simetría central con respecto a un punto C invierte la posición de cada punto a través del centro. La fórmula de homotecia es $A' = C + k(A-C)$. Si $k=-1$, la fórmula se convierte en $A' = C - (A-C) = 2C - A$, que es precisamente la fórmula para la simetría central. Por lo tanto, una homotecia es equivalente a una simetría central cuando su razón es $\mathbf{k=-1}$.
 
 \subsection{Ejercicio 20}
 \textbf{Problema:} Coordenadas de P'Q'R' simétrico a PQR con respecto a C para varias razones k.
-\textbf{Solución:} Se utiliza la fórmula de homotecia $A' = C + k(A-C)$, o $A' = (h(1-k)+kx, k(1-k)+ky)$.
+\textbf{Solución:} Se utiliza la fórmula de homotecia $A' = (h(1-k)+kx, k(1-k)+ky)$.
 Dados: $P(-1,-1), Q(1,-2), R(0,1), C(-1,2)$.
 \begin{enumerate}[label=\alph*)]
     \item k=5/2: $1-k = -3/2$.
@@ -333,8 +345,9 @@ Dados: $P(-1,-1), Q(1,-2), R(0,1), C(-1,2)$.
 \subsection{Ejercicio 21}
 \textbf{Problema:} Calcular las áreas de los triángulos P'Q'R' obtenidos.
 \textbf{Solución:} La relación de áreas en una homotecia es Área(Imagen) = $k^2 \cdot$ Área(Original).
-Primero, calculamos el área del triángulo original $PQR$ con $P(-1,-1), Q(1,-2), R(0,1)$ usando el determinante (fórmula del lazo):
-Área(PQR) = $\frac{1}{2} |(-1)(-2) + 1(1) + 0(-1) - ((-1)(1) + (-2)(0) + 1(-1))| = \frac{1}{2} |2+1 - (-1-1)| = \frac{1}{2} |3+2| = 2.5$.
+Primero, calculamos el área del triángulo original $PQR$ con $P(-1,-1), Q(1,-2), R(0,1)$ usando la fórmula del lazo:
+Área = $\frac{1}{2} |(x_P y_Q + x_Q y_R + x_R y_P) - (y_P x_Q + y_Q x_R + y_R x_P)|$
+Área = $\frac{1}{2} |((-1)(-2) + 1(1) + 0(-1)) - ((-1)(1) + (-2)(0) + 1(-1))| = \frac{1}{2} |(2+1) - (-1-1)| = \frac{5}{2} = 2.5$.
 \begin{itemize}
     \item[a)] k=5/2: Área = $(5/2)^2 \cdot 2.5 = 6.25 \cdot 2.5 = \mathbf{15.625}$.
     \item[b)] k=1: Área = $1^2 \cdot 2.5 = \mathbf{2.5}$.
@@ -346,21 +359,27 @@ Primero, calculamos el área del triángulo original $PQR$ con $P(-1,-1), Q(1,-2
 
 \subsection{Ejercicio 22}
 \textbf{Problema:} Demostrar la relación de proporcionalidad en una homotecia.
-\textbf{Solución:} La definición de homotecia establece que el centro $C$, el punto original $A$ y el punto imagen $A'$ son colineales. Vectorialmente, esto significa que el vector $\vec{CA'}$ es un múltiplo escalar del vector $\vec{CA}$, donde el escalar es la razón $k$.
+\textbf{Solución:}
+\paragraph{Principio fundamental:} La definición de homotecia establece que el centro $C$, el punto original $A$ y el punto imagen $A'$ son colineales. 
+\paragraph{Ecuación vectorial:} Este principio se traduce en que el vector que va del centro a la imagen ($\vec{CA'}$) es un múltiplo escalar del vector que va del centro al punto original ($\vec{CA}$). El escalar es la razón de homotecia, $k$.
 \[ \vec{CA'} = k \cdot \vec{CA} \]
-Expresando los vectores en componentes:
+\paragraph{Expresión en componentes:} Expresamos los vectores usando las coordenadas de los puntos $A(x_0,y_0)$, $A'(x_1,y_1)$ y $C(h,k)$.
 \[ (x_1 - h, y_1 - k) = k \cdot (x_0 - h, y_0 - k) \]
-Esta igualdad vectorial se descompone en dos ecuaciones escalares:
+\paragraph{Despeje de la razón k:} Esta igualdad vectorial se descompone en dos ecuaciones escalares, una para el eje X y otra para el eje Y:
 \begin{align*}
 	x_1 - h & = k(x_0 - h) \implies k = \frac{x_1 - h}{x_0 - h} \\
 	y_1 - k & = k(y_0 - k) \implies k = \frac{y_1 - k}{y_0 - k}
 \end{align*}
-Como ambas expresiones son iguales a $k$, deben ser iguales entre sí, lo que demuestra la relación.
+\paragraph{Conclusión:} Como ambas expresiones son iguales a la misma constante $k$, deben ser iguales entre sí, lo que demuestra la relación solicitada:
+\[ \frac{x_1 - h}{x_0 - h} = \frac{y_1 - k}{y_0 - k} \]
 
 \subsection{Ejercicio 23}
 \textbf{Problema:} Determinar $k$ para la homotecia dada.
-\textbf{Solución:} Se nos dan $A(-2,2), C(-2,-1), A'(-2,-7)$. La fórmula para la razón es $k = \frac{x'-h}{x-h}$ o $k = \frac{y'-k}{y-k}$. El cálculo con las abscisas resulta en $\frac{-2 - (-2)}{-2 - (-2)} = \frac{0}{0}$ (indeterminación), lo cual es esperado ya que los puntos son colineales verticalmente. Debemos usar las ordenadas:
-\[ k = \frac{-7 - (-1)}{2 - (-1)} = \frac{-6}{3} = -2 \]
+\textbf{Solución:} Se nos dan $A(-2,2), C(-2,-1), A'(-2,-7)$. La fórmula para la razón, demostrada en el ejercicio anterior, es $k = \frac{x'-h}{x-h}$ o $k = \frac{y'-k}{y-k}$.
+Intentamos con las abscisas (coordenadas x):
+\[ k = \frac{-2 - (-2)}{-2 - (-2)} = \frac{0}{0} \]
+Obtenemos una indeterminación. Esto ocurre porque los tres puntos son colineales sobre una recta vertical ($x=-2$), lo que significa que no hay un "estiramiento" horizontal que medir. Por lo tanto, es necesario usar las ordenadas (coordenadas y):
+\[ k = \frac{y_1 - k}{y_0 - k} = \frac{-7 - (-1)}{2 - (-1)} = \frac{-6}{3} = -2 \]
 \paragraph{Respuesta:} La razón de homotecia es $\mathbf{k=-2}$.
 
 \subsection{Ejercicio 24}
@@ -369,13 +388,13 @@ Como ambas expresiones son iguales a $k$, deben ser iguales entre sí, lo que de
 \begin{enumerate}[label=\alph*)]
     \item \textbf{Determinar coordenadas de R y S:}
     La condición $\overline{RQ} \parallel \text{Eje X}$ implica que $y_R = y_Q = -1$.
-    La longitud de cada lado del rombo es igual. Calculamos la longitud del lado PQ:
+    En un rombo, todos los lados tienen la misma longitud. Calculamos la longitud del lado PQ:
     $|\vec{PQ}| = \sqrt{(0 - (-1))^2 + (-1 - (-3))^2} = \sqrt{1^2 + 2^2} = \sqrt{5}$.
     La longitud del lado QR debe ser la misma. Como $R(x_R, -1)$, la longitud es:
     $|\vec{QR}| = \sqrt{(x_R - 0)^2 + (-1 - (-1))^2} = \sqrt{x_R^2} = |x_R|$.
     Por lo tanto, $|x_R| = \sqrt{5}$. Asumiendo por la figura que R está a la derecha de Q, $x_R = \sqrt{5}$.
     $\implies \mathbf{R(\sqrt{5}, -1)}$.
-    Para un paralelogramo, $S = P + R - Q$:
+    Para un paralelogramo, se cumple la relación vectorial $\vec{P}+\vec{R} = \vec{Q}+\vec{S}$, de donde $S = P + R - Q$:
     $S = (-1, -3) + (\sqrt{5}, -1) - (0, -1) = (\sqrt{5}-1, -3)$.
     $\implies \mathbf{S(\sqrt{5}-1, -3)}$.
 

@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1761270018.58052 "Guia-1.tex" "Guia-1.pdf" "Guia-1" 1761270020.32873 0
+["pdflatex"] 1761270452.15055 "Guia-1.tex" "Guia-1.pdf" "Guia-1" 1761270455.74767 0
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1755987285 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1755987285 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1755987285 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -58,6 +58,7 @@
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb" 1755987285 135938 299ac3a69892db3b7674a8b2543b0a77 ""
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb" 1755987285 107203 e671936e3a8639d41d1d76852217c874 ""
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc2074.pfb" 1755987285 108041 d4d5c0c81dd56faa0d597651bf0ab019 ""
+  "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb" 1755987285 164227 3df942b4ff2124425d8fb1b6d3e01c7a ""
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb" 1755987285 136101 f533469f523533d38317ab5729d00c8a ""
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb" 1755987285 131078 d96015a2fa5c350129e933ca070b2484 ""
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1728.pfb" 1755987285 179164 d2fc35b130efab2ed82ad3396ec43a38 ""
@@ -134,10 +135,10 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1755987285 42087 b0f9697c952c8f5a8eede4134282cb0d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1759531207 5311557 9da84c45f5b388655502706482323571 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1759531300 2081311 0ad7717c165370c4e7428dad1cc65a3e ""
-  "Guia-1.aux" 1761270020.07748 5254 895f1c9cf3bca63e8a17a35ae45c1a5b "pdflatex"
-  "Guia-1.out" 1761270020.08081 3234 98df7223a50a99942a367dee635f5aa6 "pdflatex"
-  "Guia-1.tex" 1761270016.44735 25618 87b5eaf0f92286598542f8520478bb5d ""
-  "Guia-1.toc" 1761270020.08081 3117 ffbbb3409222c0f276ae3a11ae228b3f "pdflatex"
+  "Guia-1.aux" 1761270455.09021 5792 dc1d9db84428edd535576ca3f833b94d "pdflatex"
+  "Guia-1.out" 1761270455.10021 3234 98df7223a50a99942a367dee635f5aa6 "pdflatex"
+  "Guia-1.tex" 1761270445.36997 26792 48da1ca2f0e150959e525d41f45e1320 ""
+  "Guia-1.toc" 1761270455.10021 3450 da46bb1239f73dcc1e52d5bfcbf13dc0 "pdflatex"
   (generated)
   "Guia-1.aux"
   "Guia-1.log"

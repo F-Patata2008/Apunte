@@ -19,12 +19,12 @@
 \contentsline {subsection}{\numberline {2.3}Ejercicio 9}{7}{subsection.2.3}%
 \contentsline {paragraph}{Respuesta:}{7}{section*.9}%
 \contentsline {paragraph}{Respuesta:}{7}{section*.10}%
-\contentsline {subsection}{\numberline {2.4}Ejercicio 10}{7}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.4}Ejercicio 10}{8}{subsection.2.4}%
 \contentsline {paragraph}{Parte 1: Cálculo directo de la rotación.}{8}{section*.11}%
 \contentsline {paragraph}{Parte 2: Simplificación de la expresión dada.}{8}{section*.12}%
 \contentsline {subsection}{\numberline {2.5}Ejercicio 11}{8}{subsection.2.5}%
-\contentsline {paragraph}{Respuesta:}{8}{section*.13}%
-\contentsline {paragraph}{Respuesta:}{8}{section*.14}%
+\contentsline {paragraph}{Respuesta:}{9}{section*.13}%
+\contentsline {paragraph}{Respuesta:}{9}{section*.14}%
 \contentsline {subsection}{\numberline {2.6}Ejercicio 12}{9}{subsection.2.6}%
 \contentsline {section}{\numberline {3}Simetrías}{10}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Ejercicio 13}{10}{subsection.3.1}%
@@ -40,6 +40,11 @@
 \contentsline {subsection}{\numberline {4.2}Ejercicio 20}{13}{subsection.4.2}%
 \contentsline {subsection}{\numberline {4.3}Ejercicio 21}{13}{subsection.4.3}%
 \contentsline {subsection}{\numberline {4.4}Ejercicio 22}{14}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Ejercicio 23}{14}{subsection.4.5}%
-\contentsline {paragraph}{Respuesta:}{15}{section*.17}%
+\contentsline {paragraph}{Principio fundamental:}{14}{section*.17}%
+\contentsline {paragraph}{Ecuación vectorial:}{14}{section*.18}%
+\contentsline {paragraph}{Expresión en componentes:}{14}{section*.19}%
+\contentsline {paragraph}{Despeje de la razón k:}{14}{section*.20}%
+\contentsline {paragraph}{Conclusión:}{15}{section*.21}%
+\contentsline {subsection}{\numberline {4.5}Ejercicio 23}{15}{subsection.4.5}%
+\contentsline {paragraph}{Respuesta:}{15}{section*.22}%
 \contentsline {subsection}{\numberline {4.6}Ejercicio 24}{15}{subsection.4.6}%

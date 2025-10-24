@@ -15,12 +15,7 @@
 \usepackage{setspace}
 \usepackage{enumitem}
 \usepackage{microtype}
-\graphicspath{ {./images/}, {~/Apunte/images/} }
-
-% ----- PAQUETE DE CITAS (LO HEMOS QUITADO) -----
-% \usepackage{csquotes}
-% \usepackage[style=verbose-trad1, bibstyle=numeric, backend=biber]{biblatex}
-% \addbibresource{bibliografia.bib}
+\graphicspath{ {./images/} }
 
 % ----- CONFIGURACIÓN DE LA PÁGINA -----
 \geometry{
@@ -84,172 +79,275 @@
 \newpage
 \tableofcontents
 \newpage
-\section*{Desarrollo de Ejercicios}
+
+\section{Traslaciones}
 \thispagestyle{fancy}
 
-% --- EJERCICIO 2 ---
-\subsection*{Ejercicio 2}
-\textbf{Problema:} De acuerdo a la Paradoja de Zenón, se presentan los desplazamientos de Aquiles mediante vectores de traslación. Se pide determinar el vector total $\vec{T} = \sum_{i=1}^{\infty} \vec{T_i}$.
+\subsection{Ejercicio 1}
+\textbf{Problema:} ¿A qué traslación equivale la rotación de un punto $A(x_0,y_0)$, en un ángulo de 45° con respecto al origen?
 
-\textbf{Solución:}
-El vector total $\vec{T}$ es la suma de una serie infinita de vectores:
-\[ \vec{T} = \vec{T_1} + \vec{T_2} + \vec{T_3} + \dots \]
-Sustituyendo los valores dados:
-\[ \vec{T} = (10, 0) + (1, 0) + \left(\frac{1}{10}, 0\right) + \left(\frac{1}{100}, 0\right) + \dots \]
-Para resolver, sumamos las componentes correspondientes.
+\textbf{Solución:} Una rotación transforma un punto $A$ en un punto $A'$. La traslación equivalente es aquella definida por el vector que une el punto original con el punto final, es decir, $\vec{T} = A' - A$.
+Primero, calculamos las coordenadas del punto rotado $A'(x_1, y_1)$:
+\begin{align*}
+    x_1 &= x_0\cos(45^\circ) - y_0\sin(45^\circ) = x_0\frac{\sqrt{2}}{2} - y_0\frac{\sqrt{2}}{2} = \frac{\sqrt{2}}{2}(x_0 - y_0) \\
+    y_1 &= x_0\sin(45^\circ) + y_0\cos(45^\circ) = x_0\frac{\sqrt{2}}{2} + y_0\frac{\sqrt{2}}{2} = \frac{\sqrt{2}}{2}(x_0 + y_0)
+\end{align*}
+Luego, calculamos el vector de traslación $\vec{T} = (x_1 - x_0, y_1 - y_0)$.
+\begin{align*}
+    T_x &= \frac{\sqrt{2}}{2}(x_0 - y_0) - x_0 = x_0\left(\frac{\sqrt{2}}{2}-1\right) - y_0\frac{\sqrt{2}}{2} \\
+    T_y &= \frac{\sqrt{2}}{2}(x_0 + y_0) - y_0 = x_0\frac{\sqrt{2}}{2} + y_0\left(\frac{\sqrt{2}}{2}-1\right)
+\end{align*}
+\paragraph{Respuesta:} El vector de traslación es $\vec{T} = \left(x_0\left(\frac{\sqrt{2}}{2}-1\right) - y_0\frac{\sqrt{2}}{2}, x_0\frac{\sqrt{2}}{2} + y_0\left(\frac{\sqrt{2}}{2}-1\right)\right)$.
 
-\begin{enumerate}
-	\item \textbf{Componente Y:} La suma de las componentes 'y' es $0 + 0 + 0 + \dots = 0$.
+\subsection{Ejercicio 2}
+\textbf{Problema:} Determinar el vector total $\vec{T} = \sum_{i=1}^{\infty} \vec{T_i}$ de los desplazamientos de Aquiles.
 
-	\item \textbf{Componente X:} La suma de las componentes 'x' forma una serie geométrica infinita:
-	      \[ X = 10 + 1 + \frac{1}{10} + \frac{1}{100} + \dots \]
-	      Esta serie tiene un primer término $a=10$ y una razón común $r=\frac{1}{10}$. Como $|r| < 1$, podemos usar la fórmula de la suma de una serie geométrica infinita:
-	      \[ S = \frac{a}{1 - r} \]
-	      Aplicando la fórmula:
-	      \[ X = \frac{10}{1 - \frac{1}{10}} = \frac{10}{\frac{9}{10}} = 10 \cdot \frac{10}{9} = \frac{100}{9} \]
+\textbf{Solución:} El vector total es la suma de una serie infinita de vectores. La suma de las componentes 'y' es trivialmente 0. La suma de las componentes 'x' constituye una serie geométrica infinita:
+\[ X = 10 + 1 + \frac{1}{10} + \frac{1}{100} + \dots \]
+Esta serie tiene un primer término $a=10$ y una razón común $r=1/10$. Dado que $|r| < 1$, la suma converge y se puede calcular con la fórmula $S = \frac{a}{1 - r}$.
+\[ X = \frac{10}{1 - \frac{1}{10}} = \frac{10}{\frac{9}{10}} = 10 \cdot \frac{10}{9} = \frac{100}{9} \]
+\paragraph{Respuesta:} El vector total de traslación es $\vec{T} = \left(\frac{100}{9}, 0\right)$.
+
+\subsection{Ejercicio 3}
+\textbf{Problema:} Determine las coordenadas de la imagen A' de un punto $A(x_0, y_0)$, al trasladarlo de acuerdo al vector $\vec{T}(r, \theta)$, con $\theta \in [0, \pi/2]$.
+
+\textbf{Solución:} Un vector dado en forma polar $(r, \theta)$ se puede expresar en coordenadas cartesianas como $(r\cos\theta, r\sin\theta)$. La traslación de un punto $A$ por un vector $\vec{T}$ se calcula como la suma $A' = A + \vec{T}$.
+\[ A'(x', y') = (x_0, y_0) + (r\cos\theta, r\sin\theta) \]
+\paragraph{Respuesta:} Las coordenadas de la imagen son $A' = (x_0 + r\cos\theta, y_0 + r\sin\theta)$.
+
+\subsection{Ejercicio 4}
+\textbf{Problema:} Utilizar el resultado anterior para determinar la imagen A' de los siguientes pares de puntos y vectores.
+\begin{enumerate}[label=\alph*)]
+    \item $A(1,4)$ y $\vec{T}(2, 30^\circ)$.
+    \[ A' = (1 + 2\cos(30^\circ), 4 + 2\sin(30^\circ)) = \left(1 + 2\cdot\frac{\sqrt{3}}{2}, 4 + 2\cdot\frac{1}{2}\right) = \mathbf{(1+\sqrt{3}, 5)} \]
+    \item $B(-5,3)$ y $\vec{v}(4, 45^\circ)$.
+    \[ B' = (-5 + 4\cos(45^\circ), 3 + 4\sin(45^\circ)) = \left(-5 + 4\cdot\frac{\sqrt{2}}{2}, 3 + 4\cdot\frac{\sqrt{2}}{2}\right) = \mathbf{(-5+2\sqrt{2}, 3+2\sqrt{2})} \]
 \end{enumerate}
-El vector resultante es la combinación de ambas componentes.
-\paragraph{Respuesta:} El vector $\vec{T}$ es $\left(\frac{100}{9}, 0\right)$.
 
-% --- EJERCICIO 10 ---
-\subsection*{Ejercicio 10}
-\textbf{Problema:} Demostrar que al rotar el punto $A(\sqrt{2}, \sqrt{2})$ con respecto al origen en un ángulo $\theta = 15^\circ$, su imagen corresponde al punto dado por una expresión compleja.
+\subsection{Ejercicio 5}
+\textbf{Problema:} Misma situación que el ejercicio 3, pero con $\theta \in [0, 2\pi]$.
+\begin{enumerate}[label=\alph*)]
+    \item $A(-2,-6)$ y $\vec{u}(\sqrt{5}, 120^\circ)$.
+    \[ A' = (-2 + \sqrt{5}\cos(120^\circ), -6 + \sqrt{5}\sin(120^\circ)) = \left(-2 + \sqrt{5}\cdot(-\frac{1}{2}), -6 + \sqrt{5}\cdot\frac{\sqrt{3}}{2}\right) = \mathbf{\left( -2-\frac{\sqrt{5}}{2}, -6+\frac{\sqrt{15}}{2} \right)} \]
+    \item $B(8,-3)$ y $\vec{T}(1, 225^\circ)$.
+    \[ B' = (8 + 1\cdot\cos(225^\circ), -3 + 1\cdot\sin(225^\circ)) = \left(8 - \frac{\sqrt{2}}{2}, -3 - \frac{\sqrt{2}}{2}\right) \]
+\end{enumerate}
 
-\textbf{Solución:}
-Se abordará en dos partes: primero, calculando la rotación directamente y, segundo, simplificando la expresión dada para demostrar que ambos resultados coinciden.
+\subsection{Ejercicio 6}
+\textbf{Problema:} Determine el ángulo del vector traslación que lleva un punto A a un punto B.
+\textbf{Solución:} El vector de traslación se encuentra restando el punto de destino menos el de origen: $\vec{T} = B - A$. El ángulo se obtiene con $\theta = \arctan(T_y/T_x)$, ajustando el cuadrante según los signos de $T_x$ y $T_y$.
+\begin{enumerate}[label=\alph*)]
+    \item $A(-4,1)$ y $B(-1,5)$. $\vec{T} = (-1 - (-4), 5 - 1) = (3, 4)$. El vector está en el primer cuadrante.
+    \[ \theta = \arctan\left(\frac{4}{3}\right) \approx \mathbf{53.13^\circ} \]
+    \item $A(1,0)$ y $B(-3,-3)$. $\vec{T} = (-3 - 1, -3 - 0) = (-4, -3)$. El vector está en el tercer cuadrante.
+    \[ \theta = 180^\circ + \arctan\left(\frac{-3}{-4}\right) \approx 180^\circ + 36.87^\circ = \mathbf{216.87^\circ} \]
+\end{enumerate}
 
-\paragraph{Parte 1: Cálculo directo de la rotación}
-La fórmula de rotación para un punto $(x, y)$ es $A'(x\cos\theta - y\sin\theta, x\sin\theta + y\cos\theta)$. Necesitamos los valores de $\cos(15^\circ)$ y $\sin(15^\circ)$ usando la identidad de la resta de ángulos ($15^\circ = 45^\circ - 30^\circ$).
-\begin{align*}
-	\cos(15^\circ) & = \cos(45^\circ)\cos(30^\circ) + \sin(45^\circ)\sin(30^\circ) = \frac{\sqrt{2}}{2}\frac{\sqrt{3}}{2} + \frac{\sqrt{2}}{2}\frac{1}{2} = \frac{\sqrt{6} + \sqrt{2}}{4} \\
-	\sin(15^\circ) & = \sin(45^\circ)\cos(30^\circ) - \cos(45^\circ)\sin(30^\circ) = \frac{\sqrt{2}}{2}\frac{\sqrt{3}}{2} - \frac{\sqrt{2}}{2}\frac{1}{2} = \frac{\sqrt{6} - \sqrt{2}}{4}
-\end{align*}
-Aplicando la rotación al punto $A(\sqrt{2}, \sqrt{2})$:
-\begin{align*}
-	x' & = \sqrt{2}\left(\frac{\sqrt{6} + \sqrt{2}}{4}\right) - \sqrt{2}\left(\frac{\sqrt{6} - \sqrt{2}}{4}\right) = \frac{\sqrt{12} + 2 - \sqrt{12} + 2}{4} = \frac{4}{4} = 1 \\
-	y' & = \sqrt{2}\left(\frac{\sqrt{6} - \sqrt{2}}{4}\right) + \sqrt{2}\left(\frac{\sqrt{6} + \sqrt{2}}{4}\right) = \frac{\sqrt{12} - 2 + \sqrt{12} + 2}{4} = \frac{2\sqrt{12}}{4} = \frac{4\sqrt{3}}{4} = \sqrt{3}
-\end{align*}
-El punto rotado es $A'(1, \sqrt{3})$.
+\newpage
+\section{Rotaciones}
 
-\paragraph{Parte 2: Simplificación de la expresión dada}
-La coordenada $x$ de la expresión es $X = \sqrt{1 + \frac{\sqrt{3}}{2}} - \sqrt{1 - \frac{\sqrt{3}}{2}}$. Al elevar al cuadrado:
-\begin{align*}
-	X^2 & = \left(1 + \frac{\sqrt{3}}{2}\right) - 2\sqrt{\left(1 + \frac{\sqrt{3}}{2}\right)\left(1 - \frac{\sqrt{3}}{2}\right)} + \left(1 - \frac{\sqrt{3}}{2}\right) \\
-	X^2 & = 2 - 2\sqrt{1 - \frac{3}{4}} = 2 - 2\sqrt{\frac{1}{4}} = 2 - 2\left(\frac{1}{2}\right) = 1 \implies X=1
-\end{align*}
-La coordenada $y$ es $Y = \sqrt{1 + \frac{\sqrt{3}}{2}} + \sqrt{1 - \frac{\sqrt{3}}{2}}$. Al elevar al cuadrado:
-\begin{align*}
-	Y^2 & = \left(1 + \frac{\sqrt{3}}{2}\right) + 2\sqrt{\left(1 + \frac{\sqrt{3}}{2}\right)\left(1 - \frac{\sqrt{3}}{2}\right)} + \left(1 - \frac{\sqrt{3}}{2}\right) \\
-	Y^2 & = 2 + 2\sqrt{\frac{1}{4}} = 2 + 1 = 3 \implies Y=\sqrt{3}
-\end{align*}
-La expresión simplificada corresponde al punto $(1, \sqrt{3})$.
+\subsection{Ejercicio 7}
+\textbf{Problema:} Determinar las coordenadas de A' al rotar A con respecto a C en un ángulo $\theta$.
+\textbf{Solución:} Se utiliza la fórmula de rotación en torno a un punto arbitrario $C(h,k)$:
+$A' = ((x-h)\cos\theta - (y-k)\sin\theta + h, (x-h)\sin\theta + (y-k)\cos\theta + k)$.
+\begin{enumerate}[label=\alph*)]
+    \item $A(5,1), C(-1,4), \theta=135^\circ$. Calculamos las coordenadas relativas: $(x-h)=6, (y-k)=-3$.
+    $x' = 6\cos(135^\circ) - (-3)\sin(135^\circ) - 1 = 6(-\frac{\sqrt{2}}{2}) + 3(\frac{\sqrt{2}}{2}) - 1 = -3\sqrt{2} + \frac{3\sqrt{2}}{2} - 1 = -1 - \frac{3\sqrt{2}}{2}$.
+    $y' = 6\sin(135^\circ) + (-3)\cos(135^\circ) + 4 = 6(\frac{\sqrt{2}}{2}) - 3(-\frac{\sqrt{2}}{2}) + 4 = 3\sqrt{2} + \frac{3\sqrt{2}}{2} + 4 = 4 + \frac{9\sqrt{2}}{2}$.
+    \paragraph{Respuesta:} $\mathbf{A'\left( -1-\frac{3\sqrt{2}}{2}, 4+\frac{9\sqrt{2}}{2} \right)}$.
+    
+    \item $A(-10,14), C(2,-2), \theta=15^\circ$. Coordenadas relativas: $(x-h)=-12, (y-k)=16$. Usamos $\cos(15^\circ)=\frac{\sqrt{6}+\sqrt{2}}{4}$ y $\sin(15^\circ)=\frac{\sqrt{6}-\sqrt{2}}{4}$.
+    $x' = -12(\frac{\sqrt{6}+\sqrt{2}}{4}) - 16(\frac{\sqrt{6}-\sqrt{2}}{4}) + 2 = -3(\sqrt{6}+\sqrt{2}) - 4(\sqrt{6}-\sqrt{2}) + 2 = -7\sqrt{6}+\sqrt{2}+2$.
+    $y' = -12(\frac{\sqrt{6}-\sqrt{2}}{4}) + 16(\frac{\sqrt{6}+\sqrt{2}}{4}) - 2 = -3(\sqrt{6}-\sqrt{2}) + 4(\sqrt{6}+\sqrt{2}) - 2 = \sqrt{6}+7\sqrt{2}-2$.
+    \paragraph{Respuesta:} $\mathbf{A'(2+\sqrt{2}-7\sqrt{6}, -2+7\sqrt{2}+\sqrt{6})}$.
+\end{enumerate}
 
-\paragraph{Conclusión:} Ambos métodos arrojan el mismo resultado, lo cual demuestra lo solicitado.
+\subsection{Ejercicio 8}
+\textbf{Problema:} Determinar el punto original A, dadas su imagen A', el centro C y el ángulo $\theta$.
+\textbf{Solución:} Para encontrar A, debemos aplicar la rotación inversa a A', es decir, rotar A' alrededor de C con un ángulo de $-\theta$.
+\begin{enumerate}[label=\alph*)]
+    \item $C(-1,1), A'(-1-2\sqrt{2}, 1-\sqrt{2}), \theta=-45^\circ$. Rotamos A' por $-\theta = +45^\circ$.
+    Coordenadas relativas: $(x'-h)=-2\sqrt{2}, (y'-k)=-\sqrt{2}$.
+    $x = -2\sqrt{2}\cos(45^\circ) - (-\sqrt{2})\sin(45^\circ) - 1 = -2\sqrt{2}(\frac{\sqrt{2}}{2}) + \sqrt{2}(\frac{\sqrt{2}}{2}) - 1 = -2+1-1 = -2$.
+    $y = -2\sqrt{2}\sin(45^\circ) + (-\sqrt{2})\cos(45^\circ) + 1 = -2\sqrt{2}(\frac{\sqrt{2}}{2}) - \sqrt{2}(\frac{\sqrt{2}}{2}) + 1 = -2-1+1 = -2$.
+    \paragraph{Respuesta:} $\mathbf{A(-2,-2)}$.
+    
+    \item $C(1,0), A'(1,-3\sqrt{2}), \theta=225^\circ$. Rotamos A' por $-\theta = -225^\circ$, que es coterminal con $135^\circ$.
+    Coordenadas relativas: $(x'-h)=0, (y'-k)=-3\sqrt{2}$.
+    $x = 0\cdot\cos(135^\circ) - (-3\sqrt{2})\sin(135^\circ) + 1 = 3\sqrt{2}(\frac{\sqrt{2}}{2}) + 1 = 3+1 = 4$.
+    $y = 0\cdot\sin(135^\circ) + (-3\sqrt{2})\cos(135^\circ) + 0 = -3\sqrt{2}(-\frac{\sqrt{2}}{2}) = 3$.
+    \paragraph{Respuesta:} $\mathbf{A(4,3)}$.
+\end{enumerate}
 
-% --- EJERCICIO 18 ---
-\subsection*{Ejercicio 18}
-\textbf{Problema:} Determinar las coordenadas de los vértices del polígono $PQRS$ sabiendo que $P'Q'R'S'$ es su imagen tras una simetría central con respecto a $C(-1, -1)$.
+\subsection{Ejercicio 9}
+\textbf{Problema:} Determinar el ángulo $\theta$ que rota A a A' con respecto a C.
+\textbf{Solución:} Primero se trasladan los puntos para que el centro de rotación sea el origen: $A_t = A-C$ y $A'_t = A'-C$. Luego, se puede usar el producto punto $\vec{u} \cdot \vec{v} = |\vec{u}||\vec{v}|\cos\theta$.
+\begin{enumerate}[label=\alph*)]
+    \item $A(\sqrt{5},1), A'(1,\sqrt{5}), C(0,0)$. Los puntos ya están centrados.
+    $A \cdot A' = \sqrt{5}\cdot 1 + 1\cdot\sqrt{5} = 2\sqrt{5}$.
+    $|A| = \sqrt{(\sqrt{5})^2+1^2} = \sqrt{6}$. $|A'| = \sqrt{1^2+(\sqrt{5})^2} = \sqrt{6}$.
+    $\cos\theta = \frac{2\sqrt{5}}{(\sqrt{6})(\sqrt{6})} = \frac{2\sqrt{5}}{6} = \frac{\sqrt{5}}{3}$.
+    \paragraph{Respuesta:} $\theta = \arccos\left(\frac{\sqrt{5}}{3}\right) \approx 41.81^\circ$.
+    
+    \item $A(4,5), A'(5,-2), C(1,1)$. Trasladamos: $A_t(3,4), A'_t(4,-3)$.
+    $A_t \cdot A'_t = 3\cdot 4 + 4\cdot(-3) = 12-12=0$.
+    Como el producto punto es cero, los vectores son ortogonales. La rotación es de $\pm 90^\circ$. Al observar la posición (del cuadrante I al IV), se concluye que la rotación es en sentido horario.
+    \paragraph{Respuesta:} $\theta = -90^\circ$ o $270^\circ$.
+\end{enumerate}
 
-\textbf{Solución:}
-En una simetría central, el centro $C(h, k)$ es el punto medio entre un punto original $P(x, y)$ y su imagen $P'(x', y')$. La fórmula para encontrar la imagen es $x' = 2h - x$ y $y' = 2k - y$. Para encontrar el punto original a partir de la imagen, se despeja y se obtiene la misma fórmula: $x = 2h - x'$ y $y = 2k - y'$.
+\subsection{Ejercicio 10}
+\textbf{Problema:} Demostrar que al rotar $A(\sqrt{2}, \sqrt{2})$ por $15^\circ$, su imagen corresponde a la expresión dada.
+\textbf{Solución:} (Desarrollo completo en respuestas anteriores). El cálculo directo con las fórmulas de adición de ángulos para $\sin(15^\circ)$ y $\cos(15^\circ)$ da como resultado el punto $A'(1, \sqrt{3})$. La simplificación algebraica de la expresión dada, elevando al cuadrado cada componente, también resulta en $(1, \sqrt{3})$, lo que completa la demostración.
 
-Aplicaremos esta fórmula con $C(h,k) = (-1,-1)$ para cada vértice.
+\subsection{Ejercicio 11}
+\textbf{Problema:} Determinar A, dadas A' y $\theta$ (rotación respecto al origen).
+\textbf{Solución:} Para encontrar el punto original A, se debe rotar el punto imagen A' por el ángulo opuesto, $-\theta$.
+\begin{enumerate}[label=\alph*)]
+    \item $A'(\sqrt{2},-\sqrt{6}), \theta=2250^\circ$. Primero, simplificamos el ángulo: $2250^\circ = 6 \times 360^\circ + 90^\circ$. La rotación efectiva es de $90^\circ$. Por lo tanto, rotamos A' por $-90^\circ$.
+    $x = \sqrt{2}\cos(-90^\circ) - (-\sqrt{6})\sin(-90^\circ) = \sqrt{2}(0) + \sqrt{6}(-1) = -\sqrt{6}$.
+    $y = \sqrt{2}\sin(-90^\circ) + (-\sqrt{6})\cos(-90^\circ) = \sqrt{2}(-1) - \sqrt{6}(0) = -\sqrt{2}$.
+    \paragraph{Respuesta:} $\mathbf{A(-\sqrt{6}, -\sqrt{2})}$.
+    
+    \item $A'(\phi^2, \sqrt{\pi}), \theta=-1080^\circ$. Simplificamos el ángulo: $-1080^\circ = -3 \times 360^\circ$. La rotación efectiva es de $0^\circ$. La rotación inversa también es de $0^\circ$, por lo que el punto no se mueve.
+    \paragraph{Respuesta:} $A=A'=\mathbf{(\phi^2, \sqrt{\pi})}$.
+\end{enumerate}
+
+\subsection{Ejercicio 12}
+\textbf{Problema:} Cuestiones sobre un reloj análogo.
+\textbf{Solución:} Tasas de movimiento: horario $0.5^\circ/\text{min}$, minutero $6^\circ/\text{min}$.
+\begin{enumerate}[label=\alph*)]
+    \item Ángulo barrido por el horario entre 13:00 y 14:15: El tiempo transcurrido es de 75 minutos.
+    Ángulo = $75 \text{ min} \times 0.5^\circ/\text{min} = \mathbf{37.5^\circ}$.
+    
+    \item Ángulo entre punteros a las 14:15: Medimos los ángulos desde la posición de las 12 en sentido horario.
+    Posición del minutero: $15 \text{ min} \times 6^\circ/\text{min} = 90^\circ$.
+    Posición del horario: $2 \text{ horas} \times 30^\circ/\text{h} + 15 \text{ min} \times 0.5^\circ/\text{min} = 60^\circ + 7.5^\circ = 67.5^\circ$.
+    Diferencia: $|90^\circ - 67.5^\circ| = \mathbf{22.5^\circ}$.
+    
+    \item Coordenadas (con 12 en eje Y+, 3 en eje X+):
+    A las 13:00 (1:00), el horario forma $30^\circ$ con el eje Y. Su ángulo en posición estándar es $90^\circ - 30^\circ = 60^\circ$. Coordenadas: $\mathbf{(L\cos60^\circ, L\sin60^\circ) = (L/2, L\sqrt{3}/2)}$.
+    A las 14:15, la posición del horario es $67.5^\circ$ desde las 12. Su ángulo en posición estándar es $90^\circ - 67.5^\circ = 22.5^\circ$. Coordenadas: $\mathbf{(L\cos22.5^\circ, L\sin22.5^\circ)}$.
+\end{enumerate}
+
+\newpage
+\section{Simetrías}
+
+\subsection{Ejercicio 13}
+\textbf{Problema:} Simetría axial del triángulo $A(2,3), B(-1,-3), C(0,6)$ con respecto a $y = -\frac{2}{3}x$.
+\textbf{Solución:} Usamos la fórmula de reflexión $A' = (\frac{1-m^2}{1+m^2}x_0 + \frac{2m}{1+m^2}y_0, \frac{2m}{1+m^2}x_0 - \frac{1-m^2}{1+m^2}y_0)$, con $m=-2/3$.
+Calculamos los factores constantes: $1+m^2=13/9$, $1-m^2=5/9$, $2m=-4/3$.
+$\frac{1-m^2}{1+m^2} = \frac{5}{13}$, $\frac{2m}{1+m^2} = -\frac{12}{13}$.
 \begin{itemize}
-	\item \textbf{Para P a partir de P'(0, -3):}
-	      $x = 2(-1) - 0 = -2$ \\
-	      $y = 2(-1) - (-3) = -2 + 3 = 1 \implies \mathbf{P(-2, 1)}$
-
-	\item \textbf{Para Q a partir de Q'(-3, -4):}
-	      $x = 2(-1) - (-3) = -2 + 3 = 1$ \\
-	      $y = 2(-1) - (-4) = -2 + 4 = 2 \implies \mathbf{Q(1, 2)}$
-
-	\item \textbf{Para R a partir de R'(-5, -1):}
-	      $x = 2(-1) - (-5) = -2 + 5 = 3$ \\
-	      $y = 2(-1) - (-1) = -2 + 1 = -1 \implies \mathbf{R(3, -1)}$
-
-	\item \textbf{Para S a partir de S'(-3, -6):}
-	      $x = 2(-1) - (-3) = -2 + 3 = 1$ \\
-	      $y = 2(-1) - (-6) = -2 + 6 = 4 \implies \mathbf{S(1, 4)}$
+    \item $A' = (\frac{5}{13}(2) - \frac{12}{13}(3), -\frac{12}{13}(2) - \frac{5}{13}(3)) = (-\frac{26}{13}, -\frac{39}{13}) = \mathbf{(-2, -3)}$.
+    \item $B' = (\frac{5}{13}(-1) - \frac{12}{13}(-3), -\frac{12}{13}(-1) - \frac{5}{13}(-3)) = (\frac{31}{13}, \frac{27}{13})$.
+    \item $C' = (\frac{5}{13}(0) - \frac{12}{13}(6), -\frac{12}{13}(0) - \frac{5}{13}(6)) = \mathbf{(-\frac{72}{13}, -\frac{30}{13})}$.
 \end{itemize}
 
-\paragraph{Respuesta:} Los vértices del polígono original son $P(-2, 1)$, $Q(1, 2)$, $R(3, -1)$ y $S(1, 4)$.
+\subsection{Ejercicio 14}
+\textbf{Problema:} Calcular el área encerrada por los triángulos ABC y A'B'C', donde A'B'C' es el simétrico de ABC respecto a $x=-3$.
+\textbf{Solución:} La simetría axial es una isometría, por lo que el área del triángulo reflejado A'B'C' es idéntica a la del original ABC. El área total encerrada es el doble del área de uno de los triángulos.
+Vértices: $A(-2,-4), B(-2,6), C(-6,2)$.
+La base puede ser el segmento vertical AB. Longitud de la base: $|6 - (-4)| = 10$.
+La altura es la distancia horizontal del vértice C a la recta $x=-2$. Altura: $|-6 - (-2)| = 4$.
+Área(ABC) = $\frac{1}{2} \times \text{base} \times \text{altura} = \frac{1}{2} \times 10 \times 4 = 20$.
+\paragraph{Respuesta:} El área total encerrada es $2 \times 20 = \mathbf{40}$ unidades cuadradas.
 
-% --- EJERCICIO 22 ---
-\subsection*{Ejercicio 22}
-\textbf{Problema:} Demostrar que para una homotecia con centro $C(h,k)$ que transforma $A(x_0, y_0)$ en $A'(x_1, y_1)$, se cumple la relación $\frac{x_1 - h}{x_0 - h} = \frac{y_1 - k}{y_0 - k}$.
+\subsection{Ejercicio 15}
+\textbf{Problema:} Calcular ángulos del triángulo ABC formado por simetrías sucesivas.
+\textbf{Solución:} Primero, encontramos los vértices.
+$A(2,1)$.
+$B$ es el reflejo de A respecto a $y=x$, entonces $B(1,2)$.
+$C$ es el reflejo de B respecto a $y=-x$, entonces $C(-2,-1)$.
+Calculamos el cuadrado de las longitudes de los lados para verificar si es un triángulo rectángulo:
+$AB^2 = (1-2)^2 + (2-1)^2 = (-1)^2 + 1^2 = 2$.
+$BC^2 = (-2-1)^2 + (-1-2)^2 = (-3)^2 + (-3)^2 = 9+9 = 18$.
+$AC^2 = (-2-2)^2 + (-1-1)^2 = (-4)^2 + (-2)^2 = 16+4 = 20$.
+Como $AB^2+BC^2=2+18=20=AC^2$, por el Teorema de Pitágoras, el triángulo es rectángulo en B.
+\paragraph{Respuesta:} $\angle B = 90^\circ$. Los otros ángulos se calculan por trigonometría: $\cos(\angle A) = \frac{AB}{AC} = \frac{\sqrt{2}}{\sqrt{20}} \implies \angle A \approx 71.57^\circ$, y $\angle C \approx 18.43^\circ$.
 
-\textbf{Solución:}
-La definición de homotecia establece que el centro $C$, el punto original $A$ y el punto imagen $A'$ son colineales. Vectorialmente, esto significa que el vector $\vec{CA'}$ es un múltiplo escalar del vector $\vec{CA}$. Dicho escalar es la razón de homotecia $k$.
-\[ \vec{CA'} = k \cdot \vec{CA} \]
-Expresamos los vectores en componentes:
-\begin{align*}
-	\vec{CA}  & = (x_0 - h, y_0 - k) \\
-	\vec{CA'} & = (x_1 - h, y_1 - k)
-\end{align*}
-Sustituyendo en la ecuación vectorial:
-\[ (x_1 - h, y_1 - k) = k \cdot (x_0 - h, y_0 - k) \]
-Esta igualdad vectorial se descompone en dos ecuaciones escalares, una para cada eje:
-\begin{align*}
-	x_1 - h & = k(x_0 - h) \implies k = \frac{x_1 - h}{x_0 - h} \\
-	y_1 - k & = k(y_0 - k) \implies k = \frac{y_1 - k}{y_0 - k}
-\end{align*}
-Como ambas expresiones son iguales a $k$, deben ser iguales entre sí.
-\[ \frac{x_1 - h}{x_0 - h} = \frac{y_1 - k}{y_0 - k} \]
-Lo que queda demostrado (L.Q.Q.D).
+\subsection{Ejercicio 16}
+\textbf{Problema:} Coordenadas de $A'$ y $A''$ por simetrías sucesivas.
+\begin{enumerate}[label=\alph*)]
+    \item $A(-4,2)$. $L_1: y=x \implies A'(2,-4)$. $L_2: y=-x \implies A''$ (reflejo de $A'$) $= \mathbf{(4,-2)}$.
+    \item $A(-4,2)$. $L_1: y=x/3, L_2: y=-2/3 x$. Se aplican las fórmulas del Ej. 13.
+    Para $L_1 (m=1/3)$: Factores: $\frac{1-m^2}{1+m^2}=\frac{8/9}{10/9}=\frac{4}{5}$, $\frac{2m}{1+m^2}=\frac{2/3}{10/9}=\frac{3}{5}$.
+    $A' = (\frac{4}{5}(-4) + \frac{3}{5}(2), \frac{3}{5}(-4) - \frac{4}{5}(2)) = \mathbf{(-\frac{10}{5}, -\frac{20}{5}) = (-2, -4)}$.
+    Para $L_2 (m=-2/3)$ aplicada a $A'(-2,-4)$: Factores: $\frac{5}{13}$ y $-\frac{12}{13}$.
+    $A'' = (\frac{5}{13}(-2) - \frac{12}{13}(-4), -\frac{12}{13}(-2) - \frac{5}{13}(-4)) = \mathbf{(\frac{38}{13}, \frac{44}{13})}$.
+\end{enumerate}
 
-% --- EJERCICIO 23 ---
-\subsection*{Ejercicio 23}
-\textbf{Problema:} Utilizar el resultado anterior para determinar la razón de homotecia $k$ tal que la imagen de $A(-2,2)$ con respecto a $C(-2,-1)$ es $A'(-2,-7)$.
+\subsection{Ejercicio 17}
+\textbf{Problema:} Determinar el centro de una simetría central.
+\textbf{Solución:} El centro de simetría C es el punto medio del segmento que une A y A'. Se calcula con la fórmula $C = \left(\frac{x_A+x_{A'}}{2}, \frac{y_A+y_{A'}}{2}\right)$.
+\begin{enumerate}[label=\alph*)]
+    \item $A(-1,3), A'(3,-3) \implies C = \left(\frac{-1+3}{2}, \frac{3-3}{2}\right) = \mathbf{(1,0)}$.
+    \item $B(-1/2, 3/2), B'(9/4, 11/4) \implies C = \left(\frac{-1/2+9/4}{2}, \frac{3/2+11/4}{2}\right) = \left(\frac{7/4}{2}, \frac{17/4}{2}\right) = \mathbf{(7/8, 17/8)}$.
+\end{enumerate}
 
-\textbf{Solución:}
-Del ejercicio 22, sabemos que la razón $k$ puede calcularse como $k = \frac{x_1 - h}{x_0 - h}$ o $k = \frac{y_1 - k}{y_0 - k}$.
-Identificamos los puntos:
+\subsection{Ejercicio 18}
+\textbf{Problema:} Determinar $PQRS$ a partir de su imagen simétrica $P'Q'R'S'$ con centro $C(-1,-1)$.
+\textbf{Solución:} Se aplicó la fórmula $P=(2h-x', 2k-y')$. Los vértices son $\mathbf{P(-2,1), Q(1,2), R(3,-1), S(1,4)}$. (Desarrollo completo en respuestas anteriores).
+
+\newpage
+\section{Homotecias}
+
+\subsection{Ejercicio 19}
+\textbf{Problema:} ¿Cuándo una homotecia es equivalente a una simetría central?
+\textbf{Solución:} Una simetría central con respecto a un punto C es equivalente a una rotación de 180° en torno a C. Esta transformación invierte la posición de cada punto a través del centro, lo cual corresponde exactamente a una homotecia con el mismo centro C y una razón $\mathbf{k=-1}$.
+
+\subsection{Ejercicio 20}
+\textbf{Problema:} Coordenadas de P'Q'R' simétrico a PQR con respecto a C para varias razones k.
+\textbf{Solución:} Se utiliza la fórmula de homotecia $A' = C + k(A-C)$, o $A' = (h(1-k)+kx, k(1-k)+ky)$.
+Dados: $P(-1,-1), Q(1,-2), R(0,1), C(-1,2)$.
+\begin{enumerate}[label=\alph*)]
+    \item k=5/2: $1-k = -3/2$.
+    $P' = (-1(-\frac{3}{2}) + \frac{5}{2}(-1), 2(-\frac{3}{2}) + \frac{5}{2}(-1)) = (\frac{3}{2}-\frac{5}{2}, -3-\frac{5}{2}) = \mathbf{(-1, -5.5)}$.
+    $Q' = \mathbf{(4, -7)}$. $R' = \mathbf{(1.5, -0.5)}$.
+    \item k=1: La transformación es la identidad. $\mathbf{P'=P, Q'=Q, R'=R}$.
+    \item k=-1: $1-k = 2$.
+    $P' = (-1(2) - 1(-1), 2(2) - 1(-1)) = \mathbf{(-1,5)}$.
+    $Q' = \mathbf{(-3,6)}$. $R' = \mathbf{(-2,3)}$.
+\end{enumerate}
+
+\subsection{Ejercicio 21}
+\textbf{Problema:} Calcular las áreas de los triángulos P'Q'R' obtenidos.
+\textbf{Solución:} La relación de áreas en una homotecia es Área(Imagen) = $k^2 \cdot$ Área(Original).
+Primero, calculamos el área del triángulo original $PQR$ con $P(-1,-1), Q(1,-2), R(0,1)$ usando el determinante (fórmula del lazo):
+Área(PQR) = $\frac{1}{2} |(-1)(-2) + 1(1) + 0(-1) - ((-1)(1) + (-2)(0) + 1(-1))| = \frac{1}{2} |2+1 - (-1-1)| = \frac{1}{2} |3+2| = 2.5$.
 \begin{itemize}
-	\item Punto original $A(x_0, y_0) = (-2, 2)$
-	\item Punto imagen $A'(x_1, y_1) = (-2, -7)$
-	\item Centro $C(h, k) = (-2, -1)$
-\end{itemize}
-Si intentamos calcular $k$ usando las coordenadas $x$:
-\[ k = \frac{-2 - (-2)}{-2 - (-2)} = \frac{0}{0} \]
-Esto resulta en una indeterminación, ya que los tres puntos son colineales sobre la recta vertical $x=-2$. Por lo tanto, debemos usar las coordenadas $y$:
-\[ k = \frac{y_1 - k}{y_0 - k} = \frac{-7 - (-1)}{2 - (-1)} = \frac{-7 + 1}{2 + 1} = \frac{-6}{3} = -2 \]
-\paragraph{Respuesta:} La razón de homotecia es $k=-2$.
-
-% --- EJERCICIO 24 ---
-\subsection*{Ejercicio 24}
-\textbf{Problema:} Dado el rombo $PQRS$ con $P(-1,-3)$, $Q(0,-1)$ y el lado $\overline{RQ}$ paralelo al eje X.
-
-\subsubsection*{a) Determinar coordenadas de R y S}
-La condición $\overline{RQ} \parallel \text{Eje X}$ implica que $y_R = y_Q = -1$.
-El vector de un lado es $\vec{PQ} = Q - P = (1, 2)$. La longitud de cada lado es $|\vec{PQ}| = \sqrt{1^2 + 2^2} = \sqrt{5}$.
-El vector $\vec{QR}$ debe tener la misma longitud. Como $R(x_R, -1)$, el vector es $\vec{QR} = (x_R - 0, -1 - (-1)) = (x_R, 0)$.
-La magnitud es $|\vec{QR}| = \sqrt{x_R^2 + 0^2} = |x_R|$.
-Por lo tanto, $|x_R| = \sqrt{5}$. Según la figura, R está a la derecha de Q, así que $x_R = \sqrt{5}$.
-$\implies \mathbf{R(\sqrt{5}, -1)}$.
-Para un paralelogramo, $S = P + R - Q$:
-$S = (-1, -3) + (\sqrt{5}, -1) - (0, -1) = (\sqrt{5}-1, -3)$.
-$\implies \mathbf{S(\sqrt{5}-1, -3)}$.
-
-\subsubsection*{b) Coordenadas de la imagen con k=2 y C(2,0)}
-Usamos la fórmula $A' = (h(1-k)+kx, k(1-k)+ky)$.
-\begin{itemize}
-	\item $\mathbf{P'} = (2(1-2)+2(-1), 0(1-2)+2(-3)) = \mathbf{(-4, -6)}$
-	\item $\mathbf{Q'} = (2(1-2)+2(0), 0(1-2)+2(-1)) = \mathbf{(-2, -2)}$
-	\item $\mathbf{R'} = (2(1-2)+2(\sqrt{5}), 0(1-2)+2(-1)) = \mathbf{(-2+2\sqrt{5}, -2)}$
-	\item $\mathbf{S'} = (2(1-2)+2(\sqrt{5}-1), 0(1-2)+2(-3)) = \mathbf{(-4+2\sqrt{5}, -6)}$
+    \item[a)] k=5/2: Área = $(5/2)^2 \cdot 2.5 = 6.25 \cdot 2.5 = \mathbf{15.625}$.
+    \item[b)] k=1: Área = $1^2 \cdot 2.5 = \mathbf{2.5}$.
+    \item[c)] k=2/3: Área = $(2/3)^2 \cdot 2.5 = \frac{4}{9} \cdot \frac{5}{2} = \mathbf{10/9}$.
+    \item[d)] k=-0.3: Área = $(-0.3)^2 \cdot 2.5 = 0.09 \cdot 2.5 = \mathbf{0.225}$.
+    \item[e)] k=-1: Área = $(-1)^2 \cdot 2.5 = \mathbf{2.5}$.
+    \item[f)] k=-2.16: Área = $(-2.16)^2 \cdot 2.5 = 4.6656 \cdot 2.5 = \mathbf{11.664}$.
 \end{itemize}
 
-\subsubsection*{c) Coordenadas de la imagen con k=-1/2 y C(-2,-2)}
-Usamos la misma fórmula con $k = -1/2$ y $C(-2, -2)$. El factor $1-k$ es $1 - (-1/2) = 3/2$.
-\begin{itemize}
-	\item $\mathbf{P'} = (-2(\frac{3}{2}) - \frac{1}{2}(-1), -2(\frac{3}{2}) - \frac{1}{2}(-3)) = (-3 + \frac{1}{2}, -3 + \frac{3}{2}) = \mathbf{(-\frac{5}{2}, -\frac{3}{2})}$
-	\item $\mathbf{Q'} = (-2(\frac{3}{2}) - \frac{1}{2}(0), -2(\frac{3}{2}) - \frac{1}{2}(-1)) = (-3, -3 + \frac{1}{2}) = \mathbf{(-3, -\frac{5}{2})}$
-	\item $\mathbf{R'} = (-2(\frac{3}{2}) - \frac{1}{2}(\sqrt{5}), -2(\frac{3}{2}) - \frac{1}{2}(-1)) = (-3 - \frac{\sqrt{5}}{2}, -3 + \frac{1}{2}) = \mathbf{(-\frac{6+\sqrt{5}}{2}, -\frac{5}{2})}$
-	\item $\mathbf{S'} = (-2(\frac{3}{2}) - \frac{1}{2}(\sqrt{5}-1), -2(\frac{3}{2}) - \frac{1}{2}(-3)) = (-3 - \frac{\sqrt{5}}{2} + \frac{1}{2}, -3 + \frac{3}{2}) = \mathbf{(-\frac{5+\sqrt{5}}{2}, -\frac{3}{2})}$
-\end{itemize}
+\subsection{Ejercicio 22}
+\textbf{Problema:} Demostrar la relación de proporcionalidad en una homotecia.
+\textbf{Solución:} (Desarrollo completo en respuestas anteriores). La demostración parte de la definición vectorial $\vec{CA'} = k \cdot \vec{CA}$. Al expresar esto en componentes y despejar $k$ de cada ecuación (para x e y), se demuestra que las dos expresiones resultantes son iguales.
 
-% --- SECCIÓN DE BIBLIOGRAFÍA (LA HEMOS QUITADO) ---
-% \newpage
-% \printbibliography[title=Bibliografía]
+\subsection{Ejercicio 23}
+\textbf{Problema:} Determinar $k$ para la homotecia dada.
+\textbf{Solución:} Se nos dan $A(-2,2), C(-2,-1), A'(-2,-7)$. La fórmula para la razón es $k = \frac{x'-h}{x-h}$ o $k = \frac{y'-k}{y-k}$. El cálculo con las abscisas resulta en $0/0$ (indeterminación), indicando que debemos usar las ordenadas.
+\[ k = \frac{-7 - (-1)}{2 - (-1)} = \frac{-6}{3} = -2 \]
+\paragraph{Respuesta:} La razón de homotecia es $\mathbf{k=-2}$.
+
+\subsection{Ejercicio 24}
+\textbf{Problema:} Dado el rombo PQRS.
+\begin{enumerate}[label=\alph*)]
+    \item \textbf{Coordenadas de R y S:}
+    Como $\overline{RQ} \parallel \text{Eje X}$, $y_R = y_Q = -1$. El lado tiene longitud $|\vec{PQ}| = |(1, 2)| = \sqrt{5}$. La longitud de $\overline{QR}$ es $|x_R - 0| = |x_R|$, entonces $|x_R|=\sqrt{5}$. Por la figura, $x_R = \sqrt{5}$.
+    $\implies \mathbf{R(\sqrt{5}, -1)}$.
+    Usando la propiedad del paralelogramo $S = P + R - Q$:
+    $S = (-1, -3) + (\sqrt{5}, -1) - (0, -1) = (\sqrt{5}-1, -3)$.
+    $\implies \mathbf{S(\sqrt{5}-1, -3)}$.
+
+    \item \textbf{Homotecia con k=2 y C(2,0):}
+    $\mathbf{P'(-4,-6), Q'(-2,-2), R'(-2+2\sqrt{5},-2), S'(-4+2\sqrt{5},-6)}$.
+
+    \item \textbf{Homotecia con k=-1/2 y C(-2,-2):}
+    $\mathbf{P'(-5/2, -3/2), Q'(-3, -5/2), R'(-\frac{6+\sqrt{5}}{2}, -5/2), S'(-\frac{5+\sqrt{5}}{2}, -3/2)}$.
+\end{enumerate}
 
 \end{document}

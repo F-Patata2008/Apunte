@@ -161,6 +161,10 @@ OUTPUT Guia-1.pdf
 INPUT ./Guia-1.out
 INPUT ./Guia-1.out
 OUTPUT Guia-1.out
+INPUT ./images/IN.png
+INPUT ./images/IN.png
+INPUT ./images/IN.png
+INPUT ./images/IN.png
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/eccc1200.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/eccc2074.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/eccc1728.tfm

@@ -20,24 +20,26 @@
 \contentsline {paragraph}{Respuesta:}{7}{section*.9}%
 \contentsline {paragraph}{Respuesta:}{7}{section*.10}%
 \contentsline {subsection}{\numberline {2.4}Ejercicio 10}{7}{subsection.2.4}%
+\contentsline {paragraph}{Parte 1: Cálculo directo de la rotación.}{8}{section*.11}%
+\contentsline {paragraph}{Parte 2: Simplificación de la expresión dada.}{8}{section*.12}%
 \contentsline {subsection}{\numberline {2.5}Ejercicio 11}{8}{subsection.2.5}%
-\contentsline {paragraph}{Respuesta:}{8}{section*.11}%
-\contentsline {paragraph}{Respuesta:}{8}{section*.12}%
-\contentsline {subsection}{\numberline {2.6}Ejercicio 12}{8}{subsection.2.6}%
+\contentsline {paragraph}{Respuesta:}{8}{section*.13}%
+\contentsline {paragraph}{Respuesta:}{8}{section*.14}%
+\contentsline {subsection}{\numberline {2.6}Ejercicio 12}{9}{subsection.2.6}%
 \contentsline {section}{\numberline {3}Simetrías}{10}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Ejercicio 13}{10}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Ejercicio 14}{10}{subsection.3.2}%
-\contentsline {paragraph}{Respuesta:}{10}{section*.13}%
+\contentsline {paragraph}{Respuesta:}{10}{section*.15}%
 \contentsline {subsection}{\numberline {3.3}Ejercicio 15}{10}{subsection.3.3}%
-\contentsline {paragraph}{Respuesta:}{11}{section*.14}%
+\contentsline {paragraph}{Respuesta:}{11}{section*.16}%
 \contentsline {subsection}{\numberline {3.4}Ejercicio 16}{11}{subsection.3.4}%
 \contentsline {subsection}{\numberline {3.5}Ejercicio 17}{11}{subsection.3.5}%
 \contentsline {subsection}{\numberline {3.6}Ejercicio 18}{11}{subsection.3.6}%
-\contentsline {section}{\numberline {4}Homotecias}{12}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Ejercicio 19}{12}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Ejercicio 20}{12}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Ejercicio 21}{12}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Ejercicio 22}{13}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Ejercicio 23}{13}{subsection.4.5}%
-\contentsline {paragraph}{Respuesta:}{13}{section*.15}%
-\contentsline {subsection}{\numberline {4.6}Ejercicio 24}{13}{subsection.4.6}%
+\contentsline {section}{\numberline {4}Homotecias}{13}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Ejercicio 19}{13}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Ejercicio 20}{13}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Ejercicio 21}{13}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Ejercicio 22}{14}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Ejercicio 23}{14}{subsection.4.5}%
+\contentsline {paragraph}{Respuesta:}{15}{section*.17}%
+\contentsline {subsection}{\numberline {4.6}Ejercicio 24}{15}{subsection.4.6}%

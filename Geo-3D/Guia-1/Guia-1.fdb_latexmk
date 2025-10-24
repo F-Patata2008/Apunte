@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1761269587.92435 "Guia-1.tex" "Guia-1.pdf" "Guia-1" 1761269590.46396 0
+["pdflatex"] 1761270018.58052 "Guia-1.tex" "Guia-1.pdf" "Guia-1" 1761270020.32873 0
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1755987285 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1755987285 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1755987285 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -134,10 +134,10 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1755987285 42087 b0f9697c952c8f5a8eede4134282cb0d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1759531207 5311557 9da84c45f5b388655502706482323571 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1759531300 2081311 0ad7717c165370c4e7428dad1cc65a3e ""
-  "Guia-1.aux" 1761269590.24387 4993 d6e5298acd1dccc14fbf6d66ec980aa9 "pdflatex"
-  "Guia-1.out" 1761269590.2472 3234 98df7223a50a99942a367dee635f5aa6 "pdflatex"
-  "Guia-1.tex" 1761269584.87046 22118 9784759f0f87301796862d8e8e40b749 ""
-  "Guia-1.toc" 1761269590.2472 2938 90a08b048178561c7fc053165760ca30 "pdflatex"
+  "Guia-1.aux" 1761270020.07748 5254 895f1c9cf3bca63e8a17a35ae45c1a5b "pdflatex"
+  "Guia-1.out" 1761270020.08081 3234 98df7223a50a99942a367dee635f5aa6 "pdflatex"
+  "Guia-1.tex" 1761270016.44735 25618 87b5eaf0f92286598542f8520478bb5d ""
+  "Guia-1.toc" 1761270020.08081 3117 ffbbb3409222c0f276ae3a11ae228b3f "pdflatex"
   (generated)
   "Guia-1.aux"
   "Guia-1.log"

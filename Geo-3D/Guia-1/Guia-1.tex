@@ -130,7 +130,7 @@ Esta serie tiene un primer término $a=10$ y una razón común $r=1/10$. Dado qu
     \item $A(-2,-6)$ y $\vec{u}(\sqrt{5}, 120^\circ)$.
     \[ A' = (-2 + \sqrt{5}\cos(120^\circ), -6 + \sqrt{5}\sin(120^\circ)) = \left(-2 + \sqrt{5}\cdot(-\frac{1}{2}), -6 + \sqrt{5}\cdot\frac{\sqrt{3}}{2}\right) = \mathbf{\left( -2-\frac{\sqrt{5}}{2}, -6+\frac{\sqrt{15}}{2} \right)} \]
     \item $B(8,-3)$ y $\vec{T}(1, 225^\circ)$.
-    \[ B' = (8 + 1\cdot\cos(225^\circ), -3 + 1\cdot\sin(225^\circ)) = \left(8 - \frac{\sqrt{2}}{2}, -3 - \frac{\sqrt{2}}{2}\right) \]
+    \[ B' = (8 + 1\cdot\cos(225^\circ), -3 + 1\cdot\sin(225^\circ)) = \mathbf{\left(8 - \frac{\sqrt{2}}{2}, -3 - \frac{\sqrt{2}}{2}\right)} \]
 \end{enumerate}
 
 \subsection{Ejercicio 6}
@@ -189,7 +189,7 @@ $A' = ((x-h)\cos\theta - (y-k)\sin\theta + h, (x-h)\sin\theta + (y-k)\cos\theta 
     $\cos\theta = \frac{2\sqrt{5}}{(\sqrt{6})(\sqrt{6})} = \frac{2\sqrt{5}}{6} = \frac{\sqrt{5}}{3}$.
     \paragraph{Respuesta:} $\theta = \arccos\left(\frac{\sqrt{5}}{3}\right) \approx 41.81^\circ$.
     
-    \item $A(4,5), A'(5,-2), C(1,1)$. Trasladamos: $A_t(3,4), A'_t(4,-3)$.
+    \item $A(4,5), A'(5,-2), C(1,1)$. Trasladamos al origen: $A_t(3,4), A'_t(4,-3)$.
     $A_t \cdot A'_t = 3\cdot 4 + 4\cdot(-3) = 12-12=0$.
     Como el producto punto es cero, los vectores son ortogonales. La rotación es de $\pm 90^\circ$. Al observar la posición (del cuadrante I al IV), se concluye que la rotación es en sentido horario.
     \paragraph{Respuesta:} $\theta = -90^\circ$ o $270^\circ$.
@@ -197,7 +197,20 @@ $A' = ((x-h)\cos\theta - (y-k)\sin\theta + h, (x-h)\sin\theta + (y-k)\cos\theta 
 
 \subsection{Ejercicio 10}
 \textbf{Problema:} Demostrar que al rotar $A(\sqrt{2}, \sqrt{2})$ por $15^\circ$, su imagen corresponde a la expresión dada.
-\textbf{Solución:} (Desarrollo completo en respuestas anteriores). El cálculo directo con las fórmulas de adición de ángulos para $\sin(15^\circ)$ y $\cos(15^\circ)$ da como resultado el punto $A'(1, \sqrt{3})$. La simplificación algebraica de la expresión dada, elevando al cuadrado cada componente, también resulta en $(1, \sqrt{3})$, lo que completa la demostración.
+\textbf{Solución:} Se resolverá en dos partes. Primero, calculando la rotación directamente. Segundo, simplificando la expresión dada.
+\paragraph{Parte 1: Cálculo directo de la rotación.}
+La fórmula de rotación es $A'(x\cos\theta - y\sin\theta, x\sin\theta + y\cos\theta)$. Se usan las identidades de resta de ángulos para $15^\circ=45^\circ-30^\circ$:
+$\cos(15^\circ) = \frac{\sqrt{6}+\sqrt{2}}{4}$ y $\sin(15^\circ) = \frac{\sqrt{6}-\sqrt{2}}{4}$.
+Aplicando la rotación:
+\begin{align*}
+	x' &= \sqrt{2}\left(\frac{\sqrt{6} + \sqrt{2}}{4}\right) - \sqrt{2}\left(\frac{\sqrt{6} - \sqrt{2}}{4}\right) = \frac{\sqrt{12} + 2 - \sqrt{12} + 2}{4} = \frac{4}{4} = 1 \\
+	y' &= \sqrt{2}\left(\frac{\sqrt{6} - \sqrt{2}}{4}\right) + \sqrt{2}\left(\frac{\sqrt{6} + \sqrt{2}}{4}\right) = \frac{\sqrt{12} - 2 + \sqrt{12} + 2}{4} = \frac{2\sqrt{12}}{4} = \sqrt{3}
+\end{align*}
+El punto rotado es $A'(1, \sqrt{3})$.
+\paragraph{Parte 2: Simplificación de la expresión dada.}
+La coordenada $x$ de la expresión es $X = \sqrt{1 + \frac{\sqrt{3}}{2}} - \sqrt{1 - \frac{\sqrt{3}}{2}}$. Al elevar al cuadrado, $X^2 = (1 + \frac{\sqrt{3}}{2}) - 2\sqrt{1-\frac{3}{4}} + (1 - \frac{\sqrt{3}}{2}) = 2 - 2(\frac{1}{2}) = 1$, por lo tanto $X=1$.
+La coordenada $y$ es $Y = \sqrt{1 + \frac{\sqrt{3}}{2}} + \sqrt{1 - \frac{\sqrt{3}}{2}}$. Al elevar al cuadrado, $Y^2 = (1 + \frac{\sqrt{3}}{2}) + 2\sqrt{1-\frac{3}{4}} + (1 - \frac{\sqrt{3}}{2}) = 2 + 2(\frac{1}{2}) = 3$, por lo tanto $Y=\sqrt{3}$.
+Como ambos métodos dan $(1, \sqrt{3})$, la proposición queda demostrada.
 
 \subsection{Ejercicio 11}
 \textbf{Problema:} Determinar A, dadas A' y $\theta$ (rotación respecto al origen).
@@ -286,7 +299,13 @@ Como $AB^2+BC^2=2+18=20=AC^2$, por el Teorema de Pitágoras, el triángulo es re
 
 \subsection{Ejercicio 18}
 \textbf{Problema:} Determinar $PQRS$ a partir de su imagen simétrica $P'Q'R'S'$ con centro $C(-1,-1)$.
-\textbf{Solución:} Se aplicó la fórmula $P=(2h-x', 2k-y')$. Los vértices son $\mathbf{P(-2,1), Q(1,2), R(3,-1), S(1,4)}$. (Desarrollo completo en respuestas anteriores).
+\textbf{Solución:} En una simetría central, el punto original se encuentra con la misma fórmula que la imagen: $P=(2h-x', 2k-y')$.
+\begin{itemize}
+	\item \textbf{Para P a partir de P'(0, -3):} $P = (2(-1)-0, 2(-1)-(-3)) = \mathbf{(-2, 1)}$
+	\item \textbf{Para Q a partir de Q'(-3, -4):} $Q = (2(-1)-(-3), 2(-1)-(-4)) = \mathbf{(1, 2)}$
+	\item \textbf{Para R a partir de R'(-5, -1):} $R = (2(-1)-(-5), 2(-1)-(-1)) = \mathbf{(3, -1)}$
+	\item \textbf{Para S a partir de S'(-3, -6):} $S = (2(-1)-(-3), 2(-1)-(-6)) = \mathbf{(1, 4)}$
+\end{itemize}
 
 \newpage
 \section{Homotecias}
@@ -302,11 +321,13 @@ Dados: $P(-1,-1), Q(1,-2), R(0,1), C(-1,2)$.
 \begin{enumerate}[label=\alph*)]
     \item k=5/2: $1-k = -3/2$.
     $P' = (-1(-\frac{3}{2}) + \frac{5}{2}(-1), 2(-\frac{3}{2}) + \frac{5}{2}(-1)) = (\frac{3}{2}-\frac{5}{2}, -3-\frac{5}{2}) = \mathbf{(-1, -5.5)}$.
-    $Q' = \mathbf{(4, -7)}$. $R' = \mathbf{(1.5, -0.5)}$.
+    $Q' = (-1(-\frac{3}{2}) + \frac{5}{2}(1), 2(-\frac{3}{2}) + \frac{5}{2}(-2)) = (\frac{3}{2}+\frac{5}{2}, -3-5) = \mathbf{(4, -8)}$.
+    $R' = (-1(-\frac{3}{2}) + \frac{5}{2}(0), 2(-\frac{3}{2}) + \frac{5}{2}(1)) = (\frac{3}{2}, -3+\frac{5}{2}) = \mathbf{(1.5, -0.5)}$.
     \item k=1: La transformación es la identidad. $\mathbf{P'=P, Q'=Q, R'=R}$.
-    \item k=-1: $1-k = 2$.
+    \item k=-1 (Simetría Central): $1-k = 2$.
     $P' = (-1(2) - 1(-1), 2(2) - 1(-1)) = \mathbf{(-1,5)}$.
-    $Q' = \mathbf{(-3,6)}$. $R' = \mathbf{(-2,3)}$.
+    $Q' = (-1(2) - 1(1), 2(2) - 1(-2)) = \mathbf{(-3,6)}$.
+    $R' = (-1(2) - 1(0), 2(2) - 1(1)) = \mathbf{(-2,3)}$.
 \end{enumerate}
 
 \subsection{Ejercicio 21}
@@ -325,29 +346,52 @@ Primero, calculamos el área del triángulo original $PQR$ con $P(-1,-1), Q(1,-2
 
 \subsection{Ejercicio 22}
 \textbf{Problema:} Demostrar la relación de proporcionalidad en una homotecia.
-\textbf{Solución:} (Desarrollo completo en respuestas anteriores). La demostración parte de la definición vectorial $\vec{CA'} = k \cdot \vec{CA}$. Al expresar esto en componentes y despejar $k$ de cada ecuación (para x e y), se demuestra que las dos expresiones resultantes son iguales.
+\textbf{Solución:} La definición de homotecia establece que el centro $C$, el punto original $A$ y el punto imagen $A'$ son colineales. Vectorialmente, esto significa que el vector $\vec{CA'}$ es un múltiplo escalar del vector $\vec{CA}$, donde el escalar es la razón $k$.
+\[ \vec{CA'} = k \cdot \vec{CA} \]
+Expresando los vectores en componentes:
+\[ (x_1 - h, y_1 - k) = k \cdot (x_0 - h, y_0 - k) \]
+Esta igualdad vectorial se descompone en dos ecuaciones escalares:
+\begin{align*}
+	x_1 - h & = k(x_0 - h) \implies k = \frac{x_1 - h}{x_0 - h} \\
+	y_1 - k & = k(y_0 - k) \implies k = \frac{y_1 - k}{y_0 - k}
+\end{align*}
+Como ambas expresiones son iguales a $k$, deben ser iguales entre sí, lo que demuestra la relación.
 
 \subsection{Ejercicio 23}
 \textbf{Problema:} Determinar $k$ para la homotecia dada.
-\textbf{Solución:} Se nos dan $A(-2,2), C(-2,-1), A'(-2,-7)$. La fórmula para la razón es $k = \frac{x'-h}{x-h}$ o $k = \frac{y'-k}{y-k}$. El cálculo con las abscisas resulta en $0/0$ (indeterminación), indicando que debemos usar las ordenadas.
+\textbf{Solución:} Se nos dan $A(-2,2), C(-2,-1), A'(-2,-7)$. La fórmula para la razón es $k = \frac{x'-h}{x-h}$ o $k = \frac{y'-k}{y-k}$. El cálculo con las abscisas resulta en $\frac{-2 - (-2)}{-2 - (-2)} = \frac{0}{0}$ (indeterminación), lo cual es esperado ya que los puntos son colineales verticalmente. Debemos usar las ordenadas:
 \[ k = \frac{-7 - (-1)}{2 - (-1)} = \frac{-6}{3} = -2 \]
 \paragraph{Respuesta:} La razón de homotecia es $\mathbf{k=-2}$.
 
 \subsection{Ejercicio 24}
-\textbf{Problema:} Dado el rombo PQRS.
+\textbf{Problema:} Dado el rombo PQRS con $P(-1,-3)$, $Q(0,-1)$ y el lado $\overline{RQ}$ paralelo al eje X.
+
 \begin{enumerate}[label=\alph*)]
-    \item \textbf{Coordenadas de R y S:}
-    Como $\overline{RQ} \parallel \text{Eje X}$, $y_R = y_Q = -1$. El lado tiene longitud $|\vec{PQ}| = |(1, 2)| = \sqrt{5}$. La longitud de $\overline{QR}$ es $|x_R - 0| = |x_R|$, entonces $|x_R|=\sqrt{5}$. Por la figura, $x_R = \sqrt{5}$.
+    \item \textbf{Determinar coordenadas de R y S:}
+    La condición $\overline{RQ} \parallel \text{Eje X}$ implica que $y_R = y_Q = -1$.
+    La longitud de cada lado del rombo es igual. Calculamos la longitud del lado PQ:
+    $|\vec{PQ}| = \sqrt{(0 - (-1))^2 + (-1 - (-3))^2} = \sqrt{1^2 + 2^2} = \sqrt{5}$.
+    La longitud del lado QR debe ser la misma. Como $R(x_R, -1)$, la longitud es:
+    $|\vec{QR}| = \sqrt{(x_R - 0)^2 + (-1 - (-1))^2} = \sqrt{x_R^2} = |x_R|$.
+    Por lo tanto, $|x_R| = \sqrt{5}$. Asumiendo por la figura que R está a la derecha de Q, $x_R = \sqrt{5}$.
     $\implies \mathbf{R(\sqrt{5}, -1)}$.
-    Usando la propiedad del paralelogramo $S = P + R - Q$:
+    Para un paralelogramo, $S = P + R - Q$:
     $S = (-1, -3) + (\sqrt{5}, -1) - (0, -1) = (\sqrt{5}-1, -3)$.
     $\implies \mathbf{S(\sqrt{5}-1, -3)}$.
 
-    \item \textbf{Homotecia con k=2 y C(2,0):}
-    $\mathbf{P'(-4,-6), Q'(-2,-2), R'(-2+2\sqrt{5},-2), S'(-4+2\sqrt{5},-6)}$.
+    \item \textbf{Coordenadas de la imagen con k=2 y C(2,0):}
+    Usamos la fórmula $A' = (h(1-k)+kx, k(1-k)+ky)$.
+    $P' = (2(1-2)+2(-1), 0(1-2)+2(-3)) = \mathbf{(-4, -6)}$.
+    $Q' = (2(1-2)+2(0), 0(1-2)+2(-1)) = \mathbf{(-2, -2)}$.
+    $R' = (2(1-2)+2(\sqrt{5}), 0(1-2)+2(-1)) = \mathbf{(-2+2\sqrt{5}, -2)}$.
+    $S' = (2(1-2)+2(\sqrt{5}-1), 0(1-2)+2(-3)) = \mathbf{(-4+2\sqrt{5}, -6)}$.
 
-    \item \textbf{Homotecia con k=-1/2 y C(-2,-2):}
-    $\mathbf{P'(-5/2, -3/2), Q'(-3, -5/2), R'(-\frac{6+\sqrt{5}}{2}, -5/2), S'(-\frac{5+\sqrt{5}}{2}, -3/2)}$.
+    \item \textbf{Coordenadas de la imagen con k=-1/2 y C(-2,-2):}
+    Usamos la misma fórmula. El factor $1-k = 1 - (-1/2) = 3/2$.
+    $P' = (-2(\frac{3}{2}) - \frac{1}{2}(-1), -2(\frac{3}{2}) - \frac{1}{2}(-3)) = \mathbf{(-\frac{5}{2}, -\frac{3}{2})}$.
+    $Q' = (-2(\frac{3}{2}) - \frac{1}{2}(0), -2(\frac{3}{2}) - \frac{1}{2}(-1)) = \mathbf{(-3, -\frac{5}{2})}$.
+    $R' = (-2(\frac{3}{2}) - \frac{1}{2}(\sqrt{5}), -2(\frac{3}{2}) - \frac{1}{2}(-1)) = \mathbf{(-\frac{6+\sqrt{5}}{2}, -\frac{5}{2})}$.
+    $S' = (-2(\frac{3}{2}) - \frac{1}{2}(\sqrt{5}-1), -2(\frac{3}{2}) - \frac{1}{2}(-3)) = \mathbf{(-\frac{5+\sqrt{5}}{2}, -\frac{3}{2})}$.
 \end{enumerate}
 
 \end{document}

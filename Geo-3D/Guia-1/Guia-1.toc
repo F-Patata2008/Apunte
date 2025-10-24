@@ -1,0 +1,7 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {paragraph}{Respuesta:}{3}{section*.4}%
+\contentsline {paragraph}{Parte 1: Cálculo directo de la rotación}{3}{section*.6}%
+\contentsline {paragraph}{Parte 2: Simplificación de la expresión dada}{3}{section*.7}%
+\contentsline {paragraph}{Conclusión:}{4}{section*.8}%
+\contentsline {paragraph}{Respuesta:}{4}{section*.10}%
+\contentsline {paragraph}{Respuesta:}{6}{section*.13}%

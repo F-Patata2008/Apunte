@@ -1,0 +1,255 @@
+\documentclass[12pt, letterpaper]{article}
+
+% ----- PAQUETES BÁSICOS Y DE IDIOMA -----
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+
+% ----- PAQUETES DE MATEMÁTICAS -----
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% ----- PAQUETES DE FORMATO Y GEOMETRÍA -----
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage{microtype}
+\graphicspath{ {./images/}, {~/Apunte/images/} }
+
+% ----- PAQUETE DE CITAS (LO HEMOS QUITADO) -----
+% \usepackage{csquotes}
+% \usepackage[style=verbose-trad1, bibstyle=numeric, backend=biber]{biblatex}
+% \addbibresource{bibliografia.bib}
+
+% ----- CONFIGURACIÓN DE LA PÁGINA -----
+\geometry{
+    letterpaper,
+    left=2.5cm,
+    right=2.5cm,
+    top=2.5cm,
+    bottom=3cm
+}
+\setstretch{1.5}
+
+% ----- HIPERVÍNCULOS -----
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue,
+    pdftitle={Resolución Guía N°1/2025},
+    pdfauthor={Felipe Colli Olea},
+    pdfsubject={Geometría 3D}
+}
+
+% --- INICIO DEL DOCUMENTO ---
+\begin{document}
+
+% --- CONFIGURACIÓN DEL PIE DE PÁGINA ---
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\footnotesize }
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+% --- PORTADA ---
+\begin{titlepage}
+	\centering
+	% \includegraphics[width=2cm]{IN.png}\\[1.5cm] % Descomenta esta línea si tienes el logo 'IN.png'
+	\textsc{\LARGE Instituto Nacional General José Miguel Carrera}\\[0.5cm]
+	\textsc{\Large Departamento de Matemática}\\[1.5cm]
+	\rule{\textwidth}{1.5pt}\vspace{0.4cm}
+	{ \Huge \bfseries Resolución Guía N°1/2025}\\[0.4cm]
+	\rule{\textwidth}{1.5pt}\\[1.5cm]
+	{ \Large \textit{Transformaciones Geométricas} }\\[3cm]
+	\begin{minipage}{0.45\textwidth}
+		\begin{flushleft} \large
+			\textbf{Autor:}\\
+			Felipe Colli Olea\\
+		\end{flushleft}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\begin{flushright} \large
+			\textbf{Profesor:}\\
+			Sergio Diaz
+		\end{flushright}
+	\end{minipage}
+	\vfill
+	{ \large Santiago, Chile \\[0.5cm] \today }
+\end{titlepage}
+
+\newpage
+\tableofcontents
+\newpage
+\section*{Desarrollo de Ejercicios}
+\thispagestyle{fancy}
+
+% --- EJERCICIO 2 ---
+\subsection*{Ejercicio 2}
+\textbf{Problema:} De acuerdo a la Paradoja de Zenón, se presentan los desplazamientos de Aquiles mediante vectores de traslación. Se pide determinar el vector total $\vec{T} = \sum_{i=1}^{\infty} \vec{T_i}$.
+
+\textbf{Solución:}
+El vector total $\vec{T}$ es la suma de una serie infinita de vectores:
+\[ \vec{T} = \vec{T_1} + \vec{T_2} + \vec{T_3} + \dots \]
+Sustituyendo los valores dados:
+\[ \vec{T} = (10, 0) + (1, 0) + \left(\frac{1}{10}, 0\right) + \left(\frac{1}{100}, 0\right) + \dots \]
+Para resolver, sumamos las componentes correspondientes.
+
+\begin{enumerate}
+	\item \textbf{Componente Y:} La suma de las componentes 'y' es $0 + 0 + 0 + \dots = 0$.
+
+	\item \textbf{Componente X:} La suma de las componentes 'x' forma una serie geométrica infinita:
+	      \[ X = 10 + 1 + \frac{1}{10} + \frac{1}{100} + \dots \]
+	      Esta serie tiene un primer término $a=10$ y una razón común $r=\frac{1}{10}$. Como $|r| < 1$, podemos usar la fórmula de la suma de una serie geométrica infinita:
+	      \[ S = \frac{a}{1 - r} \]
+	      Aplicando la fórmula:
+	      \[ X = \frac{10}{1 - \frac{1}{10}} = \frac{10}{\frac{9}{10}} = 10 \cdot \frac{10}{9} = \frac{100}{9} \]
+\end{enumerate}
+El vector resultante es la combinación de ambas componentes.
+\paragraph{Respuesta:} El vector $\vec{T}$ es $\left(\frac{100}{9}, 0\right)$.
+
+% --- EJERCICIO 10 ---
+\subsection*{Ejercicio 10}
+\textbf{Problema:} Demostrar que al rotar el punto $A(\sqrt{2}, \sqrt{2})$ con respecto al origen en un ángulo $\theta = 15^\circ$, su imagen corresponde al punto dado por una expresión compleja.
+
+\textbf{Solución:}
+Se abordará en dos partes: primero, calculando la rotación directamente y, segundo, simplificando la expresión dada para demostrar que ambos resultados coinciden.
+
+\paragraph{Parte 1: Cálculo directo de la rotación}
+La fórmula de rotación para un punto $(x, y)$ es $A'(x\cos\theta - y\sin\theta, x\sin\theta + y\cos\theta)$. Necesitamos los valores de $\cos(15^\circ)$ y $\sin(15^\circ)$ usando la identidad de la resta de ángulos ($15^\circ = 45^\circ - 30^\circ$).
+\begin{align*}
+	\cos(15^\circ) & = \cos(45^\circ)\cos(30^\circ) + \sin(45^\circ)\sin(30^\circ) = \frac{\sqrt{2}}{2}\frac{\sqrt{3}}{2} + \frac{\sqrt{2}}{2}\frac{1}{2} = \frac{\sqrt{6} + \sqrt{2}}{4} \\
+	\sin(15^\circ) & = \sin(45^\circ)\cos(30^\circ) - \cos(45^\circ)\sin(30^\circ) = \frac{\sqrt{2}}{2}\frac{\sqrt{3}}{2} - \frac{\sqrt{2}}{2}\frac{1}{2} = \frac{\sqrt{6} - \sqrt{2}}{4}
+\end{align*}
+Aplicando la rotación al punto $A(\sqrt{2}, \sqrt{2})$:
+\begin{align*}
+	x' & = \sqrt{2}\left(\frac{\sqrt{6} + \sqrt{2}}{4}\right) - \sqrt{2}\left(\frac{\sqrt{6} - \sqrt{2}}{4}\right) = \frac{\sqrt{12} + 2 - \sqrt{12} + 2}{4} = \frac{4}{4} = 1 \\
+	y' & = \sqrt{2}\left(\frac{\sqrt{6} - \sqrt{2}}{4}\right) + \sqrt{2}\left(\frac{\sqrt{6} + \sqrt{2}}{4}\right) = \frac{\sqrt{12} - 2 + \sqrt{12} + 2}{4} = \frac{2\sqrt{12}}{4} = \frac{4\sqrt{3}}{4} = \sqrt{3}
+\end{align*}
+El punto rotado es $A'(1, \sqrt{3})$.
+
+\paragraph{Parte 2: Simplificación de la expresión dada}
+La coordenada $x$ de la expresión es $X = \sqrt{1 + \frac{\sqrt{3}}{2}} - \sqrt{1 - \frac{\sqrt{3}}{2}}$. Al elevar al cuadrado:
+\begin{align*}
+	X^2 & = \left(1 + \frac{\sqrt{3}}{2}\right) - 2\sqrt{\left(1 + \frac{\sqrt{3}}{2}\right)\left(1 - \frac{\sqrt{3}}{2}\right)} + \left(1 - \frac{\sqrt{3}}{2}\right) \\
+	X^2 & = 2 - 2\sqrt{1 - \frac{3}{4}} = 2 - 2\sqrt{\frac{1}{4}} = 2 - 2\left(\frac{1}{2}\right) = 1 \implies X=1
+\end{align*}
+La coordenada $y$ es $Y = \sqrt{1 + \frac{\sqrt{3}}{2}} + \sqrt{1 - \frac{\sqrt{3}}{2}}$. Al elevar al cuadrado:
+\begin{align*}
+	Y^2 & = \left(1 + \frac{\sqrt{3}}{2}\right) + 2\sqrt{\left(1 + \frac{\sqrt{3}}{2}\right)\left(1 - \frac{\sqrt{3}}{2}\right)} + \left(1 - \frac{\sqrt{3}}{2}\right) \\
+	Y^2 & = 2 + 2\sqrt{\frac{1}{4}} = 2 + 1 = 3 \implies Y=\sqrt{3}
+\end{align*}
+La expresión simplificada corresponde al punto $(1, \sqrt{3})$.
+
+\paragraph{Conclusión:} Ambos métodos arrojan el mismo resultado, lo cual demuestra lo solicitado.
+
+% --- EJERCICIO 18 ---
+\subsection*{Ejercicio 18}
+\textbf{Problema:} Determinar las coordenadas de los vértices del polígono $PQRS$ sabiendo que $P'Q'R'S'$ es su imagen tras una simetría central con respecto a $C(-1, -1)$.
+
+\textbf{Solución:}
+En una simetría central, el centro $C(h, k)$ es el punto medio entre un punto original $P(x, y)$ y su imagen $P'(x', y')$. La fórmula para encontrar la imagen es $x' = 2h - x$ y $y' = 2k - y$. Para encontrar el punto original a partir de la imagen, se despeja y se obtiene la misma fórmula: $x = 2h - x'$ y $y = 2k - y'$.
+
+Aplicaremos esta fórmula con $C(h,k) = (-1,-1)$ para cada vértice.
+\begin{itemize}
+	\item \textbf{Para P a partir de P'(0, -3):}
+	      $x = 2(-1) - 0 = -2$ \\
+	      $y = 2(-1) - (-3) = -2 + 3 = 1 \implies \mathbf{P(-2, 1)}$
+
+	\item \textbf{Para Q a partir de Q'(-3, -4):}
+	      $x = 2(-1) - (-3) = -2 + 3 = 1$ \\
+	      $y = 2(-1) - (-4) = -2 + 4 = 2 \implies \mathbf{Q(1, 2)}$
+
+	\item \textbf{Para R a partir de R'(-5, -1):}
+	      $x = 2(-1) - (-5) = -2 + 5 = 3$ \\
+	      $y = 2(-1) - (-1) = -2 + 1 = -1 \implies \mathbf{R(3, -1)}$
+
+	\item \textbf{Para S a partir de S'(-3, -6):}
+	      $x = 2(-1) - (-3) = -2 + 3 = 1$ \\
+	      $y = 2(-1) - (-6) = -2 + 6 = 4 \implies \mathbf{S(1, 4)}$
+\end{itemize}
+
+\paragraph{Respuesta:} Los vértices del polígono original son $P(-2, 1)$, $Q(1, 2)$, $R(3, -1)$ y $S(1, 4)$.
+
+% --- EJERCICIO 22 ---
+\subsection*{Ejercicio 22}
+\textbf{Problema:} Demostrar que para una homotecia con centro $C(h,k)$ que transforma $A(x_0, y_0)$ en $A'(x_1, y_1)$, se cumple la relación $\frac{x_1 - h}{x_0 - h} = \frac{y_1 - k}{y_0 - k}$.
+
+\textbf{Solución:}
+La definición de homotecia establece que el centro $C$, el punto original $A$ y el punto imagen $A'$ son colineales. Vectorialmente, esto significa que el vector $\vec{CA'}$ es un múltiplo escalar del vector $\vec{CA}$. Dicho escalar es la razón de homotecia $k$.
+\[ \vec{CA'} = k \cdot \vec{CA} \]
+Expresamos los vectores en componentes:
+\begin{align*}
+	\vec{CA}  & = (x_0 - h, y_0 - k) \\
+	\vec{CA'} & = (x_1 - h, y_1 - k)
+\end{align*}
+Sustituyendo en la ecuación vectorial:
+\[ (x_1 - h, y_1 - k) = k \cdot (x_0 - h, y_0 - k) \]
+Esta igualdad vectorial se descompone en dos ecuaciones escalares, una para cada eje:
+\begin{align*}
+	x_1 - h & = k(x_0 - h) \implies k = \frac{x_1 - h}{x_0 - h} \\
+	y_1 - k & = k(y_0 - k) \implies k = \frac{y_1 - k}{y_0 - k}
+\end{align*}
+Como ambas expresiones son iguales a $k$, deben ser iguales entre sí.
+\[ \frac{x_1 - h}{x_0 - h} = \frac{y_1 - k}{y_0 - k} \]
+Lo que queda demostrado (L.Q.Q.D).
+
+% --- EJERCICIO 23 ---
+\subsection*{Ejercicio 23}
+\textbf{Problema:} Utilizar el resultado anterior para determinar la razón de homotecia $k$ tal que la imagen de $A(-2,2)$ con respecto a $C(-2,-1)$ es $A'(-2,-7)$.
+
+\textbf{Solución:}
+Del ejercicio 22, sabemos que la razón $k$ puede calcularse como $k = \frac{x_1 - h}{x_0 - h}$ o $k = \frac{y_1 - k}{y_0 - k}$.
+Identificamos los puntos:
+\begin{itemize}
+	\item Punto original $A(x_0, y_0) = (-2, 2)$
+	\item Punto imagen $A'(x_1, y_1) = (-2, -7)$
+	\item Centro $C(h, k) = (-2, -1)$
+\end{itemize}
+Si intentamos calcular $k$ usando las coordenadas $x$:
+\[ k = \frac{-2 - (-2)}{-2 - (-2)} = \frac{0}{0} \]
+Esto resulta en una indeterminación, ya que los tres puntos son colineales sobre la recta vertical $x=-2$. Por lo tanto, debemos usar las coordenadas $y$:
+\[ k = \frac{y_1 - k}{y_0 - k} = \frac{-7 - (-1)}{2 - (-1)} = \frac{-7 + 1}{2 + 1} = \frac{-6}{3} = -2 \]
+\paragraph{Respuesta:} La razón de homotecia es $k=-2$.
+
+% --- EJERCICIO 24 ---
+\subsection*{Ejercicio 24}
+\textbf{Problema:} Dado el rombo $PQRS$ con $P(-1,-3)$, $Q(0,-1)$ y el lado $\overline{RQ}$ paralelo al eje X.
+
+\subsubsection*{a) Determinar coordenadas de R y S}
+La condición $\overline{RQ} \parallel \text{Eje X}$ implica que $y_R = y_Q = -1$.
+El vector de un lado es $\vec{PQ} = Q - P = (1, 2)$. La longitud de cada lado es $|\vec{PQ}| = \sqrt{1^2 + 2^2} = \sqrt{5}$.
+El vector $\vec{QR}$ debe tener la misma longitud. Como $R(x_R, -1)$, el vector es $\vec{QR} = (x_R - 0, -1 - (-1)) = (x_R, 0)$.
+La magnitud es $|\vec{QR}| = \sqrt{x_R^2 + 0^2} = |x_R|$.
+Por lo tanto, $|x_R| = \sqrt{5}$. Según la figura, R está a la derecha de Q, así que $x_R = \sqrt{5}$.
+$\implies \mathbf{R(\sqrt{5}, -1)}$.
+Para un paralelogramo, $S = P + R - Q$:
+$S = (-1, -3) + (\sqrt{5}, -1) - (0, -1) = (\sqrt{5}-1, -3)$.
+$\implies \mathbf{S(\sqrt{5}-1, -3)}$.
+
+\subsubsection*{b) Coordenadas de la imagen con k=2 y C(2,0)}
+Usamos la fórmula $A' = (h(1-k)+kx, k(1-k)+ky)$.
+\begin{itemize}
+	\item $\mathbf{P'} = (2(1-2)+2(-1), 0(1-2)+2(-3)) = \mathbf{(-4, -6)}$
+	\item $\mathbf{Q'} = (2(1-2)+2(0), 0(1-2)+2(-1)) = \mathbf{(-2, -2)}$
+	\item $\mathbf{R'} = (2(1-2)+2(\sqrt{5}), 0(1-2)+2(-1)) = \mathbf{(-2+2\sqrt{5}, -2)}$
+	\item $\mathbf{S'} = (2(1-2)+2(\sqrt{5}-1), 0(1-2)+2(-3)) = \mathbf{(-4+2\sqrt{5}, -6)}$
+\end{itemize}
+
+\subsubsection*{c) Coordenadas de la imagen con k=-1/2 y C(-2,-2)}
+Usamos la misma fórmula con $k = -1/2$ y $C(-2, -2)$. El factor $1-k$ es $1 - (-1/2) = 3/2$.
+\begin{itemize}
+	\item $\mathbf{P'} = (-2(\frac{3}{2}) - \frac{1}{2}(-1), -2(\frac{3}{2}) - \frac{1}{2}(-3)) = (-3 + \frac{1}{2}, -3 + \frac{3}{2}) = \mathbf{(-\frac{5}{2}, -\frac{3}{2})}$
+	\item $\mathbf{Q'} = (-2(\frac{3}{2}) - \frac{1}{2}(0), -2(\frac{3}{2}) - \frac{1}{2}(-1)) = (-3, -3 + \frac{1}{2}) = \mathbf{(-3, -\frac{5}{2})}$
+	\item $\mathbf{R'} = (-2(\frac{3}{2}) - \frac{1}{2}(\sqrt{5}), -2(\frac{3}{2}) - \frac{1}{2}(-1)) = (-3 - \frac{\sqrt{5}}{2}, -3 + \frac{1}{2}) = \mathbf{(-\frac{6+\sqrt{5}}{2}, -\frac{5}{2})}$
+	\item $\mathbf{S'} = (-2(\frac{3}{2}) - \frac{1}{2}(\sqrt{5}-1), -2(\frac{3}{2}) - \frac{1}{2}(-3)) = (-3 - \frac{\sqrt{5}}{2} + \frac{1}{2}, -3 + \frac{3}{2}) = \mathbf{(-\frac{5+\sqrt{5}}{2}, -\frac{3}{2})}$
+\end{itemize}
+
+% --- SECCIÓN DE BIBLIOGRAFÍA (LA HEMOS QUITADO) ---
+% \newpage
+% \printbibliography[title=Bibliografía]
+
+\end{document}

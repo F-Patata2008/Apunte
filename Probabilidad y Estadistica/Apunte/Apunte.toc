@@ -111,4 +111,3 @@
 \contentsline {section}{\numberline {22}08/10 - Teorema de Bayes y Problemas con Tablas}{66}{section.22}%
 \contentsline {subsection}{\numberline {22.1}Enunciados}{66}{subsection.22.1}%
 \contentsline {subsection}{\numberline {22.2}Soluciones Detalladas}{67}{subsection.22.2}%
-\contentsline {section}{\numberline {23} / - }{69}{section.23}%

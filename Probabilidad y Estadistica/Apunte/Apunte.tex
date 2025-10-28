@@ -14,14 +14,16 @@
 \graphicspath{ {./images/}}
 % --------------------------------------------
 
-% ----- PAQUETES Y CONFIGURACIÓN DE AUTORÍA Y MARCA DE PÁGINA -----
+% ----- PAQUETES PARA ENCABEZADO/PIE DE PÁGINA -----
 \usepackage{fancyhdr}
 \usepackage{hyperref}
+
+% ----- CONFIGURACIÓN DE AUTORÍA Y METADATOS -----
 \hypersetup{
-    colorlinks=true,      % Activa los colores para los enlaces
-    linkcolor=black,        % Color para enlaces internos (índice, referencias)
-    filecolor=magenta,      % Color para enlaces a archivos locales
-    urlcolor=cyan,          % Color para enlaces web (href)
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,
+    urlcolor=cyan,
     pdftitle={Apunte Completo: Probabilidad y Estadística},
     pdfauthor={Felipe Colli Olea},
     pdfsubject={Apunte de la asignatura para 4° Medio 2025},
@@ -31,20 +33,27 @@
 }
 % --------------------------------------------------------------------------
 
+% --- CONFIGURACIÓN DE ENCABEZADOS Y PIES DE PÁGINA ---
+\pagestyle{fancy}
+\fancyhf{} % Limpiar todos los campos
+\fancyhead[L]{\nouppercase{\rightmark}} % Muestra la sección/subsección actual a la izquierda
+\fancyhead[R]{\thepage} % Número de página a la derecha
+\fancyfoot[C]{\footnotesize Material cedido al Depto. de Matemáticas del I.N. por Felipe Colli Olea -- \copyright~2025}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Para que rightmark muestre el formato "número. título"
+\renewcommand{\sectionmark}[1]{\markright{\thesection.\ #1}}
+\renewcommand{\subsectionmark}[1]{\markright{\thesubsection.\ #1}}
+% ---------------------------------------------------
+
 
 \begin{document}
 
-% --- CONFIGURACIÓN DEL PIE DE PÁGINA ---
-\pagestyle{fancy}
-\fancyhf{} % Limpia cabecera y pie de página
-\fancyfoot[C]{\footnotesize Apunte por Felipe Colli Olea -- Todos los derechos reservados.}
-\fancyfoot[R]{\thepage} % Número de página a la derecha
-\renewcommand{\headrulewidth}{0pt} % Sin línea en la cabecera
-% ---------------------------------------
-
 \begin{titlepage}
+	\thispagestyle{empty} % Oculta encabezado y pie en esta página
 	\centering
-	\includegraphics[width=2cm]{IN}\\[2cm]
+	\includegraphics[width=2cm]{IN}\\[1cm]
 	\textsc{\LARGE  Instituto Nacional General José Miguel Carrera}\\[0.5cm]
 	\textsc{\Large Departamento de Matemáticas}\\[1.5cm]
 
@@ -63,9 +72,9 @@
 	\hfill
 	\begin{minipage}{0.45\textwidth}
 		\begin{flushright} \large
-			\textbf{Profesor:}\\
+			\textbf{Profesor de Cátedra:}\\
 			Sergio Díaz
-        \end{flushright}
+		\end{flushright}
 	\end{minipage}
 
 	\vfill
@@ -73,29 +82,38 @@
 \end{titlepage}
 
 \newpage
-\begin{abstract}
-	\noindent \textbf{Resumen} \\
-	Este apunte ofrece una introducción completa a los conceptos fundamentales de la probabilidad y la estadística. Comienza con la definición de términos esenciales como población, muestra, parámetro y estadígrafo, y la clasificación de variables en cualitativas y cuantitativas. Posteriormente, se profundiza en la estadística descriptiva, abordando las medidas de tendencia central (media, mediana, moda) y de dispersión (rango, varianza, desviación estándar), incluyendo sus propiedades y demostraciones matemáticas. El documento también explora diversas técnicas de muestreo, diferenciando entre métodos probabilísticos (aleatorio simple, estratificado, por conglomerados, sistemático) y no probabilísticos. Finalmente, se introduce la combinatoria mediante los principios aditivo y multiplicativo como base para el cálculo de probabilidades.
-\end{abstract}
-
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=0.45\textwidth]{gatito}
-	\caption{Gatito para hacer bonito el apunte.}
-	\label{fig:gatito}
-\end{figure}
-
-\vfill % Empuja el bloque de la licencia al fondo de la página
-
+\thispagestyle{empty} % Oculta encabezado y pie en esta página
+\vspace*{5cm} % Añade espacio vertical
 \begin{center}
-	\vspace{0.2cm} % Un pequeño espacio vertical
-	\parbox{0.8\textwidth}{\footnotesize \centering Esta obra está protegida por las leyes de derechos de autor. Todos los derechos están reservados. Queda prohibida la reproducción, distribución o modificación total o parcial de este documento sin la autorización explícita y por escrito del autor.}
+	\fbox{\begin{minipage}{0.85\textwidth}
+			\centering
+			\subsection*{Dedicatoria y Cesión de Uso}
+			\vspace{0.2cm}
+			\parbox{0.9\textwidth}{\normalsize\centering Con gratitud y aprecio, el autor, \textbf{Felipe Colli Olea}, cede el presente documento en su formato PDF al \textbf{Departamento de Matemáticas del Instituto Nacional}, y en especial a los profesores \textbf{Sergio Díaz} y \textbf{David Caldera}, como material de estudio para las futuras generaciones de estudiantes.}
+			\vspace{0.5cm}
+
+			\parbox{0.9\textwidth}{\small
+				\begin{itemize}[leftmargin=*]
+					\item \textbf{Uso Permitido:} Se autoriza la copia y distribución gratuita de este documento PDF, sin modificaciones, exclusivamente con fines académicos dentro de la comunidad del Instituto Nacional.
+					\item \textbf{Derechos Retenidos:} El autor retiene todos los derechos sobre la obra original, incluido su código fuente LaTeX.
+					\item \textbf{Prohibiciones:} Queda estrictamente prohibido el uso comercial, la venta, la modificación del contenido o la distribución de este material fuera del contexto académico acordado sin la autorización explícita y por escrito del autor.
+				\end{itemize}
+			}
+			\vspace{0.5cm}
+
+			\textbf{\copyright~2025, Felipe Colli Olea.}
+		\end{minipage}}
 \end{center}
+
+
 \newpage
 \tableofcontents
-\newpage % Start sections on a new page after ToC
+\newpage
 
-\section{14/03 - Conceptos Fundamentales de Estadística}
+% --- Aquí comienza el contenido principal con el nuevo encabezado/pie ---
+
+% 14/03
+\section{Conceptos Fundamentales de Estadística}
 \subsection{Conceptos Básicos}
 \subsubsection{Población:}
 Conjunto de todos los elementos que se quieren estudiar. Cuando la información deseada está disponible para todos los objetos de la población, lo llamamos \textbf{censo}. En la práctica es muy difícil o casi imposible realizar un censo.
@@ -195,8 +213,8 @@ Para cada una de las siguientes situaciones, identifica la población de interé
 \end{enumerate}
 \newpage
 
-\section{17/03 - Tablas de Frecuencia y Medidas de Tendencia Central}
-
+% 17/03
+\section{Tablas de Frecuencia y Medidas de Tendencia Central}
 \subsection{Tablas de Frecuencia: Conceptos Básicos}
 \begin{itemize}
 	\item \textbf{Dato o Intervalo:} Información (variable) que se estudia en estadística.
@@ -214,7 +232,6 @@ Para cada una de las siguientes situaciones, identifica la población de interé
 \newpage
 
 \subsection{Medidas de Tendencia Central:}
-
 \subsubsection{\texorpdfstring{Media Aritmética ($\bar{x}$):}{Media Aritmética (x barra)}}
 Es el cociente entre la suma de todos los datos y el número total de datos ($n$). Si se tienen $n$ datos $x_1, x_2, \dots, x_n$:
 \[ \bar{x}=\frac{x_1+x_2+\dots+x_n}{n} = \frac{\sum_{i=1}^{n} x_i}{n} \] \\
@@ -258,7 +275,8 @@ Es el dato o intervalo con la mayor frecuencia absoluta. La muestra puede ser:
 \end{itemize}
 \newpage
 
-\section{26/03 - Ejercicios de Medidas de Tendencia Central}
+% 26/03
+\section{Ejercicios de Medidas de Tendencia Central}
 \subsection{Ejercicios:}
 
 \noindent
@@ -329,7 +347,8 @@ Por lo tanto, la cantidad de datos $n$ no puede ser un número impar. \\
 \textbf{Respuesta:} La cantidad de datos no puede ser un número impar.
 \newpage
 
-\section{04/04 - Muestreo y Representatividad}
+% 04/04
+\section{Muestreo y Representatividad}
 \subsection{Población y Muestra}
 ¿Qué inconvenientes puede implicar realizar un censo?
 \begin{itemize}
@@ -433,9 +452,10 @@ La selección se basa en el juicio del investigador o en la facilidad de acceso 
 \end{figure}
 \newpage
 
-\section{10/04 - Medidas de Dispersión}
+% 10/04
+\section{Medidas de Dispersión}
 \textbf{\textit{Objetivo: Aplicar y comprender propiedades de las medidas de dispersión}}
-\subsection{Medidas de Dispersión}
+\subsection{Definición de Medidas de Dispersión}
 Las medidas de tendencia central (como la media) no son suficientes por sí solas para describir un conjunto de datos, ya que no indican cuán dispersos o concentrados están los datos alrededor de ese centro. Consideremos dos conjuntos con la misma media $\bar{x}=0$:
 \[ A = \{-4, 4, -4, 4\} \quad (\text{Media } \bar{x}_A = 0) \]
 \[ B = \{7, 1, -6, -2\} \quad (\text{Media } \bar{x}_B = 0) \]
@@ -481,8 +501,9 @@ Es la raíz cuadrada positiva de la varianza. Tiene la ventaja de estar expresad
 \end{center}
 \newpage
 
-\section{16/04 - Propiedades de la Varianza y Desviación Estándar}
-\subsection{\texorpdfstring{Demostración de Propiedades Relacionadas con el Valor de $\sigma$}{Demostraciones de Propiedades Relacionadas con el Valor de sigma}}
+% 16/04
+\section{Propiedades de la Varianza y Desviación Estándar}
+\subsection{Demostración de Propiedad por Multiplicación por Constante}
 Sea la variable $X$ con datos $x_1, \dots, x_n$, media $\bar{x}$ y varianza $\sigma_x^2$.
 Sea $Y$ una nueva variable tal que $y_i = k \cdot x_i$ para cada $i$.
 Sabemos que la media de $Y$ es $\bar{y} = k \cdot \bar{x}$.
@@ -520,7 +541,7 @@ Dados los datos: -2, 0, 2, 4, 6. ($n=5$). Determinar:
 \end{enumerate}
 \newpage
 
-\subsection{Demostración Propiedad 5 (Fórmula Computacional de la Varianza)}
+\subsection{Demostración de la Fórmula Computacional de la Varianza}
 Partimos de la definición de varianza (usando denominador $n$):
 \[\sigma^2=\frac{\sum_{i=1}^{n} (x_i-\bar{x})^2}{n}\]
 Expandimos el binomio al cuadrado $(a-b)^2 = a^2 - 2ab + b^2$:
@@ -536,8 +557,9 @@ Reconocemos que $\frac{\sum x_i^2}{n} = \overline{x^2}$ (la media de los cuadrad
 L.Q.Q.D.
 \newpage
 
-\section{23/04 - Demostraciones sobre el Valor de la Desviación Estándar}
-\subsection{\texorpdfstring{Demostraciones de Propiedades Relacionadas con el Valor de $\sigma$}{Demostraciones de Propiedades Relacionadas con el Valor de sigma}}
+% 23/04
+\section{Demostraciones sobre el Valor de la Desviación Estándar}
+\subsection{\texorpdfstring{Propiedades Relacionadas con el Valor de $\sigma$}{Propiedades Relacionadas con el Valor de sigma}}
 Recordar que $\sigma \ge 0$ por definición (es una raíz cuadrada positiva o cero).
 
 \subsubsection{Propiedad 6: \texorpdfstring{$\sigma^2 = \sigma \iff \sigma=0 \vee \sigma=1$}{sigma-cuadrado = sigma <=> sigma=0 v sigma=1}}
@@ -602,7 +624,8 @@ L.Q.Q.D.
 \newpage
 
 
-\section{30/05 - Medidas de Posición: Cuartiles, Quintiles, Deciles y Percentiles}
+% 30/05
+\section{Medidas de Posición: Cuartiles, Quintiles, Deciles y Percentiles}
 Dado un conjunto de datos ordenados se define:
 
 \subsection{Cuartiles}
@@ -621,7 +644,8 @@ Son los 99 valores que dividen en partes iguales a los datos, que corresponden a
 \[ P_i= \frac{i \cdot n}{100} \] Corresponde a la posición del percentil.
 \newpage
 
-\section{11/06 - Principios Fundamentales de la Combinatoria}
+% 11/06
+\section{Principios Fundamentales de la Combinatoria}
 \subsection{Combinatoria}
 Son técnicas de conteo. Sean A y B dos sucesos, que pueden ocurrir de $a$ y $b$ maneras respectivamente.
 \begin{itemize}
@@ -671,164 +695,135 @@ Son técnicas de conteo. Sean A y B dos sucesos, que pueden ocurrir de $a$ y $b$
 \newpage
 
 
-\section{07/07 - Permutaciones}
+% 07/07
+\section{Permutaciones}
 \textbf{\textit{\large{Diferenciar distintas Permutaciones}}}
-
-\subsection{Combinatoria}
-Evento A: a maneras
-
-Evento B: b maneras
-
+\subsection{Principios Básicos de Conteo (Repaso)}
+Sean dos eventos A y B, que pueden ocurrir de $a$ y $b$ maneras respectivamente.
 \begin{itemize}
-	\item Principio Aditivo: $a + b$ \textbf{Excluyentes}
-	\item Principio Multiplicativo: $a \cdot b$ \textbf{Simultáneos}
-	\item \textbf{\textit{Ej:}}
-	      \begin{itemize}
-		      \item Evento A: Lanzar un dado
-		      \item Evento B: lanzar un dado 2 veces
-	      \end{itemize}
+	\item Principio Aditivo: $a + b$ \textbf{ (Eventos Excluyentes)}
+	\item Principio Multiplicativo: $a \cdot b$ \textbf{ (Eventos Simultáneos o Consecutivos)}
 \end{itemize}
 
-\subsubsection{Permutación simple} Corresponde a la manera en que se pueden ordenar $n$ objetos.
-\begin{minipage}{0.35\textwidth}
-	\centering
-	\[ P_n = n! \]
-\end{minipage}
-\hfill
-\begin{minipage}{0.55\textwidth}
-	\centering
-	\[ P_4 = 4!= 4 \cdot 3 \cdot 2 \cdot 1 \]
-\end{minipage}
+\subsubsection{Permutación simple} Corresponde a las distintas maneras en que se pueden ordenar $n$ objetos distintos.
+\[ P_n = n! \]
+\textit{Ejemplo: $P_4 = 4! = 4 \cdot 3 \cdot 2 \cdot 1 = 24$}
 
-\subsubsection{Permutación con repetición} Si tienes $n$ elementos y un elemento se repite $r_1$ veces, otro $r_2$ veces y así sucesivamente, entonces se pueden ordenar:
+\subsubsection{Permutación con repetición} Si tienes $n$ elementos en total, donde el primer elemento se repite $r_1$ veces, el segundo $r_2$ veces, y así sucesivamente, el número de permutaciones distintas es:
 \[ P_{r_1, r_2, \dots}^n = \frac{n!}{r_1! \cdot r_2! \cdot \dots} \]
 
-\subsubsection{Permutación Circular} Si tenemos $n$ elementos, los podemos ordenar de:
-\[ PC_n = \frac{n!}{n} = (n-1)! \]
+\subsubsection{Permutación Circular} Corresponde al número de maneras en que se pueden ordenar $n$ elementos alrededor de un círculo.
+\[ PC_n = (n-1)! \]
 
 \subsection{Ejercicios}
-
 \begin{enumerate}[label=\alph*.)]
-	\item ¿De cuántas maneras se pueden ordenar las letras de la palabra LEMUR para formar otra palabra (con o sin sentido)?
-	      \[ P_5 = 5! = 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 120 \] \\
+	\item ¿De cuántas maneras se pueden ordenar las letras de la palabra \textbf{LEMUR} para formar otra palabra (con o sin sentido)?
+	      \[ P_5 = 5! = 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 120 \]
 
-	\item ¿Y para la palabra ARROYO? ¿Y CARRERA?
-	      \begin{minipage}{0.45\textwidth}
+	\item ¿Y para la palabra \textbf{ARROYO}? ¿Y \textbf{CARRERA}? \\
+	      \begin{minipage}[t]{0.45\textwidth}
 		      \centering
-		      \textbf{ARROYO:}
+		      \textbf{ARROYO:} (6 letras, R se repite 2 veces, O se repite 2 veces)
 		      \[ P_{2, 2}^6 = \frac{6!}{2! \cdot 2!} = \frac{720}{4} = 180 \]
 	      \end{minipage}
 	      \hfill
-	      \begin{minipage}{0.45\textwidth}
+	      \begin{minipage}[t]{0.45\textwidth}
 		      \centering
-		      \textbf{CARRERA}
-		      \[ P_{2,3}^7 = \frac{7!}{2! \cdot 3!} = \frac{7\cdot 6 \cdot 5 \cdot 4}{2} = 420 \]
+		      \textbf{CARRERA:} (7 letras, A se repite 2 veces, R se repite 3 veces)
+		      \[ P_{2,3}^7 = \frac{7!}{2! \cdot 3!} = \frac{5040}{2 \cdot 6} = 420 \]
 	      \end{minipage}
 
-	      \phantom p \\
+	      \vspace{1cm} % Espacio vertical para separar
 
-	\item ¿De cuántas maneras se pueden sentar en una mesa de 4 sillas, 4 personas?
-	      \[ PC_4 = \frac{4!}{4} =\frac{4 \cdot 3!}{4} = 3! = 6 \]
+	\item ¿De cuántas maneras se pueden sentar 4 personas en una mesa redonda?
+	      \[ PC_4 = (4-1)! = 3! = 6 \]
 \end{enumerate}
 \newpage
 
-\section{04/08 - Variaciones y Combinaciones}
-\subsection{Variación (o arreglo)}
-Corresponde al número de ordenaciones de $k$ elementos, con $k \leq n$, de un total de $n$ elementos.
-\[V_k^n = n \cdot (n - 1) \cdot (n - 2) \cdot \dots \cdot (n - (k - 1)) = \frac{n!}{(n - k)!} \]
+% 04/08
+\section{Variaciones y Combinaciones}
+\subsection{Variación (o Arreglo)}
+Corresponde al número de ordenaciones de $k$ elementos seleccionados de un total de $n$ elementos, donde el orden importa ($k \le n$).
+\[V_k^n = n \cdot (n - 1) \cdot \dots \cdot (n - k + 1) = \frac{n!}{(n - k)!} \]
 \subsubsection*{Con repetición}
+El número de arreglos de $k$ elementos tomados de $n$, con repetición permitida.
 \[VR_k^n = n^k \]
 
-\subsection{Combinaciones} Corresponde a la cantidad de grupos (o subconjuntos) de $k$ elementos de un total de $n$ elementos.
+\subsection{Combinaciones} Corresponde a la cantidad de grupos (o subconjuntos) de $k$ elementos que se pueden formar de un total de $n$ elementos, donde el orden no importa.
 \[C_k^n = \binom{n}{k} = \frac{V_k^n}{k!} = \frac{n!}{(n - k)! \cdot k!} \]
 
 \subsection*{¿Cómo Diferenciar?}
-Para determinar qué fórmula usar, sigue este diagrama de flujo:
+Sigue este diagrama de flujo mental:
 \begin{enumerate}[label=\bfseries Paso \arabic*:, wide]
 	\item \textbf{¿Importa el orden de los elementos seleccionados?}
 	      \begin{itemize}
-		      \item[\bfseries a)] \textbf{Sí, el orden importa $\rightarrow$ PERMUTACIÓN / VARIACIÓN}
+		      \item[\bfseries Sí $\rightarrow$] \textbf{PERMUTACIÓN / VARIACIÓN}
 		            \begin{itemize}
 			            \item \textbf{¿Se usan TODOS los elementos ($k=n$)? $\rightarrow$ PERMUTACIÓN}
 			                  \begin{itemize}
-				                  \item \textbf{Arreglo Lineal (en una fila):}
-				                        \begin{itemize}
-					                        \item ¿Hay elementos repetidos? (ej. palabra C-A-S-A) $\rightarrow$ Permutación con repetición: $P_{n_1, \dots, n_k}^n = \frac{n!}{n_1! \dots n_k!}$
-					                        \item ¿Son todos los elementos distintos? $\rightarrow$ Permutación simple: $P_n = n!$
-				                        \end{itemize}
-				                  \item \textbf{Arreglo Circular (en una mesa, un llavero, etc.):}
-				                        \begin{itemize}
-					                        \item Asume que los elementos son distintos y las rotaciones no cuentan como un nuevo orden.
-					                        \item $\rightarrow$ Permutación Circular: $ PC_n = (n-1)! $
-				                        \end{itemize}
+				                  \item \textbf{Lineal:} $P_n = n!$ (con repetición: $P_{n_1,\dots}^n$)
+				                  \item \textbf{Circular:} $PC_n = (n-1)!$
 			                  \end{itemize}
 			            \item \textbf{¿Se elige un SUBCONJUNTO ($k<n$)? $\rightarrow$ VARIACIÓN}
 			                  \begin{itemize}
-				                  \item ¿Se permite repetir elementos? $\rightarrow$ Variación con repetición: $VR_k^n = n^k$
-				                  \item ¿No se permite repetir? $\rightarrow$ Variación simple: $V_k^n = \frac{n!}{(n-k)!}$
+				                  \item \textbf{Sin repetición:} $V_k^n = \frac{n!}{(n-k)!}$
+				                  \item \textbf{Con repetición:} $VR_k^n = n^k$
 			                  \end{itemize}
 		            \end{itemize}
-		      \item[\bfseries b)] \textbf{No, el orden NO importa $\rightarrow$ COMBINACIÓN}
+		      \item[\bfseries No $\rightarrow$] \textbf{COMBINACIÓN}
 		            \begin{itemize}
-			            \item ¿Se permite repetir elementos? $\rightarrow$ Combinación con repetición: $CR_k^n = \binom{n+k-1}{k}$
-			            \item ¿No se permite repetir? $\rightarrow$ Combinación simple: $C_k^n = \binom{n}{k} = \frac{n!}{k!(n-k)!}$
+			            \item \textbf{Sin repetición:} $C_k^n = \binom{n}{k}$
+			                  % \item \textbf{Con repetición:} $CR_k^n = \binom{n+k-1}{k}$ (Se omite por brevedad)
 		            \end{itemize}
 	      \end{itemize}
 \end{enumerate}
 
 \subsection*{Ejercicios Resueltos}
-Aquí tienes los ejercicios con sus soluciones y el razonamiento para cada uno:
 \begin{enumerate}[leftmargin=*,label=\arabic*.]
-	\item \textbf{En una carrera participan 15 estudiantes. ¿De cuantas maneras se puede formar el podio (1er, 2do, 3er lugar)?}
+	\item \textbf{En una carrera de 15 estudiantes, ¿de cuántas maneras se puede formar el podio (1er, 2do, 3er lugar)?}
 	      \begin{itemize}
-		      \item \textbf{Razonamiento:} El orden importa (1er lugar es diferente de 2do). No hay repetición de estudiantes. Se seleccionan 3 de 15. Esto es una **Variación simple**.
+		      \item \textbf{Razonamiento:} El orden importa. Se eligen 3 de 15. Es una **Variación simple**.
 		      \item \textbf{Cálculo:} $V_3^{15} = 15 \cdot 14 \cdot 13 = 2730$ maneras.
 	      \end{itemize}
 
-	\item \textbf{¿De cuantas maneras se puede formar una clave numérica de 4 dígitos?}
+	\item \textbf{¿De cuántas maneras se puede formar una clave numérica de 4 dígitos?}
 	      \begin{itemize}
-		      \item \textbf{Razonamiento:} El orden importa (1234 es diferente de 4321). Los dígitos pueden repetirse (ej. 1111). Se seleccionan 4 dígitos de 10 posibles (0-9). Esto es una **Variación con repetición**.
-		      \item \textbf{Cálculo:} $VR_4^{10} = 10^4 = 10000$ maneras.
+		      \item \textbf{Razonamiento:} El orden importa y los dígitos se pueden repetir (0-9). Es una **Variación con repetición**.
+		      \item \textbf{Cálculo:} $VR_4^{10} = 10^4 = 10000$ claves.
 	      \end{itemize}
 
-	\item \textbf{¿Y si no se repiten los dígitos (para la clave numérica de 4 dígitos)?}
+	\item \textbf{¿Y si no se pueden repetir los dígitos?}
 	      \begin{itemize}
-		      \item \textbf{Razonamiento:} El orden sigue importando. Los dígitos NO pueden repetirse. Se seleccionan 4 dígitos distintos de 10 posibles. Esto es una **Variación simple**.
-		      \item \textbf{Cálculo:} $V_4^{10} = 10 \cdot 9 \cdot 8 \cdot 7 = 5040$ maneras.
+		      \item \textbf{Razonamiento:} El orden importa, pero sin repetición. Es una **Variación simple**.
+		      \item \textbf{Cálculo:} $V_4^{10} = 10 \cdot 9 \cdot 8 \cdot 7 = 5040$ claves.
 	      \end{itemize}
 
-	\item \textbf{En un curso de 40 estudiantes, ¿Cuántas directivas (Presidente, Vicepresidente, Tesorero) se pueden formar?}
+	\item \textbf{En un curso de 40 estudiantes, ¿cuántas directivas (Presidente, Vicepresidente, Tesorero) se pueden formar?}
 	      \begin{itemize}
-		      \item \textbf{Razonamiento:} El orden importa (ser Presidente es distinto de ser Vicepresidente). Los estudiantes no pueden ocupar múltiples cargos. Se seleccionan 3 de 40. Esto es una **Variación simple**.
-		      \item \textbf{Cálculo:} $V_3^{40} = 40 \cdot 39 \cdot 38 = 59280$ maneras.
+		      \item \textbf{Razonamiento:} Los roles hacen que el orden importe. Es una **Variación simple**.
+		      \item \textbf{Cálculo:} $V_3^{40} = 40 \cdot 39 \cdot 38 = 59280$ directivas.
 	      \end{itemize}
 
-	\item \textbf{En una asamblea de 100 personas, se escoge una directiva de 3 personas ¿De cuantas maneras se puede hacer?}
+	\item \textbf{En una asamblea de 100 personas, ¿cuántas comisiones de 3 personas se pueden formar?}
 	      \begin{itemize}
-		      \item \textbf{Razonamiento:} Esta pregunta es ambigua. Si "directiva" implica roles específicos (similar al ejercicio anterior), el orden importa. Sin embargo, si es solo un grupo de 3 personas sin roles definidos, el orden no importa (ver el siguiente ejercicio). Asumiendo que se refiere a un grupo donde el orden no importa, como una comisión.
-		      \item \textbf{Cálculo (asumiendo que el orden NO importa, es decir, una comisión):} $C_3^{100} = \frac{100 \cdot 99 \cdot 98}{3 \cdot 2 \cdot 1} = 161700$ maneras.
-		      \item \textbf{Nota:} Si la intención era que el orden SÍ importaba (ej. Presidente, Secretario, Vocal), entonces sería una Variación: $V_3^{100} = 100 \cdot 99 \cdot 98 = 970200$ maneras. Es crucial aclarar si los roles son distinguibles o no en el enunciado.
-	      \end{itemize}
-
-	\item \textbf{Y cuantas comisiones de 3 personas se pueden hacer (en la asamblea de 100 personas)?}
-	      \begin{itemize}
-		      \item \textbf{Razonamiento:} El orden NO importa (una comisión de Juan, Pedro y María es la misma que María, Pedro y Juan). No hay repetición de personas. Se seleccionan 3 de 100. Esto es una **Combinación simple**.
-		      \item \textbf{Cálculo:} $C_3^{100} = \frac{100!}{3!(100-3)!} = \frac{100 \cdot 99 \cdot 98}{3 \cdot 2 \cdot 1} = 161700$ maneras.
+		      \item \textbf{Razonamiento:} En una comisión no hay jerarquía, el orden no importa. Es una **Combinación simple**.
+		      \item \textbf{Cálculo:} $C_3^{100} = \binom{100}{3} = \frac{100 \cdot 99 \cdot 98}{3 \cdot 2 \cdot 1} = 161700$ comisiones.
 	      \end{itemize}
 \end{enumerate}
 \newpage
 
-\section{11/08 - Propiedades de Combinatoria y Triángulo de Pascal}
+% 11/08
+\section{Propiedades de Combinatoria y Triángulo de Pascal}
 \subsection{Propiedades de los Números Combinatorios}
-Los números combinatorios, denotados como $\binom{n}{k}$, tienen propiedades útiles que simplifican los cálculos.
+Los números combinatorios, $\binom{n}{k}$, tienen propiedades que simplifican cálculos.
 \begin{enumerate}
-	\item \textbf{Combinaciones de los extremos:} Seleccionar todos los elementos de un conjunto es posible de una sola manera, al igual que no seleccionar ninguno (eligiendo el conjunto vacío).
-	      \[ \binom{n}{n} = \binom{n}{0} = 1 \]
+	\item \textbf{Combinaciones de los extremos:}
+	      \[ \binom{n}{n} = 1 \quad \text{y} \quad \binom{n}{0} = 1 \]
 
-	\item \textbf{Propiedad de simetría:} El número de maneras de elegir $k$ elementos de un conjunto de $n$ es igual al número de maneras de *no elegir* (o dejar) $n-k$ elementos.
-	      \[ \binom{n}{k} = \binom{n}{n-k} \quad \text{para } k \leq n \]
+	\item \textbf{Propiedad de simetría:} Elegir $k$ elementos es lo mismo que elegir los $n-k$ que se dejarán fuera.
+	      \[ \binom{n}{k} = \binom{n}{n-k} \quad \text{para } 0 \le k \le n \]
 
-	\item \textbf{Identidad de Pascal:} Esta identidad es la base para construir el Triángulo de Pascal. Establece que la suma de dos números combinatorios consecutivos en una fila del triángulo da como resultado el número combinatorio que se encuentra debajo de ellos.
+	\item \textbf{Identidad de Pascal:} Es la base del Triángulo de Pascal.
 	      \[ \binom{n}{k} + \binom{n}{k+1} = \binom{n+1}{k+1} \]
 \end{enumerate}
 
@@ -838,34 +833,23 @@ La demostración se basa en la aplicación directa de la fórmula de la combinac
 
 \vspace{1em}
 \noindent \textbf{Caso 1: $\binom{n}{n}$}
-\[ \binom{n}{n} = \frac{n!}{(n-n)! \cdot n!} = \frac{n!}{0! \cdot n!} \]
-\textit{Comentario: Al aplicar la fórmula, el término $(n-n)!$ se convierte en $0!$. Luego, los términos $n!$ del numerador y denominador se cancelan, dejando $1/0!$. Como $0!$ es 1, el resultado es 1.}
-\[ \frac{n!}{0! \cdot n!} = \frac{1}{0!} = \frac{1}{1} = 1 \]
+\[ \binom{n}{n} = \frac{n!}{(n-n)! \cdot n!} = \frac{n!}{0! \cdot n!} = \frac{1}{0!} = 1 \]
 \textit{Interpretación: Solo hay una forma de elegir n elementos de un conjunto de n (es decir, tomarlos todos).}
 
 \vspace{1em}
 \noindent \textbf{Caso 2: $\binom{n}{0}$}
-\[ \binom{n}{0} = \frac{n!}{(n-0)! \cdot 0!} = \frac{n!}{n! \cdot 0!} \]
-\textit{Comentario: De forma similar, $(n-0)!$ es simplemente $n!$. Al cancelar los términos $n!$, nuevamente obtenemos $1/0!$, que es igual a 1.}
-\[ \frac{n!}{n! \cdot 0!} = \frac{1}{0!} = \frac{1}{1} = 1 \]
+\[ \binom{n}{0} = \frac{n!}{(n-0)! \cdot 0!} = \frac{n!}{n! \cdot 0!} = \frac{1}{0!} = 1 \]
 \textit{Interpretación: Solo hay una forma de elegir 0 elementos de un conjunto (es decir, no tomar ninguno).}
 
 \subsubsection{\texorpdfstring{Propiedad 2 (Simetría): $\binom{n}{k} = \binom{n}{n-k}$}{Propiedad 2 (Simetría): C(n,k) = C(n,n-k)}}
-\textit{Comentario: Esta propiedad muestra una hermosa simetría en las combinaciones. Intuitivamente, significa que el acto de elegir $k$ elementos para formar un grupo es equivalente al acto de elegir $n-k$ elementos para dejarlos fuera de ese grupo. La demostración es algebraica.}
-
-\vspace{1em}
-\noindent Partimos de la definición de $\binom{n}{k}$:
-\[ \binom{n}{k} = \frac{n!}{k! \cdot (n-k)!} \]
-\textit{Comentario: El producto en el denominador es conmutativo, lo que significa que podemos cambiar el orden de $k!$ y $(n-k)!$ sin alterar el resultado.}
-\[ \frac{n!}{(n-k)! \cdot k!} \]
-\textit{Comentario: Ahora, si observamos esta expresión final, corresponde exactamente a la definición de $\binom{n}{n-k}$. Por lo tanto, hemos demostrado que las dos expresiones son iguales.}
+Partimos de la definición de $\binom{n}{n-k}$:
 \[ \binom{n}{n-k} = \frac{n!}{(n-k)! \cdot (n-(n-k))!} = \frac{n!}{(n-k)! \cdot k!} \]
-Así, se concluye que $\binom{n}{k} = \binom{n}{n-k}$.
+Como el producto en el denominador es conmutativo, esta expresión es idéntica a la de $\binom{n}{k}$.
 
 \subsection{Triángulo de Pascal y Binomio de Newton}
-El \textbf{Triángulo de Pascal} es una disposición triangular de números donde cada número es la suma de los dos que tiene directamente encima. Este triángulo está íntimamente relacionado con el \textbf{Teorema del Binomio} (o Binomio de Newton), que proporciona una fórmula para expandir potencias de un binomio $(a+b)^n$.
+El **Triángulo de Pascal** es una disposición de números donde cada elemento es la suma de los dos que tiene encima. Los números en la fila $n$ (comenzando desde $n=0$) corresponden a los coeficientes de la expansión de $(a+b)^n$.
 
-La fórmula del Binomio de Newton utiliza los números combinatorios como coeficientes para cada término de la expansión. Notablemente, los coeficientes de la expansión de $(a+b)^n$ corresponden exactamente a los números en la fila $n+1$ del Triángulo de Pascal.
+El **Teorema del Binomio** formaliza esta relación:
 \[ (a+b)^n = \sum_{k=0}^{n} \binom{n}{k} a^{n-k} b^k = \binom{n}{0}a^n + \binom{n}{1}a^{n-1}b + \dots + \binom{n}{n}b^n \]
 
 \begin{figure}[h!]
@@ -876,35 +860,20 @@ La fórmula del Binomio de Newton utiliza los números combinatorios como coefic
 \end{figure}
 
 \subsection{Conjunto Potencia}
-El \textbf{Conjunto Potencia} de un conjunto $A$, denotado como $P(A)$, es el conjunto formado por \textbf{todos los subconjuntos} posibles de $A$, incluyendo el conjunto vacío y el propio conjunto $A$.
-
-La \textbf{cardinalidad} (número de elementos) del conjunto potencia se puede calcular sumando el número de subconjuntos de cada tamaño posible (de tamaño 0, de tamaño 1, de tamaño 2, etc.), lo cual es una suma de números combinatorios. Si el conjunto original $A$ tiene $n$ elementos, la cardinalidad de su conjunto potencia es $2^n$.
-\[ |P(A)| = \sum_{k=0}^{n} \binom{n}{k} = 2^n \]
+El **Conjunto Potencia** de un conjunto $A$, denotado $P(A)$, es el conjunto de \textbf{todos los subconjuntos} de $A$. Si $A$ tiene $n$ elementos, la cantidad total de subconjuntos es la suma de todas las combinaciones posibles (elegir 0, elegir 1, ..., elegir n):
+\[ |P(A)| = \sum_{k=0}^{n} \binom{n}{k} = \binom{n}{0} + \binom{n}{1} + \dots + \binom{n}{n} = 2^n \]
 
 \subsection{Ejercicios}
 \begin{enumerate}
 	\item \textbf{¿De cuántas maneras se pueden sentar 5 personas en una mesa redonda?} \\
 	      \textit{Solución:} Es una permutación circular. $PC_5 = (5-1)! = 4! = 24$ maneras.
 
-	\item \textbf{En una competición participan 40 personas y solo quedan seleccionadas 5.}
+	\item \textbf{Con 5 frutas distintas, ¿cuántos jugos se pueden hacer...}
 	      \begin{enumerate}
-		      \item \textbf{¿Cuántos grupos distintos pueden quedar seleccionados?} \\
-		            \textit{Solución:} El orden no importa, es una combinación. \\
-		            $C_5^{40} = \binom{40}{5} = \frac{40!}{5!(35!)} = \frac{40 \cdot 39 \cdot 38 \cdot 37 \cdot 36}{5 \cdot 4 \cdot 3 \cdot 2 \cdot 1} = 658,008$ grupos.
-		      \item \textbf{¿Cuántos primeros 5 puntajes distintos puede haber?} \\
-		            \textit{Solución:} El orden importa (1er, 2do, etc.), es una variación. \\
-		            $V_5^{40} = \frac{40!}{(40-5)!} = 40 \cdot 39 \cdot 38 \cdot 37 \cdot 36 = 78,960,960$ maneras.
-	      \end{enumerate}
-
-	\item \textbf{Si se dispone de 5 frutas distintas.}
-	      \begin{enumerate}
-		      \item \textbf{¿Cuántos jugos de dos frutas se pueden hacer?} \\
-		            \textit{Solución:} El orden no importa, es una combinación. \\
-		            $C_2^5 = \binom{5}{2} = \frac{5!}{2!3!} = 10$ jugos.
-		      \item \textbf{¿Y de 3 frutas?} \\
-		            \textit{Solución:} Combinación. $C_3^5 = \binom{5}{3} = \frac{5!}{3!2!} = 10$ jugos.
-		      \item \textbf{¿Y de al menos 2 frutas?} \\
-		            \textit{Solución:} Se suman los jugos de 2, 3, 4 y 5 frutas. \\
+		      \item \textbf{de dos frutas?} \\
+		            \textit{Solución:} $C_2^5 = \binom{5}{2} = \frac{5 \cdot 4}{2} = 10$ jugos.
+		      \item \textbf{de al menos 2 frutas?} \\
+		            \textit{Solución:} Sumamos los jugos de 2, 3, 4 y 5 frutas. \\
 		            $C_2^5 + C_3^5 + C_4^5 + C_5^5 = 10 + 10 + 5 + 1 = 26$ jugos.
 	      \end{enumerate}
 \end{enumerate}
@@ -916,77 +885,44 @@ La \textbf{cardinalidad} (número de elementos) del conjunto potencia se puede c
 \end{figure}
 \newpage
 
-\section{18/08 - Repaso Para Prueba}
-\subsection{Ejercicios Resueltos}
+% 18/08
+\section{Repaso y Ejercicios de Aplicación}
+\subsection{Ejercicios Resueltos de Combinatoria}
 \begin{enumerate}
-	\item \textbf{Las cifras que componen un número son 1, 2, 3, 4 y 5. ¿Cuántos números diferentes de 5 cifras, menores de 54,000, pueden formarse sin que se repita ninguna de las cifras?}
-	      \textit{Solución:} Se divide el problema en dos casos mutuamente excluyentes.
+	\item \textbf{Con las cifras $\{1, 2, 3, 4, 5\}$, ¿cuántos números de 5 cifras, sin repetición, y menores que 54,000 se pueden formar?}
+	      \textit{Solución:} Dividimos el problema en dos casos mutuamente excluyentes.
 	      \begin{itemize}
-		      \item \textbf{Caso 1: El número empieza en 1, 2, 3 o 4.} Hay 4 opciones para la primera cifra. Las 4 cifras restantes se pueden permutar de $4!$ maneras.
-		            \[ 4 \times 4! = 4 \times 24 = 96 \text{ números.} \]
-		      \item \textbf{Caso 2: El número empieza en 5.} La primera cifra es 5 (1 opción). La segunda cifra debe ser menor que 4 (es decir, 1, 2 o 3), lo que nos da 3 opciones. Las 3 cifras restantes se permutan de $3!$ maneras.
-		            \[ 1 \times 3 \times 3! = 3 \times 6 = 18 \text{ números.} \]
+		      \item \textbf{Caso 1: El número empieza en 1, 2, 3 o 4.} (4 opciones). Las 4 cifras restantes se permutan.
+		            \[ 4 \times P_4 = 4 \times 4! = 4 \times 24 = 96 \text{ números.} \]
+		      \item \textbf{Caso 2: El número empieza en 5.} (1 opción). La segunda cifra debe ser 1, 2 o 3 (3 opciones). Las 3 cifras restantes se permutan.
+		            \[ 1 \times 3 \times P_3 = 1 \times 3 \times 3! = 18 \text{ números.} \]
 	      \end{itemize}
-	      \textbf{Total:} Como los casos son excluyentes, sumamos los resultados: $96 + 18 = 114$.
+	      \textbf{Total:} Como los casos son excluyentes, se suman: $96 + 18 = 114$ números.
 
-	\item \textbf{Con cuatro oficiales y 8 soldados, calcular el número de grupos de 6 miembros que pueden formarse de manera que en cada grupo haya:}
+	\item \textbf{Con 4 oficiales y 8 soldados, ¿cuántos grupos de 6 miembros se pueden formar si debe haber...}
 	      \begin{enumerate}
-		      \item \textbf{Un solo oficial} \\
-		            \textit{Solución:} Se debe elegir 1 oficial de 4 Y 5 soldados de 8.
-		            \[ \binom{4}{1} \times \binom{8}{5} = 4 \times \frac{8!}{5!(8-5)!} = 4 \times 56 = 224 \text{ grupos.} \]
-		      \item \textbf{Como mínimo un oficial} \\
-		            \textit{Solución:} Se usa el método del complemento: Total de grupos menos los grupos sin oficiales.
-		            \begin{itemize}
-			            \item Total de grupos: $\binom{12}{6} = \frac{12!}{6!6!} = 924$.
-			            \item Grupos sin oficiales (todos soldados): $\binom{8}{6} = \frac{8!}{6!2!} = 28$.
-		            \end{itemize}
-		            \[ \text{Total} = 924 - 28 = 896 \text{ grupos.} \]
+		      \item \textbf{...exactamente un oficial?} \\
+		            \textit{Solución:} Se elige 1 de 4 oficiales \textbf{Y} 5 de 8 soldados.
+		            \[ \binom{4}{1} \times \binom{8}{5} = 4 \times 56 = 224 \text{ grupos.} \]
+		      \item \textbf{...como mínimo un oficial?} \\
+		            \textit{Solución:} Es el total de grupos posibles menos los grupos sin oficiales (solo soldados).
+		            \[ \text{Total} = \binom{12}{6} - \binom{8}{6} = 924 - 28 = 896 \text{ grupos.} \]
 	      \end{enumerate}
 
-	\item \textbf{¿De cuántas maneras pueden colocarse en un círculo 7 personas?}
-	      \textit{Solución:} Es una permutación circular de 7 elementos.
-	      \[ PC_7 = (7-1)! = 6! = 720 \text{ maneras.} \]
+	\item \textbf{¿De cuántas maneras pueden 10 libros colocarse en un estante si 2 obras son de 3 volúmenes cada una y 2 son de 2 volúmenes cada una, y los volúmenes de cada obra no deben separarse?}
+	      \textit{Solución:} Se consideran las 4 obras como 4 "bloques" que se pueden permutar. Luego, se permutan los volúmenes dentro de cada bloque.
+	      \[ P_4 \times (P_3 \times P_3 \times P_2 \times P_2) = 4! \times (3! \cdot 3! \cdot 2! \cdot 2!) = 24 \times (6 \cdot 6 \cdot 2 \cdot 2) = 3,456 \text{ formas.} \]
 
-	\item \textbf{En una estantería hay dos obras de 3 volúmenes cada una y otras dos de 2 volúmenes cada una. Hallar el número total de formas en que pueden colocarse los 10 libros en un mismo estante, sin dejar separados los diversos volúmenes de una misma obra:}
-	      \begin{enumerate}
-		      \item \textbf{Ordenados en cualquier orden} \\
-		            \textit{Solución:} Se consideran las 4 obras como 4 "bloques" que se pueden permutar. Luego, se permutan los volúmenes dentro de cada bloque.
-		            \[ (\text{Permutar bloques}) \times (\text{Permutar volúmenes internos}) \]
-		            \[ 4! \times (3! \times 3! \times 2! \times 2!) = 24 \times (6 \times 6 \times 2 \times 2) = 3,456 \text{ formas.} \]
-		      \item \textbf{Ordenados en orden Ascendente} \\
-		            \textit{Solución:} El orden interno de los volúmenes está fijo (solo 1 manera por obra). Solo se permutan los 4 bloques.
-		            \[ 4! \times (1 \times 1 \times 1 \times 1) = 24 \text{ formas.} \]
-	      \end{enumerate}
-
-	\item \textbf{Se tienen 7 libros de estadística y 3 de informática. ¿De cuántas maneras pueden colocarse en un estante cuatro libros de estadística y uno de informática, si este último debe estar siempre en el centro?}
-	      \textit{Solución:} Se llenan las 5 posiciones. El centro se llena primero con un libro de informática (3 opciones). Los 4 lugares restantes se llenan con 4 de los 7 libros de estadística (una variación).
-	      \[ (\text{Opciones para el centro}) \times (\text{Variación para los otros 4 puestos}) \]
-	      \[ 3 \times V_4^7 = 3 \times \frac{7!}{(7-4)!} = 3 \times (7 \cdot 6 \cdot 5 \cdot 4) = 3 \times 840 = 2,520 \text{ maneras.} \]
-
-	\item \textbf{¿Cuántas ordenaciones pueden formarse con las letras de la expresión \texorpdfstring{$a^3b^2c^4$}{a3b2c4} cuando está desarrollada?}
-	      \textit{Solución:} La expresión desarrollada es `aaabbcccc`. Es una permutación con repetición de 9 elementos, donde los elementos se repiten 3, 2 y 4 veces.
-	      \[ P_{3,2,4}^{9} = \frac{9!}{3! \cdot 2! \cdot 4!} = \frac{362,880}{6 \cdot 2 \cdot 24} = \frac{362,880}{288} = 1,260 \text{ ordenaciones.} \]
+	\item \textbf{Con las letras de la expresión \texorpdfstring{$a^3b^2c^4$}{a3b2c4} desarrollada (`aaabbcccc`), ¿cuántas ordenaciones se pueden formar?}
+	      \textit{Solución:} Es una permutación con repetición de 9 elementos.
+	      \[ P_{3,2,4}^{9} = \frac{9!}{3! \cdot 2! \cdot 4!} = \frac{362,880}{6 \cdot 2 \cdot 24} = 1,260 \text{ ordenaciones.} \]
 \end{enumerate}
 \newpage
 
 
-\section{27/08 - Aplicaciones de Combinatoria}
-\subsection{Revisión de Prueba (Ejercicios Notables)}
-\textit{Nota: Esta sección resume algunos ejercicios clave de la evaluación anterior.}
-\begin{enumerate}
-	\item \textbf{Ítem 1: Operatoria Combinatoria}
-	      \begin{enumerate}
-		      \item $\binom{5}{3} + \binom{7}{3} - \binom{5}{2} + \binom{7}{4} = 2 \cdot \binom{7}{3} = \frac{2 \cdot 7!}{4! \cdot 3!} = 2 \cdot 35 = 70$
-		      \item $\frac{(9-4)!}{8!} = \frac{5!}{8!} = \frac{1}{8\cdot 7\cdot 6} = \frac{1}{336}$
-	      \end{enumerate}
-	\item \textbf{Ítem 2: Identificación de Técnica de Conteo}
-	      \begin{itemize}
-		      \item Para sentar 6 personas en una mesa redonda, se usa una \textbf{Permutación Circular}: $PC_6 = (6-1)! = 5! = 120$.
-		      \item Para elegir un comité de 3 personas de un grupo de 15, se usa una \textbf{Combinación}: $C_3^{15} = \binom{15}{3} = \frac{15 \cdot 14 \cdot 13}{3 \cdot 2 \cdot 1} = 455$.
-	      \end{itemize}
-\end{enumerate}
-
-\subsection{Ejercicios: Diagonales de un Polígono}
+% 27/08
+\section{Aplicaciones de Combinatoria: Diagonales de un Polígono}
+\subsection{Ejercicios}
 \begin{enumerate}
 	\item Determinar la cantidad de diagonales de un polígono de 20 lados.
 	\item Determinar una expresión para la cantidad de diagonales de un polígono de n lados.
@@ -996,40 +932,35 @@ La \textbf{cardinalidad} (número de elementos) del conjunto potencia se puede c
 \subsection{Soluciones}
 \begin{enumerate}
 	\item \textbf{Deducción de la fórmula y cálculo para 20 lados.} \\
-	      \textit{Solución:} Para resolver esto, primero deduciremos la fórmula general para un polígono de $n$ lados, como se pide en el ejercicio 2.
-
-	      Un polígono de $n$ lados tiene $n$ vértices. Una diagonal es una línea que une dos vértices no consecutivos. Desde un punto de vista combinatorio:
+	      \textit{Solución:} Un polígono de $n$ lados tiene $n$ vértices. Una diagonal une dos vértices no consecutivos.
 	      \begin{itemize}
-		      \item El número total de líneas que se pueden trazar entre $n$ vértices es equivalente a escoger 2 vértices de un total de $n$, sin importar el orden. Esto es una combinación:
+		      \item El número total de líneas que se pueden trazar uniendo 2 vértices es una combinación:
 		            \[ \text{Total de líneas} = \binom{n}{2} = \frac{n(n-1)}{2} \]
-		      \item Este total incluye tanto las diagonales como los $n$ lados del polígono. Para obtener solo las diagonales, debemos restar los lados.
+		      \item Este total incluye las diagonales y los $n$ lados. Para obtener solo las diagonales, restamos los lados.
 	      \end{itemize}
-	      La expresión para el número de diagonales ($D$) es:
+	      La fórmula para el número de diagonales ($D$) es:
 	      \[ D(n) = \binom{n}{2} - n = \frac{n(n-1)}{2} - n = \frac{n^2 - n - 2n}{2} = \frac{n(n-3)}{2} \]
-	      Ahora, aplicamos la fórmula para un polígono de 20 lados ($n=20$):
-	      \[ D(20) = \frac{20(20-3)}{2} = \frac{20 \cdot 17}{2} = 10 \cdot 17 = 170 \]
-	      \textbf{Respuesta:} Un polígono de 20 lados tiene 170 diagonales.
+	      Para un polígono de 20 lados ($n=20$):
+	      \[ D(20) = \frac{20(20-3)}{2} = 10 \cdot 17 = 170 \]
+	      \textbf{Respuesta:} 170 diagonales.
 
-	\item \textbf{Expresión para la cantidad de diagonales de un polígono de $n$ lados.} \\
-	      \textit{Solución:} Como se dedujo en el punto anterior, la expresión general es:
-	      \[ D(n) = \frac{n(n-3)}{2} \]
-	      \textbf{Respuesta:} La expresión es $\frac{n(n-3)}{2}$.
+	\item \textbf{Expresión para $n$ lados.} \\
+	      \textit{Solución:} Como se dedujo arriba, la expresión es $D(n) = \frac{n(n-3)}{2}$.
 
-	\item \textbf{Si un polígono tiene 65 diagonales, ¿cuántos lados tiene?} \\
-	      \textit{Solución:} Usamos la fórmula, la igualamos a 65, y despejamos $n$.
-	      \[ \frac{n(n-3)}{2} = 65 \]
-	      \[ n(n-3) = 130 \]
-	      \[ n^2 - 3n - 130 = 0 \]
-	      Resolvemos la ecuación cuadrática factorizando. Buscamos dos números que multipliquen -130 y sumen -3. Estos son -13 y 10.
+	\item \textbf{Polígono con 65 diagonales.} \\
+	      \textit{Solución:} Igualamos la fórmula a 65 y despejamos $n$.
+	      \[ \frac{n(n-3)}{2} = 65 \implies n^2 - 3n = 130 \implies n^2 - 3n - 130 = 0 \]
+	      Factorizando la ecuación cuadrática:
 	      \[ (n-13)(n+10) = 0 \]
-	      Las soluciones son $n_1 = 13$ y $n_2 = -10$. Como el número de lados de un polígono no puede ser negativo, descartamos $n_2$.
+	      Las soluciones son $n_1 = 13$ y $n_2 = -10$. Como el número de lados debe ser positivo, la respuesta es 13.
 
 	      \textbf{Respuesta:} El polígono tiene 13 lados.
 \end{enumerate}
 
 \newpage
 
-\section{29/08 - Muestreo e Introducción a la Probabilidad}
+% 29/08
+\section{Muestreo e Introducción a la Probabilidad}
 \subsection{El Promedio de las Medias Muestrales}
 En esta sección se demuestra una propiedad fundamental de la estadística inferencial: la media de todas las medias muestrales posibles es igual a la media de la población.
 
@@ -1123,7 +1054,8 @@ La Regla de Laplace se aplica a experimentos aleatorios donde \textbf{todos sus 
 
 
 
-\section{01/09 - Fundamentos Axiomáticos de la Probabilidad}
+% 01/09
+\section{Fundamentos Axiomáticos de la Probabilidad}
 \subsection{Digresión: La Infinitud de los Números Primos (Demostración de Euclides)}
 Como preámbulo al pensamiento axiomático, se presenta una de las demostraciones más elegantes de la matemática. A menudo es atribuida erróneamente a Gödel, pero su autor original fue el matemático griego Euclides.
 
@@ -1169,7 +1101,8 @@ Una función $P: \mathcal{A} \rightarrow \mathbb{R}$ es una función (o medida) 
 \newpage
 
 
-\section{03/09 - Propiedades y Aplicaciones de la Probabilidad}
+% 03/09
+\section{Propiedades y Aplicaciones de la Probabilidad}
 A partir de los axiomas de Kolmogorov, podemos extender la regla de aditividad y deducir propiedades fundamentales.
 
 \subsection{Generalización del Axioma de Aditividad}
@@ -1241,7 +1174,9 @@ Esto se puede generalizar para cualquier número de eventos mutuamente excluyent
 \end{enumerate}
 \newpage
 
-\section{05/09 - Ejercicios de Probabilidad Clásica}
+
+% 05/09
+\section{Ejercicios de Probabilidad Clásica}
 \subsection{Enunciados}
 \begin{enumerate}
 	\item Calcular la probabilidad de que al lanzar 2 dados la suma sea 5.
@@ -1320,8 +1255,8 @@ Esto se puede generalizar para cualquier número de eventos mutuamente excluyent
 		      \item Despejamos la intersección:
 		            \begin{align*}
 			            P(M \cap K) & = P(M) + P(K) - P(M \cup K) \\
-			                         & = 0.65 + 0.70 - 0.80        \\
-			                         & = 0.55
+			                        & = 0.65 + 0.70 - 0.80        \\
+			                        & = 0.55
 		            \end{align*}
 	      \end{itemize}
 	      \textbf{Respuesta:} La probabilidad de que un cliente consuma ambas salsas es del 55\%.
@@ -1356,17 +1291,8 @@ Esto se puede generalizar para cualquier número de eventos mutuamente excluyent
 \end{enumerate}
 \newpage
 
-\section{22/09 - Repaso y Fechas Importantes}
-\subsection{Notas de la Clase}
-\begin{itemize}
-	\item \textbf{Prueba de Probabilidad (sin P. Condicional):} Lunes 29 de Julio.
-	\item \textbf{Entrega de Guía:} Lunes 29 de Julio.
-	\item \textbf{Inicio de Probabilidad Condicional:} Miércoles 24 de Julio.
-	\item \textbf{Controles:} El promedio de los controles reemplazará la peor nota de prueba.
-\end{itemize}
-\newpage
-
-\section{24/09 - Probabilidad Condicional}
+% 24/09
+\section{Probabilidad Condicional}
 \subsection{El Problema de Monty Hall}
 Este es un famoso problema de probabilidad que desafía la intuición. El planteamiento es el siguiente:
 \begin{itemize}
@@ -1398,18 +1324,18 @@ La nueva información cambió drásticamente la probabilidad. Esto es el corazó
 \subsubsection{Análisis del Problema de Monty Hall}
 La clave es entender que el presentador \textbf{nunca} abrirá la puerta con el auto. Esta acción nos da información valiosa.
 \begin{center}
-\begin{tabular}{|c|c|c|}
-\hline
-\textbf{Elección Inicial} & \textbf{Estrategia: Mantener} & \textbf{Estrategia: Cambiar} \\ \hline
-Puerta con Auto ($1/3$) & Gana (P) & Pierde (G) \\ \hline
-Puerta con Cabra ($2/3$) & Pierde (G) & Gana (P) \\
-\hline
-\end{tabular}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{Elección Inicial} & \textbf{Estrategia: Mantener} & \textbf{Estrategia: Cambiar} \\ \hline
+		Puerta con Auto ($1/3$)   & Gana (P)                      & Pierde (G)                   \\ \hline
+		Puerta con Cabra ($2/3$)  & Pierde (G)                    & Gana (P)                     \\
+		\hline
+	\end{tabular}
 \end{center}
 \textit{Leyenda: (P) es la puerta que elige el presentador para abrir.} \\
 El diagrama muestra que si elegiste el auto al principio (1/3 de probabilidad), ganas si te quedas. Pero si elegiste una cabra al principio (2/3 de probabilidad), el presentador te mostrará la otra cabra, y la única puerta que queda es la del auto, por lo que ganas si cambias.
 
-\subsection{Probabilidad Condicional}
+\subsection{Definición de Probabilidad Condicional}
 Dados dos sucesos $A$ y $B$, con $P(B)>0$, la probabilidad de $A$ \textbf{dado} $B$ (la probabilidad de que ocurra A asumiendo que ya ocurrió B) se define como:
 \[ P(A|B) = \frac{P(A \cap B)}{P(B)} \]
 
@@ -1423,9 +1349,9 @@ Sean los eventos:
 \end{itemize}
 La probabilidad de ganar se puede descomponer en dos casos mutuamente excluyentes: ganas habiendo elegido el auto, o ganas habiendo elegido una cabra.
 \begin{align*}
-P(G) &= P((G \cap A) \cup (G \cap C)) \\
-&= P(G \cap A) + P(G \cap C) \\
-&= P(G|A) \cdot P(A) + P(G|C) \cdot P(C)
+	P(G) & = P((G \cap A) \cup (G \cap C))         \\
+	     & = P(G \cap A) + P(G \cap C)             \\
+	     & = P(G|A) \cdot P(A) + P(G|C) \cdot P(C)
 \end{align*}
 Las probabilidades iniciales son $P(A)=\frac{1}{3}$ y $P(C)=\frac{2}{3}$.
 \begin{enumerate}
@@ -1447,52 +1373,19 @@ Las probabilidades iniciales son $P(A)=\frac{1}{3}$ y $P(C)=\frac{2}{3}$.
 
 \newpage
 
-\section{06/10 - Ejercicios de Probabilidad Condicional}
+% 06/10 & 08/10
+\section{Ejercicios de Probabilidad Condicional y Teorema de Bayes}
 \subsection{Enunciados}
 \begin{enumerate}
 	\item Al 25\% de un grupo de amigos le gusta la fresa y el chocolate, mientras que al 60\% le gusta el chocolate. ¿Cuál es la probabilidad de que a un amigo que le guste el chocolate también le guste la fresa?
-	\item En la ciudad de San José, el 8\% de las personas gana más de \$1000 al mes, mientras que al 60\% le gusta el helado de chocolate. Asumiendo que ambos sucesos son independientes, ¿cuál es la probabilidad de que una persona seleccionada al azar en San José gane más de \$1000 al mes y le guste el helado de chocolate?
+	\item En la ciudad de San José, el 8\% de las personas gana más de \$1000 al mes, mientras que al 60\% le gusta el helado de chocolate. Asumiendo que ambos sucesos son independientes, ¿cuál es la probabilidad de que una persona seleccionada al azar gane más de \$1000 al mes y le guste el helado de chocolate?
 	\item El 76\% de los estudiantes de Ingeniería Civil han aprobado Resistencia de Materiales y el 45\% aprobaron Estática. Además, el 30\% aprobaron ambas asignaturas. Si se elige un estudiante que aprobó Resistencia de Materiales, ¿qué probabilidad tiene de haber aprobado también Estática?
-\end{enumerate}
-
-\subsection{Soluciones}
-\begin{enumerate}
-	\item \textbf{Amigos y sabores:} \\
-	      \textit{Solución:} Sean F="le gusta la fresa" y C="le gusta el chocolate". Nos piden $P(F|C)$.
-	      \begin{itemize}
-		      \item \textbf{Datos:} $P(F \cap C) = 0.25$ y $P(C) = 0.60$.
-		      \item \textbf{Fórmula:} Usamos la definición de probabilidad condicional.
-		            \[ P(F|C) = \frac{P(F \cap C)}{P(C)} = \frac{0.25}{0.60} = \frac{25}{60} = \frac{5}{12} \approx 41.67\% \]
-	      \end{itemize}
-
-	\item \textbf{Ingresos y helado:} \\
-	      \textit{Solución:} Sean G="gana más de \$1000" y C="le gusta el helado de chocolate". Nos piden $P(G \cap C)$ y nos dicen que los eventos son independientes.
-	      \begin{itemize}
-		      \item \textbf{Datos:} $P(G)=0.08$ y $P(C)=0.60$.
-		      \item \textbf{Fórmula para eventos independientes:} Si A y B son independientes, $P(A \cap B) = P(A) \cdot P(B)$.
-		            \[ P(G \cap C) = P(G) \cdot P(C) = 0.08 \cdot 0.6 = 0.048 = 4.8\% \]
-	      \end{itemize}
-
-	\item \textbf{Estudiantes de Ingeniería:} \\
-	      \textit{Solución:} Sean R="aprobó Resistencia de Materiales" y E="aprobó Estática". Nos piden $P(E|R)$.
-	      \begin{itemize}
-		      \item \textbf{Datos:} $P(R)=0.76$, $P(E)=0.45$ y $P(R \cap E) = 0.30$.
-		      \item \textbf{Fórmula:} Aplicamos directamente la probabilidad condicional.
-		            \[ P(E|R) = \frac{P(E \cap R)}{P(R)} = \frac{0.30}{0.76} = \frac{30}{76} = \frac{15}{38} \approx 39.47\% \]
-	      \end{itemize}
-\end{enumerate}
-\newpage
-
-\section{08/10 - Teorema de Bayes y Problemas con Tablas}
-\subsection{Enunciados}
-\begin{enumerate}
-	\setcounter{enumi}{3}
-	\item En un acuario se tienen solo 2 especies de peces. El 40\% de los peces son de la especie azul y el 60\% son de la especie roja. De la especie azul, el 30\% son machos; mientras que, de la especie roja, el 40\% son hembras. Si se selecciona un pez al azar:
+	\item En un acuario se tienen solo 2 especies de peces. El 40\% son de la especie azul y el 60\% de la especie roja. De la especie azul, el 30\% son machos; mientras que, de la especie roja, el 40\% son hembras. Si se selecciona un pez al azar:
 	      \begin{enumerate}
 		      \item Y resulta ser hembra, ¿cuál es la probabilidad de que sea de la especie azul?
 		      \item Y resulta ser macho, ¿cuál es la probabilidad de que sea de la especie azul?
 	      \end{enumerate}
-	\item En un consultorio, el 40\% de los pacientes fingen tener una enfermedad (para obtener un certificado médico). Además, el 10\% de los pacientes del consultorio son hombres. La probabilidad de que un paciente finja una enfermedad dado que es hombre es del 50\%. Calcule la probabilidad de que un paciente sea hombre, dado que finge una enfermedad.
+	\item En un consultorio, el 40\% de los pacientes fingen tener una enfermedad. Además, el 10\% de los pacientes son hombres. La probabilidad de que un paciente finja una enfermedad dado que es hombre es del 50\%. Calcule la probabilidad de que un paciente sea hombre, dado que finge una enfermedad.
 	\item La Tabla \ref{tab:ResultadosExamen} muestra los resultados de 4 grupos de personas que rindieron el examen para obtener la licencia de conducir B.
 	      \begin{table}[h!]
 		      \caption{Resultados Examen de Conducción}\label{tab:ResultadosExamen}
@@ -1511,32 +1404,52 @@ Las probabilidades iniciales son $P(A)=\frac{1}{3}$ y $P(C)=\frac{2}{3}$.
 	      \begin{enumerate}
 		      \item ¿Cuál es la probabilidad de que una persona haya aprobado, sabiendo que es del grupo 3?
 		      \item ¿Cuál es la probabilidad de que una persona sea del grupo 1, si se sabe que reprobó el examen?
-		      \item ¿Cuál es la probabilidad de que una persona escogida al azar haya reprobado, si se sabe que rindió la prueba con el grupo 1?
+		      \item ¿Cuál es la probabilidad de que una persona haya reprobado, si se sabe que rindió la prueba con el grupo 1?
 	      \end{enumerate}
 \end{enumerate}
 
 \subsection{Soluciones Detalladas}
 \begin{enumerate}
-	\setcounter{enumi}{3}
+	\item \textbf{Amigos y sabores:} \\
+	      \textit{Solución:} Sean F="le gusta la fresa" y C="le gusta el chocolate". Nos piden $P(F|C)$.
+	      \begin{itemize}
+		      \item \textbf{Datos:} $P(F \cap C) = 0.25$ y $P(C) = 0.60$.
+		      \item \textbf{Fórmula:} Usamos la definición de probabilidad condicional.
+		            \[ P(F|C) = \frac{P(F \cap C)}{P(C)} = \frac{0.25}{0.60} = \frac{25}{60} = \frac{5}{12} \approx 41.67\% \]
+	      \end{itemize}
+
+	\item \textbf{Ingresos y helado:} \\
+	      \textit{Solución:} Sean G="gana más de \$1000" y C="le gusta el helado de chocolate". Nos piden $P(G \cap C)$ y se asume que los eventos son independientes.
+	      \begin{itemize}
+		      \item \textbf{Datos:} $P(G)=0.08$ y $P(C)=0.60$.
+		      \item \textbf{Fórmula para eventos independientes:} $P(A \cap B) = P(A) \cdot P(B)$.
+		            \[ P(G \cap C) = P(G) \cdot P(C) = 0.08 \cdot 0.6 = 0.048 = 4.8\% \]
+	      \end{itemize}
+
+	\item \textbf{Estudiantes de Ingeniería:} \\
+	      \textit{Solución:} Sean R="aprobó Resistencia de Materiales" y E="aprobó Estática". Nos piden $P(E|R)$.
+	      \begin{itemize}
+		      \item \textbf{Datos:} $P(R)=0.76$ y $P(R \cap E) = 0.30$.
+		      \item \textbf{Fórmula:} Aplicamos directamente la probabilidad condicional.
+		            \[ P(E|R) = \frac{P(E \cap R)}{P(R)} = \frac{0.30}{0.76} = \frac{30}{76} = \frac{15}{38} \approx 39.47\% \]
+	      \end{itemize}
+
 	\item \textbf{Peces en el acuario (Teorema de Bayes):} \\
 	      \textit{Solución:} Definimos los eventos: A=especie azul, R=especie roja, M=macho, H=hembra.
 	      \begin{itemize}
-		      \item \textbf{Probabilidades dadas:}
-		            $P(A)=0.4$, $P(R)=0.6$, $P(M|A)=0.3$, $P(H|R)=0.4$.
-		      \item \textbf{Probabilidades deducidas:}
-		            $P(H|A) = 1 - P(M|A) = 0.7$.
-		            $P(M|R) = 1 - P(H|R) = 0.6$.
+		      \item \textbf{Probabilidades dadas:} $P(A)=0.4$, $P(R)=0.6$, $P(M|A)=0.3$, $P(H|R)=0.4$.
+		      \item \textbf{Probabilidades deducidas:} $P(H|A) = 1 - P(M|A) = 0.7$; $P(M|R) = 1 - P(H|R) = 0.6$.
 	      \end{itemize}
 	      \begin{enumerate}
 		      \item \textbf{Calcular $P(A|H)$:} "Prob. de que sea azul, dado que es hembra".
 		            Por Teorema de Bayes: $P(A|H) = \frac{P(H|A)P(A)}{P(H)}$.
-		            Primero, calculamos la probabilidad total de ser hembra:
+		            Primero, calculamos la probabilidad total de ser hembra (Ley de Prob. Total):
 		            $P(H) = P(H|A)P(A) + P(H|R)P(R) = (0.7 \cdot 0.4) + (0.4 \cdot 0.6) = 0.28 + 0.24 = 0.52$.
 		            \[ P(A|H) = \frac{0.28}{0.52} = \frac{28}{52} = \frac{7}{13} \]
-		      \item \textbf{Calcular $P(R|M)$:} "Prob. de que sea roja, dado que es macho".
+		      \item \textbf{Calcular $P(A|M)$:} "Prob. de que sea azul, dado que es macho".
 		            La probabilidad total de ser macho es $P(M) = 1 - P(H) = 1 - 0.52 = 0.48$.
-		            Por Bayes: $P(R|M) = \frac{P(M|R)P(R)}{P(M)}$.
-		            \[ P(R|M) = \frac{0.6 \cdot 0.6}{0.48} = \frac{0.36}{0.48} = \frac{36}{48} = \frac{3}{4} \]
+		            Por Bayes: $P(A|M) = \frac{P(M|A)P(A)}{P(M)}$.
+		            \[ P(A|M) = \frac{0.3 \cdot 0.4}{0.48} = \frac{0.12}{0.48} = \frac{12}{48} = \frac{1}{4} \]
 	      \end{enumerate}
 
 	\item \textbf{Pacientes en consultorio (Teorema de Bayes):} \\
@@ -1549,7 +1462,7 @@ Las probabilidades iniciales son $P(A)=\frac{1}{3}$ y $P(C)=\frac{2}{3}$.
 	      \end{itemize}
 
 	\item \textbf{Examen de conducir (Tabla de contingencia):} \\
-	      \textit{Solución:} Primero, completamos la tabla con los totales.
+	      \textit{Solución:} Primero, completamos la tabla con los totales para facilitar los cálculos.
 	      \begin{center}
 		      \begin{tabular}{|l|c|c|c|}
 			      \hline
@@ -1566,21 +1479,14 @@ Las probabilidades iniciales son $P(A)=\frac{1}{3}$ y $P(C)=\frac{2}{3}$.
 	      \end{center}
 	      \begin{enumerate}
 		      \item \textbf{P(Aprobado | Grupo 3):} Miramos la fila "Grupo 3". 46 de 58 aprobaron.
-		            \[ P(A|G3) = \frac{46}{58} = \frac{23}{29} \]
+		            \[ P(A|G3) = \frac{\text{Aprobados en G3}}{\text{Total G3}} = \frac{46}{58} = \frac{23}{29} \]
 		      \item \textbf{P(Grupo 1 | Reprobado):} Miramos la columna "Reprobados". 5 de los 29 reprobados eran del Grupo 1.
-		            \[ P(G1|R) = \frac{5}{29} \]
-		      \item \textbf{P(Reprobado | Grupo 1):} Miramos la fila "Grupo 1". 5 de los 45 reprobaron.
-		            \[ P(R|G1) = \frac{5}{45} = \frac{1}{9} \]
+		            \[ P(G1|R) = \frac{\text{Reprobados de G1}}{\text{Total Reprobados}} = \frac{5}{29} \]
+		      \item \textbf{P(Reprobado | Grupo 1):} Miramos la fila "Grupo 1". 5 de un total de 45 reprobaron.
+		            \[ P(R|G1) = \frac{\text{Reprobados de G1}}{\text{Total G1}} = \frac{5}{45} = \frac{1}{9} \]
 	      \end{enumerate}
 \end{enumerate}
 \newpage
-
-%\section{ / - }
-
-\newpage
-
-
-
 
 
 \end{document}

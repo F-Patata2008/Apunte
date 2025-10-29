@@ -35,7 +35,6 @@
 
 % --- CONFIGURACIÓN DE ENCABEZADOS Y PIES DE PÁGINA ---
 \pagestyle{fancy}
-\setlength{\headheight}{15pt} % Soluciona warning de fancyhdr
 \fancyhf{} % Limpiar todos los campos
 \fancyhead[L]{\nouppercase{\rightmark}} % Muestra la sección/subsección actual a la izquierda
 \fancyhead[R]{\thepage} % Número de página a la derecha
@@ -90,7 +89,7 @@
 			\centering
 			\subsection*{Dedicatoria y Cesión de Uso}
 			\vspace{0.2cm}
-			\parbox{0.9\textwidth}{\normalsize\centering Con gratitud y aprecio, el autor, \textbf{Felipe Colli Olea}, cede el presente documento en su formato PDF al \textbf{Departamento de Matemáticas del Instituto Nacional}, y en especial a los profesores \textbf{David Caldera} y \textbf{Sergio Díaz}, como material de estudio para las futuras generaciones de estudiantes.}
+			\parbox{0.9\textwidth}{\normalsize\centering Con gratitud y aprecio, el autor, \textbf{Felipe Colli Olea}, cede el presente documento en su formato PDF al \textbf{Departamento de Matemáticas del Instituto Nacional}, y en especial a los profesores \textbf{Sergio Díaz} y \textbf{David Caldera}, como material de estudio para las futuras generaciones de estudiantes.}
 			\vspace{0.5cm}
 
 			\parbox{0.9\textwidth}{\small
@@ -111,7 +110,7 @@
 \tableofcontents
 \newpage
 
-% --- Aquí comienza el contenido principal ---
+% --- Aquí comienza el contenido principal con el nuevo encabezado/pie ---
 
 % 14/03
 \section{Conceptos Fundamentales de Estadística}
@@ -126,6 +125,7 @@ Subconjunto de la población que se mide u observa.
 	\centering
 	\includegraphics[width=0.85\textwidth]{muestra}
 	\caption{Representación de la muestra dentro de la población.}
+	\label{fig:muestra}
 \end{figure}
 
 
@@ -136,6 +136,7 @@ Es una medición numérica que describe alguna característica de una población
 Es una medición numérica que describe alguna característica de la muestra.
 
 \subsection{Tipos de Variables}
+
 \subsubsection{Variables cualitativas:}
 \begin{itemize}
 	\item Se describen mediante palabras o categorías.
@@ -156,224 +157,583 @@ Es una medición numérica que describe alguna característica de la muestra.
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.58\textwidth]{variables}
-	\caption{Esquema de los tipos de variables.}
+	\caption{}
+	\label{fig:variables}
 \end{figure}
 
-\subsection{Ejercicios}
-Para cada situación, identifica la población, una posible muestra y la variable de interés.
+
+\subsection{Ejercicios:}
+Para cada una de las siguientes situaciones, identifica la población de interés, la variable estadística, clasifícala, y entrega un ejemplo de cuál podría ser una posible muestra.
 
 \begin{enumerate}
-	\item Un investigador desea estimar la proporción de ciudadanos de la \textit{GEN X} en Chile interesados en iniciar un negocio.
-	      \begin{itemize}
+	\item Un investigador universitario desea estimar la proporción de ciudadanos chilenos de la \textit{GEN X} que están interesados en iniciar sus propios negocios.
+	      \begin{enumerate}
 		      \item \textbf{Población:} Chilenos de la Generación X.
-		      \item \textbf{Muestra (ejemplo):} 500 chilenos de la Generación X seleccionados del padrón electoral.
-		      \item \textbf{Variable:} Interés en iniciar un negocio (Sí/No) - \textit{cualitativa nominal}.
-	      \end{itemize}
+		      \item \textbf{Muestra (ejemplo):} 500 chilenos de la Generación X seleccionados aleatoriamente del padrón electoral.
+		      \item \textbf{Variable:} Interés en iniciar un negocio (Sí/No) (\textit{cualitativa nominal}).
+	      \end{enumerate}
 
-	\item Se busca verificar si la temperatura corporal promedio de adultos sanos en Chile es realmente 37°C.
-	      \begin{itemize}
+	\item Durante más de un siglo, la temperatura corporal normal en seres humanos ha sido aceptada como 37°C. ¿Es así realmente? Los investigadores desean estimar el promedio de temperatura de adultos sanos en Chile.
+	      \begin{enumerate}
 		      \item \textbf{Población:} Adultos sanos en Chile.
 		      \item \textbf{Muestra (ejemplo):} Adultos sanos de Santiago seleccionados de diversos centros de salud.
-		      \item \textbf{Variable:} Temperatura corporal - \textit{cuantitativa continua}.
-	      \end{itemize}
-	\item Un ingeniero municipal desea estimar el consumo semanal promedio de agua para unidades unifamiliares.
-	      \begin{itemize}
+		      \item \textbf{Variable:} Temperatura corporal (\textit{cuantitativa continua}).
+	      \end{enumerate}
+
+	\item Un ingeniero municipal desea estimar el promedio de consumo semanal de agua para unidades habitacionales unifamiliares en la ciudad.
+	      \begin{enumerate}
 		      \item \textbf{Población:} Unidades habitacionales unifamiliares de la ciudad.
-		      \item \textbf{Muestra (ejemplo):} 200 unidades seleccionadas aleatoriamente.
-		      \item \textbf{Variable:} Consumo semanal de agua (en litros) - \textit{cuantitativa continua}.
-	      \end{itemize}
+		      \item \textbf{Muestra (ejemplo):} 200 unidades habitacionales unifamiliares de distintos barrios de la ciudad, seleccionadas aleatoriamente.
+		      \item \textbf{Variable:} Consumo semanal de agua (en litros) (\textit{cuantitativa continua}).
+	      \end{enumerate}
+	\item El National Highway Safety Council desea estimar la proporción de llantas para automóvil con dibujo o superficie de rodadura insegura, entre todas las llantas manufacturadas por una empresa específica durante el presente año de producción.
+	      \begin{enumerate}
+		      \item \textbf{Población:} Todas las llantas para automóvil manufacturadas por la empresa específica durante el presente año de producción.
+		      \item \textbf{Muestra (ejemplo):} Una selección aleatoria de llantas producidas en diferentes lotes o días del año.
+		      \item \textbf{Variable:} Estado de la superficie de rodadura (segura/insegura) (\textit{cualitativa nominal}).
+	      \end{enumerate}
+	\item Un politólogo desea estimar si la mayoría de los residentes adultos de una región están a favor de una legislatura unicameral.
+	      \begin{enumerate}
+		      \item \textbf{Población:} Residentes adultos de la región.
+		      \item \textbf{Muestra (ejemplo):} Residentes adultos de varias comunas seleccionadas aleatoriamente de la región.
+		      \item \textbf{Variable:} Opinión sobre la legislatura unicameral (a favor/en contra/indeciso) (\textit{cualitativa nominal}).
+	      \end{enumerate}
+	\item Un científico del área médica desea determinar el tiempo promedio para que se vuelva a presentar cierta enfermedad infecciosa, una vez que las personas se recuperan de ella por primera vez.
+	      \begin{enumerate}
+		      \item \textbf{Población:} Personas que se han recuperado de la enfermedad infecciosa por primera vez.
+		      \item \textbf{Muestra (ejemplo):} Pacientes recuperados seleccionados de registros médicos de diversos hospitales.
+		      \item \textbf{Variable:} Tiempo hasta la recurrencia de la enfermedad (\textit{cuantitativa continua}).
+	      \end{enumerate}
+	\item Un ingeniero electricista desea determinar si el promedio de vida útil de transistores de cierto tipo es mayor que 500 horas.
+	      \begin{enumerate}
+		      \item \textbf{Población:} Todos los transistores de cierto tipo.
+		      \item \textbf{Muestra (ejemplo):} Una muestra de 100 transistores de ese tipo, seleccionados aleatoriamente de la producción.
+		      \item \textbf{Variable:} Vida útil del transistor (en horas) (\textit{cuantitativa continua}).
+	      \end{enumerate}
 \end{enumerate}
 \newpage
 
 % 17/03
 \section{Tablas de Frecuencia y Medidas de Tendencia Central}
-\subsection{Tablas de Frecuencia}
+\subsection{Tablas de Frecuencia: Conceptos Básicos}
 \begin{itemize}
-	\item \textbf{Frecuencia Absoluta ($f_i$):} Cantidad de veces que se repite un dato.
-	\item \textbf{Frecuencia Absoluta Acumulada ($F_i$):} Suma de las frecuencias absolutas hasta un dato. $F_i = \sum_{j=1}^{i} f_j$.
-	\item \textbf{Frecuencia Relativa ($h_i$):} Proporción del total de observaciones. ($h_i = \frac{f_i}{n}$).
-	\item \textbf{Frecuencia Relativa Acumulada ($H_i$):} Proporción acumulada. ($H_i = \frac{F_i}{n}$).
+	\item \textbf{Dato o Intervalo:} Información (variable) que se estudia en estadística.
+	\item \textbf{Marca de Clase ($c_i$):} Promedio entre los extremos de un intervalo.
+	\item \textbf{Amplitud de un intervalo:} Es la diferencia entre el límite superior y el límite inferior del intervalo.
 \end{itemize}
 
-\subsection{Medidas de Tendencia Central}
-\subsubsection{\texorpdfstring{Media Aritmética ($\bar{x}$)}{Media Aritmética (x barra)}}
-Promedio de los datos. Para datos $x_1, \dots, x_n$:
-\[ \bar{x} = \frac{\sum_{i=1}^{n} x_i}{n} \]
-Para datos agrupados en $k$ clases con marcas $c_i$ y frecuencias $f_i$:
-\[ \bar{x} = \frac{\sum_{i=1}^{k} c_i f_i}{n} \]
-
-\subsubsection{\texorpdfstring{Mediana ($M_e$)}{Mediana (Me)}}
-Valor central de los datos ordenados.
+\subsection{Tipos de Frecuencia:}
 \begin{itemize}
-	\item Si $n$ es impar, es el dato en la posición $\frac{n+1}{2}$.
-	\item Si $n$ es par, es el promedio de los datos en las posiciones $\frac{n}{2}$ y $\frac{n}{2}+1$.
+	\item \textbf{Frecuencia Absoluta ($f_i$):} Cantidad de veces que se repite un dato o que los datos caen en un intervalo.
+	\item \textbf{Frecuencia Absoluta Acumulada ($F_i$):} Suma de las frecuencias absolutas hasta determinado dato o intervalo. $F_i = \sum_{j=1}^{i} f_j$.
+	\item \textbf{Frecuencia Relativa ($h_i$ o $f_{ri}$):} Es la proporción (fracción, decimal o porcentaje) de observaciones que corresponden a cierto valor o intervalo ($h_i = \frac{f_i}{n}$), donde $n$ es el número total de datos.
+	\item \textbf{Frecuencia Relativa Acumulada ($H_i$):} Es la proporción (fracción, decimal o porcentaje) de la frecuencia acumulada hasta cierto dato o intervalo ($H_i = \frac{F_i}{n} = \sum_{j=1}^{i} h_j$).
+\end{itemize}
+\newpage
+
+\subsection{Medidas de Tendencia Central:}
+\subsubsection{\texorpdfstring{Media Aritmética ($\bar{x}$):}{Media Aritmética (x barra)}}
+Es el cociente entre la suma de todos los datos y el número total de datos ($n$). Si se tienen $n$ datos $x_1, x_2, \dots, x_n$:
+\[ \bar{x}=\frac{x_1+x_2+\dots+x_n}{n} = \frac{\sum_{i=1}^{n} x_i}{n} \] \\
+Para datos agrupados en una tabla de frecuencia con $k$ clases:
+\begin{center}
+	\begin{minipage}{0.35\textwidth}
+		\centering
+		\begin{tabular}{|c|c|}
+			\hline
+			\textbf{Marca ($c_i$)} & \textbf{Frec. ($f_i$)} \\
+			\hline
+			$c_1$                  & $f_1$                  \\ \hline
+			$c_2$                  & $f_2$                  \\ \hline
+			$\vdots$               & $\vdots$               \\ \hline
+			$c_k$                  & $f_k$                  \\
+			\hline
+		\end{tabular}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.55\textwidth}
+		\centering
+		\[ \bar{x}=\frac{c_1 f_1 + c_2 f_2 + \dots + c_k f_k}{f_1+f_2+\dots+f_k} = \frac{\sum_{i=1}^{k} c_i f_i}{n} \]
+		(donde $n = \sum_{i=1}^{k} f_i$)
+	\end{minipage}
+\end{center}
+
+\subsubsection{\texorpdfstring{Mediana ($M_e$):}{Mediana (Me)}}
+Es el valor que ocupa la posición central de la muestra cuando los datos se encuentran ordenados. \textbf{Si la muestra tiene un número par de datos, la mediana es la media aritmética de los dos términos centrales.}
+\begin{itemize}
+	\item Si $n$ es impar, la posición es $\frac{n+1}{2}$. $M_e = x_{(\frac{n+1}{2})}$.
+	\item Si $n$ es par, las posiciones son $\frac{n}{2}$ y $\frac{n}{2}+1$. $M_e = \frac{x_{(\frac{n}{2})} + x_{(\frac{n}{2}+1)}}{2}$.
 \end{itemize}
 
-\subsubsection{\texorpdfstring{Moda ($M_o$)}{Moda (Mo)}}
-Dato con la mayor frecuencia absoluta. Una muestra puede ser amodal, unimodal, bimodal o polimodal.
+\subsubsection{\texorpdfstring{Moda ($M_o$):}{Moda (Mo)}}
+Es el dato o intervalo con la mayor frecuencia absoluta. La muestra puede ser:
+\begin{itemize}
+	\item \textbf{Amodal:} No presenta moda.
+	\item \textbf{Unimodal:} Una sola moda.
+	\item \textbf{Bimodal:} Dos modas.
+	\item \textbf{Polimodal (o Multimodal):} Más de dos modas.
+\end{itemize}
 \newpage
 
 % 26/03
 \section{Ejercicios de Medidas de Tendencia Central}
-\subsection{Problemas Resueltos}
+\subsection{Ejercicios:}
+
+\noindent
+Si las notas de Esteban en una asignatura son \(3, 4, 6, 3, 5, 5, 6, 3, 4\) y de estas notas se cambian un $6$ por un $7$. ¿Cuál(es) de las siguientes medidas de tendencia central cambia(n)?
 \begin{enumerate}
-	\item \textbf{Problema:} Las notas de Esteban son \(3, 4, 6, 3, 5, 5, 6, 3, 4\). Si se cambia un 6 por un 7, ¿qué medidas de tendencia central cambian?
-	      \begin{itemize}
-		      \item \textbf{Solución:} Las notas originales ordenadas son: \(3, 3, 3, 4, 4, 5, 5, 6, 6\). $M_o=3$, $M_e=4$.
-		      \item Las notas nuevas ordenadas son: \(3, 3, 3, 4, 4, 5, 5, 6, 7\). $M_o=3$, $M_e=4$.
-		      \item La \textbf{moda} y la \textbf{mediana} no cambian. La \textbf{media aritmética} sí cambia, porque se altera la suma total de los datos.
-	      \end{itemize}
-	\item \textbf{Problema:} Dada la tabla, encontrar la mediana.
-	      \begin{center}
-		      \begin{tabular}{|c|c|c|}
-			      \hline
-			      $X_i$ & $f_i$ & $F_i$ \\ \hline
-			      4     & 4     & 4     \\ \hline
-			      5     & 8     & 12    \\ \hline
-			      6     & 10    & 22    \\ \hline
-			      7     & 20    & 42    \\ \hline
-			      8     & 8     & 50    \\
-			      \hline
-		      \end{tabular}
-	      \end{center}
-	      \textit{Solución:} Con $n=50$ datos, la mediana es el promedio de los datos en las posiciones 25 y 26. Mirando la Frecuencia Acumulada ($F_i$), los datos del 23 al 42 son iguales a 7. Por lo tanto, $M_e = \frac{7+7}{2} = 7$.
+	\item La moda
+	\item La mediana
+	\item La media aritmética
 \end{enumerate}
+\textit{Solución:}
+Notas originales (ordenadas): \(3, 3, 3, 4, 4, 5, 5, 6, 6\). $n=9$.
+\begin{itemize}
+	\item Moda original: 3 (frecuencia 3).
+	\item Mediana original: El dato en la posición $\frac{9+1}{2}=5$. Mediana = 4.
+	\item Media original: $\frac{3 \cdot 3 + 2 \cdot 4 + 2 \cdot 5 + 2 \cdot 6}{9} = \frac{39}{9} \approx 4.33$.
+\end{itemize}
+Notas nuevas (se cambia un 6 por un 7), ordenadas: \(3, 3, 3, 4, 4, 5, 5, 6, 7\). $n=9$.
+\begin{itemize}
+	\item Moda nueva: 3 (sigue siendo la más frecuente). $\rightarrow$ No cambia.
+	\item Mediana nueva: El dato en la posición 5 sigue siendo 4. $\rightarrow$ No cambia.
+	\item Media nueva: $\frac{39 - 6 + 7}{9} = \frac{40}{9} \approx 4.44$. $\rightarrow$ Cambia.
+\end{itemize}
+\textbf{Respuesta:} Solo la media aritmética cambia (opción 3).
+
+\vspace{1em}
+\noindent La siguiente tabla muestra los valores de una variable \(X\) y sus respectivas frecuencias. ¿Cuál es el valor de la mediana?
+\begin{center}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{\(X_i\)} & \textbf{Frecuencia ($f_i$)} & \textbf{Frecuencia Acumulada ($F_i$)} \\
+		\hline
+		4                & 4                           & 4                                     \\ \hline
+		5                & 8                           & 12                                    \\ \hline
+		6                & 10                          & 22                                    \\ \hline
+		7                & 20                          & 42                                    \\ \hline
+		8                & 8                           & 50                                    \\ \hline
+		\textbf{Total}   & \textbf{n=50}               &                                       \\
+		\hline
+	\end{tabular}
+\end{center}
+\textit{Solución:}
+Total de datos $n=50$ (par). La mediana es el promedio de los datos en las posiciones $\frac{50}{2}=25$ y $\frac{50}{2}+1 = 26$.
+Buscamos en la Frecuencia Acumulada ($F_i$):
+\begin{itemize}
+	\item Hasta $X=6$, se acumulan 22 datos.
+	\item Para $X=7$, la frecuencia acumulada llega a 42. Esto significa que los datos desde la posición 23 hasta la 42 son iguales a 7.
+\end{itemize}
+Por lo tanto, el dato 25 y el dato 26 son ambos 7.
+La mediana es $M_e = \frac{7+7}{2} = 7$. \\
+\textbf{Respuesta:} La mediana es 7.
+
+\vspace{1em}
+\noindent De acuerdo a la siguiente muestra \(a+2, a+4, a+6, a+6, a+6, a+4, a+2\), la suma de la mediana y la moda es: \\
+\textit{Solución:}
+Muestra ordenada: \(a+2, a+2, a+4, a+4, a+6, a+6, a+6\). $n=7$.
+\begin{itemize}
+	\item \textbf{Moda ($M_o$):} El dato más frecuente es \(a+6\).
+	\item \textbf{Mediana ($M_e$):} Como $n=7$ (impar), la mediana es el dato en la posición $\frac{7+1}{2}=4$. El cuarto dato es \(a+4\).
+\end{itemize}
+\textbf{Suma:} $M_o + M_e = (a+6) + (a+4) = 2a+10$.\\
+\textbf{Respuesta:} $2a+10$.
+
+\vspace{1em}
+\noindent Los datos de una muestra son todos números naturales consecutivos, si no hay ningún dato repetido y la mediana de la muestra es 11.5, entonces ¿qué cantidad de datos no puede tener la muestra?
+\textit{Solución:}
+Si la mediana es 11.5 (un número no entero), la cantidad de datos ($n$) debe ser par. Si $n$ fuera impar, la mediana sería el dato central, que es un número natural, lo cual contradice el enunciado.
+Por lo tanto, la cantidad de datos $n$ no puede ser un número impar. \\
+\textbf{Respuesta:} La cantidad de datos no puede ser un número impar.
 \newpage
 
 % 04/04
 \section{Muestreo y Representatividad}
 \subsection{Población y Muestra}
-Realizar un censo a toda una población puede ser impráctico por costos, tiempo, tamaño de la población, o si el estudio es destructivo. Por eso se utiliza una \textbf{muestra}, un subconjunto de la población. Para que los resultados de la muestra sean generalizables (inferencia estadística), esta debe ser \textbf{representativa}.
+¿Qué inconvenientes puede implicar realizar un censo?
+\begin{itemize}
+	\item \textbf{Cardinalidad (tamaño):} La población puede ser demasiado grande o infinita.
+	\item \textbf{Destrucción:} El proceso de medición puede destruir el elemento (ej. pruebas de vida útil).
+	\item \textbf{Costos:} Implica altos costos en tiempo, dinero y recursos.
+	\item \textbf{Acceso:} Puede ser logísticamente imposible acceder a todos los miembros.
+	\item \textbf{Tiempo:} Puede tomar tanto tiempo que la información obtenida se vuelve obsoleta.
+\end{itemize}
+
+\subsection{Muestreo}
+Proceso para escoger los elementos que conformarán la muestra. \\
+\textbf{Es fundamental que la muestra sea representativa para realizar una inferencia estadística válida.}
 
 \subsubsection{Representatividad}
-Una muestra es representativa si refleja las características de la población. Se logra con:
+Debe reflejar las características de la población. Claves:
 \begin{itemize}
-	\item \textbf{Tamaño adecuado ($n$):} Suficientemente grande.
-	\item \textbf{Aleatoriedad:} Cada elemento de la población tiene una probabilidad conocida de ser seleccionado.
+	\item \textbf{Tamaño ($n$):} Debe ser suficientemente grande.
+	\item \textbf{Aleatoriedad:} Cada elemento debe tener una probabilidad conocida de ser seleccionado para minimizar el sesgo.
 \end{itemize}
+Notación: \textbf{N} para el tamaño de la población y \textbf{n} para el tamaño de la muestra.
 
 \subsection{Tipos de Muestreo Probabilístico}
-\begin{itemize}
-	\item \textbf{Aleatorio Simple (M.A.S):} Cada posible muestra del mismo tamaño tiene la misma probabilidad de ser elegida.
-	\item \textbf{Estratificado:} La población se divide en subgrupos homogéneos (estratos) y se hace un M.A.S en cada uno.
-	\item \textbf{Por Conglomerados (Clusters):} Se divide a la población en grupos heterogéneos, se elige una muestra aleatoria de grupos y se censa a todos los individuos de esos grupos.
-	\item \textbf{Sistemático:} Se elige un punto de partida al azar y luego se toma cada k-ésimo elemento de la lista.
-\end{itemize}
+Cada unidad tiene una probabilidad conocida y no nula de ser seleccionada.
 
-\subsection{Tipos de Muestreo No Probabilístico}
-La selección es subjetiva. No permite inferencia estadística formal.
-\begin{itemize}
-	\item \textbf{Por Cuotas:} Se fijan cuotas de individuos y el entrevistador los selecciona por conveniencia.
-	\item \textbf{Bola de Nieve:} Los primeros individuos ayudan a contactar a otros.
-	\item \textbf{Por Conveniencia:} La selección se basa en la facilidad de acceso a los sujetos.
-\end{itemize}
+\subsubsection{Muestreo Aleatorio Simple (M.A.S)}
+Cada posible muestra de tamaño $n$ tiene la misma probabilidad de ser elegida. Requiere un listado completo (marco muestral).
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{MAS}
+	\caption{Muestreo Aleatorio Simple}
+	\label{fig:MAS}
+\end{figure}
+
+
+\subsubsection{Muestreo Estratificado}
+Se usa cuando la población se puede dividir en subgrupos (estratos) internamente homogéneos. Se toma una muestra aleatoria de cada estrato. Es más preciso si hay baja variabilidad dentro de los estratos y alta variabilidad entre ellos.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{MEP}
+	\caption{Muestreo Estratificado Proporcional}
+	\label{fig:MEP}
+\end{figure}
+
+
+\subsubsection{Muestreo por Conglomerados (Clusters)}
+Se usa cuando la población está dividida en grupos naturales (conglomerados). Se selecciona una muestra aleatoria de conglomerados y se analizan \textbf{todos} los individuos de los conglomerados elegidos. Es eficiente en costos, especialmente si los conglomerados son internamente heterogéneos.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.65\textwidth]{MPC}
+	\caption{Muestreo por Conglomerados}
+	\label{fig:MPC}
+\end{figure}
+
+
+\subsubsection{Muestreo Aleatorio Sistemático}
+Se elige un elemento al azar al principio y luego se seleccionan los demás a intervalos regulares ($k=N/n$) de una lista ordenada.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.6\textwidth]{MASIS}
+	\caption{Muestreo Aleatorio Sistemático}
+	\label{fig:MASIS}
+\end{figure}
+\newpage
+
+\subsection{Muestreos No Probabilísticos}
+La selección es subjetiva y no permite inferencia estadística formal.
+
+\subsubsection{Muestreo por Cuotas}
+Se fijan "cuotas" de individuos con ciertas características y el entrevistador los selecciona por conveniencia hasta llenar la cuota.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{MPCU}
+	\caption{Muestreo por cuotas}
+	\label{fig:MPCU}
+\end{figure}
+
+\subsubsection{Muestreo Bola de Nieve}
+Los primeros individuos contactados ayudan a encontrar a otros, útil para poblaciones difíciles de localizar.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{MBN}
+	\caption{Muestreo Bola de Nieve}
+	\label{fig:MBC}
+\end{figure}
+
+\subsubsection{Muestreo por Juicio o Conveniencia}
+La selección se basa en el juicio del investigador o en la facilidad de acceso a los sujetos.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.75\textwidth]{MPJ}
+	\caption{Muestreo Por Juicio}
+	\label{fig:MPJ}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.35\linewidth]{patata}
+	\caption{Patata para rellenar el espacio}
+	\label{fig:patata}
+\end{figure}
 \newpage
 
 % 10/04
 \section{Medidas de Dispersión}
-\subsection{Definición y Tipos}
-Miden la variabilidad o "esparcimiento" de los datos.
-\begin{itemize}
-	\item \textbf{Rango:} Diferencia entre el valor máximo y el mínimo. $R = x_{max} - x_{min}$.
-	\item \textbf{Varianza ($\sigma^2$ para población, $s^2$ para muestra):} Promedio de las desviaciones al cuadrado respecto a la media.
-	      \[ \sigma^2 = \frac{\sum (x_i - \mu)^2}{N} \quad \text{(Población)} \qquad s^2 = \frac{\sum (x_i - \bar{x})^2}{n-1} \quad \text{(Muestra)} \]
-	\item \textbf{Desviación Estándar ($\sigma$, $s$):} Raíz cuadrada positiva de la varianza. Tiene las mismas unidades que los datos. $\sigma = \sqrt{\sigma^2}$.
-\end{itemize}
+\textbf{\textit{Objetivo: Aplicar y comprender propiedades de las medidas de dispersión}}
+\subsection{Definición de Medidas de Dispersión}
+Las medidas de tendencia central (como la media) no son suficientes por sí solas para describir un conjunto de datos, ya que no indican cuán dispersos o concentrados están los datos alrededor de ese centro. Consideremos dos conjuntos con la misma media $\bar{x}=0$:
+\[ A = \{-4, 4, -4, 4\} \quad (\text{Media } \bar{x}_A = 0) \]
+\[ B = \{7, 1, -6, -2\} \quad (\text{Media } \bar{x}_B = 0) \]
+Ambos tienen $\bar{x}=0$, pero los datos en el conjunto $A$ están menos dispersos (más concentrados alrededor de la media) que en el conjunto $B$. Las medidas de dispersión cuantifican esta variabilidad o "esparcimiento" de los datos.
 
-\subsection{Propiedades de la Varianza y Desviación Estándar}
-\begin{enumerate}
-	\item $\sigma \ge 0$. Es cero si y solo si todos los datos son iguales.
-	\item \textbf{Traslación:} Si se suma una constante $k$ a todos los datos, la varianza y la desviación estándar no cambian.
-	\item \textbf{Homotecia:} Si se multiplican todos los datos por una constante $k$, la varianza se multiplica por $k^2$ y la desviación estándar por $|k|$.
-	\item \textbf{Fórmula Computacional:} La varianza es la "media de los cuadrados menos el cuadrado de la media".
-	      \[ \sigma^2 = \overline{x^2} - (\bar{x})^2 \]
-\end{enumerate}
+\subsubsection{Rango (o Amplitud Total):}
+Se define como la diferencia entre el valor máximo y el valor mínimo de los datos.
+\[ Rango = x_{max} - x_{min} \]
+Es una medida simple pero muy sensible a valores extremos y no considera la distribución de los datos intermedios.
+
+\subsubsection{Desviación Media (DM):}
+Dada una variable $X$, con $n$ datos $x_1, x_2, \dots, x_n$ y media aritmética $\bar{x}$. Se define la desviación media como el promedio de las desviaciones absolutas de cada dato respecto a la media:
+\[ DM = \frac{|x_1-\bar{x}|+|x_2-\bar{x}|+\dots+|x_n-\bar{x}|}{n} = \frac{\sum_{i=1}^{n} |x_i - \bar{x}|}{n} \]
+Mide el promedio de cuánto se desvían los datos de la media, en valor absoluto.
+
+\subsubsection{\texorpdfstring{Varianza ($\sigma^2$ para población, $s^2$ para muestra)}{Varianza (sigma-cuadrado para población, s-cuadrado para muestra)}}
+Es el promedio de las desviaciones al cuadrado de cada dato respecto a la media. Es la medida de dispersión más utilizada junto con su raíz cuadrada (la desviación estándar).
+Para una \textbf{población} de $N$ datos:
+\[ \sigma^2 = \frac{\sum_{i=1}^{N} (x_i - \mu)^2}{N} \]
+Donde $\mu$ es la media poblacional. Si los datos $x_1, \dots, x_n$ constituyen toda la población (y $\bar{x}$ es su media):
+\[ \sigma^2 = \frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n} \]
+Para una \textbf{muestra} de $n$ datos, la varianza muestral \textit{insesgada} (estimador de $\sigma^2$) es:
+\[ s^2 = \frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n-1} \]
+(En este curso, si no se especifica, $\sigma^2$ con denominador $n$ se refiere a la varianza de un conjunto de datos específico, sea este una población o una muestra descrita como tal).
+
+\subsubsection{\texorpdfstring{Desviación Estándar (o Típica) ($\sigma$ para población, $s$ para muestra)}{Desviación Estándar (o Típica) (sigma para población, s para muestra)}}
+Es la raíz cuadrada positiva de la varianza. Tiene la ventaja de estar expresada en las mismas unidades que los datos originales.
+\[ \sigma = \sqrt{\sigma^2} = \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n}} \]
+\[ s = \sqrt{s^2} = \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n-1}} \]
+
+\subsubsection{\texorpdfstring{Propiedades de $\sigma$ y $\sigma^2$ (usando la definición con denominador $n$)}{Propiedades de sigma y sigma-cuadrado (usando la definición con denominador n)}}
+\begin{center}
+	\begin{enumerate}
+		\item $\sigma \ge 0$ y $\sigma^2 \ge 0$. Son siempre no negativas.
+		\item $\sigma = 0 \iff \sigma^2 = 0 \iff x_i = \bar{x}$ para todo $i \iff x_i = x_j$ para todo $i, j \in \{1, \dots, n\}$. La desviación estándar (y varianza) es cero si y sólo si todos los datos son iguales.
+		\item Si a todos los datos de un conjunto se les suma (o resta) una constante $k$ (transformación $y_i = x_i + k$), la nueva media es $\bar{y} = \bar{x} + k$, pero la varianza y la desviación estándar no cambian: $\sigma_y^2 = \sigma_x^2$ y $\sigma_y = \sigma_x$.
+		\item Si todos los datos de un conjunto se multiplican (o dividen) por una constante $k$ (transformación $y_i = k \cdot x_i$), la nueva media es $\bar{y} = k\bar{x}$, la nueva varianza es $\sigma_y^2 = k^2 \sigma_x^2$, y la nueva desviación estándar es $\sigma_y = |k| \sigma_x$.
+		\item Fórmula computacional (o abreviada) para la varianza: $\sigma^2 = \frac{\sum x_i^2}{n} - (\bar{x})^2 = \overline{x^2} - (\bar{x})^2$. Es decir, la varianza es la media de los cuadrados de los datos menos el cuadrado de la media de los datos.
+		\item $\sigma^2=\sigma \iff \sigma=0 \vee \sigma=1$. (Asumiendo que $\sigma$ es el valor numérico de la desviación estándar).
+		\item $\sigma^2 < \sigma \iff 0 < \sigma < 1$.
+		\item $\sigma^2 > \sigma \iff \sigma > 1$.
+	\end{enumerate}
+\end{center}
 \newpage
 
 % 16/04
-\section{Propiedades de la Varianza (Demostraciones)}
-\subsection{Fórmula Computacional de la Varianza}
-\begin{align*}
-	\sigma^2 & = \frac{\sum_{i=1}^{n} (x_i-\bar{x})^2}{n}                                     &  & \text{(Definición)}                            \\
-	         & = \frac{\sum (x_i^2 - 2x_i\bar{x} + \bar{x}^2)}{n}                             &  & \text{(Expandir binomio)}                      \\
-	         & = \frac{\sum x_i^2}{n} - \frac{\sum 2x_i\bar{x}}{n} + \frac{\sum \bar{x}^2}{n} &  & \text{(Distribuir)}                            \\
-	         & = \frac{\sum x_i^2}{n} - 2\bar{x} \frac{\sum x_i}{n} + \frac{n\bar{x}^2}{n}    &  & \text{(Extraer constantes de } \Sigma \text{)} \\
-	         & = \overline{x^2} - 2\bar{x}(\bar{x}) + \bar{x}^2                               &  & \text{(Usar definición de media)}              \\
-	         & = \overline{x^2} - (\bar{x})^2                                                 &  & \text{(Simplificar)}
-\end{align*}
-\textbf{L.Q.Q.D.}
+\section{Propiedades de la Varianza y Desviación Estándar}
+\subsection{Demostración de Propiedad por Multiplicación por Constante}
+Sea la variable $X$ con datos $x_1, \dots, x_n$, media $\bar{x}$ y varianza $\sigma_x^2$.
+Sea $Y$ una nueva variable tal que $y_i = k \cdot x_i$ para cada $i$.
+Sabemos que la media de $Y$ es $\bar{y} = k \cdot \bar{x}$.
+La varianza de $Y$, $\sigma_y^2$, se define como:
+\[\sigma_y^2=\frac{\sum_{i=1}^{n} (y_i - \bar{y})^2}{n} \]
+Sustituyendo $y_i = kx_i$ y $\bar{y} = k\bar{x}$:
+\[\sigma_y^2=\frac{\sum_{i=1}^{n} (kx_i - k\bar{x})^2}{n}\]
+Factorizando $k$ dentro del paréntesis al cuadrado:
+\[\sigma_y^2=\frac{\sum_{i=1}^{n} [k(x_i - \bar{x})]^2}{n}\]
+Aplicando la potencia al producto:
+\[\sigma_y^2=\frac{\sum_{i=1}^{n} k^2(x_i - \bar{x})^2}{n}\]
+Como $k^2$ es una constante para la sumatoria, puede salir fuera:
+\[\sigma_y^2=k^2 \cdot \frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n}\]
+Reconociendo que $\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n}$ es la definición de $\sigma_x^2$:
+\[\sigma_y^2=k^2 \cdot \sigma_x^2\]
+Tomando la raíz cuadrada positiva para obtener la desviación estándar (ya que $\sigma_x \ge 0$):
+\[\sigma_y = \sqrt{k^2 \cdot \sigma_x^2} = \sqrt{k^2} \cdot \sqrt{\sigma_x^2} = |k| \cdot \sigma_x\]
+L.Q.Q.D. (Lo Que Queríamos Demostrar)
+
+\subsection{Ejercicio}
+Dados los datos: -2, 0, 2, 4, 6. ($n=5$). Determinar:
+\begin{enumerate}
+	\item \texorpdfstring{$\bar{x}$}{x barra} \\
+	      \textit{Solución:} $\bar{x} = \frac{-2+0+2+4+6}{5} = \frac{10}{5} = 2$. \\
+	\item \texorpdfstring{$\sigma$ (desviación estándar)}{sigma (desviación estándar)} \\
+	      \textit{Solución:} Primero calculamos la varianza $\sigma^2$:
+	      \begin{align*} \sigma^2 &= \frac{\sum (x_i - \bar{x})^2}{n} \\ &= \frac{(-2-2)^2+(0-2)^2+(2-2)^2+(4-2)^2+(6-2)^2}{5} \\ &= \frac{(-4)^2+(-2)^2+(0)^2+(2)^2+(4)^2}{5} \\ &= \frac{16+4+0+4+16}{5} = \frac{40}{5} = 8 \end{align*}
+	      Ahora la desviación estándar: $\sigma = \sqrt{\sigma^2} = \sqrt{8} = \sqrt{4 \cdot 2} = 2\sqrt{2} \approx 2.828$. \\
+	\item \texorpdfstring{$\overline{x^2}$ (el promedio de los cuadrados de los datos)}{x-cuadrado barra (el promedio...)} \\
+	      \textit{Solución:} Los cuadrados de los datos son: $(-2)^2=4, 0^2=0, 2^2=4, 4^2=16, 6^2=36$.
+	      \[ \overline{x^2} = \frac{4+0+4+16+36}{5} = \frac{60}{5} = 12 \]
+	\item \texorpdfstring{Calcular $\overline{x^2}-(\bar{x})^2$ y comparar con $\sigma^2$}{Calcular x-cuadrado-barra - (x-barra)-cuadrado y comparar con sigma-cuadrado}. \\
+	      \textit{Solución:} $\overline{x^2}-(\bar{x})^2 = 12 - (2)^2 = 12 - 4 = 8$. \\
+	      Este resultado (8) es igual a la varianza $\sigma^2$ calculada en el punto 2, lo cual verifica la propiedad 5 (fórmula computacional de la varianza).
+\end{enumerate}
+\newpage
+
+\subsection{Demostración de la Fórmula Computacional de la Varianza}
+Partimos de la definición de varianza (usando denominador $n$):
+\[\sigma^2=\frac{\sum_{i=1}^{n} (x_i-\bar{x})^2}{n}\]
+Expandimos el binomio al cuadrado $(a-b)^2 = a^2 - 2ab + b^2$:
+\[\sigma^2=\frac{\sum_{i=1}^{n} (x_i^2 - 2x_i\bar{x} + (\bar{x})^2)}{n}\]
+Distribuimos la sumatoria y el denominador $n$:
+\[\sigma^2=\frac{\sum x_i^2}{n} - \frac{\sum 2x_i\bar{x}}{n} + \frac{\sum (\bar{x})^2}{n}\]
+En el segundo término, $2\bar{x}$ es una constante respecto a la suma $\sum x_i$. En el tercer término, $(\bar{x})^2$ es una constante, y $\sum_{i=1}^{n} (\bar{x})^2 = n(\bar{x})^2$.
+\[\sigma^2=\frac{\sum x_i^2}{n} - 2\bar{x} \frac{\sum x_i}{n} + \frac{n(\bar{x})^2}{n}\]
+Reconocemos que $\frac{\sum x_i^2}{n} = \overline{x^2}$ (la media de los cuadrados) y $\frac{\sum x_i}{n} = \bar{x}$ (la media):
+\[\sigma^2=\overline{x^2} - 2\bar{x} (\bar{x}) + (\bar{x})^2\]
+\[\sigma^2=\overline{x^2} - 2(\bar{x})^2 + (\bar{x})^2\]
+\[\sigma^2=\overline{x^2} - (\bar{x})^2\]
+L.Q.Q.D.
 \newpage
 
 % 23/04
-\section{Relación entre Varianza y Desviación Estándar}
-Dado que $\sigma = \sqrt{\sigma^2}$ y $\sigma \ge 0$:
+\section{Demostraciones sobre el Valor de la Desviación Estándar}
+\subsection{\texorpdfstring{Propiedades Relacionadas con el Valor de $\sigma$}{Propiedades Relacionadas con el Valor de sigma}}
+Recordar que $\sigma \ge 0$ por definición (es una raíz cuadrada positiva o cero).
+
+\subsubsection{Propiedad 6: \texorpdfstring{$\sigma^2 = \sigma \iff \sigma=0 \vee \sigma=1$}{sigma-cuadrado = sigma <=> sigma=0 v sigma=1}}
+Partimos de la ecuación:
+\[\sigma^2=\sigma \]
+Reordenamos para formar una ecuación cuadrática en $\sigma$:
+\[\sigma^2-\sigma=0 \]
+Factorizamos $\sigma$:
+\[\sigma(\sigma-1)=0 \]
+Esto implica que uno de los factores debe ser cero:
+\[\sigma=0 \quad \text{o} \quad \sigma-1=0 \]
+Por lo tanto:
+\[\sigma=0 \vee \sigma=1 \]
+L.Q.Q.D.
+
+\subsubsection{Propiedad 7: \texorpdfstring{$\sigma^2 < \sigma \iff 0 < \sigma < 1$}{sigma-cuadrado < sigma <=> 0 < sigma < 1}}
+Partimos de la desigualdad:
+\[\sigma^2 < \sigma \]
+Reordenamos:
+\[\sigma^2-\sigma < 0 \]
+Factorizamos:
+\[\sigma(\sigma-1) < 0 \]
+Para que el producto de dos factores sea negativo, uno debe ser positivo y el otro negativo. Analizamos los signos de $\sigma$ y $(\sigma-1)$:
+\begin{center}
+	\begin{tabular}{c|ccccc}
+		Intervalo                   & $(-\infty, 0)$ & $0$ & $(0, 1)$ & $1$ & $(1, +\infty)$ \\
+		\hline
+		Signo de $\sigma$           & $-$            & $0$ & $+$      & $+$ & $+$            \\
+		Signo de $(\sigma-1)$       & $-$            & $-$ & $-$      & $0$ & $+$            \\
+		\hline
+		Signo de $\sigma(\sigma-1)$ & $+$            & $0$ & $-$      & $0$ & $+$            \\
+	\end{tabular}
+\end{center}
+La desigualdad $\sigma(\sigma-1) < 0$ se cumple cuando $\sigma \in (0, 1)$.
+Dado que $\sigma \ge 0$ por definición, el intervalo $(-\infty, 0)$ no es relevante para la desviación estándar.
+Por lo tanto:
+\[0 < \sigma < 1 \]
+L.Q.Q.D.
+
+\subsubsection{Propiedad 8: \texorpdfstring{$\sigma^2 > \sigma \iff \sigma > 1$}{sigma-cuadrado > sigma <=> sigma > 1}}
+Partimos de la desigualdad:
+\[\sigma^2 > \sigma \]
+Reordenamos:
+\[\sigma^2-\sigma > 0 \]
+Factorizamos:
+\[\sigma(\sigma-1) > 0 \]
+Para que el producto de dos factores sea positivo, ambos deben ser positivos o ambos deben ser negativos. Usando la tabla de signos anterior:
 \begin{itemize}
-	\item $\sigma^2 = \sigma \iff \sigma(\sigma-1)=0 \iff \sigma=0 \vee \sigma=1$.
-	\item $\sigma^2 < \sigma \iff \sigma(\sigma-1)<0 \iff 0 < \sigma < 1$.
-	\item $\sigma^2 > \sigma \iff \sigma(\sigma-1)>0 \iff \sigma > 1$.
+	\item Ambos negativos: $\sigma < 0$ y $\sigma-1 < 0$ (es decir, $\sigma < 0$). No es posible para $\sigma$.
+	\item Ambos positivos: $\sigma > 0$ y $\sigma-1 > 0$ (es decir, $\sigma > 1$).
 \end{itemize}
+La desigualdad $\sigma(\sigma-1) > 0$ se cumple cuando $\sigma \in (-\infty, 0) \cup (1, +\infty)$.
+Considerando la restricción $\sigma \ge 0$:
+\begin{itemize}
+	\item Si $\sigma=0$, entonces $\sigma(\sigma-1)=0$, lo cual no satisface $0>0$.
+	\item El intervalo $(-\infty,0)$ no es válido para $\sigma$.
+	\item Nos queda el intervalo $(1, +\infty)$.
+\end{itemize}
+Por lo tanto:
+\[\sigma > 1\]
+L.Q.Q.D.
 \newpage
 
+
 % 30/05
-\section{Medidas de Posición}
-Dividen un conjunto de datos ordenado en partes iguales.
-\begin{itemize}
-	\item \textbf{Cuartiles ($Q_k$):} Tres valores que dividen los datos en cuatro partes iguales ($Q_1, Q_2, Q_3$). $Q_2$ es la mediana.
-	\item \textbf{Quintiles:} Cuatro valores que dividen los datos en cinco partes iguales.
-	\item \textbf{Deciles ($D_k$):} Nueve valores que dividen los datos en diez partes iguales.
-	\item \textbf{Percentiles ($P_k$):} 99 valores que dividen los datos en cien partes iguales. La posición del k-ésimo percentil es $\approx \frac{k \cdot n}{100}$.
-\end{itemize}
+\section{Medidas de Posición: Cuartiles, Quintiles, Deciles y Percentiles}
+Dado un conjunto de datos ordenados se define:
+
+\subsection{Cuartiles}
+Son tres valores que dividen en partes iguales a un conjunto de datos ordenados. Se denominan $Q_1$, $Q_2$ y $Q_3$.
+\textbf{Observacion:} $Q_2 = M_e$.
+
+\subsection{Quintiles}
+Son los 4 valores que dividen en partes iguales a los datos, que corresponden al 20\%, 40\%, 60\% y 80\%.
+
+\subsection{Deciles}
+Son los 9 valores que dividen en partes iguales a los datos, que corresponden al 10\%, 20\%, 30\%, 40\%, 50\%, 60\%, 70\%, 80\% y 90\%.
+
+
+\subsection{Percentiles}
+Son los 99 valores que dividen en partes iguales a los datos, que corresponden al 1\%, 2\%, 3\%, ... ,99\%.
+\[ P_i= \frac{i \cdot n}{100} \] Corresponde a la posición del percentil.
 \newpage
 
 % 11/06
 \section{Principios Fundamentales de la Combinatoria}
-\subsection{Técnicas de Conteo}
-Sean A y B dos sucesos, que pueden ocurrir de $a$ y $b$ maneras respectivamente.
+\subsection{Combinatoria}
+Son técnicas de conteo. Sean A y B dos sucesos, que pueden ocurrir de $a$ y $b$ maneras respectivamente.
 \begin{itemize}
-	\item \textbf{Principio Aditivo:} Si los sucesos no pueden ocurrir de manera simultánea (son mutuamente excluyentes), entonces hay $a+b$ maneras posibles de que ocurra $A$ o $B$.
-	\item \textbf{Principio Multiplicativo:} Si los sucesos ocurren uno a continuación del otro o de manera simultánea, entonces hay $a \cdot b$ formas de que ocurra $A$ y $B$.
+	\item \textbf{\textit{Principio Aditivo:}} Si los sucesos no pueden ocurrir de manera simultánea (son mutuamente excluyentes), entonces hay \textit{a+b} maneras posibles de que ocurra \textit{A o B}.
+	\item \textbf{\textit{Principio Multiplicativo:}} Si los sucesos ocurren uno a continuación del otro o de manera simultánea, entonces hay $a \cdot b$ formas de que ocurra \textit{A y B}.
 \end{itemize}
 
 \subsection{Ejercicios}
 \begin{enumerate}
-	\item \textbf{Problema:} Al lanzar una moneda y un dado, ¿cuántos resultados posibles hay? \\
-	      \textit{Solución:} Por el Principio Multiplicativo, el total de resultados es $2 \times 6 = 12$.
+	\item Al lanzar una moneda y un dado, ¿cuántos resultados posibles hay? \\
+	      \textit{Solución:}
+	      Lanzar una moneda y un dado son sucesos independientes que ocurren simultáneamente. Usamos el principio multiplicativo.
+	      \begin{itemize}
+		      \item Resultados de la moneda: 2 (cara, sello).
+		      \item Resultados del dado: 6 (1, 2, 3, 4, 5, 6).
+	      \end{itemize}
+	      Total de resultados: $2 \times 6 = 12$. \\
+	      \textbf{Respuesta: 12 resultados posibles.}
 
-	\item \textbf{Problema:} Si Pedro tiene 5 lápices de pasta, 4 de tinta y 3 de grafito, ¿de cuántas maneras puede elegir un lápiz? \\
-	      \textit{Solución:} Como las elecciones son excluyentes, por el Principio Aditivo, tiene $5 + 4 + 3 = 12$ maneras.
+	\item Si Pedro tiene 5 lápices de pasta, 4 de tinta y 3 de grafito, ¿de cuántas maneras puede elegir un lápiz para escribir? \\
+	      \textit{Solución:}
+	      Pedro debe elegir un lápiz de pasta \textbf{o} uno de tinta \textbf{o} uno de grafito. Son elecciones mutuamente excluyentes. Usamos el principio aditivo.
+	      \begin{itemize}
+		      \item Maneras de elegir un lápiz de pasta: 5.
+		      \item Maneras de elegir un lápiz de tinta: 4.
+		      \item Maneras de elegir un lápiz de grafito: 3.
+	      \end{itemize}
+	      Total de maneras: $5 + 4 + 3 = 12$. \\
+	      \textbf{Respuesta: 12 maneras distintas.}
+
+	\item En un local se puede elegir un combo con las siguientes opciones disponibles: 5 tipos de hamburguesas, 4 bebidas distintas o bien un jugo de 2 sabores distintos. Si el combo consiste en una hamburguesa y una bebida/jugo, ¿de cuántas maneras distintas se puede elegir? \\
+	      \textit{Solución:}
+	      La elección del combo tiene dos etapas: elegir una hamburguesa \textbf{y} elegir un líquido.
+	      \begin{itemize}
+		      \item \textbf{Etapa 1 (Hamburguesa):} Hay 5 opciones.
+		      \item \textbf{Etapa 2 (Líquido):} Se puede elegir una bebida \textbf{o} un jugo. Esta es una sub-decisión que usa el principio aditivo.
+		            \begin{itemize}
+			            \item Opciones de bebida: 4.
+			            \item Opciones de jugo: 2.
+			            \item Total de opciones de líquido: $4 + 2 = 6$.
+		            \end{itemize}
+	      \end{itemize}
+	      Para formar el combo, se aplica el principio multiplicativo entre la Etapa 1 y la Etapa 2.
+	      Total de combos: $5 \text{ (hamburguesas)} \times 6 \text{ (líquidos)} = 30$. \\
+	      \textbf{Respuesta: Se puede elegir de 30 maneras distintas.}
 \end{enumerate}
 \newpage
 
+
 % 07/07
 \section{Permutaciones}
+\textbf{\textit{\large{Diferenciar distintas Permutaciones}}}
+\subsection{Principios Básicos de Conteo (Repaso)}
+Sean dos eventos A y B, que pueden ocurrir de $a$ y $b$ maneras respectivamente.
+\begin{itemize}
+	\item Principio Aditivo: $a + b$ \textbf{ (Eventos Excluyentes)}
+	\item Principio Multiplicativo: $a \cdot b$ \textbf{ (Eventos Simultáneos o Consecutivos)}
+\end{itemize}
+
 \subsubsection{Permutación simple} Corresponde a las distintas maneras en que se pueden ordenar $n$ objetos distintos.
 \[ P_n = n! \]
-\textit{Ejemplo: $P_4 = 4! = 24$}
+\textit{Ejemplo: $P_4 = 4! = 4 \cdot 3 \cdot 2 \cdot 1 = 24$}
 
-\subsubsection{Permutación con repetición} Si se tienen $n$ elementos donde un elemento se repite $r_1$ veces, otro $r_2$ veces, etc., el número de ordenaciones es:
+\subsubsection{Permutación con repetición} Si tienes $n$ elementos en total, donde el primer elemento se repite $r_1$ veces, el segundo $r_2$ veces, y así sucesivamente, el número de permutaciones distintas es:
 \[ P_{r_1, r_2, \dots}^n = \frac{n!}{r_1! \cdot r_2! \cdot \dots} \]
 
-\subsubsection{Permutación Circular} El número de maneras en que se pueden ordenar $n$ elementos alrededor de un círculo es:
+\subsubsection{Permutación Circular} Corresponde al número de maneras en que se pueden ordenar $n$ elementos alrededor de un círculo.
 \[ PC_n = (n-1)! \]
 
 \subsection{Ejercicios}
 \begin{enumerate}[label=\alph*.)]
-	\item ¿De cuántas maneras se pueden ordenar las letras de la palabra \textbf{LEMUR}?
-	      \[ P_5 = 5! = 120 \]
+	\item ¿De cuántas maneras se pueden ordenar las letras de la palabra \textbf{LEMUR} para formar otra palabra (con o sin sentido)?
+	      \[ P_5 = 5! = 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 120 \]
 
-	\item ¿De cuántas maneras se pueden ordenar las letras de \textbf{ARROYO}? ¿Y \textbf{CARRERA}? \\
+	\item ¿Y para la palabra \textbf{ARROYO}? ¿Y \textbf{CARRERA}? \\
 	      \begin{minipage}[t]{0.45\textwidth}
 		      \centering
-		      \textbf{ARROYO:} (6 letras; R:2, O:2)
+		      \textbf{ARROYO:} (6 letras, R se repite 2 veces, O se repite 2 veces)
 		      \[ P_{2, 2}^6 = \frac{6!}{2! \cdot 2!} = \frac{720}{4} = 180 \]
 	      \end{minipage}
 	      \hfill
 	      \begin{minipage}[t]{0.45\textwidth}
 		      \centering
-		      \textbf{CARRERA:} (7 letras; A:2, R:3)
-		      \[ P_{2,3}^7 = \frac{7!}{2! \cdot 3!} = \frac{5040}{12} = 420 \]
+		      \textbf{CARRERA:} (7 letras, A se repite 2 veces, R se repite 3 veces)
+		      \[ P_{2,3}^7 = \frac{7!}{2! \cdot 3!} = \frac{5040}{2 \cdot 6} = 420 \]
 	      \end{minipage}
-	      \vspace{1cm}
+
+	      \vspace{1cm} % Espacio vertical para separar
 
 	\item ¿De cuántas maneras se pueden sentar 4 personas en una mesa redonda?
 	      \[ PC_4 = (4-1)! = 3! = 6 \]
@@ -383,36 +743,70 @@ Sean A y B dos sucesos, que pueden ocurrir de $a$ y $b$ maneras respectivamente.
 % 04/08
 \section{Variaciones y Combinaciones}
 \subsection{Variación (o Arreglo)}
-Corresponde al número de ordenaciones de $k$ elementos seleccionados de un total de $n$, donde el \textbf{orden importa}.
-\[V_k^n = \frac{n!}{(n - k)!} \]
+Corresponde al número de ordenaciones de $k$ elementos seleccionados de un total de $n$ elementos, donde el orden importa ($k \le n$).
+\[V_k^n = n \cdot (n - 1) \cdot \dots \cdot (n - k + 1) = \frac{n!}{(n - k)!} \]
 \subsubsection*{Con repetición}
+El número de arreglos de $k$ elementos tomados de $n$, con repetición permitida.
 \[VR_k^n = n^k \]
 
-\subsection{Combinaciones} Grupos de $k$ elementos tomados de un total de $n$, donde el \textbf{orden no importa}.
-\[C_k^n = \binom{n}{k} = \frac{n!}{(n - k)! \cdot k!} \]
+\subsection{Combinaciones} Corresponde a la cantidad de grupos (o subconjuntos) de $k$ elementos que se pueden formar de un total de $n$ elementos, donde el orden no importa.
+\[C_k^n = \binom{n}{k} = \frac{V_k^n}{k!} = \frac{n!}{(n - k)! \cdot k!} \]
+
+\subsection*{¿Cómo Diferenciar?}
+Sigue este diagrama de flujo mental:
+\begin{enumerate}[label=\bfseries Paso \arabic*:, wide]
+	\item \textbf{¿Importa el orden de los elementos seleccionados?}
+	      \begin{itemize}
+		      \item[\bfseries Sí $\rightarrow$] \textbf{PERMUTACIÓN / VARIACIÓN}
+		            \begin{itemize}
+			            \item \textbf{¿Se usan TODOS los elementos ($k=n$)? $\rightarrow$ PERMUTACIÓN}
+			                  \begin{itemize}
+				                  \item \textbf{Lineal:} $P_n = n!$ (con repetición: $P_{n_1,\dots}^n$)
+				                  \item \textbf{Circular:} $PC_n = (n-1)!$
+			                  \end{itemize}
+			            \item \textbf{¿Se elige un SUBCONJUNTO ($k<n$)? $\rightarrow$ VARIACIÓN}
+			                  \begin{itemize}
+				                  \item \textbf{Sin repetición:} $V_k^n = \frac{n!}{(n-k)!}$
+				                  \item \textbf{Con repetición:} $VR_k^n = n^k$
+			                  \end{itemize}
+		            \end{itemize}
+		      \item[\bfseries No $\rightarrow$] \textbf{COMBINACIÓN}
+		            \begin{itemize}
+			            \item \textbf{Sin repetición:} $C_k^n = \binom{n}{k}$
+			                  % \item \textbf{Con repetición:} $CR_k^n = \binom{n+k-1}{k}$ (Se omite por brevedad)
+		            \end{itemize}
+	      \end{itemize}
+\end{enumerate}
 
 \subsection*{Ejercicios Resueltos}
 \begin{enumerate}[leftmargin=*,label=\arabic*.]
-	\item \textbf{¿De cuántas maneras se puede formar el podio (1er, 2do, 3er lugar) en una carrera de 15 estudiantes?}
+	\item \textbf{En una carrera de 15 estudiantes, ¿de cuántas maneras se puede formar el podio (1er, 2do, 3er lugar)?}
 	      \begin{itemize}
 		      \item \textbf{Razonamiento:} El orden importa. Se eligen 3 de 15. Es una **Variación simple**.
 		      \item \textbf{Cálculo:} $V_3^{15} = 15 \cdot 14 \cdot 13 = 2730$ maneras.
 	      \end{itemize}
-	\item \textbf{¿Cuántas claves de 4 dígitos se pueden formar con los números del 0 al 9?}
+
+	\item \textbf{¿De cuántas maneras se puede formar una clave numérica de 4 dígitos?}
 	      \begin{itemize}
-		      \item \textbf{Razonamiento:} El orden importa y se puede repetir. Es **Variación con repetición**.
+		      \item \textbf{Razonamiento:} El orden importa y los dígitos se pueden repetir (0-9). Es una **Variación con repetición**.
 		      \item \textbf{Cálculo:} $VR_4^{10} = 10^4 = 10000$ claves.
 	      \end{itemize}
 
-	\item \textbf{En un curso de 40 estudiantes, ¿cuántas directivas (Presidente, Vice, Tesorero) se pueden formar?}
+	\item \textbf{¿Y si no se pueden repetir los dígitos?}
 	      \begin{itemize}
-		      \item \textbf{Razonamiento:} Los roles implican orden. Es **Variación simple**.
+		      \item \textbf{Razonamiento:} El orden importa, pero sin repetición. Es una **Variación simple**.
+		      \item \textbf{Cálculo:} $V_4^{10} = 10 \cdot 9 \cdot 8 \cdot 7 = 5040$ claves.
+	      \end{itemize}
+
+	\item \textbf{En un curso de 40 estudiantes, ¿cuántas directivas (Presidente, Vicepresidente, Tesorero) se pueden formar?}
+	      \begin{itemize}
+		      \item \textbf{Razonamiento:} Los roles hacen que el orden importe. Es una **Variación simple**.
 		      \item \textbf{Cálculo:} $V_3^{40} = 40 \cdot 39 \cdot 38 = 59280$ directivas.
 	      \end{itemize}
 
 	\item \textbf{En una asamblea de 100 personas, ¿cuántas comisiones de 3 personas se pueden formar?}
 	      \begin{itemize}
-		      \item \textbf{Razonamiento:} Sin roles, el orden no importa. Es **Combinación simple**.
+		      \item \textbf{Razonamiento:} En una comisión no hay jerarquía, el orden no importa. Es una **Combinación simple**.
 		      \item \textbf{Cálculo:} $C_3^{100} = \binom{100}{3} = \frac{100 \cdot 99 \cdot 98}{3 \cdot 2 \cdot 1} = 161700$ comisiones.
 	      \end{itemize}
 \end{enumerate}
@@ -421,140 +815,562 @@ Corresponde al número de ordenaciones de $k$ elementos seleccionados de un tota
 % 11/08
 \section{Propiedades de Combinatoria y Triángulo de Pascal}
 \subsection{Propiedades de los Números Combinatorios}
+Los números combinatorios, $\binom{n}{k}$, tienen propiedades que simplifican cálculos.
 \begin{enumerate}
-	\item \textbf{Simetría:} $\binom{n}{k} = \binom{n}{n-k}$.
-	\item \textbf{Identidad de Pascal:} $\binom{n}{k} + \binom{n}{k+1} = \binom{n+1}{k+1}$.
+	\item \textbf{Combinaciones de los extremos:}
+	      \[ \binom{n}{n} = 1 \quad \text{y} \quad \binom{n}{0} = 1 \]
+
+	\item \textbf{Propiedad de simetría:} Elegir $k$ elementos es lo mismo que elegir los $n-k$ que se dejarán fuera.
+	      \[ \binom{n}{k} = \binom{n}{n-k} \quad \text{para } 0 \le k \le n \]
+
+	\item \textbf{Identidad de Pascal:} Es la base del Triángulo de Pascal.
+	      \[ \binom{n}{k} + \binom{n}{k+1} = \binom{n+1}{k+1} \]
 \end{enumerate}
-\subsection{Teorema del Binomio}
-\[ (a+b)^n = \sum_{k=0}^{n} \binom{n}{k} a^{n-k} b^k \]
+
+\subsection{Demostraciones}
+\subsubsection{\texorpdfstring{Propiedad 1: $\binom{n}{n} = \binom{n}{0} = 1$}{Propiedad 1: C(n,n) = C(n,0) = 1}}
+La demostración se basa en la aplicación directa de la fórmula de la combinación, $\binom{n}{k} = \frac{n!}{k!(n-k)!}$, y en la definición matemática de que $0! = 1$.
+
+\vspace{1em}
+\noindent \textbf{Caso 1: $\binom{n}{n}$}
+\[ \binom{n}{n} = \frac{n!}{(n-n)! \cdot n!} = \frac{n!}{0! \cdot n!} = \frac{1}{0!} = 1 \]
+\textit{Interpretación: Solo hay una forma de elegir n elementos de un conjunto de n (es decir, tomarlos todos).}
+
+\vspace{1em}
+\noindent \textbf{Caso 2: $\binom{n}{0}$}
+\[ \binom{n}{0} = \frac{n!}{(n-0)! \cdot 0!} = \frac{n!}{n! \cdot 0!} = \frac{1}{0!} = 1 \]
+\textit{Interpretación: Solo hay una forma de elegir 0 elementos de un conjunto (es decir, no tomar ninguno).}
+
+\subsubsection{\texorpdfstring{Propiedad 2 (Simetría): $\binom{n}{k} = \binom{n}{n-k}$}{Propiedad 2 (Simetría): C(n,k) = C(n,n-k)}}
+Partimos de la definición de $\binom{n}{n-k}$:
+\[ \binom{n}{n-k} = \frac{n!}{(n-k)! \cdot (n-(n-k))!} = \frac{n!}{(n-k)! \cdot k!} \]
+Como el producto en el denominador es conmutativo, esta expresión es idéntica a la de $\binom{n}{k}$.
+
+\subsection{Triángulo de Pascal y Binomio de Newton}
+El **Triángulo de Pascal** es una disposición de números donde cada elemento es la suma de los dos que tiene encima. Los números en la fila $n$ (comenzando desde $n=0$) corresponden a los coeficientes de la expansión de $(a+b)^n$.
+
+El **Teorema del Binomio** formaliza esta relación:
+\[ (a+b)^n = \sum_{k=0}^{n} \binom{n}{k} a^{n-k} b^k = \binom{n}{0}a^n + \binom{n}{1}a^{n-1}b + \dots + \binom{n}{n}b^n \]
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.5\textwidth]{pascal}
+	\caption{El Triángulo de Pascal, donde cada fila $n$ corresponde a los coeficientes de $(a+b)^n$.}
+	\label{fig:pascaltrig}
+\end{figure}
 
 \subsection{Conjunto Potencia}
-El número de subconjuntos de un conjunto con $n$ elementos es $2^n$.
-\[ |P(A)| = \sum_{k=0}^{n} \binom{n}{k} = 2^n \]
+El **Conjunto Potencia** de un conjunto $A$, denotado $P(A)$, es el conjunto de \textbf{todos los subconjuntos} de $A$. Si $A$ tiene $n$ elementos, la cantidad total de subconjuntos es la suma de todas las combinaciones posibles (elegir 0, elegir 1, ..., elegir n):
+\[ |P(A)| = \sum_{k=0}^{n} \binom{n}{k} = \binom{n}{0} + \binom{n}{1} + \dots + \binom{n}{n} = 2^n \]
 
 \subsection{Ejercicios}
 \begin{enumerate}
-	\item \textbf{¿Cuántos jugos de al menos 2 frutas se pueden hacer con 5 frutas distintas?}
-	      \textit{Solución:} Sumamos los jugos de 2, 3, 4 y 5 frutas.
-	      \[ C_2^5 + C_3^5 + C_4^5 + C_5^5 = 10 + 10 + 5 + 1 = 26 \text{ jugos.} \]
+	\item \textbf{¿De cuántas maneras se pueden sentar 5 personas en una mesa redonda?} \\
+	      \textit{Solución:} Es una permutación circular. $PC_5 = (5-1)! = 4! = 24$ maneras.
+
+	\item \textbf{Con 5 frutas distintas, ¿cuántos jugos se pueden hacer...}
+	      \begin{enumerate}
+		      \item \textbf{de dos frutas?} \\
+		            \textit{Solución:} $C_2^5 = \binom{5}{2} = \frac{5 \cdot 4}{2} = 10$ jugos.
+		      \item \textbf{de al menos 2 frutas?} \\
+		            \textit{Solución:} Sumamos los jugos de 2, 3, 4 y 5 frutas. \\
+		            $C_2^5 + C_3^5 + C_4^5 + C_5^5 = 10 + 10 + 5 + 1 = 26$ jugos.
+	      \end{enumerate}
 \end{enumerate}
+%\begin{figure}[h!]
+%	\centering
+%	\includegraphics[width=0.75\textwidth]{Gat}
+%	\caption{Gatito para hacer bonito el apunte}
+%	\label{fig:Gat}
+%\end{figure}
 \newpage
 
 % 18/08
-\section{Repaso y Ejercicios de Aplicación de Combinatoria}
-\subsection{Ejercicios Resueltos}
+\section{Repaso y Ejercicios de Aplicación}
+\subsection{Ejercicios Resueltos de Combinatoria}
 \begin{enumerate}
 	\item \textbf{Con las cifras $\{1, 2, 3, 4, 5\}$, ¿cuántos números de 5 cifras, sin repetición, y menores que 54,000 se pueden formar?}
-	      \textit{Solución:}
+	      \textit{Solución:} Dividimos el problema en dos casos mutuamente excluyentes.
 	      \begin{itemize}
-		      \item \textbf{Caso 1 (Empieza en 1, 2, 3 o 4):} $4 \times 4! = 96$ números.
-		      \item \textbf{Caso 2 (Empieza en 5):} El segundo dígito debe ser 1, 2 o 3. $1 \times 3 \times 3! = 18$ números.
+		      \item \textbf{Caso 1: El número empieza en 1, 2, 3 o 4.} (4 opciones). Las 4 cifras restantes se permutan.
+		            \[ 4 \times P_4 = 4 \times 4! = 4 \times 24 = 96 \text{ números.} \]
+		      \item \textbf{Caso 2: El número empieza en 5.} (1 opción). La segunda cifra debe ser 1, 2 o 3 (3 opciones). Las 3 cifras restantes se permutan.
+		            \[ 1 \times 3 \times P_3 = 1 \times 3 \times 3! = 18 \text{ números.} \]
 	      \end{itemize}
-	      \textbf{Total:} $96 + 18 = 114$ números.
+	      \textbf{Total:} Como los casos son excluyentes, se suman: $96 + 18 = 114$ números.
 
-	\item \textbf{Con 4 oficiales y 8 soldados, ¿cuántos grupos de 6 se forman con como mínimo un oficial?}
-	      \begin{itemize}
-		      \item \textit{Solución:} Es el total de grupos menos los grupos formados solo por soldados.
-		            \[ \binom{12}{6} - \binom{8}{6} = 924 - 28 = 896 \text{ grupos.} \]
-	      \end{itemize}
+	\item \textbf{Con 4 oficiales y 8 soldados, ¿cuántos grupos de 6 miembros se pueden formar si debe haber...}
+	      \begin{enumerate}
+		      \item \textbf{...exactamente un oficial?} \\
+		            \textit{Solución:} Se elige 1 de 4 oficiales \textbf{Y} 5 de 8 soldados.
+		            \[ \binom{4}{1} \times \binom{8}{5} = 4 \times 56 = 224 \text{ grupos.} \]
+		      \item \textbf{...como mínimo un oficial?} \\
+		            \textit{Solución:} Es el total de grupos posibles menos los grupos sin oficiales (solo soldados).
+		            \[ \text{Total} = \binom{12}{6} - \binom{8}{6} = 924 - 28 = 896 \text{ grupos.} \]
+	      \end{enumerate}
+
+	\item \textbf{¿De cuántas maneras pueden 10 libros colocarse en un estante si 2 obras son de 3 volúmenes cada una y 2 son de 2 volúmenes cada una, y los volúmenes de cada obra no deben separarse?}
+	      \textit{Solución:} Se consideran las 4 obras como 4 "bloques" que se pueden permutar. Luego, se permutan los volúmenes dentro de cada bloque.
+	      \[ P_4 \times (P_3 \times P_3 \times P_2 \times P_2) = 4! \times (3! \cdot 3! \cdot 2! \cdot 2!) = 24 \times (6 \cdot 6 \cdot 2 \cdot 2) = 3,456 \text{ formas.} \]
+
+	\item \textbf{Con las letras de la expresión \texorpdfstring{$a^3b^2c^4$}{a3b2c4} desarrollada (`aaabbcccc`), ¿cuántas ordenaciones se pueden formar?}
+	      \textit{Solución:} Es una permutación con repetición de 9 elementos.
+	      \[ P_{3,2,4}^{9} = \frac{9!}{3! \cdot 2! \cdot 4!} = \frac{362,880}{6 \cdot 2 \cdot 24} = 1,260 \text{ ordenaciones.} \]
 \end{enumerate}
 \newpage
 
+
 % 27/08
 \section{Aplicaciones de Combinatoria: Diagonales de un Polígono}
-\subsection{Problema}
-Encontrar una fórmula para el número de diagonales de un polígono de $n$ lados y aplicarla para $n=20$ y $D=65$.
+\subsection{Ejercicios}
+\begin{enumerate}
+	\item Determinar la cantidad de diagonales de un polígono de 20 lados.
+	\item Determinar una expresión para la cantidad de diagonales de un polígono de n lados.
+	\item Si un polígono tiene 65 diagonales, ¿cuántos lados tiene?
+\end{enumerate}
 
-\subsection{Solución}
-Una diagonal une 2 vértices no consecutivos. El total de líneas que unen 2 vértices es $\binom{n}{2}$. A esto le restamos los $n$ lados.
-\[ D(n) = \binom{n}{2} - n = \frac{n(n-3)}{2} \]
-\begin{itemize}
-	\item \textbf{Para n=20:} $D(20) = \frac{20(17)}{2} = 170$.
-	\item \textbf{Para D=65:} $\frac{n(n-3)}{2} = 65 \implies n^2 - 3n - 130 = 0$. Factorizando, $(n-13)(n+10)=0$. Solución válida: $n=13$.
-\end{itemize}
+\subsection{Soluciones}
+\begin{enumerate}
+	\item \textbf{Deducción de la fórmula y cálculo para 20 lados.} \\
+	      \textit{Solución:} Un polígono de $n$ lados tiene $n$ vértices. Una diagonal une dos vértices no consecutivos.
+	      \begin{itemize}
+		      \item El número total de líneas que se pueden trazar uniendo 2 vértices es una combinación:
+		            \[ \text{Total de líneas} = \binom{n}{2} = \frac{n(n-1)}{2} \]
+		      \item Este total incluye las diagonales y los $n$ lados. Para obtener solo las diagonales, restamos los lados.
+	      \end{itemize}
+	      La fórmula para el número de diagonales ($D$) es:
+	      \[ D(n) = \binom{n}{2} - n = \frac{n(n-1)}{2} - n = \frac{n^2 - n - 2n}{2} = \frac{n(n-3)}{2} \]
+	      Para un polígono de 20 lados ($n=20$):
+	      \[ D(20) = \frac{20(20-3)}{2} = 10 \cdot 17 = 170 \]
+	      \textbf{Respuesta:} 170 diagonales.
+
+	\item \textbf{Expresión para $n$ lados.} \\
+	      \textit{Solución:} Como se dedujo arriba, la expresión es $D(n) = \frac{n(n-3)}{2}$.
+
+	\item \textbf{Polígono con 65 diagonales.} \\
+	      \textit{Solución:} Igualamos la fórmula a 65 y despejamos $n$.
+	      \[ \frac{n(n-3)}{2} = 65 \implies n^2 - 3n = 130 \implies n^2 - 3n - 130 = 0 \]
+	      Factorizando la ecuación cuadrática:
+	      \[ (n-13)(n+10) = 0 \]
+	      Las soluciones son $n_1 = 13$ y $n_2 = -10$. Como el número de lados debe ser positivo, la respuesta es 13.
+
+	      \textbf{Respuesta:} El polígono tiene 13 lados.
+\end{enumerate}
+
 \newpage
 
 % 29/08
 \section{Muestreo e Introducción a la Probabilidad}
 \subsection{El Promedio de las Medias Muestrales}
-\textbf{Teorema:} La media de las medias de todas las muestras posibles de tamaño $k$ tomadas de una población de tamaño $n$ es igual a la media de la población ($\mu_{\bar{x}} = \mu$). Esto demuestra que la media muestral ($\bar{x}$) es un \textbf{estimador insesgado} de la media poblacional ($\mu$).
+En esta sección se demuestra una propiedad fundamental de la estadística inferencial: la media de todas las medias muestrales posibles es igual a la media de la población.
+
+\subsubsection{Ejemplo Numérico Intuitivo}
+Suponga que se tiene una población de 3 elementos: $\{6, 12, 18\}$.
+\begin{enumerate}
+	\item \textbf{Determine todas las muestras posibles de tamaño 2 (sin orden y sin repetición).} \\
+	      \textit{Solución:} Las muestras son $\{6, 12\}$, $\{6, 18\}$ y $\{12, 18\}$. Hay $\binom{3}{2}=3$ muestras posibles.
+
+	\item \textbf{Determine el promedio de cada muestra.} \\
+	      \textit{Solución:} \\
+	      $\bar{x}_1 = \frac{6+12}{2} = 9$ \\
+	      $\bar{x}_2 = \frac{6+18}{2} = 12$ \\
+	      $\bar{x}_3 = \frac{12+18}{2} = 15$
+
+	\item \textbf{Determine el promedio de los promedios muestrales y compárelo con el promedio de la población.} \\
+	      \textit{Solución:} \\
+	      El promedio de los promedios muestrales es: $\frac{9+12+15}{3} = \frac{36}{3} = 12$. \\
+	      El promedio de la población original es: $\frac{6+12+18}{3} = \frac{36}{3} = 12$.
+
+	      \textbf{Conclusión:} Ambos promedios son iguales.
+\end{enumerate}
+
+\subsubsection{Generalización y Demostración Formal}
+Sea una población de $n$ elementos $\{x_1, x_2, \dots, x_n\}$ y escojamos todas las muestras posibles de tamaño $k$. El número total de muestras es $\binom{n}{k}$.
+
+El promedio de todas las medias muestrales, denotado $\mu_{\bar{x}}$, se calcula como:
+\[ \mu_{\bar{x}} = \frac{\sum \bar{x}_i}{\binom{n}{k}} \]
+Para realizar esta suma, nos preguntamos: ¿cuántas veces aparece cada elemento $x_i$ en el conjunto de todas las muestras? Si elegimos un $x_i$, debemos escoger los $k-1$ elementos restantes de los $n-1$ elementos disponibles. Por lo tanto, cada $x_i$ aparece en $\binom{n-1}{k-1}$ muestras.
+
+La suma de todos los valores en todas las muestras es: $\binom{n-1}{k-1} \sum_{i=1}^{n} x_i$.
+La suma de todos los promedios muestrales es $\frac{1}{k}$ de esa cantidad.
+\begin{align*}
+	\mu_{\bar{x}} & = \frac{\frac{1}{k} \binom{n-1}{k-1} \sum_{i=1}^{n} x_i}{\binom{n}{k}}                         \\
+	              & = \frac{\binom{n-1}{k-1}}{\binom{n}{k}} \cdot \frac{1}{k} \sum_{i=1}^{n} x_i                   \\
+	              & = \frac{\frac{(n-1)!}{(k-1)!(n-k)!}}{\frac{n!}{k!(n-k)!}} \cdot \frac{1}{k} \sum_{i=1}^{n} x_i \\
+	              & = \frac{(n-1)! \cdot k!(n-k)!}{(k-1)!(n-k)! \cdot n!} \cdot \frac{1}{k} \sum_{i=1}^{n} x_i     \\
+	              & = \frac{k}{n} \cdot \frac{1}{k} \sum_{i=1}^{n} x_i = \frac{1}{n} \sum_{i=1}^{n} x_i            \\
+	              & = \bar{x}_{\text{población}}
+\end{align*}
+\textbf{Conclusión:} Queda demostrado que el promedio de las medias de todas las muestras posibles de tamaño $k$ es igual al promedio de la población. Esto significa que la media muestral es un \textbf{estimador insesgado} de la media poblacional.
+
+\subsubsection{Implicaciones para la Varianza y la Inferencia}
+Esta relación no se cumple de la misma forma para la varianza o la desviación estándar. Si calculamos la varianza de cada muestra usando $n$ en el denominador, el promedio de estas varianzas no será igual a la varianza de la población.
+
+Para corregir esto, en estadística inferencial se utiliza la \textbf{varianza muestral insesgada}, que divide por $k-1$ (el tamaño de la muestra menos uno) en lugar de $k$:
+\[ s^2 = \frac{\sum_{i=1}^{k} (x_i - \bar{x})^2}{k-1} \]
+Este factor de corrección (conocido como corrección de Bessel) asegura que la varianza muestral sea un estimador insesgado de la varianza poblacional.
 
 \subsection{Conceptos Fundamentales de Probabilidad}
+
+\subsubsection{Definiciones Básicas}
 \begin{itemize}
-	\item \textbf{Experimento aleatorio:} Proceso de resultado incierto.
-	\item \textbf{Espacio Muestral ($\Omega$):} Conjunto de todos los resultados posibles.
-	\item \textbf{Evento o Suceso (A):} Subconjunto de $\Omega$.
+	\item \textbf{Experimento aleatorio:} Es un experimento cuyo resultado no se puede predecir con certeza, aunque se conozcan todos los resultados posibles.
+	\item \textbf{Espacio Muestral ($\Omega$):} Es el conjunto de todos los resultados posibles de un experimento aleatorio.
+	\item \textbf{Evento o Suceso (A):} Es un subconjunto del espacio muestral. Es decir, uno o más de los posibles resultados.
 \end{itemize}
 
-\subsection{Regla de Laplace}
-Para experimentos con resultados equiprobables:
+\subsubsection{Regla de Laplace}
+La probabilidad de un evento A, $P(A)$, es una medida del grado de certidumbre de que dicho evento ocurra.
+La Regla de Laplace se aplica a experimentos aleatorios donde \textbf{todos sus resultados son equiprobables} (tienen la misma probabilidad de ocurrir). En este caso, la probabilidad de un evento A se define como:
 \[ P(A) = \frac{\text{Número de casos favorables}}{\text{Número de casos totales}} = \frac{\#A}{\#\Omega} \]
+
+\subsubsection{Ejemplos Resueltos}
+\begin{enumerate}
+	\item \textbf{Experimento Aleatorio:} Lanzar un dado de 6 caras.
+	      \begin{itemize}
+		      \item \textbf{Espacio Muestral:} $\Omega = \{1, 2, 3, 4, 5, 6\}$, por lo tanto $\#\Omega = 6$.
+		      \item \textbf{Evento A:} Que el resultado sea un número primo.
+		      \item \textbf{Casos Favorables:} $A = \{2, 3, 5\}$, por lo tanto $\#A = 3$.
+		      \item \textbf{Probabilidad:} $P(A) = \frac{\#A}{\#\Omega} = \frac{3}{6} = \frac{1}{2}$.
+	      \end{itemize}
+
+	\item \textbf{Experimento Aleatorio:} Lanzar dos dados y registrar la suma de las caras.
+	      \begin{itemize}
+		      \item \textbf{Espacio Muestral:} Hay $6 \times 6 = 36$ resultados posibles. El valor de la suma va desde 2 hasta 12. $\#\Omega = 36$.
+		      \item \textbf{Evento A:} Que la suma sea igual a 6. \\
+		            \textit{Casos favorables:} $\{(1,5), (2,4), (3,3), (4,2), (5,1)\}$. $\#A=5$. \\
+		            \textit{Probabilidad:} $P(A) = \frac{5}{36}$.
+		      \item \textbf{Evento B:} Que la suma sea menor o igual a 6. \\
+		            \textit{Casos favorables:} Suma=2:\{(1,1)\}; Suma=3:\{(1,2),(2,1)\}; Suma=4:\{(1,3),(2,2),(3,1)\}; Suma=5:\{(1,4),(2,3),(3,2),(4,1)\}; Suma=6: (ya contados, son 5). \\
+		            Total casos favorables: $1+2+3+4+5=15$. $\#B=15$. \\
+		            \textit{Probabilidad:} $P(B) = \frac{15}{36} = \frac{5}{12}$.
+		      \item \textbf{Evento C:} Que la suma sea mayor que 6. \\
+		            \textit{Solución:} Este es el evento complementario al evento B. Podemos calcularlo como $1 - P(B)$ o contando los casos.
+		            $\#C = \#\Omega - \#B = 36 - 15 = 21$. \\
+		            \textit{Probabilidad:} $P(C) = \frac{21}{36} = \frac{7}{12}$.
+	      \end{itemize}
+\end{enumerate}
 \newpage
+
+
 
 % 01/09
 \section{Fundamentos Axiomáticos de la Probabilidad}
-\subsection{Axiomas de Kolmogorov (1933)}
-Una función de probabilidad $P$ debe cumplir:
-\begin{enumerate}[label=\textbf{A\arabic*:}]
-	\item \textbf{No negatividad:} $P(A) \ge 0$ para todo evento $A$.
-	\item \textbf{Suceso seguro:} $P(\Omega) = 1$.
-	\item \textbf{Aditividad:} Si $A$ y $B$ son mutuamente excluyentes ($A \cap B = \varnothing$), entonces $P(A \cup B) = P(A) + P(B)$.
+\subsection{Digresión: La Infinitud de los Números Primos (Demostración de Euclides)}
+Como preámbulo al pensamiento axiomático, se presenta una de las demostraciones más elegantes de la matemática. A menudo es atribuida erróneamente a Gödel, pero su autor original fue el matemático griego Euclides.
+
+\noindent\textbf{Proposición:} Existen infinitos números primos.
+
+\noindent\textbf{Demostración por Reducción al Absurdo:}
+\begin{enumerate}
+	\item \textbf{Supuesto inicial:} Asumamos que la proposición es falsa. Es decir, supongamos que solo existe una cantidad finita de números primos.
+	\item \textbf{Construcción del conjunto:} Si son finitos, podemos listarlos todos en un conjunto: $P = \{p_1, p_2, p_3, \dots, p_n\}$, donde $p_n$ es el último y más grande de los primos.
+	\item \textbf{Construcción de un nuevo número (M):} Consideremos el número M, definido como el producto de todos los primos de nuestra lista más uno:
+	      \[ M = (p_1 \cdot p_2 \cdot p_3 \cdot \dots \cdot p_n) + 1 \]
+	\item \textbf{Análisis de M:} Por definición, todo número entero mayor que 1 es primo o es compuesto. Analicemos M:
+	      \begin{itemize}
+		      \item Al dividir M por cualquier primo de nuestra lista ($p_i$), el primer término $(p_1 \cdot \dots \cdot p_n)$ es divisible por $p_i$, pero siempre quedará un resto de 1.
+		      \item Por ejemplo, $M \div p_1 = (p_2 \cdot \dots \cdot p_n)$ con resto 1.
+		      \item Esto significa que M \textbf{no es divisible} por ninguno de los números primos que supuestamente conformaban la lista completa de todos los primos.
+	      \end{itemize}
+	\item \textbf{La Contradicción:} Esto nos deja con dos posibilidades para M, ambas problemáticas para nuestro supuesto inicial:
+	      \begin{itemize}
+		      \item \textbf{Caso A: M es primo.} Si M es primo, entonces hemos encontrado un nuevo número primo que no estaba en nuestra lista finita $P$. Esto contradice que la lista estaba completa.
+		      \item \textbf{Caso B: M es compuesto.} Si M es compuesto, por el Teorema Fundamental de la Aritmética, debe poder descomponerse como un producto de números primos. Sin embargo, ya demostramos que M no es divisible por ninguno de los primos de nuestra lista $P$. Por lo tanto, M debe ser divisible por algún otro primo que no está en la lista. Esto también contradice que la lista estaba completa.
+	      \end{itemize}
+	\item \textbf{Conclusión:} En ambos casos llegamos a una contradicción ($\Rightarrow\Leftarrow$). Por lo tanto, el supuesto inicial de que hay una cantidad finita de números primos es falso. Queda demostrado que \textbf{hay infinitos números primos.}
 \end{enumerate}
 
-\subsection{Digresión: La Infinitud de los Números Primos}
-Demostración de Euclides por contradicción. Suponer que hay un número finito de primos $p_1, \dots, p_n$. El número $M = (p_1 \cdot \dots \cdot p_n) + 1$ no es divisible por ningún $p_i$. Por lo tanto, M debe ser primo o ser divisible por un primo no listado, lo cual es una contradicción.
+\subsection{Axiomas de Kolmogorov (~1933)}
+Sea $(\Omega, \mathcal{A})$ un espacio medible asociado a un experimento aleatorio (donde $\Omega$ es el espacio muestral y $\mathcal{A}$ es la $\sigma$-álgebra de sucesos).
+Una función $P: \mathcal{A} \rightarrow \mathbb{R}$ es una función (o medida) de probabilidad sobre $(\Omega, \mathcal{A})$ si y solo si verifica los siguientes tres axiomas:
+
+\begin{enumerate}[label=\textbf{A\arabic*:}]
+	\item \textbf{Axioma de no negatividad:} La probabilidad de cualquier evento es no negativa.
+	      \[ P(A) \ge 0, \quad \forall A \in \mathcal{A} \]
+	\item \textbf{Axioma del suceso seguro:} La probabilidad del espacio muestral completo es igual a 1.
+	      \[ P(\Omega) = 1 \]
+	\item \textbf{Axioma de aditividad (o $\sigma$-aditividad):}
+	      \begin{itemize}
+		      \item \textbf{Versión formal ($\sigma$-aditividad):} Para cualquier sucesión infinita de eventos mutuamente excluyentes $\{A_i\}_{i=1}^{\infty}$ (es decir, $A_i \cap A_j = \varnothing$ para todo $i \neq j$), la probabilidad de su unión es la suma de sus probabilidades individuales.
+		            \[ P\left(\bigcup_{i=1}^{\infty} A_i\right) = \sum_{i=1}^{\infty} P(A_i) \]
+		      \item \textbf{Versión simple (para dos eventos):} Si $A$ y $B$ son dos eventos mutuamente excluyentes ($A \cap B = \varnothing$), entonces la probabilidad de que ocurra A o B es la suma de sus probabilidades.
+		            \[ P(A \cup B) = P(A) + P(B) \]
+	      \end{itemize}
+\end{enumerate}
 \newpage
+
 
 % 03/09
 \section{Propiedades y Aplicaciones de la Probabilidad}
+A partir de los axiomas de Kolmogorov, podemos extender la regla de aditividad y deducir propiedades fundamentales.
+
+\subsection{Generalización del Axioma de Aditividad}
+Si tenemos un conjunto finito de eventos mutuamente excluyentes dos a dos, como A, B y C, donde $A \cap B = \varnothing$, $A \cap C = \varnothing$ y $B \cap C = \varnothing$, podemos aplicar el tercer axioma de forma recursiva:
+\begin{align*}
+	P(A \cup B \cup C) & = P((A \cup B) \cup C) \\
+	                   & = P(A \cup B) + P(C)   \\
+	                   & = P(A) + P(B) + P(C)
+\end{align*}
+Esto se puede generalizar para cualquier número de eventos mutuamente excluyentes.
+
 \subsection{Propiedades Derivadas de los Axiomas}
-\begin{itemize}
-	\item $P(\varnothing) = 0$.
-	\item $0 \le P(A) \le 1$.
-	\item \textbf{Regla de la Suma:} $P(A \cup B) = P(A) + P(B) - P(A \cap B)$.
-	\item \textbf{Complemento:} $P(A^c) = 1 - P(A)$.
-	\item \textbf{Monotonicidad:} Si $A \subset B \implies P(A) \le P(B)$.
-\end{itemize}
+\begin{enumerate}
+	\item \textbf{Probabilidad del Suceso Imposible:} $P(\varnothing) = 0$.
+	\item \textbf{Rango de la Probabilidad:} Para todo evento A, su probabilidad está acotada entre 0 y 1.
+	      \[ 0 \le P(A) \le 1 \]
+	\item \textbf{Regla de la Suma (Caso General):} Para dos eventos cualesquiera (no necesariamente excluyentes).
+	      \[ P(A \cup B) = P(A) + P(B) - P(A \cap B) \]
+	\item \textbf{Probabilidad del Complemento:}
+	      \[ P(A^c) = 1 - P(A) \]
+	      \textit{Demostración:}
+	      \begin{itemize}
+		      \item Por definición, un evento y su complemento son mutuamente excluyentes, es decir, $A \cap A^c = \varnothing$.
+		      \item La unión de un evento y su complemento es el espacio muestral completo: $A \cup A^c = \Omega$.
+		      \item Aplicamos el Axioma 3 a su unión: $P(A \cup A^c) = P(A) + P(A^c)$.
+		      \item Sustituimos la unión por el espacio muestral: $P(\Omega) = P(A) + P(A^c)$.
+		      \item Por el Axioma 2, sabemos que $P(\Omega)=1$. Por lo tanto: $1 = P(A) + P(A^c)$.
+		      \item Despejando, obtenemos $P(A^c) = 1 - P(A)$.
+	      \end{itemize}
+	\item \textbf{Monotonicidad de la Probabilidad:} Si un evento A es un subconjunto de un evento B ($A \subset B$), entonces la probabilidad de A es menor o igual a la probabilidad de B.
+	      \[ \text{Si } A \subset B \implies P(A) \le P(B) \]
+\end{enumerate}
 
 \subsection{Ejercicios Resueltos}
 \begin{enumerate}
-	\item \textbf{Lanzar un dado, P(Primo o Impar):} Sea P=\{2,3,5\}, I=\{1,3,5\}.
-	      $P(P \cup I) = P(P) + P(I) - P(P \cap I) = \frac{3}{6} + \frac{3}{6} - \frac{2}{6} = \frac{4}{6} = \frac{2}{3}$.
-	\item \textbf{Lanzar 2 dados, P(Al menos un par O Ambas múltiplos de 3):}
-	      $P(A \cup B) = P(A) + P(B) - P(A \cap B) = \frac{27}{36} + \frac{4}{36} - \frac{3}{36} = \frac{28}{36} = \frac{7}{9}$.
+	\item \textbf{Determinar la probabilidad de que al lanzar un dado se obtenga un número primo o impar.}
+	      \begin{itemize}
+		      \item \textbf{Espacio Muestral:} $\Omega = \{1,2,3,4,5,6\}$.
+		      \item \textbf{Evento A (sale primo):} $A=\{2,3,5\} \implies P(A) = 3/6$.
+		      \item \textbf{Evento B (sale impar):} $B=\{1,3,5\} \implies P(B) = 3/6$.
+		      \item \textbf{Intersección (primo e impar):} $A \cap B = \{3,5\} \implies P(A \cap B) = 2/6$.
+		      \item \textbf{Probabilidad de la Unión:} Usamos la regla de la suma.
+		            \[ P(A\cup B) = P(A) + P(B) - P(A \cap B) = \frac{3}{6} + \frac{3}{6} - \frac{2}{6} = \frac{4}{6} = \frac{2}{3} \]
+	      \end{itemize}
+	\item \textbf{Determinar la probabilidad de que al lanzar 2 dados se obtenga al menos una cara con número par o que ambas caras sean múltiplos de 3.}
+	      \begin{itemize}
+		      \item \textbf{Espacio Muestral:} Hay $6 \times 6 = 36$ resultados posibles. Visualmente:
+		            \begin{center}
+			            \begin{tabular}{c|cccccc}
+				                       & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} \\
+				            \hline
+				            \textbf{1} & (1,1)      & (1,2)      & (1,3)      & (1,4)      & (1,5)      & (1,6)      \\
+				            \textbf{2} & (2,1)      & (2,2)      & (2,3)      & (2,4)      & (2,5)      & (2,6)      \\
+				            \textbf{3} & (3,1)      & (3,2)      & (3,3)      & (3,4)      & (3,5)      & (3,6)      \\
+				            \textbf{4} & (4,1)      & (4,2)      & (4,3)      & (4,4)      & (4,5)      & (4,6)      \\
+				            \textbf{5} & (5,1)      & (5,2)      & (5,3)      & (5,4)      & (5,5)      & (5,6)      \\
+				            \textbf{6} & (6,1)      & (6,2)      & (6,3)      & (6,4)      & (6,5)      & (6,6)      \\
+			            \end{tabular}
+		            \end{center}
+		      \item \textbf{Evento A (al menos un par):} Es más fácil calcular su complemento, $A^c$ (ambos impares). Los impares son $\{1,3,5\}$, por lo que hay $3 \times 3 = 9$ resultados donde ambos son impares.
+		            \[ P(A) = 1 - P(A^c) = 1 - \frac{9}{36} = \frac{27}{36} \]
+		      \item \textbf{Evento B (ambas múltiplos de 3):} Los múltiplos de 3 en un dado son $\{3,6\}$. Los pares de resultados son $\{(3,3), (3,6), (6,3), (6,6)\}$. Hay 4 casos favorables.
+		            \[ P(B) = \frac{4}{36} \]
+		      \item \textbf{Intersección ($A \cap B$):} "Al menos un par" Y "ambas múltiplos de 3". De los casos de B, los que cumplen A son: $\{(3,6), (6,3), (6,6)\}$. Hay 3 casos favorables.
+		            \[ P(A \cap B) = \frac{3}{36} \]
+		      \item \textbf{Probabilidad de la Unión:}
+		            \[ P(A \cup B) = P(A) + P(B) - P(A\cap B) = \frac{27}{36} + \frac{4}{36} - \frac{3}{36} = \frac{28}{36} = \frac{7}{9} \]
+	      \end{itemize}
 \end{enumerate}
 \newpage
 
+
 % 05/09
 \section{Ejercicios de Probabilidad Clásica}
-\subsection{Problemas Resueltos}
+\subsection{Enunciados}
 \begin{enumerate}
-	\item \textbf{Suma de dados=5:} Casos favorables: $\{(1,4),(2,3),(3,2),(4,1)\}$. $P(\text{Suma=5})=\frac{4}{36}=\frac{1}{9}$.
-	\item \textbf{Alumnos y deportes (60 total, 37 Fútbol, 38 Básquet):} La intersección es $|F \cap B| = 37+38-60=15$.
+	\item Calcular la probabilidad de que al lanzar 2 dados la suma sea 5.
+	\item Hay 60 alumnos en un salón, de los cuales a 37 les gusta el fútbol y a 38 el básquetbol. Además, a todos los alumnos les gusta al menos uno de esos dos deportes. Si se selecciona uno al azar:
+	      \begin{enumerate}
+		      \item ¿Cuál es la probabilidad de que le guste solo el fútbol?
+		      \item ¿Y solo el básquetbol?
+	      \end{enumerate}
+	\item Calcule la probabilidad de sacar un 3 de corazones o un 5 de corazones de una baraja española (52 cartas).
+	\item En un salón hay 7 hombres y 8 mujeres. Si se desea formar un comité de 2 personas, ¿cuál es la probabilidad de que el comité esté formado por un hombre y una mujer?
+	\item Se lanza un dado $n$ veces, ¿cuál es la probabilidad de haber obtenido al menos un 2 en los $n$ lanzamientos?
+	\item Un chef observó que el $65\%$ de sus clientes consume mayonesa, el $70\%$ consume kétchup y el $80\%$ consume mayonesa o kétchup. ¿Cuál es la probabilidad de que un cliente consuma ambas salsas al mismo tiempo?
+	\item En un grupo de estudiantes se sabe que el $30\%$ habla inglés, el $65\%$ habla francés y el $12\%$ habla ambos idiomas. Si se selecciona un alumno al azar:
+	      \begin{enumerate}
+		      \item ¿Cuál es la probabilidad de que hable inglés o francés?
+		      \item ¿Cuál es la probabilidad de que no hable ni inglés ni francés?
+	      \end{enumerate}
+	\item ¿Cuál es la probabilidad de que al lanzar una moneda 5 veces salga al menos un sello?
+\end{enumerate}
+
+\subsection{Soluciones Detalladas}
+\begin{enumerate}
+	\item \textbf{Suma de dados igual a 5:} \\
+	      \textit{Solución:} El espacio muestral al lanzar dos dados tiene 36 resultados. Los casos favorables para que la suma sea 5 son: $\{(1,4), (2,3), (3,2), (4,1)\}$. Hay 4 casos favorables.
+	      \[ P(\text{Suma=5}) = \frac{\text{Casos favorables}}{\text{Casos totales}} = \frac{4}{36} = \frac{1}{9} \]
+
+	\item \textbf{Alumnos y deportes:} \\
+	      \textit{Solución:} Usamos el principio de inclusión-exclusión. Sea F "le gusta el fútbol" y B "le gusta el básquetbol".
 	      \begin{itemize}
-		      \item $P(\text{Solo F}) = \frac{37-15}{60} = \frac{22}{60} = \frac{11}{30}$.
-		      \item $P(\text{Solo B}) = \frac{38-15}{60} = \frac{23}{60}$.
+		      \item Datos: $|\Omega|=60$, $|F|=37$, $|B|=38$.
+		      \item Como a todos les gusta al menos uno, $|F \cup B| = 60$.
+		      \item Calculamos la intersección (les gustan ambos):
+		            $|F \cup B| = |F| + |B| - |F \cap B| \implies 60 = 37 + 38 - |F \cap B| \implies |F \cap B| = 15$.
 	      \end{itemize}
-	\item \textbf{Comité 1H y 1M (de 7H y 8M):}
-	      \[ P(1H \cap 1M) = \frac{\binom{7}{1}\binom{8}{1}}{\binom{15}{2}} = \frac{7 \cdot 8}{105} = \frac{56}{105} = \frac{8}{15}. \]
-	\item \textbf{Al menos un 2 al lanzar un dado $n$ veces:}
-	      \[ P(\text{al menos un 2}) = 1 - P(\text{ningún 2}) = 1 - \left(\frac{5}{6}\right)^n. \]
+	      \begin{enumerate}
+		      \item \textbf{Solo fútbol:} Son los que les gusta el fútbol menos los que les gustan ambos: $|F| - |F \cap B| = 37 - 15 = 22$.
+		            \[ P(\text{Solo fútbol}) = \frac{22}{60} = \frac{11}{30} \]
+		      \item \textbf{Solo básquetbol:} $|B| - |F \cap B| = 38 - 15 = 23$.
+		            \[ P(\text{Solo básquetbol}) = \frac{23}{60} \]
+	      \end{enumerate}
+
+	\item \textbf{Sacar cartas específicas:} \\
+	      \textit{Solución:} Los eventos "sacar un 3 de corazones" y "sacar un 5 de corazones" son mutuamente excluyentes. Por lo tanto, sus probabilidades se suman.
+	      \[ P(\text{3}\heartsuit \cup \text{5}\heartsuit) = P(3\heartsuit) + P(5\heartsuit) = \frac{1}{52} + \frac{1}{52} = \frac{2}{52} = \frac{1}{26} \]
+
+	\item \textbf{Comité de un hombre y una mujer:} \\
+	      \textit{Solución:} Usamos combinatoria para contar los casos.
+	      \begin{itemize}
+		      \item \textbf{Casos totales:} El número de maneras de elegir 2 personas de un total de 15 (7 hombres + 8 mujeres).
+		            \[ |\Omega| = \binom{15}{2} = \frac{15 \cdot 14}{2} = 105 \]
+		      \item \textbf{Casos favorables:} El número de maneras de elegir 1 hombre de 7 \textbf{Y} 1 mujer de 8.
+		            \[ |A| = \binom{7}{1} \times \binom{8}{1} = 7 \times 8 = 56 \]
+		      \item \textbf{Probabilidad:}
+		            \[ P(A) = \frac{56}{105} = \frac{8 \times 7}{15 \times 7} = \frac{8}{15} \]
+	      \end{itemize}
+
+	\item \textbf{Obtener al menos un 2 en n lanzamientos:} \\
+	      \textit{Solución:} Este problema se resuelve más fácil usando el evento complementario.
+	      \begin{itemize}
+		      \item \textbf{Evento A:} "Obtener al menos un 2".
+		      \item \textbf{Evento $A^c$ (complemento):} "No obtener ningún 2 en los n lanzamientos".
+		      \item La probabilidad de NO sacar un 2 en un solo lanzamiento es $\frac{5}{6}$.
+		      \item Como los lanzamientos son independientes, la probabilidad de que esto ocurra n veces seguidas es:
+		            \[ P(A^c) = \left(\frac{5}{6}\right)^n \]
+		      \item La probabilidad del evento original es $1 - P(A^c)$.
+		            \[ P(A) = 1 - \left(\frac{5}{6}\right)^n \]
+	      \end{itemize}
+
+	\item \textbf{Clientes y salsas:} \\
+	      \textit{Solución:} Es una aplicación directa de la regla de la suma.
+	      \begin{itemize}
+		      \item \textbf{Eventos:} M="consume mayonesa", K="consume kétchup".
+		      \item \textbf{Datos:} $P(M)=0.65$, $P(K)=0.70$, $P(M \cup K)=0.80$.
+		      \item Buscamos la probabilidad de que consuma ambas, es decir, $P(M \cap K)$.
+		      \item Usamos la fórmula: $P(M \cup K) = P(M) + P(K) - P(M \cap K)$.
+		      \item Despejamos la intersección:
+		            \begin{align*}
+			            P(M \cap K) & = P(M) + P(K) - P(M \cup K) \\
+			                        & = 0.65 + 0.70 - 0.80        \\
+			                        & = 0.55
+		            \end{align*}
+	      \end{itemize}
+	      \textbf{Respuesta:} La probabilidad de que un cliente consuma ambas salsas es del 55\%.
+
+	\item \textbf{Estudiantes e idiomas:} \\
+	      \textit{Solución:} Sea I="habla inglés" y F="habla francés".
+	      \begin{itemize}
+		      \item \textbf{Datos:} $P(I)=0.30$, $P(F)=0.65$, $P(I \cap F)=0.12$.
+		      \item \textbf{a) Probabilidad de que hable inglés o francés ($P(I \cup F)$):}
+		            \begin{align*}
+			            P(I \cup F) & = P(I) + P(F) - P(I \cap F) \\
+			                        & = 0.30 + 0.65 - 0.12        \\
+			                        & = 0.83 \quad (83\%)
+		            \end{align*}
+		      \item \textbf{b) Probabilidad de que no hable ni inglés ni francés ($P((I \cup F)^c)$):} \\
+		            Este es el complemento del evento anterior.
+		            \[ P((I \cup F)^c) = 1 - P(I \cup F) = 1 - 0.83 = 0.17 \quad (17\%) \]
+	      \end{itemize}
+
+	\item \textbf{Lanzar una moneda 5 veces:} \\
+	      \textit{Solución:} Usamos el evento complementario.
+	      \begin{itemize}
+		      \item \textbf{Evento A:} "Sale al menos un sello".
+		      \item \textbf{Evento $A^c$:} "No sale ningún sello", lo que es igual a "salen 5 caras seguidas".
+		      \item \textbf{Espacio muestral:} Cada lanzamiento tiene 2 resultados. En 5 lanzamientos, hay $2^5 = 32$ resultados totales.
+		      \item \textbf{Casos favorables del complemento:} Solo hay un caso donde salen 5 caras: $\{C,C,C,C,C\}$.
+		      \item \textbf{Probabilidad del complemento:}
+		            \[ P(A^c) = \frac{1}{32} \]
+		      \item \textbf{Probabilidad del evento original:}
+		            \[ P(A) = 1 - P(A^c) = 1 - \frac{1}{32} = \frac{31}{32} \]
+	      \end{itemize}
 \end{enumerate}
 \newpage
 
 % 24/09
 \section{Probabilidad Condicional}
 \subsection{El Problema de Monty Hall}
-Famoso problema donde tras la elección inicial de 3 puertas, el presentador abre una puerta perdedora y ofrece cambiar. La estrategia óptima es **siempre cambiar**, lo que eleva la probabilidad de ganar de 1/3 a 2/3.
+Este es un famoso problema de probabilidad que desafía la intuición. El planteamiento es el siguiente:
+\begin{itemize}
+	\item Hay 3 puertas cerradas. Detrás de una de ellas hay un auto y detrás de las otras dos, cabras.
+	\item El concursante elige una puerta (por ejemplo, la puerta 1).
+	\item El presentador, que sabe dónde está el auto, abre una de las \textit{otras} dos puertas (por ejemplo, la puerta 3), mostrando que contiene una cabra.
+	\item El presentador le ofrece al concursante la opción de cambiar su elección original (la puerta 1) por la otra puerta que queda cerrada (la puerta 2).
+\end{itemize}
+\begin{center}
+	\textsc{\large{¿Qué es más conveniente?}}
+\end{center}
+\begin{enumerate}
+	\item Cambiar de puerta.
+	\item Mantener la puerta original.
+	\item Es indiferente, ambas tienen 50\% de probabilidad.
+\end{enumerate}
+
+\subsubsection{Intuición Preliminar: ¿Cómo cambia la probabilidad la nueva información?}
+\begin{enumerate}
+	\item \textbf{Pregunta 1:} ¿Cuál es la probabilidad de que al lanzar dos dados la suma sea 3? \\
+	      \textit{Respuesta:} Casos favorables: $\{(1,2), (2,1)\}$. Casos totales: 36.
+	      \[ P(\text{Suma=3}) = \frac{2}{36} = \frac{1}{18} \]
+	\item \textbf{Pregunta 2:} ¿Cuál es la probabilidad de que la suma sea 3, \textbf{sabiendo que en el primer dado salió un 1}? \\
+	      \textit{Respuesta:} La nueva información reduce nuestro espacio muestral. Ahora solo consideramos los resultados que empiezan con 1: $\{(1,1), (1,2), (1,3), (1,4), (1,5), (1,6)\}$. De estos 6 casos, solo uno suma 3: (1,2).
+	      \[ P(\text{Suma=3 | Salió un 1}) = \frac{1}{6} \]
+\end{enumerate}
+La nueva información cambió drásticamente la probabilidad. Esto es el corazón de la probabilidad condicional.
+
+\subsubsection{Análisis del Problema de Monty Hall}
+La clave es entender que el presentador \textbf{nunca} abrirá la puerta con el auto. Esta acción nos da información valiosa.
+\begin{center}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{Elección Inicial} & \textbf{Estrategia: Mantener} & \textbf{Estrategia: Cambiar} \\ \hline
+		Puerta con Auto ($1/3$)   & Gana (P)                      & Pierde (G)                   \\ \hline
+		Puerta con Cabra ($2/3$)  & Pierde (G)                    & Gana (P)                     \\
+		\hline
+	\end{tabular}
+\end{center}
+\textit{Leyenda: (P) es la puerta que elige el presentador para abrir.} \\
+El diagrama muestra que si elegiste el auto al principio (1/3 de probabilidad), ganas si te quedas. Pero si elegiste una cabra al principio (2/3 de probabilidad), el presentador te mostrará la otra cabra, y la única puerta que queda es la del auto, por lo que ganas si cambias.
 
 \subsection{Definición de Probabilidad Condicional}
-La probabilidad de que ocurra $A$ dado que $B$ ya ocurrió ($P(B)>0$):
+Dados dos sucesos $A$ y $B$, con $P(B)>0$, la probabilidad de $A$ \textbf{dado} $B$ (la probabilidad de que ocurra A asumiendo que ya ocurrió B) se define como:
 \[ P(A|B) = \frac{P(A \cap B)}{P(B)} \]
-A partir de esto se deriva la \textbf{Regla de la Multiplicación}: $P(A \cap B) = P(A|B) \cdot P(B)$.
 
-\subsubsection{Eventos Independientes}
-Dos eventos A y B son independientes si la ocurrencia de uno no afecta la probabilidad del otro: $P(A|B) = P(A)$. En este caso, la regla de la multiplicación se simplifica a:
-\[ P(A \cap B) = P(A) \cdot P(B) \]
+\subsubsection{Análisis Formal del Problema de Monty Hall}
+Esta solución fue famosamente explicada por Marilyn vos Savant. Usemos la Ley de la Probabilidad Total.
+Sean los eventos:
+\begin{itemize}
+	\item \textbf{G:} Ganar el auto al final del juego.
+	\item \textbf{A:} Eliges el auto en tu primera elección.
+	\item \textbf{C:} Eliges una cabra en tu primera elección.
+\end{itemize}
+La probabilidad de ganar se puede descomponer en dos casos mutuamente excluyentes: ganas habiendo elegido el auto, o ganas habiendo elegido una cabra.
+\begin{align*}
+	P(G) & = P((G \cap A) \cup (G \cap C))         \\
+	     & = P(G \cap A) + P(G \cap C)             \\
+	     & = P(G|A) \cdot P(A) + P(G|C) \cdot P(C)
+\end{align*}
+Las probabilidades iniciales son $P(A)=\frac{1}{3}$ y $P(C)=\frac{2}{3}$.
+\begin{enumerate}
+	\item \textbf{Caso 1: Estrategia de Mantener la Elección}
+	      \begin{itemize}
+		      \item $P(G|A)$: Prob. de ganar si elegiste el auto y te quedas. Es 1.
+		      \item $P(G|C)$: Prob. de ganar si elegiste una cabra y te quedas. Es 0.
+	      \end{itemize}
+	      \[ P(\text{Ganar al Mantener}) = (1) \cdot \frac{1}{3} + (0) \cdot \frac{2}{3} = \frac{1}{3} \]
+
+	\item \textbf{Caso 2: Estrategia de Cambiar de Puerta}
+	      \begin{itemize}
+		      \item $P(G|A)$: Prob. de ganar si elegiste el auto y cambias. Es 0.
+		      \item $P(G|C)$: Prob. de ganar si elegiste una cabra y cambias. Es 1.
+	      \end{itemize}
+	      \[ P(\text{Ganar al Cambiar}) = (0) \cdot \frac{1}{3} + (1) \cdot \frac{2}{3} = \frac{2}{3} \]
+\end{enumerate}
+\textbf{Conclusión:} Es el doble de conveniente cambiar de puerta.
+
 \newpage
 
 % 06/10 & 08/10
@@ -562,65 +1378,115 @@ Dos eventos A y B son independientes si la ocurrencia de uno no afecta la probab
 \subsection{Enunciados}
 \begin{enumerate}
 	\item Al 25\% de un grupo de amigos le gusta la fresa y el chocolate, mientras que al 60\% le gusta el chocolate. ¿Cuál es la probabilidad de que a un amigo que le guste el chocolate también le guste la fresa?
-	\item En San José, el 8\% de las personas gana más de \$1000 al mes y el 60\% le gusta el helado de chocolate. Asumiendo independencia, ¿cuál es la probabilidad de que una persona gane más de \$1000 y le guste el helado de chocolate?
-	\item El 76\% de los estudiantes de Ingeniería aprobaron Resistencia de Materiales, y el 30\% aprobaron tanto Resistencia como Estática. Si se elige un estudiante que aprobó Resistencia, ¿qué probabilidad tiene de haber aprobado Estática?
-	\item En un acuario, el 40\% de los peces son azules y el 60\% rojos. El 30\% de los azules son machos y el 40\% de los rojos son hembras.
+	\item En la ciudad de San José, el 8\% de las personas gana más de \$1000 al mes, mientras que al 60\% le gusta el helado de chocolate. Asumiendo que ambos sucesos son independientes, ¿cuál es la probabilidad de que una persona seleccionada al azar gane más de \$1000 al mes y le guste el helado de chocolate?
+	\item El 76\% de los estudiantes de Ingeniería Civil han aprobado Resistencia de Materiales y el 45\% aprobaron Estática. Además, el 30\% aprobaron ambas asignaturas. Si se elige un estudiante que aprobó Resistencia de Materiales, ¿qué probabilidad tiene de haber aprobado también Estática?
+	\item En un acuario se tienen solo 2 especies de peces. El 40\% son de la especie azul y el 60\% de la especie roja. De la especie azul, el 30\% son machos; mientras que, de la especie roja, el 40\% son hembras. Si se selecciona un pez al azar:
 	      \begin{enumerate}
-		      \item Si se selecciona una hembra, ¿cuál es la probabilidad de que sea azul?
-		      \item Si se selecciona un macho, ¿cuál es la probabilidad de que sea azul?
+		      \item Y resulta ser hembra, ¿cuál es la probabilidad de que sea de la especie azul?
+		      \item Y resulta ser macho, ¿cuál es la probabilidad de que sea de la especie azul?
 	      \end{enumerate}
-	\item En un consultorio, 40\% de los pacientes fingen una enfermedad, 10\% son hombres, y la probabilidad de que un hombre finja es del 50\%. Calcule la probabilidad de que un paciente que finge sea hombre.
-	\item La Tabla \ref{tab:ResultadosExamen2} muestra los resultados de exámenes de conducir.
+	\item En un consultorio, el 40\% de los pacientes fingen tener una enfermedad. Además, el 10\% de los pacientes son hombres. La probabilidad de que un paciente finja una enfermedad dado que es hombre es del 50\%. Calcule la probabilidad de que un paciente sea hombre, dado que finge una enfermedad.
+	\item La Tabla \ref{tab:ResultadosExamen} muestra los resultados de 4 grupos de personas que rindieron el examen para obtener la licencia de conducir B.
 	      \begin{table}[h!]
-		      \caption{Resultados Examen de Conducción}\label{tab:ResultadosExamen2}
+		      \caption{Resultados Examen de Conducción}\label{tab:ResultadosExamen}
 		      \centering
 		      \begin{tabular}{|l|c|c|}
 			      \hline
-			      \textbf{Grupo} & \textbf{Aprobados} & \textbf{Reprobados} \\ \hline
+			      \textbf{Grupo} & \textbf{Aprobados} & \textbf{Reprobados} \\
+			      \hline
 			      Grupo 1        & 40                 & 5                   \\
 			      Grupo 2        & 35                 & 7                   \\
 			      Grupo 3        & 46                 & 12                  \\
-			      Grupo 4        & 50                 & 5                   \\ \hline
+			      Grupo 4        & 50                 & 5                   \\
+			      \hline
 		      \end{tabular}
 	      \end{table}
 	      \begin{enumerate}
-		      \item P(Aprobado | Grupo 3)
-		      \item P(Grupo 1 | Reprobado)
-		      \item P(Reprobado | Grupo 1)
+		      \item ¿Cuál es la probabilidad de que una persona haya aprobado, sabiendo que es del grupo 3?
+		      \item ¿Cuál es la probabilidad de que una persona sea del grupo 1, si se sabe que reprobó el examen?
+		      \item ¿Cuál es la probabilidad de que una persona haya reprobado, si se sabe que rindió la prueba con el grupo 1?
+	      \end{enumerate}
+\end{enumerate}
+
+\subsection{Soluciones Detalladas}
+\begin{enumerate}
+	\item \textbf{Amigos y sabores:} \\
+	      \textit{Solución:} Sean F="le gusta la fresa" y C="le gusta el chocolate". Nos piden $P(F|C)$.
+	      \begin{itemize}
+		      \item \textbf{Datos:} $P(F \cap C) = 0.25$ y $P(C) = 0.60$.
+		      \item \textbf{Fórmula:} Usamos la definición de probabilidad condicional.
+		            \[ P(F|C) = \frac{P(F \cap C)}{P(C)} = \frac{0.25}{0.60} = \frac{25}{60} = \frac{5}{12} \approx 41.67\% \]
+	      \end{itemize}
+
+	\item \textbf{Ingresos y helado:} \\
+	      \textit{Solución:} Sean G="gana más de \$1000" y C="le gusta el helado de chocolate". Nos piden $P(G \cap C)$ y se asume que los eventos son independientes.
+	      \begin{itemize}
+		      \item \textbf{Datos:} $P(G)=0.08$ y $P(C)=0.60$.
+		      \item \textbf{Fórmula para eventos independientes:} $P(A \cap B) = P(A) \cdot P(B)$.
+		            \[ P(G \cap C) = P(G) \cdot P(C) = 0.08 \cdot 0.6 = 0.048 = 4.8\% \]
+	      \end{itemize}
+
+	\item \textbf{Estudiantes de Ingeniería:} \\
+	      \textit{Solución:} Sean R="aprobó Resistencia de Materiales" y E="aprobó Estática". Nos piden $P(E|R)$.
+	      \begin{itemize}
+		      \item \textbf{Datos:} $P(R)=0.76$ y $P(R \cap E) = 0.30$.
+		      \item \textbf{Fórmula:} Aplicamos directamente la probabilidad condicional.
+		            \[ P(E|R) = \frac{P(E \cap R)}{P(R)} = \frac{0.30}{0.76} = \frac{30}{76} = \frac{15}{38} \approx 39.47\% \]
+	      \end{itemize}
+
+	\item \textbf{Peces en el acuario (Teorema de Bayes):} \\
+	      \textit{Solución:} Definimos los eventos: A=especie azul, R=especie roja, M=macho, H=hembra.
+	      \begin{itemize}
+		      \item \textbf{Probabilidades dadas:} $P(A)=0.4$, $P(R)=0.6$, $P(M|A)=0.3$, $P(H|R)=0.4$.
+		      \item \textbf{Probabilidades deducidas:} $P(H|A) = 1 - P(M|A) = 0.7$; $P(M|R) = 1 - P(H|R) = 0.6$.
+	      \end{itemize}
+	      \begin{enumerate}
+		      \item \textbf{Calcular $P(A|H)$:} "Prob. de que sea azul, dado que es hembra".
+		            Por Teorema de Bayes: $P(A|H) = \frac{P(H|A)P(A)}{P(H)}$.
+		            Primero, calculamos la probabilidad total de ser hembra (Ley de Prob. Total):
+		            $P(H) = P(H|A)P(A) + P(H|R)P(R) = (0.7 \cdot 0.4) + (0.4 \cdot 0.6) = 0.28 + 0.24 = 0.52$.
+		            \[ P(A|H) = \frac{0.28}{0.52} = \frac{28}{52} = \frac{7}{13} \]
+		      \item \textbf{Calcular $P(A|M)$:} "Prob. de que sea azul, dado que es macho".
+		            La probabilidad total de ser macho es $P(M) = 1 - P(H) = 1 - 0.52 = 0.48$.
+		            Por Bayes: $P(A|M) = \frac{P(M|A)P(A)}{P(M)}$.
+		            \[ P(A|M) = \frac{0.3 \cdot 0.4}{0.48} = \frac{0.12}{0.48} = \frac{12}{48} = \frac{1}{4} \]
+	      \end{enumerate}
+
+	\item \textbf{Pacientes en consultorio (Teorema de Bayes):} \\
+	      \textit{Solución:} Definimos los eventos: F="finge enfermedad", H="es hombre".
+	      \begin{itemize}
+		      \item \textbf{Datos:} $P(F)=0.40$, $P(H)=0.10$, $P(F|H)=0.50$.
+		      \item \textbf{Pregunta:} Calcular $P(H|F)$.
+		      \item \textbf{Fórmula de Bayes:} $P(H|F) = \frac{P(F|H)P(H)}{P(F)}$.
+		            \[ P(H|F) = \frac{0.50 \cdot 0.10}{0.40} = \frac{0.05}{0.40} = \frac{5}{40} = \frac{1}{8} = 12.5\% \]
+	      \end{itemize}
+
+	\item \textbf{Examen de conducir (Tabla de contingencia):} \\
+	      \textit{Solución:} Primero, completamos la tabla con los totales para facilitar los cálculos.
+	      \begin{center}
+		      \begin{tabular}{|l|c|c|c|}
+			      \hline
+			      \textbf{Grupo} & \textbf{Aprobados} & \textbf{Reprobados} & \textbf{Total} \\
+			      \hline
+			      Grupo 1        & 40                 & 5                   & 45             \\
+			      Grupo 2        & 35                 & 7                   & 42             \\
+			      Grupo 3        & 46                 & 12                  & 58             \\
+			      Grupo 4        & 50                 & 5                   & 55             \\
+			      \hline
+			      \textbf{Total} & \textbf{171}       & \textbf{29}         & \textbf{200}   \\
+			      \hline
+		      \end{tabular}
+	      \end{center}
+	      \begin{enumerate}
+		      \item \textbf{P(Aprobado | Grupo 3):} Miramos la fila "Grupo 3". 46 de 58 aprobaron.
+		            \[ P(A|G3) = \frac{\text{Aprobados en G3}}{\text{Total G3}} = \frac{46}{58} = \frac{23}{29} \]
+		      \item \textbf{P(Grupo 1 | Reprobado):} Miramos la columna "Reprobados". 5 de los 29 reprobados eran del Grupo 1.
+		            \[ P(G1|R) = \frac{\text{Reprobados de G1}}{\text{Total Reprobados}} = \frac{5}{29} \]
+		      \item \textbf{P(Reprobado | Grupo 1):} Miramos la fila "Grupo 1". 5 de un total de 45 reprobaron.
+		            \[ P(R|G1) = \frac{\text{Reprobados de G1}}{\text{Total G1}} = \frac{5}{45} = \frac{1}{9} \]
 	      \end{enumerate}
 \end{enumerate}
 \newpage
-\subsection{Soluciones Detalladas}
-\begin{enumerate}
-	\item \textbf{Amigos y sabores:} $P(F|C) = \frac{P(F \cap C)}{P(C)} = \frac{0.25}{0.60} = \frac{5}{12}$.
-
-	\item \textbf{Ingresos y helado:} Por independencia, $P(G \cap C) = P(G) \cdot P(C) = 0.08 \cdot 0.6 = 0.048$.
-
-	\item \textbf{Estudiantes de Ingeniería:} $P(E|R) = \frac{P(E \cap R)}{P(R)} = \frac{0.30}{0.76} = \frac{15}{38}$.
-
-	\item \textbf{Peces en el acuario (Teorema de Bayes):}
-	      \begin{itemize}
-		      \item \textbf{Datos:} $P(A)=0.4, P(R)=0.6, P(M|A)=0.3, P(H|R)=0.4$.
-		      \item \textbf{Deducidos:} $P(H|A) = 0.7, P(M|R) = 0.6$.
-	      \end{itemize}
-	      \begin{enumerate}
-		      \item \textbf{$P(A|H)$:} Primero, $P(H) = P(H|A)P(A) + P(H|R)P(R) = 0.7 \cdot 0.4 + 0.4 \cdot 0.6 = 0.52$.
-		            \[ P(A|H) = \frac{P(H|A)P(A)}{P(H)} = \frac{0.28}{0.52} = \frac{7}{13} \]
-		      \item \textbf{$P(A|M)$:} $P(M) = 1 - P(H) = 0.48$.
-		            \[ P(A|M) = \frac{P(M|A)P(A)}{P(M)} = \frac{0.3 \cdot 0.4}{0.48} = \frac{0.12}{0.48} = \frac{1}{4} \]
-	      \end{enumerate}
-
-	\item \textbf{Pacientes en consultorio (Teorema de Bayes):}
-	      \[ P(H|F) = \frac{P(F|H)P(H)}{P(F)} = \frac{0.50 \cdot 0.10}{0.40} = \frac{0.05}{0.40} = \frac{1}{8} = 12.5\% \]
-
-	\item \textbf{Examen de conducir (Tabla de contingencia):}
-	      Con un total de 200 personas, 58 en G3, 45 en G1, y 29 reprobados totales.
-	      \begin{itemize}
-		      \item $P(A|G3) = \frac{46}{58} = \frac{23}{29}$.
-		      \item $P(G1|R) = \frac{5}{29}$.
-		      \item $P(R|G1) = \frac{5}{45} = \frac{1}{9}$.
-	      \end{itemize}
-\end{enumerate}
 
 
 \end{document}

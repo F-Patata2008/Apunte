@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.10.3)  28 OCT 2025 18:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.10.3)  29 OCT 2025 09:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -887,16 +887,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [35 <./images/pascal.png>]
-<./images/Gat.png, id=813, 200.75pt x 200.75pt>
-File: ./images/Gat.png Graphic file (type png)
-<use ./images/Gat.png>
-Package pdftex.def Info: ./images/Gat.png  used on input line 882.
-(pdftex.def)             Requested size: 292.5pt x 292.54424pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
 
 LaTeX Info: Redefining \. on input line 886.
 LaTeX Info: Redefining \% on input line 886.
@@ -908,9 +898,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [36]
+Overfull \hbox (3.03917pt too wide) detected at line 914
+\OML/cmm/m/it/12 P[] \OMS/cmsy/m/n/12 ^^B \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P[] \OMS/cmsy/m/n/12 ^^B \OML/cmm/m/it/12 P[] \OMS/cmsy/m/n/12 ^^B \OML/cmm/m/it/12 P[] \OMS/cmsy/m/n/12 ^^B \OML/cmm/m/it/12 P[]\OT1/cmr/m/n/12 ) = 4! \OMS/cmsy/m/n/12 ^^B \OT1/cmr/m/n/12 (3! \OMS/cmsy/m/n/12 ^^A \OT1/cmr/m/n/12 3! \OMS/cmsy/m/n/12 ^^A \OT1/cmr/m/n/12 2! \OMS/cmsy/m/n/12 ^^A \OT1/cmr/m/n/12 2!) = 24 \OMS/cmsy/m/n/12 ^^B \OT1/cmr/m/n/12 (6 \OMS/cmsy/m/n/12 ^^A \OT1/cmr/m/n/12 6 \OMS/cmsy/m/n/12 ^^A \OT1/cmr/m/n/12 2 \OMS/cmsy/m/n/12 ^^A \OT1/cmr/m/n/12 2) = 3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 456[]
+ []
 
-LaTeX Info: Redefining \. on input line 902.
-LaTeX Info: Redefining \% on input line 902.
+
+
+LaTeX Info: Redefining \. on input line 918.
+LaTeX Info: Redefining \% on input line 918.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -918,12 +913,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[37 <./images/Gat.png>]
-Overfull \hbox (3.03917pt too wide) detected at line 914
-\OML/cmm/m/it/12 P[] \OMS/cmsy/m/n/12 ^^B \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P[] \OMS/cmsy/m/n/12 ^^B \OML/cmm/m/it/12 P[] \OMS/cmsy/m/n/12 ^^B \OML/cmm/m/it/12 P[] \OMS/cmsy/m/n/12 ^^B \OML/cmm/m/it/12 P[]\OT1/cmr/m/n/12 ) = 4! \OMS/cmsy/m/n/12 ^^B \OT1/cmr/m/n/12 (3! \OMS/cmsy/m/n/12 ^^A \OT1/cmr/m/n/12 3! \OMS/cmsy/m/n/12 ^^A \OT1/cmr/m/n/12 2! \OMS/cmsy/m/n/12 ^^A \OT1/cmr/m/n/12 2!) = 24 \OMS/cmsy/m/n/12 ^^B \OT1/cmr/m/n/12 (6 \OMS/cmsy/m/n/12 ^^A \OT1/cmr/m/n/12 6 \OMS/cmsy/m/n/12 ^^A \OT1/cmr/m/n/12 2 \OMS/cmsy/m/n/12 ^^A \OT1/cmr/m/n/12 2) = 3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 456[]
- []
-
-
+[37]
 
 LaTeX Info: Redefining \. on input line 920.
 LaTeX Info: Redefining \% on input line 920.
@@ -1239,18 +1229,18 @@ Package rerunfilecheck Info: File `Apunte.out' has not changed.
 (rerunfilecheck)             Checksum: 256A93055C908829F013771DB9769254;23477.
  ) 
 Here is how much of TeX's memory you used:
- 15200 strings out of 475068
- 235519 string characters out of 5764374
- 674844 words of memory out of 5000000
- 37336 multiletter control sequences out of 15000+600000
+ 15186 strings out of 475068
+ 235278 string characters out of 5764374
+ 674785 words of memory out of 5000000
+ 37323 multiletter control sequences out of 15000+600000
  595373 words of font info for 267 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
  75i,12n,79p,1003b,868s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbi1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbi1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1728.pfb>
-Output written on Apunte.pdf (63 pages, 1638624 bytes).
+Output written on Apunte.pdf (63 pages, 1630646 bytes).
 PDF statistics:
- 1229 PDF objects out of 1440 (max. 8388607)
- 1074 compressed objects within 11 object streams
- 333 named destinations out of 1000 (max. 500000)
- 64402 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 1226 PDF objects out of 1440 (max. 8388607)
+ 1073 compressed objects within 11 object streams
+ 332 named destinations out of 1000 (max. 500000)
+ 64397 words of extra memory for PDF output out of 74296 (max. 10000000)
 

@@ -277,10 +277,6 @@ INPUT ./images/pascal.png
 INPUT ./images/pascal.png
 INPUT ./images/pascal.png
 INPUT ./images/pascal.png
-INPUT ./images/Gat.png
-INPUT ./images/Gat.png
-INPUT ./images/Gat.png
-INPUT ./images/Gat.png
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/eccc1440.tfm
 INPUT Apunte.aux
 INPUT ./Apunte.out

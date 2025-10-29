@@ -56,7 +56,7 @@
 	\centering
 	\includegraphics[width=2cm]{IN}\\[1cm]
 	\textsc{\LARGE  Instituto Nacional General José Miguel Carrera}\\[0.5cm]
-	\textsc{\Large Departamento de Matemáticas}\\[1cm]
+	\textsc{\Large Departamento de Matemáticas}\\[1.5cm]
 
 	\rule{\textwidth}{1.5pt}\vspace{0.4cm}
 	{\Huge \bfseries Apunte Completo: \\[0.5cm] Probabilidad y Estadística}\\[0.4cm]
@@ -84,14 +84,13 @@
 
 \newpage
 \thispagestyle{empty} % Oculta encabezado y pie en esta página
-
+\vspace*{5cm} % Añade espacio vertical
 \begin{center}
-	\vspace*{2cm} % Espacio superior
 	\fbox{\begin{minipage}{0.85\textwidth}
 			\centering
 			\subsection*{Dedicatoria y Cesión de Uso}
 			\vspace{0.2cm}
-			\parbox{0.9\textwidth}{\normalsize\centering Con gratitud y aprecio, el autor, \textbf{Felipe Colli Olea}, cede el presente documento en su formato PDF al \textbf{Departamento de Matemáticas del Instituto Nacional}, y en especial a los profesores \textbf{Sergio Díaz} y \textbf{David Caldera}, como material de estudio para las futuras generaciones de estudiantes.}
+			\parbox{0.9\textwidth}{\normalsize\centering Con gratitud y aprecio, el autor, \textbf{Felipe Colli Olea}, cede el presente documento en su formato PDF al \textbf{Departamento de Matemáticas del Instituto Nacional}, y en especial a los profesores \textbf{David Caldera} y \textbf{Sergio Díaz}, como material de estudio para las futuras generaciones de estudiantes.}
 			\vspace{0.5cm}
 
 			\parbox{0.9\textwidth}{\small
@@ -102,22 +101,15 @@
 				\end{itemize}
 			}
 			\vspace{0.5cm}
-
+			
 			\textbf{\copyright~2025, Felipe Colli Olea.}
-		\end{minipage}}
+	\end{minipage}}
 \end{center}
-
-\vfill % Espacio flexible entre la dedicatoria y el resumen
-
-%\begin{abstract}
-%	\noindent \textbf{Resumen} \\
-%	Este apunte ofrece una introducción completa a los conceptos fundamentales de la probabilidad y la estadística. Comienza con la definición de términos esenciales como población, muestra, parámetro y estadígrafo, y la clasificación de variables en cualitativas y cuantitativas. Posteriormente, se profundiza en la estadística descriptiva, abordando las medidas de tendencia central (media, mediana, moda) y de dispersión (rango, varianza, desviación estándar), incluyendo sus propiedades y demostraciones matemáticas. El documento también explora diversas técnicas de muestreo, diferenciando entre métodos probabilísticos y no probabilísticos. Finalmente, se introduce la combinatoria mediante los principios aditivo y multiplicativo como base para el cálculo de probabilidades.
-%\end{abstract}
 
 
 \newpage
 \tableofcontents
-\newpage
+\newpage 
 
 % --- Aquí comienza el contenido principal ---
 
@@ -135,6 +127,7 @@ Subconjunto de la población que se mide u observa.
 	\includegraphics[width=0.85\textwidth]{muestra}
 	\caption{Representación de la muestra dentro de la población.}
 \end{figure}
+
 
 \subsubsection{Parámetro:}
 Es una medición numérica que describe alguna característica de una población.
@@ -170,25 +163,25 @@ Es una medición numérica que describe alguna característica de la muestra.
 Para cada situación, identifica la población, una posible muestra y la variable de interés.
 
 \begin{enumerate}
-	\item Un investigador desea estimar la proporción de ciudadanos de la \textit{GEN X} en Chile interesados en iniciar un negocio.
-	      \begin{itemize}
-		      \item \textbf{Población:} Chilenos de la Generación X.
-		      \item \textbf{Muestra (ejemplo):} 500 chilenos de la Generación X seleccionados del padrón electoral.
-		      \item \textbf{Variable:} Interés en iniciar un negocio (Sí/No) - \textit{cualitativa nominal}.
-	      \end{itemize}
+    \item Un investigador desea estimar la proporción de ciudadanos de la \textit{GEN X} en Chile interesados en iniciar un negocio.
+        \begin{itemize}
+		    \item \textbf{Población:} Chilenos de la Generación X.
+		    \item \textbf{Muestra (ejemplo):} 500 chilenos de la Generación X seleccionados del padrón electoral.
+		    \item \textbf{Variable:} Interés en iniciar un negocio (Sí/No) - \textit{cualitativa nominal}.
+	    \end{itemize}
 
-	\item Se busca verificar si la temperatura corporal promedio de adultos sanos en Chile es realmente 37°C.
-	      \begin{itemize}
-		      \item \textbf{Población:} Adultos sanos en Chile.
-		      \item \textbf{Muestra (ejemplo):} Adultos sanos de Santiago seleccionados de diversos centros de salud.
-		      \item \textbf{Variable:} Temperatura corporal - \textit{cuantitativa continua}.
-	      \end{itemize}
-	\item Un ingeniero municipal desea estimar el consumo semanal promedio de agua para unidades unifamiliares.
-	      \begin{itemize}
-		      \item \textbf{Población:} Unidades habitacionales unifamiliares de la ciudad.
-		      \item \textbf{Muestra (ejemplo):} 200 unidades seleccionadas aleatoriamente.
-		      \item \textbf{Variable:} Consumo semanal de agua (en litros) - \textit{cuantitativa continua}.
-	      \end{itemize}
+    \item Se busca verificar si la temperatura corporal promedio de adultos sanos en Chile es realmente 37°C.
+        \begin{itemize}
+		    \item \textbf{Población:} Adultos sanos en Chile.
+		    \item \textbf{Muestra (ejemplo):} Adultos sanos de Santiago seleccionados de diversos centros de salud.
+		    \item \textbf{Variable:} Temperatura corporal - \textit{cuantitativa continua}.
+	    \end{itemize}
+    \item Un ingeniero municipal desea estimar el consumo semanal promedio de agua para unidades unifamiliares.
+	    \begin{itemize}
+		    \item \textbf{Población:} Unidades habitacionales unifamiliares de la ciudad.
+		    \item \textbf{Muestra (ejemplo):} 200 unidades seleccionadas aleatoriamente.
+		    \item \textbf{Variable:} Consumo semanal de agua (en litros) - \textit{cuantitativa continua}.
+	    \end{itemize}
 \end{enumerate}
 \newpage
 
@@ -380,7 +373,7 @@ Sean A y B dos sucesos, que pueden ocurrir de $a$ y $b$ maneras respectivamente.
 		      \textbf{CARRERA:} (7 letras; A:2, R:3)
 		      \[ P_{2,3}^7 = \frac{7!}{2! \cdot 3!} = \frac{5040}{12} = 420 \]
 	      \end{minipage}
-	      \vspace{1cm}
+	      \vspace{1cm} 
 
 	\item ¿De cuántas maneras se pueden sentar 4 personas en una mesa redonda?
 	      \[ PC_4 = (4-1)! = 3! = 6 \]
@@ -441,9 +434,9 @@ El número de subconjuntos de un conjunto con $n$ elementos es $2^n$.
 
 \subsection{Ejercicios}
 \begin{enumerate}
-	\item \textbf{¿Cuántos jugos de al menos 2 frutas se pueden hacer con 5 frutas distintas?}
-	      \textit{Solución:} Sumamos los jugos de 2, 3, 4 y 5 frutas.
-	      \[ C_2^5 + C_3^5 + C_4^5 + C_5^5 = 10 + 10 + 5 + 1 = 26 \text{ jugos.} \]
+    \item \textbf{¿Cuántos jugos de al menos 2 frutas se pueden hacer con 5 frutas distintas?}
+    \textit{Solución:} Sumamos los jugos de 2, 3, 4 y 5 frutas.
+    \[ C_2^5 + C_3^5 + C_4^5 + C_5^5 = 10 + 10 + 5 + 1 = 26 \text{ jugos.} \]
 \end{enumerate}
 \newpage
 
@@ -476,8 +469,8 @@ Encontrar una fórmula para el número de diagonales de un polígono de $n$ lado
 Una diagonal une 2 vértices no consecutivos. El total de líneas que unen 2 vértices es $\binom{n}{2}$. A esto le restamos los $n$ lados.
 \[ D(n) = \binom{n}{2} - n = \frac{n(n-3)}{2} \]
 \begin{itemize}
-	\item \textbf{Para n=20:} $D(20) = \frac{20(17)}{2} = 170$.
-	\item \textbf{Para D=65:} $\frac{n(n-3)}{2} = 65 \implies n^2 - 3n - 130 = 0$. Factorizando, $(n-13)(n+10)=0$. Solución válida: $n=13$.
+    \item \textbf{Para n=20:} $D(20) = \frac{20(17)}{2} = 170$.
+    \item \textbf{Para D=65:} $\frac{n(n-3)}{2} = 65 \implies n^2 - 3n - 130 = 0$. Factorizando, $(n-13)(n+10)=0$. Solución válida: $n=13$.
 \end{itemize}
 \newpage
 
@@ -525,10 +518,10 @@ Demostración de Euclides por contradicción. Suponer que hay un número finito 
 
 \subsection{Ejercicios Resueltos}
 \begin{enumerate}
-	\item \textbf{Lanzar un dado, P(Primo o Impar):} Sea P=\{2,3,5\}, I=\{1,3,5\}.
-	      $P(P \cup I) = P(P) + P(I) - P(P \cap I) = \frac{3}{6} + \frac{3}{6} - \frac{2}{6} = \frac{4}{6} = \frac{2}{3}$.
-	\item \textbf{Lanzar 2 dados, P(Al menos un par O Ambas múltiplos de 3):}
-	      $P(A \cup B) = P(A) + P(B) - P(A \cap B) = \frac{27}{36} + \frac{4}{36} - \frac{3}{36} = \frac{28}{36} = \frac{7}{9}$.
+    \item \textbf{Lanzar un dado, P(Primo o Impar):} Sea P=\{2,3,5\}, I=\{1,3,5\}.
+        $P(P \cup I) = P(P) + P(I) - P(P \cap I) = \frac{3}{6} + \frac{3}{6} - \frac{2}{6} = \frac{4}{6} = \frac{2}{3}$.
+    \item \textbf{Lanzar 2 dados, P(Al menos un par O Ambas múltiplos de 3):}
+        $P(A \cup B) = P(A) + P(B) - P(A \cap B) = \frac{27}{36} + \frac{4}{36} - \frac{3}{36} = \frac{28}{36} = \frac{7}{9}$.
 \end{enumerate}
 \newpage
 
@@ -538,14 +531,14 @@ Demostración de Euclides por contradicción. Suponer que hay un número finito 
 \begin{enumerate}
 	\item \textbf{Suma de dados=5:} Casos favorables: $\{(1,4),(2,3),(3,2),(4,1)\}$. $P(\text{Suma=5})=\frac{4}{36}=\frac{1}{9}$.
 	\item \textbf{Alumnos y deportes (60 total, 37 Fútbol, 38 Básquet):} La intersección es $|F \cap B| = 37+38-60=15$.
-	      \begin{itemize}
-		      \item $P(\text{Solo F}) = \frac{37-15}{60} = \frac{22}{60} = \frac{11}{30}$.
-		      \item $P(\text{Solo B}) = \frac{38-15}{60} = \frac{23}{60}$.
-	      \end{itemize}
-	\item \textbf{Comité 1H y 1M (de 7H y 8M):}
-	      \[ P(1H \cap 1M) = \frac{\binom{7}{1}\binom{8}{1}}{\binom{15}{2}} = \frac{7 \cdot 8}{105} = \frac{56}{105} = \frac{8}{15}. \]
-	\item \textbf{Al menos un 2 al lanzar un dado $n$ veces:}
-	      \[ P(\text{al menos un 2}) = 1 - P(\text{ningún 2}) = 1 - \left(\frac{5}{6}\right)^n. \]
+	    \begin{itemize}
+	        \item $P(\text{Solo F}) = \frac{37-15}{60} = \frac{22}{60} = \frac{11}{30}$.
+	        \item $P(\text{Solo B}) = \frac{38-15}{60} = \frac{23}{60}$.
+	    \end{itemize}
+	\item \textbf{Comité 1H y 1M (de 7H y 8M):} 
+	    \[ P(1H \cap 1M) = \frac{\binom{7}{1}\binom{8}{1}}{\binom{15}{2}} = \frac{7 \cdot 8}{105} = \frac{56}{105} = \frac{8}{15}. \]
+	\item \textbf{Al menos un 2 al lanzar un dado $n$ veces:} 
+	    \[ P(\text{al menos un 2}) = 1 - P(\text{ningún 2}) = 1 - \left(\frac{5}{6}\right)^n. \]
 \end{enumerate}
 \newpage
 
@@ -628,5 +621,6 @@ Dos eventos A y B son independientes si la ocurrencia de uno no afecta la probab
 		      \item $P(R|G1) = \frac{5}{45} = \frac{1}{9}$.
 	      \end{itemize}
 \end{enumerate}
+
 
 \end{document}

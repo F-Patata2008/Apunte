@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1761767576.15655 "Apunte.tex" "Apunte.pdf" "Apunte" 1761767579.54415 0
+["pdflatex"] 1761767621.22655 "Apunte.tex" "Apunte.pdf" "Apunte" 1761767624.65991 0
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1755987285 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1755987285 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1755987285 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -145,10 +145,10 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1755987285 42087 b0f9697c952c8f5a8eede4134282cb0d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1759531207 5311557 9da84c45f5b388655502706482323571 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1759531300 2081311 0ad7717c165370c4e7428dad1cc65a3e ""
-  "Apunte.aux" 1761767579.19267 18371 b3c87b266c63efd5e810710ad66fb40d "pdflatex"
-  "Apunte.out" 1761767579.196 23477 256a93055c908829f013771db9769254 "pdflatex"
-  "Apunte.tex" 1761767575.23255 85979 18534290715e58b6b49ba82a27da7f6d ""
-  "Apunte.toc" 1761767579.19933 11029 39590d70384f10c0bba9588dc8108094 "pdflatex"
+  "Apunte.aux" 1761767624.23058 18148 a0438d6786f55fefd46208b0b228b4c4 "pdflatex"
+  "Apunte.out" 1761767624.23725 23477 256a93055c908829f013771db9769254 "pdflatex"
+  "Apunte.tex" 1761767618.20708 85985 a911855d7c08092d76445986ae697fbc ""
+  "Apunte.toc" 1761767624.23725 11029 39590d70384f10c0bba9588dc8108094 "pdflatex"
   "images/IN.png" 1753454929.56759 7949 cc26bed184e5e1103c6a6f769f5412fa ""
   "images/MAS.png" 1755032422.05575 127399 4f2f0560c671bdbdc7aa00cf0f1969a7 ""
   "images/MASIS.png" 1755033079.39973 74242 5d209487991dcf43dd020d7984cc94ba ""
@@ -159,7 +159,6 @@
   "images/MPJ.png" 1755034005.12296 181630 dfb3d2e1bbd04b55a2bb2c28ebc8d3bf ""
   "images/muestra.png" 1755031558.66666 34079 124e5439d89dc7e1a7956fdb59cb355e ""
   "images/pascal.png" 1754928959.96307 39296 3dccd1261bc1f1e101239ac3834a8780 ""
-  "images/patata.png" 1753454929.56945 5350 59d00e6702605223625b39f8e3256329 ""
   "images/variables.png" 1755031885.10339 66226 4876dee54b4d9b136383a0ab19ce9782 ""
   (generated)
   "Apunte.aux"

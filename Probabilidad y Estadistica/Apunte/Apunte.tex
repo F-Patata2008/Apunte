@@ -84,8 +84,9 @@
 
 \newpage
 \thispagestyle{empty} % Oculta encabezado y pie en esta página
-\vspace*{5cm} % Añade espacio vertical
+
 \begin{center}
+	%\vspace*{2cm} % Espacio superior
 	\fbox{\begin{minipage}{0.85\textwidth}
 			\centering
 			\subsection*{Dedicatoria y Cesión de Uso}
@@ -106,21 +107,13 @@
 		\end{minipage}}
 \end{center}
 
+\vfill % Espacio flexible entre la dedicatoria y el resumen
 
-\newpage
-\thispagestyle{empty} % Oculta encabezado y pie en esta página
 \begin{abstract}
 	\noindent \textbf{Resumen} \\
-	Este apunte ofrece una introducción completa a los conceptos fundamentales de la probabilidad y la estadística. Comienza con la definición de términos esenciales como población, muestra, parámetro y estadígrafo, y la clasificación de variables en cualitativas y cuantitativas. Posteriormente, se profundiza en la estadística descriptiva, abordando las medidas de tendencia central (media, mediana, moda) y de dispersión (rango, varianza, desviación estándar), incluyendo sus propiedades y demostraciones matemáticas. El documento también explora diversas técnicas de muestreo, diferenciando entre métodos probabilísticos (aleatorio simple, estratificado, por conglomerados, sistemático) y no probabilísticos. Finalmente, se introduce la combinatoria mediante los principios aditivo y multiplicativo como base para el cálculo de probabilidades.
+	Este apunte ofrece una introducción completa a los conceptos fundamentales de la probabilidad y la estadística. Comienza con la definición de términos esenciales como población, muestra, parámetro y estadígrafo, y la clasificación de variables en cualitativas y cuantitativas. Posteriormente, se profundiza en la estadística descriptiva, abordando las medidas de tendencia central (media, mediana, moda) y de dispersión (rango, varianza, desviación estándar), incluyendo sus propiedades y demostraciones matemáticas. El documento también explora diversas técnicas de muestreo, diferenciando entre métodos probabilísticos y no probabilísticos. Finalmente, se introduce la combinatoria mediante los principios aditivo y multiplicativo como base para el cálculo de probabilidades.
 \end{abstract}
 
-% La figura del gatito ha sido comentada para un look más formal
-%\begin{figure}[htbp]
-%	\centering
-%	\includegraphics[width=0.45\textwidth]{gatito}
-%	\caption{Gatito para hacer bonito el apunte.}
-%	\label{fig:gatito}
-%\end{figure}
 
 \newpage
 \tableofcontents
@@ -142,7 +135,6 @@ Subconjunto de la población que se mide u observa.
 	\includegraphics[width=0.85\textwidth]{muestra}
 	\caption{Representación de la muestra dentro de la población.}
 \end{figure}
-
 
 \subsubsection{Parámetro:}
 Es una medición numérica que describe alguna característica de una población.
@@ -628,13 +620,13 @@ Dos eventos A y B son independientes si la ocurrencia de uno no afecta la probab
 	\item \textbf{Pacientes en consultorio (Teorema de Bayes):}
 	      \[ P(H|F) = \frac{P(F|H)P(H)}{P(F)} = \frac{0.50 \cdot 0.10}{0.40} = \frac{0.05}{0.40} = \frac{1}{8} = 12.5\% \]
 
-	\item \textbf{Examen de conducir (Tabla de contingencia):} Con un total de 200 personas, 58 en G3, 45 en G1, y 29 reprobados totales.
+	\item \textbf{Examen de conducir (Tabla de contingencia):}
+	      Con un total de 200 personas, 58 en G3, 45 en G1, y 29 reprobados totales.
 	      \begin{itemize}
 		      \item $P(A|G3) = \frac{46}{58} = \frac{23}{29}$.
 		      \item $P(G1|R) = \frac{5}{29}$.
 		      \item $P(R|G1) = \frac{5}{45} = \frac{1}{9}$.
 	      \end{itemize}
 \end{enumerate}
-
 
 \end{document}

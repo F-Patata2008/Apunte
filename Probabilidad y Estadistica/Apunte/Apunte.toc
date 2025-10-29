@@ -1,71 +1,71 @@
 \babel@toc {spanish}{}\relax 
-\contentsline {section}{\numberline {1}Conceptos Fundamentales de Estadística}{6}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Conceptos Básicos}{6}{subsection.1.1}%
-\contentsline {subsubsection}{\numberline {1.1.1}Población:}{6}{subsubsection.1.1.1}%
-\contentsline {subsubsection}{\numberline {1.1.2}Muestra:}{6}{subsubsection.1.1.2}%
-\contentsline {subsubsection}{\numberline {1.1.3}Parámetro:}{6}{subsubsection.1.1.3}%
-\contentsline {subsubsection}{\numberline {1.1.4}Estadístico (o estadígrafo):}{6}{subsubsection.1.1.4}%
-\contentsline {subsection}{\numberline {1.2}Tipos de Variables}{7}{subsection.1.2}%
-\contentsline {subsubsection}{\numberline {1.2.1}Variables cualitativas:}{7}{subsubsection.1.2.1}%
-\contentsline {subsubsection}{\numberline {1.2.2}Variables cuantitativas:}{7}{subsubsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.3}Ejercicios}{8}{subsection.1.3}%
-\contentsline {section}{\numberline {2}Tablas de Frecuencia y Medidas de Tendencia Central}{9}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Tablas de Frecuencia}{9}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Medidas de Tendencia Central}{9}{subsection.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.1}Media Aritmética ($\bar {x}$)}{9}{subsubsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2}Mediana ($M_e$)}{9}{subsubsection.2.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.3}Moda ($M_o$)}{9}{subsubsection.2.2.3}%
-\contentsline {section}{\numberline {3}Ejercicios de Medidas de Tendencia Central}{10}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Problemas Resueltos}{10}{subsection.3.1}%
-\contentsline {section}{\numberline {4}Muestreo y Representatividad}{11}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Población y Muestra}{11}{subsection.4.1}%
-\contentsline {subsubsection}{\numberline {4.1.1}Representatividad}{11}{subsubsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.2}Tipos de Muestreo Probabilístico}{11}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Tipos de Muestreo No Probabilístico}{11}{subsection.4.3}%
-\contentsline {section}{\numberline {5}Medidas de Dispersión}{13}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Definición y Tipos}{13}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Propiedades de la Varianza y Desviación Estándar}{13}{subsection.5.2}%
-\contentsline {section}{\numberline {6}Propiedades de la Varianza (Demostraciones)}{14}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Fórmula Computacional de la Varianza}{14}{subsection.6.1}%
-\contentsline {section}{\numberline {7}Relación entre Varianza y Desviación Estándar}{15}{section.7}%
-\contentsline {section}{\numberline {8}Medidas de Posición}{16}{section.8}%
-\contentsline {section}{\numberline {9}Principios Fundamentales de la Combinatoria}{17}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Técnicas de Conteo}{17}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Ejercicios}{17}{subsection.9.2}%
-\contentsline {section}{\numberline {10}Permutaciones}{18}{section.10}%
-\contentsline {subsubsection}{\numberline {10.0.1}Permutación simple}{18}{subsubsection.10.0.1}%
-\contentsline {subsubsection}{\numberline {10.0.2}Permutación con repetición}{18}{subsubsection.10.0.2}%
-\contentsline {subsubsection}{\numberline {10.0.3}Permutación Circular}{18}{subsubsection.10.0.3}%
-\contentsline {subsection}{\numberline {10.1}Ejercicios}{18}{subsection.10.1}%
-\contentsline {section}{\numberline {11}Variaciones y Combinaciones}{19}{section.11}%
-\contentsline {subsection}{\numberline {11.1}Variación (o Arreglo)}{19}{subsection.11.1}%
-\contentsline {subsection}{\numberline {11.2}Combinaciones}{19}{subsection.11.2}%
-\contentsline {section}{\numberline {12}Propiedades de Combinatoria y Triángulo de Pascal}{21}{section.12}%
-\contentsline {subsection}{\numberline {12.1}Propiedades de los Números Combinatorios}{21}{subsection.12.1}%
-\contentsline {subsection}{\numberline {12.2}Teorema del Binomio}{21}{subsection.12.2}%
-\contentsline {subsection}{\numberline {12.3}Conjunto Potencia}{21}{subsection.12.3}%
-\contentsline {subsection}{\numberline {12.4}Ejercicios}{21}{subsection.12.4}%
-\contentsline {section}{\numberline {13}Repaso y Ejercicios de Aplicación de Combinatoria}{22}{section.13}%
-\contentsline {subsection}{\numberline {13.1}Ejercicios Resueltos}{22}{subsection.13.1}%
-\contentsline {section}{\numberline {14}Aplicaciones de Combinatoria: Diagonales de un Polígono}{23}{section.14}%
-\contentsline {subsection}{\numberline {14.1}Problema}{23}{subsection.14.1}%
-\contentsline {subsection}{\numberline {14.2}Solución}{23}{subsection.14.2}%
-\contentsline {section}{\numberline {15}Muestreo e Introducción a la Probabilidad}{24}{section.15}%
-\contentsline {subsection}{\numberline {15.1}El Promedio de las Medias Muestrales}{24}{subsection.15.1}%
-\contentsline {subsection}{\numberline {15.2}Conceptos Fundamentales de Probabilidad}{24}{subsection.15.2}%
-\contentsline {subsection}{\numberline {15.3}Regla de Laplace}{24}{subsection.15.3}%
-\contentsline {section}{\numberline {16}Fundamentos Axiomáticos de la Probabilidad}{25}{section.16}%
-\contentsline {subsection}{\numberline {16.1}Axiomas de Kolmogorov (1933)}{25}{subsection.16.1}%
-\contentsline {subsection}{\numberline {16.2}Digresión: La Infinitud de los Números Primos}{25}{subsection.16.2}%
-\contentsline {section}{\numberline {17}Propiedades y Aplicaciones de la Probabilidad}{26}{section.17}%
-\contentsline {subsection}{\numberline {17.1}Propiedades Derivadas de los Axiomas}{26}{subsection.17.1}%
-\contentsline {subsection}{\numberline {17.2}Ejercicios Resueltos}{26}{subsection.17.2}%
-\contentsline {section}{\numberline {18}Ejercicios de Probabilidad Clásica}{27}{section.18}%
-\contentsline {subsection}{\numberline {18.1}Problemas Resueltos}{27}{subsection.18.1}%
-\contentsline {section}{\numberline {19}Probabilidad Condicional}{28}{section.19}%
-\contentsline {subsection}{\numberline {19.1}El Problema de Monty Hall}{28}{subsection.19.1}%
-\contentsline {subsection}{\numberline {19.2}Definición de Probabilidad Condicional}{28}{subsection.19.2}%
-\contentsline {subsubsection}{\numberline {19.2.1}Eventos Independientes}{28}{subsubsection.19.2.1}%
-\contentsline {section}{\numberline {20}Ejercicios de Probabilidad Condicional y Teorema de Bayes}{29}{section.20}%
-\contentsline {subsection}{\numberline {20.1}Enunciados}{29}{subsection.20.1}%
-\contentsline {subsection}{\numberline {20.2}Soluciones Detalladas}{30}{subsection.20.2}%
+\contentsline {section}{\numberline {1}Conceptos Fundamentales de Estadística}{5}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Conceptos Básicos}{5}{subsection.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1}Población:}{5}{subsubsection.1.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.2}Muestra:}{5}{subsubsection.1.1.2}%
+\contentsline {subsubsection}{\numberline {1.1.3}Parámetro:}{5}{subsubsection.1.1.3}%
+\contentsline {subsubsection}{\numberline {1.1.4}Estadístico (o estadígrafo):}{5}{subsubsection.1.1.4}%
+\contentsline {subsection}{\numberline {1.2}Tipos de Variables}{6}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Variables cualitativas:}{6}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2}Variables cuantitativas:}{6}{subsubsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.3}Ejercicios}{7}{subsection.1.3}%
+\contentsline {section}{\numberline {2}Tablas de Frecuencia y Medidas de Tendencia Central}{8}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Tablas de Frecuencia}{8}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Medidas de Tendencia Central}{8}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Media Aritmética ($\bar {x}$)}{8}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Mediana ($M_e$)}{8}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Moda ($M_o$)}{8}{subsubsection.2.2.3}%
+\contentsline {section}{\numberline {3}Ejercicios de Medidas de Tendencia Central}{9}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Problemas Resueltos}{9}{subsection.3.1}%
+\contentsline {section}{\numberline {4}Muestreo y Representatividad}{10}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Población y Muestra}{10}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Representatividad}{10}{subsubsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.2}Tipos de Muestreo Probabilístico}{10}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Tipos de Muestreo No Probabilístico}{10}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Medidas de Dispersión}{12}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Definición y Tipos}{12}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Propiedades de la Varianza y Desviación Estándar}{12}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Propiedades de la Varianza (Demostraciones)}{13}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Fórmula Computacional de la Varianza}{13}{subsection.6.1}%
+\contentsline {section}{\numberline {7}Relación entre Varianza y Desviación Estándar}{14}{section.7}%
+\contentsline {section}{\numberline {8}Medidas de Posición}{15}{section.8}%
+\contentsline {section}{\numberline {9}Principios Fundamentales de la Combinatoria}{16}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Técnicas de Conteo}{16}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Ejercicios}{16}{subsection.9.2}%
+\contentsline {section}{\numberline {10}Permutaciones}{17}{section.10}%
+\contentsline {subsubsection}{\numberline {10.0.1}Permutación simple}{17}{subsubsection.10.0.1}%
+\contentsline {subsubsection}{\numberline {10.0.2}Permutación con repetición}{17}{subsubsection.10.0.2}%
+\contentsline {subsubsection}{\numberline {10.0.3}Permutación Circular}{17}{subsubsection.10.0.3}%
+\contentsline {subsection}{\numberline {10.1}Ejercicios}{17}{subsection.10.1}%
+\contentsline {section}{\numberline {11}Variaciones y Combinaciones}{18}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Variación (o Arreglo)}{18}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}Combinaciones}{18}{subsection.11.2}%
+\contentsline {section}{\numberline {12}Propiedades de Combinatoria y Triángulo de Pascal}{20}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Propiedades de los Números Combinatorios}{20}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}Teorema del Binomio}{20}{subsection.12.2}%
+\contentsline {subsection}{\numberline {12.3}Conjunto Potencia}{20}{subsection.12.3}%
+\contentsline {subsection}{\numberline {12.4}Ejercicios}{20}{subsection.12.4}%
+\contentsline {section}{\numberline {13}Repaso y Ejercicios de Aplicación de Combinatoria}{21}{section.13}%
+\contentsline {subsection}{\numberline {13.1}Ejercicios Resueltos}{21}{subsection.13.1}%
+\contentsline {section}{\numberline {14}Aplicaciones de Combinatoria: Diagonales de un Polígono}{22}{section.14}%
+\contentsline {subsection}{\numberline {14.1}Problema}{22}{subsection.14.1}%
+\contentsline {subsection}{\numberline {14.2}Solución}{22}{subsection.14.2}%
+\contentsline {section}{\numberline {15}Muestreo e Introducción a la Probabilidad}{23}{section.15}%
+\contentsline {subsection}{\numberline {15.1}El Promedio de las Medias Muestrales}{23}{subsection.15.1}%
+\contentsline {subsection}{\numberline {15.2}Conceptos Fundamentales de Probabilidad}{23}{subsection.15.2}%
+\contentsline {subsection}{\numberline {15.3}Regla de Laplace}{23}{subsection.15.3}%
+\contentsline {section}{\numberline {16}Fundamentos Axiomáticos de la Probabilidad}{24}{section.16}%
+\contentsline {subsection}{\numberline {16.1}Axiomas de Kolmogorov (1933)}{24}{subsection.16.1}%
+\contentsline {subsection}{\numberline {16.2}Digresión: La Infinitud de los Números Primos}{24}{subsection.16.2}%
+\contentsline {section}{\numberline {17}Propiedades y Aplicaciones de la Probabilidad}{25}{section.17}%
+\contentsline {subsection}{\numberline {17.1}Propiedades Derivadas de los Axiomas}{25}{subsection.17.1}%
+\contentsline {subsection}{\numberline {17.2}Ejercicios Resueltos}{25}{subsection.17.2}%
+\contentsline {section}{\numberline {18}Ejercicios de Probabilidad Clásica}{26}{section.18}%
+\contentsline {subsection}{\numberline {18.1}Problemas Resueltos}{26}{subsection.18.1}%
+\contentsline {section}{\numberline {19}Probabilidad Condicional}{27}{section.19}%
+\contentsline {subsection}{\numberline {19.1}El Problema de Monty Hall}{27}{subsection.19.1}%
+\contentsline {subsection}{\numberline {19.2}Definición de Probabilidad Condicional}{27}{subsection.19.2}%
+\contentsline {subsubsection}{\numberline {19.2.1}Eventos Independientes}{27}{subsubsection.19.2.1}%
+\contentsline {section}{\numberline {20}Ejercicios de Probabilidad Condicional y Teorema de Bayes}{28}{section.20}%
+\contentsline {subsection}{\numberline {20.1}Enunciados}{28}{subsection.20.1}%
+\contentsline {subsection}{\numberline {20.2}Soluciones Detalladas}{29}{subsection.20.2}%

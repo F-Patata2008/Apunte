@@ -1,0 +1,375 @@
+\documentclass[11pt, a4paper]{article}
+
+%=============== PAQUETES Y CONFIGURACIÓN ===============
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{listings}
+
+% Márgenes
+\geometry{
+    a4paper,
+    total={170mm,257mm},
+    left=20mm,
+    top=20mm,
+}
+
+% Colores para el código y links
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+% Configuración del paquete 'listings' para C++
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize\ttfamily,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2,
+    language=C++
+}
+\lstset{style=mystyle}
+
+% Configuración de hyperref
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+}
+
+%=============== DOCUMENTO ===============
+\title{Apunte de Programación Competitiva para la OCI}
+\author{Mi Nombre} % Puedes poner tu nombre aquí
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+%---------------------------------------------------
+\section{Plantillas Básicas (Snippets)}
+%---------------------------------------------------
+
+\subsection{Plantilla con Casos de Prueba (Patata)}
+\begin{lstlisting}
+#include <bits/stdc++.h>
+using namespace std;
+
+typedef long long ll;
+typedef string str;
+#define vec vector
+
+void fast_io() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+}
+
+int main() {
+    fast_io();
+    int t;
+    cin >> t;
+    while (t--) {
+        // Tu codigo para cada caso de prueba
+    }
+    return 0;
+}
+\end{lstlisting}
+
+\subsection{Plantilla sin Casos de Prueba (Papa)}
+\begin{lstlisting}
+#include <bits/stdc++.h>
+using namespace std;
+
+typedef long long ll;
+typedef string str;
+#define vec vector
+
+void fast_io() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+}
+
+int main() {
+    fast_io();
+    // Tu codigo
+    return 0;
+}
+\end{lstlisting}
+
+%---------------------------------------------------
+\section{Estructuras de Datos Esenciales}
+%---------------------------------------------------
+
+\subsection{\texttt{std::vector}}
+Contenedor dinámico similar a un arreglo.
+\begin{lstlisting}
+vector<int> v;
+v.push_back(10);          // Agrega al final - O(1) amortizado
+v.pop_back();             // Elimina del final - O(1)
+int tam = v.size();       // Obtiene el tamano
+bool vacio = v.empty();   // Verifica si esta vacio
+int primer = v.front();   // Primer elemento
+int ultimo = v.back();    // Ultimo elemento
+v.clear();                // Elimina todos los elementos
+
+// Acceso con iteradores
+auto it = v.begin();      // Iterador al inicio
+auto it_end = v.end();    // Iterador al final (posicion despues del ultimo)
+
+// Inicializacion
+vector<int> v1(10, 0);    // Vector de 10 ceros
+vector<int> v2 = {1,2,3}; // Inicializacion directa
+\end{lstlisting}
+
+\subsection{\texttt{std::map} y \texttt{std::unordered\_map}}
+Asocian una clave a un valor.
+\begin{itemize}
+	\item \texttt{map}: Ordenado por clave. Operaciones en $O(\log N)$.
+	\item \texttt{unordered\_map}: Sin orden. Operaciones en $O(1)$ en promedio. Más rápido.
+\end{itemize}
+\begin{lstlisting}
+map<string, int> m;
+m["hola"] = 1;
+m["mundo"] = 2;
+
+if (m.count("hola")) { // Verifica si la clave existe
+    cout << m["hola"];
+}
+m.erase("mundo"); // Elimina por clave
+
+for (auto const& [clave, valor] : m) {
+    cout << clave << ": " << valor << endl;
+}
+\end{lstlisting}
+
+\subsection{\texttt{std::set} y \texttt{std::unordered\_set}}
+Almacenan elementos únicos.
+\begin{itemize}
+	\item \texttt{set}: Ordenado. Operaciones en $O(\log N)$.
+	\item \texttt{unordered\_set}: Sin orden. Operaciones en $O(1)$ en promedio.
+\end{itemize}
+\begin{lstlisting}
+set<int> s;
+s.insert(10);
+s.insert(20);
+s.insert(10); // No se inserta, ya existe
+s.erase(20);
+if (s.count(10)) { // Verdadero
+    // ...
+}
+\end{lstlisting}
+
+\subsection{\texttt{std::stack} (Pila - LIFO)}
+\begin{lstlisting}
+stack<int> s;
+s.push(10);     // Agrega
+s.pop();        // Quita el de arriba
+int top = s.top(); // Consulta el de arriba
+bool vacio = s.empty();
+\end{lstlisting}
+
+\subsection{\texttt{std::queue} (Cola - FIFO)}
+\begin{lstlisting}
+queue<int> q;
+q.push(10);     // Agrega al final
+q.pop();        // Quita el del frente
+int frente = q.front(); // Consulta el del frente
+\end{lstlisting}
+
+\subsection{\texttt{std::priority\_queue} (Cola de Prioridad)}
+Por defecto, es una cola de máximos (el mayor tiene más prioridad).
+\begin{lstlisting}
+// Cola de maximos (por defecto)
+priority_queue<int> pq_max;
+pq_max.push(30); pq_max.push(10); // Top es 30
+
+// Cola de minimos (el menor tiene mas prioridad)
+priority_queue<int, vector<int>, greater<int>> pq_min;
+pq_min.push(30); pq_min.push(10); // Top es 10
+\end{lstlisting}
+
+
+%---------------------------------------------------
+\section{Algoritmos Comunes de la Librería Estándar}
+%---------------------------------------------------
+
+\subsection{\texttt{std::sort}}
+Ordena un contenedor. Complejidad $O(N \log N)$.
+\begin{lstlisting}
+vector<int> v = {3, 1, 4, 1, 5, 9};
+sort(v.begin(), v.end()); // Orden ascendente
+sort(v.rbegin(), v.rend()); // Orden descendente
+
+// Con comparador personalizado (lambda)
+sort(v.begin(), v.end(), [](int a, int b) {
+    return a > b; // Para orden descendente
+});
+\end{lstlisting}
+
+\subsection{\texttt{std::lower\_bound} y \texttt{std::upper\_bound}}
+Realizan búsqueda binaria en un rango ordenado. $O(\log N)$.
+\begin{itemize}
+	\item \texttt{lower\_bound(val)}: Devuelve un iterador al primer elemento que es \textbf{no menor} que `val`.
+	\item \texttt{upper\_bound(val)}: Devuelve un iterador al primer elemento que es \textbf{mayor} que `val`.
+\end{itemize}
+\begin{lstlisting}
+vector<int> v = {10, 20, 30, 30, 30, 40, 50};
+//               0   1   2   3   4   5   6
+
+// Encontrar el primer 30
+auto it_l = lower_bound(v.begin(), v.end(), 30);
+int idx_l = it_l - v.begin(); // idx_l = 2
+
+// Encontrar el primer elemento > 30
+auto it_u = upper_bound(v.begin(), v.end(), 30);
+int idx_u = it_u - v.begin(); // idx_u = 5
+
+// Contar ocurrencias de 30
+int count = idx_u - idx_l; // count = 3
+\end{lstlisting}
+
+\subsection{\texttt{std::next\_permutation}}
+Genera la siguiente permutación lexicográficamente mayor de una secuencia. Para generar todas las permutaciones, la secuencia debe estar ordenada inicialmente.
+\begin{lstlisting}
+string s = "123";
+sort(s.begin(), s.end());
+do {
+    cout << s << endl;
+} while (next_permutation(s.begin(), s.end()));
+// Imprime: 123, 132, 213, 231, 312, 321
+\end{lstlisting}
+
+%---------------------------------------------------
+\section{Técnicas Clave}
+%---------------------------------------------------
+
+\subsection{Sumas de Prefijos}
+Permite calcular la suma de cualquier subarreglo en $O(1)$ después de un pre-cómputo en $O(N)$.
+\begin{lstlisting}
+// Arreglo original: arr
+// Arreglo de sumas de prefijos: prefix_sum
+int n = arr.size();
+vector<ll> prefix_sum(n + 1, 0);
+
+// 1. Construir el arreglo de prefijos
+for (int i = 0; i < n; i++) {
+    prefix_sum[i + 1] = prefix_sum[i] + arr[i];
+}
+
+// 2. Consultar la suma del rango [L, R] (inclusive)
+// Los indices L y R son 0-based
+ll suma_rango = prefix_sum[R + 1] - prefix_sum[L];
+\end{lstlisting}
+
+\subsection{Búsqueda Binaria (General)}
+Técnica para encontrar una respuesta en un espacio de búsqueda monotónico.
+\begin{lstlisting}
+ll low = 0, high = 1e9, ans = -1;
+while (low <= high) {
+    ll mid = low + (high - low) / 2;
+    if (check(mid)) { // check(x) es una funcion que devuelve true si x es una respuesta valida
+        ans = mid;
+        high = mid - 1; // Para minimizar la respuesta
+        // low = mid + 1; // Para maximizar la respuesta
+    } else {
+        low = mid + 1; // Para minimizar la respuesta
+        // high = mid - 1; // Para maximizar la respuesta
+    }
+}
+// ans contiene la respuesta
+\end{lstlisting}
+
+%---------------------------------------------------
+\section{Algoritmos de Grafos}
+%---------------------------------------------------
+
+\subsection{Representación: Lista de Adyacencia}
+\begin{lstlisting}
+int n; // numero de nodos
+vector<vector<int>> adj; // Grafo no pesado
+vector<vector<pair<int, int>>> adj_w; // Grafo pesado {vecino, peso}
+\end{lstlisting}
+
+\subsection{Búsqueda en Anchura (BFS)}
+Encuentra el camino más corto en grafos no pesados.
+\begin{lstlisting}
+vector<int> dist(n + 1, -1);
+queue<int> q;
+
+dist[start_node] = 0;
+q.push(start_node);
+
+while (!q.empty()) {
+    int u = q.front();
+    q.pop();
+    for (int v : adj[u]) {
+        if (dist[v] == -1) {
+            dist[v] = dist[u] + 1;
+            q.push(v);
+        }
+    }
+}
+\end{lstlisting}
+
+\subsection{Búsqueda en Profundidad (DFS)}
+Para recorrido, detección de ciclos, componentes conexas, etc.
+\begin{lstlisting}
+vector<bool> visited(n + 1, false);
+
+function<void(int)> dfs = [&](int u) {
+    visited[u] = true;
+    // procesar nodo u
+    for (int v : adj[u]) {
+        if (!visited[v]) {
+            dfs(v);
+        }
+    }
+};
+
+dfs(start_node);
+\end{lstlisting}
+
+\subsection{Algoritmo de Dijkstra}
+Camino más corto en grafos con pesos no negativos.
+\begin{lstlisting}
+vector<ll> dist(n + 1, 1e18);
+priority_queue<pair<ll, int>, vector<pair<ll, int>>, greater<pair<ll, int>>> pq;
+
+dist[start_node] = 0;
+pq.push({0, start_node}); // {distancia, nodo}
+
+while (!pq.empty()) {
+    auto [d, u] = pq.top();
+    pq.pop();
+
+    if (d > dist[u]) continue;
+
+    for (auto& edge : adj_w[u]) {
+        auto [v, weight] = edge;
+        if (dist[u] + weight < dist[v]) {
+            dist[v] = dist[u] + weight;
+            pq.push({dist[v], v});
+        }
+    }
+}
+\end{lstlisting}
+
+\end{document}

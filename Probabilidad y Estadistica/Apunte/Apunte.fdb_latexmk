@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1761783580.98676 "Apunte.tex" "Apunte.pdf" "Apunte" 1761783586.9056 0
+["pdflatex"] 1763662644.85204 "Apunte.tex" "Apunte.pdf" "Apunte" 1763662650.3065 0
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1755987285 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1755987285 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1755987285 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -143,12 +143,12 @@
   "/usr/share/texmf-dist/tex/latex/tools/tabularx.sty" 1755987285 7243 e5dac1240636811edb77568b81818372 ""
   "/usr/share/texmf-dist/tex/latex/url/url.sty" 1755987285 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1755987285 42087 b0f9697c952c8f5a8eede4134282cb0d ""
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1759531207 5311557 9da84c45f5b388655502706482323571 ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1759531300 2081311 0ad7717c165370c4e7428dad1cc65a3e ""
-  "Apunte.aux" 1761783586.04893 18148 a0438d6786f55fefd46208b0b228b4c4 "pdflatex"
-  "Apunte.out" 1761783586.09226 23477 256a93055c908829f013771db9769254 "pdflatex"
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1762822988 5311557 9da84c45f5b388655502706482323571 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1762822965 2081309 a7a1951bc2aa48bfe600547dbe1c645c ""
+  "Apunte.aux" 1763662649.77726 18148 a0438d6786f55fefd46208b0b228b4c4 "pdflatex"
+  "Apunte.out" 1763662649.78726 23477 256a93055c908829f013771db9769254 "pdflatex"
   "Apunte.tex" 1761783583.87887 86032 acf81e8aa308880fac47e533ca10af4f ""
-  "Apunte.toc" 1761783586.09559 11029 39590d70384f10c0bba9588dc8108094 "pdflatex"
+  "Apunte.toc" 1763662649.78726 11029 39590d70384f10c0bba9588dc8108094 "pdflatex"
   "images/IN.png" 1753454929.56759 7949 cc26bed184e5e1103c6a6f769f5412fa ""
   "images/MAS.png" 1755032422.05575 127399 4f2f0560c671bdbdc7aa00cf0f1969a7 ""
   "images/MASIS.png" 1755033079.39973 74242 5d209487991dcf43dd020d7984cc94ba ""

@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1759238502.52706 "main.tex" "main.pdf" "main" 1759238503.83686 0
+["pdflatex"] 1763662622.56101 "main.tex" "main.pdf" "main" 1763662624.13235 0
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1755987285 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1755987285 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecbi1200.tfm" 1755987285 3072 ccae1a240ab272417e4399fe942df546 ""
@@ -118,11 +118,11 @@
   "/usr/share/texmf-dist/tex/latex/tools/tabularx.sty" 1755987285 7243 e5dac1240636811edb77568b81818372 ""
   "/usr/share/texmf-dist/tex/latex/url/url.sty" 1755987285 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1755987285 42087 b0f9697c952c8f5a8eede4134282cb0d ""
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1757380537 5311557 9da84c45f5b388655502706482323571 ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1757380337 2081304 7d6458c40765e7b3dbe19463267caa67 ""
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1762822988 5311557 9da84c45f5b388655502706482323571 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1762822965 2081309 a7a1951bc2aa48bfe600547dbe1c645c ""
   "images/IN.png" 1753454929.56759 7949 cc26bed184e5e1103c6a6f769f5412fa ""
-  "main.aux" 1759238503.6525 362 f490e584a05859222ef692dc365eec1e "pdflatex"
-  "main.out" 1759238503.32347 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.aux" 1763662623.95335 362 f490e584a05859222ef692dc365eec1e "pdflatex"
+  "main.out" 1763662623.55667 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "main.tex" 1759238499.48713 14534 253ed28154ca13be2ca8048057af5dd0 ""
   (generated)
   "main.aux"

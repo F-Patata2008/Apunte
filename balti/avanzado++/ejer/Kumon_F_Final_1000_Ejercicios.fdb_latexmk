@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1771362904.79413 "Kumon_F_1000_Ejercicios.tex" "Kumon_F_1000_Ejercicios.pdf" "Kumon_F_1000_Ejercicios" 1771362906.86043 0
+["pdflatex"] 1771451107.03285 "Kumon_F_Final_1000_Ejercicios.tex" "Kumon_F_Final_1000_Ejercicios.pdf" "Kumon_F_Final_1000_Ejercicios" 1771451108.90106 0
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1767555874 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1767555874 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1767555874 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -13,7 +13,6 @@
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr17.tfm" 1767555874 1292 296a67155bdbfc32aa9c636f21e91433 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1767555874 1124 6c73e740cf17375f03eec0ee63599741 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1767555874 32080 340ef9bf63678554ee606688e7b5339d ""
-  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1767555874 36741 fa121aac0049305630cf160b86157ee4 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1767555874 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1767555874 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1767555874 32569 5e5ddc8df908dea60932f3c484a54c0d ""
@@ -39,10 +38,10 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1767555874 42087 b0f9697c952c8f5a8eede4134282cb0d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1770929804 5311557 9da84c45f5b388655502706482323571 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1770929791 2786140 f244e23d825a38efb10e9c10b1351df2 ""
-  "Kumon_F_1000_Ejercicios.aux" 1771362906.42602 34 ca521329b73f4e7209c75d176369c664 "pdflatex"
-  "Kumon_F_1000_Ejercicios.tex" 1771362863.82745 69368 8f72d4aa7a0012728ad47b22c1bf3913 ""
+  "Kumon_F_Final_1000_Ejercicios.aux" 1771451108.63917 34 181f29f092d70e5a8946631fc553aeee "pdflatex"
+  "Kumon_F_Final_1000_Ejercicios.tex" 1771451069.6143 89619 f2e9a830072cd7fb2ab81a41003a3894 ""
   (generated)
-  "Kumon_F_1000_Ejercicios.aux"
-  "Kumon_F_1000_Ejercicios.log"
-  "Kumon_F_1000_Ejercicios.pdf"
+  "Kumon_F_Final_1000_Ejercicios.aux"
+  "Kumon_F_Final_1000_Ejercicios.log"
+  "Kumon_F_Final_1000_Ejercicios.pdf"
   (rewritten before read)

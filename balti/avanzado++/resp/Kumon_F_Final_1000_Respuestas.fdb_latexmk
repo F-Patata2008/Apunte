@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1771362922.42111 "Kumon_F_1000_Respuestas.tex" "Kumon_F_1000_Respuestas.pdf" "Kumon_F_1000_Respuestas" 1771362923.4943 0
+["pdflatex"] 1771451111.77234 "Kumon_F_Final_1000_Respuestas.tex" "Kumon_F_Final_1000_Respuestas.pdf" "Kumon_F_Final_1000_Respuestas" 1771451112.58757 0
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1767555874 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1767555874 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1767555874 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -20,7 +20,6 @@
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1767555874 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1767555874 1120 8b7d695260f3cff42e636090a8002094 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1767555874 32080 340ef9bf63678554ee606688e7b5339d ""
-  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1767555874 36741 fa121aac0049305630cf160b86157ee4 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1767555874 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1767555874 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/usr/share/texmf-dist/tex/generic/iftex/iftex.sty" 1767555874 7984 7dbb9280f03c0a315425f1b4f35d43ee ""
@@ -45,10 +44,10 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1767555874 42087 b0f9697c952c8f5a8eede4134282cb0d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1770929804 5311557 9da84c45f5b388655502706482323571 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1770929791 2786140 f244e23d825a38efb10e9c10b1351df2 ""
-  "Kumon_F_1000_Respuestas.aux" 1771362923.36873 33 bdbf764baf0c139c53f5362d5edc4a6b "pdflatex"
-  "Kumon_F_1000_Respuestas.tex" 1771362863.82814 20625 238f27d57c2b50cd50c9d682ffcb1dfd ""
+  "Kumon_F_Final_1000_Respuestas.aux" 1771451112.46402 33 bdbf764baf0c139c53f5362d5edc4a6b "pdflatex"
+  "Kumon_F_Final_1000_Respuestas.tex" 1771451069.61452 26959 84031e555360bbef3b2917a0481d8789 ""
   (generated)
-  "Kumon_F_1000_Respuestas.aux"
-  "Kumon_F_1000_Respuestas.log"
-  "Kumon_F_1000_Respuestas.pdf"
+  "Kumon_F_Final_1000_Respuestas.aux"
+  "Kumon_F_Final_1000_Respuestas.log"
+  "Kumon_F_Final_1000_Respuestas.pdf"
   (rewritten before read)

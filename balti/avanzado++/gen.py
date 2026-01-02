@@ -1,83 +1,81 @@
 #!/usr/bin/env python3
 import random
-import os
 from fractions import Fraction
 
 # --- CONFIGURACIÓN ---
 TOTAL_DIAS = 20
 EJERCICIOS_POR_DIA = 50
-EJERCICIOS_POR_PAGINA = 10
-ARCHIVO_EJ = "Kumon_F_1000_Ejercicios.tex"
-ARCHIVO_RES = "Kumon_F_1000_Respuestas.tex"
+ARCHIVO_EJ = "Kumon_F_Final_1000_Ejercicios.tex"
+ARCHIVO_RES = "Kumon_F_Final_1000_Respuestas.tex"
 
-def to_latex_frac(f):
-    """Convierte Fraction a LaTeX (Simplificado/Mixto)"""
-    if f.denominator == 1: return str(f.numerator)
-    entero = f.numerator // f.denominator
-    resto = f.numerator % f.denominator
-    if entero > 0:
-        return f"{entero} \\frac{{{resto}}}{{{f.denominator}}}"
-    return f"\\frac{{{f.numerator}}}{{{f.denominator}}}"
+# --- UTILIDADES DE FRACCIONES ---
 
-def to_latex_dec(val):
-    """Formatea float: 1 decimal, sin .0 si es entero"""
-    val = round(val, 1)
-    return str(int(val)) if val.is_integer() else str(val)
+def to_mixed_latex(f):
+    """Convierte objeto Fraction a LaTeX estilo Mixto Simplificado"""
+    if f.denominator == 1:
+        return str(f.numerator)
+    num = f.numerator
+    den = f.denominator
+    whole = num // den
+    remain = num % den
+    if whole > 0:
+        return f"{whole} \\frac{{{remain}}}{{{den}}}"
+    return f"\\frac{{{num}}}{{{den}}}"
 
-# --- GENERADORES ---
+def gen_random_mixed():
+    """Genera (LaTeX_string, Fraction_object) de un número mixto"""
+    w = random.randint(1, 3)
+    d = random.choice([2, 3, 4, 5, 6])
+    n = random.randint(1, d - 1)
+    f = Fraction(w * d + n, d)
+    return f"{w} \\frac{{{n}}}{{{d}}}", f
 
-def gen_decimal_complex():
-    """Base^Exp +/- (Dec * Dec +/- Dec)"""
-    base = random.randint(2, 5)
-    exp = 2 if base > 3 else 3
-    val_pot = base ** exp
+def gen_random_simple_frac():
+    """Genera (LaTeX_string, Fraction_object) de una fracción propia"""
+    d = random.choice([2, 3, 4, 5, 6, 8, 10])
+    n = random.randint(1, d - 1)
+    return f"\\frac{{{n}}}{{{d}}}", Fraction(n, d)
 
-    # Paréntesis: (A * B - C)
-    a = random.choice([0.5, 1.2, 1.5, 2.0, 2.5, 0.2])
-    b = random.randint(2, 8)
-    c = round(random.uniform(0.1, 1.5), 1)
+# --- GENERADORES DE MODELOS ---
 
-    inner_val = (a * b) - c
-    inner_tex = f"({a} \\times {b} - {c})"
+def modelo_1():
+    """Ej: (2/5 + 3 1/2) + 3 1/2 * 1 1/6"""
+    # (F1 + M1) + M2 * M3
+    f1_tex, f1_val = gen_random_simple_frac()
+    m1_tex, m1_val = gen_random_mixed()
+    m2_tex, m2_val = gen_random_mixed()
+    m3_tex, m3_val = gen_random_mixed()
+    
+    q = f"({f1_tex} + {m1_tex}) + {m2_tex} \\times {m3_tex}"
+    res = (f1_val + m1_val) + (m2_val * m3_val)
+    return q, to_mixed_latex(res)
 
-    # Operación externa: Asegurar >= 0
-    if random.choice(['+', '-']) == '+' or val_pot < inner_val:
-        res = val_pot + inner_val
-        tex = f"{base}^{{{exp}}} + {inner_tex}"
-    else:
-        res = val_pot - inner_val
-        tex = f"{base}^{{{exp}}} - {inner_tex}"
+def modelo_2():
+    """Ej: (1 1/2)^2 + (1/3 + 2 1/2)"""
+    # (M1)^2 + (F1 + M2)
+    m1_tex, m1_val = gen_random_mixed()
+    f1_tex, f1_val = gen_random_simple_frac()
+    m2_tex, m2_val = gen_random_mixed()
+    
+    # Limitar base de potencia para que no sea inmanejable
+    if m1_val > 3: # Si el mixto es muy grande, bajarlo
+        m1_tex, m1_val = "1 \\frac{1}{2}", Fraction(3, 2)
+        
+    q = f"({m1_tex})^2 + ({f1_tex} + {m2_tex})"
+    res = (m1_val**2) + (f1_val + m2_val)
+    return q, to_mixed_latex(res)
 
-    return tex, to_latex_dec(res)
+def modelo_3():
+    """Ej: Entero * Fracción + (Mixto)^2"""
+    entero = random.randint(2, 5)
+    f1_tex, f1_val = gen_random_simple_frac()
+    m1_tex, m1_val = "1 \\frac{1}{2}", Fraction(3, 2) # Base fija simple para potencias
+    
+    q = f"{entero} \\times {f1_tex} + ({m1_tex})^2"
+    res = (entero * f1_val) + (m1_val**2)
+    return q, to_mixed_latex(res)
 
-def gen_fraction_complex():
-    """Base^Exp +/- (Frac +/- Frac)"""
-    base = random.randint(2, 5)
-    exp = random.choice([2, 3]) if base < 4 else 2
-    val_pot = base ** exp
-
-    den = random.choice([2, 3, 4, 5, 6, 8, 10])
-    f1 = Fraction(random.randint(1, den*2), den)
-    f2 = Fraction(random.randint(1, den), den)
-
-    if random.choice(['+', '-']) == '+':
-        val_inner = f1 + f2
-        inner_tex = f"(\\frac{{{f1.numerator}}}{{{f1.denominator}}} + \\frac{{{f2.numerator}}}{{{f2.denominator}}})"
-    else:
-        if f1 < f2: f1, f2 = f2, f1
-        val_inner = f1 - f2
-        inner_tex = f"(\\frac{{{f1.numerator}}}{{{f1.denominator}}} - \\frac{{{f2.numerator}}}{{{f2.denominator}}})"
-
-    if random.choice(['+', '-']) == '+' or val_pot < val_inner:
-        res = val_pot + val_inner
-        tex = f"{base}^{{{exp}}} + {inner_tex}"
-    else:
-        res = val_pot - val_inner
-        tex = f"{base}^{{{exp}}} - {inner_tex}"
-
-    return tex, to_latex_frac(res)
-
-# --- CORE ---
+# --- CORE GENERATOR ---
 
 def run():
     header = r"""\documentclass[12pt]{article}
@@ -86,40 +84,45 @@ def run():
 \usepackage{geometry}
 \usepackage{fancyhdr}
 \usepackage{multicol}
-\geometry{a4paper, total={175mm,260mm}, left=18mm, top=20mm, bottom=20mm}
+\geometry{a4paper, total={175mm,260mm}, left=18mm, top=15mm, bottom=20mm}
+\setlength{\parindent}{0pt}
 \pagestyle{fancy}
 \fancyhf{}
-\rhead{Nivel F - 1000 Practice}
+\rhead{\textbf{Nivel F/G} - Fracciones y Potencias Mixtas}
 \cfoot{\thepage}
 \begin{document}
 """
-
+    
     prob_body = header
-    res_body = header.replace("Practice", "Solucionario")
+    res_body = header.replace("Fracciones", "SOLUCIONARIO")
+    
+    print(f"Generando 1000 ejercicios en {TOTAL_DIAS} días...")
 
     for dia in range(1, TOTAL_DIAS + 1):
-        prob_body += f"\\section*{{Día {dia}: Entrenamiento Intensivo}}\n\\begin{{enumerate}}\n"
-        res_body += f"\\section*{{Día {dia}}}\n\\begin{{multicols}}{{5}}\\begin{{enumerate}}\n"
-
+        prob_body += f"\\section*{{Día {dia}: Operaciones Combinadas de Mixtos}}\n\\begin{{enumerate}}\n"
+        res_body += f"\\section*{{Día {dia}}}\n\\begin{{multicols}}{{2}}\\begin{{enumerate}}\n"
+        
         for i in range(1, EJERCICIOS_POR_DIA + 1):
-            # Mix 50/50
-            q, a = gen_decimal_complex() if i % 2 == 0 else gen_fraction_complex()
-
-            prob_body += f"\\item \\large $ {q} = $ \\vspace{{1.6cm}}\n"
+            # Seleccionar modelo aleatorio
+            m = random.choice([modelo_1, modelo_2, modelo_3])
+            q, a = m()
+            
+            prob_body += f"\\item \\large $ {q} = $ \\vspace{{1.8cm}}\n"
             res_body += f"\\item $ {a} $\n"
-
-            if i % EJERCICIOS_POR_PAGINA == 0 and i != EJERCICIOS_POR_DIA:
+            
+            # 10 ejercicios por página
+            if i % 10 == 0 and i != EJERCICIOS_POR_DIA:
                 prob_body += "\\newpage\n"
-
+        
         prob_body += "\\end{enumerate}\\newpage\n"
         res_body += "\\end{enumerate}\\end{multicols}\\newpage\n"
-
+        
     prob_body += "\\end{document}"
     res_body += "\\end{document}"
-
+    
     with open(ARCHIVO_EJ, 'w') as f: f.write(prob_body)
     with open(ARCHIVO_RES, 'w') as f: f.write(res_body)
-    print(f"-> Generados {TOTAL_DIAS*EJERCICIOS_POR_DIA} ejercicios en {ARCHIVO_EJ}")
+    print("¡Hecho! Archivos listos para pdflatex.")
 
 if __name__ == "__main__":
     run()

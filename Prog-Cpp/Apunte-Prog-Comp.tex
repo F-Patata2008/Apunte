@@ -1,0 +1,298 @@
+\documentclass[10pt, letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[top=1.5cm, bottom=1.5cm, left=1.2cm, right=1.2cm]{geometry}
+\usepackage{multicol}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% =================================================
+% VISUAL CONFIG (Clean, Arch-style, No clutter)
+% =================================================
+
+\definecolor{keyword}{rgb}{0.0, 0.0, 0.6}
+\definecolor{comment}{rgb}{0.4, 0.4, 0.4}
+\definecolor{string}{rgb}{0.5, 0.0, 0.5}
+
+\lstdefinestyle{codestyle}{
+    language=C++,
+    basicstyle=\ttfamily\small,       % Readable monospace font
+    keywordstyle=\color{keyword}\bfseries,
+    stringstyle=\color{string},
+    commentstyle=\color{comment}\itshape,
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    numbersep=5pt,
+    breaklines=true,
+    breakatwhitespace=true,
+    tabsize=2,
+    frame=b,                          % Subtle line below code blocks
+    framerule=0.5pt,
+    aboveskip=10pt,
+    belowskip=5pt,
+    showstringspaces=false
+}
+\lstset{style=codestyle}
+
+% Header configuration
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\textbf{IOI Qualifying 2026}}
+\chead{Felipe Colli - "Shared Neuron" Kit}
+\rhead{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% Compact Titles
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{10pt}{5pt}
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
+
+% =================================================
+% DOCUMENT CONTENT
+% =================================================
+\begin{document}
+
+\begin{multicols}{2}
+
+	% ---------------------------------------------------------
+	\section{Base Template}
+	% ---------------------------------------------------------
+	Standard boilerplate. `long long` is life.
+	\begin{lstlisting}
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+typedef vector<int> vi;
+typedef pair<int,int> pii;
+#define vec vector
+#define pb push_back
+#define all(x) x.begin(),x.end()
+#define sz(x) (int)(x).size()
+const int INF = 1e9;
+const ll LINF = 1e18;
+
+void fast() { ios_base::sync_with_stdio(0); cin.tie(0); }
+\end{lstlisting}
+
+	% ---------------------------------------------------------
+	\section{Graph Survival Kit}
+	% ---------------------------------------------------------
+
+	\subsection{DFS (Depth First Search)}
+	\textbf{Use for:} Connectivity, counting components, flood fill, checking bipartiteness.
+	\textbf{Logic:} "Go deep until you can't, then backtrack."
+	\begin{lstlisting}
+bool vis[MAXN];
+vec<int> adj[MAXN];
+
+void dfs(int u) {
+    vis[u] = true;
+    // Process node 'u' here
+    for (int v : adj[u]) {
+        if (!vis[v]) dfs(v);
+    }
+}
+\end{lstlisting}
+
+	\subsection{BFS (Breadth First Search)}
+	\textbf{Use for:} Shortest path in UNWEIGHTED graphs (edges = 1).
+	\textbf{Logic:} "Oil spill expansion." Layer by layer.
+	\begin{lstlisting}
+vec<int> adj[MAXN];
+int dist[MAXN]; // Initialize with -1
+
+void bfs(int start) {
+    fill(dist, dist + MAXN, -1);
+    queue<int> q;
+
+    dist[start] = 0;
+    q.push(start);
+
+    while(!q.empty()) {
+        int u = q.front(); q.pop();
+
+        for(int v : adj[u]) {
+            if(dist[v] == -1) { // Not visited yet
+                dist[v] = dist[u] + 1;
+                q.push(v);
+            }
+        }
+    }
+}
+\end{lstlisting}
+
+	\subsection{Dijkstra (Shortest Path + Weights)}
+	\textbf{Use for:} Shortest path with positive weights.
+	\textbf{Logic:} It's just BFS but with a \texttt{priority\_queue}. We always process the \textit{closest} available node first.
+	\begin{lstlisting}
+// Adjacency list stores {neighbor, weight}
+vector<pair<int, int>> adj[MAXN];
+ll dist[MAXN];
+
+void dijkstra(int start, int n) {
+    // 1. Reset distances to Infinity
+    for(int i=0; i<=n; i++) dist[i] = LINF;
+
+    // 2. Min-Heap: Stores {distance, node}, smallest distance on top
+    priority_queue<pair<ll,int>, vector<pair<ll,int>>, greater<pair<ll,int>>> pq;
+
+    dist[start] = 0;
+    pq.push({0, start});
+
+    while(!pq.empty()) {
+        ll d = pq.top().first;   // Current best distance
+        int u = pq.top().second; // Current node
+        pq.pop();
+
+        // CRITICAL: If we found a shorter way to 'u' before extracting this
+        // outdated entry from the queue, ignore it.
+        if (d > dist[u]) continue;
+
+        // Relax edges
+        for (auto [v, weight] : adj[u]) {
+            if (dist[u] + weight < dist[v]) {
+                dist[v] = dist[u] + weight;
+                pq.push({dist[v], v});
+            }
+        }
+    }
+}
+\end{lstlisting}
+
+	\subsection{DSU (Disjoint Set Union)}
+	\textbf{Use for:} Grouping items, Kruskal's MST, Cycle detection.
+	\textbf{Logic:} Trees of parents. `Find` gets the leader. `Unite` merges trees.
+	\begin{lstlisting}
+struct DSU {
+    vi p, sz;
+    DSU(int n) {
+        p.resize(n); iota(all(p), 0); // p[i] = i
+        sz.assign(n, 1);
+    }
+    // Path Compression: Points everything to the leader directly
+    int find(int x) {
+        return p[x] == x ? x : p[x] = find(p[x]);
+    }
+    // Union by Size: Attach small tree to big tree
+    void unite(int a, int b) {
+        a = find(a); b = find(b);
+        if (a != b) {
+            if (sz[a] < sz[b]) swap(a, b);
+            p[b] = a;
+            sz[a] += sz[b];
+        }
+    }
+};
+\end{lstlisting}
+
+	% ---------------------------------------------------------
+	\section{Simulation \& Search Strategies}
+	% ---------------------------------------------------------
+
+	\subsection{Two Pointers (Sliding Window)}
+	\textbf{Use for:} Finding subarrays meeting a condition in $O(N)$.
+	\textbf{Logic:} `R` expands the window to include elements. `L` shrinks it to maintain validity.
+	\begin{lstlisting}
+int l = 0, ans = 0;
+for(int r = 0; r < n; r++) {
+    add(a[r]); // Add new element to current state
+
+    // While condition is broken, shrink from left
+    while(!is_valid()) {
+        remove(a[l]);
+        l++;
+    }
+    // Now [l, r] is valid. Update answer.
+    ans = max(ans, r - l + 1);
+}
+\end{lstlisting}
+
+	\subsection{Binary Search on Answer}
+	\textbf{Use for:} "Minimize the maximum X" or "Can we do it with X?".
+	\textbf{Logic:} Instead of finding the best X directly, guess X and check if it's possible.
+	\begin{lstlisting}
+ll l = 0, r = 2e18, ans = -1;
+while(l <= r) {
+    ll mid = l + (r - l) / 2;
+    if(check(mid)) { // check() is a simulation function
+        ans = mid;
+        r = mid - 1; // Try smaller (or l = mid + 1 for max)
+    } else {
+        l = mid + 1; // Try larger
+    }
+}
+\end{lstlisting}
+
+	\subsection{Coordinate Compression}
+	\textbf{Use for:} Mapping huge numbers ($10^9$) to small ranks ($0 \dots N$) to fit in arrays/BITs.
+	\begin{lstlisting}
+vector<int> vals = v; // Copy original data
+sort(all(vals));
+vals.erase(unique(all(vals)), vals.end());
+
+// Get rank (0-based index)
+int get_id(int x) {
+    return lower_bound(all(vals), x) - vals.begin();
+}
+\end{lstlisting}
+
+	\subsection{Difference Array}
+	\textbf{Use for:} Adding values to ranges $[L, R]$ efficiently.
+	\begin{lstlisting}
+// Add 'val' to range [l, r]
+diff[l] += val;
+diff[r+1] -= val;
+
+// Reconstruct final array
+for(int i=1; i<=n; i++) arr[i] = arr[i-1] + diff[i];
+\end{lstlisting}
+
+	% ---------------------------------------------------------
+	\section{Math \& DP}
+	% ---------------------------------------------------------
+
+	\subsection{BinPow (Modular Exponentiation)}
+	Calculates $a^b \pmod m$ in $O(\log b)$.
+	\begin{lstlisting}
+ll binpow(ll a, ll b, ll m) {
+    a %= m; ll res = 1;
+    while (b > 0) {
+        if (b & 1) res = res * a % m;
+        a = a * a % m;
+        b >>= 1;
+    }
+    return res;
+}
+// Modular Inverse: binpow(a, MOD-2, MOD)
+\end{lstlisting}
+
+	\subsection{Combinatorics (nCr)}
+	Precompute factorials first!
+	\begin{lstlisting}
+ll fact[MAXN], invFact[MAXN];
+
+ll nCr(int n, int r) {
+    if (r < 0 || r > n) return 0;
+    return fact[n] * invFact[r] % MOD * invFact[n-r] % MOD;
+}
+\end{lstlisting}
+
+	\subsection{LIS (Longest Increasing Subsequence)}
+	$O(N \log N)$ approach using greedy + binary search.
+	\begin{lstlisting}
+vector<int> tails;
+for (int x : a) {
+    // lower_bound for strictly increasing
+    // upper_bound for non-decreasing
+    auto it = lower_bound(all(tails), x);
+    if (it == tails.end()) tails.pb(x);
+    else *it = x;
+}
+cout << tails.size();
+\end{lstlisting}
+
+\end{multicols}
+\end{document}

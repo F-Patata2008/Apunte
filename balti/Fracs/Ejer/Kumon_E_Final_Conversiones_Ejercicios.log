@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.3.6)  8 MAR 2026 20:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.3.6)  8 MAR 2026 21:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**Kumon_E_Decimales_Ejercicios.tex
-(./Kumon_E_Decimales_Ejercicios.tex
+**Kumon_E_Final_Conversiones_Ejercicios.tex
+(./Kumon_E_Final_Conversiones_Ejercicios.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
 (/usr/share/texmf-dist/tex/latex/base/article.cls
@@ -217,8 +217,8 @@ Package geometry Warning: Over-specification in `v'-direction.
 (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count309
-) (./Kumon_E_Decimales_Ejercicios.aux)
-\openout1 = `Kumon_E_Decimales_Ejercicios.aux'.
+) (./Kumon_E_Final_Conversiones_Ejercicios.aux)
+\openout1 = `Kumon_E_Final_Conversiones_Ejercicios.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
@@ -678,7 +678,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[50] (./Kumon_E_Decimales_Ejercicios.aux)
+[50] (./Kumon_E_Final_Conversiones_Ejercicios.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -686,14 +686,14 @@ L3 programming layer <2026-01-19>
  ) 
 Here is how much of TeX's memory you used:
  2854 strings out of 469412
- 42683 string characters out of 5468087
- 451834 words of memory out of 5000000
+ 42791 string characters out of 5468087
+ 452868 words of memory out of 5000000
  31528 multiletter control sequences out of 15000+600000
  639280 words of font info for 84 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
- 57i,11n,65p,245b,440s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,15n,65p,254b,440s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Kumon_E_Decimales_Ejercicios.pdf (50 pages, 138801 bytes).
+Output written on Kumon_E_Final_Conversiones_Ejercicios.pdf (50 pages, 143484 bytes).
 PDF statistics:
  217 PDF objects out of 1000 (max. 8388607)
  143 compressed objects within 2 object streams

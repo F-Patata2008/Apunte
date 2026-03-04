@@ -1,8 +1,8 @@
 PWD /home/F-Patata/Apunte/balti/Fracs/Ejer
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT Kumon_E_Decimales_Ejercicios.tex
-OUTPUT Kumon_E_Decimales_Ejercicios.log
+INPUT Kumon_E_Final_Conversiones_Ejercicios.tex
+OUTPUT Kumon_E_Final_Conversiones_Ejercicios.log
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texmf-dist/tex/latex/base/size12.clo
@@ -40,10 +40,10 @@ INPUT /usr/share/texmf-dist/tex/latex/tools/multicol.sty
 INPUT /usr/share/texmf-dist/tex/latex/tools/multicol.sty
 INPUT /usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT ./Kumon_E_Decimales_Ejercicios.aux
-INPUT ./Kumon_E_Decimales_Ejercicios.aux
-INPUT Kumon_E_Decimales_Ejercicios.aux
-OUTPUT Kumon_E_Decimales_Ejercicios.aux
+INPUT ./Kumon_E_Final_Conversiones_Ejercicios.aux
+INPUT ./Kumon_E_Final_Conversiones_Ejercicios.aux
+INPUT Kumon_E_Final_Conversiones_Ejercicios.aux
+OUTPUT Kumon_E_Final_Conversiones_Ejercicios.aux
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
@@ -93,9 +93,9 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-OUTPUT Kumon_E_Decimales_Ejercicios.pdf
+OUTPUT Kumon_E_Final_Conversiones_Ejercicios.pdf
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
-INPUT Kumon_E_Decimales_Ejercicios.aux
+INPUT Kumon_E_Final_Conversiones_Ejercicios.aux
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb

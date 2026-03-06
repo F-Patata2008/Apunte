@@ -3,16 +3,16 @@ import random
 from fractions import Fraction
 from decimal import Decimal, getcontext
 
-# Precisión para evitar bugs de flotantes
+# Configurar precisión
 getcontext().prec = 10
 
 # --- CONFIGURACIÓN ---
 TOTAL_DIAS = 10
 EJERCICIOS_POR_DIA = 50
-ARCHIVO_EJ = "Kumon_E_Final_Conversiones_Ejercicios.tex"
-ARCHIVO_RES = "Kumon_E_Final_Conversiones_Respuestas.tex"
+ARCHIVO_EJ = "Kumon_E_Conversiones_Ejercicios.tex"
+ARCHIVO_RES = "Kumon_E_Conversiones_Respuestas.tex"
 
-# --- UTILIDADES ---
+# --- UTILIDADES FORMATO ---
 def format_mixed(f):
     if f.denominator == 1:
         return str(f.numerator)
@@ -22,28 +22,35 @@ def format_mixed(f):
         return f"{w} \\frac{{{rem}}}{{{f.denominator}}}"
     return f"\\frac{{{f.numerator}}}{{{f.denominator}}}"
 
-def rnd_dec(min_val, max_val, decimals, force_max_decimals=False):
-    """Genera Decimal aleatorio. Si force_max_decimals es True, asegura que no termine en 0"""
-    factor = 10**decimals
-    num = random.randint(int(min_val * factor), int(max_val * factor))
+def rnd_dec(max_decimals):
+    """Genera decimal aleatorio con MÁXIMO max_decimals, asegurando que use el máximo a veces"""
+    # Elegir cantidad de decimales (1, 2 o 3 dependiendo del max)
+    decimals = random.randint(1, max_decimals)
+    if random.random() > 0.3: decimals = max_decimals # Forzar más seguido el máximo
     
-    if force_max_decimals and decimals > 1:
-        while num % 10 == 0:
-            num += random.choice([1, 2, 3, 5, 7, 9])
-            
+    factor = 10**decimals
+    # Evitar terminar en 0 si estamos forzando decimales
+    num = random.randint(1, 5 * factor - 1)
+    if decimals > 1 and num % 10 == 0:
+        num += random.choice([1, 3, 7, 9])
+        
     return Decimal(num) / Decimal(factor)
 
-# --- GENERADORES ---
+# --- GENERADORES DE EJERCICIOS ---
 
-def gen_frac_to_dec(max_dec):
-    """Días 1 y 3: Fracción a Decimal"""
+def gen_frac_to_dec(max_dec, force_1000=False):
+    """Convierte de Fracción a Decimal"""
     if max_dec == 2:
         dens =[2, 4, 5, 10, 20, 25, 50, 100]
-    else: # 3 decimales (incluye los de 2)
-        dens =[2, 4, 5, 8, 10, 20, 25, 40, 50, 125, 200, 250, 500]
-        
-    den = random.choice(dens)
-    num = random.randint(1, den * 4) # Permitir mixtos (ej 9/4 = 2 1/4)
+        den = random.choice(dens)
+    else: # 3 decimales
+        if force_1000:
+            den = 1000 # Regla del papá: los primeros con denominador 1000
+        else:
+            dens =[2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 125, 200, 250, 500, 1000]
+            den = random.choice(dens)
+            
+    num = random.randint(1, den * 4) # Hasta 4 enteros
     
     f_val = Fraction(num, den)
     d_val = Decimal(num) / Decimal(den)
@@ -53,35 +60,13 @@ def gen_frac_to_dec(max_dec):
     return q_tex, a_tex
 
 def gen_dec_to_frac(max_dec):
-    """Días 2 y 4: Decimal a Fracción"""
-    d_val = rnd_dec(0.01, 5.99, max_dec, force_max_decimals=True)
+    """Convierte de Decimal a Fracción (Mixto simplificado)"""
+    d_val = rnd_dec(max_dec)
     f_val = Fraction(int(d_val * (10**max_dec)), 10**max_dec)
     
-    q_tex = f"{d_val} ="
+    q_tex = f"{d_val.normalize()} ="
     a_tex = format_mixed(f_val)
     return q_tex, a_tex
-
-def gen_add_sub(max_dec):
-    """Días 6-10: Sumas y Restas"""
-    d1 = random.randint(1, max_dec)
-    d2 = max_dec # Aseguramos que al menos uno tenga el máximo de decimales
-    
-    if random.random() > 0.5: d1, d2 = d2, d1 # Mezclar posiciones
-    
-    val1 = rnd_dec(0.1, 25.0, d1)
-    val2 = rnd_dec(0.1, 25.0, d2)
-    
-    op = random.choice(['+', '-'])
-    
-    if op == '-':
-        if val1 < val2: val1, val2 = val2, val1
-        res = val1 - val2
-        q_tex = f"{val1} - {val2} ="
-    else:
-        res = val1 + val2
-        q_tex = f"{val1} + {val2} ="
-        
-    return q_tex, str(res.normalize())
 
 # --- CAJAS DE EJEMPLOS ---
 
@@ -89,60 +74,42 @@ def get_example_box(dia):
     if dia == 1:
         return r"""
 \begin{center}\fbox{\begin{minipage}{0.9\textwidth}
-\textbf{Ejemplos: Fracción a Decimal (Máx 2 decimales)} \\
-\small 1) Si el denominador es 10 o 100 es directo: $\frac{7}{10} = \mathbf{0.7}$ y $\frac{3}{100} = \mathbf{0.03}$ \\
-2) Amplifica para llegar a 10 o 100: $\frac{3}{4} = \frac{3 \times 25}{4 \times 25} = \frac{75}{100} = \mathbf{0.75}$ \\
-3) Con número mixto: $2 \frac{1}{2} = 2 + 0.5 = \mathbf{2.5}$
+\textbf{Ejemplos: Fracción a Decimal (Hasta 2 decimales)} \\
+\small 1) Denominador 10 o 100 es directo: $\frac{7}{10} = \mathbf{0.7}$ \quad | \quad $\frac{13}{100} = \mathbf{0.13}$ \\
+2) Si no es 100, amplifica: $\frac{3}{25} = \frac{3 \times 4}{25 \times 4} = \frac{12}{100} = \mathbf{0.12}$ \\
+3) Número Mixto (el entero queda igual): $2 \frac{1}{4} = 2 + 0.25 = \mathbf{2.25}$
 \end{minipage}}\end{center}\vspace{0.2cm}
 """
     elif dia == 2:
         return r"""
 \begin{center}\fbox{\begin{minipage}{0.9\textwidth}
-\textbf{Ejemplos: Decimal a Fracción (Máx 2 decimales)} \\
-\small 1) Escribe como fracción base 10 o 100 y simplifica. \\
-2) $0.45 = \frac{45}{100} \xrightarrow{\div 5} \mathbf{\frac{9}{20}}$ \\
-3) Con enteros, sepáralo: $1.8 = 1 \frac{8}{10} \xrightarrow{\div 2} \mathbf{1 \frac{4}{5}}$
-\end{minipage}}\end{center}\vspace{0.2cm}
-"""
-    elif dia == 3:
-        return r"""
-\begin{center}\fbox{\begin{minipage}{0.9\textwidth}
-\textbf{Ejemplos: Fracción a Decimal (Hasta Milésimas)} \\
-\small 1) ¡Aprende los octavos de memoria! $\frac{1}{8} = \mathbf{0.125}$ \\
-2) $\frac{3}{8} = 3 \times 0.125 = \mathbf{0.375}$ \quad | \quad $\frac{5}{8} = \mathbf{0.625}$ \quad | \quad $\frac{7}{8} = \mathbf{0.875}$ \\
-3) Amplificando a 1000: $\frac{7}{40} = \frac{7 \times 25}{40 \times 25} = \frac{175}{1000} = \mathbf{0.175}$
-\end{minipage}}\end{center}\vspace{0.2cm}
-"""
-    elif dia == 4:
-        return r"""
-\begin{center}\fbox{\begin{minipage}{0.9\textwidth}
-\textbf{Ejemplos: Decimal a Fracción (Hasta Milésimas)} \\
-\small 1) Usa el 1000 como denominador y simplifica. \\
-2) $0.125 = \frac{125}{1000} \xrightarrow{\div 125} \mathbf{\frac{1}{8}}$ \\
-3) $2.015 = 2 \frac{15}{1000} \xrightarrow{\div 5} \mathbf{2 \frac{3}{200}}$
+\textbf{Ejemplos: Decimal a Fracción (Hasta 2 decimales)} \\
+\small 1) Usa denominador 10 o 100 y \textbf{simplifica siempre}: \\
+2) $0.8 = \frac{8}{10} \xrightarrow{\div 2} \mathbf{\frac{4}{5}}$ \\
+3) Con entero: $3.45 = 3 \frac{45}{100} \xrightarrow{\div 5} \mathbf{3 \frac{9}{20}}$
 \end{minipage}}\end{center}\vspace{0.2cm}
 """
     elif dia == 6:
         return r"""
 \begin{center}\fbox{\begin{minipage}{0.9\textwidth}
-\textbf{Ejemplos: Suma y Resta de Decimales} \\
-\small 1) \textbf{Alinea siempre la coma decimal} en tu mente o en el papel. \\
-2) Si faltan decimales, pon ceros: $1.5 + 0.12 \to 1.50 + 0.12 = \mathbf{1.62}$ \\
-3) En la resta es crucial: $3.2 - 1.15 \to 3.20 - 1.15 = \mathbf{2.05}$
+\textbf{Ejemplos: Fracción a Decimal (Milésimas)} \\
+\small 1) Denominador 1000: $\frac{45}{1000} = \mathbf{0.045}$ (¡Ojo con el cero!) \\
+2) Amplificando a 1000: $\frac{3}{125} = \frac{3 \times 8}{125 \times 8} = \frac{24}{1000} = \mathbf{0.024}$ \\
+3) Memoriza los octavos: $\frac{1}{8} = \mathbf{0.125}$ \quad | \quad $\frac{3}{8} = \mathbf{0.375}$
 \end{minipage}}\end{center}\vspace{0.2cm}
 """
-    elif dia == 8:
+    elif dia == 7:
         return r"""
 \begin{center}\fbox{\begin{minipage}{0.9\textwidth}
-\textbf{Ejemplos: Sumas y Restas (Nivel Avanzado)} \\
-\small 1) Cuidado con los milésimos y los enteros solos. Pon los ceros necesarios. \\
-2) $4 - 0.125 \to 4.000 - 0.125 = \mathbf{3.875}$ \\
-3) $1.678 + 0.6 \to 1.678 + 0.600 = \mathbf{2.278}$
+\textbf{Ejemplos: Decimal a Fracción (Milésimas)} \\
+\small 1) Tres decimales significan denominador 1000. \\
+2) $0.005 = \frac{5}{1000} \xrightarrow{\div 5} \mathbf{\frac{1}{200}}$ \\
+3) $1.125 = 1 \frac{125}{1000} \xrightarrow{\div 125} \mathbf{1 \frac{1}{8}}$
 \end{minipage}}\end{center}\vspace{0.2cm}
 """
     return ""
 
-# --- MAIN ---
+# --- MOTOR PRINCIPAL ---
 
 def run():
     header = r"""\documentclass[12pt]{article}
@@ -155,12 +122,12 @@ def run():
 \setlength{\parindent}{0pt}
 \pagestyle{fancy}
 \fancyhf{}
-\rhead{\textbf{Nivel E} - Fracciones y Decimales}
+\rhead{\textbf{Nivel E} - Dominio Conversiones}
 \cfoot{Página \thepage}
 \begin{document}
 """
     prob_body = header
-    res_body = header.replace("Fracciones y Decimales", "SOLUCIONARIO")
+    res_body = header.replace("Dominio Conversiones", "SOLUCIONARIO")
 
     for dia in range(1, TOTAL_DIAS + 1):
         prob_body += f"\\section*{{Día {dia}: Entrenamiento}}\n"
@@ -172,28 +139,41 @@ def run():
         prob_body += "\\begin{enumerate}\n"
         res_body += f"\\section*{{Día {dia}}}\n\\begin{{multicols}}{{5}}\\begin{{enumerate}}\n"
         
+        # Determinar el máximo de decimales por bloque de días
+        max_dec = 2 if dia <= 5 else 3
+        
         for i in range(1, EJERCICIOS_POR_DIA + 1):
             
-            # --- RUTEO POR DÍA ---
-            if dia == 1: 
-                q, a = gen_frac_to_dec(max_dec=2)
-            elif dia == 2: 
-                q, a = gen_dec_to_frac(max_dec=2)
-            elif dia == 3: 
-                q, a = gen_frac_to_dec(max_dec=3)
-            elif dia == 4: 
-                q, a = gen_dec_to_frac(max_dec=3)
-            elif dia == 5: 
-                q, a = gen_frac_to_dec(3) if i % 2 == 0 else gen_dec_to_frac(3)
-            elif dia in [6, 7]: 
-                q, a = gen_add_sub(max_dec=2)
-            else: # Días 8, 9, 10
-                q, a = gen_add_sub(max_dec=3)
+            # --- LÓGICA DE DÍAS ---
+            # Días 1 y 6: Frac -> Dec
+            if dia in [1, 6]:
+                # Regla de oro: si es Día 6 (3 decimales) y estamos en los primeros 15 ejercicios, forzar /1000
+                force = True if (dia == 6 and i <= 15) else False
+                q, a = gen_frac_to_dec(max_dec, force_1000=force)
+                
+            # Días 2 y 7: Dec -> Frac
+            elif dia in [2, 7]:
+                q, a = gen_dec_to_frac(max_dec)
+                
+            # Días 3 y 8: Frac -> Dec
+            elif dia in [3, 8]:
+                force = True if (dia == 8 and i <= 10) else False
+                q, a = gen_frac_to_dec(max_dec, force_1000=force)
+                
+            # Días 4 y 9: Dec -> Frac
+            elif dia in [4, 9]:
+                q, a = gen_dec_to_frac(max_dec)
+                
+            # Días 5 y 10: MIXTOS (Mitad y mitad, turnándose)
+            elif dia in[5, 10]:
+                if i % 2 != 0:
+                    q, a = gen_frac_to_dec(max_dec, force_1000=False)
+                else:
+                    q, a = gen_dec_to_frac(max_dec)
 
-            # --- AJUSTE DE ESPACIO ---
-            # Si hay un cuadro de ejemplo en la página, reducimos levemente el espacio
-            # solo en la primera página (los primeros 10 ítems)
-            espacio = "1.2cm" if (ejemplo_tex and i <= 10) else "1.5cm"
+            # --- ESPACIADO ---
+            # Menos espacio en la primera página si hay cuadro de ejemplos
+            espacio = "1.3cm" if (ejemplo_tex and i <= 10) else "1.5cm"
             
             prob_body += f"\\item \\large $ {q} $ \\vspace{{{espacio}}}\n"
             res_body += f"\\item $ {a} $\n"
@@ -209,8 +189,9 @@ def run():
     
     with open(ARCHIVO_EJ, 'w') as f: f.write(prob_body)
     with open(ARCHIVO_RES, 'w') as f: f.write(res_body)
-    print(f"-> 10 Días generados ({EJERCICIOS_POR_DIA} ej/día).")
-    print(f"Archivos: {ARCHIVO_EJ} y {ARCHIVO_RES}")
+    print(f"-> ¡Generados {TOTAL_DIAS * EJERCICIOS_POR_DIA} ejercicios de conversiones!")
+    print(f"-> Días 1-5 (hasta centésimas), Días 6-10 (hasta milésimas).")
+    print(f"-> Archivos listos: {ARCHIVO_EJ} y {ARCHIVO_RES}")
 
 if __name__ == "__main__":
     run()

@@ -9,13 +9,13 @@ getcontext().prec = 10
 # --- CONFIGURACIÓN ---
 TOTAL_DIAS = 10
 EJERCICIOS_POR_DIA = 50
-ARCHIVO_EJ = "Kumon_E_Conversiones_Ejercicios.tex"
-ARCHIVO_RES = "Kumon_E_Conversiones_Respuestas.tex"
+ARCHIVO_EJ = "Ejercicios.tex"
+ARCHIVO_RES = "Respuestas.tex"
 
 # --- UTILIDADES FORMATO ---
 def format_mixed(f):
     if f.denominator == 1:
-        return str(f.numerator)
+        return str(f.numerator) # Esto ya no debería pasar por los parches abajo
     w = f.numerator // f.denominator
     rem = f.numerator % f.denominator
     if w > 0:
@@ -23,17 +23,24 @@ def format_mixed(f):
     return f"\\frac{{{f.numerator}}}{{{f.denominator}}}"
 
 def rnd_dec(max_decimals):
-    """Genera decimal aleatorio con MÁXIMO max_decimals, asegurando que use el máximo a veces"""
-    # Elegir cantidad de decimales (1, 2 o 3 dependiendo del max)
+    """Genera decimal aleatorio asegurando que NO sea un número entero"""
+    # Elegir cantidad de decimales (1, 2 o 3)
     decimals = random.randint(1, max_decimals)
-    if random.random() > 0.3: decimals = max_decimals # Forzar más seguido el máximo
+    if random.random() > 0.3: decimals = max_decimals # Forzar más el máximo de decimales
     
     factor = 10**decimals
-    # Evitar terminar en 0 si estamos forzando decimales
     num = random.randint(1, 5 * factor - 1)
-    if decimals > 1 and num % 10 == 0:
-        num += random.choice([1, 3, 7, 9])
+    
+    # PARCHE 1: Evitar números enteros (ej. 100/100 = 1.0)
+    while num % factor == 0:
+        num = random.randint(1, 5 * factor - 1)
         
+    # PARCHE 2: Si pedimos 2 decimales, que no termine en 0 (ej. 1.50 -> 1.5)
+    # Así aseguramos que visualmente tenga la cantidad de decimales pedida.
+    if decimals > 1:
+        while num % 10 == 0:
+            num += random.choice([1, 3, 7, 9])
+            
     return Decimal(num) / Decimal(factor)
 
 # --- GENERADORES DE EJERCICIOS ---
@@ -45,12 +52,22 @@ def gen_frac_to_dec(max_dec, force_1000=False):
         den = random.choice(dens)
     else: # 3 decimales
         if force_1000:
-            den = 1000 # Regla del papá: los primeros con denominador 1000
+            den = 1000
         else:
             dens =[2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 125, 200, 250, 500, 1000]
             den = random.choice(dens)
             
     num = random.randint(1, den * 4) # Hasta 4 enteros
+    
+    # PARCHE 3: Evitar que el numerador sea múltiplo del denominador (ej. 8/4 = 2)
+    while num % den == 0:
+        num = random.randint(1, den * 4)
+        
+    # Regla estricta: Si forzamos /1000, no podemos permitir que la fracción se simplifique.
+    # Ej: 500/1000 se simplificaría a 1/2 perdiendo la gracia del ejercicio inicial.
+    if force_1000:
+        while num % 2 == 0 or num % 5 == 0 or num % den == 0:
+            num = random.randint(1, den * 4)
     
     f_val = Fraction(num, den)
     d_val = Decimal(num) / Decimal(den)
@@ -62,7 +79,7 @@ def gen_frac_to_dec(max_dec, force_1000=False):
 def gen_dec_to_frac(max_dec):
     """Convierte de Decimal a Fracción (Mixto simplificado)"""
     d_val = rnd_dec(max_dec)
-    f_val = Fraction(int(d_val * (10**max_dec)), 10**max_dec)
+    f_val = Fraction(str(d_val)) # Lectura directa para precisión absoluta
     
     q_tex = f"{d_val.normalize()} ="
     a_tex = format_mixed(f_val)
@@ -147,7 +164,7 @@ def run():
             # --- LÓGICA DE DÍAS ---
             # Días 1 y 6: Frac -> Dec
             if dia in [1, 6]:
-                # Regla de oro: si es Día 6 (3 decimales) y estamos en los primeros 15 ejercicios, forzar /1000
+                # Regla del papá: los primeros 15 ejercicios del Día 6 se fuerzan con denominador 1000
                 force = True if (dia == 6 and i <= 15) else False
                 q, a = gen_frac_to_dec(max_dec, force_1000=force)
                 
@@ -157,6 +174,7 @@ def run():
                 
             # Días 3 y 8: Frac -> Dec
             elif dia in [3, 8]:
+                # Regla del papá: los primeros 10 ejercicios del Día 8 se fuerzan con denominador 1000
                 force = True if (dia == 8 and i <= 10) else False
                 q, a = gen_frac_to_dec(max_dec, force_1000=force)
                 
@@ -165,14 +183,13 @@ def run():
                 q, a = gen_dec_to_frac(max_dec)
                 
             # Días 5 y 10: MIXTOS (Mitad y mitad, turnándose)
-            elif dia in[5, 10]:
+            elif dia in [5, 10]:
                 if i % 2 != 0:
                     q, a = gen_frac_to_dec(max_dec, force_1000=False)
                 else:
                     q, a = gen_dec_to_frac(max_dec)
 
             # --- ESPACIADO ---
-            # Menos espacio en la primera página si hay cuadro de ejemplos
             espacio = "1.3cm" if (ejemplo_tex and i <= 10) else "1.5cm"
             
             prob_body += f"\\item \\large $ {q} $ \\vspace{{{espacio}}}\n"
@@ -189,9 +206,8 @@ def run():
     
     with open(ARCHIVO_EJ, 'w') as f: f.write(prob_body)
     with open(ARCHIVO_RES, 'w') as f: f.write(res_body)
-    print(f"-> ¡Generados {TOTAL_DIAS * EJERCICIOS_POR_DIA} ejercicios de conversiones!")
-    print(f"-> Días 1-5 (hasta centésimas), Días 6-10 (hasta milésimas).")
-    print(f"-> Archivos listos: {ARCHIVO_EJ} y {ARCHIVO_RES}")
+    print("¡Listo weon! Problema de los enteros solucionado.")
+    print(f"Archivos: {ARCHIVO_EJ} y {ARCHIVO_RES}")
 
 if __name__ == "__main__":
     run()

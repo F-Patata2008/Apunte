@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1773021290.30924 "Ejercicios.tex" "Ejercicios.pdf" "Ejercicios" 1773021291.02795 0
+["pdflatex"] 1773108044.26714 "Ejercicios.tex" "Ejercicios.pdf" "Ejercicios" 1773108045.08765 0
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1772820570 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1772820570 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1772820570 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -57,8 +57,8 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1772820570 43569 fd570f2fa160877d211e859f687312ba ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1772847808 5385779 47c0c393a77fd4a098bacfd57d66b88a ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1772847554 3182163 818c112fb75301d893fe32ef9e7a212a ""
-  "Ejercicios.aux" 1773021290.922 33 d797610162f994db91acf819b481127e "pdflatex"
-  "Ejercicios.tex" 1773021268.78569 25216 3866d59e37c37d755941e9d9c7c8ac9a ""
+  "Ejercicios.aux" 1773108044.94831 33 d797610162f994db91acf819b481127e "pdflatex"
+  "Ejercicios.tex" 1773108042.93506 25218 bdc298c0d45e21884254e94b76ae33cb ""
   (generated)
   "Ejercicios.aux"
   "Ejercicios.log"

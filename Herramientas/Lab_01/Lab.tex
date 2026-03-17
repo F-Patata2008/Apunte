@@ -1,50 +1,95 @@
-\documentclass[11pt]{article}
+\documentclass[letterpaper,11pt]{article}
+%-----------------------------------------------------
+% Preámbulo del documento, no editar a menos que sepan lo que están haciendo.
+
+%% Idioma y fonts
 \usepackage[spanish]{babel}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{graphicx}
-\graphicspath{./images/}
-\usepackage[utf8]{inputenc}
+\usepackage[utf8x]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[margin=1in]{geometry}
-\usepackage{fancyhdr}
-\usepackage{hyperref}
 
-\hypersetup{
-    pdftitle={Tu Título},
-    pdfauthor={Felipe Colli Olea},
-    colorlinks=true,
-    linkcolor=black,
-    urlcolor=cyan
-}
+%% tamaño de pagina y margenes
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=2cm,right=2cm,marginparwidth=1.75cm]{geometry}
 
-\pagestyle{fancy}
-\fancyhf{}
-\fancyfoot[C]{\footnotesize Felipe Colli, Todos los Derechos Reservados}
-\fancyfoot[R]{\thepage}
-\renewcommand{\headrulewidth}{0pt}
+%% packages utiles
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage[export]{adjustbox}
 
-\title{}
-\author{}
-\date{\today}
+% apagar el enumerado de paginas
+\pagenumbering{gobble}
+%-----------------------------------------------------
+% Inicio del documento
 
 \begin{document}
 
-\maketitle
-\thispagestyle{fancy}
+% Imagen logo de la facultad.
+\begin{figure}[t]
+	\includegraphics[width=0.5\textwidth,left]{logo_fcfm.png}
+\end{figure}
 
-\[\sum_{x = 0}^{100} x^2 \]
+% Titulo del documento
+\vspace{20mm}
+\begin{center}
+	\textbf{Control 2}
+\end{center}
+\vspace{10mm}
 
-\begin{enumerate}
-	\item Patata
-	\item[o] \textbf{papa}
-\end{enumerate}
+% Inicio de las preguntas de control. Acá empiezan a editar
 \begin{itemize}
-	\item HOla
-	\item Mundo
-	\item \textbf{\textit{waos}}
+
+	% Espacio para escribir la P1
+	\item[\textbf{P1.}]
+	      % ---------- P1 ------------
+	      (6,0 ptos.) Un punto $A$ se mueve sobre la parábola de la ecuación $x^2 = 4py$ de foco $F = (0,p)$ y vértice $O = (0,0)$. Determine el lugar geométrico de los puntos $P = (\alpha , \beta)$ que satisface la siguinte condición:
+
+	      ``El punto A, intersección de la recta $\overline{OP}$ con la parábola, y el punto B, de la intersección de la recta $\overline{FP} $ y el eje $OX$, tienen la misma abcisa''
+
+
+
+
+	      % ---------- fin P1 --------
+
+	      \vspace{5mm}
+	      % Espacio para escribir la P2
+	\item[\textbf{P2.}]
+	      % ---------- P2 ------------
+	      \begin{enumerate}
+		      \item[(a)] (3.0 ptos.) Por un punto \textit{P} ubicado sobre la hipérbola $\frac{x^2}{a^2}$ $-$ $\frac{y^2}{b^2}$=1, se traza una recta horizontal que corta a las asíntotas de la hipérbola en los puntos $A$ y $B$. Demuestre que $\overline{AB} \cdot \overline{PB} = a^2$
+
+		      \item[(b)] Analice la función dada por $x \rightarrow f(x) = \sqrt{\frac{x^2-3x+2}{x^2-1}}$ determinando:
+
+
+		            \begin{enumerate}
+			            \item[(i)] (1,0 pto) $Dom(f) $ signos de $f$ y ceros de $f$.
+			            \item[(ii)] (1,0 pto) Asíntotas horizontales y verticales, si las hay.
+			            \item[(iii)] (1,0 pto)  Intervalos donde $f$ es creciente y/o decreciente.
+			            \item[(iv)] (1,0 pto) Conjunto imagen. Bosqueje el gráfico de $f$.
+		            \end{enumerate}
+
+
+
+
+	      \end{enumerate}
+
+
+	      % ---------- fin P2 --------
+
 \end{itemize}
 
-Empieza a escribir aquí...
+
+
+% Espacio para colocar las indicaciones y el tiempo
+\vspace{15mm}
+\begin{flushright}
+	% ---------- indicaciones ------------
+	\textbf{Consultas sólo al auxiliar de control \\Justifique cada uno de sus pasos \\ Tiempo: 1:15}
+
+
+
+	% ---------- fin indicaciones ------------
+\end{flushright}
+
 
 \end{document}

@@ -1,0 +1,79 @@
+\documentclass[11pt]{article}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+% Ajustado a tu snippet
+\graphicspath{./images}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+\hypersetup{
+    pdftitle={Reporte Post-Laboratorio 01: Manejo de LaTeX},
+    pdfauthor={Felipe Colli Olea},
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=cyan
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\footnotesize Felipe Colli, Todos los Derechos Reservados}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\title{Reporte Post-Laboratorio 01: \\ Implementación de Instrumentos de Evaluación en \LaTeX}
+\author{Felipe Colli Olea}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{fancy}
+\tableofcontents
+\newpage
+
+\section{Introducción}
+El presente reporte detalla el proceso de edición y formateo de un documento tipo "Control", partiendo desde un archivo base denominado \texttt{template.tex} hasta llegar a la versión final funcional \texttt{lab.tex}. El objetivo principal fue dominar la estructura de bloques, el manejo de listas anidadas y la inserción de expresiones matemáticas complejas.
+
+\section{Metodología y Transformación}
+La transición desde el archivo base implicó la personalización del preámbulo y la correcta utilización del entorno \texttt{itemize} para definir las preguntas P1 y P2.
+
+\subsection{Estructura de Preguntas (P1 y P2)}
+A diferencia del template original, se utilizó la opción \texttt{[$\backslash$textbf\{P1.\}]} dentro de un \texttt{itemize} para forzar etiquetas personalizadas. En la P2, se implementó un entorno \texttt{enumerate} con etiquetas tipo \texttt{(a)} y sub-niveles con números romanos \texttt{(i)}, demostrando la versatilidad de \LaTeX para organizar jerarquías de información.
+
+\section{Análisis de la Implementación}
+
+\begin{figure}[h]
+	\centering
+	% AQUÍ PONES EL PANTALLAZO DEL CÓDIGO (lab.tex)
+	\includegraphics[width=0.8\textwidth]{code}
+	\caption{Evidencia del código fuente implementado en Neovim.}
+	\label{fig:codigo}
+\end{figure}
+
+Como se observa en la figura \ref{fig:codigo}, se respetó el uso de paquetes como \texttt{amsmath} para la correcta visualización de fracciones como $\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$ y raíces cuadradas anidadas.
+
+\subsection{Detalle de la Pregunta 2}
+Uno de los puntos clave del laboratorio fue el manejo de la jerarquía en la P2. La capacidad de anidar entornos de enumeración permite que el documento mantenga un orden lógico impecable:
+
+\begin{itemize}
+	\item \textbf{Nivel 1:} Letras minúsculas para ítems generales.
+	\item \textbf{Nivel 2:} Números romanos para sub-ítems específicos (Dominio, Asíntotas, Crecimiento, Gráfico).
+\end{itemize}
+
+\begin{figure}[h]
+	\centering
+	% AQUÍ PONES EL PANTALLAZO DEL COMPILADO (PDF)
+	\includegraphics[width=0.8\textwidth]{Doc.png}
+	\caption{Resultado de la compilación final mostrando el formato del Control 2.}
+\end{figure}
+
+\newpage
+\section{Conclusión y Aprendizaje}
+La realización de este laboratorio permitió consolidar el uso de comandos de espaciado vertical (\texttt{vfill}, \texttt{vspace}) y alineación de texto (\texttt{flushright}) para replicar formatos institucionales de la FCFM. El uso de snippets personales agiliza significativamente la creación de documentos de alta calidad, asegurando consistencia en el diseño y protección de la autoría.
+
+\end{document}

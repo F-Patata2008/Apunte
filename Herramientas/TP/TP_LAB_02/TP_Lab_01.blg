@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99e (TeX Live 2026/Arch Linux)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: TP_Lab_01.aux
+The style file: alpha.bst
+Database file #1: bibliografia.bib
+Warning--empty booktitle in virtual
+You've used 4 entries,
+            2543 wiz_defined-function locations,
+            585 strings with 5108 characters,
+and the built_in function-call counts, 1839 in all, are:
+= -- 180
+> -- 89
+< -- 2
++ -- 33
+- -- 32
+* -- 141
+:= -- 304
+add.period$ -- 12
+call.type$ -- 4
+change.case$ -- 27
+chr.to.int$ -- 4
+cite$ -- 5
+duplicate$ -- 68
+empty$ -- 130
+format.name$ -- 37
+if$ -- 373
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 4
+newline$ -- 23
+num.names$ -- 12
+pop$ -- 22
+preamble$ -- 1
+purify$ -- 31
+quote$ -- 0
+skip$ -- 62
+stack$ -- 0
+substring$ -- 118
+swap$ -- 13
+text.length$ -- 2
+text.prefix$ -- 1
+top$ -- 0
+type$ -- 32
+warning$ -- 1
+while$ -- 17
+width$ -- 5
+write$ -- 53
+(There was 1 warning)

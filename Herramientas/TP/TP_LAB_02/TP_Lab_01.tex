@@ -1,0 +1,82 @@
+\documentclass{article}
+
+% Language setting
+\usepackage[spanish]{babel}
+
+% Set page size and margins
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{amssymb}
+\graphicspath{./images/}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fancyhdr}
+
+\hypersetup{
+    pdftitle={Trabajo Previo Laboratorio 02},
+    pdfauthor={Felipe Colli Olea},
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=cyan
+}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\footnotesize Felipe Colli, Todos los Derechos Reservados}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\title{Leyes de Newton y Elementos de \LaTeX}
+\author{Felipe Colli Olea}
+
+\begin{document}
+\maketitle
+\thispagestyle{fancy}
+
+\tableofcontents
+\vspace{3cm}
+\begin{abstract}
+	El artículo de Khan Academy explora las tres Leyes del Movimiento de Isaac Newton y su aplicación fundamental en la programación de simulaciones físicas. La Primera Ley, o Ley de la Inercia, establece que un objeto mantiene su estado de reposo o movimiento rectilíneo uniforme a menos que una fuerza externa actúe sobre él; en el código, esto significa que la velocidad permanece inalterada si la aceleración es nula. La Segunda Ley vincula fuerza, masa y aceleración mediante la fórmula $F=ma$. Esta es la más relevante para las simulaciones, ya que permite calcular la nueva aceleración de un objeto dividiendo la fuerza neta aplicada por su masa. Finalmente, la Tercera Ley indica que toda acción tiene una reacción igual y opuesta, un principio vital para programar colisiones e interacciones entre múltiples cuerpos digitales.
+\end{abstract}
+\newpage
+
+\section{Introducción}
+
+En esta preparación veremos ejemplos de algunos elementos que no se vieron durante el laboratorio pasado pero son de utilidad. Adicionalmente, probaremos el uso de bibliografías dinámicas. En el año 2017, los autores del artículo \cite{virtual} propusieron explorar la colaboración en el ámbito de los museos virtuales.
+
+\section{Algunos ejemplos de otros elementos}
+
+\subsection{Cómo poner tablas}
+
+Para mayor información de cómo se hacen tablas puede revisar el siguiente documento: \href{https://www.overleaf.com/learn/latex/tables}{tables}. A propósito, le acabamos de enseñar cómo se pone una referencia ''clickeable". A continuación un ejemplo de cómo construir una tabla con 3 columnas y 5 filas sobre las Leyes de Newton.
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{|l|p{4cm}|p{6.5cm}|}
+		\hline
+		\textbf{Principio / Ley} & \textbf{Concepto Clave}           & \textbf{Aplicación en Simulación (Programación)}                                                                    \\ \hline
+		Primera Ley de Newton    & Inercia y $F_{neta} = 0$          & Un objeto digital mantiene su vector \texttt{velocity} constante si no recibe un \texttt{applyForce()}.             \\ \hline
+		Segunda Ley de Newton    & Relación $\vec{a} = \vec{F}/m$    & Se calcula la aceleración dividiendo el \texttt{PVector} de fuerza neta por la variable \texttt{mass} del objeto.   \\ \hline
+		Tercera Ley de Newton    & Acción y Reacción                 & Al programar colisiones (ej. chocar objetos), se aplican fuerzas matemáticas iguales y opuestas a cada cuerpo.      \\ \hline
+		Acumulación de Fuerzas   & $\vec{F}_{neta} = \sum \vec{F}_i$ & Permite sumar vectores concurrentes (ej. gravedad + viento) antes de actualizar la posición en cada \textit{frame}. \\ \hline
+	\end{tabular}
+	\caption{\label{tab:leyes_newton}Conceptos físicos y su implementación en código basado en Khan Academy.}
+\end{table}
+
+\subsection{Cómo incorporar citas a documentos y crear una lista de referencias}
+
+Para esto usted debe crear un archivo en su proyecto que tenga la extensión \verb|.bib| que tiene información sobre las referencias en formato BibTeX (un formato estándar para poner información sobre documentos como artículos científicos, libros, monografías, etc.).
+
+Por favor mire el archivo \verb|bibliografia.bib| para ver cómo se pone esta información.
+
+Luego de poner la información en el archivo, usted puede referenciarla de la siguiente manera: \cite{greenwade93} para referenciar el artículo de Greenwade y \cite{Pen2021} para el de Peñafiel y Baloian. Hay distintas maneras de poner la bibliografía al final del artículo, pero hay que ser sistemático, por eso uno debe especificar el estilo que quiere usar, además de especificar cuál es el nombre del archivo que contiene la información de la siguiente manera (más información en el siguiente \href{https://www.overleaf.com/help/97-how-to-include-a-bibliography-using-bibtex}{tutorial} ). \cite{penafiel2020applying}
+
+\newpage
+%esto es necesario para que se incluya la bibliografía
+\bibliographystyle{alpha}
+\bibliography{bibliografia} % es el nombre del archivo con las referencias
+
+\end{document}

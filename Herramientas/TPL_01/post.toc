@@ -1,7 +1,0 @@
-\babel@toc {spanish}{}\relax 
-\contentsline {section}{\numberline {1}Introducción}{2}{section.1}%
-\contentsline {section}{\numberline {2}Metodología y Transformación}{2}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Estructura de Preguntas (P1 y P2)}{2}{subsection.2.1}%
-\contentsline {section}{\numberline {3}Análisis de la Implementación}{2}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Detalle de la Pregunta 2}{2}{subsection.3.1}%
-\contentsline {section}{\numberline {4}Conclusión y Aprendizaje}{4}{section.4}%

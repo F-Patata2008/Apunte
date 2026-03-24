@@ -1,0 +1,73 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nty/global//global/global/global}
+  \entry{nasa_newton_laws}{online}{}{}
+    \name{author}{1}{}{%
+      {{hash=N}{%
+         family={{NASA Glenn Research Center}},
+         familyi={N\bibinitperiod},
+      }}%
+    }
+    \list{organization}{2}{%
+      {National Aeronautics}%
+      {Space Administration}%
+    }
+    \strng{namehash}{N1}
+    \strng{fullhash}{N1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{note}{Beginner's Guide to Aeronautics. Accesado: 24 de mayo de 2024}
+    \field{title}{Newton's Laws of Motion}
+    \verb{url}
+    \verb https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/newtons-laws
+    \verb -of-motion/
+    \endverb
+    \field{year}{2023}
+  \endentry
+
+  \entry{valdivia_fisica_cap3}{manual}{}{}
+    \name{author}{1}{}{%
+      {{hash=VJA}{%
+         family={Valdivia},
+         familyi={V\bibinitperiod},
+         given={Juan\bibnamedelima Alejandro},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{VJA1}
+    \strng{fullhash}{VJA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{note}{Apuntes de clase. Consultado: 24 de mayo de 2024}
+    \field{title}{Física I - Capítulo 3: Dinámica (Leyes de Newton)}
+    \verb{url}
+    \verb https://macul.ciencias.uchile.cl/alejo/clases/2005_fisicaI-2/capitulo
+    \verb 3.pdf
+    \endverb
+    \list{institution}{1}{%
+      {Universidad de Chile, Facultad de Ciencias}%
+    }
+    \field{year}{2005}
+  \endentry
+\enddatalist
+\endinput

@@ -1,0 +1,17 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Introducción}{3}{section.1}%
+\contentsline {section}{\numberline {2}Sobre Leyes de Newton}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}¿Qué significa la ley?}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Qué son las leyes de Newton}{4}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Ley de inercia}{4}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Ley de Fuerza}{4}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Ley de acción y reacción}{4}{subsubsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.3}¿Qué ecuaciones se utilizan para modelarlas?}{5}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Primera ley}{5}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Segunda ley}{5}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}Tercera ley}{5}{subsubsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.4}Ejemplos de su aplicación en la vida cotidiana}{5}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Ley de inercia}{5}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}Ley de fuerza}{6}{subsubsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.3}Ley de acción y reacción}{6}{subsubsection.2.4.3}%
+\contentsline {section}{\numberline {3}Conclusiones}{7}{section.3}%

@@ -105,3 +105,4 @@
 \contentsline {section}{\numberline {20}Ejercicios de Probabilidad Condicional y Teorema de Bayes}{59}{section.20}%
 \contentsline {subsection}{\numberline {20.1}Enunciados}{59}{subsection.20.1}%
 \contentsline {subsection}{\numberline {20.2}Soluciones Detalladas}{60}{subsection.20.2}%
+\contentsline {section}{\numberline {21}Patata}{63}{section.21}%

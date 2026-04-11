@@ -1,0 +1,133 @@
+\documentclass[12pt,a4paper]{article}
+
+% --- Paquetes de Idioma y Codificación ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-tabla]{babel}
+
+% --- Formato de Página ---
+\usepackage{geometry}
+\geometry{top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm}
+\usepackage{parskip} % Espaciado entre párrafos
+
+% --- Estética y Tipografía ---
+\usepackage{enumitem} % Para personalizar listas
+\usepackage{xcolor}
+\definecolor{darkblue}{rgb}{0,0,0.5}
+
+% --- Enlaces ---
+\usepackage[colorlinks=true, linkcolor=darkblue, urlcolor=darkblue, citecolor=black]{hyperref}
+
+% --- Título ---
+\title{\textbf{Investigación de Antecedentes y Estado del Arte}}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+\vspace{-2cm}
+
+\begin{enumerate}[label=\textbf{\Large\arabic*.}, leftmargin=0pt, labelsep=10pt]
+
+    % --- SECCIÓN 1 ---
+    \item \textbf{Contaminación en playas chilenas y marco legal}
+    \begin{itemize}[label=\textbullet]
+        \item \textbf{Tema:} La cantidad de contaminación en las playas de Chile y cómo actualmente se trata el tema.
+        \item \textbf{Enfoque:} Revisión de las estadísticas nacionales de recolección de residuos, evaluación del impacto económico y análisis de las regulaciones legales vigentes.
+        \item \textbf{Resultados:} En la limpieza de 2024 se recogieron 86 toneladas de basura, compuestas mayoritariamente por plásticos (61\%), colillas (18\%) y vidrio (7\%), lo que genera pérdidas de US\$60,7 millones. El tema se aborda mediante limpieza manual y leyes restrictivas, como las Leyes 21.100, 21.368 y 21.413.
+        \item \textbf{Hallazgos:} Se concluye que el método actual de limpieza manual y las leyes son ineficientes frente a la falta de fiscalización, lo que justifica la urgente necesidad de mecanizar la limpieza para remover los macroplásticos que continúan enterrándose en la arena.
+        \item \textbf{Fuentes:}
+        \begin{small}
+            \begin{itemize}[label=-]
+                \item Diario y Radio Universidad Chile (2025). \href{https://radio.uchile.cl/2025/02/05/contaminacion-en-playas-el-llamado-a-evitar-los-desechables-y-optar-por-la-reutilizacion/}{Contaminación en playas: el llamado a evitar los desechables.}
+                \item DIRECTEMAR (s.f.). \href{http://www.directemar.cl/directemar/intereses-maritimos/limpieza-de-playas/limpieza-de-playas}{Limpieza de playas.}
+                \item Oceana Chile (2026). Oceana y Científicos de la Basura: estudio sobre desechos.
+                \item Araya-Campano, J. (2026). \href{https://cientificosdelabasura.ucn.cl/playas-bajo-la-lupa-cientificos-de-la-basura-revelan-resultados-del-extenso-monitoreo-participativo-de-chile-y-latinoamerica/}{Playas bajo la lupa: Monitoreo participativo.}
+                \item Subsecretaría del Medio Ambiente (s.f.). \href{https://residuosmarinos.mma.gob.cl/residuos-marinos-y-microplasticos/}{Estrategia Nacional para la Gestión de Residuos Marinos.}
+            \end{itemize}
+        \end{small}
+    \end{itemize}
+
+    \vfill % Espaciado para que no se vea amontonado
+
+    % --- SECCIÓN 2 ---
+    \item \textbf{Referentes internacionales y mecanización}
+    \begin{itemize}[label=\textbullet]
+        \item \textbf{Tema:} Cómo los demás países o ciudades se hacen cargo de la contaminación en sus playas.
+        \item \textbf{Enfoque:} Análisis comparativo de los métodos y referentes internacionales utilizados a gran escala en Europa, Estados Unidos y Brasil.
+        \item \textbf{Resultados:} La limpieza se realiza mediante maquinaria especializada y vehículos arrastrados por tractores que levantan la capa superficial de arena, la pasan por un sistema de tamizado (cribado) y devuelven la arena limpia.
+        \item \textbf{Hallazgos:} Se valida técnicamente que a nivel mundial la contaminación subsuperficial se soluciona de forma mecánica, respaldando la necesidad de aplicar un sistema de tamizado adaptado a escala en Chile.
+        \item \textbf{Fuentes:}
+        \begin{small}
+            \begin{itemize}[label=-]
+                \item BeachTech (2020). \href{https://www.beach-tech.com}{Limpieza profesional de playas con maquinaria.}
+                \item PFG Group (s.f.). \href{https://www.pfgitalia.com}{Máquinas limpiaplayas y sistemas de cribado.}
+                \item H Barber \& Sons (2021). \href{https://www.hbarber.com}{Beach cleaners and sand sifting technology.}
+                \item EcoInventos (s.f.). \href{https://ecoinventos.com/bebot}{Bebot: robot que limpia playas mediante filtrado.}
+                \item 4ocean (s.f.). \href{https://www.4ocean.com}{Bebot beach cleaning robot.}
+            \end{itemize}
+        \end{small}
+    \end{itemize}
+
+    \newpage
+
+    % --- SECCIÓN 3 ---
+    \item \textbf{Proyectos Robóticos y Estado del Arte}
+    \begin{itemize}[label=\textbullet]
+        \item \textbf{Tema:} Proyectos con objetivos similares, sus fallas y sus logros.
+        \item \textbf{Enfoque:} Análisis de tres referentes: BeBot (España), Robot Zambrano (Chile) y VERO (Italia).
+        \item \textbf{Resultados:} BeBot requiere operador humano. El Robot Zambrano es autónomo (IA) pero no filtra la arena. VERO es autónomo pero solo aspira colillas.
+        \item \textbf{Hallazgos:} Ninguna alternativa combina autonomía total con capacidad de tamizar macroplásticos de distinto tamaño, siendo imperativo desarrollar un prototipo que integre ambas funciones.
+        \item \textbf{Fuentes:}
+        \begin{small}
+            \begin{itemize}[label=-]
+                \item Publimetro (2024). \href{https://www.publimetro.cl/tecnologia/2024/04/18/bebot-este-robot-revuelve-la-arena-de-las-playas-en-busca-de-basura-y-separarla}{Bebot: el robot que revuelve la arena.}
+                \item Diario Mayor (s.f.). \href{https://www.diariomayor.cl/creando-universidad/estudiantes/estudiante-creo-robot-que-recoge-basura-de-las-playas-usando-inteligencia-artificial}{Estudiante creó robot con IA.}
+                \item El Desconcierto (2025). \href{https://eldesconcierto.cl/2025/09/12/innovacion-para-descontaminar-el-medio-ambiente-robot-con-ia-integrada-busca-combatir-la-basura-presente-en-las-playas}{Innovación para descontaminar con IA.}
+                \item Tecvolución (s.f.). \href{https://tecvolucion.com/robot-cuadrupedo-limpiar-playas}{Robot cuadrúpedo para limpiar playas.}
+                \item El Confidencial (2025). \href{https://www.elconfidencial.com/tecnologia/2025-06-09/italia-robot-problema-playas-1qrt_4147283}{Italia y el robot que combate basura en playas.}
+            \end{itemize}
+        \end{small}
+    \end{itemize}
+
+    % --- SECCIÓN 4 ---
+    \item \textbf{Factibilidad Técnica e Ingeniería}
+    \begin{itemize}[label=\textbullet]
+        \item \textbf{Tema:} Cómo la robótica y electrónica podrían solucionar la contaminación en Chile.
+        \item \textbf{Enfoque:} Evaluación de factibilidad técnica para aplicar tecnologías de programación frente a soluciones mecánicas tradicionales.
+        \item \textbf{Resultados:} Se comprobó que la implementación de IA presenta altas complejidades y barreras técnicas de programación para este contexto específico.
+        \item \textbf{Hallazgos:} La ingeniería del robot no debe depender de una IA compleja, sino enfocarse en mecanizar la limpieza mediante una electrónica estable que coordine un filtrado directo.
+        \item \textbf{Fuentes:}
+        \begin{small}
+            \begin{itemize}[label=-]
+                \item Cañón, H. (2021). \textit{Propuesta de un método tecnológico usando cribadoras de arena.} AmeliCA.
+                \item Umibeach Robótica (2025). \href{https://www.umibeach.estuplanetasostenible}{UmiBeach: robot autónomo eléctrico.}
+                \item GarcíaDomínguez, R. (2021). \textit{Modelo integral de la estructura móvil de una máquina limpiaplaya.}
+            \end{itemize}
+        \end{small}
+    \end{itemize}
+
+    % --- SECCIÓN 5 ---
+    \item \textbf{Materiales y Viabilidad Económica}
+    \begin{itemize}[label=\textbullet]
+        \item \textbf{Tema:} Materiales necesarios, calidad y costos.
+        \item \textbf{Enfoque:} Selección técnica de componentes electrónicos y estructurales resistentes a la humedad y arena.
+        \item \textbf{Resultados:} Se determinó el uso de chasis PETG (impresión 3D), malla inoxidable AISI 304, tracción por orugas (motores DC) y control mediante Arduino Uno y Raspberry Pi.
+        \item \textbf{Hallazgos:} La selección demuestra que es viable construir un Demostrador de Concepto a escala, siendo una solución duradera y adaptable para validación académica.
+        \item \textbf{Fuentes de Adquisición:}
+        \begin{small}
+            \begin{itemize}[label=-]
+                \item \texttt{todotoner.cl}: Filamento PETG.
+                \item \texttt{todoparalaindustria.com}: Malla acero inoxidable A304.
+                \item \texttt{mcielectronics.cl}: Motores DC, Arduino Uno y cables.
+                \item \texttt{mercadolibre.cl}: Kit de orugas y sensores.
+                \item \texttt{hobbyking.com}: Batería LiPo 2200mAh 4S.
+                \item \texttt{paris.cl}: Kit Raspberry Pi 4 (8GB).
+            \end{itemize}
+        \end{small}
+    \end{itemize}
+
+\end{enumerate}
+
+\end{document}

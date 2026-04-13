@@ -1,0 +1,16 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{RESUMEN EJECUTIVO}{2}{}%
+\contentsline {section}{\numberline {1}Introducción}{3}{}%
+\contentsline {subsection}{\numberline {1.1}Objetivos del Reporte}{3}{}%
+\contentsline {section}{\numberline {2}Desarrollo}{4}{}%
+\contentsline {subsection}{\numberline {2.1}Metodología de Búsqueda de Información}{4}{}%
+\contentsline {subsection}{\numberline {2.2}Definición de la Problemática (Sintaxis)}{4}{}%
+\contentsline {subsection}{\numberline {2.3}Revisión del Estado del Arte y Análisis de Datos}{4}{}%
+\contentsline {subsection}{\numberline {2.4}Estudio Ético del Problema}{5}{}%
+\contentsline {subsection}{\numberline {2.5}Análisis AEIOU y Hallazgos Empáticos}{5}{}%
+\contentsline {section}{\numberline {3}Conclusiones}{6}{}%
+\contentsline {subsection}{\numberline {3.1}Conexión con los ODS}{6}{}%
+\contentsline {subsection}{\numberline {3.2}Factibilidad y Pasos a Seguir}{6}{}%
+\contentsline {section}{\numberline {A}Planificación de Observación de Campo}{8}{}%
+\contentsline {section}{\numberline {B}Registro Fotográfico de Matriz AEIOU}{8}{}%
+\contentsline {section}{\numberline {C}Transcripción de Entrevista de Diagnóstico}{9}{}%

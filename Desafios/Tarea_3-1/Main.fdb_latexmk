@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber Main"] 1776056138.1264 "Main.bcf" "Main.bbl" "Main" 1776056788.37637 0
-  "Main.bcf" 1776056788.25301 134007 7e99cd479617c90e26dbc808e6629b04 "pdflatex"
-  "library.bib" 1776056062.76949 2122 808d1cbf7b0f73ffec4ea2e41c58cb34 ""
+["biber Main"] 1776093456.68035 "Main.bcf" "Main.bbl" "Main" 1776093489.90514 0
+  "Main.bcf" 1776093489.73752 134488 2dd70b545e2f7f856aef7c88ed6c87ba "pdflatex"
+  "library.bib" 1776093423.02507 2352 6607e36428f62d4060173c2852922d9b ""
   (generated)
   "Main.bbl"
   "Main.blg"
   (rewritten before read)
-["pdflatex"] 1776056786.87015 "Main.tex" "Main.pdf" "Main" 1776056788.37704 0
+["pdflatex"] 1776093487.36206 "Main.tex" "Main.pdf" "Main" 1776093489.90586 0
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1775415801 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1775415801 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm" 1775415801 4484 b828043cbd581d289d955903c1339981 ""
@@ -117,6 +117,7 @@
   "/usr/share/texmf-dist/tex/latex/caption/caption.sty" 1775415801 56128 c2ccf1a29d78c33bc553880402e4fb9a ""
   "/usr/share/texmf-dist/tex/latex/caption/caption3.sty" 1775415801 72619 ee90b6612147680fd73c3b1406a74245 ""
   "/usr/share/texmf-dist/tex/latex/carlisle/scalefnt.sty" 1775415801 1360 df2086bf924b14b72d6121fe9502fcdb ""
+  "/usr/share/texmf-dist/tex/latex/colortbl/colortbl.sty" 1775415801 12709 4ca3cf5f9f1d551b8a1090fba11ac95d ""
   "/usr/share/texmf-dist/tex/latex/csquotes/csquotes.cfg" 1775415801 7068 06f8d141725d114847527a66439066b6 ""
   "/usr/share/texmf-dist/tex/latex/csquotes/csquotes.def" 1775415801 22135 0975a49eeaed232aa861e9425ffb2e7c ""
   "/usr/share/texmf-dist/tex/latex/csquotes/csquotes.sty" 1775415801 62767 e79d6d7a989e7da62dcf3d0a65c1faee ""
@@ -127,6 +128,7 @@
   "/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg" 1775415801 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
   "/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg" 1775415801 1224 978390e9c2234eab29404bc21b268d1e ""
   "/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def" 1775415801 19626 23e2822b9b2b5005f4c549ca98b9334d ""
+  "/usr/share/texmf-dist/tex/latex/graphics/color.sty" 1775415801 7245 a7e8457a46cda4920df85d975267efb4 ""
   "/usr/share/texmf-dist/tex/latex/graphics/graphics.sty" 1775415801 18363 69bb4f5538964bfea50d1e6d89cbe69f ""
   "/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty" 1775415801 8118 43b99e52946c33a23f5f43b52d5cc5ec ""
   "/usr/share/texmf-dist/tex/latex/graphics/keyval.sty" 1775415801 2671 d9941f4bf4750e9b0603c9a2ec54693b ""
@@ -155,16 +157,17 @@
   "/usr/share/texmf-dist/tex/latex/psnfss/helvet.sty" 1775415801 1499 de0ad166b701b820e03588a29bb30798 ""
   "/usr/share/texmf-dist/tex/latex/psnfss/t1phv.fd" 1775415801 1483 47067fbe7c3ffed1ede7aaa7b8549d7a ""
   "/usr/share/texmf-dist/tex/latex/setspace/setspace.sty" 1775415801 22490 8cac309b79a4c53a4ffce4b1b07aead0 ""
+  "/usr/share/texmf-dist/tex/latex/tools/array.sty" 1775415801 15651 9d7c62df82cb29a555c00550babfe364 ""
   "/usr/share/texmf-dist/tex/latex/url/url.sty" 1775415801 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty" 1775415801 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1775415801 43569 fd570f2fa160877d211e859f687312ba ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1775486676 5385779 47c0c393a77fd4a098bacfd57d66b88a ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1775486512 3182162 ab7db6e8a27cb09af64b1a2415ae8466 ""
-  "Main.aux" 1776056788.24801 3583 5fccdb02f3c3895aaf781ef9fa116fc2 "pdflatex"
-  "Main.bbl" 1776056139.56024 25234 bf5f64d6ab16d1efe172ead6256e1964 "biber Main"
-  "Main.run.xml" 1776056788.25485 2356 a21a2463f078276d47a5d433a91e1680 "pdflatex"
-  "Main.tex" 1776056784.06392 12116 dcd7c96a07a9177568a23eb428266de9 ""
-  "Main.toc" 1776056788.25485 1201 5f7e3ee0c12c68d910de1d7f116ab305 "pdflatex"
+  "Main.aux" 1776093489.72652 4680 565457769449b9d42dbc1c3725d1ef63 "pdflatex"
+  "Main.bbl" 1776093458.36484 27432 d36f9a4e9e6a55dbf7000d03fcb00ef8 "biber Main"
+  "Main.run.xml" 1776093489.74146 2356 a21a2463f078276d47a5d433a91e1680 "pdflatex"
+  "Main.tex" 1776093487.71048 13449 20ace0771a92d1fba31c58f34b95aecf ""
+  "Main.toc" 1776093489.74146 1201 5f7e3ee0c12c68d910de1d7f116ab305 "pdflatex"
   "img/1.jpg" 1776052146.45705 10333 db52bc9e0798ab327c436f5f6c173c9d ""
   "img/3.jpg" 1776052324.93407 120338 14acfa9f5ba4432cc76f5cb5115505a9 ""
   "img/departamentos/fcfm.pdf" 1776044276.25795 16132 e3a4d17ed2db182414c172764f1f2da4 ""

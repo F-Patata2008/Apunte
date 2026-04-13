@@ -19,7 +19,7 @@
 
 \refsection{0}
   \datalist[entry]{apa/apasortcite//global/global/global}
-    \entry{araya_2026}{article}{}{}
+    \entry{araya_2026}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=6b53a56d838ac5c43339b9f3a6f6d33c}{%
            family={Araya-Campano},
@@ -27,6 +27,9 @@
            given={J.},
            giveni={J\bibinitperiod},
            givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {Universidad Católica del Norte}%
       }
       \strng{namehash}{6b53a56d838ac5c43339b9f3a6f6d33c}
       \strng{fullhash}{6b53a56d838ac5c43339b9f3a6f6d33c}
@@ -43,10 +46,8 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{UCN}
       \field{title}{Playas bajo la lupa: Científicos de la Basura revelan resultados del monitoreo participativo de Chile y Latinoamérica}
       \field{year}{2026}
-      \true{nocite}
       \verb{urlraw}
       \verb https://cientificosdelabasura.ucn.cl/
       \endverb
@@ -54,7 +55,7 @@
       \verb https://cientificosdelabasura.ucn.cl/
       \endverb
     \endentry
-    \entry{beachtech_2020}{misc}{}{}
+    \entry{beachtech_2020}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=ef5cf1f9d26dda54e6fa9350a1b8973e}{%
            family={{BeachTech}},
@@ -77,12 +78,76 @@
       \field{labeltitlesource}{title}
       \field{title}{Limpieza profesional de playas con maquinaria}
       \field{year}{2020}
-      \true{nocite}
       \verb{urlraw}
       \verb https://www.beach-tech.com
       \endverb
       \verb{url}
       \verb https://www.beach-tech.com
+      \endverb
+    \endentry
+    \entry{bravo_2009}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=35151c681825c87a037234f5f10447dd}{%
+           family={Bravo},
+           familyi={B\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=76839fce09fbd10ad125ce7895b3685a}{%
+           family={Gallardo},
+           familyi={G\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aa8978de5ec304fcbb9f492c33e87f87}{%
+           family={Luna-Jorquera},
+           familyi={L\bibinithyphendelim J\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9eaba4c78afd521eabf0c112f759c852}{%
+           family={Núñez},
+           familyi={N\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e0eb538471958c31cbeceb16551fde14}{%
+           family={Vásquez},
+           familyi={V\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f9b27dc2667c0f61924bc4d39915c037}{%
+           family={Thiel},
+           familyi={T\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{279cd39d0c3c77b6a3b789cf2b1c83ea}
+      \strng{fullhash}{f9f4989dc5a734b522526228b2522308}
+      \strng{fullhashraw}{f9f4989dc5a734b522526228b2522308}
+      \strng{bibnamehash}{f9f4989dc5a734b522526228b2522308}
+      \strng{authorbibnamehash}{f9f4989dc5a734b522526228b2522308}
+      \strng{authornamehash}{279cd39d0c3c77b6a3b789cf2b1c83ea}
+      \strng{authorfullhash}{f9f4989dc5a734b522526228b2522308}
+      \strng{authorfullhashraw}{f9f4989dc5a734b522526228b2522308}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Marine Pollution Bulletin}
+      \field{number}{11}
+      \field{title}{Anthropogenic debris on beaches in the {SE} {Pacific} ({Chile}): {Results} from a national survey supported by volunteers}
+      \field{volume}{58}
+      \field{year}{2009}
+      \field{pages}{1718\bibrangedash 1726}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1016/j.marpolbul.2009.06.017
       \endverb
     \endentry
     \entry{canon_2021}{report}{}{}
@@ -115,7 +180,6 @@
       \field{title}{Propuesta de un método tecnológico de recolección de desechos usando cribadoras de arena}
       \field{type}{Informe Técnico}
       \field{year}{2021}
-      \true{nocite}
     \endentry
     \entry{radio_uchile_2025}{article}{}{}
       \name{author}{1}{}{%
@@ -139,13 +203,8 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Radio Universidad de Chile}
-      \field{title}{Contaminación en playas: el llamado a evitar los desechables y optar por la reutilización}
-      \field{urlday}{12}
-      \field{urlmonth}{4}
-      \field{urlyear}{2026}
+      \field{title}{Contaminación en playas: El llamado a evitar los desechables y optar por la reutilización}
       \field{year}{2025}
-      \field{urldateera}{ce}
-      \true{nocite}
       \verb{urlraw}
       \verb https://radio.uchile.cl/2025/02/05/contaminacion-en-playas-el-llamado-a-evitar-los-desechables-y-optar-por-la-reutilizacion/
       \endverb
@@ -206,62 +265,26 @@
       \field{title}{Modelo integral de la estructura móvil de una máquina limpiaplaya}
       \field{volume}{15}
       \field{year}{2021}
-      \true{nocite}
       \field{pages}{45\bibrangedash 58}
       \range{pages}{14}
     \endentry
-    \entry{wikipedia_limpieza}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=0a68ea7b5c49132b0e6969e63c383b55}{%
-           family={Lmalena},
-           familyi={L\bibinitperiod}}}%
-      }
-      \list{organization}{1}{%
-        {Wikipedia}%
-      }
-      \strng{namehash}{0a68ea7b5c49132b0e6969e63c383b55}
-      \strng{fullhash}{0a68ea7b5c49132b0e6969e63c383b55}
-      \strng{fullhashraw}{0a68ea7b5c49132b0e6969e63c383b55}
-      \strng{bibnamehash}{0a68ea7b5c49132b0e6969e63c383b55}
-      \strng{authorbibnamehash}{0a68ea7b5c49132b0e6969e63c383b55}
-      \strng{authornamehash}{0a68ea7b5c49132b0e6969e63c383b55}
-      \strng{authorfullhash}{0a68ea7b5c49132b0e6969e63c383b55}
-      \strng{authorfullhashraw}{0a68ea7b5c49132b0e6969e63c383b55}
-      \field{sortinit}{L}
-      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Limpieza de playas}
-      \field{urlday}{12}
-      \field{urlmonth}{4}
-      \field{urlyear}{2026}
-      \field{year}{2021}
-      \field{urldateera}{ce}
-      \true{nocite}
-      \verb{urlraw}
-      \verb https://es.wikipedia.org/wiki/Limpieza_de_playas
-      \endverb
-      \verb{url}
-      \verb https://es.wikipedia.org/wiki/Limpieza_de_playas
-      \endverb
-    \endentry
-    \entry{oceana_2026}{article}{}{}
-      \name{author}{1}{}{%
+    \entry{oceana_2026}{online}{}{}
+      \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=d78700b1851252cf5298d88e56b4db3a}{%
            family={{Oceana Chile}},
            familyi={O\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=e151deec921fdbfc2d2803743c7e9938}{%
+           family={{Científicos de la Basura}},
+           familyi={C\bibinitperiod}}}%
       }
-      \strng{namehash}{d78700b1851252cf5298d88e56b4db3a}
-      \strng{fullhash}{d78700b1851252cf5298d88e56b4db3a}
-      \strng{fullhashraw}{d78700b1851252cf5298d88e56b4db3a}
-      \strng{bibnamehash}{d78700b1851252cf5298d88e56b4db3a}
-      \strng{authorbibnamehash}{d78700b1851252cf5298d88e56b4db3a}
-      \strng{authornamehash}{d78700b1851252cf5298d88e56b4db3a}
-      \strng{authorfullhash}{d78700b1851252cf5298d88e56b4db3a}
-      \strng{authorfullhashraw}{d78700b1851252cf5298d88e56b4db3a}
+      \strng{namehash}{afb259012d0d11a03f04c41ff97670e5}
+      \strng{fullhash}{afb259012d0d11a03f04c41ff97670e5}
+      \strng{fullhashraw}{afb259012d0d11a03f04c41ff97670e5}
+      \strng{bibnamehash}{afb259012d0d11a03f04c41ff97670e5}
+      \strng{authorbibnamehash}{afb259012d0d11a03f04c41ff97670e5}
+      \strng{authornamehash}{afb259012d0d11a03f04c41ff97670e5}
+      \strng{authorfullhash}{afb259012d0d11a03f04c41ff97670e5}
+      \strng{authorfullhashraw}{afb259012d0d11a03f04c41ff97670e5}
       \field{sortinit}{O}
       \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
       \field{extradatescope}{labelyear}
@@ -269,10 +292,8 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Científicos de la Basura}
       \field{title}{Oceana y Científicos de la Basura publican estudio sobre desechos en las playas de Chile}
       \field{year}{2026}
-      \true{nocite}
       \verb{urlraw}
       \verb https://oceana.org/chile
       \endverb
@@ -280,7 +301,7 @@
       \verb https://oceana.org/chile
       \endverb
     \endentry
-    \entry{publimetro_2024}{misc}{}{}
+    \entry{publimetro_2024}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=2c00ac340ed3950b9e2baf1dab787c5d}{%
            family={{Publimetro}},
@@ -301,9 +322,8 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Bebot: robot que revuelve la arena de las playas en busca de basura}
+      \field{title}{Bebot: Robot que revuelve la arena de las playas en busca de basura}
       \field{year}{2024}
-      \true{nocite}
       \verb{urlraw}
       \verb https://www.publimetro.cl/tecnologia/2024/04/18/bebot-este-robot-revuelve-la-arena-de-las-playas-en-busca-de-basura-y-separarla
       \endverb
@@ -313,7 +333,7 @@
     \endentry
   \enddatalist
   \datalist[entry]{apa/global//global/global/global}
-    \entry{araya_2026}{article}{}{}
+    \entry{araya_2026}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=6b53a56d838ac5c43339b9f3a6f6d33c}{%
            family={Araya-Campano},
@@ -321,6 +341,9 @@
            given={J.},
            giveni={J\bibinitperiod},
            givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {Universidad Católica del Norte}%
       }
       \strng{namehash}{6b53a56d838ac5c43339b9f3a6f6d33c}
       \strng{fullhash}{6b53a56d838ac5c43339b9f3a6f6d33c}
@@ -337,10 +360,8 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{UCN}
       \field{title}{Playas bajo la lupa: Científicos de la Basura revelan resultados del monitoreo participativo de Chile y Latinoamérica}
       \field{year}{2026}
-      \true{nocite}
       \verb{urlraw}
       \verb https://cientificosdelabasura.ucn.cl/
       \endverb
@@ -348,7 +369,7 @@
       \verb https://cientificosdelabasura.ucn.cl/
       \endverb
     \endentry
-    \entry{beachtech_2020}{misc}{}{}
+    \entry{beachtech_2020}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=ef5cf1f9d26dda54e6fa9350a1b8973e}{%
            family={{BeachTech}},
@@ -371,12 +392,76 @@
       \field{labeltitlesource}{title}
       \field{title}{Limpieza profesional de playas con maquinaria}
       \field{year}{2020}
-      \true{nocite}
       \verb{urlraw}
       \verb https://www.beach-tech.com
       \endverb
       \verb{url}
       \verb https://www.beach-tech.com
+      \endverb
+    \endentry
+    \entry{bravo_2009}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=35151c681825c87a037234f5f10447dd}{%
+           family={Bravo},
+           familyi={B\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=76839fce09fbd10ad125ce7895b3685a}{%
+           family={Gallardo},
+           familyi={G\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aa8978de5ec304fcbb9f492c33e87f87}{%
+           family={Luna-Jorquera},
+           familyi={L\bibinithyphendelim J\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9eaba4c78afd521eabf0c112f759c852}{%
+           family={Núñez},
+           familyi={N\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e0eb538471958c31cbeceb16551fde14}{%
+           family={Vásquez},
+           familyi={V\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f9b27dc2667c0f61924bc4d39915c037}{%
+           family={Thiel},
+           familyi={T\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{279cd39d0c3c77b6a3b789cf2b1c83ea}
+      \strng{fullhash}{f9f4989dc5a734b522526228b2522308}
+      \strng{fullhashraw}{f9f4989dc5a734b522526228b2522308}
+      \strng{bibnamehash}{f9f4989dc5a734b522526228b2522308}
+      \strng{authorbibnamehash}{f9f4989dc5a734b522526228b2522308}
+      \strng{authornamehash}{279cd39d0c3c77b6a3b789cf2b1c83ea}
+      \strng{authorfullhash}{f9f4989dc5a734b522526228b2522308}
+      \strng{authorfullhashraw}{f9f4989dc5a734b522526228b2522308}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Marine Pollution Bulletin}
+      \field{number}{11}
+      \field{title}{Anthropogenic debris on beaches in the {SE} {Pacific} ({Chile}): {Results} from a national survey supported by volunteers}
+      \field{volume}{58}
+      \field{year}{2009}
+      \field{pages}{1718\bibrangedash 1726}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1016/j.marpolbul.2009.06.017
       \endverb
     \endentry
     \entry{canon_2021}{report}{}{}
@@ -409,7 +494,6 @@
       \field{title}{Propuesta de un método tecnológico de recolección de desechos usando cribadoras de arena}
       \field{type}{Informe Técnico}
       \field{year}{2021}
-      \true{nocite}
     \endentry
     \entry{radio_uchile_2025}{article}{}{}
       \name{author}{1}{}{%
@@ -433,13 +517,8 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Radio Universidad de Chile}
-      \field{title}{Contaminación en playas: el llamado a evitar los desechables y optar por la reutilización}
-      \field{urlday}{12}
-      \field{urlmonth}{4}
-      \field{urlyear}{2026}
+      \field{title}{Contaminación en playas: El llamado a evitar los desechables y optar por la reutilización}
       \field{year}{2025}
-      \field{urldateera}{ce}
-      \true{nocite}
       \verb{urlraw}
       \verb https://radio.uchile.cl/2025/02/05/contaminacion-en-playas-el-llamado-a-evitar-los-desechables-y-optar-por-la-reutilizacion/
       \endverb
@@ -500,62 +579,26 @@
       \field{title}{Modelo integral de la estructura móvil de una máquina limpiaplaya}
       \field{volume}{15}
       \field{year}{2021}
-      \true{nocite}
       \field{pages}{45\bibrangedash 58}
       \range{pages}{14}
     \endentry
-    \entry{wikipedia_limpieza}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=0a68ea7b5c49132b0e6969e63c383b55}{%
-           family={Lmalena},
-           familyi={L\bibinitperiod}}}%
-      }
-      \list{organization}{1}{%
-        {Wikipedia}%
-      }
-      \strng{namehash}{0a68ea7b5c49132b0e6969e63c383b55}
-      \strng{fullhash}{0a68ea7b5c49132b0e6969e63c383b55}
-      \strng{fullhashraw}{0a68ea7b5c49132b0e6969e63c383b55}
-      \strng{bibnamehash}{0a68ea7b5c49132b0e6969e63c383b55}
-      \strng{authorbibnamehash}{0a68ea7b5c49132b0e6969e63c383b55}
-      \strng{authornamehash}{0a68ea7b5c49132b0e6969e63c383b55}
-      \strng{authorfullhash}{0a68ea7b5c49132b0e6969e63c383b55}
-      \strng{authorfullhashraw}{0a68ea7b5c49132b0e6969e63c383b55}
-      \field{sortinit}{L}
-      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Limpieza de playas}
-      \field{urlday}{12}
-      \field{urlmonth}{4}
-      \field{urlyear}{2026}
-      \field{year}{2021}
-      \field{urldateera}{ce}
-      \true{nocite}
-      \verb{urlraw}
-      \verb https://es.wikipedia.org/wiki/Limpieza_de_playas
-      \endverb
-      \verb{url}
-      \verb https://es.wikipedia.org/wiki/Limpieza_de_playas
-      \endverb
-    \endentry
-    \entry{oceana_2026}{article}{}{}
-      \name{author}{1}{}{%
+    \entry{oceana_2026}{online}{}{}
+      \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=d78700b1851252cf5298d88e56b4db3a}{%
            family={{Oceana Chile}},
            familyi={O\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=e151deec921fdbfc2d2803743c7e9938}{%
+           family={{Científicos de la Basura}},
+           familyi={C\bibinitperiod}}}%
       }
-      \strng{namehash}{d78700b1851252cf5298d88e56b4db3a}
-      \strng{fullhash}{d78700b1851252cf5298d88e56b4db3a}
-      \strng{fullhashraw}{d78700b1851252cf5298d88e56b4db3a}
-      \strng{bibnamehash}{d78700b1851252cf5298d88e56b4db3a}
-      \strng{authorbibnamehash}{d78700b1851252cf5298d88e56b4db3a}
-      \strng{authornamehash}{d78700b1851252cf5298d88e56b4db3a}
-      \strng{authorfullhash}{d78700b1851252cf5298d88e56b4db3a}
-      \strng{authorfullhashraw}{d78700b1851252cf5298d88e56b4db3a}
+      \strng{namehash}{afb259012d0d11a03f04c41ff97670e5}
+      \strng{fullhash}{afb259012d0d11a03f04c41ff97670e5}
+      \strng{fullhashraw}{afb259012d0d11a03f04c41ff97670e5}
+      \strng{bibnamehash}{afb259012d0d11a03f04c41ff97670e5}
+      \strng{authorbibnamehash}{afb259012d0d11a03f04c41ff97670e5}
+      \strng{authornamehash}{afb259012d0d11a03f04c41ff97670e5}
+      \strng{authorfullhash}{afb259012d0d11a03f04c41ff97670e5}
+      \strng{authorfullhashraw}{afb259012d0d11a03f04c41ff97670e5}
       \field{sortinit}{O}
       \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
       \field{extradatescope}{labelyear}
@@ -563,10 +606,8 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Científicos de la Basura}
       \field{title}{Oceana y Científicos de la Basura publican estudio sobre desechos en las playas de Chile}
       \field{year}{2026}
-      \true{nocite}
       \verb{urlraw}
       \verb https://oceana.org/chile
       \endverb
@@ -574,7 +615,7 @@
       \verb https://oceana.org/chile
       \endverb
     \endentry
-    \entry{publimetro_2024}{misc}{}{}
+    \entry{publimetro_2024}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=2c00ac340ed3950b9e2baf1dab787c5d}{%
            family={{Publimetro}},
@@ -595,9 +636,8 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Bebot: robot que revuelve la arena de las playas en busca de basura}
+      \field{title}{Bebot: Robot que revuelve la arena de las playas en busca de basura}
       \field{year}{2024}
-      \true{nocite}
       \verb{urlraw}
       \verb https://www.publimetro.cl/tecnologia/2024/04/18/bebot-este-robot-revuelve-la-arena-de-las-playas-en-busca-de-basura-y-separarla
       \endverb

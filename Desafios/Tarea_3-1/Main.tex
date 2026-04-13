@@ -1,6 +1,7 @@
 \documentclass[12pt]{article}
 
 % --- PAQUETES BÁSICOS ---
+\usepackage[table]{xcolor} % Debe ir antes para evitar conflictos
 \usepackage[spanish, es-tabla]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -8,7 +9,6 @@
 \usepackage{geometry}
 \usepackage{setspace}
 \usepackage{booktabs}
-\usepackage{xcolor}
 \usepackage{csquotes}
 \usepackage{float}
 \usepackage{caption}
@@ -45,19 +45,29 @@
 	\vspace{0.5cm}
 	{\large Desafíos de Innovación en Ingeniería y Ciencias \par}
 	\vfill
-	\begin{flushright}
-		\textbf{Integrantes:}\par
-		Felipe Colli Olea\par
-		Agustín Concha\par
-		Benjamín Bascuñán\par
-		Diego Alvarado\par
-		Joaquín Pérez\par
-		\vspace{0.5cm}
-		\textbf{Profesor:} María Pino\par
-		\textbf{Grupo:} 3
-	\end{flushright}
+	
+    % --- TABLA DE FORMATO ESTRICTO SEGÚN INSTRUCCIONES ---
+	\begin{table}[H]
+        \centering
+        \renewcommand{\arraystretch}{1.5}
+        \begin{tabular}{|p{0.9\textwidth}|}
+        \hline
+        \rowcolor[HTML]{4F81BD} \textcolor{white}{\textbf{EQUIPO:}} \\ \hline
+        \textbf{Sección:} 1 \\ 
+        \textbf{Número y nombre del equipo:} Grupo 3 - Wallis \\ 
+        \textbf{Fecha de entrega:} 12 de abril de 2026 \\ \hline
+        \textbf{Nombre de los Integrantes del Equipo:} \\
+        1. Felipe Colli Olea \\
+        2. Agustín Concha \\
+        3. Benjamín Bascuñán \\
+        4. Diego Alvarado \\
+        5. Joaquín Pérez \\ \hline
+        \end{tabular}
+    \end{table}
+
+    \vspace{0.5cm}
+    \textbf{Profesor:} María Pino\par
 	\vfill
-	{\large 12 de abril de 2026 \par}
 \end{titlepage}
 
 \newpage
@@ -71,7 +81,7 @@
 \addcontentsline{toc}{section}{RESUMEN EJECUTIVO}
 El presente reporte detalla la fase de diagnóstico e investigación técnica del proyecto ``Wallis'', una iniciativa de ingeniería orientada a resolver la crisis de contaminación por macroplásticos enterrados en las playas de Chile. Se identifica una brecha crítica: mientras la limpieza municipal se enfoca en residuos superficiales, una vasta cantidad de contaminantes nocivos permanece oculta bajo la arena, degradando el ecosistema y representando un peligro físico para los usuarios.
 
-A través de una revisión del estado del arte, se valida que las soluciones internacionales de cribado mecánico son efectivas, pero carecen de la autonomía necesaria para el contexto nacional. Este documento propone la metodología de observación de campo para caracterizar la basura en la zona central, analiza los compromisos éticos de implementar robótica en espacios públicos y fundamenta la viabilidad técnica de un prototipo construido en PETG y acero inoxidable. Los resultados proyectados sugieren que Wallis no solo optimizará la limpieza costera, sino que servirá como una herramienta de sensibilización alineada con los Objetivos de Desarrollo Sostenible 12 y 14 de la ONU.
+A través de una revisión del estado del arte, se valida que las soluciones internacionales de cribado mecánico son efectivas, pero carecen de la autonomía necesaria para el contexto nacional. Este documento propone la metodología de observación de campo para caracterizar la basura en la zona central, identificando a residentes, turistas y ecosistema como actores principales, y a la profundidad de la arena como variable crítica. Además, analiza los compromisos éticos de implementar robótica en espacios públicos y fundamenta la viabilidad técnica de un prototipo construido en PETG y acero inoxidable. Los resultados proyectados sugieren que Wallis no solo optimizará la limpieza costera, sino que servirá como una herramienta de sensibilización alineada con los Objetivos de Desarrollo Sostenible 12 y 14 de la ONU.
 
 \newpage
 
@@ -79,7 +89,7 @@ A través de una revisión del estado del arte, se valida que las soluciones int
 \section{Introducción}
 La costa chilena, con una extensión superior a los 6.500 kilómetros, constituye uno de los activos ecológicos y económicos más importantes del país. No obstante, la actividad humana y la gestión ineficiente de residuos han transformado las playas en depósitos de macro y microplásticos. El problema fundamental no es solo la basura visible, sino aquella que, por la acción mecánica del oleaje y el viento, queda sepultada bajo las capas superficiales de arena.
 
-Este fenómeno de ``sepultamiento'' de residuos (principalmente colillas, tapas de botellas y vidrios rotos) imposibilita su recolección mediante las cuadrillas de aseo tradicionales. La permanencia de estos objetos genera una lixiviación de químicos tóxicos en el ecosistema marino y aumenta la tasa de accidentes en turistas. Wallis surge como una solución tecnológica que busca automatizar el tamizado de la arena mediante un robot autónomo, permitiendo recuperar la higiene del borde costero de manera profunda y sistemática.
+Este fenómeno de ``sepultamiento'' de residuos (principalmente colillas, tapas de botellas y vidrios rotos) imposibilita su recolección mediante las cuadrillas de aseo tradicionales \parencite{radio_uchile_2025}. La permanencia de estos objetos genera una lixiviación de químicos tóxicos en el ecosistema marino y aumenta la tasa de accidentes en turistas \parencite{bravo_2009}. Wallis surge como una solución tecnológica que busca automatizar el tamizado de la arena mediante un robot autónomo \parencite{garcia_dominguez_2021}, permitiendo recuperar la higiene del borde costero de manera profunda y sistemática.
 
 \subsection{Objetivos del Reporte}
 \begin{itemize}
@@ -99,7 +109,7 @@ Este fenómeno de ``sepultamiento'' de residuos (principalmente colillas, tapas 
 \subsection{Metodología de Búsqueda de Información}
 Para asegurar un sustento científico robusto, se empleó una metodología de búsqueda sistemática en bases de datos como \textit{Google Scholar}, \textit{ScienceDirect} y los repositorios técnicos de la Dirección General del Territorio Marítimo y de Marina Mercante (DIRECTEMAR). Se utilizaron operadores booleanos para refinar la búsqueda bajo descriptores como ``cribado mecánico'' AND ``playas'', ``robótica autónoma'' AND ``limpieza costera'', y ``microplásticos Chile''.
 
-Se seleccionaron y analizaron 15 fuentes clave publicadas entre 2020 y 2026. Este proceso permitió identificar que la mayoría de los estudios nacionales se centran en el conteo de basura superficial, dejando un vacío de información técnica sobre la densidad de basura en capas profundas (entre 5 y 15 cm), rango donde Wallis enfocará su operación.
+Se seleccionaron y analizaron 15 fuentes clave publicadas entre 2009 y 2026. Este proceso permitió identificar que la mayoría de los estudios nacionales se centran en el conteo de basura superficial, dejando un vacío de información técnica sobre la densidad de basura en capas profundas (entre 5 y 15 cm), rango donde Wallis enfocará su operación.
 
 \subsection{Definición de la Problemática (Sintaxis)}
 Tras el procesamiento de la información recolectada y las entrevistas preliminares, el problema se ha estructurado bajo la siguiente sintaxis formal:
@@ -115,7 +125,7 @@ Tras el procesamiento de la información recolectada y las entrevistas prelimina
 \end{center}
 
 \subsection{Revisión del Estado del Arte y Análisis de Datos}
-La investigación revela que la limpieza de playas en Chile es un esfuerzo mayoritariamente manual. En 2024, se recolectaron 86 toneladas de residuos, pero estudios de organizaciones como \textit{Científicos de la Basura} indican que esto representa menos del 30\% de la contaminación real, debido a la basura enterrada.
+La investigación revela que la limpieza de playas en Chile es un esfuerzo mayoritariamente manual \parencite{canon_2021}. En 2024, se recolectaron 86 toneladas de residuos, pero estudios de organizaciones como \textit{Científicos de la Basura} indican que esto representa menos del 30\% de la contaminación real, debido a la basura enterrada \parencite{araya_2026, oceana_2026}.
 
 \begin{figure}[H]
 	\centering
@@ -123,10 +133,11 @@ La investigación revela que la limpieza de playas en Chile es un esfuerzo mayor
 		\pie[text=legend, radius=1.6, color={blue!60, orange!60, red!60, gray!40}]{61/Plásticos, 18/Colillas, 7/Vidrio, 14/Otros}
 	\end{tikzpicture}
 	\caption{Composición porcentual de residuos encontrados en el borde costero chileno.}
+    \caption*{\textit{Nota.} Elaboración propia a partir de datos de recolección nacional.}
 	\label{fig:grafico_basura}
 \end{figure}
 
-Como se observa en la Figura \ref{fig:grafico_basura}, el plástico y las colillas de cigarro componen casi el 80\% del problema. Las colillas son particularmente críticas por su capacidad de contaminar hasta 50 litros de agua cada una. A nivel internacional, robots como \textit{BeBot} o \textit{VERO} han intentado abordar esto, pero su alto costo y necesidad de supervisión humana los vuelven inviables para el presupuesto de municipios pequeños en Chile. Wallis se diferencia al proponer una arquitectura de hardware libre (Arduino/Raspberry Pi) y una mecánica de cribado directo optimizada para el tipo de grano de arena presente en la zona central del país.
+Como se observa en la Figura \ref{fig:grafico_basura}, el plástico y las colillas de cigarro componen casi el 80\% del problema. Las colillas son particularmente críticas por su capacidad de contaminar hasta 50 litros de agua cada una. A nivel internacional, robots como \textit{BeBot} o \textit{VERO} han intentado abordar esto \parencite{publimetro_2024}, pero su alto costo y necesidad de supervisión humana los vuelven inviables para el presupuesto de municipios pequeños en Chile. Sistemas de cribado en tractores existen \parencite{beachtech_2020}, pero compactan la arena. Wallis se diferencia al proponer una arquitectura de hardware libre (Arduino/Raspberry Pi) y una mecánica de cribado directo optimizada para el tipo de grano de arena presente en la zona central del país.
 
 \subsection{Estudio Ético del Problema}
 La implementación de Wallis no está exenta de consideraciones éticas. En primer lugar, se ha analizado el impacto en el empleo local. Wallis no busca sustituir al personal de aseo, sino actuar como una herramienta de aumento que realice la tarea físicamente demandante y peligrosa de tamizar arena profunda, permitiendo que el personal humano se enfoque en la gestión de residuos y educación ambiental.
@@ -153,7 +164,7 @@ Se confirma la factibilidad técnica del prototipo. El diseño basado en tracci�
 
 \newpage
 % --- 5. REFERENCIAS (APA 7) ---
-\nocite{*}
+% Se eliminó el \nocite{*} para que solo se muestren las referencias que de verdad usaste en el texto (lo cual es requisito APA).
 \printbibliography[title={Referencias Bibliográficas}]
 
 \newpage
@@ -172,11 +183,13 @@ Para la validación de las hipótesis de diseño, se ha planificado una salida a
 	\centering
 	\includegraphics[width=0.6\textwidth]{img/1.jpg}
 	\caption{Actividades: Limpieza manual insuficiente en zonas críticas.}
+    \caption*{\textit{Nota.} Fotografía registrada durante la salida a terreno en El Quisco.}
 \end{figure}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{img/3.jpg}
 	\caption{Interacciones: Descuido de los turistas con envases plásticos.}
+    \caption*{\textit{Nota.} Imagen referencial de interacciones de usuarios en el borde costero.}
 \end{figure}
 
 \section{Transcripción de Entrevista de Diagnóstico}

@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber Main"] 1776056138.1264 "Main.bcf" "Main.bbl" "Main" 1776056232.4284 0
-  "Main.bcf" 1776056232.30935 134007 7e99cd479617c90e26dbc808e6629b04 "pdflatex"
+["biber Main"] 1776056138.1264 "Main.bcf" "Main.bbl" "Main" 1776056788.37637 0
+  "Main.bcf" 1776056788.25301 134007 7e99cd479617c90e26dbc808e6629b04 "pdflatex"
   "library.bib" 1776056062.76949 2122 808d1cbf7b0f73ffec4ea2e41c58cb34 ""
   (generated)
   "Main.bbl"
   "Main.blg"
   (rewritten before read)
-["pdflatex"] 1776056231.02608 "Main.tex" "Main.pdf" "Main" 1776056232.4292 0
+["pdflatex"] 1776056786.87015 "Main.tex" "Main.pdf" "Main" 1776056788.37704 0
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1775415801 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1775415801 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm" 1775415801 4484 b828043cbd581d289d955903c1339981 ""
@@ -160,11 +160,11 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1775415801 43569 fd570f2fa160877d211e859f687312ba ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1775486676 5385779 47c0c393a77fd4a098bacfd57d66b88a ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1775486512 3182162 ab7db6e8a27cb09af64b1a2415ae8466 ""
-  "Main.aux" 1776056232.3041 3583 c3b25af78397be7eb2e371d9cecef77f "pdflatex"
+  "Main.aux" 1776056788.24801 3583 5fccdb02f3c3895aaf781ef9fa116fc2 "pdflatex"
   "Main.bbl" 1776056139.56024 25234 bf5f64d6ab16d1efe172ead6256e1964 "biber Main"
-  "Main.run.xml" 1776056232.31217 2356 a21a2463f078276d47a5d433a91e1680 "pdflatex"
-  "Main.tex" 1776056105.33646 12094 0af44eb3376a58c30e7c307a9b315148 ""
-  "Main.toc" 1776056232.31217 1201 7d29393ec64bdd4c9f9263335655a44d "pdflatex"
+  "Main.run.xml" 1776056788.25485 2356 a21a2463f078276d47a5d433a91e1680 "pdflatex"
+  "Main.tex" 1776056784.06392 12116 dcd7c96a07a9177568a23eb428266de9 ""
+  "Main.toc" 1776056788.25485 1201 5f7e3ee0c12c68d910de1d7f116ab305 "pdflatex"
   "img/1.jpg" 1776052146.45705 10333 db52bc9e0798ab327c436f5f6c173c9d ""
   "img/3.jpg" 1776052324.93407 120338 14acfa9f5ba4432cc76f5cb5115505a9 ""
   "img/departamentos/fcfm.pdf" 1776044276.25795 16132 e3a4d17ed2db182414c172764f1f2da4 ""

@@ -1,0 +1,18 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Introducción}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Objetivos del Proyecto}{2}{subsection.1.1}%
+\contentsline {section}{\numberline {2}Desarrollo}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Metodología de Búsqueda de Información}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Definición de la Problemática y Sintaxis}{3}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Revisión del Estado del Arte y Referentes}{3}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Estudio Ético del Problema}{3}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Análisis Empático y AEIOU}{4}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Conclusiones y Próximos Pasos}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Conexión con los ODS}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Factibilidad y Avances}{5}{subsection.3.2}%
+\addvspace {11.4pt}
+\contentsline {section}{Referencias}{6}{subsection.3.2}%
+\contentsline {section}{Referencias}{6}{subsection.3.2}%
+\contentsline {section}{Anexo \numberline {A}Planificación Detallada de Observación de Campo}{7}{appendix.1.Alph1}%
+\contentsline {section}{Anexo \numberline {B}Matriz AEIOU (Registro Fotográfico)}{7}{appendix.1.Alph2}%
+\contentsline {section}{Anexo \numberline {C}Transcripción de Entrevista}{8}{appendix.1.Alph3}%

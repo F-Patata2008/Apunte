@@ -1,0 +1,317 @@
+% Template:     Informe LaTeX
+% Documento:    Configuraciones del template
+% Versión:      8.3.8 (07/02/2025)
+% Autor:        Pablo Pizarro R. (pablo@ppizarror.com)
+
+% CONFIGURACIONES GENERALES
+\def\documentfontsize {12}         % Tamaño fuente 12pt (Instrucción)
+\def\documentinterline {1.15}      % Interlineado 1.15 (Instrucción)
+\def\documentparindent {15}        % Tamaño del indentado de párrafos [pt]
+\def\documentparskip {0}           % Tamaño adicional entre párrafos (+/-) [pt]
+\def\fontdocument {helvet}         % Fuente tipo Arial (Instrucción)
+\def\fonttypewriter {tmodern}      % Tipografía de \texttt
+\def\fonturl {same}                % Tipo de fuente url
+\def\graphicxdraft {false}         % Modo draft desactivado
+\def\pointdecimal {true}           % Decimales con punto
+\def\predocpageromannumber {true}  % Pág. con número romano previo
+\def\predocpageromanupper {false}  % Romanos en minúscula
+\def\predocresetpagenumber {true}  % Resetea número tras el índice
+\def\showlayoutlines {false}       
+\def\showlinenumbers {false}       
+\def\twopagesclearformat {blank}   
+
+% ESTILO PORTADA Y HEADER-FOOTER
+\def\disablehfrightmark {false}    
+\def\hfstyle {style1}              
+\def\hfwidthcourse {0.35}          
+\def\hfwidthtitle {0.6}            
+\def\hfwidthwrap {false}           
+\def\portraitstyle {style1}        
+
+% CONFIGURACIÓN DE LAS LEYENDAS - CAPTION
+\def\captionalignment {justified}  
+\def\captionfontsize {small}       
+\def\captionlabelformat {simple}   
+\def\captionlabelsep {colon}       
+\def\captionlessmarginimage {0.1}  
+\def\captionlrmargin {2}           
+\def\captionlrmarginmc {1}         
+\def\captionmarginimage {0}        
+\def\captionmarginimages {0}       
+\def\captionmarginimagesmc {0}     
+\def\captionmarginmultimg {0}      
+\def\captionnumcode {arabic}       
+\def\captionnumequation {arabic}   
+\def\captionnumfigure {arabic}     
+\def\captionnumsubfigure {alph}    
+\def\captionnumsubtable {alph}     
+\def\captionnumtable {arabic}      
+\def\captionsubchar {.}            
+\def\captiontbmarginfigure {9.35}  
+\def\captiontbmargintable {7}      
+\def\captiontextbold {false}       
+\def\captiontextsubnumbold {false} 
+\def\codecaptiontop {true}         
+\def\equationcaptioncenter {true}  
+\def\figurecaptiontop {false}      
+\def\marginaligncaptbottom {0.1}   
+\def\marginaligncapttop {-0.75}    
+\def\marginalignedcaptbottom {0.1} 
+\def\marginalignedcapttop {-0.75}  
+\def\margineqncaptionbottom {0}    
+\def\margineqncaptiontop {-0.7}    
+\def\margingathercaptbottom {0.1}  
+\def\margingathercapttop {-0.9}    
+\def\margingatheredcaptbottom{0.1} 
+\def\margingatheredcapttop {-0.7}  
+\def\sectioncaptiondelimiter {.}   
+\def\showsectioncaptioncode {none} 
+\def\showsectioncaptioneqn {none}  
+\def\showsectioncaptionfig {none}  
+\def\showsectioncaptionmat {none}  
+\def\showsectioncaptiontab {none}  
+\def\subcaptionfsize{footnotesize} 
+\def\subcaptionlabelformat{parens} 
+\def\subcaptionlabelsep {space}    
+\def\tablecaptiontop {true}        
+
+% CONFIGURACIÓN DEL ÍNDICE
+\def\addindexsubtobookmarks{false} 
+\def\addindextobookmarks {true}    
+\def\charafterobjectindex {.}      
+\def\charnumpageindex {.}          
+\def\indexdepth {4}                
+\def\indexnewpagec {false}         
+\def\indexnewpagee {false}         
+\def\indexnewpagef {false}         
+\def\indexnewpaget {false}         
+\def\indexstyle {ftc}              
+\def\indextitlemargin {11.4}       
+\def\objectindexindent {false}     
+\def\showappendixsecindex {false}  
+\def\showindexofcontents {true}    
+
+% ANEXO, CITAS, REFERENCIAS
+\def\apacitebothers {et al.}       
+\def\apaciterefcitecharclose {]}   
+\def\apaciterefcitecharopen {[}    
+\def\apaciterefnumber {false}      
+\def\apaciterefsep {5}             
+\def\apaciteshowurl {false}        
+\def\apacitestyle {apacite}        
+\def\appendixindepobjnum {true}    
+\def\backrefpagecite {false}       
+\def\bibtexenvrefsecnum {false}    
+\def\bibtexindexbibliography{true} 
+\def\bibtexrefsep {5}              
+\def\bibtexstyle {ieeetr}          
+\def\bibtextextalign {justify}     
+\def\fontsizerefbibl {\normalsize} 
+\def\natbibrefcitecharclose {]}    
+\def\natbibrefcitecharopen {[}     
+\def\natbibrefcitecompress {true}  
+\def\natbibrefcitesepcomma {true}  
+\def\natbibrefcitetype {authoryear} % Formato APA (Instrucción)
+\def\natbibrefsep {5}              
+\def\natbibrefstyle {apa}          % Estilo APA (Instrucción)
+\def\stylecitereferences {natbib}  
+\def\twocolumnreferences {false}   
+
+% CONFIGURACIONES DE OBJETOS
+\def\animatedimageautoplay {true}  
+\def\animatedimagecontrols {false} 
+\def\animatedimageloop {true}      
+\def\columnsepwidth {2.1}          
+\def\defaultimagefolder {img/}     
+\def\equationleftalign {false}     
+\def\equationrestart {none}        
+\def\footnotelmargin {10}          
+\def\footnoterestart {none}        
+\def\footnoterulefigure {false}    
+\def\footnoterulepage {false}      
+\def\footnoteruletable {false}     
+\def\footnotetopmargin {0.5}       
+\def\footnotetwocolumn {false}     
+\def\fpremovetopbottomcenter{true} 
+\def\hfpdashcharstyle {--}         
+\def\imagedefaultplacement {H}     
+\def\marginalignbottom {-0.4}      
+\def\marginalignedbottom {-0.2}    
+\def\marginalignedtop {-0.4}       
+\def\marginaligntop {-0.4}         
+\def\margineqnindexbottom {-0.9}   
+\def\margineqnindextop {0}         
+\def\marginequationbottom {-0.2}   
+\def\marginequationtop {0}         
+\def\marginfloatimages {-13}       
+\def\margingatherbottom {-0.2}     
+\def\margingatheredbottom {-0.1}   
+\def\margingatheredtop {-0.4}      
+\def\margingathertop {-0.4}        
+\def\marginimagebottom {-0.15}     
+\def\marginimagemultbottom {0.25}  
+\def\marginimagemultright {0.5}    
+\def\marginimagemulttop {-0.3}     
+\def\marginimagetop {0}            
+\def\marginlinenumbers {7.5}       
+\def\numberedequation {true}       
+\def\senumerti {\arabic{enumi}.}   
+\def\senumertii {\alph{enumii})}   
+\def\senumertiii{\roman{enumiii}.} 
+\def\senumertiv {\Alph{enumiv})}   
+\def\sitemizei {\iitembcirc}       
+\def\sitemizeii {\iitemdash}       
+\def\sitemizeiii {\iitemcirc}      
+\def\sitemizeiv {\iitembsquare}    
+\def\sitemsmargini {25}            
+\def\sitemsmarginii {22}           
+\def\sitemsmarginiii {18.7}        
+\def\sitemsmarginiv {17}           
+\def\sourcecodebgmarginbottom {0}  % Corregido a 0
+\def\sourcecodebgmarginleft {0}    
+\def\sourcecodebgmarginright {0}   
+\def\sourcecodebgmargintop {0}     
+\def\sourcecodefontf {\ttfamily}   
+\def\sourcecodefonts {\small}      
+\def\sourcecodeilfontf {\ttfamily} 
+\def\sourcecodeilfonts {\small}    
+\def\sourcecodenumbersep {6}       
+\def\sourcecodenumbersize {\tiny}  
+\def\sourcecodeskipabove {0.75}    
+\def\sourcecodeskipbelow {0.95}    
+\def\sourcecodetabsize {3}         
+\def\tabledefaultplacement {H}     
+\def\tablenotesameline {true}      
+\def\tablenotesfontsize {\small}   
+\def\tablepaddingh {0.75}          
+\def\tablepaddingv {1.15}          
+\def\tikzdefaultplacement {H}      
+
+% CONFIGURACIÓN DE LOS TÍTULOS
+\def\anumsecaddtocounter {false}   
+\def\charaftersectionnum {.}       
+\def\charappendixsection {.}       
+\def\charbetwchaptersection {.}    
+\def\charbetwsectionsubsection {.} 
+\def\charbetwssectionsssect {.}    
+\def\charbetwsubsectionssect {.}   
+\def\formatnumapchapter {\arabic}  
+\def\formatnumapsection {\Alph}    
+\def\formatnumapssection {\arabic} 
+\def\formatnumapsssection{\arabic} 
+\def\formatnumapssssection{\arabic}
+\def\formatnumchapter {\arabic}    
+\def\formatnumsection {\arabic}    
+\def\formatnumssection {\arabic}   
+\def\formatnumsssection {\arabic}  
+\def\formatnumssssection {\arabic} 
+\def\indexsectionfontsize {\LARGE} 
+\def\indexsectionstyle {\bfseries} 
+\def\paragfontsize {\normalsize}   
+\def\paragfontstyle {\bfseries}    
+\def\paragspacingbottom {4}        
+\def\paragspacingleft {0}          
+\def\paragspacingtop {8}           
+\def\paragsubfontsize{\normalsize} 
+\def\paragsubfontstyle {\bfseries} 
+\def\paragsubspacingbottom {4}     
+\def\paragsubspacingleft {0}       
+\def\paragsubspacingtop {8}        
+\def\sectionfontsize {\LARGE}      
+\def\sectionfontstyle {\bfseries}  
+\def\sectionspacingbottom {10}     
+\def\sectionspacingleft {0}        
+\def\sectionspacingtop {20}        
+\def\spacingaftersection {\quad}   
+\def\ssectionfontsize {\Large}     
+\def\ssectionfontstyle {\bfseries} 
+\def\ssectionspacingbottom {10}    
+\def\ssectionspacingleft {0}       
+\def\ssectionspacingtop {12}       
+\def\sssectionfontsize {\large}    
+\def\sssectionfontstyle{\bfseries} 
+\def\sssectionspacingbottom {8}    
+\def\sssectionspacingleft {0}      
+\def\sssectionspacingtop {10}      
+\def\ssssectionfontstyle{\bfseries}
+\def\ssssectionfontsz{\normalsize} 
+\def\ssssectionspacingbottom {6}   
+\def\ssssectionspacingleft {0}     
+\def\ssssectionspacingtop {8}      
+
+% COLORES
+\def\captioncolor {black}          
+\def\captiontextcolor {black}      
+\def\enumerateitemcolor {black}    
+\def\highlightcolor {yellow}       
+\def\indextitlecolor {black}       
+\def\itemizeitemcolor {black}      
+\def\linenumbercolor {gray}        
+\def\linkcolor {black}             
+\def\linkcolorindex {black}        
+\def\maintextcolor {black}         
+\def\numcitecolor {black}          
+\def\pagescolor {white}            
+\def\paragcolor {black}            
+\def\paragsubcolor {black}         
+\def\portraittitlecolor {black}    
+\def\sectioncolor {black}          
+\def\showborderonlinks {false}     
+\def\sourcecodebgcolor {lgray}     
+\def\ssectioncolor {black}         
+\def\sssectioncolor {black}        
+\def\ssssectioncolor {black}       
+\def\tablelinecolor {black}        
+\def\tablerowfirstcolor {none}     
+\def\tablerowsecondcolor {gray!10} 
+\def\urlcolor {magenta}            
+
+% MÁRGENES DE PÁGINA (Instrucción: 2cm por lado)
+\def\pagemarginbottom {2.0}        
+\def\pagemarginleft {2.0}          
+\def\pagemarginright {2.0}         
+\def\pagemargintop {2.0}           
+\def\firstpagemargintop {3.8}      
+
+% PDF OPCIONES
+\def\cfgbookmarksopenlevel {1}     
+\def\cfgpdfbookmarkopen {true}     
+\def\cfgpdfcenterwindow {true}     
+\def\cfgpdfcopyright {}            
+\def\cfgpdfdisplaydoctitle {true}  
+\def\cfgpdffitwindow {false}       
+\def\cfgpdfkeywords {}             
+\def\cfgpdflayout {OneColumn}      
+\def\cfgpdfmenubar {true}          
+\def\cfgpdfpageview {FitH}         
+\def\cfgpdfsecnumbookmarks {true}  
+\def\cfgpdftoolbar {true}          
+\def\cfgshowbookmarkmenu {false}   
+\def\pdfcompilecompression {9}     
+\def\pdfcompileobjcompression {2}  
+\def\pdfcompileversion {7}         
+\def\usepdfmetadata {true}         
+
+% NOMBRES OBJETOS
+\def\nameabstract {Resumen}           
+\def\nameappendixsection {Anexos}     
+\def\namechapter {Capítulo}           
+\def\nameltappendixsection {Anexo}    
+\def\nameltcont{Índice de Contenidos} 
+\def\namelteqn {Índice de Ecuaciones} 
+\def\nameltfigure {Índice de Figuras} 
+\def\nameltsrc {Índice de Códigos}    
+\def\namelttable {Índice de Tablas}   
+\def\nameltwfigure {Figura}           
+\def\nameltwsrc {Código}              
+\def\nameltwtable {Tabla}             
+\def\namemathcol {Corolario}          
+\def\namemathdefn {Definición}        
+\def\namemathej {Ejemplo}             
+\def\namemathlem {Lema}               
+\def\namemathobs {Observación}        
+\def\namemathprp {Proposición}        
+\def\namemaththeorem {Teorema}        
+\def\namepageof { de }                
+\def\nameportraitpage {Cover}         
+\def\namereferences {Referencias}

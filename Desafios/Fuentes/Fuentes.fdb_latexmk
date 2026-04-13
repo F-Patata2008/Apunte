@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1775877390.63206 "Fuentes.tex" "Fuentes.pdf" "Fuentes" 1775877391.49189 0
+["pdflatex"] 1776006161.65234 "Fuentes.tex" "Fuentes.pdf" "Fuentes" 1776006162.48003 0
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1775415801 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1775415801 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1775415801 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -77,9 +77,9 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1775415801 43569 fd570f2fa160877d211e859f687312ba ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1775486676 5385779 47c0c393a77fd4a098bacfd57d66b88a ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1775486512 3182162 ab7db6e8a27cb09af64b1a2415ae8466 ""
-  "Fuentes.aux" 1775877391.3873 362 46eb69c6d65809f72db1e30b30859991 "pdflatex"
-  "Fuentes.out" 1775877391.21669 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "Fuentes.tex" 1775877387.55878 9298 3300af67f3ce0a13bf63627fabf723ab ""
+  "Fuentes.aux" 1776006162.37229 362 46eb69c6d65809f72db1e30b30859991 "pdflatex"
+  "Fuentes.out" 1776006162.1969 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "Fuentes.tex" 1776006159.89336 9679 baf2c6230dd9e6eb146e7c9712214fcd ""
   (generated)
   "Fuentes.aux"
   "Fuentes.log"

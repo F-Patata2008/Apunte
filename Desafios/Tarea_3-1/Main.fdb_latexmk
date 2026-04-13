@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber Main"] 1776094692.18141 "Main.bcf" "Main.bbl" "Main" 1776098980.54369 0
-  "Main.bcf" 1776098980.33191 134209 891687cae9e4dc432078c694328d1b5c "pdflatex"
+["biber Main"] 1776099315.6862 "Main.bcf" "Main.bbl" "Main" 1776099324.36894 0
+  "Main.bcf" 1776099324.19945 134416 9f07078c6e3061ceac9a49e2bf1a7332 "pdflatex"
   "library.bib" 1776093423.02507 2352 6607e36428f62d4060173c2852922d9b ""
   (generated)
   "Main.bbl"
   "Main.blg"
   (rewritten before read)
-["pdflatex"] 1776098978.37853 "Main.tex" "Main.pdf" "Main" 1776098980.54472 0
+["pdflatex"] 1776099322.17978 "Main.tex" "Main.pdf" "Main" 1776099324.36974 0
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1775415801 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1775415801 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm" 1775415801 4484 b828043cbd581d289d955903c1339981 ""
@@ -165,11 +165,11 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1775415801 43569 fd570f2fa160877d211e859f687312ba ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1775486676 5385779 47c0c393a77fd4a098bacfd57d66b88a ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1775486512 3182162 ab7db6e8a27cb09af64b1a2415ae8466 ""
-  "Main.aux" 1776098980.32291 3223 4a63067da2b07bf45a35e8cb5392e2ba "pdflatex"
-  "Main.bbl" 1776094694.05676 14274 8e4126fa389d403f3ad62268a1531d7f "biber Main"
-  "Main.run.xml" 1776098980.33422 2356 a21a2463f078276d47a5d433a91e1680 "pdflatex"
-  "Main.tex" 1776098977.08184 16891 aeebe660c7947bc83524b16fa758a947 ""
-  "Main.toc" 1776098980.33422 1180 f33cc035d324b0047fbfbc436cc5e9f3 "pdflatex"
+  "Main.aux" 1776099324.18545 3829 b41416a2b5bc13f4f2c1794fbdd522c3 "pdflatex"
+  "Main.bbl" 1776099317.3103 24318 6c6eee0884551c070b74ad1fcbcaa000 "biber Main"
+  "Main.run.xml" 1776099324.20145 2356 a21a2463f078276d47a5d433a91e1680 "pdflatex"
+  "Main.tex" 1776099312.23919 16927 f86eff6951913f8e3249cbbcb5a5e450 ""
+  "Main.toc" 1776099324.20145 1078 525df0f2b4e7b0c91ffd515ee9fe37f9 "pdflatex"
   "img/departamentos/fcfm.pdf" 1776044276.25795 16132 e3a4d17ed2db182414c172764f1f2da4 ""
   (generated)
   "Main.aux"

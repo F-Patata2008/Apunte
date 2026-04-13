@@ -5,9 +5,8 @@
 \contentsline {section}{\numberline {2}Desarrollo}{3}{}%
 \contentsline {subsection}{\numberline {2.1}Metodología de Búsqueda de Información}{3}{}%
 \contentsline {subsection}{\numberline {2.2}Definición de la Problemática}{3}{}%
-\contentsline {subsection}{\numberline {2.3}Revisión del Estado del Arte y Análisis de Datos}{3}{}%
-\contentsline {subsection}{\numberline {2.4}Análisis AEIOU y Hallazgos Empáticos}{4}{}%
-\contentsline {subsection}{\numberline {2.5}Estudio Ético del Problema}{4}{}%
+\contentsline {subsection}{\numberline {2.3}Análisis AEIOU y Hallazgos Empáticos}{4}{}%
+\contentsline {subsection}{\numberline {2.4}Estudio Ético del Problema}{4}{}%
 \contentsline {section}{\numberline {3}Conclusiones y Próximos Pasos}{5}{}%
 \contentsline {section}{\numberline {A}Revisión del Estado del Arte}{7}{}%
 \contentsline {section}{\numberline {B}Síntesis: Mapa de Empatía}{7}{}%

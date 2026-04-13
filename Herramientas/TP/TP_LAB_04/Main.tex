@@ -1,0 +1,79 @@
+\documentclass[11pt]{article}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\graphicspath{ {./images/}, {~/Apunte/images/} }
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+\hypersetup{
+    pdftitle={Preparación Laboratorio 4: Excel 1},
+    pdfauthor={Felipe Colli Olea},
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=cyan
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\footnotesize Felipe Colli, Todos los Derechos Reservados}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\title{Preparación Laboratorio 4: Excel 1 \\ \large{Herramientas Computacionales para Ingeniería y Ciencias}}
+\author{Felipe Colli Olea}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{fancy}
+
+\section*{Respuestas a las preguntas de preparación}
+
+\begin{itemize}
+    
+    \item[\textbf{a)}] \textbf{Para la celda F9 de una planilla cualquiera ¿A qué numero de fila y numero de columna se está haciendo referencia?}
+    
+    Se está haciendo referencia a la \textbf{columna 6} (ya que la letra F ocupa la sexta posición en el abecedario: A=1, B=2, C=3, D=4, E=5, F=6) y a la \textbf{fila 9}.
+
+    \vspace{0.3cm}
+    \item[\textbf{b)}] \textbf{¿Cuál es la diferencia entre Referencia relativa y Referencia absoluta? Dé un ejemplo.}
+    
+    \begin{itemize}
+        \item \textbf{Referencia Relativa:} Al copiar y pegar una fórmula en otra celda, las coordenadas de la fila y columna cambian automáticamente adaptándose a la nueva posición. \textit{Ejemplo: \texttt{A1}}.
+        \item \textbf{Referencia Absoluta:} Las coordenadas de la fila y columna se mantienen fijas o bloqueadas al copiar la fórmula a otro lugar. Para lograrlo se utiliza el símbolo de dólar (\texttt{\$}). \textit{Ejemplo: \texttt{\$A\$1}} (bloquea tanto la columna A como la fila 1).
+    \end{itemize}
+
+    \vspace{0.3cm}
+    \item[\textbf{c)}] \textbf{¿Para qué se utiliza el símbolo '=' al iniciar una expresión en una celda?}
+    
+    Se utiliza para indicarle al programa (ya sea Excel o LibreOffice Calc) que el contenido ingresado no es texto plano, sino una \textbf{fórmula o función} que debe ser evaluada y calculada matemáticamente.
+
+    \vspace{0.3cm}
+    \item[\textbf{d)}] \textbf{Nombre al menos 2 propiedades que se pueden cambiar en una celda para resaltar su contenido. Especifique cómo se hace.}
+    
+    \begin{enumerate}
+        \item \textbf{Color de Relleno (Fondo):} Se selecciona la celda, se navega a la barra de herramientas en la pestaña \textit{Inicio} (o formato) y se hace clic en el ícono del "balde de pintura" para seleccionar un color de fondo.
+        \item \textbf{Estilo de Fuente (Negrita/Cursiva):} Se selecciona la celda y, en la misma barra de \textit{Inicio}, se hace clic en el botón \textbf{N} (Negrita) o \textit{K} (Cursiva), o utilizando los atajos de teclado \texttt{Ctrl+N} / \texttt{Ctrl+I}.
+    \end{enumerate}
+
+    \vspace{0.3cm}
+    \item[\textbf{e)}] \textbf{Suponga que Ud. Quiere poner en un archivo Excel en la columna A, a partir de la fila 2, números consecutivos del 1 al 50 y en la columna B, a partir de la fila 2, números consecutivos del 50 al 1 (descendiente). Diga cómo puede conseguir esto a partir de poner un 1 en A2, poner una fórmula en A3 que copia hacia abajo y luego una fórmula en B2 que copia hacia abajo.}
+    
+    Para lograr esto de forma óptima utilizando referencias, los pasos y fórmulas son los siguientes:
+    \begin{enumerate}
+        \item En la celda \texttt{A2} se ingresa manualmente el valor \texttt{1}.
+        \item En la celda \texttt{A3} se ingresa la fórmula de referencia relativa: \texttt{=A2+1}. Al arrastrar esta fórmula hacia abajo hasta la fila 51, se generarán los números ascendentes hasta el 50.
+        \item En la celda \texttt{B2} se ingresa una fórmula que dependa del valor de la celda adyacente para generar el inverso matemático: \texttt{=51-A2}. 
+        
+        \textit{Explicación:} Como en \texttt{A2} hay un \texttt{1}, el resultado será $51 - 1 = 50$. Al copiar esta fórmula hacia abajo (por ejemplo a \texttt{B3}), la referencia relativa cambia a \texttt{=51-A3}. Como \texttt{A3} vale \texttt{2}, el resultado será $51 - 2 = 49$, logrando así la secuencia descendente perfecta de forma automatizada.
+    \end{enumerate}
+
+\end{itemize}
+
+\end{document}

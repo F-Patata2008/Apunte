@@ -1,29 +1,35 @@
-\documentclass[12pt]{article}
+\documentclass[12pt, letterpaper]{article}
 
-% --- PAQUETES BÁSICOS ---
-\usepackage[table]{xcolor} % Debe ir antes para evitar conflictos
+% --- PAQUETES DE IDIOMA Y CODIFICACIÓN ---
 \usepackage[spanish, es-tabla]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{graphicx}
-\usepackage{geometry}
+
+% --- FORMATO DE PÁGINA Y FUENTE (Instrucción: 2cm, Arial 12, Interlineado 1.15) ---
+\usepackage[margin=2cm]{geometry}
+\usepackage[scaled]{helvet} % Simula Arial
+\renewcommand\familydefault{\sfdefault}
 \usepackage{setspace}
+\setstretch{1.15}
+
+% --- PAQUETES GRÁFICOS Y TABLAS ---
+\usepackage{graphicx}
 \usepackage{booktabs}
-\usepackage{csquotes}
+\usepackage[table]{xcolor}
 \usepackage{float}
 \usepackage{caption}
 \usepackage{tikz}
 \usepackage{pgf-pie}
+\usepackage{csquotes}
+\usepackage{enumitem} % Para mejorar las listas en los anexos
 
-% --- FUENTE TIPO ARIAL (Helvetica) ---
-\usepackage[scaled]{helvet}
-\renewcommand\familydefault{\sfdefault}
-
-% --- CONFIGURACIÓN DE PÁGINA (Instrucción: 2cm por lado) ---
-\geometry{left=2cm, right=2cm, top=2cm, bottom=2cm}
-
-% --- INTERLINEADO (Instrucción: 1.15) ---
-\setstretch{1.15}
+% --- ENCABEZADO Y PIE DE PÁGINA (Formato Base Solicitado) ---
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancyhead[L]{\small CD1100 Desafíos de Innovación en Ingeniería y Ciencias}
+\fancyhead[R]{\small pág. \thepage}
 
 % --- BIBLIOGRAFÍA APA 7 ---
 \usepackage[backend=biber, style=apa]{biblatex}
@@ -32,36 +38,33 @@
 % ======================================================================
 \begin{document}
 
-% --- PORTADA ---
+% --- PORTADA (Sin encabezado) ---
 \begin{titlepage}
+	\thispagestyle{empty}
 	\centering
-	\includegraphics[width=0.25\textwidth]{img/departamentos/fcfm.pdf}\par\vspace{1cm}
+	\includegraphics[width=0.25\textwidth]{img/departamentos/fcfm.pdf}\par\vspace{0.8cm}
 	{\scshape\Large Universidad de Chile \par}
 	{\scshape\large Facultad de Ciencias Físicas y Matemáticas \par}
 	{\scshape\large Departamento Hélice \par}
 	\vfill
-	{\Large Tarea 3 \par}
+	{\Large Reporte de Hito 1 \par}
 	{\huge\bfseries Análisis de Contaminación Costera y Planificación de Observación: Proyecto Wallis \par}
 	\vspace{0.5cm}
 	{\large Desafíos de Innovación en Ingeniería y Ciencias \par}
 	\vfill
 
-	% --- TABLA DE FORMATO ESTRICTO SEGÚN INSTRUCCIONES ---
 	\begin{table}[H]
 		\centering
 		\renewcommand{\arraystretch}{1.5}
 		\begin{tabular}{|p{0.9\textwidth}|}
 			\hline
-			\rowcolor[HTML]{4F81BD} \textcolor{white}{\textbf{EQUIPO:}} \\ \hline
-			\textbf{Sección:} 1                                         \\
-			\textbf{Número y nombre del equipo:} Grupo 3 - Wallis       \\
-			\textbf{Fecha de entrega:} 12 de abril de 2026              \\ \hline
-			\textbf{Nombre de los Integrantes del Equipo:}              \\
-			1. Felipe Colli Olea                                        \\
-			2. Agustín Concha                                           \\
-			3. Benjamín Bascuñán                                        \\
-			4. Diego Alvarado                                           \\
-			5. Joaquín Pérez                                            \\ \hline
+			\rowcolor[HTML]{4F81BD} \textcolor{white}{\textbf{EQUIPO:}}             \\ \hline
+			\textbf{Sección:} 1                                                     \\
+			\textbf{Número y nombre del equipo:} Grupo 3 - Wallis                   \\
+			\textbf{Fecha de entrega:} 13 de abril de 2026                          \\ \hline
+			\textbf{Nombre de los Integrantes del Equipo:}                          \\
+			1. Felipe Colli Olea \quad 2. Agustín Concha \quad 3. Benjamín Bascuñán \\
+			4. Diego Alvarado \quad 5. Joaquín Pérez                                \\ \hline
 		\end{tabular}
 	\end{table}
 
@@ -70,130 +73,156 @@
 	\vfill
 \end{titlepage}
 
+% --- ÍNDICE (Paginación Romana para evitar doble página 1) ---
 \newpage
+\thispagestyle{empty} % Oculta el encabezado en el índice
+\pagenumbering{roman}
 \tableofcontents
 \newpage
+
+% --- INICIO CUERPO (Paginación Arábiga) ---
+\pagenumbering{arabic}
 \setcounter{page}{1}
 
-
-% --- 1. RESUMEN EJECUTIVO ---
 \section*{RESUMEN EJECUTIVO}
 \addcontentsline{toc}{section}{RESUMEN EJECUTIVO}
-El presente reporte detalla la fase de diagnóstico e investigación técnica del proyecto ``Wallis'', una iniciativa de ingeniería orientada a resolver la crisis de contaminación por macroplásticos enterrados en las playas de Chile. Se identifica una brecha crítica: mientras la limpieza municipal se enfoca en residuos superficiales, una vasta cantidad de contaminantes nocivos permanece oculta bajo la arena, degradando el ecosistema y representando un peligro físico para los usuarios.
-
-A través de una revisión del estado del arte, se valida que las soluciones internacionales de cribado mecánico son efectivas, pero carecen de la autonomía necesaria para el contexto nacional. Este documento propone la metodología de observación de campo para caracterizar la basura en la zona central, identificando a residentes, turistas y ecosistema como actores principales, y a la profundidad de la arena como variable crítica. Además, analiza los compromisos éticos de implementar robótica en espacios públicos y fundamenta la viabilidad técnica de un prototipo construido en PETG y acero inoxidable. Los resultados proyectados sugieren que Wallis no solo optimizará la limpieza costera, sino que servirá como una herramienta de sensibilización alineada con los Objetivos de Desarrollo Sostenible 12 y 14 de la ONU.
+Este reporte documenta la fase de diagnóstico e investigación técnica del proyecto ``Wallis'', una iniciativa de ingeniería orientada a resolver la crisis de contaminación por macroplásticos enterrados en las playas de Chile. Se identifica una brecha crítica: mientras la limpieza municipal se enfoca en residuos superficiales, una vasta cantidad de contaminantes nocivos permanece oculta bajo la arena, degradando el ecosistema y representando un peligro físico para los usuarios. A través de una revisión del estado del arte, se valida la necesidad de una solución robótica de cribado mecánico autónomo, supliendo las falencias de tecnologías actuales que requieren operadores o no filtran adecuadamente. El documento detalla la metodología de búsqueda, los compromisos éticos del diseño y la exhaustiva planificación de una observación de campo en la zona central. Se concluye que la automatización del tamizado es factible y necesaria, alineándose con el objetivo de mantener "una playa limpia" y aportando a los ODS 12 y 14.
 
 \newpage
 
-% --- 2. INTRODUCCIÓN ---
 \section{Introducción}
-La costa chilena, con una extensión superior a los 6.500 kilómetros, constituye uno de los activos ecológicos y económicos más importantes del país. No obstante, la actividad humana y la gestión ineficiente de residuos han transformado las playas en depósitos de macro y microplásticos. El problema fundamental no es solo la basura visible, sino aquella que, por la acción mecánica del oleaje y el viento, queda sepultada bajo las capas superficiales de arena.
+La temática central de este proyecto aborda la reducción de la contaminación ambiental en las costas mediante la aplicación conjunta de ingeniería y ciencia. Considerando que Chile posee casi 6.500 kilómetros de costa y aproximadamente 900 playas, existe un problema crítico generalizado: la acumulación de residuos generados por la acción humana.
 
-Este fenómeno de ``sepultamiento'' de residuos (principalmente colillas, tapas de botellas y vidrios rotos) imposibilita su recolección mediante las cuadrillas de aseo tradicionales \parencite{radio_uchile_2025}. La permanencia de estos objetos genera una lixiviación de químicos tóxicos en el ecosistema marino y aumenta la tasa de accidentes en turistas \parencite{bravo_2009}. Wallis surge como una solución tecnológica que busca automatizar el tamizado de la arena mediante un robot autónomo \parencite{garcia_dominguez_2021}, permitiendo recuperar la higiene del borde costero de manera profunda y sistemática.
+El problema fundamental radica en que la limpieza manual que se realiza hoy en día es ineficiente; no logra extraer la totalidad de la basura (como colillas de cigarro, tapas, vidrios y envases) que queda enterrada bajo la arena por la acción del viento y el tránsito de personas \parencite{bravo_2009}.
 
-\subsection{Objetivos del Reporte}
+Nuestro proyecto se enfoca en el desafío de lograr y mantener el concepto de ``Una playa limpia''. Para ello, \textit{Wallis} surge como una propuesta tecnológica para recuperar la sanidad de la arena mediante un sistema robótico autónomo de tamizado profundo que opere durante la noche.
+
+\subsection{Objetivos}
 \begin{itemize}
-	\item \textbf{Objetivo General:} Investigar el estado de la contaminación subsuperficial en playas chilenas y diseñar un plan de observación de campo para validar los requerimientos de un sistema de cribado robótico.
-	\item \textbf{Objetivos Específicos:}
+	\item \textbf{General:} Investigar la contaminación subsuperficial y diseñar un plan de observación de campo estructurado para validar los requerimientos del prototipo Wallis.
+	\item \textbf{Específicos:}
 	      \begin{enumerate}
-		      \item Analizar las limitaciones de los sistemas de limpieza actuales mediante una revisión bibliográfica técnica.
-		      \item Determinar los perfiles de usuario y sus necesidades de seguridad mediante herramientas de diseño empático.
-		      \item Establecer un marco ético y de sostenibilidad para el desarrollo del prototipo Wallis.
+		      \item Caracterizar los tipos de residuos y las falencias de la limpieza actual mediante revisión bibliográfica.
+		      \item Identificar las necesidades, temores y comportamientos de los usuarios del borde costero mediante diseño empático.
+		      \item Establecer las directrices técnicas y éticas para la implementación del mecanismo robótico de cribado.
 	      \end{enumerate}
 \end{itemize}
 
 \newpage
-% --- 3. DESARROLLO ---
 \section{Desarrollo}
 
 \subsection{Metodología de Búsqueda de Información}
-Para asegurar un sustento científico robusto, se empleó una metodología de búsqueda sistemática en bases de datos como \textit{Google Scholar}, \textit{ScienceDirect} y los repositorios técnicos de la Dirección General del Territorio Marítimo y de Marina Mercante (DIRECTEMAR). Se utilizaron operadores booleanos para refinar la búsqueda bajo descriptores como ``cribado mecánico'' AND ``playas'', ``robótica autónoma'' AND ``limpieza costera'', y ``microplásticos Chile''.
+Para asegurar un sustento científico y técnico, se empleó una búsqueda sistemática en bases de datos y repositorios institucionales chilenos (DIRECTEMAR, MMA). La investigación (detallada en el Anexo A) confirma que la recolección manual y las leyes actuales en Chile son insuficientes para resolver el problema, logrando extraer menos del 30\% de los residuos reales debido al enterramiento \parencite{araya_2026}.
 
-Se seleccionaron y analizaron 15 fuentes clave publicadas entre 2009 y 2026. Este proceso permitió identificar que la mayoría de los estudios nacionales se centran en el conteo de basura superficial, dejando un vacío de información técnica sobre la densidad de basura en capas profundas (entre 5 y 15 cm), rango donde Wallis enfocará su operación.
-
-\subsection{Definición de la Problemática (Sintaxis)}
-Tras el procesamiento de la información recolectada y las entrevistas preliminares, el problema se ha estructurado bajo la siguiente sintaxis formal:
+\subsection{Definición de la Problemática}
+Tras procesar la información recolectada y las entrevistas, el problema se estructura en la siguiente sintaxis formal:
 
 \begin{center}
 	\framebox[\textwidth]{
 		\parbox{0.9\textwidth}{
 			\centering \vspace{8pt}
-			\textbf{Residentes y turistas de playas chilenas} (Usuario) + \textbf{necesitan playas libres de basura enterrada} (Necesidad) + \textbf{debido al riesgo de accidentes por cortes y la degradación del ecosistema marino} (Síntoma) + \textbf{puesto que la limpieza manual municipal y las leyes actuales no logran extraer macroplásticos subsuperficiales de forma eficiente} (Hallazgo).
+			\textbf{Residentes y turistas de playas chilenas} (Usuario) + \textbf{necesitan playas libres de basura enterrada} (Necesidad) + \textbf{debido al riesgo de accidentes por cortes y degradación ambiental} (Síntoma) + \textbf{puesto que la limpieza manual no logra extraer macroplásticos subsuperficiales} (Hallazgo).
 			\vspace{8pt}
 		}
 	}
 \end{center}
 
 \subsection{Revisión del Estado del Arte y Análisis de Datos}
-La investigación revela que la limpieza de playas en Chile es un esfuerzo mayoritariamente manual \parencite{canon_2021}. En 2024, se recolectaron 86 toneladas de residuos, pero estudios de organizaciones como \textit{Científicos de la Basura} indican que esto representa menos del 30\% de la contaminación real, debido a la basura enterrada \parencite{araya_2026, oceana_2026}.
+La recolección nacional de 2024 (86 toneladas) evidencia que el plástico y las colillas componen el 79\% del problema (Figura 1). A nivel mundial (España, EE. UU., Brasil), la limpieza costera utiliza tractores de cribado \parencite{beachtech_2020}, lo que valida la necesidad de tamizado mecánico.
+
+No obstante, las alternativas actuales de robótica presentan severas limitaciones: \textit{BeBot} tamiza pero requiere operador humano \parencite{publimetro_2024}; \textit{Robot Zambrano} es autónomo pero solo usa pala sin filtrar; y \textit{VERO} solo aspira colillas. \textbf{Wallis} debe cubrir este vacío integrando total autonomía y capacidad de tamizado profundo utilizando materiales accesibles y resistentes a la humedad: chasis de PETG, malla de acero inoxidable AISI 304, orugas para tracción, y control centralizado mediante placas Arduino Uno y Raspberry Pi.
 
 \begin{figure}[H]
 	\centering
 	\begin{tikzpicture}
 		\pie[text=legend, radius=1.6, color={blue!60, orange!60, red!60, gray!40}]{61/Plásticos, 18/Colillas, 7/Vidrio, 14/Otros}
 	\end{tikzpicture}
-	\caption{Composición porcentual de residuos encontrados en el borde costero chileno.}
-	\caption*{\textit{Nota.} Elaboración propia a partir de datos de recolección nacional.}
-	\label{fig:grafico_basura}
+	\caption{Residuos en playas chilenas (2024).}
+	\caption*{\textit{Nota.} Elaboración propia basada en estadísticas de recolección nacional.}
 \end{figure}
 
-Como se observa en la Figura \ref{fig:grafico_basura}, el plástico y las colillas de cigarro componen casi el 80\% del problema. Las colillas son particularmente críticas por su capacidad de contaminar hasta 50 litros de agua cada una. A nivel internacional, robots como \textit{BeBot} o \textit{VERO} han intentado abordar esto \parencite{publimetro_2024}, pero su alto costo y necesidad de supervisión humana los vuelven inviables para el presupuesto de municipios pequeños en Chile. Sistemas de cribado en tractores existen \parencite{beachtech_2020}, pero compactan la arena. Wallis se diferencia al proponer una arquitectura de hardware libre (Arduino/Raspberry Pi) y una mecánica de cribado directo optimizada para el tipo de grano de arena presente en la zona central del país.
-
-\subsection{Estudio Ético del Problema}
-La implementación de Wallis no está exenta de consideraciones éticas. En primer lugar, se ha analizado el impacto en el empleo local. Wallis no busca sustituir al personal de aseo, sino actuar como una herramienta de aumento que realice la tarea físicamente demandante y peligrosa de tamizar arena profunda, permitiendo que el personal humano se enfoque en la gestión de residuos y educación ambiental.
-
-En segundo lugar, se considera la ética ambiental respecto a la fauna costera. La operación nocturna debe ser calibrada para no interferir con los ciclos de anidación de aves o el desplazamiento de crustáceos. Finalmente, la privacidad de los turistas se garantiza mediante un sistema de visión computacional que no almacena imágenes de personas, sino que solo identifica patrones de residuos sólidos.
-
 \subsection{Análisis AEIOU y Hallazgos Empáticos}
-Mediante la observación previa y el mapa de empatía (Anexo B), se identificó que el actor más afectado es el residente permanente, quien ve disminuida su calidad de vida y el valor de su entorno. La Matriz AEIOU permitió detectar que el principal foco de contaminación son las zonas aledañas al comercio ambulante ilegal, donde la falta de infraestructura de disposición (basureros) obliga al residuo a terminar enterrado bajo la arena por el tránsito peatonal.
-\newpage
-
-% --- 4. CONCLUSIONES ---
-\section{Conclusiones}
-La fase de investigación del proyecto Wallis ha permitido concluir que la automatización de la limpieza costera es una necesidad técnica y social. El principal aprendizaje del equipo radica en la comprensión de que un problema de ingeniería requiere un enfoque sistémico que considere desde la granulometría de la arena hasta la ética del desplazamiento laboral.
-
-\subsection{Conexión con los ODS}
-El proyecto se vincula directamente con dos Objetivos de Desarrollo Sostenible de la ONU:
-\begin{itemize}
-	\item \textbf{ODS 14 (Vida Submarina):} Al extraer macroplásticos de la arena, se previene su fragmentación en microplásticos que eventualmente son ingeridos por la fauna marina.
-	\item \textbf{ODS 12 (Producción y Consumo Responsables):} Wallis actúa como un monitor de datos. Al categorizar la basura recolectada, proporciona métricas reales a los municipios para regular el consumo de envases en el borde costero.
-\end{itemize}
-
-\subsection{Factibilidad y Pasos a Seguir}
-Se confirma la factibilidad técnica del prototipo. El diseño basado en tracción por orugas permitirá superar la resistencia de la arena húmeda. El próximo hito será la ejecución de la observación de campo en El Quisco (V Región), donde se validará la profundidad promedio de entierro de las colillas de cigarro para ajustar la profundidad de las cuchillas del robot.
+A través del Mapa de Empatía (Anexo B) aplicado a residentes de El Tabo, confirmamos que valoran profundamente un entorno limpio y temen accidentarse con basura enterrada, pero buscan una solución no invasiva y silenciosa. La Matriz AEIOU (Anexo C) y las entrevistas (Anexo E) revelan que el comercio ambulante fomenta el uso de envases plásticos y que el deficiente tamizado municipal reduce directamente el turismo, ya que las personas evitan playas donde se cortan con vidrios ocultos.
 
 \newpage
-% --- 5. REFERENCIAS (APA 7) ---
-% Se eliminó el \nocite{*} para que solo se muestren las referencias que de verdad usaste en el texto (lo cual es requisito APA).
+\section{Conclusiones y Próximos Pasos}
+Lograr limpiar adecuadamente las playas de Chile es una urgencia tanto ambiental como económica (por la pérdida de turismo y accidentes). Se concluye que la tecnología actual presenta limitaciones (no tamizan o no son autónomos), por lo que \textit{Wallis} cumpliría esa función adecuadamente. Al hacerlo, el proyecto se alinea de forma directa con los \textbf{Objetivos de Desarrollo Sostenible de la ONU}, específicamente el ODS 14 (Vida Submarina) y ODS 12 (Producción y Consumo Responsables).
+
+Para el próximo hito, se ejecutará el plan de Observación de Campo (Anexo D), y se ampliará el muestreo realizando encuestas generales que permitan respaldar y verificar, de forma cuantitativa, los hallazgos extraídos de nuestra fase de investigación.
+
+\newpage
 \printbibliography[title={Referencias Bibliográficas}]
 
 \newpage
-% --- ANEXOS ---
 \appendix
-\section{Planificación de Observación de Campo}
-Para la validación de las hipótesis de diseño, se ha planificado una salida a terreno con las siguientes especificaciones:
+\section{Revisión del Estado del Arte}
+A continuación, se detalla la investigación técnica que sustenta las bases del proyecto, dividida en sus principales focos temáticos:
+
+\begin{enumerate}
+	\item \textbf{Contaminación actual en Chile:} En 2024 se recogieron 86 toneladas de basura (61\% plásticos, 18\% colillas, 7\% vidrio), causando millonarias pérdidas económicas. El método actual de limpieza manual y las leyes restrictivas resultan ineficientes frente a la falta de fiscalización y el enterramiento de basura.
+	\item \textbf{Referentes internacionales:} En Europa, EE. UU. y Brasil la limpieza subsuperficial se hace mediante tractores con cribadoras que levantan la arena. Esto valida técnicamente la necesidad de aplicar mecanismos de tamizado a gran escala.
+	\item \textbf{Proyectos robóticos similares y sus fallas:} \textit{BeBot} hace un excelente tamizado pero no es autónomo; el \textit{Robot Zambrano} tiene IA pero solo usa pala; \textit{VERO} es cuadrúpedo pero solo aspira. Se concluye que es imperativo desarrollar un prototipo (Wallis) que combine autonomía y filtrado físico de distintos tamaños.
+	\item \textbf{Rol de la Ingeniería:} Se comprobó que, para evitar sobrecostos y fallas, la ingeniería del robot no debe depender exclusivamente de una IA compleja para identificar residuos bajo la arena, sino enfocarse en mecanizar una electrónica estable que coordine un filtrado físico directo.
+	\item \textbf{Materiales seleccionados:} Se determinó el uso de un chasis de PETG impreso en 3D (resistencia térmica), malla de acero inoxidable AISI 304 (anticorrosión), tracción por orugas con motores DC, controlados mediante placas Arduino Uno y Raspberry Pi.
+\end{enumerate}
+
+\section{Síntesis: Mapa de Empatía}
+\textbf{Usuario perfilado:} Ana Jer, 56 años. Residente de El Tabo desde 2018. Utiliza el borde costero frecuentemente.
+
 \begin{itemize}
-	\item \textbf{Lugar:} Playa Principal, El Quisco, Región de Valparaíso.
-	\item \textbf{Instrumentación:} Sondas de profundidad de 20 cm, tamices manuales de control, y cámaras con GPS.
-	\item \textbf{Muestreo:} Se delimitarán tres cuadrantes de 5x5 metros en zonas de alta, media y baja concurrencia.
+	\item \textbf{¿Qué ve?} Una playa contaminada por colillas y microplásticos. Personas disfrutando sin importarles el cuidado de su propio entorno.
+	\item \textbf{¿Qué oye?} Que faltan esfuerzos de las autoridades contra la contaminación; constantes quejas de otras personas por el mal estado de la arena.
+	\item \textbf{¿Qué piensa y siente?} Siente que es desagradable y muy peligroso caminar descalzo. Piensa que los turistas y residentes deben hacerse cargo de su propia basura.
+	\item \textbf{¿Qué hace?} Recoge activamente la basura del suelo para tirarla en contenedores y trata siempre de no ensuciar.
+\end{itemize}
+\textbf{Resultados directos:} El usuario valora enormemente la limpieza, el cuidado y la protección de la playa. Teme por la integridad física de sus familiares debido a los residuos enterrados.
+
+\section{Hallazgos Matriz AEIOU}
+\begin{itemize}
+	\item \textbf{Actividades:} Limpieza manual de la playa, altamente ineficiente al no abarcar capas profundas.
+	\item \textbf{Entornos:} Borde costero chileno, zonas de arena seca y dunas.
+	\item \textbf{Interacciones:} Existe un gran descuido de los turistas respecto al manejo de su basura. La limpieza municipal se ve superada.
+	\item \textbf{Objetos:} Residuos altamente prevalentes como botellas, colillas de cigarro, vidrios rotos y envases plásticos provenientes del comercio ambulante.
+	\item \textbf{Usuarios:} Residentes, turistas, vendedores ambulantes, trabajadores de aseo y salvavidas.
 \end{itemize}
 
-\section{Registro Fotográfico de Matriz AEIOU}
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.6\textwidth]{img/1.jpg}
-	\caption{Actividades: Limpieza manual insuficiente en zonas críticas.}
-	\caption*{\textit{Nota.} Fotografía registrada durante la salida a terreno en El Quisco.}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.6\textwidth]{img/3.jpg}
-	\caption{Interacciones: Descuido de los turistas con envases plásticos.}
-	\caption*{\textit{Nota.} Imagen referencial de interacciones de usuarios en el borde costero.}
-\end{figure}
+\section{Planificación de la Observación de Campo}
+\textbf{¿Qué voy a observar?}
+\begin{itemize}[noitemsep]
+	\item Tipo y cantidad de basura presente en la arena (colillas, vidrios, plásticos, etc.).
+	\item Profundidad aproximada a la que se entierra la basura visible.
+	\item Cómo se realiza actualmente la limpieza (personas, máquinas, frecuencia).
+	\item Uso de la playa: actividades principales y zonas de mayor concurrencia.
+\end{itemize}
+
+\textbf{¿Cómo lo voy a observar?} Observación no participante con planilla estructurada de conteo. Recorridos definidos anotando variaciones cada ciertos metros. Se incluirán entrevistas breves semiestructuradas a usuarios.
+
+\textbf{¿Cuándo lo voy a observar?} Un fin de semana (idealmente entre 15:00 y 17:00 horas), con una duración de 2 a 3 horas continuas.
+
+\textbf{¿Con qué lo voy a observar?} Celulares (fotos, videos, audios para entrevistas), planillas impresas para notas de campo y conteo manual de residuos.
+
+\textbf{¿Dónde lo voy a observar?} Sector a definir en el Litoral Central (ej. El Quisco o El Tabo). Se delimitará un tramo de 200 a 300 metros lineales.
+
+\textbf{¿Quiénes estarán presentes?} Los 5 integrantes del equipo con roles: 1 encargado de notas, 1 de registro audiovisual, 2 para entrevistas, 1 para conteo en planillas.
+
+\textbf{Limitaciones y Circunstancias influyentes:} El clima (frío o lluvia) puede mermar la afluencia. La falta de instrumentación industrial dificulta medir la profundidad exacta de enterramiento. Solo representa una captura temporal que no abarca la totalidad de playas de Chile.
 
 \section{Transcripción de Entrevista de Diagnóstico}
-\textbf{Sujeto:} Ana Jer (56 años, residente El Tabo).\\
-\textbf{Punto clave:} ``La playa se ve limpia por encima después de que pasa el tractor, pero si te pones a jugar con los niños en la arena, siempre terminas sacando tapas de bebida o pedazos de vidrio de hace años.''
+\textbf{Sujeto:} Ana Jer (56 años, residente El Tabo desde 2018, a 10 minutos de la costa).
+
+\textbf{1. ¿Qué tipo de basura ves más en la arena?}\\
+\textit{Respuesta:} Botellas plásticas y colillas de cigarros. Durante la pandemia se veían muchas mascarillas.
+
+\textbf{2. ¿Quién limpia esta playa y cada cuánto?}\\
+\textit{Respuesta:} La municipalidad se encarga diariamente, pero no da abasto con la cantidad de basura que se forma, ¡mientras más escarbas, más sale!
+
+\textbf{3. ¿Crees que la basura aleja a los turistas?}\\
+\textit{Respuesta:} Sí, he escuchado turistas decir que no volverían por malos ratos, mucha gente se entierra vidrios.
+
+\textbf{4. ¿Sientes que se fiscalizan las leyes contra los plásticos?}\\
+\textit{Respuesta:} A nivel de comercio establecido en negocios sí, pero los vendedores ambulantes siguen trayendo comida en envases plásticos hacia la arena.
+
+\textbf{5. ¿Aumenta mucho la basura con la llegada de turistas?}\\
+\textit{Respuesta:} Sí, durante el verano se ve mucha más basura, ya que aumenta drásticamente la cantidad de gente que transita y que se hospeda en la zona.
 
 \end{document}

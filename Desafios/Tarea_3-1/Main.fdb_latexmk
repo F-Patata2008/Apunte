@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber Main"] 1776101468.04478 "Main.bcf" "Main.bbl" "Main" 1776104273.00326 0
-  "Main.bcf" 1776104272.8274 134416 9f07078c6e3061ceac9a49e2bf1a7332 "pdflatex"
+["biber Main"] 1776101468.04478 "Main.bcf" "Main.bbl" "Main" 1776131705.61311 0
+  "Main.bcf" 1776131705.41619 134416 9f07078c6e3061ceac9a49e2bf1a7332 "pdflatex"
   "library.bib" 1776093423.02507 2352 6607e36428f62d4060173c2852922d9b ""
   (generated)
   "Main.bbl"
   "Main.blg"
   (rewritten before read)
-["pdflatex"] 1776104270.81121 "Main.tex" "Main.pdf" "Main" 1776104273.00393 0
+["pdflatex"] 1776131702.72012 "Main.tex" "Main.pdf" "Main" 1776131705.61383 0
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1775415801 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1775415801 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm" 1775415801 4484 b828043cbd581d289d955903c1339981 ""
@@ -165,11 +165,11 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1775415801 43569 fd570f2fa160877d211e859f687312ba ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1775486676 5385779 47c0c393a77fd4a098bacfd57d66b88a ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1775486512 3182162 ab7db6e8a27cb09af64b1a2415ae8466 ""
-  "Main.aux" 1776104272.8174 3831 a7ac0d2374404845aed941736346f4fa "pdflatex"
+  "Main.aux" 1776131705.40119 3831 a7ac0d2374404845aed941736346f4fa "pdflatex"
   "Main.bbl" 1776101469.8528 24318 6c6eee0884551c070b74ad1fcbcaa000 "biber Main"
-  "Main.run.xml" 1776104272.83048 2356 a21a2463f078276d47a5d433a91e1680 "pdflatex"
-  "Main.tex" 1776104269.68233 18474 72a5e6106e837a13a36adc98745dedfd ""
-  "Main.toc" 1776104272.83048 1080 55270bf7a00750a8ac1cb7a6d84ec2b9 "pdflatex"
+  "Main.run.xml" 1776131705.42007 2356 a21a2463f078276d47a5d433a91e1680 "pdflatex"
+  "Main.tex" 1776131702.00312 18488 a72a47cf7babe005131d9f1e12ff9588 ""
+  "Main.toc" 1776131705.42019 1080 55270bf7a00750a8ac1cb7a6d84ec2b9 "pdflatex"
   "img/1.jpg" 1776052146.45705 10333 db52bc9e0798ab327c436f5f6c173c9d ""
   "img/2.jpg" 1776052003.4109 7745 4ef99e2fcbdedf9409f80d4368dcdd9d ""
   "img/3.jpg" 1776052324.93407 120338 14acfa9f5ba4432cc76f5cb5115505a9 ""

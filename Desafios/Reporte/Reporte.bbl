@@ -150,6 +150,36 @@
       \verb 10.1016/j.marpolbul.2009.06.017
       \endverb
     \endentry
+    \entry{img_basura_arena}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9c1481c6abd61ef79d5c1701961206cb}{%
+           family={{Cadena SER}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{9c1481c6abd61ef79d5c1701961206cb}
+      \strng{fullhash}{9c1481c6abd61ef79d5c1701961206cb}
+      \strng{fullhashraw}{9c1481c6abd61ef79d5c1701961206cb}
+      \strng{bibnamehash}{9c1481c6abd61ef79d5c1701961206cb}
+      \strng{authorbibnamehash}{9c1481c6abd61ef79d5c1701961206cb}
+      \strng{authornamehash}{9c1481c6abd61ef79d5c1701961206cb}
+      \strng{authorfullhash}{9c1481c6abd61ef79d5c1701961206cb}
+      \strng{authorfullhashraw}{9c1481c6abd61ef79d5c1701961206cb}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Residuos en el litoral}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://cadenaser.com/resizer/6tpx8IqRvILcjweus20x4vDu9Kk=/arc-photo-prisaradio/eu-central-1-prod/public/AHISDB44GVIZBGMT42X3D3BBYM.jpg
+      \endverb
+      \verb{url}
+      \verb https://cadenaser.com/resizer/6tpx8IqRvILcjweus20x4vDu9Kk=/arc-photo-prisaradio/eu-central-1-prod/public/AHISDB44GVIZBGMT42X3D3BBYM.jpg
+      \endverb
+    \endentry
     \entry{canon_2021}{report}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=47db1aa9ae7f87de7cfd8014ffcc82b9}{%
@@ -181,6 +211,36 @@
       \field{type}{Informe Técnico}
       \field{year}{2021}
     \endentry
+    \entry{img_microplasticos}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=311d92a4412a9e7aad538bae0287da66}{%
+           family={{Chile Desarrollo Sustentable}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{311d92a4412a9e7aad538bae0287da66}
+      \strng{fullhash}{311d92a4412a9e7aad538bae0287da66}
+      \strng{fullhashraw}{311d92a4412a9e7aad538bae0287da66}
+      \strng{bibnamehash}{311d92a4412a9e7aad538bae0287da66}
+      \strng{authorbibnamehash}{311d92a4412a9e7aad538bae0287da66}
+      \strng{authornamehash}{311d92a4412a9e7aad538bae0287da66}
+      \strng{authorfullhash}{311d92a4412a9e7aad538bae0287da66}
+      \strng{authorfullhashraw}{311d92a4412a9e7aad538bae0287da66}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Microplásticos: el problema invisible que amenaza océanos}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.chiledesarrollosustentable.cl/microplasticos-el-problema-invisible-que-amenaza-oceanos-y-salud/
+      \endverb
+      \verb{url}
+      \verb https://www.chiledesarrollosustentable.cl/microplasticos-el-problema-invisible-que-amenaza-oceanos-y-salud/
+      \endverb
+    \endentry
     \entry{radio_uchile_2025}{article}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=65c140883990fb29c37e4047f883b720}{%
@@ -210,6 +270,36 @@
       \endverb
       \verb{url}
       \verb https://radio.uchile.cl/2025/02/05/contaminacion-en-playas-el-llamado-a-evitar-los-desechables-y-optar-por-la-reutilizacion/
+      \endverb
+    \endentry
+    \entry{img_tipos_residuos}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9dd983b226e31bbb13dcedd1f81bb32c}{%
+           family={{Freepik}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{9dd983b226e31bbb13dcedd1f81bb32c}
+      \strng{fullhash}{9dd983b226e31bbb13dcedd1f81bb32c}
+      \strng{fullhashraw}{9dd983b226e31bbb13dcedd1f81bb32c}
+      \strng{bibnamehash}{9dd983b226e31bbb13dcedd1f81bb32c}
+      \strng{authorbibnamehash}{9dd983b226e31bbb13dcedd1f81bb32c}
+      \strng{authornamehash}{9dd983b226e31bbb13dcedd1f81bb32c}
+      \strng{authorfullhash}{9dd983b226e31bbb13dcedd1f81bb32c}
+      \strng{authorfullhashraw}{9dd983b226e31bbb13dcedd1f81bb32c}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Basura para reciclar: botellas de vidrio, latas y plástico}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://www.freepik.es/fotos-premium/basura-reciclar-botellas-vidrio-latas-botella-plastico-bombilla_5706952.htm
+      \endverb
+      \verb{url}
+      \verb https://www.freepik.es/fotos-premium/basura-reciclar-botellas-vidrio-latas-botella-plastico-bombilla_5706952.htm
       \endverb
     \endentry
     \entry{garcia_dominguez_2021}{article}{}{}
@@ -329,6 +419,66 @@
       \endverb
       \verb{url}
       \verb https://www.publimetro.cl/tecnologia/2024/04/18/bebot-este-robot-revuelve-la-arena-de-las-playas-en-busca-de-basura-y-separarla
+      \endverb
+    \endentry
+    \entry{img_turista}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7c6b5a2d5f5d50285ce9f91c5d36cf80}{%
+           family={{Publimetro México}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{7c6b5a2d5f5d50285ce9f91c5d36cf80}
+      \strng{fullhash}{7c6b5a2d5f5d50285ce9f91c5d36cf80}
+      \strng{fullhashraw}{7c6b5a2d5f5d50285ce9f91c5d36cf80}
+      \strng{bibnamehash}{7c6b5a2d5f5d50285ce9f91c5d36cf80}
+      \strng{authorbibnamehash}{7c6b5a2d5f5d50285ce9f91c5d36cf80}
+      \strng{authornamehash}{7c6b5a2d5f5d50285ce9f91c5d36cf80}
+      \strng{authorfullhash}{7c6b5a2d5f5d50285ce9f91c5d36cf80}
+      \strng{authorfullhashraw}{7c6b5a2d5f5d50285ce9f91c5d36cf80}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Turista en zona costera}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.publimetro.com.mx/plus/2024/03/25/articulos-esenciales-masculinos-para-vacaciones-de-semana-santa/
+      \endverb
+      \verb{url}
+      \verb https://www.publimetro.com.mx/plus/2024/03/25/articulos-esenciales-masculinos-para-vacaciones-de-semana-santa/
+      \endverb
+    \endentry
+    \entry{img_voluntarios}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e84039a7c6e0b3635fc127628f283fa8}{%
+           family={{Universidad Anáhuac Mérida}},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{e84039a7c6e0b3635fc127628f283fa8}
+      \strng{fullhash}{e84039a7c6e0b3635fc127628f283fa8}
+      \strng{fullhashraw}{e84039a7c6e0b3635fc127628f283fa8}
+      \strng{bibnamehash}{e84039a7c6e0b3635fc127628f283fa8}
+      \strng{authorbibnamehash}{e84039a7c6e0b3635fc127628f283fa8}
+      \strng{authornamehash}{e84039a7c6e0b3635fc127628f283fa8}
+      \strng{authorfullhash}{e84039a7c6e0b3635fc127628f283fa8}
+      \strng{authorfullhashraw}{e84039a7c6e0b3635fc127628f283fa8}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Limpieza de playas en Yucatán}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://merida.anahuac.mx/noticias/limpieza-playas-yucatan
+      \endverb
+      \verb{url}
+      \verb https://merida.anahuac.mx/noticias/limpieza-playas-yucatan
       \endverb
     \endentry
   \enddatalist
@@ -464,6 +614,36 @@
       \verb 10.1016/j.marpolbul.2009.06.017
       \endverb
     \endentry
+    \entry{img_basura_arena}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9c1481c6abd61ef79d5c1701961206cb}{%
+           family={{Cadena SER}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{9c1481c6abd61ef79d5c1701961206cb}
+      \strng{fullhash}{9c1481c6abd61ef79d5c1701961206cb}
+      \strng{fullhashraw}{9c1481c6abd61ef79d5c1701961206cb}
+      \strng{bibnamehash}{9c1481c6abd61ef79d5c1701961206cb}
+      \strng{authorbibnamehash}{9c1481c6abd61ef79d5c1701961206cb}
+      \strng{authornamehash}{9c1481c6abd61ef79d5c1701961206cb}
+      \strng{authorfullhash}{9c1481c6abd61ef79d5c1701961206cb}
+      \strng{authorfullhashraw}{9c1481c6abd61ef79d5c1701961206cb}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Residuos en el litoral}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://cadenaser.com/resizer/6tpx8IqRvILcjweus20x4vDu9Kk=/arc-photo-prisaradio/eu-central-1-prod/public/AHISDB44GVIZBGMT42X3D3BBYM.jpg
+      \endverb
+      \verb{url}
+      \verb https://cadenaser.com/resizer/6tpx8IqRvILcjweus20x4vDu9Kk=/arc-photo-prisaradio/eu-central-1-prod/public/AHISDB44GVIZBGMT42X3D3BBYM.jpg
+      \endverb
+    \endentry
     \entry{canon_2021}{report}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=47db1aa9ae7f87de7cfd8014ffcc82b9}{%
@@ -495,6 +675,36 @@
       \field{type}{Informe Técnico}
       \field{year}{2021}
     \endentry
+    \entry{img_microplasticos}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=311d92a4412a9e7aad538bae0287da66}{%
+           family={{Chile Desarrollo Sustentable}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{311d92a4412a9e7aad538bae0287da66}
+      \strng{fullhash}{311d92a4412a9e7aad538bae0287da66}
+      \strng{fullhashraw}{311d92a4412a9e7aad538bae0287da66}
+      \strng{bibnamehash}{311d92a4412a9e7aad538bae0287da66}
+      \strng{authorbibnamehash}{311d92a4412a9e7aad538bae0287da66}
+      \strng{authornamehash}{311d92a4412a9e7aad538bae0287da66}
+      \strng{authorfullhash}{311d92a4412a9e7aad538bae0287da66}
+      \strng{authorfullhashraw}{311d92a4412a9e7aad538bae0287da66}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Microplásticos: el problema invisible que amenaza océanos}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.chiledesarrollosustentable.cl/microplasticos-el-problema-invisible-que-amenaza-oceanos-y-salud/
+      \endverb
+      \verb{url}
+      \verb https://www.chiledesarrollosustentable.cl/microplasticos-el-problema-invisible-que-amenaza-oceanos-y-salud/
+      \endverb
+    \endentry
     \entry{radio_uchile_2025}{article}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=65c140883990fb29c37e4047f883b720}{%
@@ -524,6 +734,36 @@
       \endverb
       \verb{url}
       \verb https://radio.uchile.cl/2025/02/05/contaminacion-en-playas-el-llamado-a-evitar-los-desechables-y-optar-por-la-reutilizacion/
+      \endverb
+    \endentry
+    \entry{img_tipos_residuos}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9dd983b226e31bbb13dcedd1f81bb32c}{%
+           family={{Freepik}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{9dd983b226e31bbb13dcedd1f81bb32c}
+      \strng{fullhash}{9dd983b226e31bbb13dcedd1f81bb32c}
+      \strng{fullhashraw}{9dd983b226e31bbb13dcedd1f81bb32c}
+      \strng{bibnamehash}{9dd983b226e31bbb13dcedd1f81bb32c}
+      \strng{authorbibnamehash}{9dd983b226e31bbb13dcedd1f81bb32c}
+      \strng{authornamehash}{9dd983b226e31bbb13dcedd1f81bb32c}
+      \strng{authorfullhash}{9dd983b226e31bbb13dcedd1f81bb32c}
+      \strng{authorfullhashraw}{9dd983b226e31bbb13dcedd1f81bb32c}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Basura para reciclar: botellas de vidrio, latas y plástico}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://www.freepik.es/fotos-premium/basura-reciclar-botellas-vidrio-latas-botella-plastico-bombilla_5706952.htm
+      \endverb
+      \verb{url}
+      \verb https://www.freepik.es/fotos-premium/basura-reciclar-botellas-vidrio-latas-botella-plastico-bombilla_5706952.htm
       \endverb
     \endentry
     \entry{garcia_dominguez_2021}{article}{}{}
@@ -643,6 +883,66 @@
       \endverb
       \verb{url}
       \verb https://www.publimetro.cl/tecnologia/2024/04/18/bebot-este-robot-revuelve-la-arena-de-las-playas-en-busca-de-basura-y-separarla
+      \endverb
+    \endentry
+    \entry{img_turista}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7c6b5a2d5f5d50285ce9f91c5d36cf80}{%
+           family={{Publimetro México}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{7c6b5a2d5f5d50285ce9f91c5d36cf80}
+      \strng{fullhash}{7c6b5a2d5f5d50285ce9f91c5d36cf80}
+      \strng{fullhashraw}{7c6b5a2d5f5d50285ce9f91c5d36cf80}
+      \strng{bibnamehash}{7c6b5a2d5f5d50285ce9f91c5d36cf80}
+      \strng{authorbibnamehash}{7c6b5a2d5f5d50285ce9f91c5d36cf80}
+      \strng{authornamehash}{7c6b5a2d5f5d50285ce9f91c5d36cf80}
+      \strng{authorfullhash}{7c6b5a2d5f5d50285ce9f91c5d36cf80}
+      \strng{authorfullhashraw}{7c6b5a2d5f5d50285ce9f91c5d36cf80}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Turista en zona costera}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.publimetro.com.mx/plus/2024/03/25/articulos-esenciales-masculinos-para-vacaciones-de-semana-santa/
+      \endverb
+      \verb{url}
+      \verb https://www.publimetro.com.mx/plus/2024/03/25/articulos-esenciales-masculinos-para-vacaciones-de-semana-santa/
+      \endverb
+    \endentry
+    \entry{img_voluntarios}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e84039a7c6e0b3635fc127628f283fa8}{%
+           family={{Universidad Anáhuac Mérida}},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{e84039a7c6e0b3635fc127628f283fa8}
+      \strng{fullhash}{e84039a7c6e0b3635fc127628f283fa8}
+      \strng{fullhashraw}{e84039a7c6e0b3635fc127628f283fa8}
+      \strng{bibnamehash}{e84039a7c6e0b3635fc127628f283fa8}
+      \strng{authorbibnamehash}{e84039a7c6e0b3635fc127628f283fa8}
+      \strng{authornamehash}{e84039a7c6e0b3635fc127628f283fa8}
+      \strng{authorfullhash}{e84039a7c6e0b3635fc127628f283fa8}
+      \strng{authorfullhashraw}{e84039a7c6e0b3635fc127628f283fa8}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Limpieza de playas en Yucatán}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://merida.anahuac.mx/noticias/limpieza-playas-yucatan
+      \endverb
+      \verb{url}
+      \verb https://merida.anahuac.mx/noticias/limpieza-playas-yucatan
       \endverb
     \endentry
   \enddatalist

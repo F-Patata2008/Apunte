@@ -3083,9 +3083,21 @@
     <bcf:citekey order="10" intorder="1">publimetro_2024</bcf:citekey>
     <bcf:citekey order="11" intorder="1">garcia_dominguez_2021</bcf:citekey>
     <bcf:citekey order="12" intorder="1">araya_2026</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">oceana_2026</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">canon_2021</bcf:citekey>
-    <bcf:citekey order="15" intorder="1">garcia_dominguez_2021</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">img_voluntarios</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">img_voluntarios</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">oceana_2026</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">canon_2021</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">garcia_dominguez_2021</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">img_voluntarios</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">img_voluntarios</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">img_microplasticos</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">img_microplasticos</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">img_basura_arena</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">img_basura_arena</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">img_tipos_residuos</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">img_tipos_residuos</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">img_turista</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">img_turista</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="apa">

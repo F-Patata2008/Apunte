@@ -1,0 +1,17 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{Resumen Ejecutivo}{1}{}%
+\contentsline {section}{\numberline {1}Introducción}{2}{}%
+\contentsline {subsection}{\numberline {1.1}Objetivos}{2}{}%
+\contentsline {section}{\numberline {2}Desarrollo}{3}{}%
+\contentsline {subsection}{\numberline {2.1}Síntesis del Estado del Arte}{3}{}%
+\contentsline {subsection}{\numberline {2.2}Definición de la Problemática}{3}{}%
+\contentsline {subsection}{\numberline {2.3}Metodología de Investigación}{4}{}%
+\contentsline {subsection}{\numberline {2.4}Análisis AEIOU y Hallazgos Empáticos}{5}{}%
+\contentsline {subsection}{\numberline {2.5}Estudio Ético del Problema}{6}{}%
+\contentsline {subsection}{\numberline {2.6}Etapas del Proceso de Innovación}{6}{}%
+\contentsline {section}{\numberline {3}Conclusiones}{8}{}%
+\contentsline {section}{Referencias Bibliográficas}{9}{}%
+\contentsline {section}{\numberline {A}Mapa de Empatía}{10}{}%
+\contentsline {section}{\numberline {B}Matriz AEIOU Extendida}{11}{}%
+\contentsline {section}{\numberline {C}Planificación de la Observación de Campo}{12}{}%
+\contentsline {section}{\numberline {D}Transcripción de Entrevista de Diagnóstico}{14}{}%

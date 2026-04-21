@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber Reporte"] 1776805668.73892 "Reporte.bcf" "Reporte.bbl" "Reporte" 1776805792.85785 0
-  "Reporte.bcf" 1776805792.70597 135832 cef7599d6c7e1a5e201a25fcbc98046e "pdflatex"
+["biber Reporte"] 1776807623.00367 "Reporte.bcf" "Reporte.bbl" "Reporte" 1776807890.4563 0
+  "Reporte.bcf" 1776807890.27069 135690 8c49196bbae7c744d13ebbd2b94bb903 "pdflatex"
   "library.bib" 1776805592.55155 3642 b37c9628314ddc9d81ec68a559c7c6d7 ""
   (generated)
   "Reporte.bbl"
   "Reporte.blg"
   (rewritten before read)
-["pdflatex"] 1776805790.53983 "Reporte.tex" "Reporte.pdf" "Reporte" 1776805792.85859 0
+["pdflatex"] 1776807887.93575 "Reporte.tex" "Reporte.pdf" "Reporte" 1776807890.45693 0
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1775415801 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1775415801 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm" 1775415801 4484 b828043cbd581d289d955903c1339981 ""
@@ -98,14 +98,15 @@
   "/usr/share/texmf-dist/tex/latex/tools/array.sty" 1775415801 15651 9d7c62df82cb29a555c00550babfe364 ""
   "/usr/share/texmf-dist/tex/latex/url/url.sty" 1775415801 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty" 1775415801 55384 b454dec21c2d9f45ec0b793f0995b992 ""
+  "/usr/share/texmf-dist/tex/latex/xurl/xurl.sty" 1775415801 4675 e4b8c405820368c2dfb03526e16d725a ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1775415801 43569 fd570f2fa160877d211e859f687312ba ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1775486676 5385779 47c0c393a77fd4a098bacfd57d66b88a ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1775486512 3182162 ab7db6e8a27cb09af64b1a2415ae8466 ""
-  "Reporte.aux" 1776805792.69597 9134 108904f67183817de39b86f0e8a81488 "pdflatex"
-  "Reporte.bbl" 1776805670.51105 41344 895a50f6f40f85215dd1f3acfd37ae06 "biber Reporte"
-  "Reporte.run.xml" 1776805792.70847 2377 b8f505302038709875254f9fa55a7590 "pdflatex"
-  "Reporte.tex" 1776805789.15588 25937 d728d2cf93712e155b231e396ebba542 ""
-  "Reporte.toc" 1776805792.70847 1190 cda2ebeb380d855badff42314275a5ae "pdflatex"
+  "Reporte.aux" 1776807890.25969 8664 43d0e406557e69a017a274a65df9c6f6 "pdflatex"
+  "Reporte.bbl" 1776807624.79078 41344 895a50f6f40f85215dd1f3acfd37ae06 "biber Reporte"
+  "Reporte.run.xml" 1776807890.27269 2377 b8f505302038709875254f9fa55a7590 "pdflatex"
+  "Reporte.tex" 1776807886.55061 25863 4a2d1ae557fc352d8574903b959b62ce ""
+  "Reporte.toc" 1776807890.27269 1189 717e6161930ccee74eee296a4e13d7e1 "pdflatex"
   "img/1.jpg" 1776775881.92816 10333 db52bc9e0798ab327c436f5f6c173c9d ""
   "img/2.jpg" 1776775881.92163 7745 4ef99e2fcbdedf9409f80d4368dcdd9d ""
   "img/3.jpg" 1776775881.92729 120338 14acfa9f5ba4432cc76f5cb5115505a9 ""

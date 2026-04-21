@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.4.6)  21 APR 2026 17:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.4.6)  21 APR 2026 17:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -207,7 +207,12 @@ Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
 \multirow@cntb=\count306
 \multirow@dima=\skip56
 \bigstrutjot=\dimen184
-) (/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+) (/usr/share/texmf-dist/tex/latex/xurl/xurl.sty
+Package: xurl 2022/01/09 v 0.10 modify URL breaks
+ (/usr/share/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)) (/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@headwidth=\skip57
 \f@nch@offset@elh=\skip58
@@ -224,12 +229,12 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthC=\skip69
 \f@nch@widthR=\skip70
 \@temptokenb=\toks28
-) (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.sty
+)
+(/usr/share/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2025/07/10 v3.21 programmable bibliographies (PK/MW)
  (/usr/share/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
-
-(/usr/share/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+ (/usr/share/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 ) (/usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
@@ -248,9 +253,6 @@ Package: logreq 2010/08/04 v1.0 xml request logger
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 )) (/usr/share/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
-) (/usr/share/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip17
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 \c@tabx@nest=\count308
 \c@listtotal=\count309
@@ -500,12 +502,12 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'spanish'.
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 32.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 33.
  (/usr/share/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 11.39996pt on input line 32.
+(Font)              scaled to size 11.39996pt on input line 33.
  (./Reporte.aux
 LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
@@ -514,22 +516,22 @@ Package babel Info: 'spanish' activates 'spanish' shorthands.
 )
 \openout1 = `Reporte.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Info: Redefining \. on input line 32.
-LaTeX Info: Redefining \% on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Info: Redefining \. on input line 33.
+LaTeX Info: Redefining \% on input line 33.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -608,43 +610,43 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Reporte.bbl' found.
  (./Reporte.bbl)
-Package biblatex Info: Reference section=0 on input line 32.
-Package biblatex Info: Reference segment=0 on input line 32.
+Package biblatex Info: Reference section=0 on input line 33.
+Package biblatex Info: Reference segment=0 on input line 33.
 <img/departamentos/uchile.pdf, id=1, 703.97202pt x 559.52036pt>
 File: img/departamentos/uchile.pdf Graphic file (type pdf)
 <use img/departamentos/uchile.pdf>
-Package pdftex.def Info: img/departamentos/uchile.pdf  used on input line 39.
+Package pdftex.def Info: img/departamentos/uchile.pdf  used on input line 40.
 (pdftex.def)             Requested size: 110.10709pt x 87.51021pt.
 <img/departamentos/fcfm.pdf, id=2, 737.14398pt x 238.8925pt>
 File: img/departamentos/fcfm.pdf Graphic file (type pdf)
 <use img/departamentos/fcfm.pdf>
-Package pdftex.def Info: img/departamentos/fcfm.pdf  used on input line 41.
+Package pdftex.def Info: img/departamentos/fcfm.pdf  used on input line 42.
 (pdftex.def)             Requested size: 140.1349pt x 45.41191pt.
 LaTeX Font Info:    Font shape `T1/phv/m/sc' will be
-(Font)              scaled to size 11.39996pt on input line 43.
+(Font)              scaled to size 11.39996pt on input line 44.
 LaTeX Font Info:    Font shape `T1/phv/m/sc' will be
-(Font)              scaled to size 13.67995pt on input line 43.
+(Font)              scaled to size 13.67995pt on input line 44.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 13.67995pt on input line 46.
+(Font)              scaled to size 13.67995pt on input line 47.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 23.63593pt on input line 48.
+(Font)              scaled to size 23.63593pt on input line 49.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 23.63593pt on input line 48.
+(Font)              scaled to size 23.63593pt on input line 49.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 57.
+(Font)              <12> on input line 58.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 57.
+(Font)              <8> on input line 58.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 57.
+(Font)              <6> on input line 58.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 11.39996pt on input line 59.
+(Font)              scaled to size 11.39996pt on input line 60.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc} <./img/departamentos/uchile.pdf> <./img/departamentos/fcfm.pdf>]
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 16.41594pt on input line 78.
+(Font)              scaled to size 16.41594pt on input line 79.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 16.41594pt on input line 78.
+(Font)              scaled to size 16.41594pt on input line 79.
  (./Reporte.toc
 LaTeX Info: Redefining \sptext on input line 1.
 LaTeX Info: Redefining \. on input line 1.
@@ -655,11 +657,11 @@ LaTeX Info: Redefining \% on input line 1.
 
  [1]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 105.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 106.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 11.39996pt on input line 105.
+(Font)              scaled to size 11.39996pt on input line 106.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 10.40245pt on input line 113.
+(Font)              scaled to size 10.40245pt on input line 114.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -670,7 +672,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [1]
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 13.67995pt on input line 138.
+(Font)              scaled to size 13.67995pt on input line 139.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -696,12 +698,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [4]
-<img/1.jpg, id=36, 268.00125pt x 188.705pt>
-File: img/1.jpg Graphic file (type jpg)
-<use img/1.jpg>
-Package pdftex.def Info: img/1.jpg  used on input line 261.
-(pdftex.def)             Requested size: 300.29344pt x 211.44028pt.
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -709,7 +705,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[5 <./img/1.jpg>]
+[5]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -718,20 +714,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [6]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[7]
-Overfull \hbox (37.22539pt too wide) in paragraph at lines 356--356
+Overfull \hbox (37.22539pt too wide) in paragraph at lines 351--351
 [][]\T1/phv/m/n/12 Cadena SER. (2022). \T1/phv/m/sl/12 Re-si-duos en el li-to-ral\T1/phv/m/n/12 . $https : / / cadenaser . com / resizer / 6tpx8IqRvILcjweus20x4vDu9Kk =
  []
 
 
-Overfull \hbox (3.12589pt too wide) in paragraph at lines 356--356
+Overfull \hbox (3.12589pt too wide) in paragraph at lines 351--351
 \T1/phv/m/n/12 https : / / www . chiledesarrollosustentable . cl / microplasticos -[] el -[] problema -[] invisible -[] que -[] amenaza -[]
  []
 
@@ -742,14 +730,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 378--378
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
 []|\T1/phv/b/n/12 ¾Qué pien-sa y
  []
 
+<img/1.jpg, id=46, 268.00125pt x 188.705pt>
 File: img/1.jpg Graphic file (type jpg)
 <use img/1.jpg>
-Package pdftex.def Info: img/1.jpg  used on input line 392.
+Package pdftex.def Info: img/1.jpg  used on input line 387.
 (pdftex.def)             Requested size: 275.26772pt x 193.82121pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -758,16 +747,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[9]
-<img/2.jpg, id=53, 276.03125pt x 183.68625pt>
+[8]
+<img/2.jpg, id=50, 276.03125pt x 183.68625pt>
 File: img/2.jpg Graphic file (type jpg)
 <use img/2.jpg>
-Package pdftex.def Info: img/2.jpg  used on input line 398.
+Package pdftex.def Info: img/2.jpg  used on input line 394.
 (pdftex.def)             Requested size: 275.26772pt x 183.19807pt.
-<img/3.jpg, id=54, 772.8875pt x 514.92375pt>
+<img/3.jpg, id=51, 772.8875pt x 514.92375pt>
 File: img/3.jpg Graphic file (type jpg)
 <use img/3.jpg>
-Package pdftex.def Info: img/3.jpg  used on input line 404.
+Package pdftex.def Info: img/3.jpg  used on input line 400.
 (pdftex.def)             Requested size: 275.26772pt x 183.39241pt.
 
 
@@ -777,16 +766,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[10 <./img/2.jpg>]
-<img/4.jpg, id=58, 281.05pt x 180.675pt>
+[9 <./img/1.jpg> <./img/2.jpg>]
+<img/4.jpg, id=55, 281.05pt x 180.675pt>
 File: img/4.jpg Graphic file (type jpg)
 <use img/4.jpg>
-Package pdftex.def Info: img/4.jpg  used on input line 410.
+Package pdftex.def Info: img/4.jpg  used on input line 406.
 (pdftex.def)             Requested size: 275.26772pt x 176.96654pt.
-<img/5.jpg, id=59, 311.1625pt x 163.61125pt>
+<img/5.jpg, id=56, 311.1625pt x 163.61125pt>
 File: img/5.jpg Graphic file (type jpg)
 <use img/5.jpg>
-Package pdftex.def Info: img/5.jpg  used on input line 416.
+Package pdftex.def Info: img/5.jpg  used on input line 412.
 (pdftex.def)             Requested size: 275.26772pt x 144.73976pt.
 
 
@@ -796,7 +785,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[11 <./img/3.jpg> <./img/4.jpg> <./img/5.jpg>]
+[10 <./img/3.jpg> <./img/4.jpg> <./img/5.jpg>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[11]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -812,15 +809,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[13]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[14] (./Reporte.aux
+[13] (./Reporte.aux
 LaTeX Info: Redefining \sptext on input line 9.
 LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
@@ -834,18 +823,18 @@ Package logreq Info: Writing requests to 'Reporte.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 16072 strings out of 469412
- 296563 string characters out of 5468087
- 1243161 words of memory out of 5000000
- 44576 multiletter control sequences out of 15000+600000
+ 16096 strings out of 469412
+ 297111 string characters out of 5468087
+ 1243461 words of memory out of 5000000
+ 44596 multiletter control sequences out of 15000+600000
  667635 words of font info for 72 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
  63i,13n,83p,696b,2811s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on Reporte.pdf (16 pages, 275736 bytes).
+Output written on Reporte.pdf (15 pages, 275192 bytes).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
- 57 compressed objects within 1 object stream
+ 86 PDF objects out of 1000 (max. 8388607)
+ 55 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

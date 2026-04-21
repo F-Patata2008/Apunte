@@ -6,12 +6,12 @@
 \contentsline {subsection}{\numberline {2.1}Síntesis del Estado del Arte}{3}{}%
 \contentsline {subsection}{\numberline {2.2}Definición de la Problemática}{3}{}%
 \contentsline {subsection}{\numberline {2.3}Metodología de Investigación}{4}{}%
-\contentsline {subsection}{\numberline {2.4}Análisis AEIOU y Hallazgos Empáticos}{5}{}%
-\contentsline {subsection}{\numberline {2.5}Estudio Ético del Problema}{6}{}%
-\contentsline {subsection}{\numberline {2.6}Etapas del Proceso de Innovación}{6}{}%
-\contentsline {section}{\numberline {3}Conclusiones}{8}{}%
-\contentsline {section}{Referencias Bibliográficas}{9}{}%
-\contentsline {section}{\numberline {A}Mapa de Empatía}{10}{}%
-\contentsline {section}{\numberline {B}Matriz AEIOU Extendida}{11}{}%
+\contentsline {subsection}{\numberline {2.4}Análisis AEIOU y Hallazgos Empáticos}{4}{}%
+\contentsline {subsection}{\numberline {2.5}Estudio Ético del Problema}{5}{}%
+\contentsline {subsection}{\numberline {2.6}Etapas del Proceso de Innovación}{5}{}%
+\contentsline {section}{\numberline {3}Conclusiones}{7}{}%
+\contentsline {section}{Referencias Bibliográficas}{8}{}%
+\contentsline {section}{\numberline {A}Mapa de Empatía}{9}{}%
+\contentsline {section}{\numberline {B}Matriz AEIOU Extendida}{10}{}%
 \contentsline {section}{\numberline {C}Planificación de la Observación de Campo}{12}{}%
-\contentsline {section}{\numberline {D}Transcripción de Entrevista de Diagnóstico}{14}{}%
+\contentsline {section}{\numberline {D}Transcripción de Entrevista de Diagnóstico}{13}{}%

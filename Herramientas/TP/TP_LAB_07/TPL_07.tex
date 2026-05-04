@@ -1,0 +1,66 @@
+\documentclass[11pt]{article}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\graphicspath{./images/}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+\hypersetup{
+    pdftitle={Trabajo Previo Laboratorio 07: Python y Colab},
+    pdfauthor={Felipe Colli Olea},
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=cyan
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\footnotesize Felipe Colli, Todos los Derechos Reservados}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\title{Trabajo Previo Laboratorio 07: \\ \large{Introducción a Python y Google Colab}}
+\author{Felipe Colli Olea}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{fancy}
+
+\section{Resumen de la ejecución de los ejemplos}
+
+Al ejecutar el cuaderno (\textit{notebook}) de ejemplo proporcionado en Google Colab, se obtuvieron resultados orientados a la manipulación algebraica y visualización de datos utilizando el lenguaje Python:
+
+\begin{itemize}
+	\item \textbf{Generación de Vectores:} Mediante la librería \texttt{numpy}, se crearon dos arreglos unidimensionales (vectores $x$ e $y$) compuestos por 10 números reales pseudoaleatorios.
+	\item \textbf{Cálculo Numérico:} Se ejecutaron exitosamente operaciones aritméticas básicas (suma, resta, multiplicación, división y potencias). El intérprete devolvió en tiempo real los arreglos resultantes de cada bloque de código.
+	\item \textbf{Visualización Gráfica:} Empleando la librería \texttt{matplotlib.pyplot}, se renderizaron dos figuras: un gráfico de dispersión (\textit{scatter plot}) relacionando los vectores aleatorios $x$ e $y$, y un gráfico de líneas continuas representando una función seno en el intervalo de $0$ a $2\pi$.
+\end{itemize}
+
+\section{Mecánica de Operaciones con Vectores en Python}
+
+El comportamiento de Python al operar con estructuras de datos matemáticas (gracias a \texttt{numpy}) difiere drásticamente de las listas iterables tradicionales, implementando un mecanismo altamente optimizado a nivel de C:
+
+\subsection*{Operaciones entre un Vector y un Escalar (\textit{Broadcasting})}
+Cuando se realiza una operación matemática (como $x + 1$ o $x \cdot 2$) entre un vector y un escalar, Python utiliza un concepto estructural conocido como \textbf{Broadcasting}. El escalar se "transmite" virtualmente en memoria para igualar la longitud del vector, aplicando la operación aritmética individualmente a \textbf{cada uno de los elementos}, devolviendo un nuevo vector de la misma dimensión sin necesidad de escribir bucles \texttt{for} explícitos.
+
+\subsection*{Operaciones entre Vectores (\textit{Element-wise})}
+Al operar dos vectores del mismo tamaño (como $x + y$ o $x / y$), \texttt{numpy} no asume operaciones de álgebra lineal pura por defecto (como el producto punto o cruz), sino operaciones \textbf{elemento a elemento} (\textit{element-wise}). Los elementos de índices homólogos se operan entre sí de forma estrictamente paralela.
+
+\section{Comentarios personales sobre Google Colab y Python}
+
+A nivel personal, las instrucciones y lógicas matemáticas presentadas en este entorno introductorio resultan conceptualmente elementales dado mi historial formativo, aunque supusieron un agradable reencuentro con la sintaxis del lenguaje.
+
+Mi inicio en la programación fue precisamente con Python durante la pandemia (2020), desarrollando \textit{scripts} lógicos básicos. Posteriormente, hacia el año 2022, escalé hacia proyectos de Visión Computacional, donde logré implementar la lógica de un vehículo autónomo en el entorno de simulación \textit{Duckietown} utilizando \texttt{OpenCV} y \texttt{numpy}. Si bien la sintaxis exacta de dichas librerías se ha ido de mi memoria tras un periodo sin utilizar el lenguaje, la intuición matemática persiste: comprendo que una imagen no es más que una matriz multidimensional (un tensor) de píxeles, la cual debe ser transformada de un espacio de color RGB a HSV para filtrar rangos numéricos con precisión, y aplicar operaciones matriciales como desenfoques Gaussianos para calcular trayectorias. Entender esa base matemática hace que el \textit{broadcasting} de vectores 1D visto en este laboratorio sea completamente intuitivo.
+
+El olvido de la sintaxis de Python se debe a que retomé la programación de lleno recién en 2024, con un enfoque diametralmente distinto: la \textbf{Programación Competitiva} utilizando \textbf{C++}. Durante estos últimos dos años, he participado en la \textit{Olimpiada Chilena de Informática (OCI)}, obteniendo doble medalla de bronce y formando parte de los campamentos clasificatorios para la \textit{IOI (International Olympiad in Informatics)}. En este ecosistema, la exigencia de optimización asintótica estricta y el control manual de la memoria mediante la \textit{Standard Template Library (STL)} generan un contraste evidente con la abstracción de Python.
+
+Respecto a \textbf{Google Colab} y los IDEs en la nube, mi postura es pragmática. Herramientas web que en su momento utilicé (como \textit{Replit}) han sufrido una severa degradación en su experiencia de usuario debido a la sobrecarga de integraciones de Inteligencia Artificial. Por lo mismo, mi flujo de trabajo ideal se mantiene estrictamente en un entorno \textbf{local}, ejecutando código de forma nativa desde la terminal en Arch Linux utilizando \texttt{Neovim}. A pesar de ello, concedo que Colab cumple un propósito académico fenomenal al eliminar la fricción de instalar librerías matemáticas pesadas en equipos institucionales.
+
+\end{document}

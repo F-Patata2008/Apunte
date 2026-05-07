@@ -1,0 +1,62 @@
+% ------------------------------------------------------------------------------
+% INTRODUCCIÓN
+% ------------------------------------------------------------------------------
+\section{Introducción}
+
+Durante la segunda unidad del curso, la herramienta central de aprendizaje fue la planilla de cálculo, focalizándose en el uso del estándar de la industria: Microsoft Excel. Esta herramienta sirve fundamentalmente para el almacenamiento estructurado, análisis numérico, automatización de operaciones matemáticas y visualización rápida de datos, operando bajo un paradigma visual y funcional basado en celdas, en contraposición al código estructurado secuencial.
+
+A nivel personal, mi formación previa se ha centrado en lenguajes de programación estructurados y de bajo nivel (como C++ y Python), orientados a la \textit{Programación Competitiva} y procesamiento de datos vía consola. Por lo tanto, lo que aprendí en esta unidad que no sabía antes fue \textbf{el manejo avanzado del paradigma de celdas relativas y absolutas, y el uso de Tablas Dinámicas}. Aprender a implementar lógicas condicionales complejas y modelos estadísticos sin escribir \textit{scripts}, utilizando únicamente la interfaz gráfica y el motor de funciones integrado de la planilla, representó un cambio metodológico significativo y mi principal adquisición de conocimiento en el módulo.
+
+% ------------------------------------------------------------------------------
+% TRABAJOS REALIZADOS
+% ------------------------------------------------------------------------------
+\section{Trabajos Realizados}
+
+La unidad se compuso de un laboratorio preparatorio y tres laboratorios prácticos principales, cada uno con objetivos de dificultad incremental:
+
+\begin{itemize}
+	\item \textbf{Preparación y Laboratorio 4 (Funciones y Referencias Cruzadas):} El objetivo fue comprender la base del software. Se logró encontrar las raíces de un polinomio de cuarto grado mediante tabulación y análisis gráfico. Posteriormente, se construyó un cotizador internacional de libros cruzando datos entre múltiples hojas, requiriendo un control estricto de las referencias absolutas (\texttt{\$}) y el uso de funciones estadísticas básicas (\texttt{MAX}, \texttt{MIN}).
+
+	\item \textbf{Laboratorio 5 (Lógica Condicional y Regresión Lineal):} El objetivo de esta etapa fue implementar modelos matemáticos manuales y automatizar tomas de decisiones. Se evaluaron datos macroeconómicos calculando "a mano" los parámetros de una recta de mínimos cuadrados ordinarios (OLS). Además, se simuló un sistema de calificaciones académicas utilizando funciones condicionales anidadas (\texttt{SI}, \texttt{Y}, \texttt{O}) y lógicas de descarte (\texttt{SUMA} menos \texttt{MIN}).
+
+	\item \textbf{Laboratorio 6 (Series Temporales y Tablas Dinámicas):} El laboratorio final tuvo como objetivo el manejo de grandes volúmenes de datos. Se procesó el registro histórico (16 años, más de 5800 filas) de contaminación por PM 2,5 en Santiago. Se contrastó la eficiencia de realizar agregaciones utilizando funciones complejas (\texttt{PROMEDIO.SI.CONJUNTO}) versus la automatización declarativa que ofrecen las \textbf{Tablas Dinámicas}.
+\end{itemize}
+
+\subsection{Evidencia de los laboratorios}
+
+A continuación, se adjunta la evidencia visual del trabajo desarrollado.
+
+\vspace{0.3cm}
+\noindent\textit{\textbf{Nota aclaratoria:} Los laboratorios fueron trabajados en la plataforma Windows/Excel de la facultad. Sin embargo, respetando mi flujo de trabajo local, la compilación de este documento en \LaTeX{} (\texttt{Neovim} + \texttt{latexmk}) y las capturas de pantalla se realizaron en mi estación de trabajo personal utilizando \texttt{Fedora Linux}. Por ello, la interfaz visible corresponde a \texttt{LibreOffice Calc}, software que mantiene total compatibilidad con los archivos generados en clases.}
+\vspace{0.3cm}
+
+% --- RECUERDA REEMPLAZAR ESTOS NOMBRES POR TUS PANTALLAZOS REALES ---
+\insertimage[\label{img:evidencia_lab2}]{05.png}{width=0.8\textwidth}{Evidencia del Laboratorio 5: Cálculo de Mínimos Cuadrados y Gráfico de Dispersión.}
+
+\insertimage[\label{img:evidencia_lab3}]{06.png}{width=0.8\textwidth}{Evidencia del Laboratorio 6: Procesamiento de contaminación mediante Tablas Dinámicas.}
+
+\newpage
+
+% ------------------------------------------------------------------------------
+% PRINCIPALES DIFICULTADES
+% ------------------------------------------------------------------------------
+\section{Principales Dificultades}
+
+A lo largo de la unidad, los desafíos no fueron de carácter matemático, sino inherentes a la arquitectura de la herramienta y a la metodología de trabajo:
+
+\begin{enumerate}
+	\item \textbf{El paradigma visual y los "Errores Silenciosos":} Mi mayor dificultad técnica fue adaptarme a un entorno sin un compilador estricto. En lenguajes de programación, un error de sintaxis detiene la ejecución. En la planilla de cálculo, olvidar fijar una celda con un \texttt{\$} al arrastrar una fórmula genera un error de propagación silencioso, corrompiendo los datos sin alertar al usuario. Esto me obligó a adoptar una revisión manual extenuante celda por celda.
+
+	\item \textbf{Legibilidad de la lógica condicional:} En el Laboratorio 5, estructurar las condiciones de aprobación académica resultó engorroso. Escribir lógicas de compuertas (\texttt{SI}, \texttt{Y}) en una sola línea de la barra de fórmulas, sin la posibilidad de tabular o indentar el código, dificultó enormemente la lectura y el proceso de \textit{debugging}.
+
+	\item \textbf{Rendimiento con grandes volúmenes de datos:} Durante el Laboratorio 3, al manipular gráficos de series temporales con más de 5800 puntos, la interfaz gráfica experimentó caídas de fluidez (\textit{render lag}). Esta fricción demostró las limitaciones de rendimiento que tiene el software ofimático al compararlo con herramientas nativas de \textit{Data Science} (como \texttt{pandas} o \texttt{matplotlib} en Python).
+\end{enumerate}
+
+% ------------------------------------------------------------------------------
+% CONCLUSIONES
+% ------------------------------------------------------------------------------
+\section{Conclusiones}
+
+La unidad de planillas de cálculo ha sido una experiencia de aprendizaje pragmática. Entendí empíricamente que, aunque el código puro ofrece un rendimiento asintótico y una seguridad arquitectónica superior, herramientas como Excel son el estándar transversal de la industria por una razón fundamental: su inmediatez.
+
+Descubrir el funcionamiento de las Tablas Dinámicas me permitió comprender que actúan como una interfaz gráfica altamente eficiente para ejecutar lógicas de bases de datos (agrupaciones y filtrados complejos), permitiendo generar inteligencia de negocios y reportes visuales en una fracción del tiempo que tomaría programarlos desde cero. Es una competencia ofimática indispensable que complementa de excelente manera el perfil algorítmico de la ingeniería.

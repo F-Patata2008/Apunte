@@ -1,0 +1,69 @@
+\documentclass[11pt]{article}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\graphicspath{ {./images/}, {~/Apunte/images/} }
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+\hypersetup{
+    pdftitle={Trabajo Previo Laboratorio Python},
+    pdfauthor={Felipe Colli Olea},
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=cyan
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\footnotesize Felipe Colli, Todos los Derechos Reservados}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\title{Preparación Laboratorio Python: \\ \large{IDLE, Funciones, Condicionales e Input}}
+\author{Felipe Colli Olea}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{fancy}
+
+% ------------------------------------------------------------------------------
+% FUNCIONES
+% ------------------------------------------------------------------------------
+\section{Funciones}
+
+\textbf{Pregunta:} Al ejecutar el script, la última instrucción (\texttt{x = area(2,3)}) da un error. ¿Cuál es la razón? \\
+
+\textbf{Respuesta:} El error de ejecución (\texttt{TypeError}) se produce debido a una discrepancia en el paso de argumentos. La función \texttt{area(x)} fue definida formalmente para recibir \textbf{exactamente un argumento posicional} (el valor \texttt{x}). Sin embargo, en la instrucción \texttt{area(2,3)}, se está intentando invocar la función enviándole \textbf{dos argumentos} independientes (\texttt{2} y \texttt{3}). El intérprete de Python detecta esta incongruencia en la firma de la función y detiene la ejecución.
+
+\textit{Nota:} Cabe destacar que el script original contiene además un error de alcance de variables (\textit{scope}), ya que la función recibe el parámetro \texttt{x} pero intenta calcular \texttt{math.pi*r**2}, lo que generaría un \texttt{NameError} previo al intentar evaluar \texttt{r}.
+
+% ------------------------------------------------------------------------------
+% INGRESO DE VALORES
+% ------------------------------------------------------------------------------
+\section{Ingreso de valores por teclado}
+
+\textbf{Pregunta:} ¿Cuál es el efecto que tiene la instrucción de ingreso (\texttt{input}) en el ejemplo completo? \\
+
+\textbf{Respuesta:} La función \texttt{input()} tiene como efecto detener el hilo de ejecución del programa para esperar una interacción del usuario a través de la entrada estándar (\textit{standard input}). El dato capturado siempre es interpretado por defecto como una cadena de texto (\texttt{string}). 
+
+Al anidar esta instrucción dentro de la función \texttt{int()} —formando \texttt{int(input(...))}—, el efecto logrado es un \textit{casting} (conversión de tipo de dato). Se transforma la cadena de texto a un número entero, lo cual es estrictamente necesario para que el intérprete pueda realizar las operaciones aritméticas posteriores del script (como \texttt{edad + 5}) sin generar un error de incompatibilidad de tipos (\texttt{TypeError}).
+
+% ------------------------------------------------------------------------------
+% EJECUCIÓN CONDICIONAL
+% ------------------------------------------------------------------------------
+\section{Ejecución condicional de instrucciones}
+
+\textbf{Pregunta:} Al ingresar los valores 6 y 6. Comente por qué la respuesta entregada es ``el segundo es mayor que el primero''. \\
+
+\textbf{Respuesta:} El resultado se debe a un fallo de diseño en la lógica condicional del algoritmo. Al ingresar \texttt{x = 6} e \texttt{y = 6}, la evaluación de la compuerta lógica del bloque \texttt{if (x > y)} se traduce como \texttt{6 > 6}. Matemáticamente esta proposición es \textbf{Falsa}.
+
+Dado que la condición inicial no se cumple, y al carecer el programa de un bloque de control intermedio (como un \texttt{elif x == y:}) diseñado para manejar casos de igualdad, el flujo de ejecución decae automáticamente en la instrucción por defecto del bloque \texttt{else}. Por lo tanto, el intérprete asume ciegamente la instrucción contenida en dicho bloque, imprimiendo el texto ``el segundo es mayor que el primero'', a pesar de ser semánticamente incorrecto para el caso ingresado.
+
+\end{document}

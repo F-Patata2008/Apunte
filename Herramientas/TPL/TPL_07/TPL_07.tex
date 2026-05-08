@@ -1,0 +1,79 @@
+\documentclass[11pt]{article}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\graphicspath{ {./images/}, {~/Apunte/images/} }
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+\hypersetup{
+    pdftitle={Reporte Post-Laboratorio 07: Método de Montecarlo},
+    pdfauthor={Felipe Colli Olea},
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=cyan
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\footnotesize Felipe Colli, Todos los Derechos Reservados}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\title{Reporte Post-Laboratorio 07: \\ \large{El Método de Montecarlo y la Falsa Entropía}}
+\author{Felipe Colli Olea}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{fancy}
+
+% ------------------------------------------------------------------------------
+% 1. RESUMEN DE RESULTADOS
+% ------------------------------------------------------------------------------
+\section{Resumen de los Resultados: Aproximación de $\pi$}
+
+El objetivo del laboratorio fue aproximar el valor de la constante matemática $\pi$ utilizando el Método de Montecarlo. Para ello, se simuló el lanzamiento de dardos (puntos con coordenadas $x$ e $y$ entre 0 y 1) sobre un cuadrado de área $1 \times 1$, inscribiendo en su interior un círculo de radio $0.5$. 
+
+Sabiendo que la relación de áreas entre el círculo y el cuadrado es $\frac{\pi \cdot r^2}{L^2} = \frac{\pi \cdot 0.5^2}{1} = \frac{\pi}{4}$, se puede estimar que $\pi \approx 4 \times (\text{fracción de aciertos})$. Al ejecutar las simulaciones en Google Colab, se obtuvieron los siguientes resultados empíricos:
+
+\begin{itemize}
+    \item \textbf{1.000 dardos:} $\pi \approx 3.132000$ (Error porcentual: $0.3053\%$)
+    \item \textbf{10.000 dardos:} $\pi \approx 3.143600$ (Error porcentual: $0.0639\%$)
+    \item \textbf{100.000 dardos:} $\pi \approx 3.152640$ (Error porcentual: $0.3516\%$)
+\end{itemize}
+
+Si bien la Ley de los Grandes Números y la tendencia general indican que al aumentar $n$ la aproximación mejora, en esta ejecución particular se observó una anomalía estadística: el error con 100.000 dardos fue ligeramente mayor que con 10.000. Como se analizará posteriormente, si el experimento se repite lo suficiente, estos casos siempre aparecerán debido a la naturaleza determinista de la herramienta utilizada.
+
+% ------------------------------------------------------------------------------
+% 2. EXPLICACIÓN VECTORES
+% ------------------------------------------------------------------------------
+\section{Mecánica Computacional: Vectores y Escalares}
+
+Para determinar si los dardos cayeron dentro del círculo, se utilizó la inecuación de la circunferencia: \texttt{(x - 0.5)**2 + (y - 0.5)**2 < 0.5**2}. La evaluación de esta expresión matemática en Python, utilizando \texttt{numpy}, condensa operaciones de alta eficiencia en una sola línea de código:
+
+\begin{enumerate}
+    \item \textbf{Broadcasting (Vector con Escalar):} Al restar \texttt{0.5} a los vectores \texttt{x} e \texttt{y}, Python aplica el concepto de \textit{broadcasting}. El escalar \texttt{0.5} se propaga virtualmente en memoria para restarse a \textbf{cada elemento} del vector de forma individual y paralela. Lo mismo ocurre al elevar el vector al cuadrado (\texttt{**2}).
+    \item \textbf{Element-wise (Vector con Vector):} Al sumar los resultados de \texttt{x} e \texttt{y} modificados, se produce una operación \textit{element-wise}. El elemento $i$ del primer vector se suma exclusivamente con el elemento $i$ del segundo vector.
+    \item \textbf{Máscara Booleana:} La evaluación del operador \texttt{<} genera un vector completo de valores booleanos. Al aplicar \texttt{np.sum()} sobre él, Python suma la cantidad de aciertos asumiendo matemáticamente que \textit{True} = 1 y \textit{False} = 0.
+\end{enumerate}
+
+% ------------------------------------------------------------------------------
+% 3. REFLEXIONES Y CRIPTOGRAFÍA
+% ------------------------------------------------------------------------------
+\section{Comentarios Personales: La Ilusión del ``Random''}
+
+Más allá de la sintaxis de Python, la implementación de este laboratorio levanta una discusión arquitectónica fascinante respecto al núcleo mismo de la simulación: \textbf{la aleatoriedad computacional no es real}. 
+
+Librerías convencionales como \texttt{numpy.random} son en realidad generadores de números \textbf{pseudoaleatorios (PRNG)}. Operan a partir de una semilla (\textit{seed}) inicial a la que se le aplican cálculos matemáticos deterministas. Esto significa que estamos trabajando con una \textbf{falsa entropía}. Si se repiten las simulaciones las suficientes veces, inevitablemente encontraremos anomalías estadísticas (como la ocurrida en mi ejecución, donde 100.000 datos arrojaron más error que 10.000), o peor aún, si generamos suficientes números, podremos descubrir el patrón del algoritmo y predecir los siguientes valores de la secuencia.
+
+La verdadera aleatoriedad requiere \textbf{entropía real}, es decir, basarse en el desorden fundamental del universo físico, lo cual hace que los datos sean matemáticamente indescifrables. Esta vulnerabilidad de los PRNG es la razón por la cual no se usan en criptografía seria. Un ejemplo histórico fascinante es cómo la Unión Soviética, para encriptar mensajes dirigidos a sus agentes en embajadas extranjeras mediante libretas de un solo uso (\textit{one-time pads}), se negaba a usar algoritmos deterministas. En su lugar, utilizaban patrones de ruido de radio atmosférico y climático para extraer números verdaderamente aleatorios basados en el caos natural.
+
+En conclusión, aunque Google Colab y Python son herramientas ágiles para aproximar integrales y áreas mediante Montecarlo en un entorno académico, asumir que \texttt{np.random.rand()} emula el azar puro es una falacia. Sigo manteniendo mi preferencia por entornos locales de programación (C++ / Neovim), donde uno es más consciente de cómo se manejan estos procesos a bajo nivel y de las limitaciones matemáticas de la máquina.
+
+\end{document}

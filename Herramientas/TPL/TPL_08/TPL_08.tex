@@ -1,0 +1,78 @@
+\documentclass[11pt]{article}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\graphicspath{ {./images/}, {~/Apunte/images/} }
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+\hypersetup{
+    pdftitle={Reporte Post-Laboratorio 08: Funciones y Condicionales},
+    pdfauthor={Felipe Colli Olea},
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=cyan
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\footnotesize Felipe Colli, Todos los Derechos Reservados}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\title{Reporte Post-Laboratorio 08: \\ \large{Funciones y Control de Flujo Condicional en Python}}
+\author{Felipe Colli Olea}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{fancy}
+
+% ------------------------------------------------------------------------------
+% 1. INTRODUCCIÓN
+% ------------------------------------------------------------------------------
+\section{Introducción}
+
+El presente informe documenta la resolución del Laboratorio 08, cuyo propósito fundamental fue la introducción a las estructuras de control de flujo en Python, específicamente el uso de ramificaciones lógicas mediante condicionales (\texttt{if}, \texttt{elif}, \texttt{else}).
+
+Pasar de un modelo de ejecución estrictamente secuencial a uno dinámico, donde el programa es capaz de tomar decisiones basadas en el estado de las variables en tiempo de ejecución (\textit{runtime}), es el primer paso hacia el diseño algorítmico. A través de la definición de tres funciones específicas exigidas en la rúbrica, se aplicaron operadores lógicos y relacionales para resolver problemas de clasificación numérica, temporal y geométrica.
+
+% ------------------------------------------------------------------------------
+% 2. DESARROLLO DE ACTIVIDADES
+% ------------------------------------------------------------------------------
+\section{Desarrollo y Lógica Implementada}
+
+El laboratorio requirió la implementación de las siguientes funciones, respetando estrictamente las directrices del curso:
+
+\begin{itemize}
+    \item \textbf{Clasificación de Números:} Se implementó la función \texttt{clasifica\_numeros(x)}, la cual utiliza un árbol condicional simple para evaluar el signo del número ingresado, demostrando la sintaxis básica de exclusión mutua mediante \texttt{elif}.
+    
+    \item \textbf{Determinación de Año Bisiesto:} La función \texttt{bisiesto(a)} requirió traducir las reglas del calendario gregoriano a lógica computacional. Se utilizó el operador módulo (\texttt{\%}) para evaluar la divisibilidad. La lógica se estructuró anidando condicionales para priorizar las excepciones (divisibilidad por 400 y 100) sobre la regla general (divisibilidad por 4), garantizando la correcta clasificación.
+    
+    \item \textbf{Clasificación de Triángulos:} La función \texttt{clasifica\_triangulos(a, b, c)} implicó dos fases. Primero, la validación del Teorema de la Desigualdad Triangular, requiriendo la evaluación simultánea de sus tres condiciones mediante el operador lógico \texttt{and}. Segundo, una clasificación interna (Equilátero, Isósceles, Escaleno) basada en la evaluación de equivalencias entre los lados ingresados.
+\end{itemize}
+
+% ------------------------------------------------------------------------------
+% 3. REFLEXIONES Y ENTORNO
+% ------------------------------------------------------------------------------
+\section{Reflexiones y Entorno de Trabajo}
+
+Un desafío analítico interesante durante el desarrollo fue diseñar la solución a los problemas utilizando única y exclusivamente las herramientas vistas hasta el momento en el curso. Por ejemplo, al evaluar la desigualdad triangular o al clasificar el tipo de triángulo, un enfoque algorítmicamente más escalable hubiese implicado el uso de listas e iteradores (\texttt{for} loops) para comparar los lados. No obstante, al restringirnos al uso de condicionales puros, fue necesario escribir de forma explícita todas las combinaciones posibles de compuertas lógicas (\textit{hardcoding}). Este ejercicio resultó muy útil para reforzar el entendimiento de las tablas de verdad y la jerarquía de operadores.
+
+En cuanto al entorno de trabajo, el laboratorio fue desarrollado íntegramente de manera presencial en los equipos institucionales de la facultad. Se utilizó el sistema operativo \textbf{Windows 11} y se escribió el código fuente utilizando \textbf{IDLE}, el entorno de desarrollo integrado que Python incluye por defecto. Seguir esta metodología permitió estandarizar el proceso de escritura y depuración de errores (\textit{debugging}), asegurando total compatibilidad con lo solicitado en las instrucciones del laboratorio.
+
+% ------------------------------------------------------------------------------
+% 4. CONCLUSIONES
+% ------------------------------------------------------------------------------
+\section{Conclusiones}
+
+El Laboratorio 08 cumplió su cometido formativo al asentar las bases del control de flujo. La correcta implementación de los bloques condicionales es el pilar sobre el cual se construyen programas interactivos, permitiendo que la máquina deje de ser una simple calculadora secuencial y pase a comportarse como un evaluador de estados lógicos.
+
+La experiencia de estructurar funciones matemáticas (como la evaluación de años seculares o propiedades geométricas) exclusivamente mediante bloques \texttt{if}/\texttt{else} dentro de IDLE, sirvió para consolidar los fundamentos lógicos más primitivos de la programación. A medida que el curso avance hacia la incorporación de bucles de repetición y estructuras de datos más complejas, se dispondrá de una base sólida para escribir código más optimizado y modular.
+
+\end{document}

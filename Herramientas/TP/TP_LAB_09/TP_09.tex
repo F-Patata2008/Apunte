@@ -1,0 +1,103 @@
+\documentclass[11pt]{article}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\graphicspath{ {./images/}, {~/Apunte/images/} }
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+\hypersetup{
+    pdftitle={Trabajo Previo Laboratorio 09: Listas en Python},
+    pdfauthor={Felipe Colli Olea},
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=cyan
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\footnotesize Felipe Colli, Todos los Derechos Reservados}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\title{Trabajo Previo Laboratorio 09: \\ \large{Introducción a las Listas y Manejo de Memoria en Python}}
+\author{Felipe Colli Olea}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{fancy}
+
+% ------------------------------------------------------------------------------
+% 1. OPERACIONES CON LISTAS VS NUMPY
+% ------------------------------------------------------------------------------
+\section{Sobrecarga de Operadores: Listas Nativas vs Numpy}
+
+Al ejecutar las instrucciones \texttt{print(a+b)} y \texttt{print(a*2)} con listas nativas de Python, el intérprete no realiza operaciones aritméticas. En su lugar, el comportamiento definido por el lenguaje es la \textbf{concatenación} y \textbf{repetición} de secuencias. El resultado obtenido es:
+\begin{itemize}
+    \item \texttt{a + b} $\rightarrow$ \texttt{[1, 2, 3, 4, 5, 6]}
+    \item \texttt{a * 2} $\rightarrow$ \texttt{[1, 2, 3, 1, 2, 3]}
+\end{itemize}
+
+\textbf{Diferencia con arreglos de Numpy:} \\
+Si \texttt{a} y \texttt{b} fuesen estructuras del tipo \texttt{numpy.ndarray}, el comportamiento sería diametralmente opuesto debido a la vectorización. Numpy asume operaciones matemáticas \textit{element-wise} (elemento a elemento) y \textit{broadcasting} (transmisión de escalares). Los resultados hubiesen sido:
+\begin{itemize}
+    \item \texttt{a + b} $\rightarrow$ \texttt{[5, 7, 9]} (Suma vectorial homóloga).
+    \item \texttt{a * 2} $\rightarrow$ \texttt{[2, 4, 6]} (Producto por un escalar).
+\end{itemize}
+
+% ------------------------------------------------------------------------------
+% 2. ERROR DE MULTIPLICACIÓN ENTRE SECUENCIAS
+% ------------------------------------------------------------------------------
+\section{Multiplicación de Secuencias}
+
+Al intentar ejecutar la instrucción \texttt{print(a*b)} con dos listas, se produce una interrupción de la ejecución, arrojando el siguiente error:
+\begin{verbatim}
+TypeError: can't multiply sequence by non-int of type 'list'
+\end{verbatim}
+
+\textbf{Razón:} En Python, el operador de multiplicación (\texttt{*}) aplicado a listas está sobrecargado exclusivamente para aceptar un escalar de tipo entero (\texttt{int}) como segundo operando (indicando el número de veces que se repetirá la secuencia). El lenguaje no contempla una definición matemática para el producto entre dos secuencias estructuradas como listas (no calcula ni producto punto ni producto vectorial de forma nativa), por lo que el intérprete arroja una incompatibilidad de tipos (\textit{TypeError}).
+
+% ------------------------------------------------------------------------------
+% 3. MANEJO DE MEMORIA: ASIGNACIÓN VS EXPANSIÓN
+% ------------------------------------------------------------------------------
+\section{Mecánicas de Iteración y Mutabilidad}
+
+Se evaluaron dos bloques de código (\textit{snippets}) que resuelven el mismo problema matemático: sumar y multiplicar los vectores \texttt{a} y \texttt{b} elemento a elemento. Ambos bloques imprimen exactamente los mismos vectores resultantes (\texttt{c = [4, 10, 18]} y \texttt{d = [5, 7, 9]}). Sin embargo, sus arquitecturas de manejo de memoria son distintas:
+
+\begin{enumerate}
+    \item \textbf{Pre-asignación Estática (\texttt{c[i] = ...}):} El primer bloque crea listas inicializadas con ceros (\texttt{[0,0,0]}). Al recorrer el ciclo \texttt{for}, el programa accede a un espacio de memoria ya reservado y simplemente sobreescribe (\textit{muta}) el valor contenido en ese índice. Es un acceso directo $O(1)$.
+    
+    \item \textbf{Asignación Dinámica (\texttt{c.append(...)}):} El segundo bloque inicializa listas vacías (\texttt{[]}). En cada iteración del ciclo, el método \texttt{.append()} obliga a la estructura a expandir su tamaño dinámicamente en tiempo de ejecución para albergar el nuevo dato (comportamiento análogo a \texttt{std::vector::push\_back()} en C++).
+\end{enumerate}
+Imprimen lo mismo porque, lógicamente, el estado final de las estructuras de datos es idéntico, a pesar de que la ruta algorítmica para construirlas fue diferente.
+
+% ------------------------------------------------------------------------------
+% 4. DESAFÍO OPCIONAL
+% ------------------------------------------------------------------------------
+\section{Desafío Opcional: Ingreso de datos interactivo}
+
+A continuación, se presenta la implementación de la captura iterativa de valores por teclado para construir listas dinámicas:
+
+\begin{verbatim}
+a = []
+b = []
+
+print("Ingrese 3 valores para la lista 'a':")
+for i in range(3):
+    a.append(int(input(f"Valor {i+1}: ")))
+
+print("Ingrese 3 valores para la lista 'b':")
+for i in range(3):
+    b.append(int(input(f"Valor {i+1}: ")))
+
+print(f"Lista a resultante: {a}")
+print(f"Lista b resultante: {b}")
+\end{verbatim}
+
+\end{document}

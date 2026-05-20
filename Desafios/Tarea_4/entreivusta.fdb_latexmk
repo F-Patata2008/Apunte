@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1779491457.77098 "entreivusta.tex" "entreivusta.pdf" "entreivusta" 1779491458.70271 0
+["pdflatex"] 1779499787.91738 "entreivusta.tex" "entreivusta.pdf" "entreivusta" 1779499788.38116 0
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
@@ -24,8 +24,8 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1777593600 43785 66587115382950aca692b5f6e3c2fb74 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1779138338 4890503 a13421f156375c00445bf029aaee7975 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1779137494 3520827 d5e3134a48d72b82c9b44dcc1c755e3b ""
-  "entreivusta.aux" 1779491458.60762 232 e4374e8bf5cbf47e856857f0b4de3017 "pdflatex"
-  "entreivusta.tex" 1779491455.68357 6253 df1f90c52b91d5b6d3ec14b2616ae5a4 ""
+  "entreivusta.aux" 1779499788.32443 232 e4374e8bf5cbf47e856857f0b4de3017 "pdflatex"
+  "entreivusta.tex" 1779499787.66412 6182 928e788cfde0c060f57a168f32a45d3d ""
   (generated)
   "entreivusta.aux"
   "entreivusta.log"

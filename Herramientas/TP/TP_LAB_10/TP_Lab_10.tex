@@ -1,0 +1,75 @@
+\documentclass[11pt]{article}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\graphicspath{ {./images/}, {~/Apunte/images/} }
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+\hypersetup{
+    pdftitle={Trabajo Previo Laboratorio 10: Ciclo While},
+    pdfauthor={Felipe Colli Olea},
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=cyan
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\footnotesize Felipe Colli, Todos los Derechos Reservados}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\title{Trabajo Previo Laboratorio 10: \\ \large{Control de Flujo Indefinido: La instrucción \texttt{while}}}
+\author{Felipe Colli Olea}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{fancy}
+
+% ------------------------------------------------------------------------------
+% PREGUNTA 1
+% ------------------------------------------------------------------------------
+\section*{Pregunta 1: Análisis de bucles y condición de corte}
+
+\textbf{Ejecución original:} Al ejecutar el programa original, la consola imprime secuencialmente los números enteros del 1 al 5, cada uno en una nueva línea, finalizando la ejecución cuando la variable \texttt{numero} alcanza el valor de 6, lo que invalida la condición lógica (\texttt{numero <= 5}).
+
+\vspace{0.3cm}
+\textbf{Al eliminar la instrucción \texttt{numero = numero + 1}:} El programa entra en lo que se conoce en arquitectura de software como un \textbf{ciclo infinito} (\textit{infinite loop}). Al remover el incremento, la variable \texttt{numero} conserva estáticamente el valor de \texttt{1} en memoria. Por consiguiente, la condición de evaluación del ciclo (\texttt{1 <= 5}) se mantendrá perpetuamente como \textit{True}. El intérprete consumirá ciclos de CPU imprimiendo el número "1" de forma ininterrumpida hasta que se fuerce una interrupción del proceso a nivel de sistema operativo (ej. mediante una señal \texttt{SIGINT} o \textit{KeyboardInterrupt}).
+
+% ------------------------------------------------------------------------------
+% PREGUNTA 2
+% ------------------------------------------------------------------------------
+\section*{Pregunta 2: Suma con término centinela}
+
+A continuación se presenta el código del script solicitado, utilizando el valor \texttt{0} como condición de corte (centinela) para interrumpir el ciclo de captura de datos por consola:
+
+\begin{verbatim}
+suma = 0
+numero = int(input("Ingrese un número: "))
+
+while numero != 0:
+    suma += numero
+    numero = int(input("Ingrese un número: "))
+
+print("La suma total es:", suma)
+\end{verbatim}
+
+% ------------------------------------------------------------------------------
+% PREGUNTA 3
+% ------------------------------------------------------------------------------
+\section*{Pregunta 3: Limitaciones del ciclo \texttt{for} en Python}
+
+Resolver este problema en Python utilizando la estructura \texttt{for} resulta altamente ineficiente e incómodo debido a la naturaleza arquitectónica de los iteradores en este lenguaje. 
+
+En Python, el bucle \texttt{for} no es un ciclo condicional tradicional, sino un iterador de colecciones (\textit{foreach}). Para funcionar, exige recorrer un objeto iterable que posea un límite o tamaño predefinido en memoria (como un arreglo, una lista, o un objeto \texttt{range()}). Dado que en este problema de sumatoria la cantidad de ingresos (\textit{inputs}) es dinámica y depende enteramente del comportamiento impredecible del usuario hasta que ingrese el centinela \texttt{0}, es imposible determinar a priori el tamaño del rango a iterar. 
+
+Por esta razón, la estructura \texttt{while} es la herramienta algorítmica correcta: está diseñada específicamente para el \textbf{control de flujo indefinido}, evaluando una compuerta lógica (\texttt{!= 0}) en cada iteración en lugar de consumir elementos de una secuencia finita pre-alojada en memoria.
+
+\end{document}

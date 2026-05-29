@@ -1,0 +1,81 @@
+\documentclass[11pt]{article}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\graphicspath{ {./images/}, {~/Apunte/images/} }
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+\hypersetup{
+    pdftitle={Reporte Post-Laboratorio 09: Listas e Iteraciones},
+    pdfauthor={Felipe Colli Olea},
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=cyan
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\footnotesize Felipe Colli, Todos los Derechos Reservados}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\title{Reporte Post-Laboratorio 09: \\ \large{Estructuras de Datos Nativas e Iteradores en Python}}
+\author{Felipe Colli Olea}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{fancy}
+
+% ------------------------------------------------------------------------------
+% 1. INTRODUCCIÓN
+% ------------------------------------------------------------------------------
+\section{Introducción}
+
+El presente informe documenta el desarrollo del Laboratorio 09, enfocado en el manejo de colecciones de datos mediante el uso de listas nativas de Python y la implementación de ciclos iterativos definidos (\texttt{for loops}).
+
+Dejar atrás el procesamiento de variables escalares aisladas para manipular arreglos dinámicos representa un avance fundamental en la capacidad de cómputo. El laboratorio exigió aplicar estos conceptos a dos problemas clásicos de la ingeniería: el ajuste de datos a un modelo de regresión lineal (Mínimos Cuadrados Ordinarios) y el procesamiento condicional en bloque de un sistema de calificaciones académicas.
+
+% ------------------------------------------------------------------------------
+% 2. DESARROLLO DE ACTIVIDADES
+% ------------------------------------------------------------------------------
+\section{Desarrollo y Lógica Implementada}
+
+El laboratorio requirió el uso de listas vacías (\texttt{[]}) y el método de mutación \texttt{.append()} para construir arreglos dinámicamente:
+
+\begin{itemize}
+	\item \textbf{Modelo de Mínimos Cuadrados:} Se recibieron dos listas crudas (altura en pulgadas y peso en libras). Primero, se iteró sobre ellas para generar nuevas listas ($x$ e $y$) con los valores normalizados al sistema métrico. Luego, mediante un ciclo \texttt{for i in range(n)}, se emuló un recorrido por índices espaciales para acumular las sumatorias necesarias ($\sum X, \sum Y, \sum X^2, \sum XY$). Finalmente, se calcularon los parámetros y se iteró nuevamente para generar la lista de predicciones $Y_2$.
+
+	\item \textbf{Procesamiento de Calificaciones:} Se solicitó el ingreso de 15 notas. Se implementó un ciclo para solicitar \textit{inputs} consecutivos al usuario. Posteriormente, se recorrió la colección utilizando un flujo condicional para bonificar cada calificación (multiplicando por $1.25$), insertando un tope lógico de $7.0$ para evitar el desbordamiento de la escala de evaluación, y finalizando con el cálculo de los promedios poblacionales.
+\end{itemize}
+
+% ------------------------------------------------------------------------------
+% 3. REFLEXIONES Y DIFICULTADES
+% ------------------------------------------------------------------------------
+\section{Reflexiones Arquitectónicas y Dificultades}
+
+Dado mi perfil orientado a la Programación Competitiva en \textbf{C++}, la transición hacia la sintaxis y el manejo de memoria subyacente de Python generó fricciones conceptuales importantes durante el desarrollo de la actividad, revelando las falencias arquitectónicas del lenguaje interpretado:
+
+\begin{enumerate}
+	\item \textbf{Gestión de Memoria y Punteros Implícitos:} En C++, la asignación de estructuras (como \texttt{std::vector}) realiza copias profundas por defecto (\textit{deep copy}). En Python, el operador de asignación (\texttt{=}) sobre listas no duplica la información, sino que simplemente transfiere la referencia de memoria (puntero). Esta abstracción excesiva resulta peligrosa, ya que modificar una variable secundaria corrompe la data original de forma silenciosa, requiriendo el uso de librerías extra o rebanados (\textit{slicing} \texttt{[:]}) para forzar copias reales.
+
+	\item \textbf{Parseo de Entradas (I/O Streams):} La función \texttt{input()} de Python captura el bloque completo como una cadena de texto. Para ingresar múltiples datos en una sola línea (un estándar de eficiencia en cualquier algoritmo), Python exige utilizar métodos de cadena (\texttt{.split()}) seguidos de mapeos a flotantes (\texttt{map()}). Esto contrasta negativamente con la elegancia del flujo de entrada de C++ (\texttt{std::cin \textgreater\textgreater}), el cual ignora automáticamente delimitadores invisibles y asigna los tipos de forma nativa e instantánea.
+
+	\item \textbf{Definición de \textit{Scopes} y Tipado Estático:} Estructurar bucles \texttt{for} utilizando \texttt{range()} y delimitando el bloque funcional exclusivamente mediante indentaciones visuales carece de la rigurosidad y seguridad espacial que otorgan las llaves \texttt{\{\}} de C. Asimismo, la imposibilidad de declarar explícitamente el tipo de dato que albergará una lista (como \texttt{std::vector\textless int\textgreater}) quita previsibilidad al código y delega en el intérprete resoluciones que impactan severamente en el rendimiento.
+\end{enumerate}
+
+% ------------------------------------------------------------------------------
+% 4. CONCLUSIONES
+% ------------------------------------------------------------------------------
+\section{Conclusiones}
+
+El Laboratorio 09 permitió consolidar el uso de iteradores y estructuras de datos dinámicas en Python. Lograr calcular la pendiente de una regresión lineal manipulando los datos desde su estructura cruda hasta las listas predictivas demostró la viabilidad del lenguaje para ejecutar modelamientos lógicos sin depender de módulos estadísticos externos.
+
+Sin embargo, desde la óptica de la Ingeniería de Software, la experiencia reafirma que el alto nivel de abstracción de Python conlleva un costo en la seguridad del código. El tipado dinámico, la asignación implícita por referencias y el manejo poco estricto de las entradas por consola, son características que facilitan el \textit{scripting} rápido, pero que resultan ser un retroceso metodológico para quien acostumbra a tener un control absoluto sobre el procesamiento asintótico y espacial de la memoria en lenguajes compilados.
+\end{document}

@@ -1,0 +1,6 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Introducción}{1}{section.1}%
+\contentsline {section}{\numberline {2}Trabajos Realizados}{1}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Evidencia de los laboratorios}{1}{subsection.2.1}%
+\contentsline {section}{\numberline {3}Principales Dificultades}{2}{section.3}%
+\contentsline {section}{\numberline {4}Conclusiones}{2}{section.4}%

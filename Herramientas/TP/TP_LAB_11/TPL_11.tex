@@ -1,0 +1,196 @@
+\documentclass[11pt]{article}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+\hypersetup{
+    pdftitle={Laboratorio 11: Comparando IAs},
+    pdfauthor={Felipe Colli Olea},
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=cyan
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\footnotesize Felipe Colli, Todos los Derechos Reservados}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\title{Laboratorio 11: \\ \large{Comparando Inteligencias Artificiales Generativas}}
+\author{Felipe Colli Olea}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{fancy}
+
+% =======================================================================
+% PREGUNTA 1
+% =======================================================================
+\section*{Pregunta 1: Principio de Conservación de la Energía Mecánica}
+
+\subsection*{Respuesta IA 1: Perplexity}
+El \textbf{principio de conservación de la energía mecánica} dice que, en un sistema ideal sin fuerzas que disipen energía (como la fricción), la \textbf{suma de la energía cinética} (debida al movimiento) y la \textbf{energía potencial} (debida a la posición) permanece constante. La energía no se crea ni se destruye, solo se transforma entre estas dos formas: cuando un objeto cae, su energía potencial se convierte en cinética; cuando asciende, la cinética se transforma en potencial.
+
+\textbf{1. Ejemplo cotidiano:} Una \textbf{pelota que lanzas hacia arriba}:
+\begin{itemize}
+	\item Al salir de tu mano, tiene mucha energía cinética (velocidad) y poca potencial (baja altura).
+	\item En el punto más alto, su velocidad es casi cero (energía cinética mínima) y su altura máxima (energía potencial máxima).
+	\item Mientras cae, la energía potencial se transforma nuevamente en cinética.
+\end{itemize}
+
+\textbf{2. Analogía simple:} Imagina que tienes \textbf{100 monedas} que puedes cambiar entre dos tipos: Monedas azules = energía potencial; Monedas rojas = energía cinética. Puedes convertirlas, pero \textbf{el total siempre es 100}.
+
+\textbf{3. Situaciones donde NO se cumple:} El principio \textbf{no se cumple} cuando actúan \textbf{fuerzas no conservativas}. Ejemplo: Pelota que rueda en un piso áspero (fricción), la energía se convierte en calor.
+
+\subsection*{Respuesta IA 2: Claude Sonnet 3.5}
+La energía mecánica de un sistema es la suma de su energía cinética y su energía potencial. El principio dice que, \textbf{si sobre el sistema solo actúan fuerzas conservativas} (como la gravedad o un resorte ideal), esa suma total permanece constante a lo largo del tiempo.
+
+\textbf{1. Ejemplo cotidiano — la montaña rusa:} Cuando el carro está en la cima de la primera colina, se mueve despacio: tiene mucha energía potencial gravitatoria y poca cinética. Al bajar, la altura disminuye y la velocidad crece. En un sistema ideal sin rozamiento, la suma de ambas energías sería exactamente la misma en cualquier punto.
+
+\textbf{2. Analogía simple — la cuenta bancaria:} Imagina que tienes una cuenta con un saldo fijo. Puedes mover dinero entre dos bolsillos (cinética y potencial) cuanto quieras, pero el total en la cuenta nunca cambia.
+
+\textbf{3. Situaciones donde NO se cumple:} El principio falla cuando actúan \textbf{fuerzas no conservativas}:
+\begin{itemize}
+	\item \textbf{Fricción o rozamiento} — al deslizar un libro sobre una mesa, parte de la energía se convierte en calor.
+	\item \textbf{Resistencia del aire} — un paracaidista en caída libre disipa energía mecánica continuamente.
+\end{itemize}
+
+\subsection*{Respuesta IA 3: Gemini Flash 1.5}
+El \textbf{Principio de Conservación de la Energía Mecánica} nos dice que dentro de un sistema ideal, \textbf{la cantidad total de energía mecánica se mantiene siempre constante}. $E_{mecanica} = E_p + E_c = \text{Constante}$.
+
+\textbf{1. Un ejemplo cotidiano: La montaña rusa.} Imagina el carrito en el punto más alto de la pista. El carro está casi detenido ($E_c = 0$), pero su $E_p$ es máxima. A medida que cae, se transforma en energía cinética.
+
+\textbf{2. Una analogía simple: La cuenta de banco fija.} Piensa en la energía mecánica como una cuenta compartida entre Santiago Potencial y Carlos Cinético. La suma del dinero de ambos siempre debe ser de \$100.
+
+\textbf{3. Situaciones donde NO se cumple:} Frenar un auto (fricción de las balatas), un péndulo que se detiene (roce con el aire).
+
+\vspace{0.5cm}
+\hrule
+\vspace{0.3cm}
+\textbf{Comparación Prompt 1:}
+\begin{itemize}
+	\item \textbf{¿La explicación es clara?} Sí, los tres modelos proporcionan una explicación conceptualmente correcta y fácil de entender. Claude destaca por mencionar explícitamente el término "fuerzas conservativas" como condición necesaria.
+	\item \textbf{¿El ejemplo está bien elegido?} Todos eligieron ejemplos clásicos y correctos (la pelota y la montaña rusa). La analogía financiera (cuenta de banco/monedas) usada por los tres es excelente para ilustrar un sistema de suma cero.
+	\item \textbf{¿Identifica correctamente cuándo no se cumple?} Sí, los tres identificaron el rozamiento, la fricción y la resistencia del aire como los agentes disipadores (\textit{fuerzas no conservativas}) que rompen la conservación mecánica.
+\end{itemize}
+
+\newpage
+% =======================================================================
+% PREGUNTA 2
+% =======================================================================
+\section*{Pregunta 2: Caída libre desde 20 metros}
+
+\subsection*{Respuesta IA 1: Perplexity}
+\textbf{1. Velocidad:} La velocidad es $v = 19.8 \text{ m/s}$ (aproximadamente). \\
+\textbf{2. Paso a paso:}
+Estado inicial: $E_{c0} = 0$, $E_{p0} = mgh$. Estado final: $E_{pf} = 0$, $E_{cf} = \frac{1}{2}mv^2$. \\
+Igualamos: $mgh = \frac{1}{2}mv^2 \Rightarrow 2gh = v^2 \Rightarrow v = \sqrt{2gh}$. \\
+Sustituyendo: $v = \sqrt{2 \times 9.8 \times 20} = \sqrt{392} \approx 19.8 \text{ m/s}$. \\
+\textbf{3. Fórmulas usadas:} $E_p = mgh$, $E_c = \frac{1}{2}mv^2$, y Conservación de Energía.
+
+\subsection*{Respuesta IA 2: Claude Sonnet 3.5}
+\textbf{1. Velocidad:} $v_f \approx 19.8 \text{ m/s}$. \\
+\textbf{2. Paso a paso:}
+Por conservación de energía mecánica: $\frac{1}{2}mv_0^2 + mgh = \frac{1}{2}mv_f^2 + mg(0)$. \\
+La masa $m$ se cancela: $gh = \frac{1}{2}v_f^2 \Rightarrow v_f = \sqrt{2gh}$. \\
+Sustituyendo: $v_f = \sqrt{2 \times 9.8 \times 20} = \sqrt{392} \approx 19.8 \text{ m/s}$. \\
+\textbf{3. Fórmulas:} Se usó conservación de energía porque es más directo que usar ecuaciones cinemáticas dependientes del tiempo.
+
+\subsection*{Respuesta IA 3: Gemini Flash 1.5}
+\textbf{1. Velocidad:} $19.8 \text{ m/s}$ (aprox $71.3 \text{ km/h}$). \\
+\textbf{2. Paso a paso:}
+Punto A (alto): Solo hay energía potencial. Punto B (suelo): Solo hay energía cinética. \\
+Igualamos: $m \cdot g \cdot h = \frac{1}{2} m \cdot v^2$. Se elimina la masa. \\
+$g \cdot h = \frac{1}{2}v^2 \Rightarrow v = \sqrt{2 \cdot 9.8 \cdot 20} \approx 19.8 \text{ m/s}$. \\
+\textbf{3. Fórmulas:} $E_p = m \cdot g \cdot h$ y $E_c = \frac{1}{2} m \cdot v^2$.
+
+\vspace{0.5cm}
+\hrule
+\vspace{0.3cm}
+\textbf{Comparación Prompt 2:}
+\begin{itemize}
+	\item \textbf{¿Hace el cálculo correctamente?} Sí, los tres modelos calcularon correctamente $\sqrt{392} \approx 19.8 \text{ m/s}$.
+	\item \textbf{¿Explica el procedimiento o solo da el resultado?} Los tres modelos detallaron el procedimiento paso a paso, explicando algebraicamente la cancelación de la masa ($m$) en ambos lados de la ecuación, lo cual es fundamental físicamente.
+	\item \textbf{¿Comete errores comunes?} Ninguno cometió errores. Los tres utilizaron correctamente $g = 9.8 \text{ m/s}^2$ y mantuvieron las unidades del Sistema Internacional a lo largo del desarrollo.
+\end{itemize}
+
+\newpage
+% =======================================================================
+% PREGUNTA 3
+% =======================================================================
+\section*{Pregunta 3: Caja empujada con fricción a velocidad constante}
+
+\subsection*{Respuesta IA 1: Perplexity}
+\textbf{1. Fuerzas:} Peso ($P = mg$) hacia abajo, Normal ($N$) hacia arriba, Fuerza aplicada ($F_{ap}$) horizontal, Fuerza de fricción ($F_{fr}$) opuesta al movimiento. \\
+\textit{[Nota: El modelo generó un error de codificación aquí: "Si fuera menor, la caja \textbf{[caracteres chinos]aría}."]}
+\textbf{3. Aumento de empuje:} La caja acelera positivamente porque $F_{net} > 0$. \\
+\textbf{4. Diagrama:} Un punto central con 4 vectores perpendiculares. Las flechas opuestas tienen exactamente la misma longitud indicando equilibrio.
+
+\subsection*{Respuesta IA 2: Claude Sonnet 3.5}
+\textbf{1. Fuerzas:} Peso (W) y Normal (N) en el eje vertical. Fuerza aplicada (F) y Fricción cinética (f) en el eje horizontal. \\
+\textbf{2. Cuál es mayor:} Son exactamente iguales en magnitud. $\sum F = m \cdot 0 = 0$. Es un equilibrio dinámico. \\
+\textbf{3. Aumento de empuje:} La caja se acelera. $a = \frac{F' - f}{m} > 0$. La fricción no crece al mismo ritmo que la aplicada. \\
+\textbf{4. Diagrama:} Cuatro flechas naciendo del centro. Las horizontales miden lo mismo entre sí, al igual que las verticales, logrando un diagrama simétrico.
+
+\subsection*{Respuesta IA 3: Gemini Flash 1.5}
+\textbf{1. Fuerzas:} Empuje hacia adelante, Fricción hacia atrás, Peso hacia abajo, Normal hacia arriba. \\
+\textbf{2. Cuál es mayor:} Ninguna es mayor, ambas son iguales en magnitud. Según la 1ra Ley de Newton, velocidad constante implica aceleración nula y fuerza neta cero. \\
+\textbf{3. Aumento de empuje:} El equilibrio se rompe y aparece aceleración proporcional a la fuerza neta: $F_e - F_f = m \cdot a$. \\
+\textbf{4. Diagrama:} 4 vectores en forma de cruz. El detalle crucial es que visualmente, las flechas opuestas deben tener la misma longitud.
+
+\vspace{0.5cm}
+\hrule
+\vspace{0.3cm}
+\textbf{Comparación Prompt 3:}
+\begin{itemize}
+	\item \textbf{¿Identifica bien las fuerzas?} Sí, todos identificaron Peso, Normal, Fricción y Empuje.
+	\item \textbf{¿Reconoce la condición de velocidad constante?} Sí, los tres dedujeron correctamente que velocidad constante implica Aceleración = 0, y por ende, Fuerza Neta = 0 (Equilibrio Dinámico).
+	\item \textbf{¿Da una explicación coherente del diagrama?} Absolutamente. Todos hicieron hincapié en el detalle vectorial más importante: la longitud de los vectores opuestos debe ser idéntica para representar la anulación de fuerzas.
+\end{itemize}
+
+\newpage
+% =======================================================================
+% EVALUACIÓN Y CONCLUSIONES
+% =======================================================================
+\section*{Resumen de su evaluación}
+
+A continuación se presenta la tabla de evaluación asignando posiciones relativas (1: Mejor, 2: Intermedio, 3: Peor):
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{|l|c|c|c|}
+		\hline
+		\textbf{Criterio}        & \textbf{ChatGPT (Perplexity)} & \textbf{Claude} & \textbf{Gemini} \\ \hline
+		Claridad conceptual      & 3                             & 1               & 2               \\ \hline
+		Corrección física        & 2                             & 1               & 3               \\ \hline
+		Explicación paso a paso  & 1                             & 2               & 3               \\ \hline
+		Calidad del razonamiento & 3                             & 1               & 2               \\ \hline
+		Errores detectados       & 3                             & 1               & 2               \\ \hline
+	\end{tabular}
+\end{table}
+
+\section*{Conclusiones}
+
+\textbf{1. ¿Qué modelo explicó mejor y por qué?} \\
+\textbf{Claude (Sonnet 3.5)} entregó las mejores explicaciones. Su formulación matemática es mucho más madura y formal (utilizando conceptos como "Equilibrio Dinámico" o ecuaciones formales como $a = \frac{F' - f}{m} > 0$). Además, su redacción es fluida, directa y no abusó de formatos visuales sobrecargados.
+
+\vspace{0.3cm}
+\textbf{2. ¿Cuál se equivocó más? ¿En qué?} \\
+\textbf{Perplexity} cometió el error más grave de la prueba debido a una "alucinación" del modelo de lenguaje (\textit{LLM Hallucination}). Al explicar la disminución de velocidad en el Prompt 3, el modelo mezcló idiomas y arrojó el término \texttt{la caja [jiǎn sù]aría} (mezclando los caracteres chinos "jiǎn sù" que significan "desacelerar" con el sufijo español "-aría"). Esto penalizó fuertemente su confiabilidad y calidad de razonamiento.
+
+\vspace{0.3cm}
+\textbf{3. ¿Con cuál trabajarías para estudiar Física y por qué?} \\
+Trabajaría definitivamente con \textbf{Claude}. Al estudiar ciencias exactas (Física, Matemáticas o Programación), la precisión y el rigor de la notación son fundamentales. Claude demostró ser capaz de manipular ecuaciones algebraicamente sin perder el contexto físico de los problemas (como cuando explicó que la masa $m$ se cancelaba o que la fricción cinética $f_k = \mu_k N$ no crece aunque aumente el empuje). Ofrece la experiencia más cercana a leer un libro de texto universitario.
+
+\end{document}

@@ -1,0 +1,252 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+
+\title{Laboratorio 11}
+\author{Fernando García y Felipe Colli}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Actividad 1}
+\subsection{ Zero-shot Prompting}
+
+El Zero-shot Prompting consiste en solicitar una tarea al modelo sin proporcionar ejemplos previos. El modelo debe resolver la solicitud utilizando únicamente los conocimientos adquiridos durante su entrenamiento. Esta técnica es útil para tareas simples o ampliamente conocidas, donde no es necesario mostrar un formato o patrón específico.
+
+\textbf{Ejemplo:}
+
+\begin{quote}
+``Resume el siguiente texto en tres oraciones: [texto].''
+\end{quote}
+
+\subsection{ One-shot Prompting}
+
+El One-shot Prompting proporciona un único ejemplo antes de realizar la solicitud principal. El ejemplo sirve como referencia para que el modelo comprenda mejor el formato, estilo o tipo de respuesta esperado.
+
+\textbf{Ejemplo:}
+
+\begin{quote}
+Ejemplo: ``Producto: Laptop. Categoría: Tecnología.''
+
+Ahora clasifica:
+
+``Producto: Zapatillas deportivas.''
+\end{quote}
+
+Respuesta esperada: ``Categoría: Deportes.''
+
+\subsection{Few-shot Prompting}
+
+El Few-shot Prompting amplía la idea del One-shot proporcionando varios ejemplos. Al observar múltiples casos, el modelo puede identificar patrones y generar respuestas más consistentes y precisas, especialmente en tareas complejas o especializadas.
+
+\textbf{Ejemplo:}
+
+\begin{quote}
+Ejemplo 1: ``Rojo $\rightarrow$ Color''
+
+Ejemplo 2: ``Perro $\rightarrow$ Animal''
+
+Ejemplo 3: ``Manzana $\rightarrow$ Fruta''
+
+Ahora clasifica:
+
+``Águila $\rightarrow$ ?''
+\end{quote}
+
+Respuesta esperada: ``Animal.''
+
+\subsection{ Chain of Thought Prompting}
+
+ElChain of Thought o ``cadena de pensamiento'' consiste en pedir al modelo que razone paso a paso antes de proporcionar una respuesta final. Esta técnica mejora el desempeño en problemas que requieren razonamiento lógico, matemático o análisis complejo.
+
+\textbf{Ejemplo:}
+
+\begin{quote}
+``Un tren viaja 120 km en 2 horas. ¿Cuál es su velocidad promedio? Explica paso a paso tu razonamiento antes de responder.''
+\end{quote}
+
+\subsection{Role Prompting}
+
+El Role Prompting asigna al modelo un rol específico para que responda desde una perspectiva determinada. Esto permite adaptar el tono, vocabulario y profundidad de la respuesta según el contexto.
+
+\textbf{Ejemplo:}
+
+\begin{quote}
+``Actúa como un profesor de matemáticas y explica qué es una derivada a un estudiante de secundaria.''
+\end{quote}
+
+\subsection{Structured Prompting}
+
+El Structured Prompting organiza la solicitud mediante una estructura clara y definida. Generalmente incluye secciones como contexto, tarea, formato de salida y restricciones, lo que facilita obtener respuestas más ordenadas y consistentes.
+
+\textbf{Ejemplo:}
+
+\begin{quote}
+Contexto: Empresa de software.
+
+Tarea: Elaborar recomendaciones de mejora.
+
+Formato: Lista numerada de cinco puntos.
+
+Audiencia: Gerentes de proyecto.
+\end{quote}
+
+\subsection{Constraint Prompting}
+
+El Constraint Prompting incorpora restricciones específicas que limitan o guían la respuesta del modelo. Estas restricciones pueden estar relacionadas con la longitud, formato, estilo o contenido permitido.
+
+\textbf{Ejemplo:}
+
+\begin{quote}
+``Explica qué es la inteligencia artificial en menos de 50 palabras y utilizando un lenguaje sencillo.''
+\end{quote}
+
+\subsection{Iterative Prompting}
+
+El Iterative Prompting consiste en mejorar progresivamente los resultados mediante una secuencia de interacciones. El usuario revisa la respuesta inicial y proporciona nuevas instrucciones para refinarla hasta alcanzar el resultado deseado.
+
+\textbf{Ejemplo:}
+
+\begin{quote}
+Primer prompt: ``Escribe un artículo sobre energías renovables.''
+
+Segundo prompt: ``Haz el texto más técnico.''
+
+Tercer prompt: ``Agrega estadísticas recientes y referencias.''
+\end{quote}
+
+\section{Actividad 2}
+
+\subsection{Modelo utilizado}
+
+Para esta actividad se utilizó el modelo \textbf{ChatGPT (GPT-5.5)}.
+
+\subsection{Prompts utilizados}
+
+\subsubsection{Prompt Simple}
+
+\textbf{Prompt utilizado:}
+
+\begin{quote}
+Escribe un programa en Python que calcule el promedio de una lista de números.
+\end{quote}
+
+\textbf{Resultado:}
+
+\begin{verbatim}
+numeros = [10, 20, 30, 40, 50]
+promedio = sum(numeros) / len(numeros)
+print("Promedio:", promedio)
+\end{verbatim}
+
+\subsubsection{Chain of Thought}
+
+\textbf{Prompt utilizado:}
+
+\begin{quote}
+Explícame paso a paso cómo se calcula el promedio de una lista de números y luego escribe un programa en Python que lo implemente.
+\end{quote}
+
+\textbf{Resultado:}
+
+\begin{verbatim}
+numeros = [10, 20, 30, 40, 50]
+
+suma = sum(numeros)
+cantidad = len(numeros)
+promedio = suma / cantidad
+
+print("Promedio:", promedio)
+\end{verbatim}
+
+Además, el modelo explicó que primero se suman los elementos de la lista, luego se cuenta cuántos elementos existen y finalmente se divide la suma entre la cantidad de elementos.
+
+\subsubsection{Few-shot Prompting}
+
+\textbf{Prompt utilizado:}
+
+\begin{quote}
+Ejemplo:
+
+Lista: [2,4,6]
+
+Promedio = (2+4+6)/3 = 4
+
+Ahora escribe un programa en Python que calcule el promedio de cualquier lista de números.
+\end{quote}
+
+\textbf{Resultado:}
+
+\begin{verbatim}
+def calcular_promedio(lista):
+    return sum(lista) / len(lista)
+
+numeros = [10, 20, 30, 40, 50]
+print("Promedio:", calcular_promedio(numeros))
+\end{verbatim}
+
+\subsubsection{Rol de Profesor}
+
+\textbf{Prompt utilizado:}
+
+\begin{quote}
+Actúa como un profesor de programación y enséñame cómo calcular el promedio de una lista. Después muestra un programa en Python.
+\end{quote}
+
+\textbf{Resultado:}
+
+\begin{verbatim}
+numeros = [10, 20, 30, 40, 50]
+
+promedio = sum(numeros) / len(numeros)
+
+print("Promedio:", promedio)
+\end{verbatim}
+
+El modelo explicó el concepto del promedio utilizando ejemplos sencillos antes de presentar el código.
+
+\subsection{Comparación de Resultados}
+
+\begin{itemize}
+    \item \textbf{Prompt Simple:} produjo una solución correcta de forma rápida y directa, pero con poca explicación.
+    
+    \item \textbf{Chain of Thought:} generó el mismo resultado, acompañado de una explicación paso a paso que facilita comprender el algoritmo.
+    
+    \item \textbf{Few-shot Prompting:} produjo una solución más reutilizable mediante una función, influenciada por el ejemplo proporcionado.
+    
+    \item \textbf{Rol de Profesor:} ofreció una explicación orientada al aprendizaje antes de mostrar el código.
+\end{itemize}
+
+\subsection{Conclusiones}
+
+\begin{enumerate}  
+    \item Los prompts difieren en la cantidad de contexto proporcionado al modelo:
+    \begin{itemize}
+        \item Prompt Simple: solo solicita la solución.
+        \item Chain of Thought: solicita el razonamiento paso a paso.
+        \item Few-shot: proporciona un ejemplo previo.
+        \item Rol de Profesor: asigna un rol específico al modelo.
+    \end{itemize}
+    
+    \item Todas las técnicas generaron una solución correcta para el problema.
+    
+    \item Las técnicas Chain of Thought y Rol de Profesor mejoraron significativamente la explicación del procedimiento.
+    
+    \item Para este problema no se observaron errores en ninguna técnica, pero proporcionar ejemplos o solicitar razonamiento detallado ayuda a obtener respuestas más comprensibles y estructuradas.
+\end{enumerate}
+
+
+
+
+
+\end{document}
+
+
+
+

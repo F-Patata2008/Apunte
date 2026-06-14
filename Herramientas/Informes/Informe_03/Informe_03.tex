@@ -1,28 +1,61 @@
 % ------------------------------------------------------------------------------
-% INTRODUCCIÓN
+% 1. INTRODUCCIÓN
 % ------------------------------------------------------------------------------
 \section{Introducción}
 
+Durante la tercera unidad del curso, el enfoque de aprendizaje transicionó desde el paradigma de las planillas de cálculo hacia la programación estructurada mediante el lenguaje \textbf{Python}. El objetivo fue desarrollar el pensamiento algorítmico, comprendiendo cómo las máquinas procesan instrucciones secuenciales, controlan flujos de ejecución (mediante ciclos y condicionales) y manipulan estructuras de datos en memoria para resolver problemas de ingeniería.
 
+A nivel personal, poseo un historial formativo orientado a la \textit{Programación Competitiva} utilizando lenguajes compilados de bajo nivel y tipado estático (específicamente C++). Sin embargo, esta unidad fue útil para interiorizar el paradigma de los lenguajes interpretados de alto nivel. Lo que aprendí en esta unidad, y que supuso un contraste directo con mi formación previa, fue el manejo de la vectorización implícita (\textit{broadcasting} en librerías numéricas) y la adaptación a un lenguaje de tipado dinámico donde la abstracción de la memoria es gestionada íntegramente por el intérprete.
 
 % ------------------------------------------------------------------------------
-% TRABAJOS REALIZADOS
+% 2. TRABAJOS REALIZADOS
 % ------------------------------------------------------------------------------
 \section{Trabajos Realizados}
 
+La unidad estuvo compuesta por cuatro laboratorios prácticos orientados a dominar distintas estructuras de control y análisis de datos:
+
+\begin{itemize}
+	\item \textbf{Laboratorio 7 (Vectores y Método de Montecarlo):} El objetivo fue familiarizarse con la sintaxis básica y el entorno \textit{Google Colab}. Se implementó el método estocástico de Montecarlo utilizando arreglos de generación pseudoaleatoria (\texttt{numpy.random}) para aproximar el valor de la constante matemática $\pi$, analizando la tasa de error estadístico.
+
+	\item \textbf{Laboratorio 8 (Funciones y Lógica Condicional):} Orientado al control de flujo estático. Se diseñaron funciones evaluadoras de estados lógicos mediante compuertas \texttt{if/elif/else}, resolviendo problemas de clasificación numérica, evaluación de años bisiestos (anidamiento lógico) y validación de la desigualdad triangular.
+
+	\item \textbf{Laboratorio 9 (Listas e Iteradores Definidos):} El objetivo fue manipular colecciones dinámicas de datos utilizando ciclos \texttt{for}. Se implementó de manera manual un modelo de regresión lineal (Mínimos Cuadrados Ordinarios) iterando sobre listas crudas, y un algoritmo para procesar y modificar masivamente un arreglo de calificaciones académicas.
+
+	\item \textbf{Laboratorio 10 (Ciclos Indefinidos y Máquinas de Estado):} El enfoque fue dominar la instrucción \texttt{while}. Se programó un sistema de escrutinio de votos con terminación por valor centinela (0) y un motor de juego (Cachipún), el cual fue estructurado analíticamente mediante aritmética modular en lugar de ramificaciones de fuerza bruta.
+\end{itemize}
+
 \subsection{Evidencia de los laboratorios}
 
+A continuación, se adjunta evidencia visual del trabajo desarrollado en los entornos requeridos.
+
+\insertimage[\label{img:evidencia1}]{Lab_09.png}{width=0.8\textwidth}{Evidencia del Laboratorio 09: Implementación de regresión lineal y procesamiento de listas dinámicas.}
+
+\insertimage[\label{img:evidencia2}]{Lab_10.png}{width=0.8\textwidth}{Evidencia del Laboratorio 10: Ejecución del sistema de votaciones y motor lógico del juego de Cachipún.}
 
 \newpage
 
 % ------------------------------------------------------------------------------
-% PRINCIPALES DIFICULTADES
+% 3. PRINCIPALES DIFICULTADES
 % ------------------------------------------------------------------------------
 \section{Principales Dificultades}
 
+A lo largo del desarrollo de la unidad, los desafíos no fueron de naturaleza algorítmica ni matemática, sino que derivaron de las limitaciones arquitectónicas del propio lenguaje Python y de las restricciones del curso:
+
+\begin{enumerate}
+	\item \textbf{Parseo de Entradas (I/O Streams):} La captura de múltiples datos por consola resultó ser un proceso rígido. Al solicitar el ingreso de 15 calificaciones (Lab 09), la función \texttt{input()} obligaba a capturar cada valor línea por línea dentro de un ciclo. Si bien en Python es posible ingresar datos en bloque separados por espacios (mediante \texttt{.split()} y mapeo funcional), aplicar esto excedía la materia vista en clases. Esta restricción me obligó a implementar una lectura secuencial ineficiente, contrastando negativamente con la elegancia del flujo de entrada de C++ (\texttt{std::cin \textgreater\textgreater}), el cual procesa todo el \textit{buffer} de datos de forma continua ignorando delimitadores automáticamente.
+
+	\item \textbf{Manejo Implícito de la Memoria:} Acostumbrado al control directo de punteros, la abstracción de memoria en Python generó una fricción técnica recurrente. En Python, el operador de asignación (\texttt{a = b}) sobre listas no genera una copia real de los datos (\textit{deep copy}), sino que transfiere una referencia de memoria. Modificar la variable secundaria altera silenciosamente los datos de origen, obligando a mantener una trazabilidad artificial sobre el flujo de los objetos para evitar corromper la data.
+
+	\item \textbf{El Entorno de Desarrollo (IDLE):} El uso de IDLE como entorno local presentó dificultades operativas. La carencia de herramientas de desarrollo modernas (como autocompletado semántico, servidores de lenguaje \textit{LSP} para validación de sintaxis en tiempo real e indentación inteligente) ralentizó la redacción del código. La depuración de errores se volvió un proceso excesivamente manual al carecer de un \textit{linter} que prevenga errores de espaciado o tipado previo a la ejecución.
+\end{enumerate}
+
+\newpage
+
 % ------------------------------------------------------------------------------
-% CONCLUSIONES
+% 4. CONCLUSIONES
 % ------------------------------------------------------------------------------
 \section{Conclusiones}
 
+La unidad de programación en Python ha sido una experiencia sumamente enriquecedora para contrastar paradigmas de desarrollo computacional. Lograr estructurar validaciones geométricas, regresiones lineales y motores lógicos demostró la innegable versatilidad de Python como lenguaje de \textit{scripting} y prototipado rápido.
 
+Sin embargo, desde la óptica de la Ingeniería de Software y la eficiencia asintótica, la experiencia reafirma que el alto nivel de abstracción conlleva compromisos importantes. El tipado dinámico, la asignación implícita por referencias y el manejo restrictivo de las entradas por consola facilitan el aprendizaje inicial para no especialistas, pero resultan ser un obstáculo metodológico para quien acostumbra a ejercer un control absoluto sobre el ciclo de vida del procesador y el \textit{buffer} de memoria en lenguajes compilados. A pesar de ello, reconocer en qué contextos sacrificar rendimiento por velocidad de escritura es una habilidad clave en el diseño de soluciones tecnológicas integrales.

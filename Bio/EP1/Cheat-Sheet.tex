@@ -1,0 +1,206 @@
+\documentclass[9pt,letterpaper]{extarticle}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[landscape, margin=0.6cm]{geometry}
+\usepackage{multicol}
+\usepackage{amsmath, amssymb}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+
+% Formato compacto de secciones
+\titleformat{\section}{\normalfont\large\bfseries\color{blue!80!black}}{\thesection}{1em}{}[{\titlerule[0.5pt]}]
+\titleformat{\subsection}{\normalfont\normalsize\bfseries\color{red!70!black}}{\thesubsection}{1em}{}
+\titlespacing*{\section}{0pt}{1ex}{0.5ex}
+\titlespacing*{\subsection}{0pt}{1ex}{0.5ex}
+
+% Listas compactas
+\setlist{leftmargin=*, noitemsep, topsep=0pt, parsep=0pt, partopsep=0pt}
+
+\setlength{\columnsep}{0.6cm}
+\setlength{\columnseprule}{0.2pt}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+\begin{multicols*}{3}
+
+	\begin{center}
+		\textbf{\LARGE Resumen BT1211 - Evaluación Principal 1} \\
+		\textit{Todo el contenido hasta la semana 6}
+	\end{center}
+
+	\section*{1. Método Científico e Ingeniería}
+	\textbf{Etapas del Método Científico:}
+	\begin{enumerate}
+		\item \textbf{Observación sistemática:} Registro del mundo real; es intencionada y selectiva.
+		\item \textbf{Hipótesis:} Formulación de pregunta y posible explicación. Debe ser comprobable o refutable.
+		\item \textbf{Experimentación:} Reproducción en condiciones controladas para confirmar/refutar hipótesis.
+		\item \textbf{Conclusiones:} Evaluar resultados.
+	\end{enumerate}
+	\textbf{Pilares fundamentales:}
+	\begin{itemize}
+		\item \textbf{Reproducibilidad:} Capacidad de repetir el experimento obteniendo resultados consistentes.
+		\item \textbf{Refutabilidad:} Posibilidad de demostrar empíricamente que la hipótesis es falsa.
+	\end{itemize}
+	\textbf{Teorías y Leyes:}
+	\begin{itemize}
+		\item \textbf{Teoría:} Explica el \textit{por qué} ocurre un fenómeno. Es un marco de trabajo.
+		\item \textbf{Ley Empírica:} Describe \textit{cómo} ocurre. Observaciones repetidas (fórmulas).
+		\item \textbf{Ley Fenomenológica:} Base en leyes fundamentales, explica funcionamiento sin ir a la causa última (Ej. Ley de Fourier, Ley de los Gases).
+	\end{itemize}
+	\textbf{Modelos Matemáticos:} Ecuaciones que predicen el comportamiento de un sistema (Ej. Bomba Sodio-Potasio).
+
+	\section*{2. Bases de la Evolución Biológica}
+	\textbf{Leyes de Mendel:}
+	\begin{itemize}
+		\item \textbf{1. Uniformidad:} Al cruzar líneas puras, la F1 tiene el mismo fenotipo dominante.
+		\item \textbf{2. Segregación:} Alelos se separan en meiosis; cada gameto lleva 1 alelo.
+		\item \textbf{3. Distribución Independiente:} Los rasgos se heredan independientemente (si no están ligados).
+	\end{itemize}
+	\textbf{Genes y Alelos:} El ADN almacena información. Los alelos son variantes de un gen (\textit{Dominante} vs \textit{Recesivo}).
+
+	\subsection*{Selección Natural (Darwin)}
+	Condiciones del ambiente ejercen \textbf{presión selectiva}. Se requiere:
+	1. Variabilidad del rasgo.
+	2. Ventaja adaptativa (éxito reproductivo).
+	3. Herencia del rasgo.
+	\begin{itemize}
+		\item \textbf{Adaptación:} Característica (morfológica, fisiológica, conducta) que mejora la supervivencia.
+		\item \textbf{Tipos de Selección:} Direccional (favorece 1 extremo), Disruptiva (favorece ambos extremos, hunde al medio), Estabilizadora (favorece el promedio).
+		\item \textbf{Selección Artificial:} Especie se adapta a preferencias de un agente seleccionador (ej. humano).
+	\end{itemize}
+	\textbf{Variabilidad Genética:} Fuentes principales son \textit{Mutaciones} (errores en copia o ambiente) y \textit{Reproducción Sexuada} (meiosis, entrecruzamiento).
+
+	\section*{3. Modularidad y Cambio Incremental}
+	\textbf{Modularidad:} Propiedad de descomponerse en partes discretas (módulos) que interactúan.
+	\begin{itemize}
+		\item \textbf{Propiedades Emergentes:} Atributos que surgen por interacción de las partes, ausentes en las partes individuales (ej. la Vida surge a nivel celular).
+	\end{itemize}
+	\textbf{Evolución de Sistemas Complejos (Principios):}
+	\begin{itemize}
+		\item \textbf{Disociación:} Un módulo muta independiente de otro. Ej: \textbf{Alometría} (crecimiento a distintas tasas).
+		\item \textbf{Duplicación y divergencia:} Copias redundantes asumen nuevos roles.
+		\item \textbf{Cooptación:} Estructuras pre-existentes adoptan nuevas funciones (ej. alas de pingüino para nadar).
+	\end{itemize}
+	\textbf{Homología vs Analogía:}
+	\begin{itemize}
+		\item \textbf{Homología (Evol. Divergente):} Ancestro común, similar estructura, distinta función (ej. aleta ballena / brazo humano).
+		\item \textbf{Analogía (Evol. Convergente):} Distinto origen, distinta estructura, similar función (ej. aleta tiburón / delfín).
+	\end{itemize}
+
+	\section*{4. Materiales Biológicos}
+	\textbf{Átomo y Enlaces:}
+	\begin{itemize}
+		\item \textbf{Iónico:} Transferencia de electrones.
+		\item \textbf{Covalente:} Compartición de e-. \textit{Apolar} (compartición equitativa, hidrofóbicos, C-H) vs \textit{Polar} (desigual, hidrofílicos, O-H, N-H).
+	\end{itemize}
+	\textbf{Interacciones No Covalentes (Débiles):} Dan la conformación y especificidad a macromoléculas.
+	\begin{itemize}
+		\item \textbf{Puentes de Hidrógeno:} O, N o F atraen al H fuertemente. Dan al agua su estado líquido.
+		\item \textbf{Fuerzas de VdW:} Atracciones fluctuantes.
+		\item \textbf{Int. Hidrofóbicas:} Moléculas apolares se agrupan huyendo del agua.
+	\end{itemize}
+
+	\subsection*{Macromoléculas}
+	Bloques de construcción formados por polimerización.
+	\begin{enumerate}
+		\item \textbf{Carbohidratos (Azúcares):} Monosacáridos. Enlace \textit{glucosídico}. Función: Energía inmediata (glucosa), almacén (glucógeno/almidón), soporte (celulosa).
+		\item \textbf{Lípidos:} No tienen bloque único. Ácidos grasos. Enlace \textit{éster}. Anfipáticos. Forman bicapas (membranas). Saturados (empaquetados) vs Insaturados (con quiebres). Reserva energética, hormonas.
+		\item \textbf{Proteínas:} Monómero: Aminoácido (20 tipos, grupo amino + carboxilo + radical). Enlace \textit{peptídico}. Funciones estructurales, enzimáticas, transporte. Estructura 1ria (secuencia), 2ria, 3ria, 4ta.
+		\item \textbf{Ácidos Nucleicos:} Monómero: Nucleótido (Azúcar + Fosfato + Base Nitrogenada). Enlace \textit{fosfodiéster}. Bases: Purinas (A,G) y Pirimidinas (C,T,U).
+	\end{enumerate}
+
+	\subsection*{Bioinspiración / Interacción Bio-Ingeniería}
+	\begin{itemize}
+		\item \textbf{Bioingeniería:} Ingeniería para sistemas biológicos o usando sistemas biológicos (ej. bacterias para biolixiviación).
+		\item \textbf{Biomimética:} Ingeniería inspirada en la naturaleza (ej. Velcro, Shinkansen - tren bala, pintura autolimpiante Sto Lotusan).
+		\item \textbf{Biotecnología:} Uso directo de organismos para crear productos.
+	\end{itemize}
+
+	\section*{5. Información Biológica y Bioalgorítmica}
+	\textbf{Dogma Central:} ADN $\rightarrow$ (Transcripción) $\rightarrow$ ARN $\rightarrow$ (Traducción) $\rightarrow$ Proteína.
+	\begin{itemize}
+		\item \textbf{ADN:} Doble hélice. Guarda información redundante ($A\leftrightarrow T$, $C\leftrightarrow G$).
+		\item \textbf{ARNm:} Transporta información al ribosoma.
+		\item \textbf{Regulación de genes:} Constitutiva, Inducible o Reprimible. Todas las células tienen el mismo ADN, la diferencia radica en qué se expresa.
+	\end{itemize}
+
+	\subsection*{Teoría de la Información (Shannon)}
+	\textbf{Entropía (H):} Mide la incertidumbre/desorden.
+	\[ H(X) = - \sum p_i \log_2(p_i) \]
+	\begin{itemize}
+		\item A mayor impredecibilidad, mayor sorpresa y \textbf{mayor información}. Menor entropía significa un sistema muy predecible (menos info útil al observar).
+		\item Vida = orden. Mantener baja entropía requiere energía.
+		\item \textbf{Compresión:} Eliminar redundancia. Virus solapan secuencias de genes para ahorrar espacio.
+	\end{itemize}
+
+	\subsection*{Bioalgorítmica}
+	Algoritmos inspirados en procesos biológicos:
+	\begin{itemize}
+		\item \textbf{Swarm Intelligence (Inteligencia de enjambre):} Reglas locales simples generan inteligencia global emergente. \textit{Hormigas:} Optimización de rutas mediante feromonas. \textit{Bandadas de Aves:} Búsqueda de óptimos usando reglas de Separación, Alineación y Cohesión.
+		\item \textbf{Algoritmos Genéticos:} Inspirados en selección natural. Población inicial $\rightarrow$ Evaluar \textit{fitness} $\rightarrow$ Seleccionar $\rightarrow$ Cruzamiento (crossover) $\rightarrow$ Mutación $\rightarrow$ Repetir.
+		\item \textbf{Redes Neuronales:} Nodos interactuantes ponderados para reconocimiento de patrones y toma de decisiones.
+	\end{itemize}
+	\textbf{Ómicas y Datos:} Volúmenes masivos de datos ($10^{21}$ bytes). Requieren bioinformática y BD especializadas (GenBank para secuencias, PDB para estructuras, UniProt para proteínas).
+
+    % ---------------- NUEVAS CATEGORÍAS AGREGADAS AQUÍ ---------------- %
+    
+	\section*{6. Astrobiología y Origen de la Vida}
+	\textbf{¿Qué es un ser vivo?} Usa energía, mantiene orden interno, transforma su entorno, se reproduce, evoluciona, está fuera del equilibrio químico. \\
+	\textbf{Receta para la vida:} 1. \textit{Estructura/Catálisis} (Proteínas). 2. \textit{Compartimentos} (Lípidos). 3. \textit{Info} (ADN/ARN). 4. \textit{Energía} (Azúcar). 5. \textit{Medio} (Agua).
+
+	\section*{7. Ingeniería Genética}
+	Modificar el ADN/genoma de un organismo. \\
+	\textbf{Elementos:} \textit{Código} (gen de interés), \textit{Vehículo} (Vector/Plásmido) y \textit{Huésped} (Sistema de expresión).
+	\begin{itemize}
+		\item \textbf{Vectores:} Plásmidos (ADN circular extra en bacterias).
+		\item \textbf{Huésped Procarionte:} Bacterias (E. coli). Alta velocidad, bajo costo, para proteínas simples.
+		\item \textbf{Huésped Eucarionte:} Levaduras/Células Animales. Lentas, caro, pero pliegan proteínas complejas.
+	\end{itemize}
+	\textbf{Pasos:} Aislar $\rightarrow$ Elegir Huésped $\rightarrow$ Insertar (en vector) $\rightarrow$ Transformar $\rightarrow$ Purificar. \\
+	\textbf{Selección:} Se usa un "medio selectivo" (ej. antibiótico ampicilina). Solo sobreviven los que tengan el plásmido (pues contiene el gen de resistencia). \\
+	\textbf{Marcador visual:} GFP (Proteína Fluorescente Verde).
+	
+	\subsection*{Transgénicos y Aplicaciones}
+	\begin{itemize}
+		\item \textbf{Híbrido vs Transgénico:} Híbrido cruza especies afines (natural). Transgénico inserta genes foráneos directos (rompe barrera biológica).
+		\item \textbf{Insulina humana:} Antes se extraía de cerdos. Ahora se usa biofactorías bacterianas (rendimiento exponencial, 100\% compatible humana).
+		\item \textbf{Algodón BT:} Tóxico para plagas, seguro para humanos.
+		\item \textbf{Golden Rice:} Arroz con Vitamina A (Beta-caroteno) para evitar ceguera.
+		\item \textbf{Animales:} Salmón crece 11x más rápido. Vacas biofactorías que secretan medicina en la leche. Mosquitos estériles para combatir Zika.
+	\end{itemize}
+
+	\section*{8. Bioprocesos Industriales}
+	\begin{itemize}
+		\item \textbf{Lodos Activados:} Tratamiento de aguas residuales (riles). Consorcio bacteriano aerobio devora materia orgánica.
+		\item \textbf{Biolixiviación:} Bacterias litotróficas disuelven rocas de sulfuros de cobre (minería sustentable).
+		\item \textbf{Captura de $CO_2$:} Microalgas forman biomasa o biocombustibles asimilando el $CO_2$ o NOx del ambiente.
+	\end{itemize}
+
+	\section*{9. Química Verde y Biomedicina}
+	\textbf{Química Verde:} Diseño de productos y procesos que reducen el uso o generación de sustancias tóxicas en la fuente.
+	\begin{itemize}
+		\item \textit{Sea-Nine:} Antiadherente para barcos biodegradable, reemplazó al tributilestaño (muy tóxico para la fauna marina).
+		\item \textit{Bioplásticos:} PLA (ácido poliláctico) y PASP reemplazan a los sintéticos.
+	\end{itemize}
+	\textbf{Biomedicina:} Integrar herramientas de ingeniería en el campo de la medicina.
+	\begin{itemize}
+		\item \textit{Impresión 3D (Aditiva):} Andamios de polímero biocompatible para células madre (regeneración de hueso).
+		\item \textit{Órganos en un chip:} Microfluídica que recrea la fisiología humana para testeo ético de fármacos.
+		\item \textit{Interfaces:} Chips en la retina que traducen luz en impulsos (visión artificial) o avatares para síndrome de enclaustramiento.
+	\end{itemize}
+
+	\section*{10. Perspectiva de Género en Ciencias}
+	Ignorar la variabilidad biológica y sociocultural puede generar fallas críticas de diseño e intensificar desigualdades.
+	\begin{itemize}
+		\item \textbf{Sexo:} Biológico. Ej: Animales hermafroditas secuenciales (peces payaso cambian a hembra para asegurar la especie) o simultáneos (caracoles compiten para no gastar energía en óvulos).
+		\item \textbf{Género:} Construcción sociocultural. 
+		\item \textbf{Sesgo de Diseño (Seguridad Automotriz):} Maniquíes basados en el estándar masculino. Provocó que conductoras mujeres sufrieran 47\% más lesiones graves.
+		\item \textbf{Sesgo Médico (Osteoporosis):} Por considerarse "enfermedad de mujeres", deja a muchos hombres sin diagnóstico a tiempo.
+		\item \textbf{Interseccionalidad (Discriminación múltiple):} Ser afectado por múltiples variables a la vez (género + raza). Ej: Inteligencia Artificial de Reconocimiento Facial que falla un 35\% en mujeres de piel oscura versus un $<1\%$ en hombres blancos, debido a bases de datos sesgadas.
+	\end{itemize}
+
+	\vfill\null
+\end{multicols*}
+\end{document}

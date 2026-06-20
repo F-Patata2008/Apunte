@@ -1,0 +1,367 @@
+\documentclass[9pt,landscape,letterpaper]{extarticle}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[left=0.55cm,right=0.55cm,top=0.6cm,bottom=0.6cm]{geometry}
+\usepackage{multicol}
+\usepackage{amsmath,amssymb}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{booktabs}
+\usepackage{tcolorbox}
+\usepackage{graphicx}
+
+% =========================
+% Colores
+% =========================
+\definecolor{myblue}{RGB}{0, 70, 140}
+\definecolor{mygreen}{RGB}{0, 120, 50}
+\definecolor{myred}{RGB}{180, 0, 0}
+\definecolor{boxbg}{RGB}{245, 248, 255}
+\definecolor{tipsbg}{RGB}{255, 249, 230}
+\definecolor{tipsframe}{RGB}{255, 180, 0}
+
+% =========================
+% Títulos
+% =========================
+% Se removió \uppercase para evitar que cambie "myblue" a "MYBLUE"
+\titleformat{\section}{\color{myblue}\normalfont\large\bfseries}{\thesection.}{0.5em}{}[\color{myblue}\titlerule]
+\titleformat{\subsection}{\color{mygreen}\normalfont\normalsize\bfseries}{\thesubsection}{0.5em}{}
+\titlespacing*{\section}{0pt}{3pt}{2pt}
+\titlespacing*{\subsection}{0pt}{2pt}{1pt}
+
+% =========================
+% Formato general
+% =========================
+\setlist{nosep,leftmargin=10pt,topsep=1pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1.5pt}
+\setlength{\columnsep}{0.55cm}
+\setlength{\columnseprule}{0.3pt}
+
+\begin{document}
+\footnotesize
+\begin{multicols*}{3}
+	\raggedright % Elimina los Underfull \hbox y mejora lectura en columnas angostas
+
+	\begin{center}
+		\textbf{\Large RESUMEN BT1211 - EVALUACIÓN 2}
+	\end{center}
+
+	% ==========================================
+	\section{1. BIOTECNOLOGÍA E INDUSTRIA}
+	% ==========================================
+
+	\subsection{Bioprocesos y Enzimas}
+	\textbf{Bioproceso:} Flujo de trabajo: 1) Selección de sistema biológico/sustrato, 2) Diseño (modelamiento y genética), 3) Escalamiento (biorreactores), 4) Recuperación (filtración/purificación), 5) Destino final.\\
+	\textbf{Idea clave:} el objetivo es transformar materia prima biológica en un producto útil con el mayor rendimiento posible.\\
+	\textbf{Enzimas:} proteínas catalizadoras, muy específicas, que actúan a bajas concentraciones y en condiciones moderadas.\\
+	\textbf{Ventajas:} alta especificidad, menor gasto energético, biodegradables y menos contaminantes.\\
+	\textbf{Desventajas:} sensibles a cambios de pH/temperatura, problemas de estabilidad y alto costo de purificación.\\
+	\textbf{Usos:} lactasa (lácteos), quimosina (quesos), proteasas/lipasas (detergentes), pectinasas (jugos/vinos), xilanasas (papel/forestal).\\
+	\textbf{Mini-resumen:} en bioprocesos, primero eliges el sistema, luego lo optimizas, después lo escalas y al final purificas el producto.
+
+	\subsection{Ingeniería Genética y GMOs}
+	Modificar el genotipo mediante inserción, eliminación o cambio de secuencias de ADN para producir un fenotipo deseado.\\
+	\textbf{Elementos básicos:} gen de interés, huésped y vector.\\
+	\textbf{Vectores:} plásmidos = ADN circular bacteriano extracromosómico, con promotor y marcador de resistencia a antibióticos para selección.\\
+	\textbf{Sistemas de expresión:}
+	\begin{itemize}
+		\item \textbf{Procariontes (E. coli):} rápidos, baratos, simples; no hacen modificaciones postraduccionales complejas.
+		\item \textbf{Eucariontes (levaduras/células animales):} más lentos y caros, pero sirven para proteínas complejas.
+	\end{itemize}
+	\textbf{Transgénico vs híbrido:} híbrido = cruza natural entre especies afines; transgénico = inserta genes foráneos y rompe la barrera biológica.\\
+	\textbf{Mini-resumen:} si te preguntan por recombinación genética, piensa en \textit{gen + vector + huésped + selección}.
+
+	\subsection{Ejemplos de Aplicaciones GMO}
+	\begin{itemize}
+		\item \textbf{Insulina recombinante:} gen humano $\rightarrow$ plásmido $\rightarrow$ E. coli $\rightarrow$ biorreactor $\rightarrow$ purificación.
+		\item \textbf{Salmón AquaBounty:} hormona de crecimiento; crece más rápido.
+		\item \textbf{Vaca Bio Sidus:} insulina humana en la leche.
+		\item \textbf{Mosquito Aedes:} gen letal de activación tardía para controlar Dengue/Zika.
+		\item \textbf{Golden Rice:} beta-caroteno para prevenir deficiencia de vitamina A.
+		\item \textbf{Algodón BT:} produce toxina contra plagas.
+	\end{itemize}
+	\textbf{Tip de estudio:} si te piden explicar un transgénico, menciona siempre el gen insertado, el organismo huésped y el beneficio final.
+
+	\subsection{Química Verde}
+	Diseño de procesos y productos que reducen o eliminan sustancias peligrosas.\\
+	\textbf{Principios clave:} prevención de residuos, economía atómica, síntesis menos peligrosas, solventes seguros, eficiencia energética, materias primas renovables, catálisis, degradabilidad, monitoreo en tiempo real, prevención de accidentes.\\
+	\textbf{Ejemplos:} Sea-Nine (antiincrustante biodegradable), PLA y PASP como biopolímeros en vez de plásticos fósiles.\\
+	\textbf{Mini-resumen:} química verde no solo busca contaminar menos, sino diseñar desde el inicio procesos más limpios.
+
+	\subsection{Biomimética}
+	Ciencia que estudia e imita soluciones de la naturaleza.\\
+	\textbf{Niveles:} forma, proceso y sistema.\\
+	\textbf{Escalas:} micro, meso y macro.\\
+	\textbf{Abstracción:} literal o metafórica.\\
+	\textbf{Ejemplos:}
+	\begin{itemize}
+		\item \textbf{Tren Shinkansen:} martín pescador, reduce ruido y energía.
+		\item \textbf{Velcro:} ganchos de flor de cardo.
+		\item \textbf{Pintura Lotusan:} loto, autolimpiante.
+		\item \textbf{Bionic Car:} pez cofre, menor arrastre.
+		\item \textbf{Ventilación:} termiteros, enfriamiento pasivo.
+	\end{itemize}
+	\textbf{Biomedicina:} impresión 3D con PLA, órganos en chip, implante de retina.\\
+	\textbf{Mini-resumen:} biomimética = copiar funciones de la naturaleza para resolver problemas tecnológicos.
+
+	% ==========================================
+	\section{2. SISTEMAS DE CONTROL BIOLÓGICO}
+	% ==========================================
+	\textbf{Homeostasis:} capacidad de mantener estable el medio interno frente a perturbaciones.
+
+	\subsection{Componentes del sistema}
+	\begin{itemize}
+		\item \textbf{Set-point:} valor deseado.
+		\item \textbf{Proceso/planta:} variable a controlar.
+		\item \textbf{Sensor:} mide la salida.
+		\item \textbf{Controlador:} compara con el set-point y calcula el error $e$.
+		\item \textbf{Actuador:} ejecuta la acción.
+		\item \textbf{Comunicación:} neuronal (rápida) o humoral/endocrina (lenta).
+		\item \textbf{Perturbación:} factor externo que altera el sistema.
+	\end{itemize}
+	\textbf{Idea clave:} en un sistema de control, el error es la diferencia entre lo que quieres y lo que realmente tienes.
+
+	\subsection{Lazos y retroalimentación}
+	\textbf{Lazo abierto:} no hay sensor ni retroalimentación.\\
+	\textbf{Lazo cerrado:} la salida se mide y vuelve al controlador.\\
+	\begin{itemize}
+		\item \textbf{Feedback negativo:} se opone al estímulo y regula. Ej: insulina, glucagón, termorregulación, operón TRP.
+		\item \textbf{Feedback positivo:} amplifica el estímulo hasta completar un proceso. Ej: parto, coagulación.
+	\end{itemize}
+	\textbf{Mini-resumen:} feedback negativo = estabiliza; feedback positivo = acelera un evento hasta terminarlo.
+
+	\subsection{Actividad: Ducha Automática}
+	Error: $e = T_{\text{deseada}} - T_{\text{medida}}$.\\
+	\textbf{Control proporcional:} $m = K \cdot e$. Ajusta la válvula suavemente; es más realista y estable.\\
+	\textbf{Control constante:} abre o cierra de golpe; produce oscilaciones.\\
+	\textbf{Error común:} invertir el signo de $K$ hace que el sistema responda al revés y puede volverse inestable.
+
+	\subsection{Actividad: Tiro al Arco}
+	\textbf{Proceso:} vuelo de la flecha. \textbf{Set-point:} centro del blanco. \textbf{Sensor:} ojos. \textbf{Controlador:} tirador. \textbf{Actuador:} brazos/arco. \textbf{Perturbación:} viento.\\
+	Es un lazo cerrado con feedback negativo.\\
+	\textbf{Mini-resumen:} el tirador compara dónde va la flecha con dónde quiere que llegue.
+
+	\subsection{Operón TRP}
+	Sistema en \textit{E. coli} que regula la síntesis de triptófano. Es un lazo cerrado con feedback negativo.\\
+	\textbf{Promotor:} se une ARN polimerasa.\\
+	\textbf{Operador:} se une el represor TRP.\\
+	\textbf{Si hay mucho TRP:} el triptófano activa al represor, este bloquea el operador y se apaga la transcripción.\\
+	\textbf{Si hay poco TRP:} el represor se inactiva, el operador queda libre y el gen se enciende.\\
+	\textbf{Molécula X:} si imita al TRP, puede activar falsamente el represor y apagar el operón.\\
+	\textbf{Mini-resumen:} el operón TRP ahorra energía: solo produce triptófano cuando realmente hace falta.
+
+	% ==========================================
+	\section{3. MODELAMIENTO MATEMÁTICO}
+	% ==========================================
+	Representa procesos para predecir su evolución en el tiempo.\\
+	\textbf{Estado:} condición actual. \textbf{Espacio de estado:} conjunto de todos los estados posibles.
+
+	\begin{tcolorbox}[colback=boxbg,colframe=myblue,boxrule=0.5pt,arc=2pt]
+		\[
+			\frac{\Delta X}{\Delta t}=\Sigma \text{Entradas}-\Sigma \text{Salidas}+\Sigma \text{Generación}-\Sigma \text{Consumo}
+		\]
+	\end{tcolorbox}
+
+	\textbf{Estado estacionario:} $\frac{\Delta X}{\Delta t}=0$.\\
+	\textbf{Idea clave:} no significa que no haya flujo, sino que las entradas y salidas se compensan.
+
+	\subsection{Modelos poblacionales}
+	\textbf{Logística:}
+	\[
+		\frac{\Delta X}{\Delta t}=gX\left(1-\frac{X}{K}\right)
+	\]
+	\textbf{Lotka-Volterra:}
+	\[
+		\frac{\Delta A}{\Delta t}=\alpha A-\beta AT
+		\qquad
+		\frac{\Delta T}{\Delta t}=\gamma AT-\delta T
+	\]
+	\textbf{Mini-resumen:} logística = crecimiento limitado; Lotka-Volterra = oscilación presa-predador.
+
+	\subsection{Actividad: Apocalipsis Zombie}
+	Poblaciones: humanos ($H$), zombies ($Z$), muertos ($M$).\\
+	\[
+		\frac{dH}{dt}=\Pi-\alpha H-\beta HZ-\delta HZ
+	\]
+	\[
+		\frac{dZ}{dt}=\beta HZ+\gamma M-\delta HZ
+	\]
+	\[
+		\frac{dM}{dt}=\alpha H-\gamma M
+	\]
+	No hay equilibrio estable con ambas poblaciones positivas; una termina desplazando a la otra.\\
+	\textbf{Estrategias:} aislar zombies reduce $\beta$; destruir cadáveres reduce $\gamma$.\\
+	\textbf{Tip:} si te preguntan por equilibrio, revisa si puedes hacer cero todas las derivadas sin que una población desaparezca.
+
+	\subsection{MFA}
+	El \textit{Metabolic Flux Analysis} modela rutas metabólicas en estado estacionario.\\
+	Nodos = metabolitos; flechas = flujos $v$.\\
+	Se construye la matriz estequiométrica:
+	\[
+		S\cdot \vec{v}=0
+	\]
+	\textbf{Mini-resumen:} en MFA, lo importante es balancear flujos, no concentraciones individuales.
+
+	% ==========================================
+	\section{4. TRANSPORTE DE MASA Y ENERGÍA}
+	% ==========================================
+	\begin{tcolorbox}[colback=boxbg,colframe=myblue,boxrule=0.5pt,arc=2pt]
+		\[
+			\text{Flujo}=\frac{\text{Fuerza motriz}}{\text{Resistencia}}
+		\]
+	\end{tcolorbox}
+
+	\subsection{Transporte de masa}
+	\textbf{Difusión:} movimiento molecular aleatorio. Fuerza motriz: $\Delta C$. Útil en cortas distancias.\\
+	\textbf{Ley de Fick:}
+	\[
+		\text{Flujo}\propto \frac{\text{Área}\cdot \Delta C}{\text{Distancia}}
+	\]
+	Los organismos aumentan área (microvellosidades) y reducen distancia (capilares delgados).\\
+	\textbf{Convección:} masa arrastrada por un fluido. Fuerza motriz: $\Delta P$ o densidad. Útil en largas distancias.\\
+	\textbf{Mini-resumen:} difusión = moléculas se mueven solas; convección = el fluido las arrastra.
+
+	\subsection{Hemodiálisis}
+	La sangre pasa por un tubo semipermeable rodeado de líquido dializador. La urea sale por difusión gracias al gradiente de concentración.\\
+	Para evitar pérdida de glucosa, se agrega glucosa al dializador y se iguala la concentración, así $\Delta C_{\text{glucosa}}=0$.\\
+	Si falla la bomba, desaparece la convección y queda solo difusión longitudinal, que es muy lenta.\\
+	\textbf{Tip:} siempre identifica qué sustancia quieres eliminar y cuál quieres conservar.
+
+	\subsection{Viscosidad y Hagen-Poiseuille}
+	\textbf{Viscosidad:} resistencia de un fluido a deformarse. En líquidos, si la temperatura aumenta, la viscosidad disminuye.\\
+	\textbf{Newtonianos:} viscosidad constante. Ej: agua, plasma.\\
+	\textbf{No Newtonianos pseudoplásticos:} la viscosidad disminuye con mayor fuerza de corte. Ej: sangre, ketchup, pulpa.\\
+	\textbf{Hagen-Poiseuille:}
+	\[
+		\Delta P=\frac{128L\mu Q}{\pi D^4}
+	\]
+	Reducir el diámetro a la mitad disminuye el flujo 16 veces; duplicar el largo solo lo reduce a la mitad.\\
+	\textbf{Mini-resumen:} el diámetro es la variable más poderosa porque aparece elevada a la cuarta.
+
+	\subsection{Termodinámica y transferencia de calor}
+	\textbf{1ª ley:} la energía se transforma.\\
+	\textbf{2ª ley:} la entropía total aumenta.\\
+	La célula mantiene orden interno consumiendo ATP y liberando calor al entorno.\\
+	\textbf{Metabolismo:} catabolismo = degrada y libera energía; anabolismo = sintetiza y consume ATP.\\
+	\textbf{Ecosistemas:} solo cerca del 10\% de la energía pasa al siguiente nivel trófico.\\
+	\textbf{Mini-resumen:} la vida no viola la termodinámica porque exporta desorden al entorno.
+
+	\textbf{Transferencia de calor:}
+	\begin{itemize}
+		\item \textbf{Radiación:} ondas electromagnéticas.
+		\item \textbf{Conducción:} contacto directo.
+		\item \textbf{Convección:} fluidos en movimiento.
+		\item \textbf{Evaporación:} el sudor absorbe calor y enfría el cuerpo.
+	\end{itemize}
+	En fiebre hay vasoconstricción y menor sudoración para retener calor.
+
+	% ==========================================
+	\section{5. ESTADÍSTICA, PROBABILIDAD Y ERRORES}
+	% ==========================================
+	\textbf{Población:} totalidad de elementos. \textbf{Muestra:} subconjunto representativo. \textbf{Variable:} atributo medible.\\
+	\textbf{Estadística descriptiva:} resume datos. \textbf{Inferencial:} concluye sobre la población desde una muestra.
+
+	\subsection{Medidas descriptivas}
+	\textbf{Media:} promedio, sensible a valores extremos.\\
+	\textbf{Mediana:} valor central, robusta a extremos.\\
+	\textbf{Moda:} valor más frecuente.\\
+	Si hay asimetría derecha: moda $<$ mediana $<$ media.\\
+	\textbf{Varianza:} dispersión cuadrática respecto a la media.\\
+	\textbf{Desv. estándar:} raíz de la varianza; en normal, $\pm 2\sigma$ contiene aprox. 95\% de datos.\\
+	\textbf{Mini-resumen:} media para datos simétricos, mediana cuando hay outliers, moda para ver lo más repetido.
+
+	\subsection{Correlación y causalidad}
+	\textbf{Covarianza:} mide dependencia conjunta.\\
+	\textbf{Correlación:} $\rho\in[-1,1]$. Si $\rho>0$ es positiva; si $\rho<0$ es negativa.\\
+	\textbf{Correlación no implica causalidad:} dos variables pueden moverse juntas por azar o por un tercer factor oculto.\\
+	\textbf{Ejemplos clásicos:} polio y helados, divorcios y margarina.\\
+	\textbf{Mini-resumen:} correlación dice “se mueven juntos”, causalidad dice “uno provoca al otro”.
+
+	\subsection{Errores experimentales}
+	\begin{itemize}
+		\item \textbf{Aleatorio:} afecta la precisión. Solución: aumentar la muestra.
+		\item \textbf{Sistemático:} afecta la exactitud. Solución: recalibrar.
+	\end{itemize}
+	\textbf{Tip:} si el error cambia cada vez, es aleatorio; si siempre se va al mismo lado, es sistemático.
+
+	\subsection{Pruebas de hipótesis}
+	\textbf{H0:} hipótesis nula. \textbf{H1:} hipótesis alternativa.\\
+	Se rechaza H0 si el resultado es muy improbable bajo H0.\\
+	\begin{tcolorbox}[colback=white,colframe=black,boxrule=0.5pt,arc=0pt,left=2pt,right=2pt,top=2pt,bottom=2pt]
+		\scriptsize
+		\begin{tabular}{l|c|c}
+			\textbf{Realidad}     & \textbf{Aceptamos H0}          & \textbf{Rechazamos H0}        \\
+			\hline
+			\textbf{H0 verdadera} & Correcto                       & \textcolor{red}{Error Tipo I} \\
+			                      &                                & Falso positivo                \\
+			\hline
+			\textbf{H0 falsa}     & \textcolor{red}{Error Tipo II} & Correcto                      \\
+			                      & Falso negativo                 &                               \\
+		\end{tabular}
+	\end{tcolorbox}
+	\textbf{Error Tipo I:} rechazar H0 siendo verdadera.\\
+	\textbf{Error Tipo II:} aceptar H0 siendo falsa.\\
+	\textbf{Mini-resumen:} Tipo I = acusar inocente; Tipo II = dejar libre al culpable.
+
+	% ==========================================
+	\section{6. CASOS DE CONTROL, ACTIVIDADES Y TIPS}
+	% ==========================================
+
+	\begin{tcolorbox}[colback=tipsbg,colframe=tipsframe,boxrule=1pt,arc=3pt,left=3pt,right=3pt,top=3pt,bottom=3pt]
+		\textbf{\color{myblue} PARTE 1: ANÁLISIS DE MODELAMIENTO Y SISTEMAS BIOLÓGICOS}\\
+		\textbf{1. Apocalipsis Zombie (Actividad 6):}
+		\begin{itemize}
+			\item \textbf{¿Por qué no hay equilibrio?:} Si haces las derivadas de las ecuaciones iguales a cero, notarás que los términos cruzados (como $-\beta H Z$ y $-\delta H Z$) significan que la interacción destruye a ambas poblaciones. No pueden coexistir pacíficamente; una termina extinguiendo a la otra.
+			\item \textbf{Intervenciones:} Aislar zombies reduce el parámetro de infección ($\beta$). Destruir cadáveres reduce el parámetro de resurrección ($\gamma$).
+		\end{itemize}
+
+		\textbf{2. La Ducha Automática (Actividad 6):}
+		\begin{itemize}
+			\item \textbf{Leyes de Control:} El \textit{control proporcional} ($m = K \cdot e$) es ideal porque ajusta la válvula de a poco mientras el error se achica (es estable y no te quema ni congela de golpe). El \textit{control constante} abre o cierra todo de golpe, generando oscilaciones extremas.
+			\item \textbf{Trampa de los Signos:} Si inviertes el signo de $K$ (queda $-K$), el sistema se vuelve un \textbf{Feedback Positivo}. Si el agua sale muy fría, el sistema cerrará la llave de agua caliente, enfriándola aún más sin retorno.
+		\end{itemize}
+
+		\textbf{3. Operón Triptófano (Auxiliar 3):}
+		\begin{itemize}
+			\item \textbf{Componentes de Control:} La \textit{variable controlada} es la concentración de TRP. El \textit{sensor, controlador y actuador} están integrados en una misma molécula: el \textbf{Represor TRP}.
+			\item \textbf{El Inhibidor Competitivo (Molécula X):} Si una molécula falsa se une al Represor y lo activa, el operón se apagará permanentemente pensando que hay TRP, y la bacteria morirá por falta de aminoácidos. Esto es una perturbación que rompe el sistema de control.
+		\end{itemize}
+	\end{tcolorbox}
+
+	\begin{tcolorbox}[colback=tipsbg,colframe=tipsframe,boxrule=1pt,arc=3pt,left=3pt,right=3pt,top=3pt,bottom=3pt]
+		\textbf{\color{myblue} PARTE 2: TRANSPORTE DE MASA Y BIOMIMÉTICA}\\
+		\textbf{4. Piscinas y Flujo de Contaminantes (Actividad 5):}
+		\begin{itemize}
+			\item \textbf{Fuerza y Energía:} El gradiente es la diferencia de presión ($\Delta P$). Si el sistema fluye por gravedad (hacia abajo), es \textit{espontáneo}. Si requiere subir, necesita \textit{energía externa} (bomba).
+			\item \textbf{Trampa Ecuación Hagen-Poiseuille:} $\Delta P = \frac{128 L \mu Q}{\pi D^4}$. Si quieres reducir el flujo de tóxicos ($Q$), ¿Qué conviene más? ¿Duplicar el largo ($2L$) o reducir el diámetro a la mitad ($D/2$)? \\
+			      \textbf{Respuesta:} Reducir el diámetro es muchísimo más efectivo. Al estar elevado a 4, reducir el diámetro a la mitad divide el flujo por \textbf{16} (porque $2^4=16$). Aumentar el largo al doble solo lo divide por \textbf{2}.
+		\end{itemize}
+
+		\textbf{5. Máquina de Hemodiálisis (Auxiliar 3):}
+		\begin{itemize}
+			\item \textbf{Eliminar toxinas vs Guardar nutrientes:} La urea fluye de la sangre al líquido exterior por \textbf{difusión} (gracias a un gran $\Delta C$). Como la glucosa tiene el mismo tamaño, también se escaparía. \textit{Solución:} Añadir glucosa al líquido dializador para que \textbf{$\Delta C = 0$}. Sin gradiente, no hay fuerza motriz y la glucosa no difunde.
+			\item \textbf{Falla de Bomba:} Si la bomba muere, se pierde el transporte por \textbf{convección} (flujo masivo del fluido). La máquina se vuelve inútil porque dependería de la \textit{difusión longitudinal} a lo largo del tubo, lo cual sirve para distancias celulares pero es inmensamente lento para distancias macroscópicas.
+		\end{itemize}
+
+		\textbf{6. Biomimética - Respuestas Clásicas (Actividad 4):}
+		\begin{itemize}
+			\item \textbf{Ranas de Árbol:} Tienen microestructuras hexagonales en los dedos. \textit{Nivel de Abstracción:} Literal (copiar el patrón tal cual). \textit{Escala:} Micro. \textit{Aplicación:} Cintas o neumáticos que se adhieren temporalmente en mojado sin usar pegamentos químicos.
+			\item \textbf{Escarabajo Blanco:} Escamas desordenadas que dispersan toda la luz visible. \textit{Aplicación:} Crear superficies o pinturas súper blancas sin usar pigmentos tóxicos o metales pesados.
+			\item \textbf{Hojas Caducas:} Antes de botar las hojas, el árbol reabsorbe el Nitrógeno de la clorofila y deja caer lo menos energético. \textit{Nivel:} Proceso/Sistema. \textit{Aplicación:} Recuperación y reciclaje de reactivos de alto valor en procesos industriales antes del desecho final.
+		\end{itemize}
+	\end{tcolorbox}
+
+	\begin{tcolorbox}[colback=white,colframe=mygreen,boxrule=1pt,arc=3pt,left=3pt,right=3pt,top=3pt,bottom=3pt]
+		\textbf{\color{mygreen} TIPS RÁPIDOS DE ESTADÍSTICA}
+		\begin{itemize}
+			\item \textbf{Falso Positivo = Error Tipo I ($\alpha$):} La alarma suena, pero no hay fuego. Rechazas la Hipótesis Nula por error.
+			\item \textbf{Falso Negativo = Error Tipo II ($\beta$):} La casa se quema y la alarma no suena. Aceptas la Hipótesis Nula por error.
+			\item \textbf{Error Sistemático (Calibración):} Una balanza mal tarada. Por más que midas 1000 veces (aumentar $N$), el promedio seguirá estando mal. Solo se arregla cambiando el instrumento.
+			\item \textbf{Error Aleatorio (Azar):} Errores de pulso al pipetear. Se compensan al promediar, por lo que aumentar $N$ SÍ mejora la estimación.
+		\end{itemize}
+	\end{tcolorbox}
+
+\end{multicols*}
+\end{document}

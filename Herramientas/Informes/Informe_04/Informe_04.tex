@@ -1,0 +1,53 @@
+% ------------------------------------------------------------------------------
+% 1. INTRODUCCIÓN
+% ------------------------------------------------------------------------------
+\section{Introducción}
+
+La última unidad del curso abordó uno de los paradigmas tecnológicos más contingentes: la Inteligencia Artificial (IA) Generativa. A diferencia de las unidades anteriores, donde el enfoque estuvo en la sintaxis determinista de lenguajes de programación (\texttt{Python}) o el procesamiento manual de datos, esta etapa se centró en la \textbf{interacción, auditoría y evaluación ética} de Modelos de Lenguaje Grande (LLMs).
+
+A nivel formativo, lo que consolidé en esta unidad fue la desmitificación de la herramienta. Los LLMs no poseen razonamiento lógico ni comprensión física; operan bajo modelos de predicción estocástica de \textit{tokens}. Entender esta arquitectura matemática y las técnicas de \textit{Prompt Engineering} es crucial para un ingeniero, ya que permite utilizar la IA como un mecanismo de automatización, sin caer en sesgos cognitivos ni delegar en ella la responsabilidad analítica que exige la disciplina.
+
+% ------------------------------------------------------------------------------
+% 2. TRABAJOS REALIZADOS
+% ------------------------------------------------------------------------------
+\section{Trabajos Realizados}
+
+La unidad se articuló en torno a laboratorios que combinaron la validación algorítmica con la reflexión bioética:
+
+\begin{itemize}
+	\item \textbf{Laboratorio 11 (Ingeniería de Prompts y Auditoría de IAs):} El objetivo fue dominar el control de modelos generativos. Se aplicaron estrategias de \textit{Prompting} progresivo (\textit{Zero-shot, One-shot, Few-shot, Chain of Thought, Role Prompting}) para optimizar la generación de algoritmos en Python. Adicionalmente, se evaluó la fiabilidad de tres modelos líderes en la resolución de problemas de física clásica, contrastando las respuestas contra el rigor matemático real para evaluar la claridad conceptual y la presencia de errores.
+
+	\item \textbf{Laboratorio 12 (Ética, Sesgos y Responsabilidad Profesional):} Orientado a la responsabilidad humana frente a la automatización. Se analizó el \textit{Sesgo de Automatización} (la peligrosa tendencia a adoptar el juicio de la IA sin revisión crítica) y el fenómeno de la "Zona de Migajas" (\textit{Moral Crumple Zone}), donde el profesional absorbe el impacto ético y legal ante las fallas del software. Esto se cruzó con normativas globales (UNESCO) y el Código de Ética de la FCFM.
+\end{itemize}
+
+\subsection{Evidencia de los laboratorios}
+
+A continuación, se adjunta evidencia visual del trabajo desarrollado.
+
+% --- RECUERDA REEMPLAZAR ESTOS NOMBRES POR TUS PANTALLAZOS REALES ---
+\insertimage[\label{img:evidencia1}]{11.png}{width=0.8\textwidth}{Evidencia Lab 11: Aplicación de estrategias de Prompting y detección de alucinaciones.}
+\newpage
+
+% ------------------------------------------------------------------------------
+% 3. PRINCIPALES DIFICULTADES
+% ------------------------------------------------------------------------------
+\section{Reflexiones Técnicas y Dificultades}
+
+Durante el desarrollo de esta unidad, los desafíos trascendieron lo netamente computacional, adentrándose en la seguridad de la información y los formatos de trabajo:
+
+\begin{enumerate}
+	\item \textbf{Alucinaciones y Falsos Positivos:} Durante la auditoría a las IAs, se detectó una vulnerabilidad crítica en el modelo \textit{Perplexity}. Al explicar la fricción en un sistema dinámico, el algoritmo generó una "alucinación" lingüística, incrustando caracteres chinos (\texttt{减速aría}) en la respuesta en español. Este error evidenció gráficamente cómo la tokenización probabilística puede colapsar, reafirmando que confiar ciegamente en una IA para cálculos ingenieriles sin revisión humana cruzada es una negligencia técnica grave.
+
+	\item \textbf{El Ingeniero como "Zona de Migajas":} El análisis ético consolidó una premisa ineludible en el diseño de sistemas: la seguridad estructural no es delegable. Las IA no poseen personalidad jurídica ni moral. Si un modelo genera un cálculo erróneo, la responsabilidad penal recae íntegramente sobre el ingeniero que validó los resultados. Evitar el sesgo de automatización requiere mantener un escepticismo profesional constante ante cualquier herramienta predictiva.
+
+	\item \textbf{Fricción en los Formatos de Entrega:} Una dificultad netamente operativa fue la restricción de formatos impuesta en las evaluaciones finales. Acostumbrado a redactar la documentación técnica en \LaTeX{} de manera nativa mediante \texttt{Neovim} en mi entorno Linux local, el requisito de entregar reflexiones ofimáticas en formatos propietarios (\texttt{.docx}) supuso un claro retroceso en la eficiencia de mi flujo de trabajo y en la calidad tipográfica del documento final.
+\end{enumerate}
+
+% ------------------------------------------------------------------------------
+% 4. CONCLUSIONES
+% ------------------------------------------------------------------------------
+\section{Conclusiones}
+
+La unidad final de Inteligencia Artificial otorgó un cierre sumamente maduro a la asignatura de Herramientas Computacionales. Dejó en evidencia que el futuro de la ingeniería no radica en rechazar la automatización, sino en utilizarla con una metodología estructurada (\textit{Prompt Engineering}) y un escepticismo profesional implacable.
+
+Los modelos generativos son herramientas excepcionales para acelerar tareas redundantes o generar bases de código, pero carecen de la capacidad de abstracción y análisis crítico que define a un ingeniero formado en ciencias físicas y matemáticas. Personalmente, esta unidad reafirma mi preferencia por el control a bajo nivel (a través de lenguajes compilados como C/C++ o arquitecturas nativas de \textit{hardware}) por sobre las cajas negras probabilísticas. En última instancia, la tecnología más avanzada carece de valor si el profesional que la opera no posee el rigor ético y algorítmico para auditar sus resultados.

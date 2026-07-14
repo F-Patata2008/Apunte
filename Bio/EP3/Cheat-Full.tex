@@ -1,0 +1,325 @@
+\documentclass[11pt,landscape,letterpaper]{extarticle}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[left=0.4cm,right=0.4cm,top=0.5cm,bottom=0.5cm]{geometry}
+\usepackage{multicol}
+\usepackage{amsmath,amssymb}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{tcolorbox}
+\usepackage{graphicx}
+
+% =========================
+% Colores y Estilos
+% =========================
+\definecolor{myblue}{RGB}{0, 50, 120}
+\definecolor{mygreen}{RGB}{0, 100, 40}
+\definecolor{myred}{RGB}{150, 0, 0}
+\definecolor{darkgray}{RGB}{50, 50, 50}
+
+\titleformat{\section}{\normalfont\normalsize\bfseries\color{myblue}\uppercase}{\thesection.}{0.5em}{}[\vspace{-0.5em}\rule{\linewidth}{0.5pt}]
+\titleformat{\subsection}{\normalfont\small\bfseries\color{myred}}{\thesubsection}{0.5em}{}
+\titlespacing*{\section}{0pt}{1ex}{0.5ex}
+\titlespacing*{\subsection}{0pt}{1ex}{0.5ex}
+
+\setlist{leftmargin=10pt, nosep, topsep=0pt, parsep=0pt, partopsep=0pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1.5pt}
+\setlength{\columnsep}{0.5cm}
+\setlength{\columnseprule}{0.4pt}
+
+\begin{document}
+\begin{multicols*}{3}
+	\raggedright
+
+	\begin{center}
+		\textbf{\Large RESUMEN C3 (necesito un 4.0)} \\
+		\textit{\textbf{Por Felipe Colli Olea}}\\
+		\textit{Base de Datos Total: Conceptos, Fórmulas, Actividades y Controles Resueltos}
+	\end{center}
+
+	% ==========================================
+	\section{1. CIENCIA, INGENIERÍA Y MÉTODO}
+	% ==========================================
+	\textbf{Método Científico:} Inductivo (de lo particular a lo general). Etapas: Observación sistemática $\rightarrow$ Formulación de Hipótesis $\rightarrow$ Experimentación (con control y réplicas) $\rightarrow$ Conclusiones (revisión por pares). \\
+	\textbf{Pilares:} \textit{Reproducibilidad} (replicar en iguales condiciones) y \textit{Refutabilidad} (capacidad de demostrar que es falsa empíricamente).\\
+	\textbf{Leyes y Teorías:}
+	\begin{itemize}
+		\item \textbf{Teoría:} Explica el \textit{por qué}. (Marco de trabajo validado).
+		\item \textbf{Ley Empírica:} Describe el \textit{cómo} en base a datos (Ej: Ley de gases ideales $PV=nRT$).
+		\item \textbf{Ley Fenomenológica:} Explica comportamiento pero no origen último (Ej: Ley de Fick, Ley de Fourier).
+	\end{itemize}
+	\textbf{Fases del Desarrollo Tecnológico:} 1. Observación aleatoria $\rightarrow$ 2. Descripción (causa-efecto) $\rightarrow$ 3. Cuantificación (Modelos matemáticos) $\rightarrow$ 4. Uso y Control (Ingeniería aplicada).
+
+	% ==========================================
+	\section{2. EVOLUCIÓN Y MODULARIDAD}
+	% ==========================================
+	\subsection{Genética y Herencia}
+	\textbf{Leyes de Mendel:} 1. Uniformidad (F1 es igual al dominante), 2. Segregación (Alelos se separan 1 a 1 en meiosis), 3. Distribución Independiente.\\
+	\textbf{Dogma de la Biología:} ADN $\rightarrow$ ARN $\rightarrow$ Proteína.
+	\begin{itemize}
+		\item \textbf{Regulación de Genes:} \textit{Constitutiva} (siempre on), \textit{Inducible} (se activa con molécula, ej. Operón), \textit{Reprimible} (se inhibe).
+	\end{itemize}
+	\textbf{Fuentes de Variabilidad:} Mutaciones (errores de ADN o ambiente) y Reproducción sexual (entrecruzamiento).
+
+	\subsection{Evolución y Selección}
+	Darwin: \textbf{Selección Natural}. Requiere: Variabilidad, Ventaja adaptativa y Herencia. Las presiones del ambiente "filtran" a los más aptos.
+	\begin{itemize}
+		\item \textbf{Tipos de Selección:} \textit{Direccional} (1 extremo), \textit{Disruptiva} (ambos extremos, crea 2 especies), \textit{Estabilizadora} (promedio).
+		\item \textbf{Homología (Divergente):} Mismo origen evolutivo, distinta función. Ej: Brazo humano / Aleta ballena.
+		\item \textbf{Analogía (Convergente):} Distinto origen, misma función (adaptación a mismo ambiente). Ej: Aleta tiburón / Delfín. Ardilla voladora / Falangero.
+	\end{itemize}
+
+	\subsection{Modularidad y Cambio Incremental}
+	Los sistemas se dividen en módulos interactuantes.
+	\begin{itemize}
+		\item \textbf{Disociación:} Un módulo muta independiente. Ej: \textbf{Alometría} (Diferentes tasas de crecimiento en el mismo organismo, como cráneos en mamíferos vs reptiles).
+		\item \textbf{Duplicación:} Módulos redundantes divergen.
+		\item \textbf{Cooptación:} Estructura adopta nuevo rol. (Aleta a pata, pata a ala).
+	\end{itemize}
+
+	% ==========================================
+	\section{3. MACROMOLÉCULAS Y QUÍMICA}
+	% ==========================================
+	\textbf{Receta de la vida:} Proteínas, Lípidos, Azúcares, Ácidos Nucleicos y Agua.
+	\begin{itemize}
+		\item \textbf{Enlaces Fuertes (Covalentes):} Comparten electrones. Polares (O-H, N-H, hidrofílicos) y Apolares (C-H, hidrofóbicos).
+		\item \textbf{Enlaces Débiles (No Covalentes):} Puentes de Hidrógeno (dan fluidez al agua), Van der Waals, Interacciones Hidrofóbicas (fuerzan plegamiento proteico).
+	\end{itemize}
+	\textbf{Macromoléculas:}
+	\begin{enumerate}
+		\item \textbf{Lípidos:} Anfipáticos. Forman bicapas de membrana. Almacenan 6x más energía que glúcidos. \textit{Saturados} (rectos, grasas sólidas), \textit{Insaturados} (quiebres, aceites líquidos).
+		\item \textbf{Carbohidratos:} Enlace glucosídico. Energía y soporte (celulosa/quitina).
+		\item \textbf{Proteínas:} Enlace peptídico. Aminoácidos. Estructura determina función (actina/miosina en músculos, enzimas).
+		\item \textbf{Ác. Nucleicos:} Nucleótidos (Azúcar+Fosfato+Base). Purinas (A,G), Pirimidinas (C,T,U).
+	\end{enumerate}
+
+	% ==========================================
+	\section{4. BIOTECNOLOGÍA E INDUSTRIA}
+	% ==========================================
+	\textbf{Bioprocesos:} Uso de células/enzimas a escala industrial.
+	\textbf{Fases:} Selección $\rightarrow$ Diseño $\rightarrow$ Escalamiento (biorreactor) $\rightarrow$ Recuperación $\rightarrow$ Destino final.
+
+	\subsection{Uso de Enzimas (Biotransformación)}
+	Proteínas catalizadoras. Bajan energía de activación.
+	\begin{itemize}
+		\item \textbf{Pro:} No tóxicas, operan a pH/T° ambiente, ultra específicas.
+		\item \textbf{Contra:} Caras de purificar, se desnaturalizan fácil.
+		\item \textbf{Ejemplos:} Lactasa (lácteos), Quimosina (queso), Pectinasa (jugos), \textbf{Xilanasa/Lacasa} (Blanqueo de papel sin usar cloro), Proteasas/Lipasas (detergentes).
+	\end{itemize}
+
+	\subsection{Ingeniería Genética (GMO)}
+	\textbf{Pasos:} 1. Aislar gen, 2. Elegir huésped (E. coli es rápida/barata; Levaduras son lentas pero pliegan bien), 3. Insertar en \textbf{Vector (Plásmido)}, 4. Transformar, 5. Seleccionar (Ampicilina/GFP).
+	\begin{itemize}
+		\item \textbf{Ejemplos GMO:} Insulina Recombinante (elimina uso de chanchos), Golden Rice (Vitamina A), Algodón BT (resiste plagas), Salmón AquaBounty (crece 11x), Mosquitos letales (Zika).
+	\end{itemize}
+
+	\subsection{Empresas Biotecnológicas en Chile}
+	\textit{¡Ojo si piden ejemplos locales en la prueba!}
+	\begin{itemize}
+		\item \textbf{Kura Biotech:} Enzimas ultra-puras para drogas (usado por FBI).
+		\item \textbf{PhageLab:} Bacteriófagos anti-infecciones (reemplaza antibióticos).
+		\item \textbf{Spora / Bioelements / Quelp:} Biomateriales (cuero de hongo, plásticos biodegradables, films de algas).
+		\item \textbf{NotCo:} IA (Giuseppe) para alimentos plant-based. Luyef (Carne cultivada).
+	\end{itemize}
+
+	\subsection{Química Verde y Procesos Ambientales}
+	Principios: Prevenir residuos, economía atómica, no usar tóxicos, catalizadores.
+	\begin{itemize}
+		\item \textbf{Biolixiviación:} Bacterias litotróficas disuelven sulfuros de cobre. Cero relaves/azufre, pero muy lento.
+		\item \textbf{Lodos Activados:} Tratamiento de RILes Aeróbico.
+		\item \textbf{Biogás:} Tratamiento de RILes Anaeróbico (genera Metano).
+		\item \textbf{Sea-Nine:} Antiincrustante biodegradable (reemplaza tributilestaño).
+	\end{itemize}
+
+	% ==========================================
+	\section{5. BIOMIMÉTICA Y BIOALGORÍTMICA}
+	% ==========================================
+	Imitar a la naturaleza. Abstracción \textit{Literal} o \textit{Metafórica}. Escalas Micro, Meso, Macro.
+	\begin{itemize}
+		\item \textbf{Shinkansen (Tren bala):} Pico del Martín Pescador. Evita estampido.
+		\item \textbf{Velcro:} Ganchos flor de cardo. \textbf{Lotusan:} Hoja de loto (autolimpia).
+		\item \textbf{Ranas de árbol:} Microestructuras adhesivas. \textbf{Escarabajo blanco:} Escamas ópticas no tóxicas.
+		\item \textbf{Guerra Biónica (Act. 3):} Polillas vs Murciélagos = \textbf{Aviones Stealth / B-2 Spirit}. Absorben ultrasonidos igual que los radares militares.
+	\end{itemize}
+
+	\textbf{Teoría de la Información (Shannon):} $H(X) = - \sum p \log_2(p)$.
+	Menor predictibilidad = Mayor sorpresa = \textbf{Mayor Información} (Alta Entropía).
+
+	\textbf{Bioalgorítmica:}
+	\begin{itemize}
+		\item \textbf{Swarm Intelligence (Enjambre):} Reglas locales = inteligencia global. Hormigas (feromonas $\rightarrow$ rutas cortas en logística/FedEx). Aves (Boids $\rightarrow$ drones autónomos).
+		\item \textbf{Algoritmos Genéticos:} Crossover + Mutación + Fitness. (Diseño de antenas NASA, aerodinámica).
+	\end{itemize}
+
+	% ==========================================
+	\section{6. TERMODINÁMICA Y TRANSPORTE}
+	% ==========================================
+	\textbf{Leyes Termodinámica:} 1° Energía se transforma. 2° Entropía del universo aumenta. La célula genera orden interior expulsando calor/desorden al ambiente.
+
+	\subsection{Transferencia de Calor}
+	Conducción (contacto), Convección (fluido), Radiación (ondas), Evaporación (sudor usa alto calor específico del agua para enfriar).
+	\begin{itemize}
+		\item \textbf{Razón Área/Volumen:} Generación de calor $\propto r^3$. Pérdida $\propto r^2$. Animal grande (Dinosaurio) pierde menos calor relativo ($1/r$), reteniendo temperatura (gigantotermia).
+		\item \textbf{Contracorriente (Gaviotas/Patos):} Arterias pegadas a venas conducen calor para que la sangre no llegue congelada de vuelta al corazón.
+	\end{itemize}
+
+	\subsection{Transferencia de Masa y Fluidos}
+	$\text{Flujo} = \text{Fuerza Motriz} / \text{Resistencia}$.
+	\begin{itemize}
+		\item \textbf{Difusión (Ley de Fick):} FM = Gradiente de Concentración. $Flujo = (D \cdot \text{Área} \cdot \Delta C) / \text{Distancia}$. \textit{Hack celular:} Aumentar área (vellosidades) y disminuir distancia.
+		\item \textbf{Convección (Hagen-Poiseuille):} Transporte masivo por $\Delta P$.
+		      \[ \Delta P = \frac{128 L \eta Q_0}{\pi D^4} \implies Q_0 \propto \frac{D^4}{L} \]
+		      \textit{HACK DE PRUEBA:} Si reduces el diámetro $D$ a la mitad, el flujo cae \textbf{16 veces} ($2^4$). Es mil veces mejor jugar con el diámetro que con el largo $L$.
+		\item \textbf{Viscosidad ($\eta$):} Fluidos Newtonianos (Agua, constante). \textbf{Pseudoplásticos (Sangre, Kétchup):} Viscosidad BAJA cuando aumenta la velocidad/corte (glóbulos rojos se alinean).
+	\end{itemize}
+
+	\columnbreak % --- SALTO DE COLUMNA AL MEDIO ---
+
+	% ==========================================
+	\section{7. BIOELECTRICIDAD (LO NUEVO)}
+	% ==========================================
+	\textbf{Electroestática en Enzimas:} Polos (+) y (-) dirigen el sustrato.
+
+	\subsection{Membrana y Bomba Sodio-Potasio}
+	La membrana aísla. El \textbf{Gradiente Electroquímico} suma fuerza de concentración y fuerza de carga eléctrica.
+	\begin{itemize}
+		\item \textbf{Potencial de Reposo:} -70mV (interior celular negativo).
+		\item \textbf{Bomba $Na^+/K^+$:} Gasta ATP para sacar 3 $Na^+$ y meter 2 $K^+$ en contra del gradiente (Transporte Activo). Mantiene el voltaje vivo.
+	\end{itemize}
+
+	\subsection{Impulso Nervioso (Modelo Hodgkin-Huxley)}
+	\begin{enumerate}
+		\item \textbf{Despolarización:} Estímulo abre canales de Sodio. $Na^+$ entra de golpe. Voltaje sube a +40mV.
+		\item \textbf{Repolarización:} Se cierran los de Na, se abren los de Potasio. $K^+$ sale. Voltaje baja.
+		\item \textbf{P. Refractario:} Canales inactivados para que el impulso solo viaje hacia adelante.
+		\item \textbf{Sinapsis (Célula efectora):} Llega impulso $\rightarrow$ Abre canales $Ca^{+2}$ $\rightarrow$ Libera Neurotransmisor $\rightarrow$ Activa siguiente célula/músculo.
+	\end{enumerate}
+	\textbf{Anguila Eléctrica (Biomimética):} Electrocitos en serie (150mV c/u $\times$ 4000 = 600V). Inspiró a Volta para la Pila Eléctrica.
+	\textbf{Mediciones:} \textit{ECG} (Electrocardiograma, corazón), \textit{EEG} (Cerebro, Deep Learning predice ataques epilépticos), \textit{EMG} (Músculo).
+	\textbf{Implantes (Desafíos):} Miniaturizar = menos área para disipar calor (límite 30mW en cráneo). Piel aísla (5000 Ohms), pero interno es $0$ (peligro shock).
+
+	% ==========================================
+	\section{8. SISTEMAS DE CONTROL}
+	% ==========================================
+	\textbf{Lazo Abierto:} Sin sensor. Ciego. (Lavadora, Tostadora).
+	\textbf{Lazo Cerrado:} Con retroalimentación (Feedback). (Ducha automática, cuerpo humano).
+	\textbf{Componentes (Aprenderse esto de memoria):}
+	\begin{itemize}
+		\item \textbf{Variable Controlada:} Lo que me importa (T°, nivel, posición).
+		\item \textbf{Sensor:} El que mide (Ojo, termómetro, EMG).
+		\item \textbf{Set-Point:} Mi objetivo / Referencia. (Error = SetPoint - Medición).
+		\item \textbf{Controlador:} Cerebro o procesador. Calcula qué hacer.
+		\item \textbf{Actuador:} Brazo, músculo, válvula. El que ejecuta la fuerza física.
+		\item \textbf{Perturbación:} Viento externo, falla de presión, un tumor.
+	\end{itemize}
+
+	\subsection{Tipos de Feedback y Leyes}
+	\begin{itemize}
+		\item \textbf{F. Negativo:} Regulación/Homeostasis. Compensa la falla (Glucosa sube $\rightarrow$ Insulina la baja. Operón TRP).
+		\item \textbf{F. Positivo:} Amplificación destructiva o final. (Contracción en el parto $\rightarrow$ Oxitocina $\rightarrow$ Más contracción).
+		\item \textbf{Control Proporcional:} Se ajusta suavemente multiplicando por $K$.
+		\item \textbf{Control Constante (On/Off):} Prende o apaga de golpe (brusco).
+	\end{itemize}
+
+	% ==========================================
+	\section{9. ESTADÍSTICA Y TEST DE HIPÓTESIS}
+	% ==========================================
+	\textbf{Descriptiva:} Media (sensible a extremos), Mediana (robusta, mejor para asimetrías como sueldos), Desviación Estándar ($\sigma$, mide dispersión/riesgo).
+	\textbf{Correlación $\neq$ Causalidad:} Solo porque suben juntos (Margarina y Divorcios) no significa que uno cause el otro. Faltan pruebas.
+
+	\textbf{Test de Hipótesis:}
+	\begin{itemize}
+		\item \textbf{$H_0$ (Nula):} Status Quo. "No hay diferencias". "La máquina funciona bien". "El medicamento no hace nada".
+		\item \textbf{$H_1$ (Alternativa):} "La máquina roba". "El medicamento sana".
+	\end{itemize}
+	\begin{tcolorbox}[colback=boxbg,colframe=myblue,boxrule=1pt,left=2pt,right=2pt,top=2pt,bottom=2pt]
+		\textbf{ERROR TIPO I ($\alpha$, Falso Positivo):} Rechazar $H_0$ cuando era verdad.
+		\textit{Ej: Acusar y multar a la empresa por robar bencina cuando las máquinas estaban perfectas. O que suene la alarma de incendios sin haber fuego.} \\
+		\textbf{ERROR TIPO II ($\beta$, Falso Negativo):} Aceptar $H_0$ cuando era falsa.
+		\textit{Ej: Decir "las máquinas están bien", cuando en la realidad sí le estaban robando bencina a los clientes. O que la casa se queme y la alarma no suene.}
+	\end{tcolorbox}
+
+	\textbf{Errores Experimentales:}
+	\begin{itemize}
+		\item \textbf{Sistemático:} Hacia un solo lado (Balanza mala). Requiere recalibrar. Afecta exactitud.
+		\item \textbf{Aleatorio:} Azar. Se arregla tomando más muestras ($N \uparrow$). Afecta precisión.
+	\end{itemize}
+
+	% ==========================================
+	\section{10. GÉNERO E INTERSECCIONALIDAD}
+	% ==========================================
+	Las ciencias no son neutras.
+	\textbf{Sesgo de Diseño (Seguridad y Trabajo):}
+	\begin{itemize}
+		\item \textbf{Auto:} Probar cinturones con maniquí masculino hace que mujeres tengan 47\% más riesgo de muerte.
+		\item \textbf{Medicina:} Osteoporosis vista como "de mujeres" deja a hombres sin diagnóstico. Dosis de drogas probadas en blancos fallan en asiáticos.
+		\item \textbf{Industria Textil (C2):} Disminuir los Elementos de Protección (EPP) impacta \textbf{diferenciadamente}. 72\% de la industria son mujeres. Exponerlas a tóxicos genera cáncer de mama. Al sumar nivel socioeconómico bajo (barrios pobres), la falta de EPP cruza género + pobreza.
+		\item \textbf{Interseccionalidad:} Suma de vectores de discriminación. Ej: IA de Reconocimiento Facial falla 35\% en mujeres negras, pero $<1\%$ en hombres blancos. Bases de datos sesgadas.
+	\end{itemize}
+
+	% ==========================================
+	\section{11. MODELAMIENTO (ECUACIONES DIFERENCIALES)}
+	% ==========================================
+	Ecuación general: $ \frac{dX}{dt} = IN - OUT + GEN - CONS $
+	\textbf{Estado Estacionario:} Todo $dX/dt = 0$.
+
+	\textbf{Apocalipsis Zombie (Actividad 6):}
+	\begin{itemize}
+		\item $dH/dt = \Pi - \delta H - \beta H Z$ (Humanos nacen - mueren nat - infectados)
+		\item $dZ/dt = \beta H Z - \alpha H Z + \gamma M$ (Infectados - asesinados + revividos)
+		\item $dM/dt = \delta H - \gamma M$ (Mueren natural - reviven a zombie)
+	\end{itemize}
+	\textit{Análisis de Equilibrio:} Si se iguala todo a cero (asumiendo $\Pi=0$ y $\delta=0$), queda $-\beta H Z = 0$. Esto obliga matemáticamente a que Humanos $H=0$ o Zombies $Z=0$. \textbf{No pueden coexistir pacíficamente}. Uno extingue al otro.
+
+	\columnbreak % --- SALTO DE COLUMNA AL TERCIO FINAL ---
+
+	% ==========================================
+	\section{12. PLANTILLAS DE RESPUESTA (COPY-PASTE)}
+	% ==========================================
+	\textit{Usa estos textos literales en el control de desarrollo, rellena los espacios [ ] y asegúrate un 7.0.}
+
+	\begin{tcolorbox}[colback=tipsbg,colframe=myred,boxrule=1.2pt,arc=3pt,left=3pt,right=3pt,top=2pt,bottom=2pt]
+		\textbf{1. IDENTIFICAR SISTEMA DE CONTROL (Ej: Prótesis, Termostato, Dosis):} \\
+		``El sistema descrito corresponde a un control de \textbf{[Lazo Cerrado / Lazo Abierto]}. En este caso, la \textbf{Variable Controlada} es [la posición / la temperatura]. El \textbf{Sensor} es [el electrodo EMG / termómetro], el cual envía información al \textbf{Controlador} [chip / cerebro]. El controlador procesa el \textbf{Error} respecto al \textbf{Set-Point} [posición deseada] y envía la señal al \textbf{Actuador} [motor / músculo]. Además, presenta un \textbf{Feedback Negativo} ya que la acción del actuador busca contrarrestar la \textbf{Perturbación} [peso extra / viento] para retornar al equilibrio (homeostasis).''
+	\end{tcolorbox}
+
+	\begin{tcolorbox}[colback=tipsbg,colframe=myred,boxrule=1.2pt,arc=3pt,left=3pt,right=3pt,top=2pt,bottom=2pt]
+		\textbf{2. MEJORAR TRANSPORTE Y FLUIDOS (Hagen-Poiseuille / Diálisis):} \\
+		``El transporte se rige por el gradiente de \textbf{[Presión / Concentración]}. De acuerdo con la ecuación de \textbf{[Hagen-Poiseuille / Ley de Fick]}, el factor más crítico para optimizar el flujo es el \textbf{[diámetro $D^4$ / Área superficial]}. Para mejorar el transporte sin gasto extra de energía, se propone aumentar exponencialmente el área (imitando microvellosidades biológicas) o bien, si se trata de tuberías, aumentar su diámetro, ya que reducir el diámetro a la mitad castiga el flujo en 16 veces, siendo un factor de diseño de inercia dominante respecto a modificar solo la longitud $L$.''
+	\end{tcolorbox}
+
+	\begin{tcolorbox}[colback=tipsbg,colframe=myred,boxrule=1.2pt,arc=3pt,left=3pt,right=3pt,top=2pt,bottom=2pt]
+		\textbf{3. SESGO DE GÉNERO E INTERSECCIONALIDAD (Ética/Impacto):} \\
+		``La implementación de esta tecnología presenta un grave \textbf{sesgo sistemático de diseño} al no considerar la \textbf{Interseccionalidad}. Ignora variables biológicas (sexo) y socioculturales (género y nivel socioeconómico). Dado que el \textbf{[X \%]} de la población usuaria pertenece a \textbf{[mujeres / minorías / trabajadores expuestos]}, asumir un estándar único (como el hombre promedio o europeo) implica que los beneficios y riesgos se distribuyan de forma desigual. Se requiere rediseñar el modelo incorporando matrices de datos diversos para evitar falsos negativos en salud o exposición asimétrica a tóxicos.''
+	\end{tcolorbox}
+
+	\begin{tcolorbox}[colback=tipsbg,colframe=myred,boxrule=1.2pt,arc=3pt,left=3pt,right=3pt,top=2pt,bottom=2pt]
+		\textbf{4. RESPUESTA SOBRE BIOMIMÉTICA E INNOVACIÓN:} \\
+		``Se propone un diseño basado en \textbf{Biomimética} con un nivel de abstracción \textbf{[Metafórico / Literal]}. Inspirado en \textbf{[la hoja de loto / el vuelo del búho / polillas]}, se extrapola su \textbf{[mecanismo físico / estructural]} hacia una escala \textbf{[Macro / Meso / Micro]}. Esta innovación permite cumplir la función de \textbf{[reducir fricción / camuflaje acústico / limpieza pasiva]} minimizando el gasto de \textit{energía} o evitando el uso de \textit{químicos tóxicos} (alineado a los principios de Química Verde).''
+	\end{tcolorbox}
+
+	\begin{tcolorbox}[colback=tipsbg,colframe=myred,boxrule=1.2pt,arc=3pt,left=3pt,right=3pt,top=2pt,bottom=2pt]
+		\textbf{5. BALANCES Y ESTADO ESTACIONARIO (Piscina / Bioreactor):} \\
+		``Para plantear el modelo matemático, se considera la acumulación $d(V \cdot C)/dt = \sum In - \sum Out$. Al buscar el \textbf{Estado Estacionario}, la acumulación se iguala a cero. Por lo tanto, el flujo volumétrico que entra por la concentración entrante debe ser equivalente al que sale (más generación o consumo, si aplica). Si se introduce una perturbación, el sistema perderá la linealidad hasta que el \textit{controlador} vuelva a compensar los flujos.''
+	\end{tcolorbox}
+
+	% ==========================================
+	\section{13. HACKS RÁPIDOS Y CORTOS}
+	% ==========================================
+	\begin{itemize}
+		\item \textbf{Carga Eléctrica Músculos:} Músculo relaja/contrae por liberación de \textbf{Calcio ($Ca^{2+}$)} provocado por Neurotransmisores (Acetilcolina).
+		\item \textbf{Diálisis (Glucosa y Urea):} Poner la misma Glucosa en el dializador que en la sangre hace que el $\Delta C = 0$ (fuerza motriz = 0), salvando el nutriente vital. Solo la urea tiene gradiente para salir.
+		\item \textbf{Riesgo de Toxicidad Industrial (MTBE / Textil):} Si el contaminante se toca (piel) pasa por \textbf{Difusión} pasiva. Si se respira, entra por \textbf{Convección} (flujo de aire pulmonar). Ninguno usa ATP celular.
+		\item \textbf{Fórmula de Dispersión en Estadística:} La \textbf{Varianza} está elevada al cuadrado. La \textbf{Desviación Estándar} ($\sigma$) es lineal, por eso se usa para graficar campanas de Gauss.
+	\end{itemize}
+
+	\vspace{0.5cm}
+	\begin{center}
+		\textbf{\color{myblue}\LARGE ¡LEE ATENTAMENTE, COPIA EXACTO Y SACA ESE 6.0 QUE TE SALVA EL RAMO!} \\
+		\textit{Buran, Su-47 y Bodoque están contigo. ¡A romperla!}
+	\end{center}
+
+\end{multicols*}
+\end{document}

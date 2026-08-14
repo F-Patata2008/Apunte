@@ -1,0 +1,446 @@
+\documentclass[11pt]{article}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{xcolor}
+
+% --- Configuración para mostrar código C++ ---
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{cpstyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen}\itshape,
+    keywordstyle=\color{blue}\bfseries,
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=4
+}
+\lstset{style=cpstyle}
+
+\hypersetup{
+    pdftitle={Apunte Selectivo Progcomp Uchile},
+    pdfauthor={Felipe Colli Olea},
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=cyan
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\footnotesize Felipe Colli, Todos los Derechos Reservados}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\title{\textbf{Apunte Selectivo Progcomp Uchile / ICPC}}
+\author{Felipe Colli Olea}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{fancy}
+\tableofcontents
+\newpage
+
+\section{Plantillas Base}
+
+\subsection{Template Básico (con casos de prueba)}
+\begin{lstlisting}[language=C++]
+#include <bits/stdc++.h>
+using namespace std;
+
+typedef long long ll;
+typedef string str;
+#define vec vector
+
+int main() {
+    ios_base::sync_with_stdio(0); cin.tie(0);
+    int t;
+    cin >> t;
+    while (t--) {
+        // Logica aqui
+    }
+    return 0;
+}
+\end{lstlisting}
+
+\section{Estructuras de Datos}
+
+\subsection{Segment Tree (Min Query)}
+\begin{lstlisting}[language=C++]
+struct SegmentTree {
+    int n;
+    vec<ll> Tree;
+
+    SegmentTree(vec<ll>& a) {
+        n = a.size();
+        Tree.resize(4 * n);
+        build(a, 0, 0, n - 1);
+    }
+
+    void build(vec<ll>& a, int nodo, int izq, int der) {
+        if (izq == der) {
+            Tree[nodo] = a[izq];
+            return;
+        }
+        int mid = izq + (der - izq) / 2;
+        build(a, 2 * nodo + 1, izq, mid);
+        build(a, 2 * nodo + 2, mid + 1, der);
+        Tree[nodo] = min(Tree[2 * nodo + 1], Tree[2 * nodo + 2]);
+    }
+
+    ll q(int l, int r) {
+        return query(0, 0, n - 1, l, r);
+    }
+
+    ll query(int nodo, int izq, int der, int l, int r) {
+        if (r < izq || l > der) return LLONG_MAX;
+        if (l <= izq && der <= r) return Tree[nodo];
+        int mid = izq + (der - izq) / 2;
+        return min(query(2 * nodo + 1, izq, mid, l, r),
+                   query(2 * nodo + 2, mid + 1, der, l, r));
+    }
+};
+\end{lstlisting}
+
+\subsection{Segment Tree (Max Query)}
+Para Max Query, usa el mismo código de arriba, pero reemplaza \texttt{min} por \texttt{max} y el retorno fuera de rango por \texttt{LLONG\_MIN}.
+
+\section{Grafos (Tu Salvador)}
+\textit{Nota: Si los grafos no son lo tuyo, solo copia y adapta. Están optimizados y resumidos respecto al PDF para que no falles en la implementación.}
+
+\subsection{Búsqueda en Profundidad (DFS)}
+Ideal para contar componentes conexas, detectar ciclos, o simplemente recorrer.
+\begin{lstlisting}[language=C++]
+vector<int> visitados;
+vector<vector<int>> AdjList;
+
+void dfs(int u) {
+    visitados[u] = 1;
+    for (int v : AdjList[u]) {
+        if (!visitados[v]) {
+            dfs(v);
+        }
+    }
+}
+// En main(): visitados.assign(N, 0); AdjList.assign(N, vector<int>());
+\end{lstlisting}
+
+\subsection{Búsqueda en Anchura (BFS)}
+Encuentra el \textbf{camino mínimo en grafos SIN peso} (distancia, cantidad de saltos).
+\begin{lstlisting}[language=C++]
+vector<int> dist;
+vector<vector<int>> AdjList;
+
+void bfs(int inicio) {
+    dist[inicio] = 0;
+    queue<int> q;
+    q.push(inicio);
+    
+    while (!q.empty()) {
+        int u = q.front();
+        q.pop();
+        
+        for (int v : AdjList[u]) {
+            if (dist[v] == -1) { // -1 significa no visitado
+                dist[v] = dist[u] + 1;
+                q.push(v);
+            }
+        }
+    }
+}
+// En main(): dist.assign(N, -1);
+\end{lstlisting}
+
+\subsection{Grafos Implícitos (Grillas y Laberintos)}
+Cuando el problema es un tablero/matriz, no construimos un \texttt{AdjList}. Usamos los arreglos \texttt{dr} y \texttt{dc} para movernos (Arriba, Abajo, Izq, Der).
+\begin{lstlisting}[language=C++]
+int MAX_FILAS, MAX_COLUMNAS;
+vector<vector<char>> grilla;
+
+// Movimientos: S, SE, E, NE, N, NW, W, SW (si piden 8 direcciones)
+// Para 4 direcciones usa solo los valores correspondientes.
+int dr[] = { 1, 1, 0, -1, -1, -1, 0, 1 }; 
+int dc[] = { 0, 1, 1, 1, 0, -1, -1, -1 };
+
+bool limites(int f, int c) {
+    return (f >= 0 && f < MAX_FILAS && c >= 0 && c < MAX_COLUMNAS);
+}
+
+// Ejemplo explorando con BFS
+void bfs_grilla(int start_f, int start_c) {
+    queue<pair<int, int>> q;
+    q.push({start_f, start_c});
+    
+    while (!q.empty()) {
+        auto [f, c] = q.front(); q.pop();
+        
+        for (int i = 0; i < 8; ++i) { // O i < 4 si son 4 direcciones
+            int nf = f + dr[i];
+            int nc = c + dc[i];
+            if (limites(nf, nc) /* && condicion_extra */) {
+                // Procesar vecino nf, nc
+                q.push({nf, nc});
+            }
+        }
+    }
+}
+\end{lstlisting}
+
+\subsection{Dijkstra (Camino Mínimo CON peso positivo)}
+Encuentra la ruta más barata. ¡Ojo! Acá se usa una \texttt{priority\_queue} en reversa (de menor a mayor).
+\begin{lstlisting}[language=C++]
+vector<long long> dist;
+// AdjList guarda {nodo_destino, peso_arista}
+vector<vector<pair<int, int>>> AdjList; 
+const long long INF = LLONG_MAX;
+
+void dijkstra(int inicio) {
+    dist[inicio] = 0;
+    // La cola guarda {distancia_acumulada, nodo_actual}
+    priority_queue<pair<long long, int>, 
+                   vector<pair<long long, int>>, 
+                   greater<pair<long long, int>>> pq;
+                   
+    pq.push({0, inicio});
+    
+    while (!pq.empty()) {
+        auto [d_actual, u] = pq.top();
+        pq.pop();
+        
+        // Si encontramos un camino peor guardado en la cola, lo ignoramos
+        if (d_actual > dist[u]) continue;
+        
+        for (auto edge : AdjList[u]) {
+            int v = edge.first;
+            int peso = edge.second;
+            
+            if (dist[u] + peso < dist[v]) {
+                dist[v] = dist[u] + peso;
+                pq.push({dist[v], v});
+            }
+        }
+    }
+}
+// En main(): dist.assign(N, INF);
+\end{lstlisting}
+
+
+\section{Strings y Textos}
+
+\subsection{KMP Prefix Function}
+Encuentra ocurrencias de patrones en tiempo lineal.
+\begin{lstlisting}[language=C++]
+vector<ll> prefix_function(const string& s) {
+    int n = s.size();
+    vector<ll> pi(n, 0);
+    for (int i = 1; i < n; i++) {
+        int j = pi[i - 1];
+        while (j > 0 && s[i] != s[j])
+            j = pi[j - 1];
+        if (s[i] == s[j])
+            j++;
+        pi[i] = j;
+    }
+    return pi;
+}
+\end{lstlisting}
+
+\subsection{Partir (Split) un String por Delimitadores}
+Usando la librería de C (\texttt{<cstring>}) para separar oraciones por espacios o comas.
+\begin{lstlisting}[language=C++]
+string texto = "Este texto, tiene comas!";
+char* token = strtok(&texto[0], " ,!"); // Delimitadores: espacio, coma, exclamacion
+
+vector<string> palabras;
+while (token != NULL) {
+    palabras.push_back(token);
+    token = strtok(NULL, " ,!"); 
+}
+\end{lstlisting}
+
+\section{Programación Dinámica (DP)}
+
+\subsection{Distancia de Edición (Edit Distance)}
+Mínimo costo de conversiones (insertar, borrar, reemplazar) para igualar dos strings. Costo unitario = 1.
+\begin{lstlisting}[language=C++]
+int min3(int x, int y, int z) { return min(min(x, y), z); }
+
+int edit_distance(string str1, string str2) {
+    int m = str1.size(), n = str2.size();
+    vector<vector<int>> dp(m + 1, vector<int>(n + 1));
+    for (int i = 0; i <= m; i++) {
+        for (int j = 0; j <= n; j++) {
+            if (i == 0) dp[i][j] = j;
+            else if (j == 0) dp[i][j] = i;
+            else if (str1[i - 1] == str2[j - 1]) dp[i][j] = dp[i - 1][j - 1];
+            else dp[i][j] = 1 + min3(dp[i][j - 1],    // Insertar
+                                     dp[i - 1][j],    // Remover
+                                     dp[i - 1][j - 1]); // Reemplazar
+        }
+    }
+    return dp[m][n];
+}
+\end{lstlisting}
+
+\subsection{Subsecuencia Común Más Larga (LCS)}
+Encuentra el tamaño de la cadena común más larga (no necesitan ser continuas).
+\begin{lstlisting}[language=C++]
+int LCS(string str1, string str2) {
+    int m = str1.size(), n = str2.size();
+    vector<vector<int>> L(m + 1, vector<int>(n + 1, 0));
+    for (int i = 0; i <= m; i++) {
+        for (int j = 0; j <= n; j++) {
+            if (i == 0 || j == 0) L[i][j] = 0;
+            else if (str1[i - 1] == str2[j - 1])
+                L[i][j] = L[i - 1][j - 1] + 1;
+            else
+                L[i][j] = max(L[i - 1][j], L[i][j - 1]);
+        }
+    }
+    return L[m][n];
+}
+\end{lstlisting}
+
+\section{Matemáticas / Utilidades}
+\subsection{Generar todas las permutaciones}
+\begin{lstlisting}[language=C++]
+string s = "CBA";
+sort(s.begin(), s.end()); // IMPORTANTISIMO: Siempre ordenar antes
+vector<string> salida;
+do {
+    salida.push_back(s);
+} while (next_permutation(s.begin(), s.end()));
+\end{lstlisting}
+
+
+\section{Estructuras "Mágicas" y Fáciles}
+
+\subsection{Ordered Set (PBDS)}
+Es un \texttt{set} normal, pero tiene dos funciones extra: \texttt{find\_by\_order(k)} (devuelve iterador al k-ésimo elemento, 0-indexado) y \texttt{order\_of\_key(x)} (cuenta cuántos elementos son estrictamente menores a x).
+\begin{lstlisting}[language=C++]
+#include <ext/pb_ds/assoc_container.hpp>
+#include <ext/pb_ds/tree_policy.hpp>
+using namespace __gnu_pbds;
+
+template <typename T>
+using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
+
+// Uso:
+// ordered_set<int> st;
+// st.insert(5); st.insert(2);
+// cout << *st.find_by_order(0); // Imprime 2
+// cout << st.order_of_key(5);   // Imprime 1 (solo el 2 es menor)
+\end{lstlisting}
+
+\subsection{Fenwick Tree (BIT)}
+Suma en rangos y actualización de un punto en $O(\log n)$. Más corto que SegTree. (1-indexado internamente).
+\begin{lstlisting}[language=C++]
+struct BIT {
+    int n; vector<ll> bit;
+    BIT(int n) : n(n), bit(n + 1, 0) {}
+    void add(int idx, ll val) {
+        for (++idx; idx <= n; idx += idx & -idx) bit[idx] += val;
+    }
+    ll query(int idx) { // suma de [0, idx]
+        ll ret = 0;
+        for (++idx; idx > 0; idx -= idx & -idx) ret += bit[idx];
+        return ret;
+    }
+    ll query(int l, int r) { return query(r) - query(l - 1); }
+};
+\end{lstlisting}
+
+\subsection{Disjoint Set Union (DSU)}
+Agrupa elementos y verifica si dos elementos están en el mismo grupo. Excelente para problemas de conectividad o Kruskal (MST).
+\begin{lstlisting}[language=C++]
+struct DSU {
+    vector<int> p, sz;
+    DSU(int n) {
+        p.resize(n); iota(p.begin(), p.end(), 0);
+        sz.assign(n, 1);
+    }
+    int find(int i) {
+        if (p[i] == i) return i;
+        return p[i] = find(p[i]); // Path compression
+    }
+    bool unite(int i, int j) {
+        int root_i = find(i), root_j = find(j);
+        if (root_i == root_j) return false;
+        if (sz[root_i] < sz[root_j]) swap(root_i, root_j);
+        p[root_j] = root_i;
+        sz[root_i] += sz[root_j];
+        return true;
+    }
+};
+\end{lstlisting}
+
+
+\section{Matemáticas}
+
+\subsection{Criba de Eratóstenes (Sieve)}
+Encuentra todos los primos hasta $N$ y el factor primo más pequeño (SPF) de cada número.
+\begin{lstlisting}[language=C++]
+const int MAXN = 1e6 + 5; // Cambiar segun problema
+int spf[MAXN]; // Smallest Prime Factor
+vector<int> primes;
+
+void sieve() {
+    for (int i = 2; i < MAXN; i++) spf[i] = i;
+    for (int i = 2; i * i < MAXN; i++) {
+        if (spf[i] == i) {
+            for (int j = i * i; j < MAXN; j += i)
+                if (spf[j] == j) spf[j] = i;
+        }
+    }
+    for (int i = 2; i < MAXN; i++) 
+        if (spf[i] == i) primes.push_back(i);
+}
+// factorizar rapido: while(n > 1) { factors.push_back(spf[n]); n /= spf[n]; }
+\end{lstlisting}
+
+\subsection{Exponenciación Binaria y Modulo}
+Calcula $a^b \pmod m$ en $O(\log b)$.
+\begin{lstlisting}[language=C++]
+ll binpow(ll a, ll b, ll m) {
+    a %= m;
+    ll res = 1;
+    while (b > 0) {
+        if (b & 1) res = res * a % m;
+        a = a * a % m;
+        b >>= 1;
+    }
+    return res;
+}
+
+// Inverso modular de A mod M (Solo funciona si M es primo)
+ll modInverse(ll a, ll m) {
+    return binpow(a, m - 2, m);
+}
+// Division modular (a / b) mod m
+ll modDivide(ll a, ll b, ll m) {
+    return (a % m) * modInverse(b, m) % m;
+}
+\end{lstlisting}
+
+\end{document}

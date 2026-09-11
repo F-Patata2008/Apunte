@@ -1,1 +1,38 @@
 push.log
+
+# LaTeX Auxiliary / Compilation Files
+*.aux
+*.fls
+*.fdb_latexmk
+*.log
+*.out
+*.toc
+*.synctex*
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.nav
+*.snm
+*.vrb
+*.lot
+*.lof
+*.idx
+*.ilg
+*.ind
+pdflatex*.fls
+texput.log
+texput.fls
+
+# Python / Jupyter Caches & Environments
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# OS Artifacts
+.DS_Store
+Thumbs.db

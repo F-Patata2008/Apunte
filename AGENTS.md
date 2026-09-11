@@ -28,7 +28,8 @@ Colección personal de apuntes y trabajos en LaTeX. No hay build system, tests, 
 
 ## Convenciones
 
-- README.md está desactualizado (describe una estructura que no coincide con la actual).
+- README.md está actualizado y documenta todos los módulos con índices locales.
+- Cada módulo principal (`Herramientas/`, `Desafios/`, `Bio/`, `balti/`, `In/`, `Prog-Comp/`, `Lukas/`) cuenta con su propio `README.md` de navegación.
 - La licencia es CC BY-NC-ND 4.0 (no modificar).
 - No hay CI, tests, linters, formateadores, ni typecheckers.
 - No hay `opencode.json` ni otras configs de herramientas.

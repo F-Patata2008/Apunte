@@ -16,8 +16,8 @@ Repositorio personal y centralizado de apuntes, informes de laboratorio, proyect
 | [**`Herramientas/`**](./Herramientas/README.md) | **CC1000 — Herramientas Computacionales** | Informes técnicos (`Informes/`), laboratorios (`Labs/`), trabajos previos (`TP/`) y post-laboratorio (`TPL/`) en LaTeX, Python y Excel. |
 | [**`Desafios/`**](./Desafios/README.md) | **CD1100 — Desafíos de Innovación** | Reportes de innovación, entrevistas y proyectos de ingeniería bajo estándares bibliográficos APA. |
 | [**`Fisica/`**](./Fisica/) | **FI1000 — Introducción a la Física Clásica** | Material docente oficial de referencia: cátedras, clases auxiliares, laboratorios y libros guía. |
-| [**`Bio/`**](./Bio/README.md) | **Biología Celular y Molecular** | Hojas de resumen condensadas (*cheat-sheets*) de alta densidad para EP1, EP2 y EP3. |
-| [**`balti/`**](./balti/README.md) | **Generador Kumon Matemáticas** | Generador en Python de guías de ejercicios matemáticos (nivel F: fracciones, jerarquía de operaciones, potencias y cuadrados) con pautas resueltas. |
+| [**`Algebra/`**](./Algebra/) | **MA1101 — Introducción al Álgebra** | Controles, pautas oficiales, resúmenes y material bibliográfico complementario de álgebra. |
+| [**`Calculo/`**](./Calculo/) | **MA1002 — Cálculo Avanzado** | Clases auxiliares, problemas propuestos, resoluciones de problemas (RP), controles y material docente. |
 | [**`Prog-Comp/`**](./Prog-Comp/README.md) | **Programación Competitiva** | Apuntes selectivos para ICPC, OCI y ProgComp Uchile con snippets optimizados de C++20 y algoritmos de grafos / estructuras de datos. |
 | [**`In/`**](./In/README.md) | **Instituto Nacional (Enseñanza Media)** | Apuntes de 12 asignaturas escolares: Matemáticas, Probabilidades, Cálculo, Física, Ciudadanía, Política, Filosofía, Literatura y Biología. |
 | [**`Lukas/`**](./Lukas/README.md) | **Proyecto USACH** | Informe técnico, bibliografía y planos de fabricación de ingeniería mecánica. |
@@ -29,6 +29,19 @@ Repositorio personal y centralizado de apuntes, informes de laboratorio, proyect
 
 ```
 Apunte/
+├── Algebra/                   # MA1101 (FCFM Uchile): Controles, Pautas, Resúmenes
+│   ├── Controles/             # Enunciados de controles (2023 - 2026)
+│   ├── Pautas/                # Soluciones oficiales
+│   ├── Resumenes/             # Síntesis conceptuales en Markdown
+│   └── Libros/                # Literatura y combinatoria
+│
+├── Calculo/                   # MA1002 (FCFM Uchile): Cálculo Avanzado y Multivariable
+│   ├── Auxiliares/            # Guías auxiliares semanales
+│   ├── RP/                    # Resoluciones de Problemas
+│   ├── Problemas_Propuestos/  # Ejercicios de preparación pre-control
+│   ├── Controles/             # Evaluaciones históricas
+│   └── Material_Docente/      # Apuntes integrales y videos
+│
 ├── Herramientas/              # CC1000 (FCFM Uchile): Informes, Labs, TP, TPL
 │   ├── Informes/              # Informes formales en LaTeX (plantilla Pablo Pizarro)
 │   ├── Labs/                  # Laboratorios en Python, Jupyter y Excel
@@ -42,16 +55,10 @@ Apunte/
 │   ├── Tarea_4/               # Entrevistas y validaciones
 │   └── README.md              # Documentación de Desafíos
 │
-├── Bio/                       # Resúmenes condensados de Biología
+├── Bio/                       # Resúmenes y material docente de Biotecnología
 │   ├── EP1/ · EP2/ · EP3/     # Fichas compactas (Cheat-Sheets)
+│   ├── Material/              # Actividades semestrales, pautas y guías
 │   └── README.md              # Índice de materias biológicas
-│
-├── balti/                     # Sistema generador de guías tipo Kumon
-│   ├── gen-kumon.py           # Script generador base en Python
-│   ├── Fracs/ · Papomudas/    # Fracciones y jerarquía operacional
-│   ├── avanzado/              # Nivel F Experto
-│   ├── patas/                 # Cuadrados y cálculo mental
-│   └── README.md              # Guía de uso y regeneración
 │
 ├── Prog-Comp/                 # Programación Competitiva (C++ / STL)
 │   ├── Apunte_Selectivo.tex   # Fuente en LaTeX con algoritmos y plantillas
@@ -104,20 +111,7 @@ Cada documento `.tex` es completamente independiente y se encuentra junto a sus 
 
 ---
 
-### 2. Generación de Guías Kumon (`balti/`)
-
-Las guías de matemática se crean mediante scripts en Python que resuelven las ecuaciones de manera inversa para generar problemas limpios:
-
-```bash
-cd balti/avanzado
-python3 gen.py
-latexmk -pdf Kumon_F_Experto_Ejercicios.tex
-latexmk -pdf Kumon_F_Experto_Respuestas.tex
-```
-
----
-
-### 3. Sincronización Automática con GitHub (`push.sh`)
+### 2. Sincronización Automática con GitHub (`push.sh`)
 
 El repositorio incluye un script en Bash/Zsh para agilizar los commits y sincronizaciones remotas:
 
